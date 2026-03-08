@@ -1,0 +1,115 @@
+{
+  "Navigation": {
+    "home": "Anasayfa",
+    "about": "Hakkımızda",
+    "products": "Ürünler",
+    "blog": "Blog",
+    "contact": "İletişim"
+  },
+  "Blog": {
+    "title": "Teknik İçerikler",
+    "subtitle": "Tekstil kimyası, proses optimizasyonu ve sektör trendleri hakkında uzman makaleler.",
+    "readMore": "Devamını oku",
+    "backToBlog": "Yazılara dön",
+    "ctaTitle": "Teknik Desteğe İhtiyacınız mı Var?",
+    "ctaDescription": "AR-GE ekibimiz, doğru kimyasal çözümlerle tekstil proseslerinizi optimize etmenize yardımcı olmaya hazır.",
+    "ctaButton": "İletişime Geçin",
+    "ctaProducts": "Ürünleri İncele"
+  },
+  "HomePage": {
+    "heroTitle": "Tekstil Kimyasallarında\nGlobal Çözüm Ortağınız",
+    "heroSubtitle": "Grohn Kimya olarak, yenilikçi tekstil kimyasalları ile dünya genelinde üreticilere güvenilir çözümler sunuyoruz.",
+    "ctaProducts": "Ürünlerimizi Keşfedin",
+    "ctaContact": "İletişime Geçin",
+    "stats": {
+      "years": "Yıllık Tecrübe",
+      "countries": "İhracat Ülkesi",
+      "products": "Ürün Çeşidi"
+    },
+    "featuresTitle": "Neden Grohn Kimya?",
+    "featuresSubtitle": "Kalite, güvenilirlik ve yenilikçilik ile tekstil kimya sektörünün öncü markası.",
+    "features": {
+      "quality": {
+        "title": "Üstün Kalite",
+        "desc": "ISO ve uluslararası standartlara uygun, sertifikalı üretim süreçleri ile tutarlı kalite."
+      },
+      "global": {
+        "title": "Global Erişim",
+        "desc": "Avrupa, Orta Doğu, Afrika ve Asya pazarlarına güvenilir ihracat ağı."
+      },
+      "innovation": {
+        "title": "Ar-Ge Odaklı",
+        "desc": "Müşteri ihtiyaçlarına özel, laboratuvar destekli çözümler ve sürekli inovasyon."
+      },
+      "support": {
+        "title": "Teknik Destek",
+        "desc": "Uzman ekibimizle uygulama, optimizasyon ve sorun çözme desteği."
+      }
+    },
+    "ctaBanner": {
+      "title": "Projeniz İçin Doğru Kimyasal Çözümü Bulun",
+      "subtitle": "Uzman ekibimiz size özel çözümler sunmak için hazır.",
+      "button": "Teklif İsteyin"
+    }
+  },
+  "AboutPage": {
+    "title": "Hakkımızda",
+    "description": "Grohn Kimya, tekstil kimyasalları alanında uzun yıllara dayanan tecrübesiyle, global pazarlara yenilikçi ve güvenilir çözümler sunan öncü bir firmadır.",
+    "missionTitle": "Misyonumuz",
+    "missionDesc": "Çevreye duyarlı, insan sağlığını önceleyen ve teknolojiyi yakından takip eden üretim anlayışımızla, tekstil sektörüne en kaliteli kimyasal çözümleri sunmak.",
+    "visionTitle": "Vizyonumuz",
+    "visionDesc": "Global tekstil kimyasalları pazarında güvenilirliği, kalitesi ve inovasyon gücüyle tanınan lider bir marka olmak.",
+    "valuesTitle": "Değerlerimiz",
+    "values": {
+      "reliability": {
+        "title": "Güvenilirlik",
+        "desc": "Her zaman söz verdiğimizi yapıyoruz."
+      },
+      "sustainability": {
+        "title": "Sürdürülebilirlik",
+        "desc": "Çevreye duyarlı üretim süreçleri."
+      },
+      "excellence": {
+        "title": "Mükemmellik",
+        "desc": "Her üründe en yüksek standartlar."
+      }
+    }
+  },
+  "ContactPage": {
+    "title": "İletişim",
+    "subtitle": "Sorularınız, teknik destek ve fiyat teklifi talepleriniz için bize ulaşın.",
+    "form": {
+      "name": "Adınız Soyadınız",
+      "email": "E-posta Adresiniz",
+      "company": "Firma Adı",
+      "subject": "Konu",
+      "message": "Mesajınız",
+      "send": "Mesaj Gönder",
+      "success": "Mesajınız başarıyla gönderildi! En kısa sürede dönüş yapacağız.",
+      "error": "Bir hata oluştu, lütfen tekrar deneyin."
+    },
+    "info": {
+      "address": "Adres",
+      "phone": "Telefon",
+      "email": "E-posta"
+    }
+  },
+  "Footer": {
+    "tagline": "Tekstil endüstrisi için yenilikçi kimyasal çözümler.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "contactTitle": "İletişim",
+    "rights": "Tüm hakları saklıdır.",
+    "madeIn": "Türkiye'de üretilmektedir"
+  },
+  "Products": {
+    "title": "Ürün Kataloğu",
+    "subtitle": "Tekstil endüstrisinin tüm ihtiyaçlarına yönelik kapsamlı kimyasal çözümlerimizi keşfedin.",
+    "viewDetails": "Detayları İncele",
+    "backToProducts": "Ürünlere Dön",
+    "technicalSpecs": "Teknik Özellikler",
+    "chemicalFormula": "Kimyasal Formül",
+    "purity": "Saflık",
+    "requestQuote": "Teklif İste",
+    "categories": "Kategoriler"
+  }
+}

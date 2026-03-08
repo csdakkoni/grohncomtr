@@ -1,0 +1,388 @@
+[
+  {
+    "name": "Growet ELF",
+    "category": "General",
+    "desc_tr": "Noniyonik Islatıcı",
+    "desc_en": "Nonionic wetting agent",
+    "slug": "growet-elf",
+    "desc_fr": "[FR] Nonionic wetting agent",
+    "desc_ar": "[AR] Nonionic wetting agent"
+  },
+  {
+    "name": "Groseq PFF",
+    "category": "General",
+    "desc_tr": "Ön İşlem İçin İyon Tutucu",
+    "desc_en": "Complexing and sequestering agents for pretreatment",
+    "slug": "groseq-pff",
+    "desc_fr": "[FR] Complexing and sequestering agents for pretreatment",
+    "desc_ar": "[AR] Complexing and sequestering agents for pretreatment"
+  },
+  {
+    "name": "Grostab PL",
+    "category": "General",
+    "desc_tr": "Ön İşlem İçin Konsantre İyon Tutucu Peroksit Stabilizatörü",
+    "desc_en": "Complexing and sequestering agents for pretreatment concentrated Peroxide stabilizer",
+    "slug": "grostab-pl",
+    "desc_fr": "[FR] Complexing and sequestering agents for pretreatment concentrated Peroxide stabilizer",
+    "desc_ar": "[AR] Complexing and sequestering agents for pretreatment concentrated Peroxide stabilizer"
+  },
+  {
+    "name": "Grostab PL conc",
+    "category": "General",
+    "desc_tr": "Konsantre Peroksit Stabilizatörü Islatıcı ve Yağ Sökücüler Konsantre Noniyonik Islatıcı",
+    "desc_en": "Peroxide stabilizer concentrated Wetting and Oil Removing Agents Nonionic wetting agent concentrated",
+    "slug": "grostab-pl-conc",
+    "desc_fr": "[FR] Peroxide stabilizer concentrated Wetting and Oil Removing Agents Nonionic wetting agent concentrated",
+    "desc_ar": "[AR] Peroxide stabilizer concentrated Wetting and Oil Removing Agents Nonionic wetting agent concentrated"
+  },
+  {
+    "name": "Grosol BNK",
+    "category": "General",
+    "desc_tr": "Noniyonik Yağ ve Leke Sökücü",
+    "desc_en": "Nonionic oil removing agent",
+    "slug": "grosol-bnk",
+    "desc_fr": "[FR] Nonionic oil removing agent",
+    "desc_ar": "[AR] Nonionic oil removing agent"
+  },
+  {
+    "name": "Grosol KHL",
+    "category": "General",
+    "desc_tr": "Yüksek Performanslı Yağ ve Leke Sökücü, Solventli",
+    "desc_en": "High performance stain and oil removing agent",
+    "slug": "grosol-khl",
+    "desc_fr": "[FR] High performance stain and oil removing agent",
+    "desc_ar": "[AR] High performance stain and oil removing agent"
+  },
+  {
+    "name": "Growet CMB",
+    "category": "General",
+    "desc_tr": "Noniyonik Kombin Kasar Islatıcısı",
+    "desc_en": "Nonionic wetting and oil removing agent",
+    "slug": "growet-cmb",
+    "desc_fr": "[FR] Nonionic wetting and oil removing agent",
+    "desc_ar": "[AR] Nonionic wetting and oil removing agent"
+  },
+  {
+    "name": "Grosol SNC",
+    "category": "General",
+    "desc_tr": "Konsantre Noniyonik Yağ ve Leke Sökücü",
+    "desc_en": "Nonionic oil removing agent concentrated",
+    "slug": "grosol-snc",
+    "desc_fr": "[FR] Nonionic oil removing agent concentrated",
+    "desc_ar": "[AR] Nonionic oil removing agent concentrated"
+  },
+  {
+    "name": "Growet ARN",
+    "category": "General",
+    "desc_tr": "Anyonik Islatıcı",
+    "desc_en": "Anionic wetting agent",
+    "slug": "growet-arn",
+    "desc_fr": "[FR] Anionic wetting agent",
+    "desc_ar": "[AR] Anionic wetting agent"
+  },
+  {
+    "name": "Growet ZNP",
+    "category": "General",
+    "desc_tr": "Düşük Köpüklü Noniyonik Islatıcı",
+    "desc_en": "Low foaming nonionic wetting agent",
+    "slug": "growet-znp",
+    "desc_fr": "[FR] Low foaming nonionic wetting agent",
+    "desc_ar": "[AR] Low foaming nonionic wetting agent"
+  },
+  {
+    "name": "Growet ASK",
+    "category": "General",
+    "desc_tr": "Anyonik-Noniyonik Islatıcı İyon Tutucu ve Stabilizatörler Bölüm Ön İşlem Kimyasalları",
+    "desc_en": "Anionic- nonionic wetting agent",
+    "slug": "growet-ask",
+    "desc_fr": "[FR] Anionic- nonionic wetting agent",
+    "desc_ar": "[AR] Anionic- nonionic wetting agent"
+  },
+  {
+    "name": "Grofoam KLE",
+    "category": "General",
+    "desc_tr": "Silikon Bazlı Köpük Kesici Köpük Kesiciler",
+    "desc_en": "Silicon based antifoaming agent Antifoaming Agents",
+    "slug": "grofoam-kle",
+    "desc_fr": "[FR] Silicon based antifoaming agent Antifoaming Agents",
+    "desc_ar": "[AR] Silicon based antifoaming agent Antifoaming Agents"
+  },
+  {
+    "name": "Grofoam GRN",
+    "category": "General",
+    "desc_tr": "Konsantre Silikon Bazlı Köpük Kesici",
+    "desc_en": "Silicon based antifoaming agent concentrated",
+    "slug": "grofoam-grn",
+    "desc_fr": "[FR] Silicon based antifoaming agent concentrated",
+    "desc_ar": "[AR] Silicon based antifoaming agent concentrated"
+  },
+  {
+    "name": "Grofoam FL",
+    "category": "General",
+    "desc_tr": "Mineral Yağ Bazlı Köpük Kesici",
+    "desc_en": "Mineral oil based defoamer",
+    "slug": "grofoam-fl",
+    "desc_fr": "[FR] Mineral oil based defoamer",
+    "desc_ar": "[AR] Mineral oil based defoamer"
+  },
+  {
+    "name": "Grozyme CBL",
+    "category": "General",
+    "desc_tr": "Asidik Konsantre Tüy Enzimi Enzimler",
+    "desc_en": "Concentrated biopolishing enzyme, acidic Enzymes",
+    "slug": "grozyme-cbl",
+    "desc_fr": "[FR] Concentrated biopolishing enzyme, acidic Enzymes",
+    "desc_ar": "[AR] Concentrated biopolishing enzyme, acidic Enzymes"
+  },
+  {
+    "name": "Grozyme SD",
+    "category": "General",
+    "desc_tr": "Nötr Konsantre Tüy Enzimi",
+    "desc_en": "Concentrated biopolishing enzyme, neutral",
+    "slug": "grozyme-sd",
+    "desc_fr": "[FR] Concentrated biopolishing enzyme, neutral",
+    "desc_ar": "[AR] Concentrated biopolishing enzyme, neutral"
+  },
+  {
+    "name": "Grozyme CAT",
+    "category": "General",
+    "desc_tr": "Konsantre Antiperoksit Enzimi",
+    "desc_en": "Concentrated antiperoxide enzyme",
+    "slug": "grozyme-cat",
+    "desc_fr": "[FR] Concentrated antiperoxide enzyme",
+    "desc_ar": "[AR] Concentrated antiperoxide enzyme"
+  },
+  {
+    "name": "Grozyme HSL",
+    "category": "General",
+    "desc_tr": "Konsantre Haşıl Sökme Enzimi Tampon Asitler",
+    "desc_en": "Concentrated desizing ezyme",
+    "slug": "grozyme-hsl",
+    "desc_fr": "[FR] Concentrated desizing ezyme",
+    "desc_ar": "[AR] Concentrated desizing ezyme"
+  },
+  {
+    "name": "Grocid GFY",
+    "category": "General",
+    "desc_tr": "Konsantre Tampon Asit",
+    "desc_en": "Concentrated buffering acid",
+    "slug": "grocid-gfy",
+    "desc_fr": "[FR] Concentrated buffering acid",
+    "desc_ar": "[AR] Concentrated buffering acid"
+  },
+  {
+    "name": "Grocid STR",
+    "category": "General",
+    "desc_tr": "Ekonomik Tampon Asit",
+    "desc_en": "Economical buffering acid",
+    "slug": "grocid-str",
+    "desc_fr": "[FR] Economical buffering acid",
+    "desc_ar": "[AR] Economical buffering acid"
+  },
+  {
+    "name": "Groseq ACR",
+    "category": "General",
+    "desc_tr": "Reaktif Boya Banyosu İçin İyon Tutucu",
+    "desc_en": "Sequestering agent for reactive dye bath",
+    "slug": "groseq-acr",
+    "desc_fr": "[FR] Sequestering agent for reactive dye bath",
+    "desc_ar": "[AR] Sequestering agent for reactive dye bath"
+  },
+  {
+    "name": "Groseq ACR conc",
+    "category": "General",
+    "desc_tr": "Reaktif Boya Banyosu İçin Konsantre İyon Tutucu",
+    "desc_en": "Concentrated sequestering agent for reactive dye bath",
+    "slug": "groseq-acr-conc",
+    "desc_fr": "[FR] Concentrated sequestering agent for reactive dye bath",
+    "desc_ar": "[AR] Concentrated sequestering agent for reactive dye bath"
+  },
+  {
+    "name": "Grogal NS 40",
+    "category": "General",
+    "desc_tr": "Reaktif Boyama İçin Dispergatör ve Egalizatör Dispergatör ve Egalizatörler",
+    "desc_en": "Dispersing and levelling agent for reactive dyeing Dispersing and Levelling Agent",
+    "slug": "grogal-ns-40",
+    "desc_fr": "[FR] Dispersing and levelling agent for reactive dyeing Dispersing and Levelling Agent",
+    "desc_ar": "[AR] Dispersing and levelling agent for reactive dyeing Dispersing and Levelling Agent"
+  },
+  {
+    "name": "Grogal LS",
+    "category": "General",
+    "desc_tr": "Reaktif Boyama İçin Özel Yapıda Dispergatör ve Egalizatör",
+    "desc_en": "Special dispersing and levelling agent for reactive dyeing",
+    "slug": "grogal-ls",
+    "desc_fr": "[FR] Special dispersing and levelling agent for reactive dyeing",
+    "desc_ar": "[AR] Special dispersing and levelling agent for reactive dyeing"
+  },
+  {
+    "name": "Grogal NS",
+    "category": "General",
+    "desc_tr": "Toz Dispergatör ve Egalizatör",
+    "desc_en": "Powder dispersing and levelling agent",
+    "slug": "grogal-ns",
+    "desc_fr": "[FR] Powder dispersing and levelling agent",
+    "desc_ar": "[AR] Powder dispersing and levelling agent"
+  },
+  {
+    "name": "Gropers ERD",
+    "category": "General",
+    "desc_tr": "Dispers Boyama İçin Anyonik Dispergatör ve Egalizatör",
+    "desc_en": "Anionic dispersing and levelling agent for disperse dyeing",
+    "slug": "gropers-erd",
+    "desc_fr": "[FR] Anionic dispersing and levelling agent for disperse dyeing",
+    "desc_ar": "[AR] Anionic dispersing and levelling agent for disperse dyeing"
+  },
+  {
+    "name": "Grocarrier BAF",
+    "category": "General",
+    "desc_tr": "Dispers Boyama İçin Konsantre Carrier",
+    "desc_en": "Concentrated carrier for disperse dyeing",
+    "slug": "grocarrier-baf",
+    "desc_fr": "[FR] Concentrated carrier for disperse dyeing",
+    "desc_ar": "[AR] Concentrated carrier for disperse dyeing"
+  },
+  {
+    "name": "Grocarrier TAF",
+    "category": "General",
+    "desc_tr": "Dispers Boyama İçin Ekolojik Carrier",
+    "desc_en": "Ecological carrier for disperse dyeing",
+    "slug": "grocarrier-taf",
+    "desc_fr": "[FR] Ecological carrier for disperse dyeing",
+    "desc_ar": "[AR] Ecological carrier for disperse dyeing"
+  },
+  {
+    "name": "Gropers COP",
+    "category": "General",
+    "desc_tr": "Dispers Boyama İçin Noniyonik Dispergatör ve Egalizatör Boyama Yardımcıları",
+    "desc_en": "nonionic Dispersing and levelling agent for disperse dyeing Dyeing Auxiliaries",
+    "slug": "gropers-cop",
+    "desc_fr": "[FR] nonionic Dispersing and levelling agent for disperse dyeing Dyeing Auxiliaries",
+    "desc_ar": "[AR] nonionic Dispersing and levelling agent for disperse dyeing Dyeing Auxiliaries"
+  },
+  {
+    "name": "Growash EVO",
+    "category": "General",
+    "desc_tr": "Reaktif Boyama İçin Proses Kısaltan Noniyonik Polimer Bazlı Yıkayıcı",
+    "desc_en": "Nonionic washing agent for reactive dyedd fabrics",
+    "slug": "growash-evo",
+    "desc_fr": "[FR] Nonionic washing agent for reactive dyedd fabrics",
+    "desc_ar": "[AR] Nonionic washing agent for reactive dyedd fabrics"
+  },
+  {
+    "name": "Growaash IKA",
+    "category": "General",
+    "desc_tr": "Reaktif Boyama İçin Anyonik Polimer Bazlı Yıkayıcı",
+    "desc_en": "Anionic washing agent for reactive dyed fabrics",
+    "slug": "growaash-ika",
+    "desc_fr": "[FR] Anionic washing agent for reactive dyed fabrics",
+    "desc_ar": "[AR] Anionic washing agent for reactive dyed fabrics"
+  },
+  {
+    "name": "Grored ASD",
+    "category": "General",
+    "desc_tr": "Dispers Boyalı ve Basklı Kumaşlar İçin Asidik Redüktan",
+    "desc_en": "Acidic reducing clearing agent for disperse dyed, printed fabrics",
+    "slug": "grored-asd",
+    "desc_fr": "[FR] Acidic reducing clearing agent for disperse dyed, printed fabrics",
+    "desc_ar": "[AR] Acidic reducing clearing agent for disperse dyed, printed fabrics"
+  },
+  {
+    "name": "Grofix DFC",
+    "category": "General",
+    "desc_tr": "Formaldehit İçermeyen Fiksatör",
+    "desc_en": "Formaldehyde free concentrated fixing agent",
+    "slug": "grofix-dfc",
+    "desc_fr": "[FR] Formaldehyde free concentrated fixing agent",
+    "desc_ar": "[AR] Formaldehyde free concentrated fixing agent"
+  },
+  {
+    "name": "Grofix TF",
+    "category": "General",
+    "desc_tr": "Turkuaz Boyalı Kumaşlar İçin Özel Fiksatör",
+    "desc_en": "Special fixing agent for turquoise dyed fabrics",
+    "slug": "grofix-tf",
+    "desc_fr": "[FR] Special fixing agent for turquoise dyed fabrics",
+    "desc_ar": "[AR] Special fixing agent for turquoise dyed fabrics"
+  },
+  {
+    "name": "Grored BAS",
+    "category": "General",
+    "desc_tr": "Dispers Boyalı Kumaşlar İçin Bazik Redüktan Yıkama Yardımcıları",
+    "desc_en": "Alkali reducing clearing agent for disperse dyed fabrics Washing Auxiliaries",
+    "slug": "grored-bas",
+    "desc_fr": "[FR] Alkali reducing clearing agent for disperse dyed fabrics Washing Auxiliaries",
+    "desc_ar": "[AR] Alkali reducing clearing agent for disperse dyed fabrics Washing Auxiliaries"
+  },
+  {
+    "name": "Grosoft NP",
+    "category": "General",
+    "desc_tr": "Noniyonik Payet Yumuşatıcı",
+    "desc_en": "Nonionic flake softener",
+    "slug": "grosoft-np",
+    "desc_fr": "[FR] Nonionic flake softener",
+    "desc_ar": "[AR] Nonionic flake softener"
+  },
+  {
+    "name": "Grosoft PEPolietilen Emülsiyonu",
+    "category": "General",
+    "desc_tr": "Yumuşatıcılar",
+    "desc_en": "Yumuşatıcılar",
+    "slug": "grosoft-pepolietilen-em-lsiyonu",
+    "desc_fr": "[FR] Yumuşatıcılar",
+    "desc_ar": "[AR] Yumuşatıcılar"
+  },
+  {
+    "name": "Grosil HLV",
+    "category": "General",
+    "desc_tr": "Hidrofil Silikon Emülsiyonu",
+    "desc_en": "Hydrophilic silicone emulsion",
+    "slug": "grosil-hlv",
+    "desc_fr": "[FR] Hydrophilic silicone emulsion",
+    "desc_ar": "[AR] Hydrophilic silicone emulsion"
+  },
+  {
+    "name": "Grosil PES",
+    "category": "General",
+    "desc_tr": "Polyester ve Karışımları İçin Süblimasyon Haslığını Etkilemeyen Özel Silikon Emülsiyonu Silikon Yumuşatıcılar ve Renk Derinleştiriciler Apre Kimyasalları Bölüm",
+    "desc_en": "Special silicone emulsion for polyester and its blends, doesn’t effects sublimation fastness",
+    "slug": "grosil-pes",
+    "desc_fr": "[FR] Special silicone emulsion for polyester and its blends, doesn’t effects sublimation fastness",
+    "desc_ar": "[AR] Special silicone emulsion for polyester and its blends, doesn’t effects sublimation fastness"
+  },
+  {
+    "name": "Grofab PV",
+    "category": "General",
+    "desc_tr": "powder Toz Kenar Kola",
+    "desc_en": "powder Powder edge hardener",
+    "slug": "grofab-pv",
+    "desc_fr": "[FR] powder Powder edge hardener",
+    "desc_ar": "[AR] powder Powder edge hardener"
+  },
+  {
+    "name": "Grofab PP",
+    "category": "General",
+    "desc_tr": "Çıkan Sıvı Kenar Kola Dispersiyonu Çıkmayan Sıvı Kenar Kola Dispersiyonu",
+    "desc_en": "Nonpermanent liquid edge hardener Permanent liquid edge hardener",
+    "slug": "grofab-pp",
+    "desc_fr": "[FR] Nonpermanent liquid edge hardener Permanent liquid edge hardener",
+    "desc_ar": "[AR] Nonpermanent liquid edge hardener Permanent liquid edge hardener"
+  },
+  {
+    "name": "Grostat PLF",
+    "category": "General",
+    "desc_tr": "Antistatik Apre Kenar Kolalar Özel Apreler Apre Kimyasalları grohn.com.tr Velimese OSB Mah. Kervancı Ticaret Merkezi B12 Ergene TEKİRDAG grohn@grohn.com.tr +90 539 880 2346",
+    "desc_en": "Antistatic agent",
+    "slug": "grostat-plf",
+    "desc_fr": "[FR] Antistatic agent",
+    "desc_ar": "[AR] Antistatic agent"
+  },
+  {
+    "name": "Grosoft PEPolyethylenc emulsion",
+    "category": "General",
+    "desc_tr": "Softeners",
+    "desc_en": "Softeners",
+    "desc_fr": "[FR] Softeners",
+    "desc_ar": "[AR] Softeners"
+  }
+]

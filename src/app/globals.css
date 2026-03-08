@@ -1,26 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Primary Dark Navy */
+  --color-primary: #0A1628;
+  --color-primary-light: #0F1F3A;
+  --color-primary-lighter: #162B50;
+
+  /* Accent Amber/Copper — warm, textile chemistry feel */
+  --color-accent: #E8720C;
+  --color-accent-dark: #C45D04;
+  --color-accent-light: #F5A623;
+
+  /* Secondary — cool steel blue for subtle contrast */
+  --color-secondary: #3B82A0;
+  --color-secondary-light: #5BA3BF;
+
+  /* Surfaces */
+  --color-surface: #0A1628;
+  --color-surface-card: rgba(255, 255, 255, 0.03);
+  --color-surface-elevated: rgba(255, 255, 255, 0.06);
+
+  /* Text */
+  --color-text-primary: #F1F5F9;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
+
+  /* Borders */
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-hover: rgba(255, 255, 255, 0.15);
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ===== BASE ===== */
+body {
+  background: #0A1628;
+  color: #F1F5F9;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ===== GLASSMORPHISM ===== */
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* ===== GRADIENTS ===== */
+.gradient-hero {
+  background: radial-gradient(ellipse 80% 60% at 50% -20%, rgba(232, 114, 12, 0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 50% at 80% 50%, rgba(196, 93, 4, 0.06) 0%, transparent 70%),
+    linear-gradient(180deg, #0A1628 0%, #0f1d35 100%);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, #E8720C 0%, #C45D04 100%);
+}
+
+.gradient-accent-soft {
+  background: linear-gradient(135deg, rgba(232, 114, 12, 0.15) 0%, rgba(196, 93, 4, 0.05) 100%);
+}
+
+.gradient-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+}
+
+/* ===== GLOW EFFECTS ===== */
+.glow-accent {
+  box-shadow: 0 0 40px rgba(232, 114, 12, 0.15), 0 0 80px rgba(232, 114, 12, 0.05);
+}
+
+/* ===== ANIMATED GRADIENT LINE ===== */
+.gradient-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(232, 114, 12, 0.5) 50%, transparent 100%);
+}
+
+/* ===== CUSTOM SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A1628;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== RTL SUPPORT ===== */
+[dir="rtl"] {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== KEYFRAMES ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }

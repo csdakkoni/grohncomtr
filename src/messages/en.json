@@ -1,0 +1,115 @@
+{
+    "Navigation": {
+        "home": "Home",
+        "about": "About Us",
+        "products": "Products",
+        "blog": "Blog",
+        "contact": "Contact"
+    },
+    "Blog": {
+        "title": "Technical Insights",
+        "subtitle": "Expert articles on textile chemistry, process optimization, and industry trends.",
+        "readMore": "Read more",
+        "backToBlog": "Back to articles",
+        "ctaTitle": "Need Expert Technical Support?",
+        "ctaDescription": "Our R&D team is ready to help you optimize your textile processes with the right chemical solutions.",
+        "ctaButton": "Contact Us",
+        "ctaProducts": "View Products"
+    },
+    "HomePage": {
+        "heroTitle": "Your Global Partner in\nTextile Chemicals",
+        "heroSubtitle": "At Grohn Kimya, we deliver innovative textile chemical solutions to manufacturers worldwide with reliability and excellence.",
+        "ctaProducts": "Explore Products",
+        "ctaContact": "Get in Touch",
+        "stats": {
+            "years": "Years of Experience",
+            "countries": "Export Countries",
+            "products": "Product Range"
+        },
+        "featuresTitle": "Why Grohn Kimya?",
+        "featuresSubtitle": "A leading brand in textile chemistry through quality, reliability, and innovation.",
+        "features": {
+            "quality": {
+                "title": "Superior Quality",
+                "desc": "Certified production processes complying with ISO and international standards, ensuring consistent quality."
+            },
+            "global": {
+                "title": "Global Reach",
+                "desc": "Reliable export network serving markets across Europe, Middle East, Africa and Asia."
+            },
+            "innovation": {
+                "title": "R&D Focused",
+                "desc": "Lab-supported custom solutions tailored to customer needs with continuous innovation."
+            },
+            "support": {
+                "title": "Technical Support",
+                "desc": "Expert team providing application, optimization, and troubleshooting assistance."
+            }
+        },
+        "ctaBanner": {
+            "title": "Find the Right Chemical Solution for Your Project",
+            "subtitle": "Our expert team is ready to provide tailored solutions for you.",
+            "button": "Request a Quote"
+        }
+    },
+    "AboutPage": {
+        "title": "About Us",
+        "description": "Grohn Kimya is a pioneering company providing innovative and reliable solutions to global markets with years of experience in textile chemicals.",
+        "missionTitle": "Our Mission",
+        "missionDesc": "To provide the highest quality chemical solutions to the textile industry with our production approach that prioritizes the environment, human health, and closely follows technology.",
+        "visionTitle": "Our Vision",
+        "visionDesc": "To be a leading brand recognized for its reliability, quality, and innovation power in the global textile chemicals market.",
+        "valuesTitle": "Our Values",
+        "values": {
+            "reliability": {
+                "title": "Reliability",
+                "desc": "We always deliver on our promises."
+            },
+            "sustainability": {
+                "title": "Sustainability",
+                "desc": "Environmentally conscious production processes."
+            },
+            "excellence": {
+                "title": "Excellence",
+                "desc": "The highest standards in every product."
+            }
+        }
+    },
+    "ContactPage": {
+        "title": "Contact Us",
+        "subtitle": "Reach out for inquiries, technical support, and quote requests.",
+        "form": {
+            "name": "Full Name",
+            "email": "Email Address",
+            "company": "Company Name",
+            "subject": "Subject",
+            "message": "Your Message",
+            "send": "Send Message",
+            "success": "Message sent successfully! We'll get back to you shortly.",
+            "error": "An error occurred, please try again."
+        },
+        "info": {
+            "address": "Address",
+            "phone": "Phone",
+            "email": "Email"
+        }
+    },
+    "Footer": {
+        "tagline": "Innovative chemical solutions for the textile industry.",
+        "quickLinks": "Quick Links",
+        "contactTitle": "Contact",
+        "rights": "All rights reserved.",
+        "madeIn": "Manufactured in Turkey"
+    },
+    "Products": {
+        "title": "Product Catalog",
+        "subtitle": "Discover our comprehensive range of chemical solutions for all textile industry needs.",
+        "viewDetails": "View Details",
+        "backToProducts": "Back to Products",
+        "technicalSpecs": "Technical Specifications",
+        "chemicalFormula": "Chemical Formula",
+        "purity": "Purity",
+        "requestQuote": "Request Quote",
+        "categories": "Categories"
+    }
+}
