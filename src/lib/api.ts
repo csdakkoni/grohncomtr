@@ -1,7 +1,9 @@
 import { supabase } from './supabase';
 import { MOCK_CATEGORIES, MOCK_PRODUCTS, MOCK_SUBGROUPS } from './mock';
 
-const IS_MOCK_MODE = !process.env.NEXT_PUBLIC_SUPABASE_URL;
+// Force mock mode until Supabase tables are populated with real data.
+// Set NEXT_PUBLIC_USE_LIVE_DATA=true in Vercel env to switch to live DB.
+const IS_MOCK_MODE = process.env.NEXT_PUBLIC_USE_LIVE_DATA !== 'true';
 
 export async function getSubgroups(categoryId?: string) {
     if (IS_MOCK_MODE) {
