@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase";
 import { useRouter, usePathname } from "next/navigation";
-import { LayoutDashboard, Package, MessageSquare, LogOut, Loader2 } from "lucide-react";
+import { LayoutDashboard, Package, MessageSquare, LogOut, Loader2, FileText, FolderOpen } from "lucide-react";
 import Link from "next/link";
 
 export default function AdminShell({
@@ -64,6 +64,14 @@ export default function AdminShell({
                     <Link href="/admin/messages" className={`flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition ${pathname.startsWith('/admin/messages') ? 'bg-blue-50 text-primary' : 'text-gray-600 hover:bg-gray-50'}`}>
                         <MessageSquare className="w-5 h-5" />
                         Mesajlar
+                    </Link>
+                    <Link href="/admin/blog" className={`flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition ${pathname.startsWith('/admin/blog') ? 'bg-blue-50 text-primary' : 'text-gray-600 hover:bg-gray-50'}`}>
+                        <FileText className="w-5 h-5" />
+                        Blog
+                    </Link>
+                    <Link href="/admin/files" className={`flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition ${pathname.startsWith('/admin/files') ? 'bg-blue-50 text-primary' : 'text-gray-600 hover:bg-gray-50'}`}>
+                        <FolderOpen className="w-5 h-5" />
+                        Dosyalar
                     </Link>
                 </nav>
 

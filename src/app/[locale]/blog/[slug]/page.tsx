@@ -4,6 +4,7 @@ import { Link } from '@/i18n/routing';
 import { ArrowLeft, Calendar, Tag, User } from 'lucide-react';
 import { BLOG_POSTS } from '@/lib/blog';
 import ReactMarkdown from 'react-markdown';
+import { ArticleJsonLd, BreadcrumbJsonLd } from '@/components/SEOSchemas';
 
 function getLocalized(obj: any, field: string, locale: string) {
     return obj[`${field}_${locale}`] || obj[`${field}_en`] || obj[`${field}_tr`];
@@ -25,6 +26,23 @@ export default async function BlogPostPage({
 
     return (
         <div className="pt-20 min-h-screen">
+            <ArticleJsonLd
+                title={title}
+                description={getLocalized(post, 'excerpt', locale)}
+                image={post.image_url}
+                author={post.author}
+                datePublished={post.date}
+                slug={slug}
+                locale={locale}
+            />
+            <BreadcrumbJsonLd
+                items={[
+                    { name: 'Home', href: '/' },
+                    { name: 'Blog', href: '/blog' },
+                    { name: title, href: `/blog/${slug}` },
+                ]}
+                locale={locale}
+            />
             {/* Hero */}
             <section className="gradient-hero py-16 md:py-24">
                 <div className="container mx-auto px-4 md:px-8 max-w-4xl">

@@ -3,6 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Link } from '@/i18n/routing';
 import { ArrowLeft, FileText, Send } from 'lucide-react';
+import { ProductJsonLd, BreadcrumbJsonLd } from '@/components/SEOSchemas';
 
 export default async function ProductDetailPage({
     params
@@ -30,6 +31,22 @@ export default async function ProductDetailPage({
 
     return (
         <div className="pt-20 min-h-screen bg-primary">
+            <ProductJsonLd
+                name={getLocalized(product, 'title')}
+                description={getLocalized(product, 'description')}
+                image={product.image_url}
+                category={product.category_name}
+                slug={slug}
+                locale={locale}
+            />
+            <BreadcrumbJsonLd
+                items={[
+                    { name: 'Home', href: '/' },
+                    { name: 'Products', href: '/products' },
+                    { name: getLocalized(product, 'title'), href: `/products/${slug}` },
+                ]}
+                locale={locale}
+            />
             <div className="container mx-auto px-4 md:px-8 py-12 md:py-20">
                 {/* Back */}
                 <Link
