@@ -7,15 +7,44 @@ import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 export default function ContactForm() {
     const t = useTranslations('ContactPage.form');
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        company: '',
+        subject: '',
+        message: '',
+    });
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+    };
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setStatus('loading');
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        setStatus('success');
-        setTimeout(() => setStatus('idle'), 4000);
+
+        try {
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            if (res.ok) {
+                setStatus('success');
+                setFormData({ name: '', email: '', company: '', subject: '', message: '' });
+                setTimeout(() => setStatus('idle'), 5000);
+            } else {
+                setStatus('error');
+                setTimeout(() => setStatus('idle'), 4000);
+            }
+        } catch {
+            setStatus('error');
+            setTimeout(() => setStatus('idle'), 4000);
+        }
     };
+
+    const inputClass = "w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-text-muted focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/20 transition-all";
 
     return (
         <form onSubmit={handleSubmit} className="glass rounded-2xl p-8 md:p-10 space-y-6">
@@ -24,8 +53,11 @@ export default function ContactForm() {
                     <label className="block text-sm font-medium text-text-secondary mb-2">{t('name')}</label>
                     <input
                         type="text"
+                        name="name"
                         required
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-text-muted focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/20 transition-all"
+                        value={formData.name}
+                        onChange={handleChange}
+                        className={inputClass}
                         placeholder={t('name')}
                     />
                 </div>
@@ -33,8 +65,11 @@ export default function ContactForm() {
                     <label className="block text-sm font-medium text-text-secondary mb-2">{t('email')}</label>
                     <input
                         type="email"
+                        name="email"
                         required
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-text-muted focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/20 transition-all"
+                        value={formData.email}
+                        onChange={handleChange}
+                        className={inputClass}
                         placeholder={t('email')}
                     />
                 </div>
@@ -45,7 +80,10 @@ export default function ContactForm() {
                     <label className="block text-sm font-medium text-text-secondary mb-2">{t('company')}</label>
                     <input
                         type="text"
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-text-muted focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/20 transition-all"
+                        name="company"
+                        value={formData.company}
+                        onChange={handleChange}
+                        className={inputClass}
                         placeholder={t('company')}
                     />
                 </div>
@@ -53,8 +91,11 @@ export default function ContactForm() {
                     <label className="block text-sm font-medium text-text-secondary mb-2">{t('subject')}</label>
                     <input
                         type="text"
+                        name="subject"
                         required
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-text-muted focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/20 transition-all"
+                        value={formData.subject}
+                        onChange={handleChange}
+                        className={inputClass}
                         placeholder={t('subject')}
                     />
                 </div>
@@ -63,9 +104,12 @@ export default function ContactForm() {
             <div>
                 <label className="block text-sm font-medium text-text-secondary mb-2">{t('message')}</label>
                 <textarea
+                    name="message"
                     rows={5}
                     required
-                    className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-text-muted focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/20 transition-all resize-none"
+                    value={formData.message}
+                    onChange={handleChange}
+                    className={`${inputClass} resize-none`}
                     placeholder={t('message')}
                 />
             </div>
