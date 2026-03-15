@@ -398,4 +398,342 @@ Le choix du bon adoucissant dépend du type de tissu, du toucher souhaité et de
 
 *أرسل لنا عينة قماش للحصول على توصية مخصصة.*`,
     },
+
+    {
+        id: "4",
+        slug: "water-saving-wetting-agents",
+        category: "sustainability",
+        author: "Grohn Kimya R&D",
+        date: "2025-09-12",
+        image_url: "/images/pretreatment.png",
+        title_en: "How Low-Foam Wetting Agents Can Cut Water Usage by 35%",
+        title_tr: "Düşük Köpük Islatıcılar Su Tüketimini Nasıl %35 Azaltır?",
+        title_fr: "Les agents mouillants à faible mousse réduisent la consommation d'eau de 35%",
+        title_ar: "كيف يمكن لعوامل الترطيب منخفضة الرغوة تقليل استهلاك المياه بنسبة 35%",
+        excerpt_en: "Discover how next-generation wetting agents dramatically reduce rinse cycles while improving fabric penetration in pre-treatment processes.",
+        excerpt_tr: "Yeni nesil ıslatıcıların ön işlem proseslerinde durulama döngülerini nasıl azaltırken kumaş penetrasyonunu nasıl geliştirdiğini keşfedin.",
+        excerpt_fr: "Découvrez comment les agents mouillants nouvelle génération réduisent les cycles de rinçage tout en améliorant la pénétration du tissu.",
+        excerpt_ar: "اكتشف كيف تقلل عوامل الترطيب من الجيل الجديد دورات الشطف مع تحسين تغلغل القماش.",
+        tags_en: ["wetting agents", "water saving", "Growet", "sustainability", "pre-treatment"],
+        content_en: `## The Water Crisis in Textile Processing
+
+Textile wet processing is one of the most water-intensive industries, consuming 100-150 liters per kg of fabric. Pre-treatment alone accounts for 40% of total water use.
+
+### Traditional vs. Low-Foam Wetting Agents
+
+The key issue with conventional wetting agents is excessive foam generation, which leads to:
+- Extra rinse cycles to remove foam residue
+- Machine downtime for foam management
+- Higher water and energy consumption
+
+### Growet LFN: Engineered for Efficiency
+
+**Growet LFN** is our next-generation low-foam wetting agent that delivers superior fabric penetration with minimal foam:
+
+**Key Performance Data:**
+- **Wetting time**: 3-5 seconds (vs. 15-20s conventional)
+- **Foam height**: <10mm at 60°C (vs. 80-120mm conventional)
+- **Rinse cycles needed**: 1-2 (vs. 3-4 conventional)
+- **Water saving**: 30-35% reduction in pre-treatment stage
+
+### Implementation Results
+
+A major Turkish textile mill (50,000 m/day capacity) switched from a conventional wetting agent to Growet LFN:
+
+| Metric | Before | After | Improvement |
+|--------|--------|-------|-------------|
+| Water use (pre-treatment) | 45 L/kg | 29 L/kg | **-35%** |
+| Rinse cycles | 4 | 2 | **-50%** |
+| Process time | 90 min | 65 min | **-28%** |
+| Rewetting issues | Frequent | None | **Eliminated** |
+
+### Best Practices
+
+1. **Dosage**: 1-3 g/L depending on fabric weight
+2. **Temperature**: Effective from 30°C to 95°C
+3. **Compatibility**: Works with all alkali and enzyme systems
+4. **Storage**: Stable for 12 months at 5-35°C
+
+*Contact us for a free water consumption audit of your pre-treatment line.*`,
+
+        content_tr: `## Tekstil İşlemede Su Krizi
+
+Tekstil yaş işleme, kg kumaş başına 100-150 litre su tüketen en su yoğun sektörlerden biridir.
+
+### Geleneksel vs. Düşük Köpük Islatıcılar
+
+Geleneksel ıslatıcıların temel sorunu aşırı köpük oluşumudur:
+- Köpük kalıntısını temizlemek için ekstra durulama
+- Köpük yönetimi için makine duruş süreleri
+- Daha yüksek su ve enerji tüketimi
+
+### Growet LFN: Verimlilik İçin Tasarlandı
+
+**Performans verileri:**
+- **Islatma süresi**: 3-5 saniye (geleneksel: 15-20s)
+- **Köpük yüksekliği**: 60°C'de <10mm
+- **Durulama döngüsü**: 1-2 (geleneksel: 3-4)
+- **Su tasarrufu**: Ön işlemde %30-35 azalma
+
+*Ön işlem hattınız için ücretsiz su tüketimi analizi isteyebilirsiniz.*`,
+
+        content_fr: `## La crise de l'eau dans le traitement textile
+
+Le traitement humide textile consomme 100-150 litres par kg de tissu. Le prétraitement représente 40% de la consommation totale.
+
+### Growet LFN : Conçu pour l'efficacité
+
+Agent mouillant basse mousse avec pénétration supérieure du tissu:
+- Temps de mouillage: 3-5 secondes
+- Hauteur de mousse: <10mm à 60°C
+- Économie d'eau: **30-35% de réduction**
+
+*Contactez-nous pour un audit gratuit de votre consommation d'eau.*`,
+
+        content_ar: `## أزمة المياه في معالجة النسيج
+
+تستهلك المعالجة الرطبة للنسيج 100-150 لتر لكل كجم من القماش.
+
+### Growet LFN: مصمم للكفاءة
+
+عامل ترطيب منخفض الرغوة مع تغلغل فائق:
+- زمن الترطيب: 3-5 ثوانٍ
+- توفير المياه: **تخفيض 30-35%**
+
+*اتصل بنا للحصول على تدقيق مجاني لاستهلاك المياه.*`,
+    },
+
+    {
+        id: "5",
+        slug: "carrier-free-polyester-dyeing",
+        category: "technical",
+        author: "Grohn Kimya R&D",
+        date: "2025-08-25",
+        image_url: "/images/dyeing.png",
+        title_en: "Carrier-Free Polyester Dyeing: Achieving Deep Shades Without Toxic Carriers",
+        title_tr: "Carrier'sız Polyester Boyama: Toksik Carrier Olmadan Koyu Tonlar",
+        title_fr: "Teinture polyester sans carrier : Obtenir des tons foncés sans supports toxiques",
+        title_ar: "صباغة البوليستر بدون حوامل: الحصول على ظلال عميقة بدون حوامل سامة",
+        excerpt_en: "Modern dispersing technology enables carrier-free dyeing of polyester at atmospheric pressure, eliminating toxic chemicals while achieving excellent color depth.",
+        excerpt_tr: "Modern dispers teknolojisi, atmosferik basınçta carrier'sız polyester boyamayı mümkün kılar — toksik kimyasallar olmadan mükemmel renk derinliği.",
+        excerpt_fr: "La technologie de dispersion moderne permet la teinture sans carrier du polyester à pression atmosphérique.",
+        excerpt_ar: "تتيح تقنية التشتت الحديثة صباغة البوليستر بدون حوامل عند الضغط الجوي.",
+        tags_en: ["polyester dyeing", "carrier-free", "Gropers", "dispersing agents", "sustainability"],
+        content_en: `## The Problem with Traditional Carriers
+
+Conventional carriers (biphenyl, chlorobenzene derivatives) are used to swell polyester fibers for dye penetration at atmospheric pressure. However, they pose serious issues:
+
+- **Toxic fumes** requiring expensive exhaust systems
+- **Environmental pollution** — many are classified as hazardous waste
+- **Health risks** for workers (skin irritation, respiratory issues)
+- **Odor contamination** of finished fabrics
+
+### The Solution: Gropers DPE System
+
+**Gropers DPE** is our APEO-free, carrier-free polyester dyeing auxiliary that achieves comparable results:
+
+- Works at 98-100°C (atmospheric pressure)
+- No toxic fumes or odor
+- Compatible with all disperse dye classes
+- Biodegradable formula
+
+### Comparison: Carrier vs. Carrier-Free
+
+| Parameter | With Carrier | Gropers DPE |
+|-----------|-------------|-------------|
+| Temperature | 98°C | 98-100°C |
+| Color depth (K/S) | 18-20 | **17-19** |
+| Wash fastness | 4 | **4-5** |
+| Light fastness | 5-6 | **5-6** |
+| Worker safety | ⚠ Risk | ✅ Safe |
+| Wastewater | Hazardous | ✅ Clean |
+
+### Recipe for Dark Navy Polyester
+
+1. **Levelling**: Grogal PES — 1 g/L
+2. **Dispersing**: Gropers DPE — 3-5 g/L
+3. **pH Buffer**: Grocid BFF — 1 g/L (pH 4.5-5.0)
+4. **Dye**: Disperse Navy Blue — as required
+5. **Temperature**: Raise to 98°C at 1°C/min, hold 60 min
+6. **Reduction clear**: NaOH + Na₂S₂O₄ at 70°C, 20 min
+
+### ROI: Beyond Health & Safety
+
+Switching to carrier-free dyeing also saves money:
+- Elimination of carrier cost: **€2-4/kg saving**
+- Reduced exhaust system maintenance
+- Lower wastewater treatment costs
+- OEKO-TEX and GOTS compliance
+
+*Request a trial batch with Gropers DPE — our technical team will guide you through the transition.*`,
+
+        content_tr: `## Geleneksel Carrier'ların Sorunu
+
+Konvansiyonel carrier'lar (bifenil, klorobenzen türevleri) polyester liflerini şişirerek atmosferik basınçta boya penetrasyonunu sağlar. Ancak ciddi sorunlara yol açar:
+
+- **Toksik buharlar** — pahalı egzoz sistemleri gerektirir
+- **Çevre kirliliği** — birçoğu tehlikeli atık sınıfında
+- **Sağlık riskleri** — cilt tahrişi, solunum sorunları
+- **Koku kontaminasyonu** — bitmiş kumaşlarda kalıcı koku
+
+### Çözüm: Gropers DPE Sistemi
+
+**Gropers DPE** carrier'sız polyester boyama yardımcısıdır:
+- 98-100°C'de çalışır (atmosferik basınç)
+- Toksik buhar veya koku yok
+- Tüm dispers boya sınıflarıyla uyumlu
+- Biyolojik olarak parçalanabilir
+
+### Carrier vs. Carrier'sız Karşılaştırma
+
+| Parametre | Carrier İle | Gropers DPE |
+|-----------|-------------|-------------|
+| Renk derinliği | 18-20 K/S | **17-19 K/S** |
+| Yıkama haslığı | 4 | **4-5** |
+| İşçi güvenliği | ⚠ Risk | ✅ Güvenli |
+| Atıksu | Tehlikeli | ✅ Temiz |
+
+*Gropers DPE ile deneme partisi talep edin.*`,
+
+        content_fr: `## Le problème des carriers traditionnels
+
+Les carriers conventionnels posent des problèmes de toxicité, pollution et risques sanitaires.
+
+### Gropers DPE : Teinture sans carrier
+
+Auxiliaire de teinture polyester sans carrier, sans APEO:
+- Fonctionne à 98-100°C (pression atmosphérique)
+- Sans fumées toxiques ni odeur
+- Formule biodégradable
+
+*Demandez un lot d'essai avec Gropers DPE.*`,
+
+        content_ar: `## مشكلة الحوامل التقليدية
+
+تسبب الحوامل التقليدية مشاكل في السمية والتلوث والمخاطر الصحية.
+
+### Gropers DPE: صباغة بدون حوامل
+
+- يعمل عند 98-100 درجة مئوية
+- بدون أبخرة سامة
+- صيغة قابلة للتحلل البيولوجي
+
+*اطلب دفعة تجريبية مع Gropers DPE.*`,
+    },
+
+    {
+        id: "6",
+        slug: "textile-stain-removal-guide",
+        category: "guide",
+        author: "Grohn Kimya R&D",
+        date: "2025-07-18",
+        image_url: "/images/washing.png",
+        title_en: "Complete Guide to Industrial Textile Stain Removal",
+        title_tr: "Endüstriyel Tekstil Leke Çıkarma Rehberi",
+        title_fr: "Guide complet de détachage textile industriel",
+        title_ar: "الدليل الكامل لإزالة البقع النسيجية الصناعية",
+        excerpt_en: "A systematic approach to identifying and removing the most common industrial stains: oil, sizing residue, rust, and dye spots in textile production.",
+        excerpt_tr: "Tekstil üretiminde en sık karşılaşılan endüstriyel lekeleri tanımlama ve çıkarma: yağ, haşıl kalıntısı, pas ve boya lekeleri.",
+        excerpt_fr: "Une approche systématique pour identifier et éliminer les taches industrielles les plus courantes dans la production textile.",
+        excerpt_ar: "نهج منهجي لتحديد وإزالة البقع الصناعية الأكثر شيوعًا في إنتاج المنسوجات.",
+        tags_en: ["stain removal", "oil removal", "Grosol", "pre-treatment", "quality control"],
+        content_en: `## Why Stain Removal Matters
+
+Stains in fabric production lead to:
+- Customer rejections and returns (+5-15% waste)
+- Re-processing costs (energy, water, chemicals)
+- Delivery delays and reputation damage
+
+### Stain Identification Chart
+
+| Stain Type | Appearance | Common Source | Solution |
+|-----------|-----------|---------------|----------|
+| **Machine oil** | Dark spots, greasy feel | Loom, finishing | Grosol ORC emulsifier |
+| **Sizing residue** | White/stiff patches | Incomplete desizing | Grozyme AML re-treatment |
+| **Rust spots** | Orange/brown marks | Metal parts, water | Acid treatment + Groseq |
+| **Dye spots** | Colored marks | Dye splashes | Reduction clearing |
+| **Silicone marks** | Shiny patches | Softener buildup | Grosol SLC stripper |
+
+### Oil & Grease Removal Protocol
+
+**Grosol ORC** — our specialist oil stain remover:
+
+1. Apply Grosol ORC at 5-10 g/L
+2. Add Growet ELF wetting agent at 1 g/L
+3. Temperature: 60-80°C
+4. Time: 20-30 minutes
+5. Rinse thoroughly with warm water
+
+**For stubborn machine oil stains:**
+- Increase Grosol ORC to 15 g/L
+- Add Grosol HVY (heavy-duty degreaser) at 3-5 g/L
+- Extend treatment to 45 minutes at 80°C
+
+### Prevention is Better Than Cure
+
+Best practices to minimize staining:
+1. Regular machine maintenance and lubrication schedules
+2. Use food-grade machine oils where possible
+3. Implement edge trimming to remove selvedge stains
+4. Install water filtration to prevent rust contamination
+5. Clean softener application systems regularly
+
+*Need help with a specific stain problem? Send us a sample and our lab will diagnose the issue.*`,
+
+        content_tr: `## Leke Çıkarma Neden Önemli?
+
+Kumaş üretiminde lekeler:
+- Müşteri reddi ve iadeler (%5-15 fire)
+- Yeniden işleme maliyetleri
+- Teslimat gecikmeleri
+
+### Leke Tanımlama Tablosu
+
+| Leke Tipi | Görünüm | Kaynak | Çözüm |
+|-----------|---------|--------|-------|
+| **Makine yağı** | Koyu lekeler | Dokuma tezgahı | Grosol ORC |
+| **Haşıl kalıntısı** | Beyaz/sert bölgeler | Haşıl sökme eksik | Grozyme AML |
+| **Pas lekeleri** | Turuncu/kahve | Metal parçalar | Asit + Groseq |
+| **Boya lekeleri** | Renkli lekeler | Boya sıçraması | Redüksiyon |
+| **Silikon izleri** | Parlak bölgeler | Yumuşatıcı birikimi | Grosol SLC |
+
+### Yağ ve Gres Çıkarma Protokolü
+
+1. Grosol ORC: 5-10 g/L
+2. Growet ELF: 1 g/L
+3. Sıcaklık: 60-80°C
+4. Süre: 20-30 dakika
+5. Ilık su ile durulama
+
+*Belirli bir leke sorununuz mu var? Numune gönderin, laboratuvarımız sorunu teşhis etsin.*`,
+
+        content_fr: `## Guide de détachage textile industriel
+
+Les taches dans la production textile entraînent des rejets clients et des coûts de retraitement.
+
+### Les solutions Grosol
+
+| Type de tache | Solution |
+|------|----------|
+| Huile de machine | Grosol ORC (5-10 g/L) |
+| Résidu d'encollage | Grozyme AML |
+| Taches de rouille | Traitement acide + Groseq |
+
+*Envoyez-nous un échantillon — notre laboratoire diagnostiquera le problème.*`,
+
+        content_ar: `## لماذا إزالة البقع مهمة؟
+
+تؤدي البقع في إنتاج النسيج إلى رفض العملاء وتكاليف إعادة المعالجة.
+
+### حلول Grosol
+
+| نوع البقعة | الحل |
+|-----------|------|
+| زيت الماكينة | Grosol ORC |
+| بقايا النشا | Grozyme AML |
+| بقع الصدأ | معالجة حمضية + Groseq |
+
+*أرسل لنا عينة — سيقوم مختبرنا بتشخيص المشكلة.*`,
+    },
 ];
+

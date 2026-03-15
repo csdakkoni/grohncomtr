@@ -5,6 +5,7 @@ import { routing } from '@/i18n/routing';
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import "../globals.css";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://grohn.com.tr';
@@ -134,6 +135,7 @@ export default async function LocaleLayout({
                 <OrganizationJsonLd />
             </head>
             <body className="min-h-screen bg-primary text-text-primary antialiased flex flex-col">
+                <GoogleAnalytics />
                 <NextIntlClientProvider messages={messages}>
                     <Header />
                     <main className="flex-1">
