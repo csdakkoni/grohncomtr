@@ -42,10 +42,6 @@ export interface Product {
     description_ar: string;
     image_url: string;
     is_featured: boolean;
-    cas_number?: string;
-    chemical_formula?: string;
-    purity?: string;
-    einecs_number?: string;
 }
 
 
@@ -95,6 +91,24 @@ export const MOCK_CATEGORIES: Category[] = [
         name_tr: "Arıtma Kimyasalları", name_en: "Water Treatment Chemicals",
         name_fr: "Produits de Traitement de l'Eau", name_ar: "كيماويات معالجة المياه",
         image_url: "/images/water-treatment.png"
+    },
+    {
+        id: "baski", slug: "baski",
+        name_tr: "Baskı Kimyasalları", name_en: "Printing Chemicals",
+        name_fr: "Produits d'Impression", name_ar: "كيماويات الطباعة",
+        image_url: "/images/dyeing.png"
+    },
+    {
+        id: "kopuk-kesici", slug: "kopuk-kesici",
+        name_tr: "Köpük Kesiciler", name_en: "Antifoams & Defoamers",
+        name_fr: "Anti-mousse", name_ar: "مضادات الرغوة",
+        image_url: "/images/pretreatment.png"
+    },
+    {
+        id: "fiksatorler", slug: "fiksatorler",
+        name_tr: "Fiksatörler", name_en: "Fixing Agents",
+        name_fr: "Agents de Fixation", name_ar: "عوامل التثبيت",
+        image_url: "/images/dyeing.png"
     },
 ];
 
@@ -184,6 +198,32 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
     {
         id: "renk-giderme", category_id: "aritma", slug: "renk-giderme", prefix: "Growat",
         name_tr: "Renk Giderme & Dekolorizasyon", name_en: "Color Removal & Decolorization", name_fr: "Élimination de la Couleur", name_ar: "إزالة اللون"
+    },
+
+    // — Baskı —
+    {
+        id: "pigment-baski", category_id: "baski", slug: "pigment-baski", prefix: "Groprint",
+        name_tr: "Pigment Baskı Yardımcıları", name_en: "Pigment Printing Auxiliaries", name_fr: "Auxiliaires d'Impression Pigmentaire", name_ar: "مساعدات الطباعة الصبغية"
+    },
+    {
+        id: "reaktif-baski", category_id: "baski", slug: "reaktif-baski", prefix: "Groprint",
+        name_tr: "Reaktif Baskı Yardımcıları", name_en: "Reactive Printing Auxiliaries", name_fr: "Auxiliaires d'Impression Réactive", name_ar: "مساعدات الطباعة التفاعلية"
+    },
+
+    // — Köpük Kesici —
+    {
+        id: "silikon-kopuk-kesici", category_id: "kopuk-kesici", slug: "silikon-kopuk-kesici", prefix: "Grofoam",
+        name_tr: "Silikon Bazlı Köpük Kesiciler", name_en: "Silicone-Based Antifoams", name_fr: "Anti-mousse à Base de Silicone", name_ar: "مضادات رغوة سيليكونية"
+    },
+    {
+        id: "mineral-kopuk-kesici", category_id: "kopuk-kesici", slug: "mineral-kopuk-kesici", prefix: "Grofoam",
+        name_tr: "Mineral Bazlı Köpük Kesiciler", name_en: "Mineral-Based Antifoams", name_fr: "Anti-mousse à Base Minérale", name_ar: "مضادات رغوة معدنية"
+    },
+
+    // — Fiksatörler —
+    {
+        id: "renk-fiksatorleri", category_id: "fiksatorler", slug: "renk-fiksatorleri", prefix: "Grofiks",
+        name_tr: "Renk Fiksatörleri", name_en: "Color Fixing Agents", name_fr: "Agents de Fixation de Couleur", name_ar: "عوامل تثبيت اللون"
     },
 ];
 
@@ -768,5 +808,209 @@ export const MOCK_PRODUCTS: Product[] = [
         description_fr: "Régulateur de pH. Équilibre optimal du pH.",
         description_ar: "منظم الأس الهيدروجيني. توازن مثالي في عمليات المعالجة.",
         image_url: "/images/water-treatment.png", is_featured: false
+    },
+
+    // ══════════════════════════════════════════════
+    // BASKI → Pigment Baskı (Groprint)
+    // ══════════════════════════════════════════════
+    {
+        id: "53", category_id: "baski", subgroup_id: "pigment-baski", slug: "groprint-bnd",
+        name: "Groprint BND", ionic_type: "anionic",
+        title_tr: "Groprint BND", title_en: "Groprint BND", title_fr: "Groprint BND", title_ar: "Groprint BND",
+        description_tr: "Pigment baskı binder'ı. Yüksek haslık, yumuşak tuşe, düşük formaldehit.",
+        description_en: "Pigment printing binder. High fastness, soft hand feel, low formaldehyde.",
+        description_fr: "Liant d'impression pigmentaire. Haute solidité, toucher doux.",
+        description_ar: "رابط الطباعة الصبغية. ثبات عالي، ملمس ناعم.",
+        image_url: "/images/dyeing.png", is_featured: true
+    },
+    {
+        id: "54", category_id: "baski", subgroup_id: "pigment-baski", slug: "groprint-thk",
+        name: "Groprint THK", ionic_type: "anionic",
+        title_tr: "Groprint THK", title_en: "Groprint THK", title_fr: "Groprint THK", title_ar: "Groprint THK",
+        description_tr: "Sentetik kıvamlaştırıcı. Pigment baskıda keskin desen hatları, kolay yıkanabilir.",
+        description_en: "Synthetic thickener. Sharp pattern definition in pigment printing, easy wash-off.",
+        description_fr: "Épaississant synthétique pour impression pigmentaire.",
+        description_ar: "مكثف صناعي. خطوط تصميم حادة في الطباعة الصبغية.",
+        image_url: "/images/dyeing.png", is_featured: false
+    },
+    {
+        id: "55", category_id: "baski", subgroup_id: "pigment-baski", slug: "groprint-sfr",
+        name: "Groprint SFR", ionic_type: "nonionic",
+        title_tr: "Groprint SFR", title_en: "Groprint SFR", title_fr: "Groprint SFR", title_ar: "Groprint SFR",
+        description_tr: "Pigment baskı yumuşatıcısı. Baskı sonrası kumaş sertliğini giderir.",
+        description_en: "Pigment print softener. Eliminates fabric stiffness after printing.",
+        description_fr: "Adoucissant d'impression. Élimine la raideur du tissu.",
+        description_ar: "منعم الطباعة الصبغية. يزيل تصلب القماش بعد الطباعة.",
+        image_url: "/images/dyeing.png", is_featured: false
+    },
+
+    // BASKI → Reaktif Baskı (Groprint)
+    {
+        id: "56", category_id: "baski", subgroup_id: "reaktif-baski", slug: "groprint-alg",
+        name: "Groprint ALG", ionic_type: "anionic",
+        title_tr: "Groprint ALG", title_en: "Groprint ALG", title_fr: "Groprint ALG", title_ar: "Groprint ALG",
+        description_tr: "Reaktif baskı kıvamlaştırıcısı. Yüksek renk verimi, mükemmel desen netliği.",
+        description_en: "Reactive printing thickener. High color yield, excellent pattern clarity.",
+        description_fr: "Épaississant pour impression réactive. Haut rendement de couleur.",
+        description_ar: "مكثف الطباعة التفاعلية. إنتاج لون عالي، وضوح تصميم ممتاز.",
+        image_url: "/images/dyeing.png", is_featured: true
+    },
+    {
+        id: "57", category_id: "baski", subgroup_id: "reaktif-baski", slug: "groprint-ure",
+        name: "Groprint URE", ionic_type: "nonionic",
+        title_tr: "Groprint URE", title_en: "Groprint URE", title_fr: "Groprint URE", title_ar: "Groprint URE",
+        description_tr: "Reaktif baskıda nem tutucu. Fiksaj oranını artırır, renk canlılığını yükseltir.",
+        description_en: "Moisture retainer for reactive printing. Improves fixation rate and color vibrancy.",
+        description_fr: "Rétenteur d'humidité pour impression réactive.",
+        description_ar: "مثبت رطوبة للطباعة التفاعلية. يحسن معدل التثبيت.",
+        image_url: "/images/dyeing.png", is_featured: false
+    },
+    {
+        id: "58", category_id: "baski", subgroup_id: "reaktif-baski", slug: "groprint-oxd",
+        name: "Groprint OXD", ionic_type: "nonionic",
+        title_tr: "Groprint OXD", title_en: "Groprint OXD", title_fr: "Groprint OXD", title_ar: "Groprint OXD",
+        description_tr: "Baskı sonrası oksidatif yıkama ajanı. Fiksaj olmayan boyayı uzaklaştırır.",
+        description_en: "Post-printing oxidative wash agent. Removes unfixed dye.",
+        description_fr: "Agent de lavage oxydatif post-impression.",
+        description_ar: "عامل غسيل مؤكسد بعد الطباعة. يزيل الصبغة غير المثبتة.",
+        image_url: "/images/dyeing.png", is_featured: false
+    },
+
+    // ══════════════════════════════════════════════
+    // KÖPÜK KESİCİ → Silikon Bazlı (Grofoam)
+    // ══════════════════════════════════════════════
+    {
+        id: "59", category_id: "kopuk-kesici", subgroup_id: "silikon-kopuk-kesici", slug: "grofoam-sl",
+        name: "Grofoam SL", ionic_type: "nonionic",
+        title_tr: "Grofoam SL", title_en: "Grofoam SL", title_fr: "Grofoam SL", title_ar: "Grofoam SL",
+        description_tr: "Silikon emülsiyon köpük kesici. Tüm yaş proseslere uygun, uzun süreli etki.",
+        description_en: "Silicone emulsion antifoam. Suitable for all wet processes, long-lasting effect.",
+        description_fr: "Anti-mousse émulsion silicone. Pour tous les procédés humides.",
+        description_ar: "مضاد رغوة مستحلب سيليكوني. مناسب لجميع العمليات الرطبة.",
+        image_url: "/images/pretreatment.png", is_featured: true
+    },
+    {
+        id: "60", category_id: "kopuk-kesici", subgroup_id: "silikon-kopuk-kesici", slug: "grofoam-sl-cons",
+        name: "Grofoam SL Cons", ionic_type: "nonionic",
+        title_tr: "Grofoam SL Cons", title_en: "Grofoam SL Cons", title_fr: "Grofoam SL Cons", title_ar: "Grofoam SL Cons",
+        description_tr: "Konsantre silikon köpük kesici. Düşük dozajda yüksek verim, jet makinelerine uygun.",
+        description_en: "Concentrated silicone antifoam. High efficiency at low dosage, suitable for jet machines.",
+        description_fr: "Anti-mousse silicone concentré. Haute efficacité à faible dose.",
+        description_ar: "مضاد رغوة سيليكوني مركز. كفاءة عالية بجرعة منخفضة.",
+        image_url: "/images/pretreatment.png", is_featured: false
+    },
+
+    // KÖPÜK KESİCİ → Mineral Bazlı (Grofoam)
+    {
+        id: "61", category_id: "kopuk-kesici", subgroup_id: "mineral-kopuk-kesici", slug: "grofoam-mn",
+        name: "Grofoam MN", ionic_type: "nonionic",
+        title_tr: "Grofoam MN", title_en: "Grofoam MN", title_fr: "Grofoam MN", title_ar: "Grofoam MN",
+        description_tr: "Mineral bazlı köpük kesici. Ağartma ve kasar proseslerinde leke bırakmaz.",
+        description_en: "Mineral-based antifoam. No staining in bleaching and scouring processes.",
+        description_fr: "Anti-mousse minéral. Sans taches dans les procédés de blanchiment.",
+        description_ar: "مضاد رغوة معدني. بدون بقع في عمليات التبييض.",
+        image_url: "/images/pretreatment.png", is_featured: false
+    },
+    {
+        id: "62", category_id: "kopuk-kesici", subgroup_id: "mineral-kopuk-kesici", slug: "grofoam-ht",
+        name: "Grofoam HT", ionic_type: "nonionic",
+        title_tr: "Grofoam HT", title_en: "Grofoam HT", title_fr: "Grofoam HT", title_ar: "Grofoam HT",
+        description_tr: "Yüksek sıcaklık köpük kesici. 130°C'ye kadar stabil, HT boyama ve buhar proseslerine özel.",
+        description_en: "High temperature antifoam. Stable up to 130°C, for HT dyeing and steaming processes.",
+        description_fr: "Anti-mousse haute température. Stable jusqu'à 130°C.",
+        description_ar: "مضاد رغوة للحرارة العالية. مستقر حتى 130 درجة مئوية.",
+        image_url: "/images/pretreatment.png", is_featured: false
+    },
+
+    // ══════════════════════════════════════════════
+    // FİKSATÖRLER → Renk Fiksatörleri (Grofiks)
+    // ══════════════════════════════════════════════
+    {
+        id: "63", category_id: "fiksatorler", subgroup_id: "renk-fiksatorleri", slug: "grofiks-rct",
+        name: "Grofiks RCT", ionic_type: "cationic",
+        title_tr: "Grofiks RCT", title_en: "Grofiks RCT", title_fr: "Grofiks RCT", title_ar: "Grofiks RCT",
+        description_tr: "Reaktif boya fiksatörü. Yıkama haslığını 1-2 puan artırır, renk tonunu değiştirmez.",
+        description_en: "Reactive dye fixer. Improves wash fastness by 1-2 points without shade change.",
+        description_fr: "Fixateur pour colorants réactifs. Améliore la solidité au lavage.",
+        description_ar: "مثبت الصبغة التفاعلية. يحسن ثبات الغسيل 1-2 درجة.",
+        image_url: "/images/dyeing.png", is_featured: true
+    },
+    {
+        id: "64", category_id: "fiksatorler", subgroup_id: "renk-fiksatorleri", slug: "grofiks-drt",
+        name: "Grofiks DRT", ionic_type: "cationic",
+        title_tr: "Grofiks DRT", title_en: "Grofiks DRT", title_fr: "Grofiks DRT", title_ar: "Grofiks DRT",
+        description_tr: "Direkt boya fiksatörü. Formaldehitsiz, ışık haslığını etkilemez.",
+        description_en: "Direct dye fixer. Formaldehyde-free, does not affect light fastness.",
+        description_fr: "Fixateur pour colorants directs. Sans formaldéhyde.",
+        description_ar: "مثبت الصبغة المباشرة. خالي من الفورمالديهايد.",
+        image_url: "/images/dyeing.png", is_featured: false
+    },
+    {
+        id: "65", category_id: "fiksatorler", subgroup_id: "renk-fiksatorleri", slug: "grofiks-unv",
+        name: "Grofiks UNV", ionic_type: "cationic",
+        title_tr: "Grofiks UNV", title_en: "Grofiks UNV", title_fr: "Grofiks UNV", title_ar: "Grofiks UNV",
+        description_tr: "Universal fiksatör. Reaktif, direkt ve küp boyalar için çok amaçlı kullanım.",
+        description_en: "Universal fixer. Multi-purpose for reactive, direct and vat dyes.",
+        description_fr: "Fixateur universel. Multi-usage pour colorants réactifs, directs et de cuve.",
+        description_ar: "مثبت عالمي. متعدد الاستخدامات للأصباغ التفاعلية والمباشرة.",
+        image_url: "/images/dyeing.png", is_featured: false
+    },
+    {
+        id: "66", category_id: "fiksatorler", subgroup_id: "renk-fiksatorleri", slug: "grofiks-lf",
+        name: "Grofiks LF", ionic_type: "cationic",
+        title_tr: "Grofiks LF", title_en: "Grofiks LF", title_fr: "Grofiks LF", title_ar: "Grofiks LF",
+        description_tr: "Düşük formaldehit fiksatör. Oeko-Tex standartlarına uygun, bebek tekstili için ideal.",
+        description_en: "Low formaldehyde fixer. Oeko-Tex compliant, ideal for baby textiles.",
+        description_fr: "Fixateur faible en formaldéhyde. Conforme Oeko-Tex, idéal pour bébé.",
+        description_ar: "مثبت منخفض الفورمالديهايد. متوافق مع Oeko-Tex، مثالي لملابس الأطفال.",
+        image_url: "/images/dyeing.png", is_featured: false
+    },
+
+    // ══════════════════════════════════════════════
+    // BOYAMA → Ek Ürünler (Anti-kırık, Alkali Donör)
+    // ══════════════════════════════════════════════
+    {
+        id: "67", category_id: "boyama", subgroup_id: "dispergatorler", slug: "grogal-acr",
+        name: "Grogal ACR", ionic_type: "nonionic",
+        title_tr: "Grogal ACR", title_en: "Grogal ACR", title_fr: "Grogal ACR", title_ar: "Grogal ACR",
+        description_tr: "Anti-kırık ajanı. Jet ve overflow makinelerinde kumaş kırık izlerini önler.",
+        description_en: "Anti-crease agent. Prevents fabric crease marks in jet and overflow machines.",
+        description_fr: "Agent anti-pli. Prévient les marques de plis dans les machines jet.",
+        description_ar: "عامل مضاد للتجعد. يمنع علامات التجعد في ماكينات الجيت.",
+        image_url: "/images/dyeing.png", is_featured: false
+    },
+    {
+        id: "68", category_id: "boyama", subgroup_id: "dispergatorler", slug: "grogal-alk",
+        name: "Grogal ALK", ionic_type: "nonionic",
+        title_tr: "Grogal ALK", title_en: "Grogal ALK", title_fr: "Grogal ALK", title_ar: "Grogal ALK",
+        description_tr: "Alkali donör. Reaktif boyamada kontrollü pH yükselmesi, düzgün fiksaj.",
+        description_en: "Alkali donor. Controlled pH rise in reactive dyeing for uniform fixation.",
+        description_fr: "Donneur d'alcali. Montée contrôlée du pH en teinture réactive.",
+        description_ar: "مانح قلوي. ارتفاع متحكم في الأس الهيدروجيني للتثبيت المنتظم.",
+        image_url: "/images/dyeing.png", is_featured: false
+    },
+
+    // ══════════════════════════════════════════════
+    // APRE → Ek Fonksiyonel Ürünler
+    // ══════════════════════════════════════════════
+    {
+        id: "69", category_id: "apre", subgroup_id: "fonksiyonel-apreler", slug: "grofix-nir",
+        name: "Grofix NIR", ionic_type: "nonionic",
+        title_tr: "Grofix NIR", title_en: "Grofix NIR", title_fr: "Grofix NIR", title_ar: "Grofix NIR",
+        description_tr: "Buruşmazlık apresi (non-iron). Pamuk ve karışımlarda kalıcı ütüsüz etki.",
+        description_en: "Non-iron finish. Permanent wrinkle-free effect on cotton and blends.",
+        description_fr: "Finition sans repassage. Effet anti-pli permanent sur coton.",
+        description_ar: "تشطيب بدون كي. تأثير دائم مضاد للتجعد على القطن.",
+        image_url: "/images/finishing.png", is_featured: false
+    },
+    {
+        id: "70", category_id: "apre", subgroup_id: "fonksiyonel-apreler", slug: "grofix-uvp",
+        name: "Grofix UVP", ionic_type: "nonionic",
+        title_tr: "Grofix UVP", title_en: "Grofix UVP", title_fr: "Grofix UVP", title_ar: "Grofix UVP",
+        description_tr: "UV koruma apresi. UPF 50+ koruma, outdoor kumaşlar için gerekli.",
+        description_en: "UV protection finish. UPF 50+ protection, essential for outdoor fabrics.",
+        description_fr: "Finition protection UV. Protection UPF 50+ pour tissus d'extérieur.",
+        description_ar: "تشطيب حماية من الأشعة فوق البنفسجية. حماية UPF 50+.",
+        image_url: "/images/finishing.png", is_featured: false
     },
 ];

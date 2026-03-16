@@ -1110,6 +1110,371 @@ Solutions Growat pour la récupération d'eau :
 
 *استشرنا لدراسة مجانية.*`,
     },
+    // ═══════════════════════════════════════════
+    // TEXTILE CHEMISTRY BLOG POSTS
+    // ═══════════════════════════════════════════
+    {
+        id: "10",
+        slug: "silicone-softener-selection-guide",
+        category: "guide",
+        author: "Grohn Kimya R&D",
+        date: "2026-03-15",
+        image_url: "/images/softeners.png",
+        title_tr: "Kumaşınıza Hangi Silikon Yumuşatıcı Uygun? Doğru Seçim Rehberi",
+        title_en: "Which Silicone Softener is Right for Your Fabric? A Selection Guide",
+        title_fr: "Quel Adoucissant Silicone pour Votre Tissu ? Guide de Sélection",
+        title_ar: "أي منعم سيليكون يناسب قماشك؟ دليل الاختيار",
+        excerpt_tr: "Mikro emülsiyon, makro emülsiyon, amino silikon... Hangi tip yumuşatıcı hangi kumaşta en iyi sonucu verir?",
+        excerpt_en: "Micro emulsion, macro emulsion, amino silicone... Which softener type gives the best result on which fabric?",
+        excerpt_fr: "Micro émulsion, macro émulsion, amino silicone... Quel type donne le meilleur résultat ?",
+        excerpt_ar: "مستحلب دقيق، مستحلب كبير، أمينو سيليكون... أي نوع يعطي أفضل نتيجة؟",
+        tags_en: ["softener", "silicone", "fabric finishing", "hand feel", "textile auxiliary"],
+        content_tr: `# Kumaşınıza Hangi Silikon Yumuşatıcı Uygun?
+
+"Kumaşım kaygan olsun ama süblimasyon haslığını bozmasın." "Yumuşak olsun ama su emiciliğini kaybetmesin." — Bu talepler çelişkili gibi görünse de, doğru silikon tipi seçimiyle mümkündür.
+
+## Silikon Yumuşatıcı Tipleri ve Özellikleri
+
+### 💧 Mikro Emülsiyon Silikonlar (Grosil MKR)
+
+- **Tuşe:** Parlak, kaygan, elastik
+- **Partikül boyutu:** Çok küçük — kumaş derinliğine nüfuz eder
+- **İdeal kullanım:** Triko, saten, ince dokumalar
+- **Dezavantaj:** Hidrofiliteyi azaltabilir
+
+### 🧴 Amino Silikon Makro Emülsiyonlar (Grosil AMN)
+
+- **Tuşe:** Dolgun, kadifemsi, kalıcı
+- **Özellik:** Kumaş yüzeyine kalıcı film oluşturur
+- **İdeal kullanım:** Pamuklu kumaşlar, havlular, denim
+- **Dezavantaj:** Bazı renklerde sararma yapabilir
+
+### 💨 Hidrofilik Silikonlar (Grosil HYD)
+
+- **Tuşe:** Yumuşak + su emici
+- **Özellik:** Nem yönetimi gerektiren kumaşlar
+- **İdeal kullanım:** Spor giyim, iç giyim, medikal tekstil
+- **Dezavantaj:** Kaygan tuşe vermez
+
+### 🔥 Polyester Özel Silikonlar (Grosil PES)
+
+- **Tuşe:** Kontrollü kaygan
+- **Özellik:** Süblimasyon haslığını etkilemez
+- **İdeal kullanım:** Polyester ve karışımları
+- **Dezavantaj:** Pamuk için yeterli etkiyi vermez
+
+## Hangi Kumaşta Hangi Silikon?
+
+| Kumaş Tipi | Beklenen Tuşe | Önerilen Grosil |
+|------------|---------------|-----------------|
+| Pamuk triko | Yumuşak, dolgun | Grosil AMN |
+| Polyester | Kaygan, parlak | Grosil PES |
+| Spor kumaş | Yumuşak + su emici | Grosil HYD |
+| Saten/ince dokuma | Elastik, parlak | Grosil MKR |
+| Havlu | Dolgun, emici | Grosil HYD |
+| Denim | Kadifemsi | Grosil AMN |
+
+## Dikkat Edilecekler
+
+- ❗ pH kontrolü yapın — çoğu silikon pH 4.5-5.5'te optimum çalışır
+- ❗ Dozaj testini atlamamın — fazla silikon leke yapabilir
+- ❗ Dip banyosu sık değiştirin — silikon birikimi makine lekesi yapar
+
+## Karar Veremiyorsanız?
+
+Kumaş numunenizi gönderin — **Grosil** serimizden en uygun ürünü test edelim. Numune üzerinde karşılaştırmalı uygulama yaparak size raporluyoruz.`,
+        content_en: `# Which Silicone Softener is Right for Your Fabric?
+
+Choosing the wrong silicone softener can ruin sublimation fastness, block water absorption, or leave stains on fabric.
+
+## Softener Types
+
+### 💧 Micro Emulsion Silicones (Grosil MKR)
+- **Hand feel:** Bright, slippery, elastic
+- **Best for:** Knits, satins, fine fabrics
+
+### 🧴 Amino Silicone Macro Emulsions (Grosil AMN)
+- **Hand feel:** Full, velvety, lasting
+- **Best for:** Cotton, towels, denim
+
+### 💨 Hydrophilic Silicones (Grosil HYD)
+- **Hand feel:** Soft + water-absorbing
+- **Best for:** Sportswear, underwear, medical textiles
+
+### 🔥 Polyester-Specific Silicones (Grosil PES)
+- **Hand feel:** Controlled slipperiness
+- **Best for:** Polyester and blends — no sublimation issues
+
+| Fabric | Expected Feel | Recommended |
+|--------|--------------|-------------|
+| Cotton knit | Soft, full | Grosil AMN |
+| Polyester | Slippery, bright | Grosil PES |
+| Sportswear | Soft + absorbent | Grosil HYD |
+| Satin | Elastic, shiny | Grosil MKR |
+
+*Send your fabric sample — we'll test and recommend the perfect Grosil product.*`,
+        content_fr: `# Quel Adoucissant Silicone Choisir ?
+
+| Tissu | Toucher | Recommandé |
+|-------|---------|------------|
+| Coton | Doux, plein | Grosil AMN |
+| Polyester | Glissant | Grosil PES |
+| Sport | Doux + absorbant | Grosil HYD |
+| Satin | Élastique | Grosil MKR |
+
+*Envoyez votre échantillon pour un test comparatif.*`,
+        content_ar: `# أي منعم سيليكون يناسبك؟
+
+| القماش | الملمس | المنتج |
+|--------|--------|--------|
+| قطن | ناعم ممتلئ | Grosil AMN |
+| بوليستر | زلق لامع | Grosil PES |
+| رياضي | ناعم ماص | Grosil HYD |
+| ساتان | مرن لامع | Grosil MKR |
+
+*أرسل عينة للاختبار المقارن.*`,
+    },
+    {
+        id: "11",
+        slug: "low-temperature-dyeing-energy-savings",
+        category: "sustainability",
+        author: "Grohn Kimya R&D",
+        date: "2026-03-16",
+        image_url: "/images/dyeing.png",
+        title_tr: "Düşük Sıcaklıkta Boyama: Enerji Maliyetini %40 Düşürmenin Yolu",
+        title_en: "Low-Temperature Dyeing: How to Cut Energy Costs by 40%",
+        title_fr: "Teinture à Basse Température : Réduire les Coûts Énergétiques de 40%",
+        title_ar: "الصباغة بدرجة حرارة منخفضة: كيف تخفض تكاليف الطاقة 40%",
+        excerpt_tr: "Doğru kimyasal kombinasyonuyla boyama sıcaklığını 20-30°C düşürerek ciddi enerji tasarrufu sağlayın.",
+        excerpt_en: "Achieve significant energy savings by lowering dyeing temperature 20-30°C with the right chemical combination.",
+        excerpt_fr: "Réduisez la température de teinture de 20-30°C avec la bonne combinaison chimique.",
+        excerpt_ar: "حقق وفورات طاقة كبيرة بخفض درجة حرارة الصباغة 20-30 درجة.",
+        tags_en: ["low temperature", "energy saving", "dyeing", "sustainability", "cost reduction"],
+        content_tr: `# Düşük Sıcaklıkta Boyama: Enerji Maliyetinizi %40 Düşürün
+
+Tekstil boyahanelerinde enerji maliyetinin büyük kısmı **banyoyu ısıtmak** için harcanır. Polyester boyamada 130°C, reaktif boyamada 60-80°C gerekir. Peki ya bu sıcaklıkları düşürebilseydiniz?
+
+## Enerji Maliyeti Gerçeği
+
+1 ton kumaş boyamak için gerekli enerji maliyeti:
+
+| Boyama Tipi | Standart Sıcaklık | Enerji Maliyeti |
+|-------------|-------------------|-----------------|
+| Polyester HT | 130°C | Yüksek |
+| Pamuk reaktif | 60-80°C | Orta |
+| Polyester-pamuk | 130°C + 60°C | Çok yüksek |
+
+## Düşük Sıcaklıkta Boyama Nasıl Mümkün?
+
+### Polyester: 130°C → 100°C
+
+Özel carrier ürünlerimiz (**Grocarrier serisi**) polyester lifinin cam geçiş sıcaklığını düşürerek, boya moleküllerinin daha düşük sıcaklıkta life girmesini sağlar.
+
+**Avantajlar:**
+- %30-40 enerji tasarrufu
+- HT basınçlı ekipman gereksiz — normal kazan kullanılabilir
+- Kumaş hasarı riski azalır
+- CO₂ emisyonu düşer
+
+### Reaktif Boyama: 80°C → 60°C
+
+Doğru egalizatör (**Grogal serisi**) ve alkali donör (**Grogal ALK**) kombinasyonuyla fiksaj sıcaklığı düşürülebilir.
+
+### Göz Ardı Edilen Tasarruf
+
+İşlem süresini kısaltmak da enerji tasarrufu sağlar:
+- Gradyan daha kısa → daha az ısıtma süresi
+- Boya emme hızı artar → daha az banyo süresi
+- Yıkama adımları azaltılabilir → daha az sıcak su
+
+## ROI Hesabı
+
+| Kalem | Tutar |
+|-------|-------|
+| Carrier yatırımı | +%5-10 kimyasal maliyeti |
+| Enerji tasarrufu | -%30-40 enerji gideri |
+| Ekipman tasarrufu | HT makinesi yerine normal makineler |
+| CO₂ azaltma | Karbon ayak izi raporlaması avantajı |
+
+**Net tasarruf:** Çoğu boyahanede 6-12 ay geri dönüş süresi.
+
+## Başlamak İçin
+
+1. Mevcut prosesinizi analiz edelim
+2. Düşük sıcaklık reçetesi önerelim
+3. Pilot çalışma yapalım
+4. Haslık karşılaştırması raporlayalım
+
+*Enerji tasarrufu projeniz için ücretsiz teknik danışmanlık sunuyoruz.*`,
+        content_en: `# Low-Temperature Dyeing: Cut Energy Costs by 40%
+
+Most dyehouse energy goes to **heating the bath**. What if you could lower temperatures by 20-30°C?
+
+## How It Works
+
+### Polyester: 130°C → 100°C
+Our **Grocarrier series** enables polyester dyeing at atmospheric pressure by lowering the glass transition temperature.
+- 30-40% energy savings
+- No HT pressure equipment needed
+- Less fabric damage
+
+### Reactive: 80°C → 60°C  
+With proper **Grogal** levelling agents and **Grogal ALK** alkali donor.
+
+## ROI
+
+| Item | Impact |
+|------|--------|
+| Chemical cost | +5-10% |
+| Energy savings | -30-40% |
+| Equipment savings | Normal vs HT machines |
+| Carbon footprint | Improved sustainability reporting |
+
+*Contact us for free energy optimization consulting.*`,
+        content_fr: `# Teinture à Basse Température
+
+Réduisez les températures de 20-30°C pour économiser 30-40% d'énergie.
+
+- **Polyester:** Grocarrier (130°C → 100°C)
+- **Réactif:** Grogal + Grogal ALK (80°C → 60°C)
+
+*Consultez-nous pour l'optimisation énergétique.*`,
+        content_ar: `# الصباغة بدرجة حرارة منخفضة
+
+خفض درجات الحرارة 20-30 درجة لتوفير 30-40% طاقة.
+
+- **بوليستر:** Grocarrier (130°C → 100°C)
+- **تفاعلي:** Grogal + Grogal ALK (80°C → 60°C)
+
+*استشرنا لتحسين الطاقة.*`,
+    },
+    {
+        id: "12",
+        slug: "oeko-tex-gots-compliance-guide",
+        category: "guide",
+        author: "Grohn Kimya R&D",
+        date: "2026-03-16",
+        image_url: "/images/finishing.png",
+        title_tr: "Oeko-Tex ve GOTS Sertifikası İçin Kimyasal Seçim Rehberi",
+        title_en: "Chemical Selection Guide for Oeko-Tex & GOTS Certification",
+        title_fr: "Guide de Sélection Chimique pour Oeko-Tex et GOTS",
+        title_ar: "دليل اختيار المواد الكيميائية لشهادة Oeko-Tex و GOTS",
+        excerpt_tr: "MRSL listesi, yasaklı maddeler ve sürdürülebilir üretim için doğru kimyasal tedarikçisi seçimi.",
+        excerpt_en: "MRSL lists, restricted substances, and selecting the right chemical supplier for sustainable production.",
+        excerpt_fr: "Listes MRSL, substances restreintes et sélection du bon fournisseur chimique.",
+        excerpt_ar: "قوائم MRSL والمواد المقيدة واختيار المورد الكيميائي المناسب.",
+        tags_en: ["Oeko-Tex", "GOTS", "sustainability", "MRSL", "certification", "compliance"],
+        content_tr: `# Oeko-Tex ve GOTS: Kimyasal Seçiminde Nelere Dikkat Etmelisiniz?
+
+Büyük perakende markaları artık tedarikçilerinden **Oeko-Tex Standard 100**, **GOTS** (Global Organic Textile Standard) ve **ZDHC MRSL** uyumluluğu talep ediyor. Yanlış kimyasal kullanımı, tüm bir siparişin reddedilmesine neden olabilir.
+
+## Sertifika Gereksinimleri
+
+### Oeko-Tex Standard 100
+
+Bitmiş üründe zararlı madde limitlerini belirler:
+- APEO-free ürünler zorunlu
+- Formaldehit limitleri (16-75 ppm ürün sınıfına göre)
+- Ağır metal limitleri
+- Belirli azo boyar madde yasakları
+
+### GOTS
+
+Organik tekstil üretiminde kullanılabilecek kimyasalları sınırlar:
+- Doğal veya onaylı sentetik bileşenler
+- Biyolojik ayrışabilirlik gereksinimleri
+- GMO-free hammadde
+- GOTS pozitif listesinde olma zorunluluğu
+
+### ZDHC MRSL
+
+Üretim sürecinde kullanılan kimyasalların kısıtlanması:
+- Manufacturing Restricted Substances List
+- Waste water quality guidelines
+- Chemical management uygulamaları
+
+## Kritik Kontrol Noktaları
+
+| Proses | Risk | Dikkat |
+|--------|------|--------|
+| Yumuşatma | APEO, formaldehit | APEO-free ürün seçimi |
+| Boyama | Azo boyar maddeler | Yasaklı amin listesi kontrolü |
+| Apre | Formaldehit, PFC | C6 flor kimyası veya PFC-free alternatif |
+| Köpük kesici | Mineral yağ kalıntısı | Gıda sınıfı uyumlu ürün |
+| Baskı | VOC emisyonları | Düşük VOC formülasyonlar |
+
+## Grohn Kimya Uyumluluk Desteği
+
+Ürünlerimizin sertifika uyumluluk profili:
+
+- ✅ **Grosil serisi:** APEO-free silikon yumuşatıcılar
+- ✅ **Grofiks LF:** Düşük formaldehit fiksatör — Oeko-Tex uyumlu
+- ✅ **Grocarrier NGS:** APEO-free, düşük VOC carrier
+- ✅ **Grofoam serimiz:** Silikonsuz ve silikon bazlı seçenekler
+- ✅ **Grofix serimiz:** PFC-free su itici alternatifler mevcut
+
+## Sertifikasyon Sürecinde Yanınızdayız
+
+1. 📋 **Ürün uyumluluk kontrolü** — mevcut reçetenizi değerlendirme
+2. 🔄 **Alternatif ürün önerisi** — yasak madde içermeyen ürün geçişi
+3. 📄 **Teknik dokümanlar** — TDS ve SDS belgeleri
+4. 🧪 **Test desteği** — akredite laboratuarlarla iş birliği
+
+*Sertifika hazırlığında ücretsiz uyumluluk danışmanlığı için bize ulaşın.*`,
+        content_en: `# Chemical Selection for Oeko-Tex & GOTS Certification
+
+Major retail brands now demand **Oeko-Tex Standard 100**, **GOTS**, and **ZDHC MRSL** compliance. Wrong chemicals can lead to entire order rejection.
+
+## Key Requirements
+
+### Oeko-Tex Standard 100
+- APEO-free products mandatory
+- Formaldehyde limits (16-75 ppm by product class)
+- Heavy metal limits
+- Specific azo dye bans
+
+### GOTS
+- Approved synthetic or natural components only
+- Biodegradability requirements
+- GOTS positive list compliance
+
+### ZDHC MRSL
+- Manufacturing Restricted Substances List
+- Wastewater quality guidelines
+
+## Critical Control Points
+
+| Process | Risk | Check |
+|---------|------|-------|
+| Softening | APEO, formaldehyde | Use APEO-free products |
+| Dyeing | Azo dyes | Banned amine list check |
+| Finishing | Formaldehyde, PFC | C6 or PFC-free alternatives |
+| Antifoam | Mineral oil residue | Food-grade compatible |
+
+## Grohn Kimya Compliance
+
+- ✅ **Grosil series:** APEO-free silicone softeners
+- ✅ **Grofiks LF:** Low formaldehyde fixer — Oeko-Tex compliant
+- ✅ **Grocarrier NGS:** APEO-free, low VOC carrier
+- ✅ PFC-free water repellent alternatives available
+
+*Contact us for free compliance consulting during certification preparation.*`,
+        content_fr: `# Guide Chimique Oeko-Tex & GOTS
+
+Exigences clés pour la conformité :
+- Produits sans APEO
+- Limites formaldéhyde
+- Produits Grohn conformes disponibles
+
+*Consultez-nous pour un audit de conformité gratuit.*`,
+        content_ar: `# دليل الامتثال لـ Oeko-Tex و GOTS
+
+المتطلبات الرئيسية:
+- منتجات خالية من APEO
+- حدود الفورمالديهايد
+- منتجات Grohn المتوافقة متاحة
+
+*استشرنا لتدقيق امتثال مجاني.*`,
     },
 ];
 
