@@ -39,6 +39,8 @@ export default function Footer() {
                             {[
                                 { key: "about", href: "/about" },
                                 { key: "products", href: "/products" },
+                                { key: "blog", href: "/blog" },
+                                { key: "faq", href: "/faq" },
                                 { key: "contact", href: "/contact" },
                             ].map((link) => (
                                 <li key={link.key}>
