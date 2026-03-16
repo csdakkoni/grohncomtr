@@ -13,7 +13,7 @@ export default function AdminLayout({
 }) {
     return (
         <html lang="tr">
-            <body className="bg-gray-50 min-h-screen text-sm">
+            <body className="admin-body bg-gray-50 min-h-screen text-sm text-gray-900">
                 <AdminShell>
                     {children}
                 </AdminShell>

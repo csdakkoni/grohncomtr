@@ -35,11 +35,15 @@
 
 /* ===== BASE ===== */
 body {
-  background: #0A1628;
-  color: #F1F5F9;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark theme only for public site, not admin */
+body:not(.admin-body) {
+  background: #0A1628;
+  color: #F1F5F9;
 }
 
 /* ===== GLASSMORPHISM ===== */
