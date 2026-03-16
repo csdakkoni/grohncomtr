@@ -111,5 +111,45 @@
     "purity": "Saflık",
     "requestQuote": "Teklif İste",
     "categories": "Kategoriler"
+  },
+  "FAQPage": {
+    "title": "Sıkça Sorulan Sorular",
+    "subtitle": "Ürünlerimiz, hizmetlerimiz ve ihracat kapasitemiz hakkında sık sorulan soruların yanıtları.",
+    "ctaText": "Aradığınızı bulamadınız mı?",
+    "ctaButton": "Bize Ulaşın",
+    "items": {
+      "whatProducts": {
+        "q": "Grohn Kimya hangi tür tekstil kimyasalları üretiyor?",
+        "a": "Ön işlem kimyasalları (ıslatıcılar, haşıl sökme enzimleri, sekestran), boyama yardımcıları (egalite, pH tamponları, dispers edici), terbiye kimyasalları (silikon yumuşatıcılar, sertleştiriciler) ve özel proses kimyasalları üretiyoruz."
+      },
+      "exportCountries": {
+        "q": "Hangi ülkelere ihracat yapıyorsunuz?",
+        "a": "Avrupa, Orta Doğu, Kuzey Afrika, Orta Asya ve Güney Asya'daki 30'dan fazla ülkeye ihracat yapıyoruz. Başlıca pazarlarımız Almanya, İtalya, Fransa, Mısır, Fas, Tunus, Bangladeş, Pakistan ve Özbekistan'dır."
+      },
+      "minOrder": {
+        "q": "Minimum sipariş miktarı nedir?",
+        "a": "Minimum sipariş miktarı ürüne göre değişir. Sıvı kimyasallarda MOQ genellikle 1 IBC (1000 kg), varil ambalajda 200 kg'dır. Yeni müşteriler için deneme miktarlarını görüşebiliriz."
+      },
+      "sampleAvailable": {
+        "q": "Sipariş vermeden önce ücretsiz numune alabilir miyim?",
+        "a": "Evet! Test amaçlı ücretsiz laboratuvar numuneleri (1-5 kg) sağlıyoruz. Teknik ekibimiz denemeleriniz için uygulama kılavuzu ve destek de sunacaktır."
+      },
+      "deliveryTime": {
+        "q": "Tipik teslimat süresi nedir?",
+        "a": "Stok ürünlerde standart üretim ve teslimat 2-3 haftadır. Özel formülasyonlar 3-4 hafta gerektirebilir. Tekirdağ/İstanbul limanlarından konteyner ile sevkiyat yapıyoruz. FOB, CIF ve DDP şartları mevcuttur."
+      },
+      "customFormulation": {
+        "q": "Özel formülasyon yapıyor musunuz?",
+        "a": "Kesinlikle. AR-GE laboratuvarımız, kumaş tiplerinize, makinelerinize ve proses gereksinimlerinize özel formülasyonlar geliştirebilir. Optimizasyon için yerinde teknik destek de sunuyoruz."
+      },
+      "certifications": {
+        "q": "Ürünleriniz hangi sertifikalara sahip?",
+        "a": "Ürünlerimiz ISO 9001 kalite yönetim standartlarına uygundur. Seçili ürünler OEKO-TEX uyumlu ve GOTS onaylıdır. Tüm ürünler için SDS (Güvenlik Bilgi Formu) ve TDS (Teknik Veri Sayfası) sağlıyoruz."
+      },
+      "technicalSupport": {
+        "q": "Teknik destek sağlıyor musunuz?",
+        "a": "Evet, reçete formülasyonu, proses optimizasyonu, sorun giderme ve yerinde ziyaretler dahil kapsamlı teknik destek sunuyoruz. AR-GE ekibimiz tekstil kimyasında 15+ yıl deneyime sahiptir."
+      }
+    }
   }
 }

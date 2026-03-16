@@ -111,5 +111,45 @@
         "purity": "Pureté",
         "requestQuote": "Demander un Devis",
         "categories": "Catégories"
+    },
+    "FAQPage": {
+        "title": "Questions Fréquemment Posées",
+        "subtitle": "Trouvez des réponses aux questions courantes sur nos produits, services et capacités d'exportation.",
+        "ctaText": "Vous ne trouvez pas ce que vous cherchez ?",
+        "ctaButton": "Contactez-nous",
+        "items": {
+            "whatProducts": {
+                "q": "Quels types de produits chimiques textiles Grohn Kimya produit-il ?",
+                "a": "Nous fabriquons une gamme complète incluant les produits de prétraitement, les auxiliaires de teinture, les produits de finition et les produits chimiques spécialisés."
+            },
+            "exportCountries": {
+                "q": "Vers quels pays exportez-vous ?",
+                "a": "Nous exportons vers plus de 30 pays en Europe, au Moyen-Orient, en Afrique du Nord, en Asie centrale et du Sud."
+            },
+            "minOrder": {
+                "q": "Quelle est la quantité minimale de commande ?",
+                "a": "Les quantités minimales varient selon le produit. Pour les produits liquides, le MOQ est généralement de 1 IBC (1000 kg). Nous pouvons discuter de quantités d'essai pour les nouveaux clients."
+            },
+            "sampleAvailable": {
+                "q": "Puis-je obtenir des échantillons gratuits ?",
+                "a": "Oui ! Nous fournissons des échantillons de laboratoire gratuits (1-5 kg) pour les tests. Notre équipe technique fournira des directives d'application."
+            },
+            "deliveryTime": {
+                "q": "Quel est le délai de livraison typique ?",
+                "a": "La production et la livraison standard prennent 2-3 semaines. Nous expédions depuis les ports de Tekirdağ/Istanbul avec des conditions FOB, CIF et DDP."
+            },
+            "customFormulation": {
+                "q": "Proposez-vous des formulations personnalisées ?",
+                "a": "Absolument. Notre laboratoire R&D peut développer des formulations adaptées à vos types de tissus et exigences de process spécifiques."
+            },
+            "certifications": {
+                "q": "Quelles certifications ont vos produits ?",
+                "a": "Nos produits sont conformes aux normes ISO 9001. Certains produits sont compatibles OEKO-TEX et approuvés GOTS. Nous fournissons des fiches SDS et TDS complètes."
+            },
+            "technicalSupport": {
+                "q": "Fournissez-vous un support technique ?",
+                "a": "Oui, nous offrons un support technique complet incluant la formulation de recettes, l'optimisation des procédés et les visites sur site."
+            }
+        }
     }
 }

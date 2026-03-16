@@ -111,5 +111,45 @@
         "purity": "Purity",
         "requestQuote": "Request Quote",
         "categories": "Categories"
+    },
+    "FAQPage": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Find answers to common questions about our products, services, and export capabilities.",
+        "ctaText": "Can't find what you're looking for?",
+        "ctaButton": "Contact Us",
+        "items": {
+            "whatProducts": {
+                "q": "What types of textile chemicals does Grohn Kimya produce?",
+                "a": "We manufacture a comprehensive range including pre-treatment chemicals (wetting agents, desizing enzymes, sequestering agents), dyeing auxiliaries (levelling agents, pH buffers, dispersing agents), finishing chemicals (silicone softeners, stiffeners), and specialty chemicals for specific textile processes."
+            },
+            "exportCountries": {
+                "q": "Which countries do you export to?",
+                "a": "We export to 30+ countries across Europe, Middle East, North Africa, Central Asia, and South Asia. Our key markets include Germany, Italy, France, Egypt, Morocco, Tunisia, Bangladesh, Pakistan, and Uzbekistan."
+            },
+            "minOrder": {
+                "q": "What is the minimum order quantity?",
+                "a": "Minimum order quantities vary by product. For most liquid chemicals, the MOQ is 1 IBC (1000 kg). For drum packaging, minimum is typically 200 kg. We can discuss smaller trial quantities for new customers."
+            },
+            "sampleAvailable": {
+                "q": "Can I get free samples before ordering?",
+                "a": "Yes! We provide free laboratory samples (1-5 kg) for testing purposes. Our technical team will also provide application guidelines and support during your trials."
+            },
+            "deliveryTime": {
+                "q": "What is the typical delivery time?",
+                "a": "Standard production and delivery takes 2-3 weeks for stock items. Custom formulations may require 3-4 weeks. We ship via container from Tekirdağ/Istanbul ports with FOB, CIF, and DDP terms available."
+            },
+            "customFormulation": {
+                "q": "Do you offer custom formulations?",
+                "a": "Absolutely. Our R&D laboratory can develop custom formulations tailored to your specific fabric types, machinery, and process requirements. We also offer on-site technical support for optimization."
+            },
+            "certifications": {
+                "q": "What certifications do your products have?",
+                "a": "Our products comply with ISO 9001 quality management standards. Select products are OEKO-TEX compatible and GOTS approved. We provide complete SDS (Safety Data Sheets) and TDS (Technical Data Sheets) for all products."
+            },
+            "technicalSupport": {
+                "q": "Do you provide technical support?",
+                "a": "Yes, we offer comprehensive technical support including recipe formulation, process optimization, troubleshooting, and on-site visits. Our R&D team has 15+ years of experience in textile chemistry."
+            }
+        }
     }
 }

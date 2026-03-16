@@ -61,6 +61,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             siteName: 'Grohn Kimya',
             locale: locale === 'ar' ? 'ar_SA' : locale === 'fr' ? 'fr_FR' : locale === 'tr' ? 'tr_TR' : 'en_US',
             type: 'website',
+            images: [{
+                url: `${BASE_URL}/images/logo.png`,
+                width: 1200,
+                height: 630,
+                alt: 'Grohn Kimya - Textile Chemical Manufacturer',
+            }],
         },
         twitter: {
             card: 'summary_large_image',
@@ -74,6 +80,26 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         robots: {
             index: true,
             follow: true,
+            googleBot: {
+                index: true,
+                follow: true,
+                'max-video-preview': -1,
+                'max-image-preview': 'large' as const,
+                'max-snippet': -1,
+            },
+        },
+        verification: {
+            google: process.env.GOOGLE_SITE_VERIFICATION || undefined,
+            other: {
+                ...(process.env.BING_SITE_VERIFICATION ? { 'msvalidate.01': process.env.BING_SITE_VERIFICATION } : {}),
+                ...(process.env.YANDEX_SITE_VERIFICATION ? { 'yandex-verification': process.env.YANDEX_SITE_VERIFICATION } : {}),
+            },
+        },
+        other: {
+            'geo.region': 'TR-59',
+            'geo.placename': 'Tekirdağ, Turkey',
+            'geo.position': '41.2;27.5',
+            'ICBM': '41.2, 27.5',
         },
     };
 }
