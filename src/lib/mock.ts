@@ -90,6 +90,12 @@ export const MOCK_CATEGORIES: Category[] = [
         name_fr: "Auxiliaires de Finition", name_ar: "مساعدات التشطيب",
         image_url: "/images/finishing.png"
     },
+    {
+        id: "aritma", slug: "aritma",
+        name_tr: "Arıtma Kimyasalları", name_en: "Water Treatment Chemicals",
+        name_fr: "Produits de Traitement de l'Eau", name_ar: "كيماويات معالجة المياه",
+        image_url: "/images/water-treatment.png"
+    },
 ];
 
 
@@ -168,6 +174,16 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
     {
         id: "antistatik", category_id: "apre", slug: "antistatik", prefix: "Grostat",
         name_tr: "Antistatik Ajanlar", name_en: "Antistatic Agents", name_fr: "Agents Antistatiques", name_ar: "عوامل مضادة للكهرباء الساكنة"
+    },
+
+    // — Arıtma —
+    {
+        id: "flokkulan-koagulan", category_id: "aritma", slug: "flokkulan-koagulan", prefix: "Growat",
+        name_tr: "Flokülasyon & Koagülasyon", name_en: "Flocculation & Coagulation", name_fr: "Floculation et Coagulation", name_ar: "التلبد والتخثر"
+    },
+    {
+        id: "renk-giderme", category_id: "aritma", slug: "renk-giderme", prefix: "Growat",
+        name_tr: "Renk Giderme & Dekolorizasyon", name_en: "Color Removal & Decolorization", name_fr: "Élimination de la Couleur", name_ar: "إزالة اللون"
     },
 ];
 
@@ -666,5 +682,91 @@ export const MOCK_PRODUCTS: Product[] = [
         description_fr: "Agent antistatique cationique.",
         description_ar: "عامل مضاد للكهرباء الساكنة الكاتيوني.",
         image_url: "/images/finishing.png", is_featured: false
+    },
+
+    // ══════════════════════════════════════════════
+    // ARITMA → Flokülasyon & Koagülasyon (Growat)
+    // ══════════════════════════════════════════════
+    {
+        id: "45", category_id: "aritma", subgroup_id: "flokkulan-koagulan", slug: "growat-flk",
+        name: "Growat FLK", ionic_type: "anionic",
+        title_tr: "Growat FLK", title_en: "Growat FLK", title_fr: "Growat FLK", title_ar: "Growat FLK",
+        description_tr: "Anyonik polielektrolit flokülant. Tekstil atıksuyunda askıdaki katı maddelerin çöktürülmesi.",
+        description_en: "Anionic polyelectrolyte flocculant. Settling suspended solids in textile wastewater.",
+        description_fr: "Floculant polyélectrolyte anionique pour eaux usées textiles.",
+        description_ar: "ملبد بولي إلكتروليت أنيوني لمياه الصرف النسيجية.",
+        image_url: "/images/water-treatment.png", is_featured: true
+    },
+    {
+        id: "46", category_id: "aritma", subgroup_id: "flokkulan-koagulan", slug: "growat-cog",
+        name: "Growat COG", ionic_type: "cationic",
+        title_tr: "Growat COG", title_en: "Growat COG", title_fr: "Growat COG", title_ar: "Growat COG",
+        description_tr: "Katyonik koagülant. Boyahane atıksuyunda hızlı flok oluşumu ve çöktürme.",
+        description_en: "Cationic coagulant. Rapid floc formation and settling in dyehouse wastewater.",
+        description_fr: "Coagulant cationique. Formation rapide de flocs.",
+        description_ar: "مخثر كاتيوني. تكوين سريع للندف في مياه صرف المصبغة.",
+        image_url: "/images/water-treatment.png", is_featured: false
+    },
+    {
+        id: "47", category_id: "aritma", subgroup_id: "flokkulan-koagulan", slug: "growat-pac",
+        name: "Growat PAC", ionic_type: "cationic",
+        title_tr: "Growat PAC", title_en: "Growat PAC", title_fr: "Growat PAC", title_ar: "Growat PAC",
+        description_tr: "Polialüminyum klorür bazlı koagülant. Geniş pH aralığında etkili, düşük çamur hacmi.",
+        description_en: "Polyaluminum chloride coagulant. Effective across wide pH range, low sludge volume.",
+        description_fr: "Coagulant à base de polychlorure d'aluminium.",
+        description_ar: "مخثر كلوريد بولي ألومنيوم. فعال في نطاق واسع.",
+        image_url: "/images/water-treatment.png", is_featured: false
+    },
+    {
+        id: "48", category_id: "aritma", subgroup_id: "flokkulan-koagulan", slug: "growat-flk-cons",
+        name: "Growat FLK Cons", ionic_type: "anionic",
+        title_tr: "Growat FLK Cons", title_en: "Growat FLK Cons", title_fr: "Growat FLK Cons", title_ar: "Growat FLK Cons",
+        description_tr: "Konsantre flokülant. Yüksek molekül ağırlıklı, düşük dozla maksimum performans.",
+        description_en: "Concentrated flocculant. High molecular weight, maximum performance at low dosage.",
+        description_fr: "Floculant concentré. Haut poids moléculaire.",
+        description_ar: "ملبد مركز. وزن جزيئي عالي، أداء أقصى بجرعة منخفضة.",
+        image_url: "/images/water-treatment.png", is_featured: false
+    },
+
+    // ARITMA → Renk Giderme & Dekolorizasyon (Growat)
+    {
+        id: "49", category_id: "aritma", subgroup_id: "renk-giderme", slug: "growat-dcl",
+        name: "Growat DCL", ionic_type: "cationic",
+        title_tr: "Growat DCL", title_en: "Growat DCL", title_fr: "Growat DCL", title_ar: "Growat DCL",
+        description_tr: "Katyonik renk giderici. Reaktif ve direkt boya atıksularında yüksek renk giderme oranı.",
+        description_en: "Cationic decolorizer. High color removal rate for reactive and direct dye wastewater.",
+        description_fr: "Décolorant cationique. Élimination efficace des colorants réactifs.",
+        description_ar: "مزيل لون كاتيوني. معدل عالٍ لإزالة لون مياه الصرف.",
+        image_url: "/images/water-treatment.png", is_featured: true
+    },
+    {
+        id: "50", category_id: "aritma", subgroup_id: "renk-giderme", slug: "growat-dcl-cons",
+        name: "Growat DCL Cons", ionic_type: "cationic",
+        title_tr: "Growat DCL Cons", title_en: "Growat DCL Cons", title_fr: "Growat DCL Cons", title_ar: "Growat DCL Cons",
+        description_tr: "Konsantre renk giderici. %50 aktif madde, düşük dozda etkili dekolorizasyon.",
+        description_en: "Concentrated decolorizer. 50% active content, effective decolorization at low dosage.",
+        description_fr: "Décolorant concentré. 50% de matière active.",
+        description_ar: "مزيل لون مركز. 50% مادة فعالة.",
+        image_url: "/images/water-treatment.png", is_featured: false
+    },
+    {
+        id: "51", category_id: "aritma", subgroup_id: "renk-giderme", slug: "growat-oxi",
+        name: "Growat OXI", ionic_type: undefined,
+        title_tr: "Growat OXI", title_en: "Growat OXI", title_fr: "Growat OXI", title_ar: "Growat OXI",
+        description_tr: "Oksidatif renk giderici. İleri oksidasyon ile dirençli boyaların parçalanması.",
+        description_en: "Oxidative decolorizer. Advanced oxidation for breaking down resistant dyes.",
+        description_fr: "Décolorant oxydatif. Oxydation avancée des colorants résistants.",
+        description_ar: "مزيل لون تأكسدي. أكسدة متقدمة لتحلل الأصباغ المقاومة.",
+        image_url: "/images/water-treatment.png", is_featured: false
+    },
+    {
+        id: "52", category_id: "aritma", subgroup_id: "renk-giderme", slug: "growat-phc",
+        name: "Growat PHC", ionic_type: undefined,
+        title_tr: "Growat PHC", title_en: "Growat PHC", title_fr: "Growat PHC", title_ar: "Growat PHC",
+        description_tr: "pH düzenleyici. Arıtma prosesinde optimum pH dengesi, nötralizasyon.",
+        description_en: "pH adjuster. Optimal pH balance and neutralization in treatment processes.",
+        description_fr: "Régulateur de pH. Équilibre optimal du pH.",
+        description_ar: "منظم الأس الهيدروجيني. توازن مثالي في عمليات المعالجة.",
+        image_url: "/images/water-treatment.png", is_featured: false
     },
 ];

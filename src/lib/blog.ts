@@ -735,5 +735,379 @@ Les taches dans la production textile entraînent des rejets clients et des coû
 
 *أرسل لنا عينة — سيقوم مختبرنا بتشخيص المشكلة.*`,
     },
+    // ═══════════════════════════════════════════
+    // WATER TREATMENT BLOG POSTS
+    // ═══════════════════════════════════════════
+    {
+        id: "7",
+        slug: "textile-wastewater-coagulation-flocculation",
+        category: "technical",
+        author: "Grohn Kimya R&D",
+        date: "2026-03-10",
+        image_url: "/images/water-treatment.png",
+        title_tr: "Tekstil Boyahane Atıksuyunda Koagülasyon ve Flokülasyon Prosesinin Optimizasyonu",
+        title_en: "Optimizing Coagulation & Flocculation in Textile Dyehouse Wastewater",
+        title_fr: "Optimisation de la Coagulation et Floculation des Eaux Usées de Teinturerie",
+        title_ar: "تحسين التخثر والتلبد في مياه صرف المصبغة النسيجية",
+        excerpt_tr: "Boyahane atıksularında pH ayarı, koagülant dozajı ve flokülant seçimi ile verimli arıtma yöntemleri.",
+        excerpt_en: "Efficient treatment methods through pH adjustment, coagulant dosage, and flocculant selection in dyehouse wastewater.",
+        excerpt_fr: "Méthodes de traitement efficaces par ajustement du pH et sélection du floculant.",
+        excerpt_ar: "طرق معالجة فعالة من خلال ضبط الأس الهيدروجيني واختيار الملبد.",
+        tags_en: ["wastewater", "coagulation", "flocculation", "dyehouse", "water treatment"],
+        content_tr: `# Tekstil Boyahane Atıksuyunda Koagülasyon ve Flokülasyon
+
+Tekstil endüstrisi, en çok su tüketen ve atıksu üreten sektörlerden biridir. Özellikle boyahane proseslerinden kaynaklanan atıksu, yüksek renk, KOİ (Kimyasal Oksijen İhtiyacı) ve askıda katı madde içerir.
+
+## Neden Koagülasyon & Flokülasyon?
+
+Koagülasyon-flokülasyon, tekstil atıksuyunun fizikokimyasal arıtmasında en yaygın kullanılan yöntemdir:
+
+- **Renk giderme**: %80-95 verimlilik
+- **KOİ azaltma**: %50-70
+- **Askıda katı madde**: %90+ giderme
+- **Maliyet**: Biyolojik arıtmaya göre daha düşük ilk yatırım
+
+## Proses Adımları
+
+### 1. pH Ayarı
+Optimum koagülasyon için pH 6.5-8.0 aralığında olmalıdır. **Growat PHC** ile hassas pH kontrolü sağlanır.
+
+### 2. Koagülasyon
+Koagülant (**Growat COG** veya **Growat PAC**) eklenerek kolloidal partiküller destabilize edilir.
+
+| Koagülant | Doz (ppm) | pH Aralığı | Avantaj |
+|-----------|-----------|------------|---------|
+| Growat COG | 100-500 | 5.5-8.5 | Hızlı flok oluşumu |
+| Growat PAC | 50-300 | 5.0-9.0 | Düşük çamur, geniş pH |
+
+### 3. Flokülasyon
+**Growat FLK** anyonik polielektrolit ile mikro-floklar birleştirilerek büyük, çökebilir floklar oluşturulur.
+
+**Dozlama ipuçları:**
+- Hızlı karıştırma: 1-2 dakika (200 rpm)
+- Yavaş karıştırma: 15-20 dakika (40-60 rpm)
+- Growat FLK dozu: 2-10 ppm
+
+### 4. Çöktürme / Flotasyon
+Floklar yerçekimi ile çöktürülür veya DAF (Çözünmüş Hava Flotasyonu) ile yüzdürülür.
+
+## Jar Test Prosedürü
+
+1. 1L atıksu numunesine pH ayarı yapın
+2. Farklı dozlarda koagülant ekleyerek 1 dk hızlı karıştırın
+3. Flokülant ekleyerek 15 dk yavaş karıştırın
+4. 30 dk çöktürme sonrası üst suyu analiz edin
+
+## Sık Yapılan Hatalar
+
+- ❌ pH kontrolü yapılmadan koagülant eklenmesi
+- ❌ Aşırı dozlama (re-stabilizasyon)
+- ❌ Karıştırma hızının yanlış ayarlanması
+
+*Atıksu numunenizi gönderin — optimum dozaj için jar test yapıyoruz.*`,
+        content_en: `# Optimizing Coagulation & Flocculation in Textile Dyehouse Wastewater
+
+The textile industry is one of the most water-intensive sectors. Dyehouse wastewater contains high color, COD (Chemical Oxygen Demand), and suspended solids that require efficient treatment.
+
+## Why Coagulation & Flocculation?
+
+This is the most widely used physicochemical treatment method for textile wastewater:
+
+- **Color removal**: 80-95% efficiency
+- **COD reduction**: 50-70%
+- **Suspended solids**: 90%+ removal
+- **Cost**: Lower initial investment compared to biological treatment
+
+## Process Steps
+
+### 1. pH Adjustment
+Optimal coagulation requires pH 6.5-8.0. Use **Growat PHC** for precise pH control.
+
+### 2. Coagulation
+Add coagulant (**Growat COG** or **Growat PAC**) to destabilize colloidal particles.
+
+| Coagulant | Dose (ppm) | pH Range | Advantage |
+|-----------|-----------|----------|-----------|
+| Growat COG | 100-500 | 5.5-8.5 | Rapid floc formation |
+| Growat PAC | 50-300 | 5.0-9.0 | Low sludge, wide pH |
+
+### 3. Flocculation
+Add **Growat FLK** anionic polyelectrolyte to bridge micro-flocs into large, settleable flocs.
+
+### 4. Settling / Flotation
+Separate flocs by gravity settling or DAF (Dissolved Air Flotation).
+
+*Send your wastewater sample — we perform jar testing for optimal dosage.*`,
+        content_fr: `# Optimisation de la Coagulation et Floculation des Eaux Usées de Teinturerie
+
+L'industrie textile nécessite un traitement efficace des eaux usées riches en couleur et en DCO.
+
+## Le Procédé
+
+1. **Ajustement du pH** avec Growat PHC (6.5-8.0)
+2. **Coagulation** avec Growat COG ou Growat PAC
+3. **Floculation** avec Growat FLK
+4. **Décantation** ou flottation
+
+*Envoyez votre échantillon — nous effectuons des tests jar.*`,
+        content_ar: `# تحسين التخثر والتلبد في مياه صرف المصبغة النسيجية
+
+تحتاج صناعة النسيج إلى معالجة فعالة لمياه الصرف الغنية بالألوان والأحمال العضوية.
+
+## خطوات العملية
+
+1. ضبط الأس الهيدروجيني باستخدام Growat PHC
+2. التخثر باستخدام Growat COG أو Growat PAC
+3. التلبد باستخدام Growat FLK
+4. الترسيب أو التعويم
+
+*أرسل عينة مياه الصرف — نجري اختبارات الجار.*`,
+    },
+    {
+        id: "8",
+        slug: "textile-wastewater-color-removal-methods",
+        category: "technical",
+        author: "Grohn Kimya R&D",
+        date: "2026-03-12",
+        image_url: "/images/water-treatment.png",
+        title_tr: "Tekstil Atıksularında Renk Giderme Yöntemleri: Kimyasal ve İleri Oksidasyon",
+        title_en: "Color Removal Methods in Textile Wastewater: Chemical and Advanced Oxidation",
+        title_fr: "Méthodes d'Élimination de la Couleur dans les Eaux Usées Textiles",
+        title_ar: "طرق إزالة اللون من مياه الصرف النسيجية",
+        excerpt_tr: "Reaktif, dispers ve direkt boya atıksularında kimyasal renk giderme ve ileri oksidasyon prosesleri.",
+        excerpt_en: "Chemical decolorization and advanced oxidation processes for reactive, disperse and direct dye wastewater.",
+        excerpt_fr: "Procédés de décoloration chimique et oxydation avancée pour les eaux usées de teinture.",
+        excerpt_ar: "عمليات إزالة اللون الكيميائية والأكسدة المتقدمة لمياه صرف الصباغة.",
+        tags_en: ["color removal", "decolorization", "AOP", "reactive dye", "wastewater treatment"],
+        content_tr: `# Tekstil Atıksularında Renk Giderme
+
+Tekstil boyahane atıksuları, farklı boya gruplarına göre farklı arıtma stratejileri gerektirir. Doğru kimyasal seçimi, deşarj standartlarını karşılamak için kritik önem taşır.
+
+## Boya Gruplarına Göre Renk Giderme
+
+### Reaktif Boyalar
+En yaygın boyahane atıksu sorunu. Hidrolize olmuş reaktif boyalar olumsuz yük taşır.
+
+**Çözüm:** **Growat DCL** katyonik renk giderici
+- Doz: 200-800 ppm
+- pH: 7-9 arası optimal
+- Verimlilik: %90-98
+
+### Dispers Boyalar
+Poliester boyama atıksularında görülür. Suda az çözünür, partikül halinde.
+
+**Çözüm:** Koagülasyon (**Growat COG**) + Flokülasyon (**Growat FLK**)
+- Fizikokimyasal çöktürme yeterli
+
+### Direkt Boyalar
+Selülozik lifler için kullanılır. Büyük molekül yapısı.
+
+**Çözüm:** **Growat DCL Cons** konsantre renk giderici
+- Doz: 100-400 ppm
+- Düşük dozda yüksek verim
+
+## İleri Oksidasyon Prosesleri (AOP)
+
+Konvansiyonel yöntemlerle giderilemeyen dirençli boyalar için:
+
+### Growat OXI — Oksidatif Renk Giderme
+- Fenton benzeri reaksiyon
+- Kromofor grupları parçalar
+- KOİ de azaltır
+
+| Parametre | Giriş | Çıkış | Giderme (%) |
+|-----------|-------|-------|-------------|
+| Renk (Pt-Co) | 2000 | 100 | 95% |
+| KOİ (mg/L) | 1200 | 350 | 71% |
+| AKM (mg/L) | 400 | 20 | 95% |
+
+## Arıtma Stratejisi Seçimi
+
+1. **Boya tipini belirle** → analiz
+2. **Jar test** yap → optimal doz
+3. **Pilot uygulama** → ölçekleme
+4. **Sürekli izleme** → dozaj optimizasyonu
+
+*Ücretsiz atıksu analizi ve danışmanlık için bize ulaşın.*`,
+        content_en: `# Color Removal Methods in Textile Wastewater
+
+Textile dyehouse wastewater requires different treatment strategies depending on the dye class. Proper chemical selection is critical for meeting discharge standards.
+
+## Color Removal by Dye Class
+
+### Reactive Dyes
+Most common dyehouse wastewater issue. Hydrolyzed reactive dyes carry negative charge.
+
+**Solution:** **Growat DCL** cationic decolorizer (200-800 ppm, 90-98% efficiency)
+
+### Disperse Dyes
+Found in polyester dyeing wastewater. Poorly soluble, particulate form.
+
+**Solution:** Coagulation (**Growat COG**) + Flocculation (**Growat FLK**)
+
+### Direct Dyes
+Used for cellulosic fibers. Large molecular structure.
+
+**Solution:** **Growat DCL Cons** concentrated decolorizer (100-400 ppm)
+
+## Advanced Oxidation Processes (AOP)
+
+For resistant dyes that conventional methods cannot remove:
+
+### Growat OXI — Oxidative Decolorization
+- Fenton-like reaction
+- Breaks chromophore groups
+- Also reduces COD
+
+| Parameter | Inlet | Outlet | Removal (%) |
+|-----------|-------|--------|-------------|
+| Color (Pt-Co) | 2000 | 100 | 95% |
+| COD (mg/L) | 1200 | 350 | 71% |
+| TSS (mg/L) | 400 | 20 | 95% |
+
+*Contact us for free wastewater analysis and consultation.*`,
+        content_fr: `# Méthodes d'Élimination de la Couleur dans les Eaux Usées Textiles
+
+Les méthodes dépendent du type de colorant utilisé.
+
+## Par Type de Colorant
+
+- **Réactifs:** Growat DCL (décolorant cationique)
+- **Dispersés:** Growat COG + Growat FLK (coagulation-floculation)
+- **Directs:** Growat DCL Cons (concentré)
+
+## Oxydation Avancée
+Growat OXI pour les colorants résistants — réaction de type Fenton.
+
+*Contactez-nous pour une analyse gratuite.*`,
+        content_ar: `# طرق إزالة اللون من مياه الصرف النسيجية
+
+تتطلب مياه صرف المصبغة استراتيجيات مختلفة حسب نوع الصبغة.
+
+## حسب نوع الصبغة
+
+- **الأصباغ التفاعلية:** Growat DCL مزيل لون كاتيوني
+- **الأصباغ المشتتة:** Growat COG + Growat FLK
+- **الأصباغ المباشرة:** Growat DCL Cons مركز
+
+## الأكسدة المتقدمة
+Growat OXI لإزالة الأصباغ المقاومة.
+
+*اتصل بنا للحصول على تحليل مجاني.*`,
+    },
+    {
+        id: "9",
+        slug: "textile-dyehouse-zero-liquid-discharge",
+        category: "sustainability",
+        author: "Grohn Kimya R&D",
+        date: "2026-03-14",
+        image_url: "/images/water-treatment.png",
+        title_tr: "Tekstil Boyahanelerinde Sıfır Sıvı Deşarj (ZLD): Kimyasal Arıtmanın Rolü",
+        title_en: "Zero Liquid Discharge (ZLD) in Textile Dyehouses: The Role of Chemical Treatment",
+        title_fr: "Zéro Rejet Liquide (ZLD) dans les Teintureries Textiles",
+        title_ar: "صفر تصريف سائل (ZLD) في مصابغ النسيج",
+        excerpt_tr: "Su geri kazanımı ve sıfır deşarj hedefinde kimyasal ön arıtmanın kritik rolü.",
+        excerpt_en: "The critical role of chemical pretreatment in water recovery and zero discharge goals.",
+        excerpt_fr: "Le rôle du prétraitement chimique dans la récupération de l'eau et le zéro rejet.",
+        excerpt_ar: "الدور الحاسم للمعالجة الكيميائية المسبقة في استرداد المياه وأهداف صفر التصريف.",
+        tags_en: ["ZLD", "zero liquid discharge", "water recovery", "sustainability", "textile wastewater"],
+        content_tr: `# Sıfır Sıvı Deşarj: Boyahanelerin Geleceği
+
+Artan çevre düzenlemeleri ve su maliyetleri, tekstil boyahanelerini sıfır sıvı deşarj (ZLD) sistemlerine yöneltiyor. Kimyasal ön arıtma, ZLD sistemlerinin verimli çalışması için kritik öneme sahiptir.
+
+## ZLD Nedir?
+
+Sıfır Sıvı Deşarj, atıksuyun %95-100'ünün geri kazanılarak yeniden kullanılmasıdır. Çevreye sıvı atık deşarjı yapılmaz.
+
+## Kimyasal Ön Arıtma Neden Kritik?
+
+Membran sistemleri (UF/RO) ZLD'nin kalbidir, ancak kimyasal ön arıtma olmadan:
+- Membranlar hızla tıkanır
+- Performans düşer
+- Maliyetler katlanır
+
+### Ön Arıtma Prosesi
+
+1. **pH Nötralizasyon**: Growat PHC
+2. **Koagülasyon**: Growat PAC (düşük çamur avantajı)
+3. **Flokülasyon**: Growat FLK Cons
+4. **Renk Giderme**: Growat DCL (membran öncesi kritik)
+5. **Çöktürme / DAF**
+
+## Maliyet Karşılaştırması
+
+| Sistem | m³ başına maliyet | Su geri kazanımı |
+|--------|-------------------|------------------|
+| Sadece biyolojik | 1-2 $/m³ | 0% (deşarj) |
+| Kimyasal + UF | 2-3 $/m³ | 70-80% |
+| Kimyasal + UF + RO | 3-5 $/m³ | 90-95% |
+| Tam ZLD | 5-8 $/m³ | 98-100% |
+
+## Grohn Kimya ZLD Desteği
+
+- Jar test ve pilot çalışma
+- Optimum kimyasal reçete
+- Membran uyumlu ürünler
+- Yerinde teknik destek
+
+*ZLD projeniz için ücretsiz fizibilite danışmanlığı sunuyoruz.*`,
+        content_en: `# Zero Liquid Discharge: The Future of Dyehouses
+
+Stricter regulations and rising water costs are driving textile dyehouses toward Zero Liquid Discharge (ZLD) systems. Chemical pretreatment is critical for ZLD efficiency.
+
+## What is ZLD?
+
+Zero Liquid Discharge recovers 95-100% of wastewater for reuse. No liquid waste is discharged to the environment.
+
+## Why Chemical Pretreatment is Critical
+
+Membrane systems (UF/RO) are the heart of ZLD, but without chemical pretreatment:
+- Membranes foul rapidly
+- Performance decreases
+- Costs multiply
+
+### Pretreatment Process
+
+1. **pH Neutralization**: Growat PHC
+2. **Coagulation**: Growat PAC (low sludge advantage)
+3. **Flocculation**: Growat FLK Cons
+4. **Color Removal**: Growat DCL (critical before membranes)
+5. **Settling / DAF**
+
+## Cost Comparison
+
+| System | Cost per m³ | Water Recovery |
+|--------|-------------|----------------|
+| Biological only | $1-2/m³ | 0% (discharge) |
+| Chemical + UF | $2-3/m³ | 70-80% |
+| Chemical + UF + RO | $3-5/m³ | 90-95% |
+| Full ZLD | $5-8/m³ | 98-100% |
+
+*We offer free feasibility consulting for your ZLD project.*`,
+        content_fr: `# Zéro Rejet Liquide dans les Teintureries
+
+Les réglementations strictes poussent les teintureries vers le ZLD. Le prétraitement chimique est essentiel.
+
+## Processus de Prétraitement
+
+1. Neutralisation pH: Growat PHC
+2. Coagulation: Growat PAC
+3. Floculation: Growat FLK Cons
+4. Décoloration: Growat DCL
+
+*Consultez-nous pour votre projet ZLD.*`,
+        content_ar: `# صفر تصريف سائل: مستقبل المصابغ
+
+تدفع اللوائح الصارمة المصابغ نحو أنظمة ZLD. المعالجة الكيميائية المسبقة ضرورية.
+
+## عملية المعالجة المسبقة
+
+1. معادلة الأس الهيدروجيني: Growat PHC
+2. التخثر: Growat PAC
+3. التلبد: Growat FLK Cons
+4. إزالة اللون: Growat DCL
+
+*استشرنا لمشروع ZLD الخاص بك.*`,
+    },
 ];
 
