@@ -3,6 +3,7 @@ import { Link } from '@/i18n/routing';
 import { BookOpen, ArrowRight, Calendar } from 'lucide-react';
 import { BLOG_POSTS } from '@/lib/blog';
 import { getPageMetadata } from '@/lib/metadata';
+import Image from 'next/image';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     // eslint-disable-next-line @typescript-eslint/await-thenable
@@ -68,11 +69,11 @@ export default async function BlogPage({
                             >
                                 {/* Image */}
                                 <div className="relative h-48 overflow-hidden">
-                                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                                    <img
+                                    <Image
                                         src={post.image_url}
                                         alt=""
-                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                        fill
+                                        className="object-cover group-hover:scale-105 transition-transform duration-500"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent" />
                                     <span className={`absolute top-3 left-3 text-[10px] px-2.5 py-1 rounded-full border font-medium ${CATEGORY_COLORS[post.category]}`}>

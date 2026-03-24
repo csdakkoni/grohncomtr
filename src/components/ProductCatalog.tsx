@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Link } from '@/i18n/routing';
 import { ChevronDown, ArrowRight, Beaker } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 interface ProductCatalogProps {
     categories: any[];
@@ -63,11 +64,12 @@ export default function ProductCatalog({ categories, subgroups, products, locale
                         >
                             {/* Category Image */}
                             <div className="w-12 h-12 rounded-xl overflow-hidden shrink-0 relative">
-                                {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img
+                                <Image
                                     src={category.image_url}
                                     alt=""
                                     className="w-full h-full object-cover opacity-70"
+                                    width={48}
+                                    height={48}
                                 />
                                 <div className="absolute inset-0 bg-accent/10" />
                             </div>

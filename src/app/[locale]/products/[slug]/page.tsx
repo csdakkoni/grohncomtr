@@ -5,6 +5,7 @@ import { Link } from '@/i18n/routing';
 import { ArrowLeft, FileText, Send } from 'lucide-react';
 import { ProductJsonLd, BreadcrumbJsonLd } from '@/components/SEOSchemas';
 import { getPageMetadata } from '@/lib/metadata';
+import Image from 'next/image';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }) {
     // eslint-disable-next-line @typescript-eslint/await-thenable
@@ -74,11 +75,11 @@ export default async function ProductDetailPage({
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
                     {/* Image */}
                     <div className="rounded-2xl overflow-hidden glass h-[350px] lg:h-[450px] relative">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
+                        <Image
                             src={product.image_url}
                             alt={getLocalized(product, 'title')}
-                            className="w-full h-full object-cover opacity-70"
+                            fill
+                            className="object-cover opacity-70"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
                     </div>

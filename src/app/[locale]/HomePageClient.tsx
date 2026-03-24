@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { ArrowRight, ShieldCheck, Globe, FlaskConical, HeadphonesIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const fadeInUp = {
     initial: { opacity: 0, y: 30 },
@@ -117,11 +118,13 @@ export default function HomePage() {
                                 <div className="absolute -inset-8 bg-accent/10 rounded-3xl blur-3xl" />
                                 {/* Image */}
                                 <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/40">
-                                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                                    <img
+                                    <Image
                                         src="/images/hero.png"
                                         alt="Grohn Kimya — Industrial Chemical Solutions"
                                         className="w-full h-[450px] object-cover"
+                                        width={800}
+                                        height={450}
+                                        priority
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent" />
                                 </div>

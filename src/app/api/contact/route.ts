@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
             console.error('Supabase error:', error);
             // Even if Supabase fails, we don't want to lose the message
             // Log it for recovery
-            console.log('CONTACT_FORM_FALLBACK:', JSON.stringify({ name, email, company, subject, message }));
+            console.error('CONTACT_FORM_FALLBACK:', JSON.stringify({ name, email, company, subject, message }));
         }
 
         return NextResponse.json({ success: true });

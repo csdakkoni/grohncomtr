@@ -64,7 +64,6 @@ export async function submitContactMessage(formData: {
     message: string;
 }) {
     if (IS_MOCK_MODE) {
-        console.log('MOCK SUBMISSION:', formData);
         return { success: true };
     }
 
