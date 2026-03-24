@@ -2,6 +2,14 @@ import { getTranslations } from 'next-intl/server';
 import { getCategories, getProducts, getSubgroups } from '@/lib/api';
 import { FlaskConical } from 'lucide-react';
 import ProductCatalog from '@/components/ProductCatalog';
+import { getPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    // eslint-disable-next-line @typescript-eslint/await-thenable
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'Products' });
+    return getPageMetadata(locale, '/products', { title: t('title') });
+}
 
 export default async function ProductsPage({
     params

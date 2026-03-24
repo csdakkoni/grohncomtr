@@ -40,20 +40,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         ar: 'مواد كيميائية نسيجية, مساعدات صباغة, منعمات سيليكون, إنزيمات نسيجية, تركيا',
     };
 
-    // Hreflang alternates
-    const alternateLanguages = Object.fromEntries(
-        LOCALES.map(l => [l, `${BASE_URL}/${l}`])
-    );
-
     return {
         title: titles[locale] || titles.en,
         description: descriptions[locale] || descriptions.en,
         keywords: keywords[locale] || keywords.en,
         metadataBase: new URL(BASE_URL),
-        alternates: {
-            canonical: `${BASE_URL}/${locale}`,
-            languages: alternateLanguages,
-        },
         openGraph: {
             title: titles[locale] || titles.en,
             description: descriptions[locale] || descriptions.en,

@@ -5,6 +5,20 @@ import { ArrowLeft, Calendar, Tag, User } from 'lucide-react';
 import { BLOG_POSTS } from '@/lib/blog';
 import ReactMarkdown from 'react-markdown';
 import { ArticleJsonLd, BreadcrumbJsonLd } from '@/components/SEOSchemas';
+import { getPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }) {
+    // eslint-disable-next-line @typescript-eslint/await-thenable
+    const { locale, slug } = await params;
+    const post = BLOG_POSTS.find(p => p.slug === slug);
+    if (!post) return {};
+    
+    const getLocalizedField = (obj: any, field: string) => obj[`${field}_${locale}`] || obj[`${field}_en`] || obj[`${field}_tr`];
+    return getPageMetadata(locale, `/blog/${slug}`, { 
+        title: getLocalizedField(post, 'title'),
+        description: getLocalizedField(post, 'excerpt')
+    });
+}
 
 function getLocalized(obj: any, field: string, locale: string) {
     return obj[`${field}_${locale}`] || obj[`${field}_en`] || obj[`${field}_tr`];

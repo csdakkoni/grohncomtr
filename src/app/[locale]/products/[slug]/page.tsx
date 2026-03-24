@@ -4,6 +4,20 @@ import { notFound } from 'next/navigation';
 import { Link } from '@/i18n/routing';
 import { ArrowLeft, FileText, Send } from 'lucide-react';
 import { ProductJsonLd, BreadcrumbJsonLd } from '@/components/SEOSchemas';
+import { getPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }) {
+    // eslint-disable-next-line @typescript-eslint/await-thenable
+    const { locale, slug } = await params;
+    const product = await getProductBySlug(slug);
+    if (!product) return {};
+    
+    const getLocalizedField = (obj: any, field: string) => obj[`${field}_${locale}`] || obj[`${field}_en`] || obj[`${field}_tr`];
+    return getPageMetadata(locale, `/products/${slug}`, { 
+        title: getLocalizedField(product, 'title'),
+        description: getLocalizedField(product, 'description')
+    });
+}
 
 export default async function ProductDetailPage({
     params

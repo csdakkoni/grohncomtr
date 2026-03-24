@@ -2,6 +2,14 @@ import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import { BookOpen, ArrowRight, Calendar } from 'lucide-react';
 import { BLOG_POSTS } from '@/lib/blog';
+import { getPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    // eslint-disable-next-line @typescript-eslint/await-thenable
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'Blog' });
+    return getPageMetadata(locale, '/blog', { title: t('title') });
+}
 
 function getLocalized(obj: any, field: string, locale: string) {
     return obj[`${field}_${locale}`] || obj[`${field}_en`] || obj[`${field}_tr`];
