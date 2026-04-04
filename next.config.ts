@@ -16,6 +16,21 @@ const nextConfig: NextConfig = {
                 destination: '/tr/products/:path*',
                 permanent: true,
             },
+            {
+                source: '/portfolio/:path*',
+                destination: '/tr/products',
+                permanent: true,
+            },
+            {
+                source: '/urun-kategorileri/:path*',
+                destination: '/tr/products',
+                permanent: true,
+            },
+            {
+                source: '/author/:path*',
+                destination: '/tr/about',
+                permanent: true,
+            },
         ];
     },
 };
