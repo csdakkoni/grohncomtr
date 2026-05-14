@@ -1,0 +1,404 @@
+const fs = require('fs');
+const path = require('path');
+
+const chemicals = [
+    {
+        id: "chem-1",
+        slug: "sodyum-hidroksit",
+        cas_number: "1310-73-2",
+        formula: "NaOH",
+        category: "general",
+        name_tr: "Sodyum Hidroksit (Kostik Soda)",
+        name_en: "Sodium Hydroxide (Caustic Soda)",
+        name_fr: "Hydroxyde de Sodium (Soude Caustique)",
+        name_ar: "هيدروكسيد الصوديوم (الصودا الكاوية)",
+        description_tr: "Sodyum hidroksit, kimya endüstrisinde yaygın olarak kullanılan güçlü bir bazdır. Su arıtma, tekstil, sabun ve deterjan üretiminde pH düzenleyici ve temizleyici olarak kullanılır.",
+        description_en: "Sodium hydroxide is a strong base widely used in the chemical industry. It is used as a pH regulator and cleaner in water treatment, textiles, soap, and detergent manufacturing.",
+        description_fr: "L'hydroxyde de sodium est une base forte largement utilisée dans l'industrie chimique. Il est utilisé comme régulateur de pH dans le traitement de l'eau, le textile et la fabrication de savons.",
+        description_ar: "هيدروكسيد الصوديوم هو قاعدة قوية تستخدم على نطاق واسع في الصناعة الكيميائية. يستخدم كمنظم لدرجة الحموضة ومنظف في معالجة المياه والمنسوجات وتصنيع الصابون.",
+        usage_areas_tr: ["Su Şartlandırma", "Tekstil Ön İşlem", "Sabun ve Deterjan", "Kağıt Endüstrisi"],
+        usage_areas_en: ["Water Treatment", "Textile Pre-treatment", "Soap and Detergents", "Paper Industry"],
+        usage_areas_fr: ["Traitement de l'eau", "Prétraitement textile", "Savons et détergents", "Industrie du papier"],
+        usage_areas_ar: ["معالجة المياه", "المعالجة المسبقة للمنسوجات", "الصابون والمنظفات", "صناعة الورق"]
+    },
+    {
+        id: "chem-2",
+        slug: "hidrojen-peroksit",
+        cas_number: "7722-84-1",
+        formula: "H2O2",
+        category: "textile",
+        name_tr: "Hidrojen Peroksit",
+        name_en: "Hydrogen Peroxide",
+        name_fr: "Peroxyde d'Hydrogène",
+        name_ar: "بيروكسيد الهيدروجين",
+        description_tr: "Hidrojen peroksit, çevre dostu ve güçlü bir oksitleyici ajandır. Tekstilde ağartma (bleaching) işlemlerinde, kağıt endüstrisinde ve atıksu arıtmada dezenfektan olarak yoğunlukla tercih edilir.",
+        description_en: "Hydrogen peroxide is an eco-friendly and strong oxidizing agent. It is heavily preferred in textile bleaching, the paper industry, and as a disinfectant in wastewater treatment.",
+        description_fr: "Le peroxyde d'hydrogène est un agent oxydant puissant et respectueux de l'environnement. Très utilisé pour le blanchiment textile.",
+        description_ar: "بيروكسيد الهيدروجين هو عامل مؤكسد قوي وصديق للبيئة. يفضل استخدامه في تبييض المنسوجات.",
+        usage_areas_tr: ["Tekstil Ağartma (Kasar)", "Dezenfeksiyon", "Atıksu Arıtma", "Kağıt Ağartma"],
+        usage_areas_en: ["Textile Bleaching", "Disinfection", "Wastewater Treatment", "Paper Bleaching"],
+        usage_areas_fr: ["Blanchiment textile", "Désinfection", "Traitement des eaux usées", "Blanchiment du papier"],
+        usage_areas_ar: ["تبييض المنسوجات", "التطهير", "معالجة مياه الصرف الصحي", "تبييض الورق"]
+    },
+    {
+        id: "chem-3",
+        slug: "sodyum-hipoklorit",
+        cas_number: "7681-52-9",
+        formula: "NaClO",
+        category: "water-treatment",
+        name_tr: "Sodyum Hipoklorit",
+        name_en: "Sodium Hypochlorite",
+        name_fr: "Hypochlorite de Sodium",
+        name_ar: "هيبوكلوريت الصوديوم",
+        description_tr: "Sodyum hipoklorit, mükemmel bir dezenfektan ve ağartıcıdır. Su arıtma tesislerinde klorlama işleminde, yüzme havuzlarında ve genel sanitasyonda kullanılır.",
+        description_en: "Sodium hypochlorite is an excellent disinfectant and bleaching agent. It is used in chlorination in water treatment plants, swimming pools, and general sanitation.",
+        description_fr: "L'hypochlorite de sodium est un excellent désinfectant et agent de blanchiment. Utilisé dans le traitement de l'eau.",
+        description_ar: "هيبوكلوريت الصوديوم مطهر ومبيض ممتاز. يستخدم في معالجة المياه.",
+        usage_areas_tr: ["İçme Suyu Dezenfeksiyonu", "Havuz Kimyasalları", "Tekstil Ağartma", "Temizlik Kimyasalları"],
+        usage_areas_en: ["Drinking Water Disinfection", "Pool Chemicals", "Textile Bleaching", "Cleaning Chemicals"],
+        usage_areas_fr: ["Désinfection de l'eau", "Produits pour piscine", "Blanchiment textile", "Produits de nettoyage"],
+        usage_areas_ar: ["تطهير مياه الشرب", "كيماويات المسابح", "تبييض المنسوجات", "كيماويات التنظيف"]
+    },
+    {
+        id: "chem-4",
+        slug: "polialuminyum-klorur-pac",
+        cas_number: "1327-41-9",
+        formula: "Aln(OH)mCl(3n-m)",
+        category: "water-treatment",
+        name_tr: "Polialüminyum Klorür (PAC)",
+        name_en: "Polyaluminum Chloride (PAC)",
+        name_fr: "Polychlorure d'Aluminium (PAC)",
+        name_ar: "بولي كلوريد الألومنيوم (PAC)",
+        description_tr: "PAC, atıksu ve içme suyu arıtımında kullanılan oldukça etkili bir inorganik polimer koagülanttır. Düşük sıcaklıklarda ve geniş pH aralığında çalışabilir.",
+        description_en: "PAC is a highly effective inorganic polymer coagulant used in wastewater and drinking water treatment. It can operate at low temperatures and across a wide pH range.",
+        description_fr: "Le PAC est un coagulant polymère inorganique très efficace utilisé dans le traitement de l'eau.",
+        description_ar: "PAC هو مخثر بوليمر غير عضوي فعال للغاية يستخدم في معالجة مياه الصرف الصحي.",
+        usage_areas_tr: ["Atıksu Arıtma", "İçme Suyu Arıtma", "Kağıt Endüstrisi", "Tekstil Atıksu Rengi Giderme"],
+        usage_areas_en: ["Wastewater Treatment", "Drinking Water Treatment", "Paper Industry", "Textile Decolorization"],
+        usage_areas_fr: ["Traitement des eaux usées", "Eau potable", "Industrie du papier", "Décoloration textile"],
+        usage_areas_ar: ["معالجة مياه الصرف", "معالجة مياه الشرب", "صناعة الورق", "إزالة ألوان المنسوجات"]
+    },
+    {
+        id: "chem-5",
+        slug: "sodyum-metabisulfit",
+        cas_number: "7681-57-4",
+        formula: "Na2S2O5",
+        category: "general",
+        name_tr: "Sodyum Metabisülfit (SMBS)",
+        name_en: "Sodium Metabisulfite (SMBS)",
+        name_fr: "Métabisulfite de Sodium",
+        name_ar: "ميتابيسلفيت الصوديوم",
+        description_tr: "Güçlü bir indirgeyici (redüktör) ajandır. Tekstilde antiklor işleminde, su arıtmada klor giderici olarak ve gıda sektöründe koruyucu olarak kullanılır.",
+        description_en: "A strong reducing agent. It is used as an antichlor in textiles, a chlorine scavenger in water treatment, and a preservative in the food industry.",
+        description_fr: "Agent réducteur fort. Utilisé comme antichlore dans le textile et le traitement de l'eau.",
+        description_ar: "عامل اختزال قوي. يستخدم كمضاد للكلور في المنسوجات.",
+        usage_areas_tr: ["Tekstil Antiklor İşlemi", "Ters Osmoz (RO) Sistemleri", "Maden Endüstrisi", "Gıda Koruyucu"],
+        usage_areas_en: ["Textile Antichlor Process", "Reverse Osmosis (RO) Systems", "Mining Industry", "Food Preservative"],
+        usage_areas_fr: ["Processus antichlore", "Systèmes RO", "Industrie minière", "Conservateur alimentaire"],
+        usage_areas_ar: ["عملية مضاد للكلور", "أنظمة التناضح العكسي", "صناعة التعدين", "مواد حافظة"]
+    },
+    {
+        id: "chem-6",
+        slug: "poliakrilik-asit",
+        cas_number: "9003-01-4",
+        formula: "C3H4O2",
+        category: "general",
+        name_tr: "Poliakrilik Asit",
+        name_en: "Polyacrylic Acid",
+        name_fr: "Acide Polyacrylique",
+        name_ar: "حمض البولي أكريليك",
+        description_tr: "Poli(akrilik asit) (PAA; ticari adı Carbomer), akrilik asidin bir türevidir. Kısmen veya tamamen protondan arındırılmış PAA'lar, suyu emme ve tutma yeteneğine sahip polielektrolitlerdir.",
+        description_en: "Polyacrylic acid (PAA) is a derivative of acrylic acid. Partially or fully deprotonated PAAs are polyelectrolytes with the ability to absorb and retain water.",
+        description_fr: "L'acide polyacrylique est un dérivé de l'acide acrylique. Absorbe et retient l'eau.",
+        description_ar: "حمض البولي أكريليك هو مشتق من حمض الأكريليك. يمتص الماء ويحتفظ به.",
+        usage_areas_tr: ["Deterjanlar ve Dispersanlar", "Süper Emici Polimerler (SAP)", "Su Şartlandırma", "Kozmetik"],
+        usage_areas_en: ["Detergents and Dispersants", "Superabsorbent Polymers (SAP)", "Water Treatment", "Cosmetics"],
+        usage_areas_fr: ["Détergents", "Polymères superabsorbants", "Traitement de l'eau", "Cosmétiques"],
+        usage_areas_ar: ["المنظفات", "البوليمرات فائقة الامتصاص", "معالجة المياه", "مستحضرات التجميل"],
+        ec_number: "618-347-7",
+        molecular_weight: "72.0627",
+        synonyms_tr: "POLİAKRİLİK ASİT=Poli(2-propenoik asit)=Propenoik asit polimeri",
+        definition_tr: [
+            "Poli(akrilik asit) (PAA; ticari adı Carbomer), (CH2-CHCO2H)n formülüne sahip bir polimerdir.",
+            "Poli(akrilik asit), akrilik asidin (CH2=CHCO2H) bir türevidir.",
+            "Homopolimerlere ek olarak, çeşitli kopolimerler ve çapraz bağlı polimerler ve bunların kısmen protonsulaştırılmış türevleri bilinmektedir ve ticari değeri vardır.",
+            "Nötr pH'ta bir su çözeltisinde, Poliakrilik asit bir anyonik polimerdir, yani PAA'nın yan zincirlerinin çoğu protonlarını kaybeder ve negatif bir yük kazanır.",
+            "Kısmen veya tamamen protondan arındırılmış PAA'lar, suyu emme ve tutma ve orijinal hacminin birçok katına kadar şişme yeteneğine sahip polielektrolitlerdir.",
+            "Bu özellikler - asit-baz ve su çeken - birçok uygulamanın temelidir.",
+            "Poli (akrilik asit) (PAA), yaklaşık 106oC'de Tg ile doğada higroskopik, kırılgan ve renksizdir.",
+            "200 ila 250oC'nin üzerindeki sıcaklıklarda, Poliakrilik asit (PAA) su kaybeder ve çözünmeyen çapraz bağlı polimer anhidrit haline gelir.",
+            "Kurutulmuş Poliakrilik asidin (PAA) sudaki çözünürlüğü sıcaklık arttıkça artar.",
+            "Sudaki konsantre Poliakrilik asit (PAA) çözeltileri, doğada tiksotropiktir.",
+            "Poliakrilik asit (PAA), sentetik, yüksek moleküler ağırlıklı ve suda çözünür bir polielektrolittir."
+        ],
+        uses_benefits_tr: [
+            "Poliakrilik asit (PAA) zararsızdır ve suda çözünür.",
+            "Poliakrilik asit, kireç tortusu olmadan alkali ve yüksek konsantrasyon durumlarında kullanılabilir.",
+            "Poliakrilik asit, kalsiyum karbonat, kalsiyum fosfat ve kalsiyum sülfatın mikro kristallerini veya mikro kumunu dağıtabilir.",
+            "Poliakrilik asit, sirkülasyonlu soğuk su sistemi, kağıt yapımı, dokuma, boyama, seramik, boyama vb. için kireç önleyici ve dağıtıcı olarak kullanılır.",
+            "Poliakrilik asit, enerji santrallerinde, demir çelik fabrikalarında, kimyasal gübre fabrikalarında, rafinerilerde ve iklimlendirme sistemlerinde sirkülasyonlu soğuk su sistemlerinde kireç önleyici ve dağıtıcı olarak kullanılabilir.",
+            "Poliakrilik asit dozajı su kalitesine ve ekipman malzemelerine uygun olmalıdır. Poliakrilik asit tek başına kullanıldığında 1-15mg/L tercih edilir.",
+            "Poliakrilik asit (PAA), koyulaştırıcılar, dağıtıcı maddeler, yumuşatıcılar, emülgatörler, iyon değiştirici ve berraklaştırıcı maddeler dahil olmak üzere çok çeşitli uygulamalar için kullanılır."
+        ],
+        applications_tr: [
+            "Poliakrilik asit (PAA), sentetik, yüksek moleküler ağırlıklı ve suda çözünür bir polielektrolittir.",
+            "Poliakrilik asit (PAA), çoğunlukla akışın değiştirilmesi, sulu kolloidlerin ve jellerin stabilitesinin iyileştirilmesi, yapışmanın iyileştirilmesi ve aglomerasyonun indüklenmesi ile ilgili birçok endüstride uygulama bulur.",
+            "Poliakrilik asit için baskın uygulama, onu bir süper emici olarak kullanmaktır.",
+            "Poliakrilik asidin yaklaşık %25'i deterjanlar ve dispersanlar için kullanılır.",
+            "Poliakrilik asit ve türevleri tek kullanımlık çocuk bezlerinde kullanılmaktadır.",
+            "Deterjanlar genellikle kiri ayırmaya yardımcı olan akrilik asit kopolimerleri içerir.",
+            "Çapraz bağlı poliakrilik asit, zemin temizleyicileri de dahil olmak üzere ev ürünlerinin işlenmesinde de kullanılmıştır."
+        ],
+        synonyms_en: "POLYACRYLIC ACID=Poly(2-propenoic acid)=Propenoic acid polymer",
+        synonyms_fr: "ACIDE POLYACRYLIQUE=Acide poly(2-propénoïque)=Polymère d'acide propénoïque",
+        synonyms_ar: "حمض البولي أكريليك=بولي(حمض 2-بروبينويك)=بوليمر حمض البروبينويك",
+        definition_en: [
+            "Poly(acrylic acid) (PAA; trade name Carbomer) is a polymer with the formula (CH2-CHCO2H)n.",
+            "Poly(acrylic acid) is a derivative of acrylic acid (CH2=CHCO2H).",
+            "In addition to homopolymers, various copolymers and cross-linked polymers, and their partially deprotonated derivatives are known and have commercial value.",
+            "In a water solution at neutral pH, Polyacrylic acid is an anionic polymer, meaning many of the side chains of PAA lose their protons and acquire a negative charge.",
+            "Partially or fully deprotonated PAAs are polyelectrolytes with the ability to absorb and retain water and swell to many times their original volume.",
+            "These properties - acid-base and water-attracting - are the basis of many applications.",
+            "Poly(acrylic acid) (PAA) is hygroscopic, brittle and colorless in nature with a Tg of approximately 106°C.",
+            "At temperatures above 200 to 250°C, Polyacrylic acid (PAA) loses water and becomes an insoluble cross-linked polymer anhydride.",
+            "The solubility of dried Polyacrylic acid (PAA) in water increases as temperature increases.",
+            "Concentrated Polyacrylic acid (PAA) solutions in water are thixotropic in nature.",
+            "Polyacrylic acid (PAA) is a synthetic, high molecular weight and water-soluble polyelectrolyte."
+        ],
+        definition_fr: [
+            "Le poly(acide acrylique) (PAA ; nom commercial Carbomer) est un polymère de formule (CH2-CHCO2H)n.",
+            "Le poly(acide acrylique) est un dérivé de l'acide acrylique (CH2=CHCO2H).",
+            "Outre les homopolymères, divers copolymères et polymères réticulés, et leurs dérivés partiellement déprotonés sont connus et ont une valeur commerciale.",
+            "Dans une solution aqueuse à pH neutre, l'acide polyacrylique est un polymère anionique, ce qui signifie que de nombreuses chaînes latérales du PAA perdent leurs protons et acquièrent une charge négative.",
+            "Les PAA partiellement ou totalement déprotonés sont des polyélectrolytes ayant la capacité d'absorber et de retenir l'eau et de gonfler jusqu'à plusieurs fois leur volume initial.",
+            "Ces propriétés - acide-base et attirant l'eau - sont à la base de nombreuses applications."
+        ],
+        definition_ar: [
+            "بولي (حمض الأكريليك) (PAA؛ الاسم التجاري Carbomer) هو بوليمر بالصيغة (CH2-CHCO2H)n.",
+            "بولي (حمض الأكريليك) هو مشتق من حمض الأكريليك (CH2=CHCO2H).",
+            "بالإضافة إلى البوليمرات المتجانسة، تُعرف البوليمرات المشتركة المختلفة والبوليمرات المتقاطعة، ومشتقاتها المنزوعة البروتون جزئيًا ولها قيمة تجارية.",
+            "في محلول مائي عند درجة حموضة محايدة، يكون حمض البولي أكريليك بوليمرًا أنيونيًا، مما يعني أن العديد من السلاسل الجانبية لـ PAA تفقد بروتوناتها وتكتسب شحنة سالبة.",
+            "إن PAA المنزوع البروتون جزئيًا أو كليًا عبارة عن بولي إلكتروليت لديه القدرة على امتصاص الماء والاحتفاظ به والتورم لعدة أضعاف حجمه الأصلي.",
+            "هذه الخصائص - القاعدة الحمضية وجذب الماء - هي أساس العديد من التطبيقات."
+        ],
+        uses_benefits_en: [
+            "Polyacrylic acid (PAA) is harmless and soluble in water.",
+            "Polyacrylic acid can be used in alkaline and high concentration situations without scale buildup.",
+            "Polyacrylic acid can disperse microcrystals or micro-sand of calcium carbonate, calcium phosphate, and calcium sulfate.",
+            "Polyacrylic acid is used as a scale inhibitor and dispersant for circulating cool water systems, papermaking, weaving, dyeing, ceramics, painting, etc.",
+            "Polyacrylic acid dosage should be appropriate for water quality and equipment materials. When used alone, 1-15mg/L is preferred.",
+            "Polyacrylic acid (PAA) is used for a wide variety of applications, including thickeners, dispersants, softeners, emulsifiers, ion exchange, and clarifying agents."
+        ],
+        uses_benefits_fr: [
+            "L'acide polyacrylique (PAA) est inoffensif et soluble dans l'eau.",
+            "L'acide polyacrylique peut être utilisé dans des situations alcalines et à forte concentration sans accumulation de tartre.",
+            "L'acide polyacrylique peut disperser des microcristaux de carbonate de calcium, phosphate de calcium et sulfate de calcium.",
+            "L'acide polyacrylique est utilisé comme inhibiteur de tartre et dispersant pour les systèmes d'eau de refroidissement, la fabrication de papier, le tissage, la teinture, la céramique, etc."
+        ],
+        uses_benefits_ar: [
+            "حمض البولي أكريليك (PAA) غير ضار وقابل للذوبان في الماء.",
+            "يمكن استخدام حمض البولي أكريليك في المواقف القلوية وعالية التركيز دون تراكم القشور.",
+            "يمكن لحمض البولي أكريليك تفريق البلورات الدقيقة لكربونات الكالسيوم وفوسفات الكالسيوم وكبريتات الكالسيوم.",
+            "يستخدم حمض البولي أكريليك كمانع للقشور ومشتت لأنظمة مياه التبريد المتداولة، وصناعة الورق، والنسيج، والصباغة، والسيراميك، إلخ."
+        ],
+        applications_en: [
+            "Polyacrylic acid (PAA) is a synthetic, high molecular weight, and water-soluble polyelectrolyte.",
+            "Polyacrylic acid (PAA) finds application in many industries mostly related to modifying flow, improving the stability of aqueous colloids and gels, improving adhesion, and inducing agglomeration.",
+            "The predominant application for polyacrylic acid is using it as a superabsorbent.",
+            "About 25% of polyacrylic acid is used for detergents and dispersants.",
+            "Polyacrylic acid and its derivatives are used in disposable diapers.",
+            "Detergents generally contain acrylic acid copolymers that assist in sequestering dirt."
+        ],
+        applications_fr: [
+            "L'acide polyacrylique (PAA) est un polyélectrolyte synthétique, de haut poids moléculaire et soluble dans l'eau.",
+            "L'acide polyacrylique (PAA) trouve des applications dans de nombreuses industries, principalement liées à la modification de l'écoulement et à l'amélioration de la stabilité.",
+            "L'application prédominante de l'acide polyacrylique est son utilisation comme superabsorbant.",
+            "Environ 25 % de l'acide polyacrylique est utilisé pour les détergents et les dispersants.",
+            "L'acide polyacrylique et ses dérivés sont utilisés dans les couches jetables."
+        ],
+        applications_ar: [
+            "حمض البولي أكريليك (PAA) هو بولي إلكتروليت صناعي، عالي الوزن الجزيئي، وقابل للذوبان في الماء.",
+            "يجد حمض البولي أكريليك (PAA) تطبيقًا في العديد من الصناعات المتعلقة بتعديل التدفق، وتحسين استقرار الغرويات، وتحسين الالتصاق.",
+            "التطبيق السائد لحمض البولي أكريليك هو استخدامه كمادة فائقة الامتصاص.",
+            "يستخدم حوالي 25٪ من حمض البولي أكريليك للمنظفات والمشتتات.",
+            "يتم استخدام حمض البولي أكريليك ومشتقاته في حفاضات الأطفال التي تستخدم لمرة واحدة."
+        ]
+    },
+    // ---- ADDING NEW TOP SEO CHEMICALS BELOW ----
+    {
+        id: "chem-7",
+        slug: "asetik-asit",
+        cas_number: "64-19-7",
+        formula: "CH3COOH",
+        category: "general",
+        name_tr: "Asetik Asit (Sirke Asidi)",
+        name_en: "Acetic Acid (Ethanoic Acid)",
+        name_fr: "Acide Acétique",
+        name_ar: "حمض الخليك",
+        description_tr: "Asetik asit, kimya sanayisinde çözücü, tekstil sektöründe pH düzenleyici ve gıdada koruyucu olarak kullanılan renksiz, keskin kokulu organik bir asittir.",
+        description_en: "Acetic acid is a colorless organic acid with a pungent smell, used as a solvent in the chemical industry, a pH regulator in textiles, and a preservative in food.",
+        description_fr: "L'acide acétique est un acide organique incolore à l'odeur piquante, utilisé comme solvant et régulateur de pH.",
+        description_ar: "حمض الخليك هو حمض عضوي عديم اللون ذو رائحة نفاذة، يستخدم كمذيب ومنظم لدرجة الحموضة ومادة حافظة.",
+        usage_areas_tr: ["Tekstil Boyama", "Plastik ve Polimer Üretimi", "Gıda Katkı Maddesi", "Zirai İlaçlar"],
+        usage_areas_en: ["Textile Dyeing", "Plastic and Polymer Production", "Food Additive", "Agricultural Chemicals"],
+        usage_areas_fr: ["Teinture textile", "Production de plastiques", "Additif alimentaire", "Produits agricoles"],
+        usage_areas_ar: ["صباغة المنسوجات", "إنتاج البلاستيك والبوليمر", "المضافات الغذائية", "الكيماويات الزراعية"],
+        ec_number: "200-580-7",
+        molecular_weight: "60.05",
+        synonyms_tr: "ASETİK ASİT=Etanoik asit=Sirke asidi",
+        synonyms_en: "ACETIC ACID=Ethanoic acid=Glacial acetic acid",
+        synonyms_fr: "ACIDE ACÉTIQUE=Acide éthanoïque=Acide acétique glacial",
+        synonyms_ar: "حمض الخليك=حمض الإيثانويك=حمض الخليك الثلجي",
+        definition_tr: [
+            "Asetik asit (CH3COOH), karboksilik asitlerin en önemlilerinden biri olan, keskin kokulu, renksiz sıvı bir bileşiktir.",
+            "Endüstride sentetik yollarla ve bakteriyel fermantasyon (sirke üretimi) ile üretilir.",
+            "Su, alkol ve eter ile her oranda karışabilir. Güçlü bir çözücüdür.",
+            "Seyreltik asetik asit doğada biyolojik bozunmaya uğrar ve çevre için güvenli kabul edilir."
+        ],
+        definition_en: [
+            "Acetic acid (CH3COOH) is a clear, colorless, liquid organic acid with a strong, pungent odor.",
+            "It is produced industrially both synthetically and by bacterial fermentation.",
+            "It is miscible with water, alcohol, and ether, making it a strong solvent.",
+            "Dilute acetic acid is completely biodegradable and considered safe for the environment."
+        ],
+        uses_benefits_tr: [
+            "Tekstil sektöründe boyama işlemlerinde nötralizatör olarak görev yapar.",
+            "Kimyasal üretiminde vinil asetat monomeri (VAM) eldesinde çok büyük miktarda kullanılır.",
+            "Suları dezenfekte etmek ve kazan taşlarını önlemek amacıyla pH dengeleyici olarak endüstriyel su arıtmada kullanılır."
+        ],
+        applications_tr: [
+            "Vinil asetat üretiminde, polimer ve tutkal üretiminde ön maddedir.",
+            "Tekstilde asit boyama işlemlerinde kumaşın boyayı emmesini kolaylaştırır.",
+            "Gıda sektöründe (E260) asitlik düzenleyici ve koruyucu olarak görev yapar."
+        ],
+        uses_benefits_en: [
+            "Acts as a neutralizer in textile dyeing processes.",
+            "Used heavily in the production of vinyl acetate monomer (VAM) for the chemical industry.",
+            "Used as a pH balancer in industrial water treatment to prevent scale and disinfect water."
+        ],
+        applications_en: [
+            "A precursor for vinyl acetate, used in polymer and adhesive production.",
+            "Facilitates dye absorption in textiles during acid dyeing processes.",
+            "Serves as an acidity regulator and preservative (E260) in the food industry."
+        ]
+    },
+    {
+        id: "chem-8",
+        slug: "sodyum-sulfat",
+        cas_number: "7757-82-6",
+        formula: "Na2SO4",
+        category: "textile",
+        name_tr: "Sodyum Sülfat",
+        name_en: "Sodium Sulfate",
+        name_fr: "Sulfate de Sodium",
+        name_ar: "كبريتات الصوديوم",
+        description_tr: "Sodyum sülfat, tekstil boyama işlemlerinde boyanın kumaşa nüfuz etmesini sağlayan (egalizatör) ve deterjan sanayisinde dolgu maddesi olarak kullanılan beyaz kristal toz bir kimyasaldır.",
+        description_en: "Sodium sulfate is a white crystalline powder used in textile dyeing to help dye penetrate fabric evenly, and as a filler in the detergent industry.",
+        description_fr: "Le sulfate de sodium est une poudre cristalline blanche utilisée dans la teinture textile et comme charge dans l'industrie des détergents.",
+        description_ar: "كبريتات الصوديوم مسحوق بلوري أبيض يستخدم في صباغة المنسوجات وكمادة مالئة في صناعة المنظفات.",
+        usage_areas_tr: ["Tekstil Boyama", "Deterjan Üretimi", "Cam Sanayi", "Kağıt (Kraft) Sanayi"],
+        usage_areas_en: ["Textile Dyeing", "Detergent Manufacturing", "Glass Industry", "Paper (Kraft) Industry"],
+        usage_areas_fr: ["Teinture textile", "Fabrication de détergents", "Industrie du verre", "Industrie du papier"],
+        usage_areas_ar: ["صباغة المنسوجات", "صناعة المنظفات", "صناعة الزجاج", "صناعة الورق"],
+        ec_number: "231-820-9",
+        molecular_weight: "142.04",
+        synonyms_tr: "SODYUM SÜLFAT=Glauber tuzu=Sülfürik asit sodyum tuzu",
+        synonyms_en: "SODIUM SULFATE=Glauber's salt=Sulfuric acid disodium salt",
+        definition_tr: [
+            "Sodyum sülfat (Na2SO4), doğada mirabilit minerali olarak bulunan veya kimyasal üretim süreçlerinin bir yan ürünü olarak elde edilen inorganik bir tuzdur.",
+            "Suda yüksek çözünürlüğe sahiptir ve pH değeri nötrdür.",
+            "Endüstride genellikle saf, susuz (anhydrous) formda beyaz toz halinde bulunur."
+        ],
+        definition_en: [
+            "Sodium sulfate (Na2SO4) is an inorganic salt found naturally as the mineral mirabilite or produced as a by-product of chemical processes.",
+            "It has high solubility in water and a neutral pH.",
+            "In industry, it is mostly found in its pure, anhydrous form as a white powder."
+        ],
+        uses_benefits_tr: [
+            "Deterjanlarda akışkanlığı artırır ve maliyet düşürücü dolgu maddesi olarak kullanılır.",
+            "Tekstilde reaktif boyaların kumaşa eşit ve homojen bir şekilde tutunmasını sağlar (Egalizasyon).",
+            "Cam üretiminde erime sıcaklığını düşürür ve köpük oluşumunu engeller."
+        ],
+        applications_tr: [
+            "Tekstil terbiye ve boyama havuzlarında boya tutucu tuz.",
+            "Toz çamaşır ve bulaşık deterjanlarında hacim verici ana hammadde.",
+            "Kağıt hamuru üretiminde Kraft prosesinin ayrılmaz bir parçası."
+        ],
+        uses_benefits_en: [
+            "Increases flowability in detergents and serves as a cost-reducing filler.",
+            "Ensures reactive dyes adhere evenly and homogeneously to fabric in textiles (Leveling).",
+            "Lowers the melting point and prevents foaming in glass production."
+        ],
+        applications_en: [
+            "Dye-fixing salt in textile finishing and dyeing baths.",
+            "Primary volume-giving raw material in powder laundry and dish detergents.",
+            "An integral part of the Kraft process in wood pulp and paper manufacturing."
+        ]
+    },
+    {
+        id: "chem-9",
+        slug: "sitrik-asit",
+        cas_number: "77-92-9",
+        formula: "C6H8O7",
+        category: "general",
+        name_tr: "Sitrik Asit (Limon Tuzu)",
+        name_en: "Citric Acid",
+        name_fr: "Acide Citrique",
+        name_ar: "حمض الستريك",
+        description_tr: "Sitrik asit, doğada narenciye meyvelerinde bulunan zayıf bir organik asittir. Endüstride su yumuşatıcı, tekstilde pH ayarlayıcı ve temizlik ürünlerinde kireç çözücü olarak kullanılır.",
+        description_en: "Citric acid is a weak organic acid found naturally in citrus fruits. Industrially, it is used as a water softener, a pH adjuster in textiles, and a descaler in cleaning products.",
+        description_fr: "L'acide citrique est un acide organique faible. Utilisé comme adoucisseur d'eau et détartrant.",
+        description_ar: "حمض الستريك حمض عضوي ضعيف. يستخدم كميسر للماء ومزيل للترسبات.",
+        usage_areas_tr: ["Gıda ve İçecek", "Su Yumuşatma", "Kozmetik", "Tekstil ve Deterjan"],
+        usage_areas_en: ["Food and Beverage", "Water Softening", "Cosmetics", "Textile and Detergent"],
+        usage_areas_fr: ["Alimentation et Boissons", "Adoucissement de l'eau", "Cosmétiques", "Textile et Détergents"],
+        usage_areas_ar: ["الأغذية والمشروبات", "تيسير المياه", "مستحضرات التجميل", "المنسوجات والمنظفات"],
+        ec_number: "201-069-1",
+        molecular_weight: "192.12",
+        synonyms_tr: "SİTRİK ASİT=Limon tuzu=2-hidroksi-1,2,3-propantrikarboksilik asit",
+        synonyms_en: "CITRIC ACID=2-hydroxy-1,2,3-propanetricarboxylic acid",
+        definition_tr: [
+            "Sitrik asit, turunçgillerde bol miktarda bulunan, monoklinik kristal yapıya sahip zayıf bir organik asittir.",
+            "Endüstriyel olarak genellikle Aspergillus niger küfü kullanılarak şekerlerin fermantasyonu ile üretilir.",
+            "Çevre dostu bir şelatlama ajanıdır; metalleri bağlayarak sudaki etkilerini nötralize eder."
+        ],
+        definition_en: [
+            "Citric acid is a weak organic acid with a monoclinic crystalline structure, found abundantly in citrus fruits.",
+            "Industrially, it is generally produced by the fermentation of sugars using the Aspergillus niger mold.",
+            "It is an eco-friendly chelating agent; it binds metals and neutralizes their effects in water."
+        ],
+        uses_benefits_tr: [
+            "Sert sulardaki kalsiyum ve magnezyum iyonlarını bağlayarak suyu yumuşatır.",
+            "Deterjan ve sabun formülasyonlarında fosfatların çevre dostu bir alternatifidir.",
+            "Tekstilde tampon çözelti olarak boyama banyolarının pH seviyesini sabit tutar."
+        ],
+        applications_tr: [
+            "Endüstriyel temizleyicilerde kireç ve pas sökücü ana aktif madde.",
+            "Tekstil boyama makinelerinde işlem sonrası pH nötralizasyonu.",
+            "Gıda (E330) ve ilaç sanayisinde doğal koruyucu ve aroma verici."
+        ],
+        uses_benefits_en: [
+            "Softens water by binding calcium and magnesium ions in hard water.",
+            "An eco-friendly alternative to phosphates in detergent and soap formulations.",
+            "Acts as a buffer solution in textiles to keep the pH of dyeing baths constant."
+        ],
+        applications_en: [
+            "Primary active ingredient for scale and rust removal in industrial cleaners.",
+            "Post-process pH neutralization in textile dyeing machines.",
+            "Natural preservative and flavoring agent in the food (E330) and pharmaceutical industries."
+        ]
+    }
+];
+
+const dataDir = path.join(__dirname, '../src/data');
+if (!fs.existsSync(dataDir)) {
+    fs.mkdirSync(dataDir, { recursive: true });
+}
+
+fs.writeFileSync(
+    path.join(dataDir, 'chemicals.json'),
+    JSON.stringify(chemicals, null, 4),
+    'utf-8'
+);
+
+console.log("src/data/chemicals.json successfully generated.");
