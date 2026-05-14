@@ -184,6 +184,15 @@ export default function Header() {
                         <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] gradient-accent rounded-full group-hover:w-6 transition-all duration-300" />
                     </Link>
 
+                    {/* Chemical Dictionary */}
+                    <Link
+                        href="/kimyasallar"
+                        className="relative px-4 py-2 text-sm font-medium text-accent hover:text-accent-light transition-colors duration-300 rounded-lg hover:bg-white/5 group"
+                    >
+                        {locale === 'tr' ? 'Kimya Sözlüğü' : 'Chem Dictionary'}
+                        <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] gradient-accent rounded-full group-hover:w-6 transition-all duration-300" />
+                    </Link>
+
                     {/* Contact */}
                     <Link
                         href="/contact"
@@ -270,6 +279,9 @@ export default function Header() {
                     </Link>
                     <Link href="/faq" className="text-base font-medium text-text-secondary hover:text-white py-3 px-4 rounded-lg hover:bg-white/5 transition-all" onClick={() => setIsMenuOpen(false)}>
                         {t("faq")}
+                    </Link>
+                    <Link href="/kimyasallar" className="text-base font-medium text-accent hover:text-accent-light py-3 px-4 rounded-lg hover:bg-white/5 transition-all" onClick={() => setIsMenuOpen(false)}>
+                        {locale === 'tr' ? 'Kimya Sözlüğü' : 'Chem Dictionary'}
                     </Link>
                     <Link href="/contact" className="text-base font-medium text-text-secondary hover:text-white py-3 px-4 rounded-lg hover:bg-white/5 transition-all" onClick={() => setIsMenuOpen(false)}>
                         {t("contact")}

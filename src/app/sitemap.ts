@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { MOCK_PRODUCTS, MOCK_CATEGORIES } from '@/lib/mock';
 import { BLOG_POSTS } from '@/lib/blog';
+import { CHEMICAL_DICTIONARY } from '@/lib/chemicals-db';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://grohn.com.tr';
 const LOCALES = ['tr', 'en', 'fr', 'ar'];
@@ -9,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const entries: MetadataRoute.Sitemap = [];
 
     // Static pages
-    const staticPages = ['', '/about', '/contact', '/products', '/faq'];
+    const staticPages = ['', '/about', '/contact', '/products', '/faq', '/kimyasallar'];
 
     for (const page of staticPages) {
         for (const locale of LOCALES) {
@@ -38,6 +39,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
                 alternates: {
                     languages: Object.fromEntries(
                         LOCALES.map(l => [l, `${BASE_URL}/${l}/products/${product.slug}`])
+                    ),
+                },
+            });
+        }
+    }
+
+    // Chemical Dictionary pages (Programmatic SEO)
+    for (const chemical of CHEMICAL_DICTIONARY) {
+        for (const locale of LOCALES) {
+            entries.push({
+                url: `${BASE_URL}/${locale}/kimyasallar/${chemical.slug}`,
+                lastModified: new Date(),
+                changeFrequency: 'monthly',
+                priority: 0.9, // High priority for programmatic SEO
+                alternates: {
+                    languages: Object.fromEntries(
+                        LOCALES.map(l => [l, `${BASE_URL}/${l}/kimyasallar/${chemical.slug}`])
                     ),
                 },
             });
