@@ -20,9 +20,21 @@ export interface ChemicalEntry {
     ec_number?: string;
     molecular_weight?: string;
     synonyms_tr?: string;
+    synonyms_en?: string;
+    synonyms_fr?: string;
+    synonyms_ar?: string;
     definition_tr?: string[];
+    definition_en?: string[];
+    definition_fr?: string[];
+    definition_ar?: string[];
     uses_benefits_tr?: string[];
+    uses_benefits_en?: string[];
+    uses_benefits_fr?: string[];
+    uses_benefits_ar?: string[];
     applications_tr?: string[];
+    applications_en?: string[];
+    applications_fr?: string[];
+    applications_ar?: string[];
 }
 
 export const CHEMICAL_DICTIONARY: ChemicalEntry[] = [
@@ -172,6 +184,80 @@ export const CHEMICAL_DICTIONARY: ChemicalEntry[] = [
             "Poliakrilik asit ve türevleri tek kullanımlık çocuk bezlerinde kullanılmaktadır.",
             "Deterjanlar genellikle kiri ayırmaya yardımcı olan akrilik asit kopolimerleri içerir.",
             "Çapraz bağlı poliakrilik asit, zemin temizleyicileri de dahil olmak üzere ev ürünlerinin işlenmesinde de kullanılmıştır."
+        ],
+        synonyms_en: "POLYACRYLIC ACID=Poly(2-propenoic acid)=Propenoic acid polymer",
+        synonyms_fr: "ACIDE POLYACRYLIQUE=Acide poly(2-propénoïque)=Polymère d'acide propénoïque",
+        synonyms_ar: "حمض البولي أكريليك=بولي(حمض 2-بروبينويك)=بوليمر حمض البروبينويك",
+        definition_en: [
+            "Poly(acrylic acid) (PAA; trade name Carbomer) is a polymer with the formula (CH2-CHCO2H)n.",
+            "Poly(acrylic acid) is a derivative of acrylic acid (CH2=CHCO2H).",
+            "In addition to homopolymers, various copolymers and cross-linked polymers, and their partially deprotonated derivatives are known and have commercial value.",
+            "In a water solution at neutral pH, Polyacrylic acid is an anionic polymer, meaning many of the side chains of PAA lose their protons and acquire a negative charge.",
+            "Partially or fully deprotonated PAAs are polyelectrolytes with the ability to absorb and retain water and swell to many times their original volume.",
+            "These properties - acid-base and water-attracting - are the basis of many applications.",
+            "Poly(acrylic acid) (PAA) is hygroscopic, brittle and colorless in nature with a Tg of approximately 106°C.",
+            "At temperatures above 200 to 250°C, Polyacrylic acid (PAA) loses water and becomes an insoluble cross-linked polymer anhydride.",
+            "The solubility of dried Polyacrylic acid (PAA) in water increases as temperature increases.",
+            "Concentrated Polyacrylic acid (PAA) solutions in water are thixotropic in nature.",
+            "Polyacrylic acid (PAA) is a synthetic, high molecular weight and water-soluble polyelectrolyte."
+        ],
+        definition_fr: [
+            "Le poly(acide acrylique) (PAA ; nom commercial Carbomer) est un polymère de formule (CH2-CHCO2H)n.",
+            "Le poly(acide acrylique) est un dérivé de l'acide acrylique (CH2=CHCO2H).",
+            "Outre les homopolymères, divers copolymères et polymères réticulés, et leurs dérivés partiellement déprotonés sont connus et ont une valeur commerciale.",
+            "Dans une solution aqueuse à pH neutre, l'acide polyacrylique est un polymère anionique, ce qui signifie que de nombreuses chaînes latérales du PAA perdent leurs protons et acquièrent une charge négative.",
+            "Les PAA partiellement ou totalement déprotonés sont des polyélectrolytes ayant la capacité d'absorber et de retenir l'eau et de gonfler jusqu'à plusieurs fois leur volume initial.",
+            "Ces propriétés - acide-base et attirant l'eau - sont à la base de nombreuses applications."
+        ],
+        definition_ar: [
+            "بولي (حمض الأكريليك) (PAA؛ الاسم التجاري Carbomer) هو بوليمر بالصيغة (CH2-CHCO2H)n.",
+            "بولي (حمض الأكريليك) هو مشتق من حمض الأكريليك (CH2=CHCO2H).",
+            "بالإضافة إلى البوليمرات المتجانسة، تُعرف البوليمرات المشتركة المختلفة والبوليمرات المتقاطعة، ومشتقاتها المنزوعة البروتون جزئيًا ولها قيمة تجارية.",
+            "في محلول مائي عند درجة حموضة محايدة، يكون حمض البولي أكريليك بوليمرًا أنيونيًا، مما يعني أن العديد من السلاسل الجانبية لـ PAA تفقد بروتوناتها وتكتسب شحنة سالبة.",
+            "إن PAA المنزوع البروتون جزئيًا أو كليًا عبارة عن بولي إلكتروليت لديه القدرة على امتصاص الماء والاحتفاظ به والتورم لعدة أضعاف حجمه الأصلي.",
+            "هذه الخصائص - القاعدة الحمضية وجذب الماء - هي أساس العديد من التطبيقات."
+        ],
+        uses_benefits_en: [
+            "Polyacrylic acid (PAA) is harmless and soluble in water.",
+            "Polyacrylic acid can be used in alkaline and high concentration situations without scale buildup.",
+            "Polyacrylic acid can disperse microcrystals or micro-sand of calcium carbonate, calcium phosphate, and calcium sulfate.",
+            "Polyacrylic acid is used as a scale inhibitor and dispersant for circulating cool water systems, papermaking, weaving, dyeing, ceramics, painting, etc.",
+            "Polyacrylic acid dosage should be appropriate for water quality and equipment materials. When used alone, 1-15mg/L is preferred.",
+            "Polyacrylic acid (PAA) is used for a wide variety of applications, including thickeners, dispersants, softeners, emulsifiers, ion exchange, and clarifying agents."
+        ],
+        uses_benefits_fr: [
+            "L'acide polyacrylique (PAA) est inoffensif et soluble dans l'eau.",
+            "L'acide polyacrylique peut être utilisé dans des situations alcalines et à forte concentration sans accumulation de tartre.",
+            "L'acide polyacrylique peut disperser des microcristaux de carbonate de calcium, phosphate de calcium et sulfate de calcium.",
+            "L'acide polyacrylique est utilisé comme inhibiteur de tartre et dispersant pour les systèmes d'eau de refroidissement, la fabrication de papier, le tissage, la teinture, la céramique, etc."
+        ],
+        uses_benefits_ar: [
+            "حمض البولي أكريليك (PAA) غير ضار وقابل للذوبان في الماء.",
+            "يمكن استخدام حمض البولي أكريليك في المواقف القلوية وعالية التركيز دون تراكم القشور.",
+            "يمكن لحمض البولي أكريليك تفريق البلورات الدقيقة لكربونات الكالسيوم وفوسفات الكالسيوم وكبريتات الكالسيوم.",
+            "يستخدم حمض البولي أكريليك كمانع للقشور ومشتت لأنظمة مياه التبريد المتداولة، وصناعة الورق، والنسيج، والصباغة، والسيراميك، إلخ."
+        ],
+        applications_en: [
+            "Polyacrylic acid (PAA) is a synthetic, high molecular weight, and water-soluble polyelectrolyte.",
+            "Polyacrylic acid (PAA) finds application in many industries mostly related to modifying flow, improving the stability of aqueous colloids and gels, improving adhesion, and inducing agglomeration.",
+            "The predominant application for polyacrylic acid is using it as a superabsorbent.",
+            "About 25% of polyacrylic acid is used for detergents and dispersants.",
+            "Polyacrylic acid and its derivatives are used in disposable diapers.",
+            "Detergents generally contain acrylic acid copolymers that assist in sequestering dirt."
+        ],
+        applications_fr: [
+            "L'acide polyacrylique (PAA) est un polyélectrolyte synthétique, de haut poids moléculaire et soluble dans l'eau.",
+            "L'acide polyacrylique (PAA) trouve des applications dans de nombreuses industries, principalement liées à la modification de l'écoulement et à l'amélioration de la stabilité.",
+            "L'application prédominante de l'acide polyacrylique est son utilisation comme superabsorbant.",
+            "Environ 25 % de l'acide polyacrylique est utilisé pour les détergents et les dispersants.",
+            "L'acide polyacrylique et ses dérivés sont utilisés dans les couches jetables."
+        ],
+        applications_ar: [
+            "حمض البولي أكريليك (PAA) هو بولي إلكتروليت صناعي، عالي الوزن الجزيئي، وقابل للذوبان في الماء.",
+            "يجد حمض البولي أكريليك (PAA) تطبيقًا في العديد من الصناعات المتعلقة بتعديل التدفق، وتحسين استقرار الغرويات، وتحسين الالتصاق.",
+            "التطبيق السائد لحمض البولي أكريليك هو استخدامه كمادة فائقة الامتصاص.",
+            "يستخدم حوالي 25٪ من حمض البولي أكريليك للمنظفات والمشتتات.",
+            "يتم استخدام حمض البولي أكريليك ومشتقاته في حفاضات الأطفال التي تستخدم لمرة واحدة."
         ]
     }
 ];

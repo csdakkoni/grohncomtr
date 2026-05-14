@@ -16,11 +16,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     // Programmatic SEO title: specific, keyword-rich
     const name = getLocalizedField(chemical, 'name');
     const cas = chemical.cas_number;
-    const synonyms = chemical.synonyms_tr ? `${chemical.synonyms_tr}` : '';
+    const synonymsField = `synonyms_${locale}`;
+    const synonyms = chemical[synonymsField as keyof typeof chemical] ? `${chemical[synonymsField as keyof typeof chemical]}` : '';
     const ec = chemical.ec_number ? `(EC: ${chemical.ec_number})` : '';
     
     return getPageMetadata(locale, `/kimyasallar/${slug}`, { 
-        title: `${name} ${ec} (CAS: ${cas}) Özellikleri, Kullanım Alanları ve Fiyatı | Grohn Kimya Sözlüğü`,
+        title: `${name} ${ec} (CAS: ${cas}) | Grohn Kimya Sözlüğü`,
         description: `${name} ${synonyms}. CAS: ${cas}, Formül: ${chemical.formula}. ${getLocalizedField(chemical, 'description')} Satın al, tedarik et.`
     });
 }
@@ -46,6 +47,11 @@ export default async function ChemicalDetailPage({
     const name = getLocalized(chemical, 'name');
     const description = getLocalized(chemical, 'description');
     const usageAreas: string[] = chemical[`usage_areas_${locale}` as keyof typeof chemical] as string[] || chemical.usage_areas_en;
+    
+    const synonyms = chemical[`synonyms_${locale}` as keyof typeof chemical] as string | undefined;
+    const definition = chemical[`definition_${locale}` as keyof typeof chemical] as string[] | undefined;
+    const usesBenefits = chemical[`uses_benefits_${locale}` as keyof typeof chemical] as string[] | undefined;
+    const applications = chemical[`applications_${locale}` as keyof typeof chemical] as string[] | undefined;
 
     return (
         <div className="pt-20 min-h-screen bg-primary">
@@ -93,20 +99,20 @@ export default async function ChemicalDetailPage({
                             {name}
                         </h1>
                         
-                        {chemical.synonyms_tr && (
+                        {synonyms && (
                             <p className="text-accent/80 text-sm font-medium mb-6 uppercase tracking-wider">
-                                {chemical.synonyms_tr}
+                                {synonyms}
                             </p>
                         )}
 
-                        {chemical.definition_tr && chemical.definition_tr.length > 0 ? (
+                        {definition && definition.length > 0 ? (
                             <div className="glass rounded-2xl p-6 md:p-8 mb-8">
                                 <h2 className="text-xl font-bold text-white mb-6 uppercase flex items-center gap-2">
                                     <FileText className="w-5 h-5 text-accent" />
-                                    {name} Tanımı
+                                    {name}
                                 </h2>
                                 <div className="space-y-4">
-                                    {chemical.definition_tr.map((paragraph, idx) => (
+                                    {definition.map((paragraph, idx) => (
                                         <p key={idx} className="text-base text-text-secondary leading-relaxed">
                                             {paragraph}
                                         </p>
@@ -122,14 +128,14 @@ export default async function ChemicalDetailPage({
                             </div>
                         )}
 
-                        {chemical.uses_benefits_tr && chemical.uses_benefits_tr.length > 0 ? (
+                        {usesBenefits && usesBenefits.length > 0 ? (
                             <div className="glass rounded-2xl p-6 md:p-8 mb-8">
                                 <h2 className="text-xl font-bold text-white mb-6 uppercase flex items-center gap-2">
                                     <BookOpen className="w-5 h-5 text-accent" />
-                                    {name} Kullanımları ve Faydaları
+                                    {locale === 'tr' ? 'Kullanımları ve Faydaları' : locale === 'en' ? 'Uses and Benefits' : locale === 'fr' ? 'Utilisations et Avantages' : 'الاستخدامات والفوائد'}
                                 </h2>
                                 <div className="space-y-4">
-                                    {chemical.uses_benefits_tr.map((paragraph, idx) => (
+                                    {usesBenefits.map((paragraph, idx) => (
                                         <p key={idx} className="text-base text-text-secondary leading-relaxed flex gap-3">
                                             <span className="text-accent mt-1.5">•</span>
                                             <span>{paragraph}</span>
@@ -151,14 +157,14 @@ export default async function ChemicalDetailPage({
                             </div>
                         )}
 
-                        {chemical.applications_tr && chemical.applications_tr.length > 0 && (
+                        {applications && applications.length > 0 && (
                             <div className="glass rounded-2xl p-6 md:p-8 mb-8">
                                 <h2 className="text-xl font-bold text-white mb-6 uppercase flex items-center gap-2">
                                     <Beaker className="w-5 h-5 text-accent" />
-                                    {name} Uygulamaları
+                                    {locale === 'tr' ? 'Uygulamaları' : locale === 'en' ? 'Applications' : locale === 'fr' ? 'Applications' : 'التطبيقات'}
                                 </h2>
                                 <div className="space-y-4">
-                                    {chemical.applications_tr.map((paragraph, idx) => (
+                                    {applications.map((paragraph, idx) => (
                                         <p key={idx} className="text-base text-text-secondary leading-relaxed flex gap-3">
                                             <span className="text-accent mt-1.5">✓</span>
                                             <span>{paragraph}</span>
