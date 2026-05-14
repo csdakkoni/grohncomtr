@@ -16,6 +16,13 @@ export interface ChemicalEntry {
     usage_areas_en: string[];
     usage_areas_fr: string[];
     usage_areas_ar: string[];
+    // Advanced SEO Fields
+    ec_number?: string;
+    molecular_weight?: string;
+    synonyms_tr?: string;
+    definition_tr?: string[];
+    uses_benefits_tr?: string[];
+    applications_tr?: string[];
 }
 
 export const CHEMICAL_DICTIONARY: ChemicalEntry[] = [
@@ -113,5 +120,58 @@ export const CHEMICAL_DICTIONARY: ChemicalEntry[] = [
         usage_areas_en: ["Textile Antichlor Process", "Reverse Osmosis (RO) Systems", "Mining Industry", "Food Preservative"],
         usage_areas_fr: ["Processus antichlore", "Systèmes RO", "Industrie minière", "Conservateur alimentaire"],
         usage_areas_ar: ["عملية مضاد للكلور", "أنظمة التناضح العكسي", "صناعة التعدين", "مواد حافظة"]
+    },
+    {
+        id: "chem-6",
+        slug: "poliakrilik-asit",
+        cas_number: "9003-01-4",
+        formula: "C3H4O2",
+        category: "general",
+        name_tr: "Poliakrilik Asit",
+        name_en: "Polyacrylic Acid",
+        name_fr: "Acide Polyacrylique",
+        name_ar: "حمض البولي أكريليك",
+        description_tr: "Poli(akrilik asit) (PAA; ticari adı Carbomer), akrilik asidin bir türevidir. Kısmen veya tamamen protondan arındırılmış PAA'lar, suyu emme ve tutma yeteneğine sahip polielektrolitlerdir.",
+        description_en: "Polyacrylic acid (PAA) is a derivative of acrylic acid. Partially or fully deprotonated PAAs are polyelectrolytes with the ability to absorb and retain water.",
+        description_fr: "L'acide polyacrylique est un dérivé de l'acide acrylique. Absorbe et retient l'eau.",
+        description_ar: "حمض البولي أكريليك هو مشتق من حمض الأكريليك. يمتص الماء ويحتفظ به.",
+        usage_areas_tr: ["Deterjanlar ve Dispersanlar", "Süper Emici Polimerler (SAP)", "Su Şartlandırma", "Kozmetik"],
+        usage_areas_en: ["Detergents and Dispersants", "Superabsorbent Polymers (SAP)", "Water Treatment", "Cosmetics"],
+        usage_areas_fr: ["Détergents", "Polymères superabsorbants", "Traitement de l'eau", "Cosmétiques"],
+        usage_areas_ar: ["المنظفات", "البوليمرات فائقة الامتصاص", "معالجة المياه", "مستحضرات التجميل"],
+        ec_number: "618-347-7",
+        molecular_weight: "72.0627",
+        synonyms_tr: "POLİAKRİLİK ASİT=Poli(2-propenoik asit)=Propenoik asit polimeri",
+        definition_tr: [
+            "Poli(akrilik asit) (PAA; ticari adı Carbomer), (CH2-CHCO2H)n formülüne sahip bir polimerdir.",
+            "Poli(akrilik asit), akrilik asidin (CH2=CHCO2H) bir türevidir.",
+            "Homopolimerlere ek olarak, çeşitli kopolimerler ve çapraz bağlı polimerler ve bunların kısmen protonsulaştırılmış türevleri bilinmektedir ve ticari değeri vardır.",
+            "Nötr pH'ta bir su çözeltisinde, Poliakrilik asit bir anyonik polimerdir, yani PAA'nın yan zincirlerinin çoğu protonlarını kaybeder ve negatif bir yük kazanır.",
+            "Kısmen veya tamamen protondan arındırılmış PAA'lar, suyu emme ve tutma ve orijinal hacminin birçok katına kadar şişme yeteneğine sahip polielektrolitlerdir.",
+            "Bu özellikler - asit-baz ve su çeken - birçok uygulamanın temelidir.",
+            "Poli (akrilik asit) (PAA), yaklaşık 106oC'de Tg ile doğada higroskopik, kırılgan ve renksizdir.",
+            "200 ila 250oC'nin üzerindeki sıcaklıklarda, Poliakrilik asit (PAA) su kaybeder ve çözünmeyen çapraz bağlı polimer anhidrit haline gelir.",
+            "Kurutulmuş Poliakrilik asidin (PAA) sudaki çözünürlüğü sıcaklık arttıkça artar.",
+            "Sudaki konsantre Poliakrilik asit (PAA) çözeltileri, doğada tiksotropiktir.",
+            "Poliakrilik asit (PAA), sentetik, yüksek moleküler ağırlıklı ve suda çözünür bir polielektrolittir."
+        ],
+        uses_benefits_tr: [
+            "Poliakrilik asit (PAA) zararsızdır ve suda çözünür.",
+            "Poliakrilik asit, kireç tortusu olmadan alkali ve yüksek konsantrasyon durumlarında kullanılabilir.",
+            "Poliakrilik asit, kalsiyum karbonat, kalsiyum fosfat ve kalsiyum sülfatın mikro kristallerini veya mikro kumunu dağıtabilir.",
+            "Poliakrilik asit, sirkülasyonlu soğuk su sistemi, kağıt yapımı, dokuma, boyama, seramik, boyama vb. için kireç önleyici ve dağıtıcı olarak kullanılır.",
+            "Poliakrilik asit, enerji santrallerinde, demir çelik fabrikalarında, kimyasal gübre fabrikalarında, rafinerilerde ve iklimlendirme sistemlerinde sirkülasyonlu soğuk su sistemlerinde kireç önleyici ve dağıtıcı olarak kullanılabilir.",
+            "Poliakrilik asit dozajı su kalitesine ve ekipman malzemelerine uygun olmalıdır. Poliakrilik asit tek başına kullanıldığında 1-15mg/L tercih edilir.",
+            "Poliakrilik asit (PAA), koyulaştırıcılar, dağıtıcı maddeler, yumuşatıcılar, emülgatörler, iyon değiştirici ve berraklaştırıcı maddeler dahil olmak üzere çok çeşitli uygulamalar için kullanılır."
+        ],
+        applications_tr: [
+            "Poliakrilik asit (PAA), sentetik, yüksek moleküler ağırlıklı ve suda çözünür bir polielektrolittir.",
+            "Poliakrilik asit (PAA), çoğunlukla akışın değiştirilmesi, sulu kolloidlerin ve jellerin stabilitesinin iyileştirilmesi, yapışmanın iyileştirilmesi ve aglomerasyonun indüklenmesi ile ilgili birçok endüstride uygulama bulur.",
+            "Poliakrilik asit için baskın uygulama, onu bir süper emici olarak kullanmaktır.",
+            "Poliakrilik asidin yaklaşık %25'i deterjanlar ve dispersanlar için kullanılır.",
+            "Poliakrilik asit ve türevleri tek kullanımlık çocuk bezlerinde kullanılmaktadır.",
+            "Deterjanlar genellikle kiri ayırmaya yardımcı olan akrilik asit kopolimerleri içerir.",
+            "Çapraz bağlı poliakrilik asit, zemin temizleyicileri de dahil olmak üzere ev ürünlerinin işlenmesinde de kullanılmıştır."
+        ]
     }
 ];

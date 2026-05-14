@@ -16,10 +16,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     // Programmatic SEO title: specific, keyword-rich
     const name = getLocalizedField(chemical, 'name');
     const cas = chemical.cas_number;
+    const synonyms = chemical.synonyms_tr ? `${chemical.synonyms_tr}` : '';
+    const ec = chemical.ec_number ? `(EC: ${chemical.ec_number})` : '';
     
     return getPageMetadata(locale, `/kimyasallar/${slug}`, { 
-        title: `${name} (CAS: ${cas}) Özellikleri ve Kullanım Alanları | Grohn Kimya Sözlüğü`,
-        description: getLocalizedField(chemical, 'description')
+        title: `${name} ${ec} (CAS: ${cas}) Özellikleri, Kullanım Alanları ve Fiyatı | Grohn Kimya Sözlüğü`,
+        description: `${name} ${synonyms}. CAS: ${cas}, Formül: ${chemical.formula}. ${getLocalizedField(chemical, 'description')} Satın al, tedarik et.`
     });
 }
 
@@ -87,28 +89,84 @@ export default async function ChemicalDetailPage({
                             </span>
                         </div>
                         
-                        <h1 className="text-4xl md:text-5xl font-bold text-white mt-2 mb-6 tracking-tight">
+                        <h1 className="text-4xl md:text-5xl font-bold text-white mt-2 mb-2 tracking-tight">
                             {name}
                         </h1>
                         
-                        <div className="glass rounded-2xl p-6 md:p-8 mb-8">
-                            <h2 className="text-xl font-semibold text-white mb-4">Genel Bilgi</h2>
-                            <p className="text-lg text-text-secondary leading-relaxed">
-                                {description}
+                        {chemical.synonyms_tr && (
+                            <p className="text-accent/80 text-sm font-medium mb-6 uppercase tracking-wider">
+                                {chemical.synonyms_tr}
                             </p>
-                        </div>
+                        )}
 
-                        <div className="glass rounded-2xl p-6 md:p-8 mb-8">
-                            <h2 className="text-xl font-semibold text-white mb-4">Kullanım Alanları</h2>
-                            <ul className="grid sm:grid-cols-2 gap-4">
-                                {usageAreas.map((area, idx) => (
-                                    <li key={idx} className="flex items-center gap-3 text-text-secondary">
-                                        <div className="w-2 h-2 rounded-full bg-accent" />
-                                        {area}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
+                        {chemical.definition_tr && chemical.definition_tr.length > 0 ? (
+                            <div className="glass rounded-2xl p-6 md:p-8 mb-8">
+                                <h2 className="text-xl font-bold text-white mb-6 uppercase flex items-center gap-2">
+                                    <FileText className="w-5 h-5 text-accent" />
+                                    {name} Tanımı
+                                </h2>
+                                <div className="space-y-4">
+                                    {chemical.definition_tr.map((paragraph, idx) => (
+                                        <p key={idx} className="text-base text-text-secondary leading-relaxed">
+                                            {paragraph}
+                                        </p>
+                                    ))}
+                                </div>
+                            </div>
+                        ) : (
+                            <div className="glass rounded-2xl p-6 md:p-8 mb-8">
+                                <h2 className="text-xl font-semibold text-white mb-4">Genel Bilgi</h2>
+                                <p className="text-lg text-text-secondary leading-relaxed">
+                                    {description}
+                                </p>
+                            </div>
+                        )}
+
+                        {chemical.uses_benefits_tr && chemical.uses_benefits_tr.length > 0 ? (
+                            <div className="glass rounded-2xl p-6 md:p-8 mb-8">
+                                <h2 className="text-xl font-bold text-white mb-6 uppercase flex items-center gap-2">
+                                    <BookOpen className="w-5 h-5 text-accent" />
+                                    {name} Kullanımları ve Faydaları
+                                </h2>
+                                <div className="space-y-4">
+                                    {chemical.uses_benefits_tr.map((paragraph, idx) => (
+                                        <p key={idx} className="text-base text-text-secondary leading-relaxed flex gap-3">
+                                            <span className="text-accent mt-1.5">•</span>
+                                            <span>{paragraph}</span>
+                                        </p>
+                                    ))}
+                                </div>
+                            </div>
+                        ) : (
+                            <div className="glass rounded-2xl p-6 md:p-8 mb-8">
+                                <h2 className="text-xl font-semibold text-white mb-4">Kullanım Alanları</h2>
+                                <ul className="grid sm:grid-cols-2 gap-4">
+                                    {usageAreas.map((area, idx) => (
+                                        <li key={idx} className="flex items-center gap-3 text-text-secondary">
+                                            <div className="w-2 h-2 rounded-full bg-accent" />
+                                            {area}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
+
+                        {chemical.applications_tr && chemical.applications_tr.length > 0 && (
+                            <div className="glass rounded-2xl p-6 md:p-8 mb-8">
+                                <h2 className="text-xl font-bold text-white mb-6 uppercase flex items-center gap-2">
+                                    <Beaker className="w-5 h-5 text-accent" />
+                                    {name} Uygulamaları
+                                </h2>
+                                <div className="space-y-4">
+                                    {chemical.applications_tr.map((paragraph, idx) => (
+                                        <p key={idx} className="text-base text-text-secondary leading-relaxed flex gap-3">
+                                            <span className="text-accent mt-1.5">✓</span>
+                                            <span>{paragraph}</span>
+                                        </p>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
                     </div>
 
                     {/* Sidebar / Technical Specs */}
@@ -143,6 +201,26 @@ export default async function ChemicalDetailPage({
                                         {chemical.cas_number}
                                     </span>
                                 </div>
+                                {chemical.ec_number && (
+                                    <div>
+                                        <span className="block text-text-muted text-xs uppercase tracking-wider mb-1">
+                                            AT Numarası (EC)
+                                        </span>
+                                        <span className="font-medium text-white font-mono text-sm">
+                                            {chemical.ec_number}
+                                        </span>
+                                    </div>
+                                )}
+                                {chemical.molecular_weight && (
+                                    <div>
+                                        <span className="block text-text-muted text-xs uppercase tracking-wider mb-1">
+                                            Molekül Ağırlığı
+                                        </span>
+                                        <span className="font-medium text-white font-mono text-sm">
+                                            {chemical.molecular_weight}
+                                        </span>
+                                    </div>
+                                )}
                                 <div>
                                     <span className="block text-text-muted text-xs uppercase tracking-wider mb-1">
                                         Sektörel Kategori
