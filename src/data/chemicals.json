@@ -3134,5 +3134,643 @@
         "applications_tr": [
             "Karbomer bazlı el dezenfektanlarında ve jellerde jeli katılaştırıp (nötralize edip) şeffaflık vermek için 1-2 damla eklenmesi yeterlidir."
         ]
+    },
+    {
+        "id": "chem-51",
+        "slug": "izopropil-alkol-ipa",
+        "cas_number": "67-63-0",
+        "formula": "C3H8O",
+        "category": "general",
+        "name_tr": "İzopropil Alkol (IPA)",
+        "name_en": "Isopropyl Alcohol (IPA)",
+        "name_fr": "Alcool Isopropylique (IPA)",
+        "name_ar": "كحول الأيزوبروبيل (IPA)",
+        "description_tr": "İzopropil alkol, sanayide ve tıpta genel çözücü ve dezenfektan olarak kullanılan, renksiz, keskin kokulu ve uçucu bir ikincil alkoldür.",
+        "description_en": "Isopropyl alcohol is a colorless, pungent, volatile secondary alcohol used as a general solvent and disinfectant in industry and medicine.",
+        "description_fr": "L'alcool isopropylique est un alcool secondaire volatil utilisé comme solvant général et désinfectant.",
+        "description_ar": "كحول الأيزوبروبيل كحول ثانوي متطاير يستخدم كمذيب عام ومطهر في الصناعة والطب.",
+        "usage_areas_tr": [
+            "Dezenfektan ve Antiseptik",
+            "Elektronik Temizliği (PCB)",
+            "Mürekkep Çözücü",
+            "Kozmetik"
+        ],
+        "usage_areas_en": [
+            "Disinfectant and Antiseptic",
+            "Electronics Cleaning (PCB)",
+            "Ink Solvent",
+            "Cosmetics"
+        ],
+        "usage_areas_fr": [
+            "Désinfectant et Antiseptique",
+            "Nettoyage électronique",
+            "Solvant d'encre",
+            "Cosmétiques"
+        ],
+        "usage_areas_ar": [
+            "مطهر ومعقم",
+            "تنظيف الإلكترونيات (PCB)",
+            "مذيب حبر",
+            "مستحضرات التجميل"
+        ],
+        "ec_number": "200-661-7",
+        "molecular_weight": "60.10",
+        "synonyms_tr": "İZOPROPİL ALKOL=IPA=İzopropanol=2-Propanol",
+        "synonyms_en": "ISOPROPYL ALCOHOL=IPA=Isopropanol=2-Propanol=Rubbing alcohol",
+        "definition_tr": [
+            "İzopropil alkol (İzopropanol), üç karbon atomundan oluşan, hidroksil (-OH) grubunun ortadaki karbona bağlı olduğu en basit ikincil alkoldür."
+        ],
+        "definition_en": [
+            "Isopropyl alcohol (Isopropanol) is the simplest secondary alcohol, consisting of three carbon atoms with the hydroxyl (-OH) group attached to the middle carbon."
+        ],
+        "uses_benefits_tr": [
+            "Bakteri, mantar ve virüslerin hücre zarını saniyeler içinde parçalayarak öldürür (en etkili konsantrasyonu %70'tir). Aseton gibi plastikleri eritmez, bu nedenle elektronik parçalar için çok güvenli bir çözücüdür."
+        ],
+        "uses_benefits_en": [
+            "Kills bacteria, fungi, and viruses in seconds by disrupting their cell membranes (most effective at 70% concentration). Unlike acetone, it does not melt plastics, making it a very safe solvent for electronic parts."
+        ],
+        "applications_tr": [
+            "El dezenfektanlarında (kolonya türevleri) ana antimikrobiyal ajan olarak, ayrıca baskı makinelerinde suyu nemlendirme (flekso/ofset) solüsyonlarında hızla buharlaşan solvent olarak kullanılır."
+        ]
+    },
+    {
+        "id": "chem-52",
+        "slug": "metanol",
+        "cas_number": "67-56-1",
+        "formula": "CH3OH",
+        "category": "general",
+        "name_tr": "Metanol (Metil Alkol)",
+        "name_en": "Methanol",
+        "name_fr": "Méthanol",
+        "name_ar": "الميثانول",
+        "description_tr": "Metanol (odun ruhu), formaldehit ve asetik asit sentezinde başlangıç hammaddesi olarak kullanılan, aynı zamanda güçlü bir antifriz ve çözücü olan, son derece zehirli en basit alkoldür.",
+        "description_en": "Methanol (wood alcohol) is the simplest alcohol, highly toxic, used as a starting material in the synthesis of formaldehyde and acetic acid, and also as a strong antifreeze and solvent.",
+        "description_fr": "Le méthanol (esprit de bois) est l'alcool le plus simple, très toxique, utilisé comme solvant et précurseur chimique.",
+        "description_ar": "الميثانول (كحول الخشب) هو أبسط كحول، شديد السمية، يستخدم كمادة أولية في تخليق الفورمالديهايد وحمض الخليك، وكمضاد قوي للتجمد ومذيب.",
+        "usage_areas_tr": [
+            "Formaldehit Üretimi",
+            "Biyodizel Üretimi",
+            "Antifriz ve Cam Suyu",
+            "Endüstriyel Çözücü"
+        ],
+        "usage_areas_en": [
+            "Formaldehyde Production",
+            "Biodiesel Production",
+            "Antifreeze and Windshield Washer",
+            "Industrial Solvent"
+        ],
+        "usage_areas_fr": [
+            "Production de formaldéhyde",
+            "Production de biodiesel",
+            "Antigel",
+            "Solvant industriel"
+        ],
+        "usage_areas_ar": [
+            "إنتاج الفورمالديهايد",
+            "إنتاج الديزل الحيوي",
+            "مضاد للتجمد ومسائل غسيل الزجاج",
+            "مذيب صناعي"
+        ],
+        "ec_number": "200-659-6",
+        "molecular_weight": "32.04",
+        "synonyms_tr": "METANOL=Metil alkol=Odun ruhu=Karbino",
+        "synonyms_en": "METHANOL=Methyl alcohol=Wood alcohol",
+        "definition_tr": [
+            "Metanol, renksiz, uçucu, yanıcı ve etanola (içki alkolü) çok benzeyen kokuya sahip organik bir çözücüdür. Vücuda alındığında formaldehite dönüşerek körlüğe ve ölüme sebep olur."
+        ],
+        "definition_en": [
+            "Methanol is a colorless, volatile, flammable organic solvent with an odor very similar to ethanol. When ingested, it converts to formaldehyde in the body, causing blindness and death."
+        ],
+        "uses_benefits_tr": [
+            "Düşük donma noktası sayesinde kışlık oto cam sularında buzlanmayı engeller. Plastik, boya ve patlayıcı üretim süreçlerinde mükemmel bir ara solventtir."
+        ],
+        "uses_benefits_en": [
+            "Due to its low freezing point, it prevents icing in winter windshield washer fluids. It is an excellent intermediate solvent in plastic, paint, and explosive production processes."
+        ],
+        "applications_tr": [
+            "Dünya metanol tüketiminin büyük çoğunluğu, sunta/MDF yapıştırıcıları için gereken formaldehitin sentezlenmesinde harcanır."
+        ]
+    },
+    {
+        "id": "chem-53",
+        "slug": "etanol",
+        "cas_number": "64-17-5",
+        "formula": "C2H5OH",
+        "category": "general",
+        "name_tr": "Etanol (Etil Alkol)",
+        "name_en": "Ethanol",
+        "name_fr": "Éthanol",
+        "name_ar": "الإيثانول",
+        "description_tr": "Etanol, şekerli bitkilerin fermantasyonuyla elde edilen; tıp, kozmetik ve içecek sektöründe kullanılan yenilenebilir, uçucu ve yanıcı organik bir alkoldür.",
+        "description_en": "Ethanol is a renewable, volatile, and flammable organic alcohol obtained by the fermentation of sugary plants; used in medicine, cosmetics, and the beverage industry.",
+        "description_fr": "L'éthanol est un alcool organique volatil et inflammable obtenu par fermentation, utilisé en médecine, cosmétique et biocarburants.",
+        "description_ar": "الإيثانول كحول عضوي متجدد ومتطاير وقابل للاشتعال يتم الحصول عليه عن طريق تخمير النباتات السكرية، ويستخدم في الطب ومستحضرات التجميل.",
+        "usage_areas_tr": [
+            "Dezenfektan ve Kolonya",
+            "İlaç ve Tıbbi Ekstraksiyon",
+            "Kozmetik (Parfüm Solvanı)",
+            "Biyoyakıt"
+        ],
+        "usage_areas_en": [
+            "Disinfectant and Cologne",
+            "Medicine and Medical Extraction",
+            "Cosmetics (Perfume Solvent)",
+            "Biofuel"
+        ],
+        "usage_areas_fr": [
+            "Désinfectant et Eau de Cologne",
+            "Médecine",
+            "Cosmétiques (Solvant de parfum)",
+            "Biocarburant"
+        ],
+        "usage_areas_ar": [
+            "مطهر وكولونيا",
+            "الطب",
+            "مستحضرات التجميل (مذيب عطور)",
+            "الوقود الحيوي"
+        ],
+        "ec_number": "200-578-6",
+        "molecular_weight": "46.07",
+        "synonyms_tr": "ETANOL=Etil alkol=Tahıl alkolü",
+        "synonyms_en": "ETHANOL=Ethyl alcohol=Grain alcohol",
+        "definition_tr": [
+            "Etanol (C2H5OH), insan tüketimine uygun tek alkol türü (içecek alkolü) olup, sanayide petrol türevi etilenden de sentetik olarak üretilebilen polar bir çözücüdür."
+        ],
+        "definition_en": [
+            "Ethanol (C2H5OH) is the only type of alcohol fit for human consumption (beverage alcohol), and is a polar solvent that can also be produced synthetically from petroleum-derived ethylene."
+        ],
+        "uses_benefits_tr": [
+            "Bitkisel esansları (yağları) ve suda çözünmeyen organik bileşikleri çözmekte (ekstraksiyon) çok başarılıdır. Parfümlerde uçuculuğu sayesinde kokunun hızla yayılmasını sağlar."
+        ],
+        "uses_benefits_en": [
+            "It is highly successful in dissolving (extracting) botanical essences (oils) and water-insoluble organic compounds. In perfumes, its volatility allows the scent to spread quickly."
+        ],
+        "applications_tr": [
+            "Geleneksel Türk kolonyalarında, medikal el antiseptiklerinde ve yakıt katkısı (biyoetanol) olarak benzin oktan artırıcı formülasyonlarda kullanılır."
+        ]
+    },
+    {
+        "id": "chem-54",
+        "slug": "metilen-klorur",
+        "cas_number": "75-09-2",
+        "formula": "CH2Cl2",
+        "category": "general",
+        "name_tr": "Metilen Klorür (Diklorometan)",
+        "name_en": "Methylene Chloride",
+        "name_fr": "Chlorure de Méthylène",
+        "name_ar": "كلوريد الميثيلين",
+        "description_tr": "Metilen klorür, olağanüstü yüksek çözme gücüne sahip olan, uçucu ve tatlımsı kokulu halojenli bir solventtir. Özellikle boya sökücü olarak ve poliüretan sünger üretiminde kullanılır.",
+        "description_en": "Methylene chloride is a volatile and sweet-smelling halogenated solvent with an exceptionally high dissolving power. It is used especially as a paint stripper and in polyurethane sponge production.",
+        "description_fr": "Le chlorure de méthylène est un solvant halogéné volatil très puissant, utilisé comme décapant pour peinture.",
+        "description_ar": "كلوريد الميثيلين مذيب هالوجيني متطاير ذو رائحة حلوة وقوة إذابة عالية بشكل استثنائي. يستخدم بشكل خاص كمزيل للطلاء وفي إنتاج إسفنج البولي يوريثان.",
+        "usage_areas_tr": [
+            "Boya ve Vernik Sökücü",
+            "Poliüretan Köpük (Sünger)",
+            "İlaç Endüstrisi",
+            "Metal Temizleme"
+        ],
+        "usage_areas_en": [
+            "Paint and Varnish Stripper",
+            "Polyurethane Foam (Sponge)",
+            "Pharmaceutical Industry",
+            "Metal Cleaning"
+        ],
+        "usage_areas_fr": [
+            "Décapant peinture/vernis",
+            "Mousse de polyuréthane",
+            "Industrie pharmaceutique",
+            "Nettoyage des métaux"
+        ],
+        "usage_areas_ar": [
+            "مزيل الطلاء والورنيش",
+            "رغوة البولي يوريثان",
+            "صناعة الأدوية",
+            "تنظيف المعادن"
+        ],
+        "ec_number": "200-838-9",
+        "molecular_weight": "84.93",
+        "synonyms_tr": "METİLEN KLORÜR=Diklorometan=MDC",
+        "synonyms_en": "METHYLENE CHLORIDE=Dichloromethane=DCM",
+        "definition_tr": [
+            "Diklorometan (CH2Cl2), suda az çözünen fakat diğer organik solventlerle her oranda karışabilen, yanıcı olmayan ancak kanserojen şüphesi taşıyan klorlu bir alifatik hidrokarbondur."
+        ],
+        "definition_en": [
+            "Dichloromethane (CH2Cl2) is a chlorinated aliphatic hydrocarbon that is slightly soluble in water but miscible with other organic solvents in all proportions, non-flammable but suspected of being carcinogenic."
+        ],
+        "uses_benefits_tr": [
+            "Sertleşmiş epoksi, poliüretan ve selülozik boya katmanlarının içine hızla nüfuz ederek onları saniyeler içinde kabartır ve zeminden kolayca ayrılmasını (sökülmesini) sağlar."
+        ],
+        "uses_benefits_en": [
+            "It rapidly penetrates hardened epoxy, polyurethane, and cellulosic paint layers, causing them to blister in seconds and easily detach from the surface."
+        ],
+        "applications_tr": [
+            "Eski mobilya ve araçların restorasyonunda (boya sökücü jel), yatak ve koltuk süngerlerinin (esnek PU köpük) şişirilmesi (blowing agent) işlemlerinde devasa hacimlerde tüketilir."
+        ]
+    },
+    {
+        "id": "chem-55",
+        "slug": "butil-asetat",
+        "cas_number": "123-86-4",
+        "formula": "C6H12O2",
+        "category": "general",
+        "name_tr": "Bütil Asetat",
+        "name_en": "Butyl Acetate",
+        "name_fr": "Acétate de Butyle",
+        "name_ar": "أسيتات البوتيل",
+        "description_tr": "Bütil asetat, muz ve elma benzeri karakteristik meyvemsi bir kokuya sahip, nitroselüloz bazlı boyalarda ve deri cilalarında orta hızda kuruyan ana solventtir.",
+        "description_en": "Butyl acetate is the main solvent characterized by a fruity, banana/apple-like odor, drying at a medium rate in nitrocellulose-based paints and leather varnishes.",
+        "description_fr": "L'acétate de butyle est un solvant à l'odeur fruitée de banane, utilisé dans les peintures nitrocellulosiques et les vernis pour cuir.",
+        "description_ar": "أسيتات البوتيل مذيب رئيسي يتميز برائحة الفواكه والموز / التفاح، ويجف بمعدل متوسط ​​في الدهانات المعتمدة على النيتروسليلوز وورنيش الجلود.",
+        "usage_areas_tr": [
+            "Oto Tamir Boyaları",
+            "Ahşap ve Mobilya Cilaları",
+            "Oje Formülasyonları",
+            "Deri Terbiyesi"
+        ],
+        "usage_areas_en": [
+            "Auto Refinish Paints",
+            "Wood and Furniture Varnishes",
+            "Nail Polish Formulations",
+            "Leather Finishing"
+        ],
+        "usage_areas_fr": [
+            "Peintures automobiles",
+            "Vernis pour bois et meubles",
+            "Vernis à ongles",
+            "Finition du cuir"
+        ],
+        "usage_areas_ar": [
+            "دهانات إصلاح السيارات",
+            "ورنيش الخشب والأثاث",
+            "تركيبات طلاء الأظافر",
+            "تشطيب الجلود"
+        ],
+        "ec_number": "204-658-1",
+        "molecular_weight": "116.16",
+        "synonyms_tr": "BÜTİL ASETAT=n-Bütil asetat=Bütil etanoat",
+        "synonyms_en": "BUTYL ACETATE=n-Butyl acetate=Butyl ethanoate",
+        "definition_tr": [
+            "n-Bütil asetat, butanol ve asetik asidin esterleşmesiyle elde edilen, suda neredeyse hiç çözünmeyen, organik, yanıcı sıvı bir esterdir."
+        ],
+        "definition_en": [
+            "n-Butyl acetate is an organic, flammable liquid ester obtained by the esterification of butanol and acetic acid, virtually insoluble in water."
+        ],
+        "uses_benefits_tr": [
+            "Asetona veya etil asetata kıyasla daha yavaş (optimum hızda) buharlaştığı için boyanın veya cilananın fırça izi bırakmadan yüzeye pürüzsüz yayılmasını sağlar (film oluşturma)."
+        ],
+        "uses_benefits_en": [
+            "Because it evaporates slower (at an optimal rate) compared to acetone or ethyl acetate, it allows the paint or varnish to spread smoothly on the surface without leaving brush marks (film formation)."
+        ],
+        "applications_tr": [
+            "Otomotiv kaporta boyama sistemlerinde, mobilya cilalama verniklerinde ve suni deri kaplama (apre) makinalarında akışkanlığı sağlamak için seyreltici olarak kullanılır."
+        ]
+    },
+    {
+        "id": "chem-56",
+        "slug": "hekzan",
+        "cas_number": "110-54-3",
+        "formula": "C6H14",
+        "category": "general",
+        "name_tr": "Hekzan",
+        "name_en": "Hexane",
+        "name_fr": "Hexane",
+        "name_ar": "الهكسان",
+        "description_tr": "Hekzan, petrolden elde edilen, suda çözünmeyen apolar yapısıyla yağları çok hızlı çözen, özellikle ayçiçek/soya yağı ekstraksiyonunda ve deri/ayakkabı yapıştırıcılarında kullanılan uçucu bir solventtir.",
+        "description_en": "Hexane is a volatile solvent derived from petroleum. Due to its apolar, water-insoluble structure, it dissolves oils very quickly, heavily used in sunflower/soybean oil extraction and shoe adhesives.",
+        "description_fr": "L'hexane est un solvant volatil dérivé du pétrole, très utilisé dans l'extraction des huiles végétales et les adhésifs pour chaussures.",
+        "description_ar": "الهكسان مذيب متطاير مشتق من البترول. نظرًا لتركيبه غير القطبي وغير القابل للذوبان في الماء، فإنه يذيب الزيوت بسرعة كبيرة، ويستخدم بكثافة في استخراج زيت عباد الشمس / فول الصويا ومواد لاصقة للأحذية.",
+        "usage_areas_tr": [
+            "Yemeklik Yağ Ekstraksiyonu",
+            "Deri ve Ayakkabı (Bally) Tutkalı",
+            "Tekstil ve Kumaş Temizleme",
+            "Bant Yapıştırıcıları"
+        ],
+        "usage_areas_en": [
+            "Edible Oil Extraction",
+            "Leather and Shoe Glue",
+            "Textile and Fabric Cleaning",
+            "Tape Adhesives"
+        ],
+        "usage_areas_fr": [
+            "Extraction d'huile alimentaire",
+            "Colle pour chaussures",
+            "Nettoyage textile",
+            "Adhésifs pour bandes"
+        ],
+        "usage_areas_ar": [
+            "استخراج زيوت الطعام",
+            "غراء الجلود والأحذية",
+            "تنظيف المنسوجات",
+            "المواد اللاصقة للأشرطة"
+        ],
+        "ec_number": "203-777-6",
+        "molecular_weight": "86.18",
+        "synonyms_tr": "HEKZAN=n-Hekzan",
+        "synonyms_en": "HEXANE=n-Hexane",
+        "definition_tr": [
+            "n-Hekzan, altı karbon atomlu düz zincirli bir alkan (alifatik hidrokarbon) olup, renksiz, hafif benzin kokulu ve son derece yanıcıdır."
+        ],
+        "definition_en": [
+            "n-Hexane is a straight-chain alkane (aliphatic hydrocarbon) with six carbon atoms, colorless, highly flammable, with a slight gasoline odor."
+        ],
+        "uses_benefits_tr": [
+            "Tarım ürünlerinin (soya, mısır, ayçiçeği) tohumlarındaki yağı tamamen çözerek içine çeker (ekstrakte eder) ve sonrasında 69°C gibi düşük bir sıcaklıkta kaynayıp buharlaşarak saf yağı geride bırakır."
+        ],
+        "uses_benefits_en": [
+            "It completely dissolves and absorbs (extracts) the oil in the seeds of agricultural products, then boils and evaporates at a low temperature of 69°C, leaving the pure oil behind."
+        ],
+        "applications_tr": [
+            "Küresel gıda sanayisinde bitkisel sıvı yağ üretim proseslerinin kalbidir. Ayrıca endüstriyel kontak yapıştırıcıların akışkanlık (vizkosite) sağlayıcısıdır."
+        ]
+    },
+    {
+        "id": "chem-57",
+        "slug": "beyaz-ispirto-white-spirit",
+        "cas_number": "64742-82-1",
+        "formula": "Mix (Aliphatic/Alicyclic)",
+        "category": "general",
+        "name_tr": "Beyaz İspirto (White Spirit)",
+        "name_en": "White Spirit",
+        "name_fr": "White Spirit",
+        "name_ar": "وايت سبيريت (روح بيضاء)",
+        "description_tr": "Sentetik tiner olarak da bilinen White Spirit, yağlı boya temizliğinde, oto tamir atölyelerinde parça yıkamada ve ahşap verniklerinde kullanılan petrol türevi kokusuz/az kokulu bir solventtir.",
+        "description_en": "Also known as mineral spirits or synthetic thinner, White Spirit is a petroleum-derived low-odor solvent used in oil paint cleaning, auto repair parts washing, and wood varnishes.",
+        "description_fr": "Communément appelé White Spirit, c'est un solvant dérivé du pétrole utilisé pour nettoyer la peinture à l'huile et les vernis pour bois.",
+        "description_ar": "يُعرف أيضًا باسم المشروبات الروحية المعدنية أو المخفف الاصطناعي، وهو مذيب منخفض الرائحة مشتق من البترول يستخدم في تنظيف الطلاء الزيتي وغسل أجزاء إصلاح السيارات.",
+        "usage_areas_tr": [
+            "Sentetik Boya İnceltici (Tiner)",
+            "Fırça ve Ekipman Temizliği",
+            "Otomotiv Parça Yıkama",
+            "Kuru Temizleme"
+        ],
+        "usage_areas_en": [
+            "Synthetic Paint Thinner",
+            "Brush and Equipment Cleaning",
+            "Automotive Parts Washing",
+            "Dry Cleaning"
+        ],
+        "usage_areas_fr": [
+            "Diluant peinture",
+            "Nettoyage des pinceaux",
+            "Lavage de pièces auto",
+            "Nettoyage à sec"
+        ],
+        "usage_areas_ar": [
+            "مخفف طلاء",
+            "تنظيف الفرش والمعدات",
+            "غسيل قطع غيار السيارات",
+            "التنظيف الجاف"
+        ],
+        "ec_number": "265-185-4",
+        "molecular_weight": "Variable",
+        "synonyms_tr": "WHİTE SPİRİT=Sentetik tiner=Mineral ispirto=Stoddard solventi",
+        "synonyms_en": "WHITE SPIRIT=Mineral spirits=Synthetic thinner=Stoddard solvent",
+        "definition_tr": [
+            "White Spirit, C7 ile C12 arasındaki alifatik ve alisiklik hidrokarbonların karışımından oluşan şeffaf, gazyağına benzer bir petrol distilatıdır."
+        ],
+        "definition_en": [
+            "White Spirit is a clear, kerosene-like petroleum distillate consisting of a mixture of aliphatic and alicyclic hydrocarbons between C7 and C12."
+        ],
+        "uses_benefits_tr": [
+            "Aseton veya toluen gibi çok agresif solventlerin aksine boyayı daha yavaş çözer, kokusu daha tolere edilebilirdir (özellikle de-aromatize tipleri) ve ahşap yüzeylere zarar vermez."
+        ],
+        "uses_benefits_en": [
+            "Unlike very aggressive solvents like acetone or toluene, it dissolves paint slower, its odor is more tolerable (especially de-aromatized types), and it does not damage wooden surfaces."
+        ],
+        "applications_tr": [
+            "Evlerimizde duvar veya kapı boyamada kullandığımız 'yağlı boyaların' inceltilmesinde ve boya sonrası ruloların/fırçaların temizlenmesinde kullanılan ana sıvıdır."
+        ]
+    },
+    {
+        "id": "chem-58",
+        "slug": "etil-metil-keton-mek",
+        "cas_number": "78-93-3",
+        "formula": "C4H8O",
+        "category": "general",
+        "name_tr": "Etil Metil Keton (MEK)",
+        "name_en": "Methyl Ethyl Ketone (MEK)",
+        "name_fr": "Méthyléthylcétone (MEK)",
+        "name_ar": "ميثيل إيثيل كيتون (MEK)",
+        "description_tr": "MEK, asetona benzeyen keskin kokusuyla PVC, poliüretan ve akrilik reçineleri mükemmel derecede çözen, matbaacılıkta (flekso/gravür) ve plastik endüstrisinde kullanılan güçlü bir solventtir.",
+        "description_en": "MEK is a strong solvent with a sharp, acetone-like odor that excellently dissolves PVC, polyurethane, and acrylic resins, heavily used in printing (flexo/gravure) and plastics.",
+        "description_fr": "La MEK est un solvant puissant à l'odeur piquante semblable à l'acétone qui dissout excellemment le PVC et les résines polyuréthane.",
+        "description_ar": "MEK مذيب قوي ذو رائحة نفاذة تشبه الأسيتون ويذوب الـ PVC والبولي يوريثين وراتنجات الأكريليك بشكل ممتاز، ويستخدم بكثافة في الطباعة والبلاستيك.",
+        "usage_areas_tr": [
+            "Esnek Ambalaj Baskısı (Mürekkep)",
+            "PVC Boru Tutkalı",
+            "Manyetik Bant Üretimi",
+            "Deri Yüzey Kaplama"
+        ],
+        "usage_areas_en": [
+            "Flexible Packaging Printing",
+            "PVC Pipe Glue",
+            "Magnetic Tape Production",
+            "Leather Surface Coating"
+        ],
+        "usage_areas_fr": [
+            "Impression sur emballage",
+            "Colle pour tuyaux PVC",
+            "Bandes magnétiques",
+            "Revêtement cuir"
+        ],
+        "usage_areas_ar": [
+            "طباعة التغليف المرن",
+            "غراء أنابيب PVC",
+            "إنتاج الشريط المغناطيسي",
+            "طلاء سطح الجلد"
+        ],
+        "ec_number": "201-159-0",
+        "molecular_weight": "72.11",
+        "synonyms_tr": "MEK=Bütanon=Etil metil keton=2-Bütanon",
+        "synonyms_en": "MEK=Butanone=Methyl ethyl ketone=2-Butanone",
+        "definition_tr": [
+            "2-Bütanon (MEK), asetonun (propanon) bir üst karbon dizilimine sahip olan asimetrik yapılı, suda çözünebilen ve buharlaşma hızı çok yüksek bir alifatik ketondur."
+        ],
+        "definition_en": [
+            "2-Butanone (MEK) is an asymmetric, water-soluble aliphatic ketone with one higher carbon arrangement than acetone (propanone), featuring a very high evaporation rate."
+        ],
+        "uses_benefits_tr": [
+            "Asetondan daha yavaş buharlaşması ve kaynama noktasının daha yüksek olması, boya ve mürekkeplerin yüzeyde kuruma hızının çok daha rahat kontrol edilmesini (daha parlak yüzey elde edilmesini) sağlar."
+        ],
+        "uses_benefits_en": [
+            "Its slower evaporation rate and higher boiling point compared to acetone allow for much better control of the drying speed of paints and inks on the surface (yielding a glossier finish)."
+        ],
+        "applications_tr": [
+            "Plastik boruların (PVC) birbirine kaynaştırılmasını sağlayan (plastik boru tutkalı) solüsyonlarda plastiği hafifçe eriterek kaynak görevini üstlenir."
+        ]
+    },
+    {
+        "id": "chem-59",
+        "slug": "siklohekzanon",
+        "cas_number": "108-94-1",
+        "formula": "C6H10O",
+        "category": "general",
+        "name_tr": "Siklohekzanon",
+        "name_en": "Cyclohexanone",
+        "name_fr": "Cyclohexanone",
+        "name_ar": "حلقي الهكسانون",
+        "description_tr": "Naylon üretim zincirinin en hayati ara halkası olan siklohekzanon, aynı zamanda pvc kaplamalarda, serigrafi mürekkeplerinde ve tarım ilaçlarında mükemmel bir yağ/polimer çözücüsüdür.",
+        "description_en": "The most vital intermediate link in the nylon production chain, cyclohexanone is also an excellent oil/polymer solvent in PVC coatings, screen printing inks, and pesticides.",
+        "description_fr": "Intermédiaire vital dans la production de nylon, la cyclohexanone est également un excellent solvant pour les revêtements PVC et les encres de sérigraphie.",
+        "description_ar": "أهم حلقة وسيطة في سلسلة إنتاج النايلون، كما أنه مذيب زيت / بوليمر ممتاز في طلاء الـ PVC، وأحبار طباعة الشاشة، والمبيدات الحشرية.",
+        "usage_areas_tr": [
+            "Naylon-6 ve Naylon-6,6 Sentezi",
+            "Serigrafi Mürekkepleri",
+            "PVC Suni Deri",
+            "Pestisit Çözücü"
+        ],
+        "usage_areas_en": [
+            "Nylon-6 and Nylon-6,6 Synthesis",
+            "Screen Printing Inks",
+            "PVC Synthetic Leather",
+            "Pesticide Solvent"
+        ],
+        "usage_areas_fr": [
+            "Synthèse du Nylon-6",
+            "Encres de sérigraphie",
+            "Cuir synthétique PVC",
+            "Solvant pour pesticides"
+        ],
+        "usage_areas_ar": [
+            "تخليق النايلون",
+            "أحبار طباعة الشاشة",
+            "الجلد الصناعي PVC",
+            "مذيب مبيدات الآفات"
+        ],
+        "ec_number": "203-631-1",
+        "molecular_weight": "98.15",
+        "synonyms_tr": "SİKLOHEKZANON=CYC=Oksosiklohekzan",
+        "synonyms_en": "CYCLOHEXANONE=CYC=Pimelic ketone",
+        "definition_tr": [
+            "Siklohekzanon, nane ile aseton arası çok karakteristik bir kokuya sahip, halkalı (siklik) yapıda alifatik bir ketondur. Suda az, solventlerde çok çözünür."
+        ],
+        "definition_en": [
+            "Cyclohexanone is a cyclic aliphatic ketone with a very characteristic odor ranging between peppermint and acetone. Slightly soluble in water, highly miscible in solvents."
+        ],
+        "uses_benefits_tr": [
+            "Sert vinil (PVC) kopolimerlerini ve nitroselülozu çok homojen bir şekilde çözer. Ayrıca 'leveling' (yüzeye yayılma) kabiliyeti son derece yüksektir."
+        ],
+        "uses_benefits_en": [
+            "It dissolves rigid vinyl (PVC) copolymers and nitrocellulose very homogeneously. It also has an extremely high 'leveling' capability on surfaces."
+        ],
+        "applications_tr": [
+            "Dünya siklohekzanon üretiminin yaklaşık %95'i tekstil lifi olarak bildiğimiz naylonların (adipik asit ve kaprolaktam formlarında) üretimine harcanır."
+        ]
+    },
+    {
+        "id": "chem-60",
+        "slug": "propilen-glikol-pg",
+        "cas_number": "57-55-6",
+        "formula": "C3H8O2",
+        "category": "general",
+        "name_tr": "Propilen Glikol (PG)",
+        "name_en": "Propylene Glycol",
+        "name_fr": "Propylène Glycol",
+        "name_ar": "بروبيلين جليكول",
+        "description_tr": "Toksisitesi son derece düşük (insan tüketimine uygun) olduğu için gıda esanslarında, e-sigara likitlerinde, bebek şampuanlarında nem tutucu (hümektan) ve aroma taşıyıcı olarak kullanılan bir glikoldür.",
+        "description_en": "Due to its extremely low toxicity (safe for human consumption), it is a glycol used as a moisture retainer (humectant) and flavor carrier in food essences, e-cigarette liquids, and baby shampoos.",
+        "description_fr": "Le propylène glycol est un glycole à très faible toxicité utilisé comme humectant et vecteur d'arôme dans les aliments et les cosmétiques.",
+        "description_ar": "بروبيلين جليكول جليكول آمن للاستهلاك البشري، يستخدم كمرطب وحامل للنكهات في خلاصات الأغذية، وسوائل السجائر الإلكترونية، وشامبو الأطفال.",
+        "usage_areas_tr": [
+            "Gıda Aroması ve Renklendirici",
+            "E-Sigara (Elektronik Sigara Likiti)",
+            "Kozmetik Nemlendirici",
+            "Gıda Sınıfı Antifriz"
+        ],
+        "usage_areas_en": [
+            "Food Flavor and Coloring",
+            "E-Cigarette (Vape Liquid)",
+            "Cosmetic Moisturizer",
+            "Food-Grade Antifreeze"
+        ],
+        "usage_areas_fr": [
+            "Arôme et colorant alimentaire",
+            "E-liquides",
+            "Hydratant cosmétique",
+            "Antigel de qualité alimentaire"
+        ],
+        "usage_areas_ar": [
+            "نكهات الأطعمة والملونات",
+            "السجائر الإلكترونية",
+            "مرطب مستحضرات التجميل",
+            "مضاد تجمد آمن غذائيا"
+        ],
+        "ec_number": "200-338-0",
+        "molecular_weight": "76.09",
+        "synonyms_tr": "PROPİLEN GLİKOL=Monopropilen glikol=MPG=1,2-propandiol",
+        "synonyms_en": "PROPYLENE GLYCOL=Monopropylene glycol=MPG=1,2-Propanediol",
+        "definition_tr": [
+            "Propilen glikol (1,2-propandiol), propilen oksidin su ile hidrasyonuyla üretilen, renksiz, hafif tatlı, kokusuz ve viskoz bir organik dioldür."
+        ],
+        "definition_en": [
+            "Propylene glycol (1,2-propanediol) is a colorless, slightly sweet, odorless, and viscous organic diol produced by the hydration of propylene oxide with water."
+        ],
+        "uses_benefits_tr": [
+            "Yağ bazlı gıda aromalarını ve uçucu esansiyel yağları çözer, bunların suda homojen dağılmasını (dağıtıcı ajan) sağlar."
+        ],
+        "uses_benefits_en": [
+            "Dissolves oil-based food flavors and volatile essential oils, ensuring their homogeneous distribution (dispersing agent) in water."
+        ],
+        "applications_tr": [
+            "Elektronik sigara cihazlarında, rezistans ısındığında buharlaştırıcı baz (duman oluşturucu) olarak Gliserin (VG) ile karıştırılarak yoğun olarak tüketilir."
+        ]
+    },
+    {
+        "id": "chem-61",
+        "slug": "kloroform",
+        "cas_number": "67-66-3",
+        "formula": "CHCl3",
+        "category": "general",
+        "name_tr": "Kloroform",
+        "name_en": "Chloroform",
+        "name_fr": "Chloroforme",
+        "name_ar": "الكلوروفورم",
+        "description_tr": "Tarihte anestezi gazı (bayıltıcı) olarak nam salmış kloroform, günümüzde florokarbon (Teflon) gazı üretiminde (CFC/HCFC) ve ağır kimya laboratuvarlarında güçlü bir organik solvent olarak kullanılmaktadır.",
+        "description_en": "Historically famous as an anesthetic gas, chloroform is currently used in the production of fluorocarbon (Teflon) gases (CFC/HCFC) and as a strong organic solvent in heavy chemical labs.",
+        "description_fr": "Historiquement célèbre comme gaz anesthésiant, le chloroforme est actuellement utilisé dans la production de gaz fluorocarbures et comme solvant.",
+        "description_ar": "اشتهر تاريخيًا كغاز مخدر، يستخدم الكلوروفورم حاليًا في إنتاج غازات الفلوروكربون (التفلون) (CFC/HCFC) وكمذيب عضوي قوي في المختبرات الكيميائية الثقيلة.",
+        "usage_areas_tr": [
+            "Teflon (PTFE) Ön Maddesi",
+            "Soğutucu Gaz Üretimi",
+            "Alkaloid Ekstraksiyonu",
+            "Endüstriyel Yapıştırıcı (Pleksi)"
+        ],
+        "usage_areas_en": [
+            "Teflon (PTFE) Precursor",
+            "Refrigerant Gas Production",
+            "Alkaloid Extraction",
+            "Industrial Adhesive (Plexiglass)"
+        ],
+        "usage_areas_fr": [
+            "Précurseur du Téflon",
+            "Gaz réfrigérant",
+            "Extraction d'alcaloïdes",
+            "Adhésif industriel"
+        ],
+        "usage_areas_ar": [
+            "السلائف للتفلون",
+            "إنتاج غاز التبريد",
+            "استخراج القلويات",
+            "لاصق صناعي"
+        ],
+        "ec_number": "200-663-8",
+        "molecular_weight": "119.38",
+        "synonyms_tr": "KLOROFORM=Triklorometan",
+        "synonyms_en": "CHLOROFORM=Trichloromethane",
+        "definition_tr": [
+            "Kloroform (Triklorometan), eter benzeri çok karakteristik tatlı ve ağır bir kokuya sahip, yoğun ve oldukça uçucu klorlu bir halojenoalkandır."
+        ],
+        "definition_en": [
+            "Chloroform (Trichloromethane) is a dense and highly volatile chlorinated haloalkane with a very characteristic sweet, heavy, ether-like odor."
+        ],
+        "uses_benefits_tr": [
+            "Zehirli olduğu için tıbbi kullanımı tamamen yasaklanmıştır ancak pleksiglas (akrilik) plastik parçaları birbirine saniyeler içinde mükemmel şekilde kaynatma özelliği (plastik kaynağı) vardır."
+        ],
+        "uses_benefits_en": [
+            "Due to its toxicity, its medical use has been completely banned, but it has the ability to perfectly weld plexiglass (acrylic) plastic parts together in seconds (plastic welding)."
+        ],
+        "applications_tr": [
+            "Dünya tüketiminin büyük çoğunluğu HCFC-22 (R22) soğutucu gazının ve yanmaz yapışmaz Teflon (Politetrafloroetilen) tavaların polimer zincirlerinin sentezinde tüketilir."
+        ]
     }
 ]
