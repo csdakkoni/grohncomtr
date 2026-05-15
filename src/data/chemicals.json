@@ -1510,5 +1510,817 @@
             "Used as a mordant in textiles to ensure dyes hold firmly to fabric fibers.",
             "Due to its acidic nature, it is used in gardening to lower soil pH and promote the growth of acid-loving plants (like hydrangeas)."
         ]
+    },
+    {
+        "id": "chem-23",
+        "slug": "sodyum-klorit",
+        "cas_number": "7758-19-2",
+        "formula": "NaClO2",
+        "category": "textile",
+        "name_tr": "Sodyum Klorit",
+        "name_en": "Sodium Chlorite",
+        "name_fr": "Chlorite de Sodium",
+        "name_ar": "كلوريت الصوديوم",
+        "description_tr": "Tekstil ve kağıt endüstrisinde güçlü bir ağartma (kasar) maddesi olarak, su arıtımında ise dezenfektan (klor dioksit üreteci) olarak kullanılan beyaz kristal formda bir inorganik tuzdur.",
+        "description_en": "A white crystalline inorganic salt used as a strong bleaching agent in the textile and paper industries, and as a disinfectant (chlorine dioxide generator) in water treatment.",
+        "description_fr": "Sel inorganique cristallin blanc utilisé comme agent de blanchiment fort dans les industries du textile et du papier, et comme désinfectant dans le traitement de l'eau.",
+        "description_ar": "ملح غير عضوي بلوري أبيض يستخدم كعامل تبييض قوي في صناعات النسيج والورق، وكمطهر في معالجة المياه.",
+        "usage_areas_tr": [
+            "Tekstil Ağartma",
+            "Kağıt Beyazlatma",
+            "Su Dezenfeksiyonu",
+            "Deri İşleme"
+        ],
+        "usage_areas_en": [
+            "Textile Bleaching",
+            "Paper Whitening",
+            "Water Disinfection",
+            "Leather Processing"
+        ],
+        "usage_areas_fr": [
+            "Blanchiment textile",
+            "Blanchiment du papier",
+            "Désinfection de l'eau",
+            "Traitement du cuir"
+        ],
+        "usage_areas_ar": [
+            "تبييض المنسوجات",
+            "تبييض الورق",
+            "تطهير المياه",
+            "معالجة الجلود"
+        ],
+        "ec_number": "231-836-6",
+        "molecular_weight": "90.44",
+        "synonyms_tr": "SODYUM KLORİT=Kloröz asit sodyum tuzu",
+        "synonyms_en": "SODIUM CHLORITE=Chlorous acid sodium salt",
+        "definition_tr": [
+            "Sodyum klorit, tekstil elyaflarına zarar vermeden yüksek beyazlık sağlayan, hafif higroskopik özellik gösteren güçlü bir oksidandır."
+        ],
+        "definition_en": [
+            "Sodium chlorite is a strong oxidant exhibiting slight hygroscopic properties, providing high whiteness without damaging textile fibers."
+        ],
+        "uses_benefits_tr": [
+            "Selüloz bazlı (pamuklu) kumaşların ağartılmasında en güvenli kimyasallardan biridir, elyafta erime veya yıpranma yapmaz."
+        ],
+        "uses_benefits_en": [
+            "It is one of the safest chemicals for bleaching cellulose-based (cotton) fabrics; it does not melt or fray the fibers."
+        ],
+        "applications_tr": [
+            "Tekstil terbiye tesislerinde kontinü veya diskontinü kasar işlemlerinde ana ağartıcı ajan olarak tüketilir."
+        ]
+    },
+    {
+        "id": "chem-24",
+        "slug": "sodyum-hidrosulfit",
+        "cas_number": "7775-14-6",
+        "formula": "Na2S2O4",
+        "category": "textile",
+        "name_tr": "Sodyum Hidrosülfit",
+        "name_en": "Sodium Hydrosulfite",
+        "name_fr": "Hydrosulfite de Sodium",
+        "name_ar": "هيدروسلفيت الصوديوم",
+        "description_tr": "Tekstil sektöründe küp boyaların indirgenmesinde ve hatalı boyanmış kumaşların boyasının sökülmesinde kullanılan son derece güçlü bir indirgeyici (redüktör) ajandır.",
+        "description_en": "An extremely powerful reducing agent used in the textile industry for the reduction of vat dyes and the stripping of color from incorrectly dyed fabrics.",
+        "description_fr": "Agent réducteur extrêmement puissant utilisé dans l'industrie textile pour la réduction des colorants de cuve et le décapage des couleurs.",
+        "description_ar": "عامل اختزال قوي للغاية يستخدم في صناعة النسيج لتقليل أصباغ الحوض وتجريد الألوان من الأقمشة المصبوغة بشكل غير صحيح.",
+        "usage_areas_tr": [
+            "Boya Sökme",
+            "Küp Boyama",
+            "Kağıt Ağartma",
+            "Kil Beyazlatma"
+        ],
+        "usage_areas_en": [
+            "Color Stripping",
+            "Vat Dyeing",
+            "Paper Bleaching",
+            "Clay Whitening"
+        ],
+        "usage_areas_fr": [
+            "Décapage de couleur",
+            "Teinture en cuve",
+            "Blanchiment du papier",
+            "Blanchiment de l'argile"
+        ],
+        "usage_areas_ar": [
+            "تجريد الألوان",
+            "صباغة الحوض",
+            "تبييض الورق",
+            "تبييض الطين"
+        ],
+        "ec_number": "231-890-0",
+        "molecular_weight": "174.11",
+        "synonyms_tr": "SODYUM HİDROSÜLFİT=Sodyum ditiyonit",
+        "synonyms_en": "SODIUM HYDROSULFITE=Sodium dithionite",
+        "definition_tr": [
+            "Sodyum hidrosülfit (veya sodyum ditiyonit), suda çözündüğünde çok güçlü indirgeme potansiyeline sahip, havayla temasında bozunabilen beyazımsı bir tozdur."
+        ],
+        "definition_en": [
+            "Sodium hydrosulfite (or sodium dithionite) is a whitish powder that has a very strong reduction potential when dissolved in water and can degrade upon contact with air."
+        ],
+        "uses_benefits_tr": [
+            "Çözünmeyen küp boyalarını çözünebilir (löko) forma dönüştürerek boyanın pamuk lifine nüfuz etmesini sağlar."
+        ],
+        "uses_benefits_en": [
+            "It converts insoluble vat dyes into a soluble (leuco) form, allowing the dye to penetrate the cotton fiber."
+        ],
+        "applications_tr": [
+            "Tekstil boyahanelerinde poliester boyama sonrası ard temizlik (redüktif yıkama) aşamasının en kritik kimyasalıdır."
+        ]
+    },
+    {
+        "id": "chem-25",
+        "slug": "potasyum-hidroksit",
+        "cas_number": "1310-58-3",
+        "formula": "KOH",
+        "category": "general",
+        "name_tr": "Potasyum Hidroksit (Kostik Potas)",
+        "name_en": "Potassium Hydroxide (Caustic Potash)",
+        "name_fr": "Hydroxyde de Potassium",
+        "name_ar": "هيدروكسيد البوتاسيوم",
+        "description_tr": "Potasyum hidroksit, sıvı sabun ve arap sabunu yapımında saponifikasyon (sabunlaşma) ajanı olarak kullanılan çok güçlü bir inorganik bazdır.",
+        "description_en": "Potassium hydroxide is a very strong inorganic base used as a saponification agent in the making of liquid soaps and soft soaps.",
+        "description_fr": "L'hydroxyde de potassium est une base inorganique très forte utilisée comme agent de saponification dans la fabrication de savons liquides.",
+        "description_ar": "هيدروكسيد البوتاسيوم قاعدة غير عضوية قوية جدا تستخدم كعامل تصبن في صناعة الصابون السائل والصابون اللين.",
+        "usage_areas_tr": [
+            "Sıvı Sabun Üretimi",
+            "Tarım Gübreleri",
+            "Alkalin Piller",
+            "Gıda (E525)"
+        ],
+        "usage_areas_en": [
+            "Liquid Soap Production",
+            "Agricultural Fertilizers",
+            "Alkaline Batteries",
+            "Food (E525)"
+        ],
+        "usage_areas_fr": [
+            "Production de savon liquide",
+            "Engrais agricoles",
+            "Piles alcalines",
+            "Alimentation (E525)"
+        ],
+        "usage_areas_ar": [
+            "إنتاج الصابون السائل",
+            "الأسمدة الزراعية",
+            "البطاريات القلوية",
+            "الأغذية (E525)"
+        ],
+        "ec_number": "215-181-3",
+        "molecular_weight": "56.11",
+        "synonyms_tr": "POTASYUM HİDROKSİT=Kostik potas",
+        "synonyms_en": "POTASSIUM HYDROXIDE=Caustic potash",
+        "definition_tr": [
+            "Potasyum hidroksit, kostik sodaya (NaOH) benzer şekilde suda egzotermik çözünen, renksiz veya beyaz renkli aşındırıcı katı bir kimyasaldır."
+        ],
+        "definition_en": [
+            "Potassium hydroxide is a colorless or white corrosive solid chemical that, similar to caustic soda (NaOH), dissolves exothermically in water."
+        ],
+        "uses_benefits_tr": [
+            "Yağ asitleriyle tepkimeye girerek suda daha kolay çözünen, sıvı ve yumuşak yapılı potasyum sabunları oluşturur."
+        ],
+        "uses_benefits_en": [
+            "Reacts with fatty acids to form potassium soaps, which are softer and more easily soluble in water."
+        ],
+        "applications_tr": [
+            "Kozmetik ve temizlik sanayisinde tıraş kremleri, sıvı el sabunları ve endüstriyel temizleyicilerin ana girdisidir."
+        ]
+    },
+    {
+        "id": "chem-26",
+        "slug": "potasyum-karbonat",
+        "cas_number": "584-08-7",
+        "formula": "K2CO3",
+        "category": "general",
+        "name_tr": "Potasyum Karbonat",
+        "name_en": "Potassium Carbonate",
+        "name_fr": "Carbonate de Potassium",
+        "name_ar": "كربونات البوتاسيوم",
+        "description_tr": "Cam sanayisinde, seramik sırlarında ve gıdada kullanılan, hafif alkali karakterli, suda çözünebilen nem tutucu bir potasyum tuzudur.",
+        "description_en": "A slightly alkaline, water-soluble, moisture-retaining potassium salt used in the glass industry, ceramic glazes, and food.",
+        "description_fr": "Un sel de potassium légèrement alcalin, soluble dans l'eau, utilisé dans l'industrie du verre et les glaçures céramiques.",
+        "description_ar": "ملح بوتاسيوم قلوي قليلاً، قابل للذوبان في الماء، ويحتفظ بالرطوبة، ويستخدم في صناعة الزجاج وتزجيج السيراميك.",
+        "usage_areas_tr": [
+            "Özel Cam Üretimi",
+            "Seramik ve Porselen",
+            "Tarım (Potas)",
+            "Gıda (Kakao İşleme)"
+        ],
+        "usage_areas_en": [
+            "Specialty Glass Production",
+            "Ceramics and Porcelain",
+            "Agriculture (Potash)",
+            "Food (Cocoa Processing)"
+        ],
+        "usage_areas_fr": [
+            "Verre de spécialité",
+            "Céramique et Porcelaine",
+            "Agriculture",
+            "Alimentation"
+        ],
+        "usage_areas_ar": [
+            "إنتاج الزجاج المتخصص",
+            "السيراميك والبورسلين",
+            "الزراعة",
+            "الأغذية"
+        ],
+        "ec_number": "209-529-3",
+        "molecular_weight": "138.20",
+        "synonyms_tr": "POTASYUM KARBONAT=İnci külü",
+        "synonyms_en": "POTASSIUM CARBONATE=Pearl ash",
+        "definition_tr": [
+            "Potasyum karbonat (K2CO3), tarihsel olarak bitki küllerinin suda kaynatılmasıyla elde edilen (inci külü), günümüzde sentetik olarak üretilen beyaz bir tozdur."
+        ],
+        "definition_en": [
+            "Potassium carbonate (K2CO3) is a white powder historically obtained by boiling plant ashes in water (pearl ash), now produced synthetically."
+        ],
+        "uses_benefits_tr": [
+            "Camın optik şeffaflığını artırır ve erime sıcaklığını optimize eder (özellikle televizyon ekranları ve laboratuvar camları)."
+        ],
+        "uses_benefits_en": [
+            "Enhances the optical clarity of glass and optimizes its melting temperature (especially for television screens and laboratory glassware)."
+        ],
+        "applications_tr": [
+            "Gıda sektöründe Dutch prosesi (kakaonun alkalileştirilmesi) işleminde çikolataya koyu rengini vermek ve asitliğini kırmak için kullanılır."
+        ]
+    },
+    {
+        "id": "chem-27",
+        "slug": "amonyak",
+        "cas_number": "7664-41-7",
+        "formula": "NH3",
+        "category": "general",
+        "name_tr": "Amonyak",
+        "name_en": "Ammonia",
+        "name_fr": "Ammoniac",
+        "name_ar": "الأمونيا",
+        "description_tr": "Amonyak, keskin ve boğucu kokusuyla bilinen, gübre endüstrisinin temeli olan ve temizlik sektöründe yağ sökücü olarak kullanılan azotlu bir bileşiktir.",
+        "description_en": "Ammonia is a nitrogenous compound known for its sharp, suffocating odor, forming the basis of the fertilizer industry and used as a degreaser in cleaning.",
+        "description_fr": "L'ammoniac est un composé azoté connu pour son odeur piquante, constituant la base de l'industrie des engrais.",
+        "description_ar": "الأمونيا مركب نيتروجيني معروف برائحته النفاذة والخامدة، ويشكل أساس صناعة الأسمدة ويستخدم كمزيل للدهون.",
+        "usage_areas_tr": [
+            "Azotlu Gübre Üretimi",
+            "Evsel Temizlik",
+            "Soğutucu Gaz",
+            "Patlayıcılar"
+        ],
+        "usage_areas_en": [
+            "Nitrogenous Fertilizer Production",
+            "Household Cleaning",
+            "Refrigerant Gas",
+            "Explosives"
+        ],
+        "usage_areas_fr": [
+            "Production d'engrais",
+            "Nettoyage domestique",
+            "Gaz réfrigérant",
+            "Explosifs"
+        ],
+        "usage_areas_ar": [
+            "إنتاج الأسمدة النيتروجينية",
+            "التنظيف المنزلي",
+            "غاز التبريد",
+            "المتفجرات"
+        ],
+        "ec_number": "231-635-3",
+        "molecular_weight": "17.03",
+        "synonyms_tr": "AMONYAK=Susuz amonyak=Amonyum hidroksit (sulu)",
+        "synonyms_en": "AMMONIA=Anhydrous ammonia=Ammonium hydroxide (aqueous)",
+        "definition_tr": [
+            "Amonyak (NH3), normal şartlarda zehirli, renksiz bir gazdır. Suda çözündüğünde zayıf bir baz olan amonyum hidroksiti oluşturur."
+        ],
+        "definition_en": [
+            "Ammonia (NH3) is a toxic, colorless gas under normal conditions. When dissolved in water, it forms ammonium hydroxide, a weak base."
+        ],
+        "uses_benefits_tr": [
+            "Buharlaşma ısısı çok yüksek olduğu için endüstriyel soğutma sistemlerinde (buzhanelerde) mükemmel bir soğutucu akışkan gazdır."
+        ],
+        "uses_benefits_en": [
+            "Because its heat of vaporization is very high, it is an excellent refrigerant gas in industrial cooling systems."
+        ],
+        "applications_tr": [
+            "Üre, amonyum nitrat ve amonyum sülfat gibi dünya tarımını besleyen tüm azotlu gübrelerin ana başlangıç hammaddesidir."
+        ]
+    },
+    {
+        "id": "chem-28",
+        "slug": "sodyum-silikat",
+        "cas_number": "1344-09-8",
+        "formula": "Na2SiO3",
+        "category": "general",
+        "name_tr": "Sodyum Silikat (Cam Suyu)",
+        "name_en": "Sodium Silicate (Water Glass)",
+        "name_fr": "Silicate de Sodium",
+        "name_ar": "سيليكات الصوديوم",
+        "description_tr": "Halk arasında cam suyu olarak bilinen sodyum silikat; deterjanlarda bağlayıcı, inşaatta su yalıtım kimyasalı ve tekstilde peroksit stabilizatörü olarak kullanılır.",
+        "description_en": "Commonly known as water glass, sodium silicate is used as a binder in detergents, a waterproofing chemical in construction, and a peroxide stabilizer in textiles.",
+        "description_fr": "Communément appelé verre liquide, le silicate de sodium est utilisé comme liant dans les détergents et imperméabilisant dans la construction.",
+        "description_ar": "تُعرف سيليكات الصوديوم عمومًا باسم الزجاج السائل، وتستخدم كمادة رابطة في المنظفات، ومادة كيميائية مانعة لتسرب المياه في البناء.",
+        "usage_areas_tr": [
+            "Deterjan Üretimi",
+            "Beton Su Yalıtımı",
+            "Tekstil Ağartma",
+            "Kağıt Tüp İmalatı"
+        ],
+        "usage_areas_en": [
+            "Detergent Production",
+            "Concrete Waterproofing",
+            "Textile Bleaching",
+            "Paper Tube Manufacturing"
+        ],
+        "usage_areas_fr": [
+            "Production de détergents",
+            "Imperméabilisation du béton",
+            "Blanchiment textile",
+            "Tubes en papier"
+        ],
+        "usage_areas_ar": [
+            "إنتاج المنظفات",
+            "العزل المائي للخرسانة",
+            "تبييض المنسوجات",
+            "أنابيب الورق"
+        ],
+        "ec_number": "215-687-4",
+        "molecular_weight": "122.06",
+        "synonyms_tr": "SODYUM SİLİKAT=Su camı=Sıvı cam",
+        "synonyms_en": "SODIUM SILICATE=Water glass=Liquid glass",
+        "definition_tr": [
+            "Sodyum silikat, silika (kum) ve sodyum karbonatın çok yüksek sıcaklıklarda eritilmesiyle elde edilen inorganik, yapışkan ve alkali bir bileşiktir."
+        ],
+        "definition_en": [
+            "Sodium silicate is an inorganic, sticky, and alkaline compound obtained by melting silica (sand) and sodium carbonate at very high temperatures."
+        ],
+        "uses_benefits_tr": [
+            "Tekstil hidrojen peroksit ağartmasında, peroksitin çok hızlı parçalanmasını önleyerek (stabilize ederek) kumaşın delinmesini engeller."
+        ],
+        "uses_benefits_en": [
+            "In textile hydrogen peroxide bleaching, it prevents the peroxide from breaking down too quickly (stabilizing it), thus preventing fabric damage."
+        ],
+        "applications_tr": [
+            "Toz deterjanlarda hem granüllerin dağılmasını önleyen bir bağlayıcı hem de çamaşır makinesi parçalarını korozyondan koruyan bir ajandır."
+        ]
+    },
+    {
+        "id": "chem-29",
+        "slug": "sodyum-aljinat",
+        "cas_number": "9005-38-3",
+        "formula": "(C6H7NaO6)n",
+        "category": "textile",
+        "name_tr": "Sodyum Aljinat",
+        "name_en": "Sodium Alginate",
+        "name_fr": "Alginate de Sodium",
+        "name_ar": "ألجينات الصوديوم",
+        "description_tr": "Sodyum aljinat, kahverengi deniz yosunlarından elde edilen doğal bir polimerdir. Tekstil baskısında (reaktif baskı) kıvamlaştırıcı ve gıdada jelleştirici olarak kullanılır.",
+        "description_en": "Sodium alginate is a natural polymer derived from brown seaweed. It is used as a thickener in textile printing (reactive printing) and a gelling agent in food.",
+        "description_fr": "L'alginate de sodium est un polymère naturel dérivé d'algues brunes. Utilisé comme épaississant dans l'impression textile et gélifiant.",
+        "description_ar": "ألجينات الصوديوم بوليمر طبيعي مشتق من الأعشاب البحرية البنية. يستخدم كمثخن في طباعة المنسوجات (الطباعة التفاعلية) وعامل تبلور.",
+        "usage_areas_tr": [
+            "Tekstil (Reaktif) Baskı",
+            "Gıda Jelleri",
+            "Diş Kalıpları",
+            "Kozmetik (Maskeler)"
+        ],
+        "usage_areas_en": [
+            "Textile (Reactive) Printing",
+            "Food Gels",
+            "Dental Molds",
+            "Cosmetics (Masks)"
+        ],
+        "usage_areas_fr": [
+            "Impression textile",
+            "Gels alimentaires",
+            "Moules dentaires",
+            "Cosmétiques"
+        ],
+        "usage_areas_ar": [
+            "طباعة المنسوجات",
+            "المواد الهلامية الغذائية",
+            "قوالب الأسنان",
+            "مستحضرات التجميل"
+        ],
+        "ec_number": "None (Polymer)",
+        "molecular_weight": "Variable (Polymer)",
+        "synonyms_tr": "SODYUM ALJİNAT=Aljin=Aljinik asit sodyum tuzu",
+        "synonyms_en": "SODIUM ALGINATE=Algin=Alginic acid sodium salt",
+        "definition_tr": [
+            "Sodyum aljinat, suda çözüldüğünde oldukça viskoz (koyu) kolloidal bir solüsyon oluşturan toksik olmayan, biyolojik olarak parçalanabilir doğal bir polisakkarittir."
+        ],
+        "definition_en": [
+            "Sodium alginate is a non-toxic, biodegradable natural polysaccharide that forms a highly viscous colloidal solution when dissolved in water."
+        ],
+        "uses_benefits_tr": [
+            "Tekstil boyalarıyla (özellikle pamuktaki reaktif boyalarla) reaksiyona girmez, böylece baskı kalıbının kumaşa net ve keskin bir şekilde aktarılmasını sağlar."
+        ],
+        "uses_benefits_en": [
+            "It does not react with textile dyes (especially reactive dyes on cotton), thereby ensuring the print pattern is transferred clearly and sharply to the fabric."
+        ],
+        "applications_tr": [
+            "Pamuklu kumaşların emprime rotasyon baskı makinelerindeki boya patlarında (karışımlarında) birincil kıvamlaştırıcı maddedir."
+        ]
+    },
+    {
+        "id": "chem-30",
+        "slug": "polivinil-alkol-pva",
+        "cas_number": "9002-89-5",
+        "formula": "(C2H4O)n",
+        "category": "textile",
+        "name_tr": "Polivinil Alkol (PVA)",
+        "name_en": "Polyvinyl Alcohol (PVA)",
+        "name_fr": "Alcool Polyvinylique",
+        "name_ar": "كحول بولي فينيل",
+        "description_tr": "Suda çözünebilen sentetik bir polimerdir. Tekstil dokumada (haşıl) ipliklerin kopmasını önleyici olarak ve inşaat/mobilya sektöründe tutkal yapımında kullanılır.",
+        "description_en": "A water-soluble synthetic polymer. It is used to prevent yarn breakage during textile weaving (sizing) and in making glue for the construction/furniture sectors.",
+        "description_fr": "Polymère synthétique hydrosoluble. Utilisé dans le tissage textile et la fabrication de colle.",
+        "description_ar": "بوليمر صناعي قابل للذوبان في الماء. يستخدم لمنع كسر الخيوط أثناء نسج المنسوجات وصنع الغراء.",
+        "usage_areas_tr": [
+            "Tekstil Haşıllama",
+            "Beyaz Tutkal (Ahşap)",
+            "Kağıt Kaplama",
+            "Suda Eriyen Ambalajlar"
+        ],
+        "usage_areas_en": [
+            "Textile Sizing",
+            "White Glue (Wood)",
+            "Paper Coating",
+            "Water-soluble Packaging"
+        ],
+        "usage_areas_fr": [
+            "Encollage textile",
+            "Colle blanche",
+            "Revêtement de papier",
+            "Emballages hydrosolubles"
+        ],
+        "usage_areas_ar": [
+            "تحجيم المنسوجات",
+            "الغراء الأبيض",
+            "تغليف الورق",
+            "تغليف قابل للذوبان في الماء"
+        ],
+        "ec_number": "209-183-3",
+        "molecular_weight": "Variable (Polymer)",
+        "synonyms_tr": "POLİVİNİL ALKOL=PVOH=Etenol homopolimeri",
+        "synonyms_en": "POLYVINYL ALCOHOL=PVOH=Ethenol homopolymer",
+        "definition_tr": [
+            "Polivinil alkol, polivinil asetatın hidrolizi ile elde edilen, renksiz, kokusuz, toksik olmayan, suda tamamen çözünebilen katı granül veya toz bir polimerdir."
+        ],
+        "definition_en": [
+            "Polyvinyl alcohol is a colorless, odorless, non-toxic solid granular or powder polymer that is completely soluble in water, obtained by the hydrolysis of polyvinyl acetate."
+        ],
+        "uses_benefits_tr": [
+            "Pamuk ve polyester ipliklerinin üzerine film tabakası gibi kaplanarak dokuma tezgahındaki mekanik sürtünmelere karşı ipliği olağanüstü güçlendirir."
+        ],
+        "uses_benefits_en": [
+            "It coats cotton and polyester yarns like a film, making the yarn exceptionally strong against mechanical friction in the weaving loom."
+        ],
+        "applications_tr": [
+            "Çamaşır ve bulaşık makinesi deterjan tabletlerini saran, makinede kendi kendine eriyen o ince ve şeffaf plastik kılıf tamamen PVA'dan üretilir."
+        ]
+    },
+    {
+        "id": "chem-31",
+        "slug": "polivinil-asetat-pvac",
+        "cas_number": "9003-20-7",
+        "formula": "(C4H6O2)n",
+        "category": "general",
+        "name_tr": "Polivinil Asetat (PVAc)",
+        "name_en": "Polyvinyl Acetate (PVAc)",
+        "name_fr": "Acétate de Polyvinyle",
+        "name_ar": "بولي فينيل أسيتات",
+        "description_tr": "Polivinil asetat, halk arasında ahşap tutkalı, beyaz tutkal veya mektep tutkalı olarak bilinen, ahşap, kağıt ve kumaşı birbirine yapıştırmada kullanılan sentetik bir polimerdir.",
+        "description_en": "Polyvinyl acetate, commonly known as wood glue or white glue, is a synthetic polymer used to bond wood, paper, and fabric.",
+        "description_fr": "L'acétate de polyvinyle, communément appelé colle à bois, est un polymère synthétique.",
+        "description_ar": "بولي فينيل أسيتات، المعروف باسم غراء الخشب، هو بوليمر صناعي يستخدم لربط الخشب والورق والنسيج.",
+        "usage_areas_tr": [
+            "Ahşap ve Mobilya Tutkalı",
+            "Kağıt ve Karton Yapıştırıcısı",
+            "Su Bazlı Boyalar",
+            "Tekstil Apreleri"
+        ],
+        "usage_areas_en": [
+            "Wood and Furniture Glue",
+            "Paper and Cardboard Adhesive",
+            "Water-based Paints",
+            "Textile Finishes"
+        ],
+        "usage_areas_fr": [
+            "Colle à bois",
+            "Adhésif pour papier",
+            "Peintures à l'eau",
+            "Finitions textiles"
+        ],
+        "usage_areas_ar": [
+            "غراء الخشب",
+            "لاصق الورق والكرتون",
+            "الدهانات المائية",
+            "التشطيبات النسيجية"
+        ],
+        "ec_number": "None (Polymer)",
+        "molecular_weight": "Variable (Polymer)",
+        "synonyms_tr": "POLİVİNİL ASETAT=PVA=Beyaz tutkal",
+        "synonyms_en": "POLYVINYL ACETATE=PVA=White glue=Wood glue",
+        "definition_tr": [
+            "Polivinil asetat, vinil asetat monomerlerinin polimerizasyonu ile elde edilen alifatik, suda çözünmeyen fakat su içinde emülsiyon halinde (süt gibi) durabilen kauçuksu bir polimerdir."
+        ],
+        "definition_en": [
+            "Polyvinyl acetate is a rubbery polymer obtained by the polymerization of vinyl acetate monomers, insoluble in water but stable as an emulsion (like milk) in water."
+        ],
+        "uses_benefits_tr": [
+            "Gözenekli malzemeler (ahşap, karton) üzerinde çok güçlü ve esnek bir bağ oluşturur, kuruduğunda şeffaflaşır."
+        ],
+        "uses_benefits_en": [
+            "It creates a very strong and flexible bond on porous materials (wood, cardboard) and becomes transparent when dry."
+        ],
+        "applications_tr": [
+            "Marangozlukta ahşap parçaları birleştirmek, kitap ciltlemek ve tekstilde kumaşlara sertlik/tokluk vermek (kola) için yoğun olarak tüketilir."
+        ]
+    },
+    {
+        "id": "chem-32",
+        "slug": "formaldehit",
+        "cas_number": "50-00-0",
+        "formula": "CH2O",
+        "category": "general",
+        "name_tr": "Formaldehit",
+        "name_en": "Formaldehyde",
+        "name_fr": "Formaldéhyde",
+        "name_ar": "فورمالديهايد",
+        "description_tr": "Formaldehit, tıbbi laboratuvarlarda koruyucu sıvı (formalin) olarak ve yapı/mobilya sektöründe reçine-yapıştırıcı üretiminde kullanılan son derece reaktif, keskin kokulu zehirli bir gazdır.",
+        "description_en": "Formaldehyde is a highly reactive, pungent, toxic gas used as a preservative fluid (formalin) in medical labs and in resin-adhesive production for construction/furniture.",
+        "description_fr": "Le formaldéhyde est un gaz toxique très réactif et piquant, utilisé comme conservateur et dans la production de résines.",
+        "description_ar": "الفورمالديهايد غاز سام شديد التفاعل ولاذع يستخدم كسائل حافظ وفي إنتاج الراتنجات والمواد اللاصقة.",
+        "usage_areas_tr": [
+            "Reçine ve Sunta Üretimi",
+            "Tıbbi Koruyucu (Formalin)",
+            "Tekstil (Kırışmazlık Apresi)",
+            "Dezenfektan"
+        ],
+        "usage_areas_en": [
+            "Resin and MDF Production",
+            "Medical Preservative (Formalin)",
+            "Textile (Anti-crease Finish)",
+            "Disinfectant"
+        ],
+        "usage_areas_fr": [
+            "Production de résine et MDF",
+            "Conservateur médical",
+            "Textile",
+            "Désinfectant"
+        ],
+        "usage_areas_ar": [
+            "إنتاج الراتنج",
+            "مادة حافظة طبية",
+            "المنسوجات (تشطيب مضاد للتجعد)",
+            "مطهر"
+        ],
+        "ec_number": "200-001-8",
+        "molecular_weight": "30.03",
+        "synonyms_tr": "FORMALDEHİT=Metanal=Formalin (sulu hali)",
+        "synonyms_en": "FORMALDEHYDE=Methanal=Formalin",
+        "definition_tr": [
+            "Formaldehit, normal şartlarda renksiz, boğucu kokulu bir gazdır. Ticari olarak genellikle suda %37 oranında çözülmüş 'formalin' solüsyonu halinde satılır."
+        ],
+        "definition_en": [
+            "Formaldehyde is a colorless, suffocating gas under normal conditions. Commercially, it is usually sold as a 'formalin' solution, dissolved in water at 37%."
+        ],
+        "uses_benefits_tr": [
+            "Biyolojik dokuların çürümesini engeller ve proteinleri çapraz bağlayarak sertleştirir."
+        ],
+        "uses_benefits_en": [
+            "It prevents the decay of biological tissues and hardens proteins by cross-linking them."
+        ],
+        "applications_tr": [
+            "Üre, melamin ve fenol ile reaksiyona sokularak mobilya sektörünün (MDF, sunta) temel tutkalı olan formaldehit reçineleri üretilir."
+        ]
+    },
+    {
+        "id": "chem-33",
+        "slug": "toluen",
+        "cas_number": "108-88-3",
+        "formula": "C7H8",
+        "category": "general",
+        "name_tr": "Toluen",
+        "name_en": "Toluene",
+        "name_fr": "Toluène",
+        "name_ar": "التولوين",
+        "description_tr": "Toluen, boya ve kimya endüstrisinde tiner (çözücü) olarak kullanılan, petrolden elde edilen berrak, renksiz ve keskin tiner kokulu uçucu bir sıvı hidrokarbondur.",
+        "description_en": "Toluene is a clear, colorless, volatile liquid hydrocarbon derived from petroleum with a sharp thinner odor, used as a solvent in the paint and chemical industries.",
+        "description_fr": "Le toluène est un hydrocarbure liquide volatil et incolore dérivé du pétrole, utilisé comme solvant.",
+        "description_ar": "التولوين هيدروكربون سائل متطاير وعديم اللون مشتق من البترول، يستخدم كمذيب في صناعة الطلاء.",
+        "usage_areas_tr": [
+            "Boya ve Tiner",
+            "Yapıştırıcı Çözücüsü",
+            "Matbaa Mürekkepleri",
+            "Patlayıcı (TNT) Üretimi"
+        ],
+        "usage_areas_en": [
+            "Paint and Thinner",
+            "Adhesive Solvent",
+            "Printing Inks",
+            "Explosives (TNT) Production"
+        ],
+        "usage_areas_fr": [
+            "Peinture et diluant",
+            "Solvant adhésif",
+            "Encres d'imprimerie",
+            "Explosifs"
+        ],
+        "usage_areas_ar": [
+            "الطلاء والمخفف",
+            "مذيب المواد اللاصقة",
+            "أحبار الطباعة",
+            "المتفجرات"
+        ],
+        "ec_number": "203-625-9",
+        "molecular_weight": "92.14",
+        "synonyms_tr": "TOLUEN=Metilbenzen=Fenilmetan",
+        "synonyms_en": "TOLUENE=Methylbenzene=Phenylmethane",
+        "definition_tr": [
+            "Toluen, benzen halkasına bir metil grubunun bağlı olduğu, suda çözünmeyen, oldukça yanıcı ve benzenin aksine nispeten daha az toksik olan aromatik bir hidrokarbondur."
+        ],
+        "definition_en": [
+            "Toluene is an aromatic hydrocarbon where a methyl group is attached to a benzene ring; it is insoluble in water, highly flammable, and relatively less toxic than benzene."
+        ],
+        "uses_benefits_tr": [
+            "Reçineleri, yağları ve kauçukları mükemmel bir şekilde çözerek boyaların fırça veya sprey ile uygulanabilir kıvama gelmesini sağlar."
+        ],
+        "uses_benefits_en": [
+            "Perfectly dissolves resins, oils, and rubbers, allowing paints to reach an applicable consistency for brush or spray."
+        ],
+        "applications_tr": [
+            "Sanayi tipi selülozik boyaların, tinerlerin, bally/deri yapıştırıcılarının ana uçucu sıvısıdır ve TNT (Trinitrotoluen) sentezinin başlangıç hammaddesidir."
+        ]
+    },
+    {
+        "id": "chem-34",
+        "slug": "ksilen",
+        "cas_number": "1330-20-7",
+        "formula": "C8H10",
+        "category": "general",
+        "name_tr": "Ksilen (Xylene)",
+        "name_en": "Xylene",
+        "name_fr": "Xylène",
+        "name_ar": "الزيلين",
+        "description_tr": "Ksilen, boya, cila, deri ve kauçuk sanayisinde çözücü (solvent) olarak toluen ile birlikte sıklıkla kullanılan renksiz, yanıcı ve aromatik kokulu bir sıvıdır.",
+        "description_en": "Xylene is a colorless, flammable, aromatic-smelling liquid frequently used alongside toluene as a solvent in the paint, varnish, leather, and rubber industries.",
+        "description_fr": "Le xylène est un liquide incolore, inflammable et aromatique fréquemment utilisé avec le toluène comme solvant.",
+        "description_ar": "الزيلين سائل عديم اللون وقابل للاشتعال وعطري يستخدم بشكل متكرر مع التولوين كمذيب.",
+        "usage_areas_tr": [
+            "Boya ve Vernik Solventi",
+            "Deri İşleme",
+            "Kauçuk Sanayisi",
+            "Tıbbi Laboratuvar (Doku)"
+        ],
+        "usage_areas_en": [
+            "Paint and Varnish Solvent",
+            "Leather Processing",
+            "Rubber Industry",
+            "Medical Labs (Tissue)"
+        ],
+        "usage_areas_fr": [
+            "Solvant",
+            "Traitement du cuir",
+            "Industrie du caoutchouc",
+            "Laboratoires médicaux"
+        ],
+        "usage_areas_ar": [
+            "مذيب الطلاء والورنيش",
+            "معالجة الجلود",
+            "صناعة المطاط",
+            "المختبرات الطبية"
+        ],
+        "ec_number": "215-535-7",
+        "molecular_weight": "106.16",
+        "synonyms_tr": "KSiLEN=Dimetilbenzen=Ksilenol",
+        "synonyms_en": "XYLENE=Dimethylbenzene=Xylol",
+        "definition_tr": [
+            "Ksilen, benzen halkasına iki metil grubunun bağlı olduğu üç farklı izomerden (orto, meta, para) oluşan aromatik bir hidrokarbon karışımıdır."
+        ],
+        "definition_en": [
+            "Xylene is a mixture of three aromatic hydrocarbon isomers (ortho, meta, para) consisting of a benzene ring with two methyl groups attached."
+        ],
+        "uses_benefits_tr": [
+            "Toluen'e kıyasla daha yavaş buharlaşır, bu nedenle endüstriyel fırın boyalarında ve otomotiv verniklerinde boyanın yüzeye daha pürüzsüz yayılmasını sağlar."
+        ],
+        "uses_benefits_en": [
+            "Evaporates slower than toluene, thus allowing industrial bake paints and automotive varnishes to spread more smoothly on the surface."
+        ],
+        "applications_tr": [
+            "Sentetik emaye boyalarda solvent olarak ve tıpta (histoloji) doku örneklerini parafine hazırlamadan önce temizleyici ajan olarak kullanılır."
+        ]
+    },
+    {
+        "id": "chem-35",
+        "slug": "aseton",
+        "cas_number": "67-64-1",
+        "formula": "C3H6O",
+        "category": "general",
+        "name_tr": "Aseton",
+        "name_en": "Acetone",
+        "name_fr": "Acétone",
+        "name_ar": "أسيتون",
+        "description_tr": "Aseton, hem suyla hem de yağlarla karışabilen, oje çıkarıcı olarak evlerimize kadar giren, sanayide kozmetik ve plastik üretiminde kullanılan muazzam uçucu bir çözücüdür.",
+        "description_en": "Acetone is a tremendously volatile solvent miscible with both water and oils, used in households as nail polish remover and in the industry for cosmetics and plastic production.",
+        "description_fr": "L'acétone est un solvant extrêmement volatil miscible avec l'eau et les huiles, utilisé comme dissolvant de vernis à ongles et dans l'industrie.",
+        "description_ar": "الأسيتون مذيب متطاير للغاية قابل للامتزاج مع كل من الماء والزيوت، ويستخدم كمزيل لطلاء الأظافر وفي الصناعة.",
+        "usage_areas_tr": [
+            "Oje Çıkarıcı (Kozmetik)",
+            "Boya/Cila İnceltici",
+            "Plastik ve Akrilik Çözücü",
+            "Laboratuvar Temizliği"
+        ],
+        "usage_areas_en": [
+            "Nail Polish Remover",
+            "Paint/Varnish Thinner",
+            "Plastic and Acrylic Solvent",
+            "Lab Cleaning"
+        ],
+        "usage_areas_fr": [
+            "Dissolvant (Cosmétique)",
+            "Diluant peinture/vernis",
+            "Solvant plastique",
+            "Nettoyage de laboratoire"
+        ],
+        "usage_areas_ar": [
+            "مزيل طلاء الأظافر",
+            "مخفف الطلاء",
+            "مذيب البلاستيك",
+            "تنظيف المختبر"
+        ],
+        "ec_number": "200-662-2",
+        "molecular_weight": "58.08",
+        "synonyms_tr": "ASETON=Propanon=Dimetil keton",
+        "synonyms_en": "ACETONE=Propanone=Dimethyl ketone",
+        "definition_tr": [
+            "Aseton (Propanon), en basit ve en küçük keton yapısına sahip, kendine has tatlımsı-keskin kokusu olan, renksiz, aşırı yanıcı sıvı organik bir bileşiktir."
+        ],
+        "definition_en": [
+            "Acetone (Propanone) is the simplest and smallest ketone, a colorless, extremely flammable liquid organic compound with a distinctive sweetish-pungent odor."
+        ],
+        "uses_benefits_tr": [
+            "Hemen hemen tüm organik maddeleri (oje, uhu, tutkal, reçine, yağ) saniyeler içinde çözer ve çok hızlı buharlaşarak yüzeyde kalıntı bırakmaz."
+        ],
+        "uses_benefits_en": [
+            "Dissolves almost all organic substances (nail polish, glue, resin, oil) in seconds and evaporates very quickly, leaving no residue on the surface."
+        ],
+        "applications_tr": [
+            "Kozmetikte asıl olarak oje temizleyici olarak, endüstride ise fiberglas yapımında kullanılan polyester reçinelerini temizlemekte kullanılır."
+        ]
+    },
+    {
+        "id": "chem-36",
+        "slug": "etil-asetat",
+        "cas_number": "141-78-6",
+        "formula": "C4H8O2",
+        "category": "general",
+        "name_tr": "Etil Asetat",
+        "name_en": "Ethyl Acetate",
+        "name_fr": "Acétate d'Éthyle",
+        "name_ar": "أسيتات الإيثيل",
+        "description_tr": "Etil asetat, meyvemsi, armut veya oje benzeri hoş kokusuyla bilinen, zehirliliği çok düşük olduğu için parfümlerde, gıdalarda ve matbaa mürekkeplerinde kullanılan hızlı uçucu bir esterdir.",
+        "description_en": "Ethyl acetate is a fast-evaporating ester known for its fruity, pear-like sweet odor, used in perfumes, foods, and printing inks due to its very low toxicity.",
+        "description_fr": "L'acétate d'éthyle est un ester à évaporation rapide connu pour son odeur fruitée, utilisé dans les parfums et les encres.",
+        "description_ar": "أسيتات الإيثيل عبارة عن إستر سريع التبخر معروف برائحته الفاكهية اللطيفة، ويستخدم في العطور والأحبار بسبب سميته المنخفضة جدا.",
+        "usage_areas_tr": [
+            "Parfüm ve Kozmetik",
+            "Matbaa Mürekkepleri (Flekso)",
+            "Suni Deri",
+            "Gıda (Kafeinsizleştirme)"
+        ],
+        "usage_areas_en": [
+            "Perfume and Cosmetics",
+            "Printing Inks (Flexo)",
+            "Synthetic Leather",
+            "Food (Decaffeination)"
+        ],
+        "usage_areas_fr": [
+            "Parfums et Cosmétiques",
+            "Encres d'imprimerie",
+            "Cuir synthétique",
+            "Alimentation"
+        ],
+        "usage_areas_ar": [
+            "العطور ومستحضرات التجميل",
+            "أحبار الطباعة",
+            "الجلود الصناعية",
+            "الأغذية (إزالة الكافيين)"
+        ],
+        "ec_number": "205-500-4",
+        "molecular_weight": "88.11",
+        "synonyms_tr": "ETİL ASETAT=Etil etanoat",
+        "synonyms_en": "ETHYL ACETATE=Ethyl ethanoate",
+        "definition_tr": [
+            "Etil asetat, etanol (etil alkol) ve asetik asidin esterleşme reaksiyonu sonucu sentezlenen renksiz, organik bir solventtir."
+        ],
+        "definition_en": [
+            "Ethyl acetate is a colorless organic solvent synthesized through the esterification reaction of ethanol and acetic acid."
+        ],
+        "uses_benefits_tr": [
+            "Zehirli (toksik) kimyasallara kıyasla çok çevre dostudur; bu nedenle gıda sanayisinde kahve ve çaydan kafeini uzaklaştırmak için ekstraksiyon çözücüsü olarak kullanılır."
+        ],
+        "uses_benefits_en": [
+            "It is highly eco-friendly compared to toxic chemicals; therefore, it is used as an extraction solvent in the food industry to remove caffeine from coffee and tea."
+        ],
+        "applications_tr": [
+            "Esans endüstrisinde parfümlerin ciltte hızla buharlaşmasını sağlayan ana taşıyıcı sıvıdır; matbaacılıkta ambalaj baskılarının (cips paketleri vb.) anında kurumasını sağlar."
+        ]
     }
 ]
