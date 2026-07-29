@@ -5,7 +5,9 @@
         "products": "Products",
         "blog": "Blog",
         "faq": "FAQ",
-        "contact": "Contact"
+        "contact": "Contact",
+        "industrialRawMaterials": "Industrial Raw Materials",
+        "textileChemicals": "Textile Chemicals"
     },
     "Blog": {
         "title": "Technical Insights",
@@ -51,7 +53,9 @@
             "title": "Find the Right Chemical Solution for Your Project",
             "subtitle": "Our expert team is ready to provide tailored solutions for you.",
             "button": "Request a Quote"
-        }
+        },
+        "exploreIndustrial": "Explore Industrial Raw Materials",
+        "exploreTextile": "Discover Textile Solutions"
     },
     "AboutPage": {
         "title": "About Us",

@@ -68,7 +68,7 @@ export default function HomePage() {
                             <motion.div variants={fadeInUp}>
                                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-accent text-sm font-medium mb-6">
                                     <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-                                    Textile Chemical Solutions
+                                    Global Industrial & Textile Solutions
                                 </span>
                             </motion.div>
 
@@ -87,21 +87,22 @@ export default function HomePage() {
                             </motion.p>
 
                             <motion.div
-                                className="flex flex-col sm:flex-row gap-4"
+                                className="flex flex-col sm:flex-row flex-wrap gap-4"
                                 variants={fadeInUp}
                             >
                                 <Link
                                     href="/products"
                                     className="inline-flex items-center justify-center gap-2 px-7 py-3.5 gradient-accent text-white font-semibold rounded-full hover:opacity-90 transition-all shadow-lg shadow-accent/20 group"
                                 >
-                                    {t('ctaProducts')}
-                                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1 transition-transform" />
+                                    {t('exploreIndustrial')}
+                                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 rtl:rotate-180 transition-transform" />
                                 </Link>
                                 <Link
-                                    href="/contact"
-                                    className="inline-flex items-center justify-center gap-2 px-7 py-3.5 glass text-white font-semibold rounded-full hover:bg-white/10 transition-all"
+                                    href="/products"
+                                    className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold rounded-full transition-all group"
                                 >
-                                    {t('ctaContact')}
+                                    {t('exploreTextile')}
+                                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 rtl:rotate-180 transition-transform" />
                                 </Link>
                             </motion.div>
                         </motion.div>

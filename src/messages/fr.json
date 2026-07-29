@@ -5,7 +5,9 @@
         "products": "Produits",
         "blog": "Blog",
         "faq": "FAQ",
-        "contact": "Contact"
+        "contact": "Contact",
+        "industrialRawMaterials": "Matières Premières Industrielles",
+        "textileChemicals": "Produits Chimiques Textiles"
     },
     "Blog": {
         "title": "Perspectives Techniques",
@@ -51,7 +53,9 @@
             "title": "Trouvez la Solution Chimique Adaptée à Votre Projet",
             "subtitle": "Notre équipe d'experts est prête à vous fournir des solutions sur mesure.",
             "button": "Demander un Devis"
-        }
+        },
+        "exploreIndustrial": "Explorer les Matières Premières Industrielles",
+        "exploreTextile": "Découvrir les Solutions Textiles"
     },
     "AboutPage": {
         "title": "À propos de nous",

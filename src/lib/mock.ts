@@ -7,6 +7,7 @@
 export interface Category {
     id: string;
     slug: string;
+    domain: 'textile' | 'industrial';
     name_tr: string;
     name_en: string;
     name_fr: string;
@@ -50,65 +51,92 @@ export interface Product {
 // ═══════════════════════════════════════════════════
 
 export const MOCK_CATEGORIES: Category[] = [
+    // TEXTILE CHEMICALS
     {
-        id: "on-islem", slug: "on-islem",
+        id: "on-islem", slug: "on-islem", domain: "textile",
         name_tr: "Ön İşlem Kimyasalları", name_en: "Pre-Treatment Auxiliaries",
         name_fr: "Auxiliaires de Prétraitement", name_ar: "مساعدات المعالجة المسبقة",
         image_url: "/images/pretreatment.png"
     },
     {
-        id: "boyama", slug: "boyama",
+        id: "boyama", slug: "boyama", domain: "textile",
         name_tr: "Boyama Yardımcıları", name_en: "Dyeing Auxiliaries",
         name_fr: "Auxiliaires de Teinture", name_ar: "مساعدات الصباغة",
         image_url: "/images/dyeing.png"
     },
     {
-        id: "yikama", slug: "yikama",
+        id: "yikama", slug: "yikama", domain: "textile",
         name_tr: "Yıkama ve Sabunlama", name_en: "Washing & Soaping",
         name_fr: "Lavage et Savonnage", name_ar: "الغسيل والتصبين",
         image_url: "/images/washing.png"
     },
     {
-        id: "yumusaticilar", slug: "yumusaticilar",
+        id: "yumusaticilar", slug: "yumusaticilar", domain: "textile",
         name_tr: "Yumuşatıcılar", name_en: "Softeners",
         name_fr: "Adoucissants", name_ar: "المنعمات",
         image_url: "/images/softeners.png"
     },
     {
-        id: "enzimler", slug: "enzimler",
+        id: "enzimler", slug: "enzimler", domain: "textile",
         name_tr: "Enzimler", name_en: "Enzymes",
         name_fr: "Enzymes", name_ar: "الإنزيمات",
         image_url: "/images/enzymes.png"
     },
     {
-        id: "apre", slug: "apre",
+        id: "apre", slug: "apre", domain: "textile",
         name_tr: "Apre ve Terbiye", name_en: "Finishing Auxiliaries",
         name_fr: "Auxiliaires de Finition", name_ar: "مساعدات التشطيب",
         image_url: "/images/finishing.png"
     },
     {
-        id: "aritma", slug: "aritma",
-        name_tr: "Arıtma Kimyasalları", name_en: "Water Treatment Chemicals",
-        name_fr: "Produits de Traitement de l'Eau", name_ar: "كيماويات معالجة المياه",
-        image_url: "/images/water-treatment.png"
-    },
-    {
-        id: "baski", slug: "baski",
+        id: "baski", slug: "baski", domain: "textile",
         name_tr: "Baskı Kimyasalları", name_en: "Printing Chemicals",
         name_fr: "Produits d'Impression", name_ar: "كيماويات الطباعة",
         image_url: "/images/dyeing.png"
     },
     {
-        id: "kopuk-kesici", slug: "kopuk-kesici",
+        id: "kopuk-kesici", slug: "kopuk-kesici", domain: "textile",
         name_tr: "Köpük Kesiciler", name_en: "Antifoams & Defoamers",
         name_fr: "Anti-mousse", name_ar: "مضادات الرغوة",
         image_url: "/images/pretreatment.png"
     },
     {
-        id: "fiksatorler", slug: "fiksatorler",
+        id: "fiksatorler", slug: "fiksatorler", domain: "textile",
         name_tr: "Fiksatörler", name_en: "Fixing Agents",
         name_fr: "Agents de Fixation", name_ar: "عوامل التثبيت",
         image_url: "/images/dyeing.png"
+    },
+    
+    // INDUSTRIAL CHEMICALS
+    {
+        id: "asitler-bazlar", slug: "asitler-bazlar", domain: "industrial",
+        name_tr: "Asitler ve Bazlar", name_en: "Acids & Bases",
+        name_fr: "Acides & Bases", name_ar: "الأحماض والقواعد",
+        image_url: "/images/pretreatment.png"
+    },
+    {
+        id: "solventler", slug: "solventler", domain: "industrial",
+        name_tr: "Solventler ve Çözücüler", name_en: "Solvents",
+        name_fr: "Solvants", name_ar: "المذيبات",
+        image_url: "/images/washing.png"
+    },
+    {
+        id: "tuzlar", slug: "tuzlar", domain: "industrial",
+        name_tr: "Tuzlar ve İnorganik Kimyasallar", name_en: "Salts & Inorganics",
+        name_fr: "Sels et Inorganiques", name_ar: "الأملاح والمواد غير العضوية",
+        image_url: "/images/softeners.png"
+    },
+    {
+        id: "aritma", slug: "aritma", domain: "industrial",
+        name_tr: "Arıtma Kimyasalları", name_en: "Water Treatment Chemicals",
+        name_fr: "Produits de Traitement de l'Eau", name_ar: "كيماويات معالجة المياه",
+        image_url: "/images/water-treatment.png"
+    },
+    {
+        id: "tarim", slug: "tarim", domain: "industrial",
+        name_tr: "Tarım ve Gıda Kimyasalları", name_en: "Agro & Food Chemicals",
+        name_fr: "Produits Chimiques Agro & Alimentaires", name_ar: "الكيماويات الزراعية والغذائية",
+        image_url: "/images/finishing.png"
     },
 ];
 

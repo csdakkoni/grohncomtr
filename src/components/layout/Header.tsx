@@ -108,58 +108,55 @@ export default function Header() {
                                 : 'opacity-0 -translate-y-2 pointer-events-none'
                                 }`}
                         >
-                            <div className="rounded-2xl p-6 min-w-[640px] max-w-[740px] shadow-2xl shadow-black/50 bg-[#0d1b32] border border-white/10 backdrop-blur-xl max-h-[70vh] overflow-y-auto overscroll-contain">
-                                <div className="grid grid-cols-2 gap-6">
-                                    {MOCK_CATEGORIES.map((category) => {
-                                        const catSubgroups = MOCK_SUBGROUPS.filter(s => s.category_id === category.id);
-                                        const catCount = MOCK_PRODUCTS.filter(p => p.category_id === category.id).length;
-
-                                        return (
-                                            <div key={category.id}>
-                                                {/* Category Link */}
-                                                <Link
-                                                    href="/products"
-                                                    onClick={() => setIsProductsOpen(false)}
-                                                    className="flex items-center gap-2 mb-2 group/cat"
-                                                >
-                                                    <span className="text-base font-bold text-white group-hover/cat:text-accent transition-colors">
-                                                        {getLocalized(category, 'name', locale)}
-                                                    </span>
-                                                    <span className="text-xs text-text-muted">({catCount})</span>
-                                                </Link>
-
-                                                {/* Subgroups */}
-                                                <div className="space-y-1 ms-1 mt-1">
-                                                    {catSubgroups.map((sub) => (
-                                                        <Link
-                                                            key={sub.id}
-                                                            href="/products"
-                                                            onClick={() => setIsProductsOpen(false)}
-                                                            className="flex items-center gap-2.5 px-4 py-2.5 rounded-lg hover:bg-white/5 transition-colors group/sub"
-                                                        >
-                                                            <Beaker className="w-3.5 h-3.5 text-accent/50 group-hover/sub:text-accent transition-colors shrink-0" />
-                                                            <span className="text-sm text-text-secondary group-hover/sub:text-white transition-colors">
-                                                                {getLocalized(sub, 'name', locale)}
+                            <div className="rounded-2xl p-6 min-w-[800px] max-w-[900px] shadow-2xl shadow-black/50 bg-[#0d1b32] border border-white/10 backdrop-blur-xl max-h-[70vh] overflow-y-auto overscroll-contain">
+                                <div className="flex flex-col md:flex-row gap-8">
+                                    {/* Industrial Column */}
+                                    <div className="flex-1">
+                                        <h3 className="text-xs font-bold text-white/50 uppercase tracking-widest mb-4 border-b border-white/10 pb-3">
+                                            {t('industrialRawMaterials')}
+                                        </h3>
+                                        <div className="space-y-4">
+                                            {MOCK_CATEGORIES.filter(c => c.domain === 'industrial').map((category) => {
+                                                const catCount = MOCK_PRODUCTS.filter(p => p.category_id === category.id).length;
+                                                return (
+                                                    <div key={category.id}>
+                                                        <Link href="/products" onClick={() => setIsProductsOpen(false)} className="flex items-center gap-2 mb-2 group/cat">
+                                                            <span className="text-base font-bold text-white group-hover/cat:text-accent transition-colors">
+                                                                {getLocalized(category, 'name', locale)}
                                                             </span>
-                                                            <span className="text-xs text-accent/50 font-mono ms-auto">
-                                                                {sub.prefix}®
-                                                            </span>
+                                                            <span className="text-xs text-text-muted">({catCount})</span>
                                                         </Link>
-                                                    ))}
-                                                </div>
-                                            </div>
-                                        );
-                                    })}
+                                                    </div>
+                                                );
+                                            })}
+                                        </div>
+                                    </div>
+                                    
+                                    {/* Textile Column */}
+                                    <div className="flex-[1.5] bg-white/5 rounded-xl p-5 border border-white/5">
+                                        <h3 className="text-xs font-bold text-accent uppercase tracking-widest mb-4 border-b border-white/10 pb-3">
+                                            {t('textileChemicals')}
+                                        </h3>
+                                        <div className="grid grid-cols-2 gap-x-4 gap-y-6">
+                                            {MOCK_CATEGORIES.filter(c => c.domain === 'textile').map((category) => {
+                                                const catCount = MOCK_PRODUCTS.filter(p => p.category_id === category.id).length;
+                                                return (
+                                                    <div key={category.id}>
+                                                        <Link href="/products" onClick={() => setIsProductsOpen(false)} className="flex items-center gap-2 mb-1.5 group/cat">
+                                                            <span className="text-sm font-bold text-white group-hover/cat:text-accent transition-colors">
+                                                                {getLocalized(category, 'name', locale)}
+                                                            </span>
+                                                            <span className="text-[10px] text-text-muted">({catCount})</span>
+                                                        </Link>
+                                                    </div>
+                                                );
+                                            })}
+                                        </div>
+                                    </div>
                                 </div>
-
-                                {/* Footer */}
-                                <div className="mt-4 pt-3 border-t border-white/5">
-                                    <Link
-                                        href="/products"
-                                        onClick={() => setIsProductsOpen(false)}
-                                        className="text-sm text-accent hover:text-accent-light transition-colors font-semibold"
-                                    >
-                                        {locale === 'tr' ? 'Tüm ürünleri gör →' : locale === 'fr' ? 'Voir tous les produits →' : locale === 'ar' ? '← عرض جميع المنتجات' : 'View all products →'}
+                                <div className="mt-6 pt-4 border-t border-white/5 text-center">
+                                    <Link href="/products" onClick={() => setIsProductsOpen(false)} className="text-sm text-white hover:text-accent transition-colors font-semibold">
+                                        {locale === 'tr' ? 'Tüm Ürün Kataloğunu İncele →' : 'View Full Product Catalog →'}
                                     </Link>
                                 </div>
                             </div>
@@ -242,35 +239,30 @@ export default function Header() {
                     </button>
 
                     {mobileProductsOpen && (
-                        <div className="ms-4 space-y-1 mb-2">
-                            {MOCK_CATEGORIES.map((cat) => {
-                                const subs = MOCK_SUBGROUPS.filter(s => s.category_id === cat.id);
-                                return (
-                                    <div key={cat.id}>
-                                        <div className="text-xs font-bold text-white/60 uppercase tracking-wider px-3 py-2 mt-1">
-                                            {getLocalized(cat, 'name', locale)}
-                                        </div>
-                                        {subs.map((sub) => (
-                                            <Link
-                                                key={sub.id}
-                                                href="/products"
-                                                className="flex items-center gap-2 text-sm text-text-muted hover:text-white py-2 px-3 rounded-lg hover:bg-white/5 transition-all"
-                                                onClick={() => { setIsMenuOpen(false); setMobileProductsOpen(false); }}
-                                            >
-                                                <Beaker className="w-3 h-3 text-accent/40" />
-                                                {getLocalized(sub, 'name', locale)}
-                                            </Link>
-                                        ))}
-                                    </div>
-                                );
-                            })}
-                            <Link
-                                href="/products"
-                                className="text-xs text-accent font-medium px-3 py-2 block"
-                                onClick={() => { setIsMenuOpen(false); setMobileProductsOpen(false); }}
-                            >
-                                {locale === 'tr' ? 'Tüm ürünler →' : 'All products →'}
-                            </Link>
+                        <div className="ms-4 space-y-4 mb-2 py-2">
+                            {/* Industrial */}
+                            <div>
+                                <div className="text-[10px] font-black text-white/40 uppercase tracking-widest px-3 py-1.5 bg-white/5 rounded-md mb-2">
+                                    {t('industrialRawMaterials')}
+                                </div>
+                                {MOCK_CATEGORIES.filter(c => c.domain === 'industrial').map((cat) => (
+                                    <Link key={cat.id} href="/products" className="block text-sm text-text-muted hover:text-white py-2 px-4 rounded-lg hover:bg-white/5 transition-all" onClick={() => { setIsMenuOpen(false); setMobileProductsOpen(false); }}>
+                                        {getLocalized(cat, 'name', locale)}
+                                    </Link>
+                                ))}
+                            </div>
+                            
+                            {/* Textile */}
+                            <div>
+                                <div className="text-[10px] font-black text-accent/60 uppercase tracking-widest px-3 py-1.5 bg-accent/10 rounded-md mb-2 mt-2">
+                                    {t('textileChemicals')}
+                                </div>
+                                {MOCK_CATEGORIES.filter(c => c.domain === 'textile').map((cat) => (
+                                    <Link key={cat.id} href="/products" className="block text-sm text-text-muted hover:text-white py-2 px-4 rounded-lg hover:bg-white/5 transition-all" onClick={() => { setIsMenuOpen(false); setMobileProductsOpen(false); }}>
+                                        {getLocalized(cat, 'name', locale)}
+                                    </Link>
+                                ))}
+                            </div>
                         </div>
                     )}
 

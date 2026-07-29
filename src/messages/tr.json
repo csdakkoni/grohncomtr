@@ -1,156 +1,160 @@
 {
-  "Navigation": {
-    "home": "Anasayfa",
-    "about": "Hakkımızda",
-    "products": "Ürünler",
-    "blog": "Blog",
-    "faq": "SSS",
-    "contact": "İletişim"
-  },
-  "Blog": {
-    "title": "Teknik İçerikler",
-    "subtitle": "Tekstil kimyası, proses optimizasyonu ve sektör trendleri hakkında uzman makaleler.",
-    "readMore": "Devamını oku",
-    "backToBlog": "Yazılara dön",
-    "ctaTitle": "Teknik Desteğe İhtiyacınız mı Var?",
-    "ctaDescription": "AR-GE ekibimiz, doğru kimyasal çözümlerle tekstil proseslerinizi optimize etmenize yardımcı olmaya hazır.",
-    "ctaButton": "İletişime Geçin",
-    "ctaProducts": "Ürünleri İncele"
-  },
-  "HomePage": {
-    "heroTitle": "Tekstil Kimyasallarında\nGlobal Çözüm Ortağınız",
-    "heroSubtitle": "Grohn Kimya olarak, yenilikçi tekstil kimyasalları ile dünya genelinde üreticilere güvenilir çözümler sunuyoruz.",
-    "ctaProducts": "Ürünlerimizi Keşfedin",
-    "ctaContact": "İletişime Geçin",
-    "stats": {
-      "years": "Yıllık Tecrübe",
-      "countries": "İhracat Ülkesi",
-      "products": "Ürün Çeşidi"
+    "Navigation": {
+        "home": "Anasayfa",
+        "about": "Hakkımızda",
+        "products": "Ürünler",
+        "blog": "Blog",
+        "faq": "SSS",
+        "contact": "İletişim",
+        "industrialRawMaterials": "Endüstriyel Hammaddeler",
+        "textileChemicals": "Tekstil Kimyasalları"
     },
-    "featuresTitle": "Neden Grohn Kimya?",
-    "featuresSubtitle": "Kalite, güvenilirlik ve yenilikçilik ile tekstil kimya sektörünün öncü markası.",
-    "features": {
-      "quality": {
-        "title": "Üstün Kalite",
-        "desc": "ISO ve uluslararası standartlara uygun, sertifikalı üretim süreçleri ile tutarlı kalite."
-      },
-      "global": {
-        "title": "Global Erişim",
-        "desc": "Avrupa, Orta Doğu, Afrika ve Asya pazarlarına güvenilir ihracat ağı."
-      },
-      "innovation": {
-        "title": "Ar-Ge Odaklı",
-        "desc": "Müşteri ihtiyaçlarına özel, laboratuvar destekli çözümler ve sürekli inovasyon."
-      },
-      "support": {
-        "title": "Teknik Destek",
-        "desc": "Uzman ekibimizle uygulama, optimizasyon ve sorun çözme desteği."
-      }
+    "Blog": {
+        "title": "Teknik İçerikler",
+        "subtitle": "Tekstil kimyası, proses optimizasyonu ve sektör trendleri hakkında uzman makaleler.",
+        "readMore": "Devamını oku",
+        "backToBlog": "Yazılara dön",
+        "ctaTitle": "Teknik Desteğe İhtiyacınız mı Var?",
+        "ctaDescription": "AR-GE ekibimiz, doğru kimyasal çözümlerle tekstil proseslerinizi optimize etmenize yardımcı olmaya hazır.",
+        "ctaButton": "İletişime Geçin",
+        "ctaProducts": "Ürünleri İncele"
     },
-    "ctaBanner": {
-      "title": "Projeniz İçin Doğru Kimyasal Çözümü Bulun",
-      "subtitle": "Uzman ekibimiz size özel çözümler sunmak için hazır.",
-      "button": "Teklif İsteyin"
-    }
-  },
-  "AboutPage": {
-    "title": "Hakkımızda",
-    "description": "Grohn Kimya, tekstil kimyasalları alanında uzun yıllara dayanan tecrübesiyle, global pazarlara yenilikçi ve güvenilir çözümler sunan öncü bir firmadır.",
-    "missionTitle": "Misyonumuz",
-    "missionDesc": "Çevreye duyarlı, insan sağlığını önceleyen ve teknolojiyi yakından takip eden üretim anlayışımızla, tekstil sektörüne en kaliteli kimyasal çözümleri sunmak.",
-    "visionTitle": "Vizyonumuz",
-    "visionDesc": "Global tekstil kimyasalları pazarında güvenilirliği, kalitesi ve inovasyon gücüyle tanınan lider bir marka olmak.",
-    "valuesTitle": "Değerlerimiz",
-    "values": {
-      "reliability": {
-        "title": "Güvenilirlik",
-        "desc": "Her zaman söz verdiğimizi yapıyoruz."
-      },
-      "sustainability": {
-        "title": "Sürdürülebilirlik",
-        "desc": "Çevreye duyarlı üretim süreçleri."
-      },
-      "excellence": {
-        "title": "Mükemmellik",
-        "desc": "Her üründe en yüksek standartlar."
-      }
-    }
-  },
-  "ContactPage": {
-    "title": "İletişim",
-    "subtitle": "Sorularınız, teknik destek ve fiyat teklifi talepleriniz için bize ulaşın.",
-    "form": {
-      "name": "Adınız Soyadınız",
-      "email": "E-posta Adresiniz",
-      "company": "Firma Adı",
-      "subject": "Konu",
-      "message": "Mesajınız",
-      "send": "Mesaj Gönder",
-      "success": "Mesajınız başarıyla gönderildi! En kısa sürede dönüş yapacağız.",
-      "error": "Bir hata oluştu, lütfen tekrar deneyin."
+    "HomePage": {
+        "heroTitle": "Tekstil Kimyasallarında\nGlobal Çözüm Ortağınız",
+        "heroSubtitle": "Grohn Kimya olarak, yenilikçi tekstil kimyasalları ile dünya genelinde üreticilere güvenilir çözümler sunuyoruz.",
+        "ctaProducts": "Ürünlerimizi Keşfedin",
+        "ctaContact": "İletişime Geçin",
+        "stats": {
+            "years": "Yıllık Tecrübe",
+            "countries": "İhracat Ülkesi",
+            "products": "Ürün Çeşidi"
+        },
+        "featuresTitle": "Neden Grohn Kimya?",
+        "featuresSubtitle": "Kalite, güvenilirlik ve yenilikçilik ile tekstil kimya sektörünün öncü markası.",
+        "features": {
+            "quality": {
+                "title": "Üstün Kalite",
+                "desc": "ISO ve uluslararası standartlara uygun, sertifikalı üretim süreçleri ile tutarlı kalite."
+            },
+            "global": {
+                "title": "Global Erişim",
+                "desc": "Avrupa, Orta Doğu, Afrika ve Asya pazarlarına güvenilir ihracat ağı."
+            },
+            "innovation": {
+                "title": "Ar-Ge Odaklı",
+                "desc": "Müşteri ihtiyaçlarına özel, laboratuvar destekli çözümler ve sürekli inovasyon."
+            },
+            "support": {
+                "title": "Teknik Destek",
+                "desc": "Uzman ekibimizle uygulama, optimizasyon ve sorun çözme desteği."
+            }
+        },
+        "ctaBanner": {
+            "title": "Projeniz İçin Doğru Kimyasal Çözümü Bulun",
+            "subtitle": "Uzman ekibimiz size özel çözümler sunmak için hazır.",
+            "button": "Teklif İsteyin"
+        },
+        "exploreIndustrial": "Endüstriyel Hammaddeleri İncele",
+        "exploreTextile": "Tekstil Çözümlerini Keşfet"
     },
-    "info": {
-      "address": "Adres",
-      "phone": "Telefon",
-      "email": "E-posta"
+    "AboutPage": {
+        "title": "Hakkımızda",
+        "description": "Grohn Kimya, tekstil kimyasalları alanında uzun yıllara dayanan tecrübesiyle, global pazarlara yenilikçi ve güvenilir çözümler sunan öncü bir firmadır.",
+        "missionTitle": "Misyonumuz",
+        "missionDesc": "Çevreye duyarlı, insan sağlığını önceleyen ve teknolojiyi yakından takip eden üretim anlayışımızla, tekstil sektörüne en kaliteli kimyasal çözümleri sunmak.",
+        "visionTitle": "Vizyonumuz",
+        "visionDesc": "Global tekstil kimyasalları pazarında güvenilirliği, kalitesi ve inovasyon gücüyle tanınan lider bir marka olmak.",
+        "valuesTitle": "Değerlerimiz",
+        "values": {
+            "reliability": {
+                "title": "Güvenilirlik",
+                "desc": "Her zaman söz verdiğimizi yapıyoruz."
+            },
+            "sustainability": {
+                "title": "Sürdürülebilirlik",
+                "desc": "Çevreye duyarlı üretim süreçleri."
+            },
+            "excellence": {
+                "title": "Mükemmellik",
+                "desc": "Her üründe en yüksek standartlar."
+            }
+        }
+    },
+    "ContactPage": {
+        "title": "İletişim",
+        "subtitle": "Sorularınız, teknik destek ve fiyat teklifi talepleriniz için bize ulaşın.",
+        "form": {
+            "name": "Adınız Soyadınız",
+            "email": "E-posta Adresiniz",
+            "company": "Firma Adı",
+            "subject": "Konu",
+            "message": "Mesajınız",
+            "send": "Mesaj Gönder",
+            "success": "Mesajınız başarıyla gönderildi! En kısa sürede dönüş yapacağız.",
+            "error": "Bir hata oluştu, lütfen tekrar deneyin."
+        },
+        "info": {
+            "address": "Adres",
+            "phone": "Telefon",
+            "email": "E-posta"
+        }
+    },
+    "Footer": {
+        "tagline": "Tekstil endüstrisi için yenilikçi kimyasal çözümler.",
+        "quickLinks": "Hızlı Bağlantılar",
+        "contactTitle": "İletişim",
+        "rights": "Tüm hakları saklıdır.",
+        "madeIn": "Türkiye'de üretilmektedir"
+    },
+    "Products": {
+        "title": "Ürün Kataloğu",
+        "subtitle": "Tekstil endüstrisinin tüm ihtiyaçlarına yönelik kapsamlı kimyasal çözümlerimizi keşfedin.",
+        "viewDetails": "Detayları İncele",
+        "backToProducts": "Ürünlere Dön",
+        "technicalSpecs": "Teknik Özellikler",
+        "chemicalFormula": "Kimyasal Formül",
+        "purity": "Saflık",
+        "requestQuote": "Teklif İste",
+        "categories": "Kategoriler"
+    },
+    "FAQPage": {
+        "title": "Sıkça Sorulan Sorular",
+        "subtitle": "Ürünlerimiz, hizmetlerimiz ve ihracat kapasitemiz hakkında sık sorulan soruların yanıtları.",
+        "ctaText": "Aradığınızı bulamadınız mı?",
+        "ctaButton": "Bize Ulaşın",
+        "items": {
+            "whatProducts": {
+                "q": "Grohn Kimya hangi tür tekstil kimyasalları üretiyor?",
+                "a": "Ön işlem kimyasalları (ıslatıcılar, haşıl sökme enzimleri, sekestran), boyama yardımcıları (egalite, pH tamponları, dispers edici), terbiye kimyasalları (silikon yumuşatıcılar, sertleştiriciler) ve özel proses kimyasalları üretiyoruz."
+            },
+            "exportCountries": {
+                "q": "Hangi ülkelere ihracat yapıyorsunuz?",
+                "a": "Avrupa, Orta Doğu, Kuzey Afrika, Orta Asya ve Güney Asya'daki 30'dan fazla ülkeye ihracat yapıyoruz. Başlıca pazarlarımız Almanya, İtalya, Fransa, Mısır, Fas, Tunus, Bangladeş, Pakistan ve Özbekistan'dır."
+            },
+            "minOrder": {
+                "q": "Minimum sipariş miktarı nedir?",
+                "a": "Minimum sipariş miktarı ürüne göre değişir. Sıvı kimyasallarda MOQ genellikle 1 IBC (1000 kg), varil ambalajda 200 kg'dır. Yeni müşteriler için deneme miktarlarını görüşebiliriz."
+            },
+            "sampleAvailable": {
+                "q": "Sipariş vermeden önce ücretsiz numune alabilir miyim?",
+                "a": "Evet! Test amaçlı ücretsiz laboratuvar numuneleri (1-5 kg) sağlıyoruz. Teknik ekibimiz denemeleriniz için uygulama kılavuzu ve destek de sunacaktır."
+            },
+            "deliveryTime": {
+                "q": "Tipik teslimat süresi nedir?",
+                "a": "Stok ürünlerde standart üretim ve teslimat 2-3 haftadır. Özel formülasyonlar 3-4 hafta gerektirebilir. Tekirdağ/İstanbul limanlarından konteyner ile sevkiyat yapıyoruz. FOB, CIF ve DDP şartları mevcuttur."
+            },
+            "customFormulation": {
+                "q": "Özel formülasyon yapıyor musunuz?",
+                "a": "Kesinlikle. AR-GE laboratuvarımız, kumaş tiplerinize, makinelerinize ve proses gereksinimlerinize özel formülasyonlar geliştirebilir. Optimizasyon için yerinde teknik destek de sunuyoruz."
+            },
+            "certifications": {
+                "q": "Ürünleriniz hangi sertifikalara sahip?",
+                "a": "Ürünlerimiz ISO 9001 kalite yönetim standartlarına uygundur. Seçili ürünler OEKO-TEX uyumlu ve GOTS onaylıdır. Tüm ürünler için SDS (Güvenlik Bilgi Formu) ve TDS (Teknik Veri Sayfası) sağlıyoruz."
+            },
+            "technicalSupport": {
+                "q": "Teknik destek sağlıyor musunuz?",
+                "a": "Evet, reçete formülasyonu, proses optimizasyonu, sorun giderme ve yerinde ziyaretler dahil kapsamlı teknik destek sunuyoruz. AR-GE ekibimiz tekstil kimyasında 15+ yıl deneyime sahiptir."
+            }
+        }
     }
-  },
-  "Footer": {
-    "tagline": "Tekstil endüstrisi için yenilikçi kimyasal çözümler.",
-    "quickLinks": "Hızlı Bağlantılar",
-    "contactTitle": "İletişim",
-    "rights": "Tüm hakları saklıdır.",
-    "madeIn": "Türkiye'de üretilmektedir"
-  },
-  "Products": {
-    "title": "Ürün Kataloğu",
-    "subtitle": "Tekstil endüstrisinin tüm ihtiyaçlarına yönelik kapsamlı kimyasal çözümlerimizi keşfedin.",
-    "viewDetails": "Detayları İncele",
-    "backToProducts": "Ürünlere Dön",
-    "technicalSpecs": "Teknik Özellikler",
-    "chemicalFormula": "Kimyasal Formül",
-    "purity": "Saflık",
-    "requestQuote": "Teklif İste",
-    "categories": "Kategoriler"
-  },
-  "FAQPage": {
-    "title": "Sıkça Sorulan Sorular",
-    "subtitle": "Ürünlerimiz, hizmetlerimiz ve ihracat kapasitemiz hakkında sık sorulan soruların yanıtları.",
-    "ctaText": "Aradığınızı bulamadınız mı?",
-    "ctaButton": "Bize Ulaşın",
-    "items": {
-      "whatProducts": {
-        "q": "Grohn Kimya hangi tür tekstil kimyasalları üretiyor?",
-        "a": "Ön işlem kimyasalları (ıslatıcılar, haşıl sökme enzimleri, sekestran), boyama yardımcıları (egalite, pH tamponları, dispers edici), terbiye kimyasalları (silikon yumuşatıcılar, sertleştiriciler) ve özel proses kimyasalları üretiyoruz."
-      },
-      "exportCountries": {
-        "q": "Hangi ülkelere ihracat yapıyorsunuz?",
-        "a": "Avrupa, Orta Doğu, Kuzey Afrika, Orta Asya ve Güney Asya'daki 30'dan fazla ülkeye ihracat yapıyoruz. Başlıca pazarlarımız Almanya, İtalya, Fransa, Mısır, Fas, Tunus, Bangladeş, Pakistan ve Özbekistan'dır."
-      },
-      "minOrder": {
-        "q": "Minimum sipariş miktarı nedir?",
-        "a": "Minimum sipariş miktarı ürüne göre değişir. Sıvı kimyasallarda MOQ genellikle 1 IBC (1000 kg), varil ambalajda 200 kg'dır. Yeni müşteriler için deneme miktarlarını görüşebiliriz."
-      },
-      "sampleAvailable": {
-        "q": "Sipariş vermeden önce ücretsiz numune alabilir miyim?",
-        "a": "Evet! Test amaçlı ücretsiz laboratuvar numuneleri (1-5 kg) sağlıyoruz. Teknik ekibimiz denemeleriniz için uygulama kılavuzu ve destek de sunacaktır."
-      },
-      "deliveryTime": {
-        "q": "Tipik teslimat süresi nedir?",
-        "a": "Stok ürünlerde standart üretim ve teslimat 2-3 haftadır. Özel formülasyonlar 3-4 hafta gerektirebilir. Tekirdağ/İstanbul limanlarından konteyner ile sevkiyat yapıyoruz. FOB, CIF ve DDP şartları mevcuttur."
-      },
-      "customFormulation": {
-        "q": "Özel formülasyon yapıyor musunuz?",
-        "a": "Kesinlikle. AR-GE laboratuvarımız, kumaş tiplerinize, makinelerinize ve proses gereksinimlerinize özel formülasyonlar geliştirebilir. Optimizasyon için yerinde teknik destek de sunuyoruz."
-      },
-      "certifications": {
-        "q": "Ürünleriniz hangi sertifikalara sahip?",
-        "a": "Ürünlerimiz ISO 9001 kalite yönetim standartlarına uygundur. Seçili ürünler OEKO-TEX uyumlu ve GOTS onaylıdır. Tüm ürünler için SDS (Güvenlik Bilgi Formu) ve TDS (Teknik Veri Sayfası) sağlıyoruz."
-      },
-      "technicalSupport": {
-        "q": "Teknik destek sağlıyor musunuz?",
-        "a": "Evet, reçete formülasyonu, proses optimizasyonu, sorun giderme ve yerinde ziyaretler dahil kapsamlı teknik destek sunuyoruz. AR-GE ekibimiz tekstil kimyasında 15+ yıl deneyime sahiptir."
-      }
-    }
-  }
 }
