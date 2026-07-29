@@ -14,12 +14,42 @@ interface ProductCatalogProps {
     locale: string;
 }
 
-const IONIC_LABELS: Record<string, { label: string; color: string }> = {
-    nonionic: { label: 'Noniyonik', color: 'bg-sky-500/15 text-sky-300 border-sky-500/20' },
-    anionic: { label: 'Anyonik', color: 'bg-rose-500/15 text-rose-300 border-rose-500/20' },
-    cationic: { label: 'Katyonik', color: 'bg-violet-500/15 text-violet-300 border-violet-500/20' },
-    amphoteric: { label: 'Amfoterik', color: 'bg-amber-500/15 text-amber-300 border-amber-500/20' },
+const IONIC_LABELS: Record<string, Record<string, { label: string; color: string }>> = {
+    nonionic: {
+        tr: { label: 'Noniyonik', color: 'bg-sky-500/15 text-sky-300 border-sky-500/20' },
+        en: { label: 'Nonionic', color: 'bg-sky-500/15 text-sky-300 border-sky-500/20' },
+        fr: { label: 'Non-ionique', color: 'bg-sky-500/15 text-sky-300 border-sky-500/20' },
+        ar: { label: 'غير أيوني', color: 'bg-sky-500/15 text-sky-300 border-sky-500/20' },
+        ru: { label: 'Нонионный', color: 'bg-sky-500/15 text-sky-300 border-sky-500/20' },
+    },
+    anionic: {
+        tr: { label: 'Anyonik', color: 'bg-rose-500/15 text-rose-300 border-rose-500/20' },
+        en: { label: 'Anionic', color: 'bg-rose-500/15 text-rose-300 border-rose-500/20' },
+        fr: { label: 'Anionique', color: 'bg-rose-500/15 text-rose-300 border-rose-500/20' },
+        ar: { label: 'أنيوني', color: 'bg-rose-500/15 text-rose-300 border-rose-500/20' },
+        ru: { label: 'Анионный', color: 'bg-rose-500/15 text-rose-300 border-rose-500/20' },
+    },
+    cationic: {
+        tr: { label: 'Katyonik', color: 'bg-violet-500/15 text-violet-300 border-violet-500/20' },
+        en: { label: 'Cationic', color: 'bg-violet-500/15 text-violet-300 border-violet-500/20' },
+        fr: { label: 'Cationique', color: 'bg-violet-500/15 text-violet-300 border-violet-500/20' },
+        ar: { label: 'كاتيوني', color: 'bg-violet-500/15 text-violet-300 border-violet-500/20' },
+        ru: { label: 'Катионный', color: 'bg-violet-500/15 text-violet-300 border-violet-500/20' },
+    },
+    amphoteric: {
+        tr: { label: 'Amfoterik', color: 'bg-amber-500/15 text-amber-300 border-amber-500/20' },
+        en: { label: 'Amphoteric', color: 'bg-amber-500/15 text-amber-300 border-amber-500/20' },
+        fr: { label: 'Amphotère', color: 'bg-amber-500/15 text-amber-300 border-amber-500/20' },
+        ar: { label: 'أمفوتيري', color: 'bg-amber-500/15 text-amber-300 border-amber-500/20' },
+        ru: { label: 'Амфотерный', color: 'bg-amber-500/15 text-amber-300 border-amber-500/20' },
+    },
 };
+
+function getIonicLabel(type: string, locale: string) {
+    const item = IONIC_LABELS[type];
+    if (!item) return null;
+    return item[locale] || item['en'] || item['tr'];
+}
 
 function getLocalized(obj: any, field: string, locale: string) {
     return obj[`${field}_${locale}`] || obj[`${field}_en`] || obj[`${field}_tr`];
@@ -178,11 +208,14 @@ export default function ProductCatalog({ categories, subgroups, products, locale
                                                                                     <span className="font-semibold text-white text-sm group-hover:text-accent transition-colors">
                                                                                         {product.name}
                                                                                     </span>
-                                                                                    {product.ionic_type && IONIC_LABELS[product.ionic_type] && (
-                                                                                        <span className={`text-[10px] px-2 py-0.5 rounded-full border font-medium ${IONIC_LABELS[product.ionic_type].color}`}>
-                                                                                            {IONIC_LABELS[product.ionic_type].label}
-                                                                                        </span>
-                                                                                    )}
+                                                                                    {(() => {
+                                                                                        const ionicInfo = product.ionic_type ? getIonicLabel(product.ionic_type, locale) : null;
+                                                                                        return ionicInfo ? (
+                                                                                            <span className={`text-[10px] px-2 py-0.5 rounded-full border font-medium ${ionicInfo.color}`}>
+                                                                                                {ionicInfo.label}
+                                                                                            </span>
+                                                                                        ) : null;
+                                                                                    })()}
                                                                                 </div>
                                                                                 <p className="text-text-muted text-xs mt-0.5 line-clamp-1">
                                                                                     {getLocalized(product, 'description', locale)}
