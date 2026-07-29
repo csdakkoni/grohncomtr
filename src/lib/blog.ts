@@ -10,14 +10,17 @@ export interface BlogPost {
     title_en: string;
     title_fr: string;
     title_ar: string;
+    title_ru: string;
     excerpt_tr: string;
     excerpt_en: string;
     excerpt_fr: string;
     excerpt_ar: string;
+    excerpt_ru: string;
     content_tr: string;
     content_en: string;
     content_fr: string;
     content_ar: string;
+    content_ru: string;
     tags_en: string[];
 }
 
@@ -33,10 +36,12 @@ export const BLOG_POSTS: BlogPost[] = [
         title_tr: "Reaktif Boyamada pH Kontrolünün Kritik Rolü",
         title_fr: "Le rôle critique du contrôle du pH dans la teinture réactive",
         title_ar: "الدور الحاسم للتحكم في الرقم الهيدروجيني في الصباغة التفاعلية",
+        title_ru: "الدور الحاسم للتحكم في الرقم الهيدروجيني في الصباغة التفاعلية",
         excerpt_en: "Learn why precise pH management is key to achieving uniform dyeing results and maximum color fastness in reactive dyeing processes.",
         excerpt_tr: "Reaktif boyama proseslerinde düzgün boyama sonuçları ve maksimum renk haslığı için hassas pH yönetiminin neden önemli olduğunu öğrenin.",
         excerpt_fr: "Découvrez pourquoi la gestion précise du pH est essentielle pour des résultats de teinture uniformes.",
         excerpt_ar: "تعرف على أهمية التحكم الدقيق في الرقم الهيدروجيني للحصول على نتائج صباغة موحدة.",
+        excerpt_ru: "تعرف على أهمية التحكم الدقيق في الرقم الهيدروجيني للحصول على نتائج صباغة موحدة.",
         tags_en: ["reactive dyeing", "pH control", "Grocid", "color fastness"],
         content_en: `## Why pH Matters in Reactive Dyeing
 
@@ -157,6 +162,22 @@ C'est là que les acides tampons **Grocid GFY** et **Grocid BFF** deviennent ess
 هنا تصبح أحماض التخزين المؤقت **Grocid GFY** و **Grocid BFF** ضرورية. على عكس الأحماض البسيطة، تحافظ عوامل التخزين المؤقت على درجة حموضة مستقرة.
 
 *اتصل بفريقنا التقني للحصول على حلول مخصصة.*`,
+        content_ru: `## أهمية التحكم في الرقم الهيدروجيني في الصباغة التفاعلية
+
+تشكل الأصباغ التفاعلية رابطة تساهمية مع ألياف السليلوز. لذلك يعد الرقم الهيدروجيني من أهم المعايير في عملية الصباغة. تتطلب عملية التثبيت ظروفًا قلوية (pH 10.5-11.5).
+
+### المشكلة: التحلل المائي للصبغة
+
+عندما يتجاوز الرقم الهيدروجيني النطاق الأمثل:
+- يمكن فقدان **حتى 30%** من الصبغة
+- ثبات غسيل ضعيف
+- تباينات في الدرجة اللونية
+
+### الحل: عوامل التخزين المؤقت
+
+هنا تصبح أحماض التخزين المؤقت **Grocid GFY** و **Grocid BFF** ضرورية. على عكس الأحماض البسيطة، تحافظ عوامل التخزين المؤقت على درجة حموضة مستقرة.
+
+*اتصل بفريقنا التقني للحصول على حلول مخصصة.*`,
     },
 
     {
@@ -170,10 +191,12 @@ C'est là que les acides tampons **Grocid GFY** et **Grocid BFF** deviennent ess
         title_tr: "Enzimatik Haşıl Sökme: Enerji Maliyetini %40 Düşürme",
         title_fr: "Désencollage enzymatique : Réduire les coûts énergétiques de 40%",
         title_ar: "إزالة النشا الإنزيمية: خفض تكاليف الطاقة بنسبة 40%",
+        title_ru: "إزالة النشا الإنزيمية: خفض تكاليف الطاقة بنسبة 40%",
         excerpt_en: "How modern enzyme technology enables effective desizing at lower temperatures, reducing both energy consumption and environmental impact.",
         excerpt_tr: "Modern enzim teknolojisinin düşük sıcaklıklarda etkili haşıl sökmeyi nasıl sağladığını ve hem enerji tüketimini hem de çevresel etkiyi nasıl azalttığını keşfedin.",
         excerpt_fr: "Comment la technologie enzymatique moderne permet un désencollage efficace à basse température.",
         excerpt_ar: "كيف تمكن تقنية الإنزيمات الحديثة من إزالة النشا بفعالية في درجات حرارة منخفضة.",
+        excerpt_ru: "كيف تمكن تقنية الإنزيمات الحديثة من إزالة النشا بفعالية في درجات حرارة منخفضة.",
         tags_en: ["enzyme", "desizing", "energy saving", "Grozyme", "sustainability"],
         content_en: `## The Energy Challenge in Textile Pre-Treatment
 
@@ -286,6 +309,20 @@ Grozyme AML est une enzyme alpha-amylase conçue pour le désencollage textile. 
 Grozyme AML هو إنزيم ألفا أميليز مصمم خصيصًا لإزالة النشا في المنسوجات.
 
 *اطلب عينة تجريبية مجانية من Grozyme AML.*`,
+        content_ru: `## تحدي الطاقة في المعالجة المسبقة للنسيج
+
+تتطلب عمليات إزالة النشا التقليدية درجات حرارة 80-95 درجة مئوية، مما يستهلك كميات هائلة من الطاقة.
+
+### إزالة النشا الإنزيمية مقابل التقليدية
+
+| المعيار | التقليدي | الإنزيمي (Grozyme AML) |
+|---------|---------|------------------------|
+| الحرارة | 80-95°C | 50-65°C |
+| التكلفة | مرتفعة | **أقل بنسبة 40%** |
+
+Grozyme AML هو إنزيم ألفا أميليز مصمم خصيصًا لإزالة النشا في المنسوجات.
+
+*اطلب عينة تجريبية مجانية من Grozyme AML.*`,
     },
 
     {
@@ -299,10 +336,12 @@ Grozyme AML هو إنزيم ألفا أميليز مصمم خصيصًا لإزا
         title_tr: "Kumaşınız İçin Doğru Silikon Yumuşatıcıyı Nasıl Seçersiniz?",
         title_fr: "Comment choisir le bon adoucissant silicone pour votre tissu",
         title_ar: "كيف تختار منعم السيليكون المناسب لقماشك",
+        title_ru: "كيف تختار منعم السيليكون المناسب لقماشك",
         excerpt_en: "A practical guide to selecting between micro emulsion, macro emulsion, and hydrophilic silicone softeners based on your fabric type and desired hand feel.",
         excerpt_tr: "Kumaş tipinize ve istediğiniz tuşeye göre mikro emülsiyon, makro emülsiyon ve hidrofilik silikon yumuşatıcılar arasında seçim yapmanız için pratik bir rehber.",
         excerpt_fr: "Guide pratique pour choisir entre micro-émulsion, macro-émulsion et silicones hydrophiles.",
         excerpt_ar: "دليل عملي لاختيار المنعم السيليكوني المناسب حسب نوع القماش.",
+        excerpt_ru: "دليل عملي لاختيار المنعم السيليكوني المناسب حسب نوع القماش.",
         tags_en: ["silicone softener", "softener selection", "Grosil", "hand feel", "textile finishing"],
         content_en: `## Understanding Silicone Softener Types
 
@@ -397,6 +436,19 @@ Le choix du bon adoucissant dépend du type de tissu, du toucher souhaité et de
 | **Grosil HYD** | محب للماء | الملابس الرياضية | ناعم + ماص |
 
 *أرسل لنا عينة قماش للحصول على توصية مخصصة.*`,
+        content_ru: `## فهم أنواع منعمات السيليكون
+
+يعتمد اختيار منعم السيليكون الصحيح على نوع القماش والملمس المطلوب والمتطلبات اللاحقة.
+
+### عائلة منتجات Grosil
+
+| المنتج | النوع | الأفضل لـ | الملمس |
+|--------|-------|-----------|--------|
+| **Grosil MKR** | مستحلب دقيق | أقمشة خفيفة | لامع وزلق |
+| **Grosil AMN** | أمينو ماكرو | أقمشة ثقيلة | ممتلئ ودائم |
+| **Grosil HYD** | محب للماء | الملابس الرياضية | ناعم + ماص |
+
+*أرسل لنا عينة قماش للحصول على توصية مخصصة.*`,
     },
 
     {
@@ -410,10 +462,12 @@ Le choix du bon adoucissant dépend du type de tissu, du toucher souhaité et de
         title_tr: "Düşük Köpük Islatıcılar Su Tüketimini Nasıl %35 Azaltır?",
         title_fr: "Les agents mouillants à faible mousse réduisent la consommation d'eau de 35%",
         title_ar: "كيف يمكن لعوامل الترطيب منخفضة الرغوة تقليل استهلاك المياه بنسبة 35%",
+        title_ru: "كيف يمكن لعوامل الترطيب منخفضة الرغوة تقليل استهلاك المياه بنسبة 35%",
         excerpt_en: "Discover how next-generation wetting agents dramatically reduce rinse cycles while improving fabric penetration in pre-treatment processes.",
         excerpt_tr: "Yeni nesil ıslatıcıların ön işlem proseslerinde durulama döngülerini nasıl azaltırken kumaş penetrasyonunu nasıl geliştirdiğini keşfedin.",
         excerpt_fr: "Découvrez comment les agents mouillants nouvelle génération réduisent les cycles de rinçage tout en améliorant la pénétration du tissu.",
         excerpt_ar: "اكتشف كيف تقلل عوامل الترطيب من الجيل الجديد دورات الشطف مع تحسين تغلغل القماش.",
+        excerpt_ru: "اكتشف كيف تقلل عوامل الترطيب من الجيل الجديد دورات الشطف مع تحسين تغلغل القماش.",
         tags_en: ["wetting agents", "water saving", "Growet", "sustainability", "pre-treatment"],
         content_en: `## The Water Crisis in Textile Processing
 
@@ -501,6 +555,17 @@ Agent mouillant basse mousse avec pénétration supérieure du tissu:
 - توفير المياه: **تخفيض 30-35%**
 
 *اتصل بنا للحصول على تدقيق مجاني لاستهلاك المياه.*`,
+        content_ru: `## أزمة المياه في معالجة النسيج
+
+تستهلك المعالجة الرطبة للنسيج 100-150 لتر لكل كجم من القماش.
+
+### Growet LFN: مصمم للكفاءة
+
+عامل ترطيب منخفض الرغوة مع تغلغل فائق:
+- زمن الترطيب: 3-5 ثوانٍ
+- توفير المياه: **تخفيض 30-35%**
+
+*اتصل بنا للحصول على تدقيق مجاني لاستهلاك المياه.*`,
     },
 
     {
@@ -514,10 +579,12 @@ Agent mouillant basse mousse avec pénétration supérieure du tissu:
         title_tr: "Carrier'sız Polyester Boyama: Toksik Carrier Olmadan Koyu Tonlar",
         title_fr: "Teinture polyester sans carrier : Obtenir des tons foncés sans supports toxiques",
         title_ar: "صباغة البوليستر بدون حوامل: الحصول على ظلال عميقة بدون حوامل سامة",
+        title_ru: "صباغة البوليستر بدون حوامل: الحصول على ظلال عميقة بدون حوامل سامة",
         excerpt_en: "Modern dispersing technology enables carrier-free dyeing of polyester at atmospheric pressure, eliminating toxic chemicals while achieving excellent color depth.",
         excerpt_tr: "Modern dispers teknolojisi, atmosferik basınçta carrier'sız polyester boyamayı mümkün kılar — toksik kimyasallar olmadan mükemmel renk derinliği.",
         excerpt_fr: "La technologie de dispersion moderne permet la teinture sans carrier du polyester à pression atmosphérique.",
         excerpt_ar: "تتيح تقنية التشتت الحديثة صباغة البوليستر بدون حوامل عند الضغط الجوي.",
+        excerpt_ru: "تتيح تقنية التشتت الحديثة صباغة البوليستر بدون حوامل عند الضغط الجوي.",
         tags_en: ["polyester dyeing", "carrier-free", "Gropers", "dispersing agents", "sustainability"],
         content_en: `## The Problem with Traditional Carriers
 
@@ -619,6 +686,17 @@ Auxiliaire de teinture polyester sans carrier, sans APEO:
 - صيغة قابلة للتحلل البيولوجي
 
 *اطلب دفعة تجريبية مع Gropers DPE.*`,
+        content_ru: `## مشكلة الحوامل التقليدية
+
+تسبب الحوامل التقليدية مشاكل في السمية والتلوث والمخاطر الصحية.
+
+### Gropers DPE: صباغة بدون حوامل
+
+- يعمل عند 98-100 درجة مئوية
+- بدون أبخرة سامة
+- صيغة قابلة للتحلل البيولوجي
+
+*اطلب دفعة تجريبية مع Gropers DPE.*`,
     },
 
     {
@@ -632,10 +710,12 @@ Auxiliaire de teinture polyester sans carrier, sans APEO:
         title_tr: "Endüstriyel Tekstil Leke Çıkarma Rehberi",
         title_fr: "Guide complet de détachage textile industriel",
         title_ar: "الدليل الكامل لإزالة البقع النسيجية الصناعية",
+        title_ru: "الدليل الكامل لإزالة البقع النسيجية الصناعية",
         excerpt_en: "A systematic approach to identifying and removing the most common industrial stains: oil, sizing residue, rust, and dye spots in textile production.",
         excerpt_tr: "Tekstil üretiminde en sık karşılaşılan endüstriyel lekeleri tanımlama ve çıkarma: yağ, haşıl kalıntısı, pas ve boya lekeleri.",
         excerpt_fr: "Une approche systématique pour identifier et éliminer les taches industrielles les plus courantes dans la production textile.",
         excerpt_ar: "نهج منهجي لتحديد وإزالة البقع الصناعية الأكثر شيوعًا في إنتاج المنسوجات.",
+        excerpt_ru: "نهج منهجي لتحديد وإزالة البقع الصناعية الأكثر شيوعًا في إنتاج المنسوجات.",
         tags_en: ["stain removal", "oil removal", "Grosol", "pre-treatment", "quality control"],
         content_en: `## Why Stain Removal Matters
 
@@ -734,6 +814,19 @@ Les taches dans la production textile entraînent des rejets clients et des coû
 | بقع الصدأ | معالجة حمضية + Groseq |
 
 *أرسل لنا عينة — سيقوم مختبرنا بتشخيص المشكلة.*`,
+        content_ru: `## لماذا إزالة البقع مهمة؟
+
+تؤدي البقع في إنتاج النسيج إلى رفض العملاء وتكاليف إعادة المعالجة.
+
+### حلول Grosol
+
+| نوع البقعة | الحل |
+|-----------|------|
+| زيت الماكينة | Grosol ORC |
+| بقايا النشا | Grozyme AML |
+| بقع الصدأ | معالجة حمضية + Groseq |
+
+*أرسل لنا عينة — سيقوم مختبرنا بتشخيص المشكلة.*`,
     },
     // ═══════════════════════════════════════════
     // WATER TREATMENT BLOG POSTS
@@ -752,10 +845,12 @@ Les taches dans la production textile entraînent des rejets clients et des coû
         title_en: "5 Most Common Mistakes in Dyehouse Wastewater Treatment (and How to Fix Them)",
         title_fr: "Les 5 Erreurs les Plus Courantes dans le Traitement des Eaux Usées de Teinturerie",
         title_ar: "أكثر 5 أخطاء شائعة في معالجة مياه صرف المصبغة وحلولها",
+        title_ru: "أكثر 5 أخطاء شائعة في معالجة مياه صرف المصبغة وحلولها",
         excerpt_tr: "Tekstil boyahanelerinde arıtma verimliliğini düşüren yaygın hatalar ve pratik çözüm önerileri.",
         excerpt_en: "Common mistakes that reduce treatment efficiency in textile dyehouses, with practical solutions.",
         excerpt_fr: "Erreurs courantes qui réduisent l'efficacité du traitement dans les teintureries textiles.",
         excerpt_ar: "الأخطاء الشائعة التي تقلل كفاءة المعالجة في مصابغ النسيج مع حلول عملية.",
+        excerpt_ru: "الأخطاء الشائعة التي تقلل كفاءة المعالجة في مصابغ النسيج مع حلول عملية.",
         tags_en: ["wastewater", "coagulation", "flocculation", "dyehouse", "water treatment", "troubleshooting"],
         content_tr: `# Boyahane Atıksu Arıtmasında En Sık Yapılan 5 Hata
 
@@ -859,6 +954,15 @@ Contact us for **free wastewater analysis and jar testing** with our Growat wate
 5. **تجاهل التغيرات الموسمية** — دعم فني في الموقع
 
 *اتصل بنا للتحليل المجاني.*`,
+        content_ru: `# أكثر 5 أخطاء شائعة في معالجة مياه الصرف
+
+1. **عدم ضبط pH** — Growat PHC يحل هذا
+2. **نفس الوصفة لكل شيء** — اختبار جار مجاني متاح
+3. **الجرعة الزائدة** — منتجاتنا مركزة ومحسّنة
+4. **إهمال الحمأة** — Growat يقلل حجم الحمأة
+5. **تجاهل التغيرات الموسمية** — دعم فني في الموقع
+
+*اتصل بنا للتحليل المجاني.*`,
     },
     {
         id: "8",
@@ -871,10 +975,12 @@ Contact us for **free wastewater analysis and jar testing** with our Growat wate
         title_en: "Why Can't You Remove Color from Your Dyehouse Wastewater? The Right Strategy by Dye Type",
         title_fr: "Pourquoi la Couleur de Vos Eaux Usées ne Part-elle Pas ?",
         title_ar: "لماذا لا يزول لون مياه الصرف؟ الاستراتيجية الصحيحة حسب نوع الصبغة",
+        title_ru: "لماذا لا يزول لون مياه الصرف؟ الاستراتيجية الصحيحة حسب نوع الصبغة",
         excerpt_tr: "Her boya tipinin farklı bir arıtma stratejisi gerektirdiğini biliyor muydunuz? Doğru yaklaşımla %95+ renk giderme mümkün.",
         excerpt_en: "Did you know each dye type requires a different treatment strategy? With the right approach, 95%+ color removal is achievable.",
         excerpt_fr: "Saviez-vous que chaque type de colorant nécessite une stratégie de traitement différente ?",
         excerpt_ar: "هل تعلم أن كل نوع صبغة يتطلب استراتيجية معالجة مختلفة؟",
+        excerpt_ru: "هل تعلم أن كل نوع صبغة يتطلب استراتيجية معالجة مختلفة؟",
         tags_en: ["color removal", "decolorization", "reactive dye", "wastewater treatment", "textile effluent"],
         content_tr: `# Boyahane Atıksuyunuzun Rengi Neden Gitmiyor?
 
@@ -977,6 +1083,18 @@ Chaque colorant nécessite une approche différente :
 3. دعم فني في الموقع
 
 *اتصل بنا لإزالة 95%+.*`,
+        content_ru: `# لماذا لا يزول اللون؟
+
+كل صبغة تحتاج معالجة مختلفة:
+- **التفاعلية** → Growat DCL (الأكثر فعالية)
+- **المشتتة** → Growat COG (التخثر)
+- **المباشرة** → منتجات Growat المركزة
+
+1. أرسل عينة → تحليل خلال 24 ساعة
+2. اختبار جار مجاني → الجرعة المثلى
+3. دعم فني في الموقع
+
+*اتصل بنا لإزالة 95%+.*`,
     },
     {
         id: "9",
@@ -989,10 +1107,12 @@ Chaque colorant nécessite une approche différente :
         title_en: "How to Reduce Water Costs by 70% in Your Dyehouse: Chemical Pretreatment & Water Recovery",
         title_fr: "Comment Réduire les Coûts d'Eau de 70% dans Votre Teinturerie",
         title_ar: "كيف تخفض تكاليف المياه 70% في مصبغتك",
+        title_ru: "كيف تخفض تكاليف المياه 70% في مصبغتك",
         excerpt_tr: "Artan su fiyatları ve çevre düzenlemeleri karşısında, kimyasal ön arıtma ile su geri kazanımı artık lüks değil zorunluluk.",
         excerpt_en: "Facing rising water costs and environmental regulations, chemical pretreatment for water recovery is no longer a luxury — it's a necessity.",
         excerpt_fr: "Face à la hausse des coûts de l'eau, le prétraitement chimique est une nécessité.",
         excerpt_ar: "في مواجهة ارتفاع تكاليف المياه، أصبحت المعالجة الكيميائية ضرورة.",
+        excerpt_ru: "في مواجهة ارتفاع تكاليف المياه، أصبحت المعالجة الكيميائية ضرورة.",
         tags_en: ["ZLD", "water recovery", "sustainability", "textile wastewater", "cost reduction"],
         content_tr: `# Su Maliyetini %70 Azaltmanın Yolu
 
@@ -1109,6 +1229,22 @@ Solutions Growat pour la récupération d'eau :
 | المستوى 4 (ZLD) | 95-100% |
 
 *استشرنا لدراسة مجانية.*`,
+        content_ru: `# كيف تخفض تكاليف المياه 70%
+
+حلول Growat لاسترداد المياه:
+1. الأس الهيدروجيني → Growat PHC
+2. التخثر → مخثرات Growat
+3. التلبد → ملبدات Growat
+4. إزالة اللون → سلسلة Growat DCL
+
+| الاستراتيجية | الاسترداد |
+|--------------|-----------|
+| المستوى 1 | 30-40% |
+| المستوى 2 | 50-60% |
+| المستوى 3 | 70-85% |
+| المستوى 4 (ZLD) | 95-100% |
+
+*استشرنا لدراسة مجانية.*`,
     },
     // ═══════════════════════════════════════════
     // TEXTILE CHEMISTRY BLOG POSTS
@@ -1124,10 +1260,12 @@ Solutions Growat pour la récupération d'eau :
         title_en: "Which Silicone Softener is Right for Your Fabric? A Selection Guide",
         title_fr: "Quel Adoucissant Silicone pour Votre Tissu ? Guide de Sélection",
         title_ar: "أي منعم سيليكون يناسب قماشك؟ دليل الاختيار",
+        title_ru: "أي منعم سيليكون يناسب قماشك؟ دليل الاختيار",
         excerpt_tr: "Mikro emülsiyon, makro emülsiyon, amino silikon... Hangi tip yumuşatıcı hangi kumaşta en iyi sonucu verir?",
         excerpt_en: "Micro emulsion, macro emulsion, amino silicone... Which softener type gives the best result on which fabric?",
         excerpt_fr: "Micro émulsion, macro émulsion, amino silicone... Quel type donne le meilleur résultat ?",
         excerpt_ar: "مستحلب دقيق، مستحلب كبير، أمينو سيليكون... أي نوع يعطي أفضل نتيجة؟",
+        excerpt_ru: "مستحلب دقيق، مستحلب كبير، أمينو سيليكون... أي نوع يعطي أفضل نتيجة؟",
         tags_en: ["softener", "silicone", "fabric finishing", "hand feel", "textile auxiliary"],
         content_tr: `# Kumaşınıza Hangi Silikon Yumuşatıcı Uygun?
 
@@ -1233,6 +1371,16 @@ Choosing the wrong silicone softener can ruin sublimation fastness, block water 
 | ساتان | مرن لامع | Grosil MKR |
 
 *أرسل عينة للاختبار المقارن.*`,
+        content_ru: `# أي منعم سيليكون يناسبك؟
+
+| القماش | الملمس | المنتج |
+|--------|--------|--------|
+| قطن | ناعم ممتلئ | Grosil AMN |
+| بوليستر | زلق لامع | Grosil PES |
+| رياضي | ناعم ماص | Grosil HYD |
+| ساتان | مرن لامع | Grosil MKR |
+
+*أرسل عينة للاختبار المقارن.*`,
     },
     {
         id: "11",
@@ -1245,10 +1393,12 @@ Choosing the wrong silicone softener can ruin sublimation fastness, block water 
         title_en: "Low-Temperature Dyeing: How to Cut Energy Costs by 40%",
         title_fr: "Teinture à Basse Température : Réduire les Coûts Énergétiques de 40%",
         title_ar: "الصباغة بدرجة حرارة منخفضة: كيف تخفض تكاليف الطاقة 40%",
+        title_ru: "الصباغة بدرجة حرارة منخفضة: كيف تخفض تكاليف الطاقة 40%",
         excerpt_tr: "Doğru kimyasal kombinasyonuyla boyama sıcaklığını 20-30°C düşürerek ciddi enerji tasarrufu sağlayın.",
         excerpt_en: "Achieve significant energy savings by lowering dyeing temperature 20-30°C with the right chemical combination.",
         excerpt_fr: "Réduisez la température de teinture de 20-30°C avec la bonne combinaison chimique.",
         excerpt_ar: "حقق وفورات طاقة كبيرة بخفض درجة حرارة الصباغة 20-30 درجة.",
+        excerpt_ru: "حقق وفورات طاقة كبيرة بخفض درجة حرارة الصباغة 20-30 درجة.",
         tags_en: ["low temperature", "energy saving", "dyeing", "sustainability", "cost reduction"],
         content_tr: `# Düşük Sıcaklıkta Boyama: Enerji Maliyetinizi %40 Düşürün
 
@@ -1347,6 +1497,14 @@ Réduisez les températures de 20-30°C pour économiser 30-40% d'énergie.
 - **تفاعلي:** Grogal + Grogal ALK (80°C → 60°C)
 
 *استشرنا لتحسين الطاقة.*`,
+        content_ru: `# الصباغة بدرجة حرارة منخفضة
+
+خفض درجات الحرارة 20-30 درجة لتوفير 30-40% طاقة.
+
+- **بوليستر:** Grocarrier (130°C → 100°C)
+- **تفاعلي:** Grogal + Grogal ALK (80°C → 60°C)
+
+*استشرنا لتحسين الطاقة.*`,
     },
     {
         id: "12",
@@ -1359,10 +1517,12 @@ Réduisez les températures de 20-30°C pour économiser 30-40% d'énergie.
         title_en: "Chemical Selection Guide for Oeko-Tex & GOTS Certification",
         title_fr: "Guide de Sélection Chimique pour Oeko-Tex et GOTS",
         title_ar: "دليل اختيار المواد الكيميائية لشهادة Oeko-Tex و GOTS",
+        title_ru: "دليل اختيار المواد الكيميائية لشهادة Oeko-Tex و GOTS",
         excerpt_tr: "MRSL listesi, yasaklı maddeler ve sürdürülebilir üretim için doğru kimyasal tedarikçisi seçimi.",
         excerpt_en: "MRSL lists, restricted substances, and selecting the right chemical supplier for sustainable production.",
         excerpt_fr: "Listes MRSL, substances restreintes et sélection du bon fournisseur chimique.",
         excerpt_ar: "قوائم MRSL والمواد المقيدة واختيار المورد الكيميائي المناسب.",
+        excerpt_ru: "قوائم MRSL والمواد المقيدة واختيار المورد الكيميائي المناسب.",
         tags_en: ["Oeko-Tex", "GOTS", "sustainability", "MRSL", "certification", "compliance"],
         content_tr: `# Oeko-Tex ve GOTS: Kimyasal Seçiminde Nelere Dikkat Etmelisiniz?
 
@@ -1475,6 +1635,14 @@ Exigences clés pour la conformité :
 - منتجات Grohn المتوافقة متاحة
 
 *استشرنا لتدقيق امتثال مجاني.*`,
+        content_ru: `# دليل الامتثال لـ Oeko-Tex و GOTS
+
+المتطلبات الرئيسية:
+- منتجات خالية من APEO
+- حدود الفورمالديهايد
+- منتجات Grohn المتوافقة متاحة
+
+*استشرنا لتدقيق امتثال مجاني.*`,
     },
     {
         id: "15",
@@ -1487,10 +1655,12 @@ Exigences clés pour la conformité :
         title_en: "Green Chemistry Revolution: Sustainable and Biodegradable Raw Materials in Textiles",
         title_fr: "Révolution de la Chimie Verte : Matières Premières Durables et Biodégradables",
         title_ar: "ثورة الكيمياء الخضراء: مواد خام مستدامة وقابلة للتحلل البيولوجي في المنسوجات",
+        title_ru: "ثورة الكيمياء الخضراء: مواد خام مستدامة وقابلة للتحلل البيولوجي في المنسوجات",
         excerpt_tr: "Avrupa Yeşil Mutabakatı'nın sektöre etkileri ve doğada %100 çözünebilen organik polimerlerin karbon ayak izini nasıl sıfırladığı hakkında detaylı bir inceleme.",
         excerpt_en: "A detailed review of the impact of the European Green Deal on the sector and how 100% biodegradable organic polymers zero out the carbon footprint.",
         excerpt_fr: "Une revue détaillée de l'impact du Pacte Vert européen et des polymères organiques biodégradables.",
         excerpt_ar: "مراجعة مفصلة لتأثير الصفقة الخضراء الأوروبية وكيف تقضي البوليمرات العضوية القابلة للتحلل الحيوي على البصمة الكربونية.",
+        excerpt_ru: "مراجعة مفصلة لتأثير الصفقة الخضراء الأوروبية وكيف تقضي البوليمرات العضوية القابلة للتحلل الحيوي على البصمة الكربونية.",
         tags_en: ["green chemistry", "biodegradable", "sustainability", "textile innovation", "eco-friendly"],
         content_tr: `# Yeşil Kimya Devrimi: Tekstilde Sürdürülebilir ve Biyo-Çözünür Hammaddeler
 
@@ -1550,6 +1720,13 @@ Grohn Kimya développe des alternatives durables sans APEO ni PFC pour protéger
 
 يتم استبدال المواد الكيميائية الاصطناعية المشتقة من البترول بمواد خام قائمة على أساس حيوي وقابلة للتحلل الحيوي. يوفر استخدام الإنزيمات والبوليمرات الحيوية وفورات هائلة في الطاقة ويقضي على البصمة الكربونية.
 
+تعمل شركة Grohn Kimya على تطوير بدائل مستدامة خالية من APEO و PFC لحماية النظام البيئي المائي.`,
+        content_ru: `# ثورة الكيمياء الخضراء: المواد الخام المستدامة
+
+تُجبر صناعة النسيج، التي كانت تاريخياً واحدة من أكثر القطاعات تلوثاً، من قبل **الصفقة الخضراء الأوروبية** على ثورة "الكيمياء الخضراء".
+
+يتم استبدال المواد الكيميائية الاصطناعية المشتقة من البترول بمواد خام قائمة على أساس حيوي وقابلة للتحلل الحيوي. يوفر استخدام الإنزيمات والبوليمرات الحيوية وفورات هائلة في الطاقة ويقضي على البصمة الكربونية.
+
 تعمل شركة Grohn Kimya على تطوير بدائل مستدامة خالية من APEO و PFC لحماية النظام البيئي المائي.`
     },
     {
@@ -1563,10 +1740,12 @@ Grohn Kimya développe des alternatives durables sans APEO ni PFC pour protéger
         title_en: "The Invisible Shield Against the Water Crisis: The Strategic Importance of Industrial Water Treatment Chemicals",
         title_fr: "Le Bouclier Invisible contre la Crise de l'Eau : Importance du Traitement Industriel",
         title_ar: "الدرع الخفي ضد أزمة المياه: الأهمية الاستراتيجية لكيماويات معالجة المياه الصناعية",
+        title_ru: "الدرع الخفي ضد أزمة المياه: الأهمية الاستراتيجية لكيماويات معالجة المياه الصناعية",
         excerpt_tr: "Küresel su kıtlığı karşısında ağır sanayi atıksularının doğru koagülantlar ile nasıl %90 oranında geri kazanılabildiğine dair mühendislik bakış açısı.",
         excerpt_en: "An engineering perspective on how heavy industry wastewater can be recovered by 90% with the right coagulants in the face of global water scarcity.",
         excerpt_fr: "Une perspective d'ingénierie sur la récupération de 90% des eaux usées industrielles face à la pénurie d'eau mondiale.",
         excerpt_ar: "منظور هندسي حول كيفية استعادة مياه الصرف الصناعي الثقيل بنسبة 90٪ باستخدام المخثرات الصحيحة في مواجهة ندرة المياه العالمية.",
+        excerpt_ru: "منظور هندسي حول كيفية استعادة مياه الصرف الصناعي الثقيل بنسبة 90٪ باستخدام المخثرات الصحيحة في مواجهة ندرة المياه العالمية.",
         tags_en: ["water treatment", "coagulant", "water scarcity", "sustainability", "effluent recovery"],
         content_tr: `# Su Krizine Karşı 'Görünmez Kalkan': Endüstriyel Su Arıtma Kimyasallarının Stratejik Önemi
 
@@ -1621,6 +1800,13 @@ Grohn Kimya développe des antiscalants et des polymères de pointe pour optimis
 
 كيماويات معالجة مياه الصرف الصحي (المخثرات، الندف) هي "الدرع الخفي" للصناعة. إنها تسمح بترسيب المعادن الثقيلة والأصباغ، وتطهير المياه بحيث يمكن إعادة استخدامها حتى 90٪ في الإنتاج عبر أنظمة التناضح العكسي.
 
+تقوم Grohn Kimya بتطوير مضادات الترسبات والبوليمرات المتقدمة لتحسين عملية إعادة التدوير الحيوية هذه لكوكبنا.`,
+        content_ru: `# الدرع الخفي ضد أزمة المياه
+
+يجبر تغير المناخ وانخفاض موارد المياه العذبة الصناعات على تبني شعار: **الاسترداد والمعالجة وإعادة الاستخدام.**
+
+كيماويات معالجة مياه الصرف الصحي (المخثرات، الندف) هي "الدرع الخفي" للصناعة. إنها تسمح بترسيب المعادن الثقيلة والأصباغ، وتطهير المياه بحيث يمكن إعادة استخدامها حتى 90٪ في الإنتاج عبر أنظمة التناضح العكسي.
+
 تقوم Grohn Kimya بتطوير مضادات الترسبات والبوليمرات المتقدمة لتحسين عملية إعادة التدوير الحيوية هذه لكوكبنا.`
     }
     ,
@@ -1635,10 +1821,12 @@ Grohn Kimya développe des antiscalants et des polymères de pointe pour optimis
         title_en: "Ecological Dyeing Auxiliaries for Sustainable Textile Production",
         title_fr: "Auxiliaires de teinture écologiques pour une production textile durable",
         title_ar: "مساعدات الصباغة البيئية لإنتاج المنسوجات المستدامة",
+        title_ru: "مساعدات الصباغة البيئية لإنتاج المنسوجات المستدامة",
         excerpt_tr: "Tekstil sektöründe çevresel etkiyi en aza indiren, su ve enerji tasarrufu sağlayan yeni nesil ekolojik boya yardımcılarının faydalarını keşfedin.",
         excerpt_en: "Discover the benefits of next-generation ecological dyeing auxiliaries that minimize environmental impact and save water and energy in the textile industry.",
         excerpt_fr: "Découvrez les avantages des auxiliaires de teinture écologiques qui minimisent l'impact environnemental.",
         excerpt_ar: "اكتشف فوائد مساعدات الصباغة البيئية التي تقلل من التأثير البيئي.",
+        excerpt_ru: "اكتشف فوائد مساعدات الصباغة البيئية التي تقلل من التأثير البيئي.",
         tags_en: ["sustainability", "ecological", "dyeing auxiliaries", "water saving"],
         content_tr: `## Tekstilde Sürdürülebilirlik Neden Önemli?
 
@@ -1690,6 +1878,18 @@ Les séries écologiques **Grocid** et **Growet** de Grohn Kimya vous aident à 
 - **قابلية التحلل البيولوجي**
 - **غير سامة**
 
+تساعدك سلسلة **Grocid** و **Growet** الصديقة للبيئة من Grohn Kimya على تقليل البصمة الكربونية.`,
+        content_ru: `## أهمية الاستدامة في المنسوجات
+
+تعد صناعة النسيج واحدة من أكثر القطاعات استهلاكًا للمياه. يجبر الوعي البيئي المتزايد الشركات المصنعة على إيجاد طرق أكثر خضرة.
+
+### مزايا مساعدات الصباغة البيئية
+
+- **استهلاك أقل للمياه**
+- **فعالية في درجات الحرارة المنخفضة**
+- **قابلية التحلل البيولوجي**
+- **غير سامة**
+
 تساعدك سلسلة **Grocid** و **Growet** الصديقة للبيئة من Grohn Kimya على تقليل البصمة الكربونية.`
     },
     {
@@ -1703,10 +1903,12 @@ Les séries écologiques **Grocid** et **Growet** de Grohn Kimya vous aident à 
         title_en: "Next Generation Solvents in Industrial Cleaning",
         title_fr: "Solvants de nouvelle génération dans le nettoyage industriel",
         title_ar: "مذيبات الجيل القادم في التنظيف الصناعي",
+        title_ru: "مذيبات الجيل القادم في التنظيف الصناعي",
         excerpt_tr: "Geleneksel tehlikeli solventlerin yerini alan, işçi sağlığını ve çevreyi koruyan yeni nesil endüstriyel çözücülerin endüstriye etkileri.",
         excerpt_en: "The impact of next-generation industrial solvents that replace traditional hazardous solvents, protecting worker health and the environment.",
         excerpt_fr: "L'impact des solvants industriels de nouvelle génération qui protègent la santé des travailleurs.",
         excerpt_ar: "تأثير المذيبات الصناعية من الجيل الجديد التي تحمي صحة العمال والبيئة.",
+        excerpt_ru: "تأثير المذيبات الصناعية من الجيل الجديد التي تحمي صحة العمال والبيئة.",
         tags_en: ["industrial cleaning", "solvents", "worker safety", "eco-friendly"],
         content_tr: `## Endüstriyel Temizlikte Yeni Dönem
 
@@ -1760,6 +1962,18 @@ Les solutions de nettoyage sûres de Grohn Kimya garantissent des performances m
 - **قوة ممتازة لإزالة الشحوم**
 - **صديقة للبيئة**
 
+تضمن حلول التنظيف الآمنة من Grohn Kimya أقصى قدر من الأداء مع حماية صحة موظفيك.`,
+        content_ru: `## عصر جديد في التنظيف الصناعي
+
+لسنوات عديدة، تم استخدام المذيبات السامة في التنظيف. تشكل هذه المواد الكيميائية مخاطر كبيرة.
+
+### ما الذي يميز مذيبات الجيل القادم؟
+
+- **نقطة وميض عالية:** تقلل من مخاطر الحريق.
+- **مركبات عضوية متطايرة منخفضة:** تقلل من مخاطر الجهاز التنفسي.
+- **قوة ممتازة لإزالة الشحوم**
+- **صديقة للبيئة**
+
 تضمن حلول التنظيف الآمنة من Grohn Kimya أقصى قدر من الأداء مع حماية صحة موظفيك.`
     }
     ,
@@ -1774,10 +1988,12 @@ Les solutions de nettoyage sûres de Grohn Kimya garantissent des performances m
         title_en: "Industrial Water Conditioning: Corrosion Control in Boilers and Cooling Systems",
         title_fr: "Traitement de l'eau industriel : Contrôle de la corrosion dans les chaudières et les systèmes de refroidissement",
         title_ar: "تكييف المياه الصناعية: التحكم في التآكل في الغلايات وأنظمة التبريد",
+        title_ru: "تكييف المياه الصناعية: التحكم في التآكل في الغلايات وأنظمة التبريد",
         excerpt_tr: "Buhar kazanları ve soğutma kulelerinde korozyon ve kireç oluşumunu önleyerek enerji verimliliğini artıran modern su şartlandırma kimyasalları.",
         excerpt_en: "Modern water conditioning chemicals that increase energy efficiency by preventing corrosion and scale formation in steam boilers and cooling towers.",
         excerpt_fr: "Produits chimiques modernes de traitement de l'eau qui augmentent l'efficacité énergétique.",
         excerpt_ar: "كيماويات تكييف المياه الحديثة التي تزيد من كفاءة الطاقة عن طريق منع التآكل وتكوين القشور.",
+        excerpt_ru: "كيماويات تكييف المياه الحديثة التي تزيد من كفاءة الطاقة عن طريق منع التآكل وتكوين القشور.",
         tags_en: ["water conditioning", "corrosion control", "cooling towers", "boilers"],
         content_tr: `## Su Şartlandırma Neden Kritik Bir Süreçtir?
 
@@ -1834,6 +2050,19 @@ Avec les produits Grohn Kimya, prolongez la durée de vie de vos systèmes et mi
 - **كاسحات الأكسجين:** توقف التآكل.
 - **مبيدات الجراثيم:** تقضي على الطحالب والبكتيريا.
 
+مع منتجات Grohn Kimya، يمكنك إطالة عمر أنظمتك وتقليل تكاليف الطاقة.`,
+        content_ru: `## أهمية تكييف المياه
+
+تكون الغلايات وأنظمة التبريد على اتصال دائم بالمياه. تؤدي المياه غير المعالجة إلى مشكلتين رئيسيتين: **التقشر** و **التآكل**.
+
+يمكن لطبقة قشور بحجم 1 مليمتر أن تزيد من استهلاك الطاقة بنسبة تصل إلى 10٪.
+
+### حلول متقدمة
+
+- **مضادات الترسبات:** تمنع تبلور الأيونات.
+- **كاسحات الأكسجين:** توقف التآكل.
+- **مبيدات الجراثيم:** تقضي على الطحالب والبكتيريا.
+
 مع منتجات Grohn Kimya، يمكنك إطالة عمر أنظمتك وتقليل تكاليف الطاقة.`
     },
     {
@@ -1847,10 +2076,12 @@ Avec les produits Grohn Kimya, prolongez la durée de vie de vos systèmes et mi
         title_en: "Specialty Chemicals and Fertilizers for High Yield in Modern Agriculture",
         title_fr: "Produits chimiques et engrais spéciaux pour un rendement élevé dans l'agriculture moderne",
         title_ar: "المواد الكيميائية والأسمدة الخاصة للحصول على إنتاجية عالية في الزراعة الحديثة",
+        title_ru: "المواد الكيميائية والأسمدة الخاصة للحصول على إنتاجية عالية في الزراعة الحديثة",
         excerpt_tr: "Toprak verimliliğini artıran ve bitki beslenmesini optimize eden Kalsiyum Nitrat ve Amonyum Sülfat gibi tarımsal kimyasalların stratejik kullanımı.",
         excerpt_en: "Strategic use of agricultural chemicals like Calcium Nitrate and Ammonium Sulfate that increase soil fertility and optimize plant nutrition.",
         excerpt_fr: "L'utilisation stratégique de produits chimiques agricoles pour optimiser la nutrition des plantes.",
         excerpt_ar: "الاستخدام الاستراتيجي للمواد الكيميائية الزراعية لتحسين تغذية النبات.",
+        excerpt_ru: "الاستخدام الاستراتيجي للمواد الكيميائية الزراعية لتحسين تغذية النبات.",
         tags_en: ["agriculture", "fertilizers", "soil health", "plant nutrition"],
         content_tr: `## Tarımda Kimyanın Dönüştürücü Gücü
 
@@ -1890,6 +2121,17 @@ La population croissante exige de maximiser les rendements. Les produits chimiqu
 
 Les produits chimiques agricoles de haute pureté de Grohn Kimya préviennent le colmatage des systèmes d'irrigation et optimisent la nutrition.`,
         content_ar: `## قوة الكيمياء في الزراعة
+
+يتطلب تزايد عدد السكان تعظيم الغلة. المواد الكيميائية الزراعية الخاصة ضرورية لتلبية هذه الحاجة.
+
+### العناصر الغذائية الأساسية
+
+- **كبريتات الأمونيوم:** يوازن درجة الحموضة في التربة الجيرية.
+- **نترات الكالسيوم:** يقوي جدران خلايا النبات.
+- **كلوريد البوتاسيوم:** يحسن جودة الفواكه ومدة صلاحيتها.
+
+تمنع المواد الكيميائية الزراعية عالية النقاء من Grohn Kimya انسداد أنظمة الري وتحسن التغذية.`,
+        content_ru: `## قوة الكيمياء في الزراعة
 
 يتطلب تزايد عدد السكان تعظيم الغلة. المواد الكيميائية الزراعية الخاصة ضرورية لتلبية هذه الحاجة.
 

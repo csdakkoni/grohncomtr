@@ -36,6 +36,14 @@
             "المعالجة المسبقة للمنسوجات",
             "الصابون والمنظفات",
             "صناعة الورق"
+        ],
+        "name_ru": "Sodium Hydroxide (Caustic Soda)",
+        "description_ru": "Sodium hydroxide is a strong base widely used in the chemical industry. It is used as a pH regulator and cleaner in water treatment, textiles, soap, and detergent manufacturing.",
+        "usage_areas_ru": [
+            "Water Treatment",
+            "Textile Pre-treatment",
+            "Soap and Detergents",
+            "Paper Industry"
         ]
     },
     {
@@ -75,6 +83,14 @@
             "التطهير",
             "معالجة مياه الصرف الصحي",
             "تبييض الورق"
+        ],
+        "name_ru": "Hydrogen Peroxide",
+        "description_ru": "Hydrogen peroxide is an eco-friendly and strong oxidizing agent. It is heavily preferred in textile bleaching, the paper industry, and as a disinfectant in wastewater treatment.",
+        "usage_areas_ru": [
+            "Textile Bleaching",
+            "Disinfection",
+            "Wastewater Treatment",
+            "Paper Bleaching"
         ]
     },
     {
@@ -114,6 +130,14 @@
             "كيماويات المسابح",
             "تبييض المنسوجات",
             "كيماويات التنظيف"
+        ],
+        "name_ru": "Sodium Hypochlorite",
+        "description_ru": "Sodium hypochlorite is an excellent disinfectant and bleaching agent. It is used in chlorination in water treatment plants, swimming pools, and general sanitation.",
+        "usage_areas_ru": [
+            "Drinking Water Disinfection",
+            "Pool Chemicals",
+            "Textile Bleaching",
+            "Cleaning Chemicals"
         ]
     },
     {
@@ -153,6 +177,14 @@
             "معالجة مياه الشرب",
             "صناعة الورق",
             "إزالة ألوان المنسوجات"
+        ],
+        "name_ru": "Polyaluminum Chloride (PAC)",
+        "description_ru": "PAC is a highly effective inorganic polymer coagulant used in wastewater and drinking water treatment. It can operate at low temperatures and across a wide pH range.",
+        "usage_areas_ru": [
+            "Wastewater Treatment",
+            "Drinking Water Treatment",
+            "Paper Industry",
+            "Textile Decolorization"
         ]
     },
     {
@@ -192,6 +224,14 @@
             "أنظمة التناضح العكسي",
             "صناعة التعدين",
             "مواد حافظة"
+        ],
+        "name_ru": "Sodium Metabisulfite (SMBS)",
+        "description_ru": "A strong reducing agent. It is used as an antichlor in textiles, a chlorine scavenger in water treatment, and a preservative in the food industry.",
+        "usage_areas_ru": [
+            "Textile Antichlor Process",
+            "Reverse Osmosis (RO) Systems",
+            "Mining Industry",
+            "Food Preservative"
         ]
     },
     {
@@ -339,6 +379,44 @@
             "التطبيق السائد لحمض البولي أكريليك هو استخدامه كمادة فائقة الامتصاص.",
             "يستخدم حوالي 25٪ من حمض البولي أكريليك للمنظفات والمشتتات.",
             "يتم استخدام حمض البولي أكريليك ومشتقاته في حفاضات الأطفال التي تستخدم لمرة واحدة."
+        ],
+        "name_ru": "Polyacrylic Acid",
+        "description_ru": "Polyacrylic acid (PAA) is a derivative of acrylic acid. Partially or fully deprotonated PAAs are polyelectrolytes with the ability to absorb and retain water.",
+        "usage_areas_ru": [
+            "Detergents and Dispersants",
+            "Superabsorbent Polymers (SAP)",
+            "Water Treatment",
+            "Cosmetics"
+        ],
+        "synonyms_ru": "POLYACRYLIC ACID=Poly(2-propenoic acid)=Propenoic acid polymer",
+        "definition_ru": [
+            "Poly(acrylic acid) (PAA; trade name Carbomer) is a polymer with the formula (CH2-CHCO2H)n.",
+            "Poly(acrylic acid) is a derivative of acrylic acid (CH2=CHCO2H).",
+            "In addition to homopolymers, various copolymers and cross-linked polymers, and their partially deprotonated derivatives are known and have commercial value.",
+            "In a water solution at neutral pH, Polyacrylic acid is an anionic polymer, meaning many of the side chains of PAA lose their protons and acquire a negative charge.",
+            "Partially or fully deprotonated PAAs are polyelectrolytes with the ability to absorb and retain water and swell to many times their original volume.",
+            "These properties - acid-base and water-attracting - are the basis of many applications.",
+            "Poly(acrylic acid) (PAA) is hygroscopic, brittle and colorless in nature with a Tg of approximately 106°C.",
+            "At temperatures above 200 to 250°C, Polyacrylic acid (PAA) loses water and becomes an insoluble cross-linked polymer anhydride.",
+            "The solubility of dried Polyacrylic acid (PAA) in water increases as temperature increases.",
+            "Concentrated Polyacrylic acid (PAA) solutions in water are thixotropic in nature.",
+            "Polyacrylic acid (PAA) is a synthetic, high molecular weight and water-soluble polyelectrolyte."
+        ],
+        "uses_benefits_ru": [
+            "Polyacrylic acid (PAA) is harmless and soluble in water.",
+            "Polyacrylic acid can be used in alkaline and high concentration situations without scale buildup.",
+            "Polyacrylic acid can disperse microcrystals or micro-sand of calcium carbonate, calcium phosphate, and calcium sulfate.",
+            "Polyacrylic acid is used as a scale inhibitor and dispersant for circulating cool water systems, papermaking, weaving, dyeing, ceramics, painting, etc.",
+            "Polyacrylic acid dosage should be appropriate for water quality and equipment materials. When used alone, 1-15mg/L is preferred.",
+            "Polyacrylic acid (PAA) is used for a wide variety of applications, including thickeners, dispersants, softeners, emulsifiers, ion exchange, and clarifying agents."
+        ],
+        "applications_ru": [
+            "Polyacrylic acid (PAA) is a synthetic, high molecular weight, and water-soluble polyelectrolyte.",
+            "Polyacrylic acid (PAA) finds application in many industries mostly related to modifying flow, improving the stability of aqueous colloids and gels, improving adhesion, and inducing agglomeration.",
+            "The predominant application for polyacrylic acid is using it as a superabsorbent.",
+            "About 25% of polyacrylic acid is used for detergents and dispersants.",
+            "Polyacrylic acid and its derivatives are used in disposable diapers.",
+            "Detergents generally contain acrylic acid copolymers that assist in sequestering dirt."
         ]
     },
     {
@@ -416,6 +494,31 @@
             "A precursor for vinyl acetate, used in polymer and adhesive production.",
             "Facilitates dye absorption in textiles during acid dyeing processes.",
             "Serves as an acidity regulator and preservative (E260) in the food industry."
+        ],
+        "name_ru": "Acetic Acid (Ethanoic Acid)",
+        "description_ru": "Acetic acid is a colorless organic acid with a pungent smell, used as a solvent in the chemical industry, a pH regulator in textiles, and a preservative in food.",
+        "usage_areas_ru": [
+            "Textile Dyeing",
+            "Plastic and Polymer Production",
+            "Food Additive",
+            "Agricultural Chemicals"
+        ],
+        "synonyms_ru": "ACETIC ACID=Ethanoic acid=Glacial acetic acid",
+        "definition_ru": [
+            "Acetic acid (CH3COOH) is a clear, colorless, liquid organic acid with a strong, pungent odor.",
+            "It is produced industrially both synthetically and by bacterial fermentation.",
+            "It is miscible with water, alcohol, and ether, making it a strong solvent.",
+            "Dilute acetic acid is completely biodegradable and considered safe for the environment."
+        ],
+        "uses_benefits_ru": [
+            "Acts as a neutralizer in textile dyeing processes.",
+            "Used heavily in the production of vinyl acetate monomer (VAM) for the chemical industry.",
+            "Used as a pH balancer in industrial water treatment to prevent scale and disinfect water."
+        ],
+        "applications_ru": [
+            "A precursor for vinyl acetate, used in polymer and adhesive production.",
+            "Facilitates dye absorption in textiles during acid dyeing processes.",
+            "Serves as an acidity regulator and preservative (E260) in the food industry."
         ]
     },
     {
@@ -486,6 +589,30 @@
             "Lowers the melting point and prevents foaming in glass production."
         ],
         "applications_en": [
+            "Dye-fixing salt in textile finishing and dyeing baths.",
+            "Primary volume-giving raw material in powder laundry and dish detergents.",
+            "An integral part of the Kraft process in wood pulp and paper manufacturing."
+        ],
+        "name_ru": "Sodium Sulfate",
+        "description_ru": "Sodium sulfate is a white crystalline powder used in textile dyeing to help dye penetrate fabric evenly, and as a filler in the detergent industry.",
+        "usage_areas_ru": [
+            "Textile Dyeing",
+            "Detergent Manufacturing",
+            "Glass Industry",
+            "Paper (Kraft) Industry"
+        ],
+        "synonyms_ru": "SODIUM SULFATE=Glauber's salt=Sulfuric acid disodium salt",
+        "definition_ru": [
+            "Sodium sulfate (Na2SO4) is an inorganic salt found naturally as the mineral mirabilite or produced as a by-product of chemical processes.",
+            "It has high solubility in water and a neutral pH.",
+            "In industry, it is mostly found in its pure, anhydrous form as a white powder."
+        ],
+        "uses_benefits_ru": [
+            "Increases flowability in detergents and serves as a cost-reducing filler.",
+            "Ensures reactive dyes adhere evenly and homogeneously to fabric in textiles (Leveling).",
+            "Lowers the melting point and prevents foaming in glass production."
+        ],
+        "applications_ru": [
             "Dye-fixing salt in textile finishing and dyeing baths.",
             "Primary volume-giving raw material in powder laundry and dish detergents.",
             "An integral part of the Kraft process in wood pulp and paper manufacturing."
@@ -562,6 +689,30 @@
             "Primary active ingredient for scale and rust removal in industrial cleaners.",
             "Post-process pH neutralization in textile dyeing machines.",
             "Natural preservative and flavoring agent in the food (E330) and pharmaceutical industries."
+        ],
+        "name_ru": "Citric Acid",
+        "description_ru": "Citric acid is a weak organic acid found naturally in citrus fruits. Industrially, it is used as a water softener, a pH adjuster in textiles, and a descaler in cleaning products.",
+        "usage_areas_ru": [
+            "Food and Beverage",
+            "Water Softening",
+            "Cosmetics",
+            "Textile and Detergent"
+        ],
+        "synonyms_ru": "CITRIC ACID=2-hydroxy-1,2,3-propanetricarboxylic acid",
+        "definition_ru": [
+            "Citric acid is a weak organic acid with a monoclinic crystalline structure, found abundantly in citrus fruits.",
+            "Industrially, it is generally produced by the fermentation of sugars using the Aspergillus niger mold.",
+            "It is an eco-friendly chelating agent; it binds metals and neutralizes their effects in water."
+        ],
+        "uses_benefits_ru": [
+            "Softens water by binding calcium and magnesium ions in hard water.",
+            "An eco-friendly alternative to phosphates in detergent and soap formulations.",
+            "Acts as a buffer solution in textiles to keep the pH of dyeing baths constant."
+        ],
+        "applications_ru": [
+            "Primary active ingredient for scale and rust removal in industrial cleaners.",
+            "Post-process pH neutralization in textile dyeing machines.",
+            "Natural preservative and flavoring agent in the food (E330) and pharmaceutical industries."
         ]
     },
     {
@@ -630,6 +781,29 @@
             "It is the primary raw material in the production of phosphate salts (STPP) to soften water and increase cleaning power in detergents."
         ],
         "applications_en": [
+            "Over 90% of global phosphoric acid production is used in the manufacture of phosphorus fertilizers (DAP, MAP, TSP).",
+            "In the food industry (E338), it is used as a preservative to give a sharp, sour taste, especially in cola beverages, and to prevent bacterial/fungal growth.",
+            "Used in dentistry as an etching solution to roughen tooth enamel."
+        ],
+        "name_ru": "Phosphoric Acid",
+        "description_ru": "Phosphoric acid is a weak acid widely used in food, agriculture, and industrial cleaning. It is highly effective in metal surface treatment as a rust remover.",
+        "usage_areas_ru": [
+            "Agriculture and Fertilizers",
+            "Rust Remover",
+            "Food (Cola Production)",
+            "Water Treatment"
+        ],
+        "synonyms_ru": "PHOSPHORIC ACID=Orthophosphoric acid=Phosphorus(V) acid",
+        "definition_ru": [
+            "Phosphoric acid (H3PO4) is an inorganic mineral acid mostly produced in the industry by the reaction of phosphate rocks with sulfuric acid (wet process).",
+            "In its pure form at room temperature, it is a colorless, odorless crystalline solid, but is usually found commercially as an 85% aqueous syrupy liquid.",
+            "It does not emit toxic or hazardous vapors but is corrosive to skin and metals in high concentrations."
+        ],
+        "uses_benefits_ru": [
+            "When applied directly to rusted metal surfaces (iron oxide), phosphoric acid converts the iron into a protective black iron(III) phosphate layer.",
+            "It is the primary raw material in the production of phosphate salts (STPP) to soften water and increase cleaning power in detergents."
+        ],
+        "applications_ru": [
             "Over 90% of global phosphoric acid production is used in the manufacture of phosphorus fertilizers (DAP, MAP, TSP).",
             "In the food industry (E338), it is used as a preservative to give a sharp, sour taste, especially in cola beverages, and to prevent bacterial/fungal growth.",
             "Used in dentistry as an etching solution to roughen tooth enamel."
@@ -704,6 +878,29 @@
             "The main input for adhesives and coatings used in the construction industry, such as urea-formaldehyde resins and melamine production.",
             "The active ingredient in AdBlue liquid (32.5% Urea) used to lower exhaust gas emissions (NOx) in diesel engines.",
             "In cosmetics, it is heavily preferred in dermatological creams due to its water-retaining (moisturizing keratolytic) properties on the skin."
+        ],
+        "name_ru": "Urea",
+        "description_ru": "Urea is a white crystalline compound used as the world's most consumed nitrogen fertilizer and as a polymer precursor in the chemical industry.",
+        "usage_areas_ru": [
+            "Agriculture and Fertilizers",
+            "Automotive (AdBlue)",
+            "Cosmetics",
+            "Adhesives and Resins"
+        ],
+        "synonyms_ru": "UREA=Carbamide=Carbonyl diamide",
+        "definition_ru": [
+            "Urea (CH4N2O) is the main end product of nitrogen metabolism and holds historical significance as the first organic compound artificially synthesized in a laboratory.",
+            "It is highly soluble in water and alcohol, non-toxic, and rapidly degrades in nature into ammonia.",
+            "Industrially, it is produced by the reaction of ammonia and carbon dioxide under high pressure and temperature (Bosch-Meiser process)."
+        ],
+        "uses_benefits_ru": [
+            "Provides a high and directly usable source of nitrogen (46%) to plants, massively increasing agricultural yield.",
+            "When mixed with water, it undergoes an endothermic (heat-absorbing) reaction, hence its use in instant cold compress packs."
+        ],
+        "applications_ru": [
+            "The main input for adhesives and coatings used in the construction industry, such as urea-formaldehyde resins and melamine production.",
+            "The active ingredient in AdBlue liquid (32.5% Urea) used to lower exhaust gas emissions (NOx) in diesel engines.",
+            "In cosmetics, it is heavily preferred in dermatological creams due to its water-retaining (moisturizing keratolytic) properties on the skin."
         ]
     },
     {
@@ -772,6 +969,29 @@
             "When spread on unpaved dirt roads for dust control, it absorbs moisture from the air to keep the road constantly damp."
         ],
         "applications_en": [
+            "Used as a secondary cooling fluid (brine) solution in cold storage facilities.",
+            "Acts as a concrete additive in the construction industry to accelerate the setting time of cement.",
+            "Heavily used in the food industry (E509) to increase calcium levels, especially in cheese whey to maintain cheese firmness."
+        ],
+        "name_ru": "Calcium Chloride",
+        "description_ru": "Calcium chloride is an inorganic salt with an exceptionally high capacity to absorb moisture from the air (hygroscopic). It is used as a deicer, dust control agent, and concrete accelerator.",
+        "usage_areas_ru": [
+            "Deicer",
+            "Dust Control",
+            "Concrete Additive",
+            "Food (Cheese Making)"
+        ],
+        "synonyms_ru": "CALCIUM CHLORIDE=Calcium dichloride",
+        "definition_ru": [
+            "Calcium chloride (CaCl2) is an ionic compound composed of calcium and chlorine elements. It is highly soluble in water.",
+            "At room temperature, it is a solid, white-colored salt. Since it lowers the freezing point of water incredibly well, it is a very strong alternative to sodium chloride (table salt) in winter.",
+            "It exhibits an exothermic reaction when dissolving in water (releases heat), which accelerates melting when it comes into contact with ice."
+        ],
+        "uses_benefits_ru": [
+            "Due to its desiccant nature, it is used in industry to dry gases and liquids.",
+            "When spread on unpaved dirt roads for dust control, it absorbs moisture from the air to keep the road constantly damp."
+        ],
+        "applications_ru": [
             "Used as a secondary cooling fluid (brine) solution in cold storage facilities.",
             "Acts as a concrete additive in the construction industry to accelerate the setting time of cement.",
             "Heavily used in the food industry (E509) to increase calcium levels, especially in cheese whey to maintain cheese firmness."
@@ -844,6 +1064,28 @@
             "Half of the world's sodium carbonate production goes into glass manufacturing (to lower the melting point of silica sand).",
             "Acts as an acid neutralization agent in dry powder detergent formulations and soaps.",
             "In textiles, it makes the dyeing pH basic to ensure reactive dyes adhere fully to cotton."
+        ],
+        "name_ru": "Sodium Carbonate (Soda Ash)",
+        "description_ru": "Sodium carbonate, commonly known as washing soda, is one of the most fundamental inorganic building blocks of the glass, detergent, and paper industries.",
+        "usage_areas_ru": [
+            "Glass Industry",
+            "Detergent",
+            "Water Softening",
+            "Textile and Paper"
+        ],
+        "synonyms_ru": "SODIUM CARBONATE=Soda ash=Washing soda",
+        "definition_ru": [
+            "Sodium carbonate (Na2CO3) is a water-soluble sodium salt produced naturally from trona ore or synthetically via the Solvay process.",
+            "It is an odorless, grayish-white powder. When dissolved in water, it forms a strongly alkaline (basic) solution."
+        ],
+        "uses_benefits_ru": [
+            "Reacts with magnesium and calcium ions found in hard water, causing them to precipitate out (softens water).",
+            "It is a strong degreaser and adjusts the alkalinity of cleaning materials."
+        ],
+        "applications_ru": [
+            "Half of the world's sodium carbonate production goes into glass manufacturing (to lower the melting point of silica sand).",
+            "Acts as an acid neutralization agent in dry powder detergent formulations and soaps.",
+            "In textiles, it makes the dyeing pH basic to ensure reactive dyes adhere fully to cotton."
         ]
     },
     {
@@ -912,6 +1154,29 @@
             "Because it is a stronger acid than acetic acid, it achieves the same pH adjustment in the textile industry using much less volume."
         ],
         "applications_en": [
+            "Indispensable in the leather industry for deliming and tanning processes.",
+            "Widely used in Europe in animal feed (silage) to promote lactic acid fermentation during winter storage.",
+            "The main agent in the coagulation stage of latex in rubber production."
+        ],
+        "name_ru": "Formic Acid",
+        "description_ru": "Formic acid is the simplest carboxylic acid. Industrially, it is used heavily in the leather tanning process, textiles, and as a very strong antibacterial preservative in agriculture.",
+        "usage_areas_ru": [
+            "Leather Tanning",
+            "Textile Dyeing",
+            "Animal Feed",
+            "Rubber Production"
+        ],
+        "synonyms_ru": "FORMIC ACID=Methanoic acid",
+        "definition_ru": [
+            "Formic acid (CH2O2 or HCOOH), taking its name from the Latin word 'formica' for ant, is the simplest acid found in nature in the defense mechanisms of some insects.",
+            "It is a colorless, fuming liquid with a highly irritating, pungent odor.",
+            "It is completely miscible with water, methanol, ethanol, and glycerol."
+        ],
+        "uses_benefits_ru": [
+            "One of the strongest antibacterial agents in nature, it prevents spoilage and keeps fermentation processes under control.",
+            "Because it is a stronger acid than acetic acid, it achieves the same pH adjustment in the textile industry using much less volume."
+        ],
+        "applications_ru": [
             "Indispensable in the leather industry for deliming and tanning processes.",
             "Widely used in Europe in animal feed (silage) to promote lactic acid fermentation during winter storage.",
             "The main agent in the coagulation stage of latex in rubber production."
@@ -998,6 +1263,29 @@
             "The main chemical used to dissolve inorganic rocks in the production of phosphate fertilizers (especially superphosphate).",
             "Used as the electrolyte (battery acid) in automobile lead-acid batteries at ~33% concentration.",
             "Heavily consumed in the steel industry for cleaning oxides and rust from metal surfaces (pickling)."
+        ],
+        "name_ru": "Sulfuric Acid",
+        "description_ru": "Sulfuric acid is the most widely produced chemical in the world, used as a fundamental input in almost all industries (fertilizers, petroleum refining, wastewater treatment).",
+        "usage_areas_ru": [
+            "Fertilizer Production",
+            "Wastewater Treatment",
+            "Petroleum Refining",
+            "Battery Acid"
+        ],
+        "synonyms_ru": "SULFURIC ACID=Oil of vitriol=Hydrogen sulfate",
+        "definition_ru": [
+            "Sulfuric acid (H2SO4) is a colorless, oily, extremely corrosive, and heavy liquid at room temperature.",
+            "It is the number one product of the global chemical industry by volume; so much so that a nation's industrialization level can be measured by its sulfuric acid consumption.",
+            "It releases an enormous amount of heat when dissolved in water (exothermic reaction), therefore acid must always be slowly added to water, never water to acid."
+        ],
+        "uses_benefits_ru": [
+            "It is a strong dehydrating agent; when in contact with carbohydrate-based materials like sugar, paper, and cotton, it instantly absorbs their water, causing them to carbonize.",
+            "Used to neutralize highly basic (high pH) water in industrial wastewater treatment plants."
+        ],
+        "applications_ru": [
+            "The main chemical used to dissolve inorganic rocks in the production of phosphate fertilizers (especially superphosphate).",
+            "Used as the electrolyte (battery acid) in automobile lead-acid batteries at ~33% concentration.",
+            "Heavily consumed in the steel industry for cleaning oxides and rust from metal surfaces (pickling)."
         ]
     },
     {
@@ -1066,6 +1354,29 @@
             "Since the freezing point of its aqueous solutions is very low, it can be used as a protective layer or antifreeze agent in winter."
         ],
         "applications_en": [
+            "Used as a humectant in the food industry (E422) to prevent bakery products from quickly going stale and drying out.",
+            "A smoothing base ingredient in lip balms, hand lotions, shaving creams, and soaps.",
+            "Used in the medical and pharmaceutical industry as a sweetener and bulking agent in the production of cough syrups, suppositories, and capsules."
+        ],
+        "name_ru": "Glycerin",
+        "description_ru": "Glycerin is a syrupy, sweet, moisture-retaining (hygroscopic) organic compound derived from plant and animal fats. It is heavily used in cosmetics and food.",
+        "usage_areas_ru": [
+            "Cosmetics and Skincare",
+            "Food Sweetener",
+            "Pharmaceuticals",
+            "Antifreeze (Historical)"
+        ],
+        "synonyms_ru": "GLYCERIN=Glycerol=1,2,3-Propanetriol",
+        "definition_ru": [
+            "Glycerin (or glycerol) is a colorless, odorless, viscous, and non-toxic polyol (alcohol) structured liquid.",
+            "Thanks to its ability to absorb moisture from the air (hygroscopic), it is the most important active ingredient in the cosmetics industry for protecting the skin's moisture barrier.",
+            "Today, it is synthesized in massive quantities as a byproduct in biodiesel production processes."
+        ],
+        "uses_benefits_ru": [
+            "Deeply moisturizes the skin in cosmetic products, increases its elasticity, and prevents dryness.",
+            "Since the freezing point of its aqueous solutions is very low, it can be used as a protective layer or antifreeze agent in winter."
+        ],
+        "applications_ru": [
             "Used as a humectant in the food industry (E422) to prevent bakery products from quickly going stale and drying out.",
             "A smoothing base ingredient in lip balms, hand lotions, shaving creams, and soaps.",
             "Used in the medical and pharmaceutical industry as a sweetener and bulking agent in the production of cough syrups, suppositories, and capsules."
@@ -1142,6 +1453,30 @@
             "The active ingredient in homemade natural cleaning detergents and for removing carpet and refrigerator odors.",
             "Added to pharmaceutical formulations in medicine to relieve acid indigestion and heartburn (antacid).",
             "A key component of dry chemical powder (BC type) fire extinguishers."
+        ],
+        "name_ru": "Sodium Bicarbonate",
+        "description_ru": "Sodium bicarbonate, commonly known as baking soda, is a white, water-soluble, mildly alkaline powder used in the food, cleaning, and health sectors.",
+        "usage_areas_ru": [
+            "Food and Baking Powder",
+            "Odor Absorber",
+            "Dental and Personal Care",
+            "Fire Extinguishers"
+        ],
+        "synonyms_ru": "SODIUM BICARBONATE=Baking soda=Sodium hydrogen carbonate",
+        "definition_ru": [
+            "Sodium bicarbonate (NaHCO3) is a fine crystalline inorganic salt that releases carbon dioxide gas (CO2) upon reacting in mildly acidic environments.",
+            "Its ability to undergo neutralization reactions with acids makes it an excellent pH balancer and cleaner.",
+            "It can be derived from the mineral trona or industrially synthesized as an intermediate product of the Solvay process."
+        ],
+        "uses_benefits_ru": [
+            "Exhibits a trapping (odor-removing) effect by neutralizing acidic molecules that cause bad odors.",
+            "Causes dough to rise by producing carbon dioxide gas when exposed to heat or acid."
+        ],
+        "applications_ru": [
+            "Used as the primary leavening agent in bakery products (cake, bread) under the code E500(ii).",
+            "The active ingredient in homemade natural cleaning detergents and for removing carpet and refrigerator odors.",
+            "Added to pharmaceutical formulations in medicine to relieve acid indigestion and heartburn (antacid).",
+            "A key component of dry chemical powder (BC type) fire extinguishers."
         ]
     },
     {
@@ -1210,6 +1545,29 @@
             "Blocks UV rays in plastic pipes (e.g., drip irrigation pipes) to prevent the plastic from cracking under the sun."
         ],
         "applications_en": [
+            "Over 70% of the carbon black produced globally is used as a reinforcing filler in automobile and aircraft tires.",
+            "It is the main pigment that gives the black color in photocopier and printer toners (ink cartridges).",
+            "The main additive in rubber derivatives such as automotive hoses, sealing gaskets, and industrial conveyor belts."
+        ],
+        "name_ru": "Carbon Black",
+        "description_ru": "Carbon black is a fine powder substance obtained by the incomplete combustion of heavy petroleum products. It is consumed in massive quantities as a reinforcing agent in tires and a black pigment in inks.",
+        "usage_areas_ru": [
+            "Automobile Tires",
+            "Plastic Blackening",
+            "Inks and Paints",
+            "Cables and Rubber"
+        ],
+        "synonyms_ru": "CARBON BLACK=Furnace black=Lamp black",
+        "definition_ru": [
+            "Carbon black (C) consists of fine microscopic particles largely composed of elemental carbon but with a high surface-area-to-volume ratio, in a pure black color.",
+            "It is synthesized using the 'Furnace Black' process by burning hydrocarbons (petroleum, coal tar) in special furnaces where oxygen is restricted.",
+            "It is very different from soot or coal; it is a functional material whose dimensions and surface activity are determined entirely by engineering calculations."
+        ],
+        "uses_benefits_ru": [
+            "Extraordinarily increases mechanical durability, abrasion resistance, and tear strength by cross-linking with rubber polymer chains.",
+            "Blocks UV rays in plastic pipes (e.g., drip irrigation pipes) to prevent the plastic from cracking under the sun."
+        ],
+        "applications_ru": [
             "Over 70% of the carbon black produced globally is used as a reinforcing filler in automobile and aircraft tires.",
             "It is the main pigment that gives the black color in photocopier and printer toners (ink cartridges).",
             "The main additive in rubber derivatives such as automotive hoses, sealing gaskets, and industrial conveyor belts."
@@ -1296,6 +1654,29 @@
             "The vast majority of global MEG consumption is used in the production of polyester fibers for the textile industry and PET bottles for food packaging.",
             "It is the main component of engine coolants (antifreeze) in the automotive sector.",
             "Consumed as a desiccant/inhibitor to prevent hydrate (ice crystal) formation in natural gas pipelines."
+        ],
+        "name_ru": "Monoethylene Glycol (MEG)",
+        "description_ru": "Monoethylene glycol (MEG) is a clear, colorless organic liquid used as the main ingredient in the production of polyester fibers in the polymer industry and antifreeze in the automotive sector.",
+        "usage_areas_ru": [
+            "Polyester (PET) Production",
+            "Antifreeze and Cooling",
+            "Textile Industry",
+            "Natural Gas Drying"
+        ],
+        "synonyms_ru": "MONOETHYLENE GLYCOL=Ethylene glycol=1,2-ethanediol=MEG",
+        "definition_ru": [
+            "Monoethylene glycol (MEG) is an odorless, colorless, viscous organic liquid compound with a sweet taste. It is produced by the reaction of ethylene oxide with water.",
+            "It is highly hygroscopic (absorbs moisture from the air) and is completely miscible with water, alcohol, and acetone.",
+            "Despite its sweet taste, it is extremely toxic if ingested."
+        ],
+        "uses_benefits_ru": [
+            "It lowers the freezing point of water incredibly well while raising its boiling point. This property makes it an excellent heat transfer fluid.",
+            "It is a critical monomer in the synthesis of polyester resins and PET (Polyethylene terephthalate) plastics."
+        ],
+        "applications_ru": [
+            "The vast majority of global MEG consumption is used in the production of polyester fibers for the textile industry and PET bottles for food packaging.",
+            "It is the main component of engine coolants (antifreeze) in the automotive sector.",
+            "Consumed as a desiccant/inhibitor to prevent hydrate (ice crystal) formation in natural gas pipelines."
         ]
     },
     {
@@ -1364,6 +1745,29 @@
             "It is a very effective corrosion remover for cleaning and polishing hard metals (especially stainless steel)."
         ],
         "applications_en": [
+            "The vast majority of produced nitric acid is used in the synthesis of ammonium nitrate (a very potent agricultural fertilizer).",
+            "It is an intermediate raw material for adipic acid used in nylon production.",
+            "The fundamental building block of powerful explosives like TNT, nitroglycerin, and RDX in the defense industry."
+        ],
+        "name_ru": "Nitric Acid",
+        "description_ru": "Nitric acid, commonly known as aqua fortis, is a highly corrosive and toxic inorganic acid. Industrially, it is used primarily in the manufacture of nitrogenous fertilizers and explosives.",
+        "usage_areas_ru": [
+            "Fertilizer Production",
+            "Explosives",
+            "Metal Processing and Engraving",
+            "Cleaning Chemicals"
+        ],
+        "synonyms_ru": "NITRIC ACID=Aqua fortis=Hydrogen nitrate",
+        "definition_ru": [
+            "Nitric acid (HNO3) is a strong mineral acid that is colorless in its pure form but takes on a yellow or reddish hue over time as it decomposes into nitrogen oxides.",
+            "It is a very strong oxidizing agent. It reacts violently with almost all metals except gold and platinum.",
+            "Industrially, it is largely produced by the catalytic oxidation of ammonia via the Ostwald process."
+        ],
+        "uses_benefits_ru": [
+            "Used to separate silver and gold (gold refining) as it is a component of aqua regia.",
+            "It is a very effective corrosion remover for cleaning and polishing hard metals (especially stainless steel)."
+        ],
+        "applications_ru": [
             "The vast majority of produced nitric acid is used in the synthesis of ammonium nitrate (a very potent agricultural fertilizer).",
             "It is an intermediate raw material for adipic acid used in nylon production.",
             "The fundamental building block of powerful explosives like TNT, nitroglycerin, and RDX in the defense industry."
@@ -1438,6 +1842,29 @@
             "The main inorganic additive used to increase durability in PVC pipes, cable sheathing, and plastic profiles.",
             "The most important mineral filler supporting or replacing TiO2 (Titanium Dioxide) in water-based interior/exterior paints.",
             "The fundamental inorganic source for cement making (as limestone) in the construction industry."
+        ],
+        "name_ru": "Calcium Carbonate",
+        "description_ru": "Calcium carbonate is a common inorganic compound found in nature as limestone, chalk, and marble. It is used in massive volumes as a filler in the paint, plastic, and paper industries.",
+        "usage_areas_ru": [
+            "Paint Industry",
+            "Plastic and PVC Production",
+            "Paper Filler",
+            "Construction Materials"
+        ],
+        "synonyms_ru": "CALCIUM CARBONATE=Calcite=Limestone=Chalk=Precipitated Calcium Carbonate (PCC)",
+        "definition_ru": [
+            "Calcium carbonate (CaCO3) is a carbonate salt that makes up about 4% of the Earth's crust, found in nature as calcite, aragonite, and vaterite minerals.",
+            "For industrial use, it is either obtained by direct grinding from mines (GCC - Ground Calcium Carbonate) or chemically precipitated for higher purity (PCC).",
+            "It is insoluble in water but dissolves in acidic environments (like carbonated water) to form calcium bicarbonate."
+        ],
+        "uses_benefits_ru": [
+            "Increases opacity in plastics and paints, and incredibly reduces costs by decreasing the amount of resin required (acting as a filler).",
+            "Provides an increase in optical properties in the paper industry due to its high whiteness (brightness)."
+        ],
+        "applications_ru": [
+            "The main inorganic additive used to increase durability in PVC pipes, cable sheathing, and plastic profiles.",
+            "The most important mineral filler supporting or replacing TiO2 (Titanium Dioxide) in water-based interior/exterior paints.",
+            "The fundamental inorganic source for cement making (as limestone) in the construction industry."
         ]
     },
     {
@@ -1509,6 +1936,29 @@
             "The primary precipitating/clarifying chemical in municipal drinking water treatment plants and industrial wastewater facilities.",
             "Used as a mordant in textiles to ensure dyes hold firmly to fabric fibers.",
             "Due to its acidic nature, it is used in gardening to lower soil pH and promote the growth of acid-loving plants (like hydrangeas)."
+        ],
+        "name_ru": "Aluminum Sulfate",
+        "description_ru": "Aluminum sulfate is a white crystalline compound used in the industry to precipitate particles (coagulant) in drinking water and wastewater treatment, and is also preferred as a mordant in papermaking and textile dyeing.",
+        "usage_areas_ru": [
+            "Wastewater and Drinking Water Treatment",
+            "Paper Industry",
+            "Textile Dyeing (Mordant)",
+            "Lake/Pool Clarification"
+        ],
+        "synonyms_ru": "ALUMINUM SULFATE=Papermaker's alum=Alum",
+        "definition_ru": [
+            "Aluminum sulfate (Al2(SO4)3) is a water-soluble inorganic salt produced by reacting aluminum hydroxide with sulfuric acid.",
+            "It is available commercially in solid (powder/granule) or liquid solution (around 50%) form. It has a slightly acidic nature.",
+            "In the industry, it is frequently (though technically incorrectly) referred to as 'alum'."
+        ],
+        "uses_benefits_ru": [
+            "It neutralizes negatively charged fine particles and dirt in water (coagulation), causing them to form large clumps (flocs) and settle to the bottom.",
+            "In papermaking, it helps resin adhere to fibers, increasing the water resistance of the paper."
+        ],
+        "applications_ru": [
+            "The primary precipitating/clarifying chemical in municipal drinking water treatment plants and industrial wastewater facilities.",
+            "Used as a mordant in textiles to ensure dyes hold firmly to fabric fibers.",
+            "Due to its acidic nature, it is used in gardening to lower soil pH and promote the growth of acid-loving plants (like hydrangeas)."
         ]
     },
     {
@@ -1567,6 +2017,21 @@
         ],
         "applications_tr": [
             "Tekstil terbiye tesislerinde kontinü veya diskontinü kasar işlemlerinde ana ağartıcı ajan olarak tüketilir."
+        ],
+        "name_ru": "Sodium Chlorite",
+        "description_ru": "A white crystalline inorganic salt used as a strong bleaching agent in the textile and paper industries, and as a disinfectant (chlorine dioxide generator) in water treatment.",
+        "usage_areas_ru": [
+            "Textile Bleaching",
+            "Paper Whitening",
+            "Water Disinfection",
+            "Leather Processing"
+        ],
+        "synonyms_ru": "SODIUM CHLORITE=Chlorous acid sodium salt",
+        "definition_ru": [
+            "Sodium chlorite is a strong oxidant exhibiting slight hygroscopic properties, providing high whiteness without damaging textile fibers."
+        ],
+        "uses_benefits_ru": [
+            "It is one of the safest chemicals for bleaching cellulose-based (cotton) fabrics; it does not melt or fray the fibers."
         ]
     },
     {
@@ -1625,6 +2090,21 @@
         ],
         "applications_tr": [
             "Tekstil boyahanelerinde poliester boyama sonrası ard temizlik (redüktif yıkama) aşamasının en kritik kimyasalıdır."
+        ],
+        "name_ru": "Sodium Hydrosulfite",
+        "description_ru": "An extremely powerful reducing agent used in the textile industry for the reduction of vat dyes and the stripping of color from incorrectly dyed fabrics.",
+        "usage_areas_ru": [
+            "Color Stripping",
+            "Vat Dyeing",
+            "Paper Bleaching",
+            "Clay Whitening"
+        ],
+        "synonyms_ru": "SODIUM HYDROSULFITE=Sodium dithionite",
+        "definition_ru": [
+            "Sodium hydrosulfite (or sodium dithionite) is a whitish powder that has a very strong reduction potential when dissolved in water and can degrade upon contact with air."
+        ],
+        "uses_benefits_ru": [
+            "It converts insoluble vat dyes into a soluble (leuco) form, allowing the dye to penetrate the cotton fiber."
         ]
     },
     {
@@ -1683,6 +2163,21 @@
         ],
         "applications_tr": [
             "Kozmetik ve temizlik sanayisinde tıraş kremleri, sıvı el sabunları ve endüstriyel temizleyicilerin ana girdisidir."
+        ],
+        "name_ru": "Potassium Hydroxide (Caustic Potash)",
+        "description_ru": "Potassium hydroxide is a very strong inorganic base used as a saponification agent in the making of liquid soaps and soft soaps.",
+        "usage_areas_ru": [
+            "Liquid Soap Production",
+            "Agricultural Fertilizers",
+            "Alkaline Batteries",
+            "Food (E525)"
+        ],
+        "synonyms_ru": "POTASSIUM HYDROXIDE=Caustic potash",
+        "definition_ru": [
+            "Potassium hydroxide is a colorless or white corrosive solid chemical that, similar to caustic soda (NaOH), dissolves exothermically in water."
+        ],
+        "uses_benefits_ru": [
+            "Reacts with fatty acids to form potassium soaps, which are softer and more easily soluble in water."
         ]
     },
     {
@@ -1741,6 +2236,21 @@
         ],
         "applications_tr": [
             "Gıda sektöründe Dutch prosesi (kakaonun alkalileştirilmesi) işleminde çikolataya koyu rengini vermek ve asitliğini kırmak için kullanılır."
+        ],
+        "name_ru": "Potassium Carbonate",
+        "description_ru": "A slightly alkaline, water-soluble, moisture-retaining potassium salt used in the glass industry, ceramic glazes, and food.",
+        "usage_areas_ru": [
+            "Specialty Glass Production",
+            "Ceramics and Porcelain",
+            "Agriculture (Potash)",
+            "Food (Cocoa Processing)"
+        ],
+        "synonyms_ru": "POTASSIUM CARBONATE=Pearl ash",
+        "definition_ru": [
+            "Potassium carbonate (K2CO3) is a white powder historically obtained by boiling plant ashes in water (pearl ash), now produced synthetically."
+        ],
+        "uses_benefits_ru": [
+            "Enhances the optical clarity of glass and optimizes its melting temperature (especially for television screens and laboratory glassware)."
         ]
     },
     {
@@ -1799,6 +2309,21 @@
         ],
         "applications_tr": [
             "Üre, amonyum nitrat ve amonyum sülfat gibi dünya tarımını besleyen tüm azotlu gübrelerin ana başlangıç hammaddesidir."
+        ],
+        "name_ru": "Ammonia",
+        "description_ru": "Ammonia is a nitrogenous compound known for its sharp, suffocating odor, forming the basis of the fertilizer industry and used as a degreaser in cleaning.",
+        "usage_areas_ru": [
+            "Nitrogenous Fertilizer Production",
+            "Household Cleaning",
+            "Refrigerant Gas",
+            "Explosives"
+        ],
+        "synonyms_ru": "AMMONIA=Anhydrous ammonia=Ammonium hydroxide (aqueous)",
+        "definition_ru": [
+            "Ammonia (NH3) is a toxic, colorless gas under normal conditions. When dissolved in water, it forms ammonium hydroxide, a weak base."
+        ],
+        "uses_benefits_ru": [
+            "Because its heat of vaporization is very high, it is an excellent refrigerant gas in industrial cooling systems."
         ]
     },
     {
@@ -1857,6 +2382,21 @@
         ],
         "applications_tr": [
             "Toz deterjanlarda hem granüllerin dağılmasını önleyen bir bağlayıcı hem de çamaşır makinesi parçalarını korozyondan koruyan bir ajandır."
+        ],
+        "name_ru": "Sodium Silicate (Water Glass)",
+        "description_ru": "Commonly known as water glass, sodium silicate is used as a binder in detergents, a waterproofing chemical in construction, and a peroxide stabilizer in textiles.",
+        "usage_areas_ru": [
+            "Detergent Production",
+            "Concrete Waterproofing",
+            "Textile Bleaching",
+            "Paper Tube Manufacturing"
+        ],
+        "synonyms_ru": "SODIUM SILICATE=Water glass=Liquid glass",
+        "definition_ru": [
+            "Sodium silicate is an inorganic, sticky, and alkaline compound obtained by melting silica (sand) and sodium carbonate at very high temperatures."
+        ],
+        "uses_benefits_ru": [
+            "In textile hydrogen peroxide bleaching, it prevents the peroxide from breaking down too quickly (stabilizing it), thus preventing fabric damage."
         ]
     },
     {
@@ -1915,6 +2455,21 @@
         ],
         "applications_tr": [
             "Pamuklu kumaşların emprime rotasyon baskı makinelerindeki boya patlarında (karışımlarında) birincil kıvamlaştırıcı maddedir."
+        ],
+        "name_ru": "Sodium Alginate",
+        "description_ru": "Sodium alginate is a natural polymer derived from brown seaweed. It is used as a thickener in textile printing (reactive printing) and a gelling agent in food.",
+        "usage_areas_ru": [
+            "Textile (Reactive) Printing",
+            "Food Gels",
+            "Dental Molds",
+            "Cosmetics (Masks)"
+        ],
+        "synonyms_ru": "SODIUM ALGINATE=Algin=Alginic acid sodium salt",
+        "definition_ru": [
+            "Sodium alginate is a non-toxic, biodegradable natural polysaccharide that forms a highly viscous colloidal solution when dissolved in water."
+        ],
+        "uses_benefits_ru": [
+            "It does not react with textile dyes (especially reactive dyes on cotton), thereby ensuring the print pattern is transferred clearly and sharply to the fabric."
         ]
     },
     {
@@ -1973,6 +2528,21 @@
         ],
         "applications_tr": [
             "Çamaşır ve bulaşık makinesi deterjan tabletlerini saran, makinede kendi kendine eriyen o ince ve şeffaf plastik kılıf tamamen PVA'dan üretilir."
+        ],
+        "name_ru": "Polyvinyl Alcohol (PVA)",
+        "description_ru": "A water-soluble synthetic polymer. It is used to prevent yarn breakage during textile weaving (sizing) and in making glue for the construction/furniture sectors.",
+        "usage_areas_ru": [
+            "Textile Sizing",
+            "White Glue (Wood)",
+            "Paper Coating",
+            "Water-soluble Packaging"
+        ],
+        "synonyms_ru": "POLYVINYL ALCOHOL=PVOH=Ethenol homopolymer",
+        "definition_ru": [
+            "Polyvinyl alcohol is a colorless, odorless, non-toxic solid granular or powder polymer that is completely soluble in water, obtained by the hydrolysis of polyvinyl acetate."
+        ],
+        "uses_benefits_ru": [
+            "It coats cotton and polyester yarns like a film, making the yarn exceptionally strong against mechanical friction in the weaving loom."
         ]
     },
     {
@@ -2031,6 +2601,21 @@
         ],
         "applications_tr": [
             "Marangozlukta ahşap parçaları birleştirmek, kitap ciltlemek ve tekstilde kumaşlara sertlik/tokluk vermek (kola) için yoğun olarak tüketilir."
+        ],
+        "name_ru": "Polyvinyl Acetate (PVAc)",
+        "description_ru": "Polyvinyl acetate, commonly known as wood glue or white glue, is a synthetic polymer used to bond wood, paper, and fabric.",
+        "usage_areas_ru": [
+            "Wood and Furniture Glue",
+            "Paper and Cardboard Adhesive",
+            "Water-based Paints",
+            "Textile Finishes"
+        ],
+        "synonyms_ru": "POLYVINYL ACETATE=PVA=White glue=Wood glue",
+        "definition_ru": [
+            "Polyvinyl acetate is a rubbery polymer obtained by the polymerization of vinyl acetate monomers, insoluble in water but stable as an emulsion (like milk) in water."
+        ],
+        "uses_benefits_ru": [
+            "It creates a very strong and flexible bond on porous materials (wood, cardboard) and becomes transparent when dry."
         ]
     },
     {
@@ -2089,6 +2674,21 @@
         ],
         "applications_tr": [
             "Üre, melamin ve fenol ile reaksiyona sokularak mobilya sektörünün (MDF, sunta) temel tutkalı olan formaldehit reçineleri üretilir."
+        ],
+        "name_ru": "Formaldehyde",
+        "description_ru": "Formaldehyde is a highly reactive, pungent, toxic gas used as a preservative fluid (formalin) in medical labs and in resin-adhesive production for construction/furniture.",
+        "usage_areas_ru": [
+            "Resin and MDF Production",
+            "Medical Preservative (Formalin)",
+            "Textile (Anti-crease Finish)",
+            "Disinfectant"
+        ],
+        "synonyms_ru": "FORMALDEHYDE=Methanal=Formalin",
+        "definition_ru": [
+            "Formaldehyde is a colorless, suffocating gas under normal conditions. Commercially, it is usually sold as a 'formalin' solution, dissolved in water at 37%."
+        ],
+        "uses_benefits_ru": [
+            "It prevents the decay of biological tissues and hardens proteins by cross-linking them."
         ]
     },
     {
@@ -2147,6 +2747,21 @@
         ],
         "applications_tr": [
             "Sanayi tipi selülozik boyaların, tinerlerin, bally/deri yapıştırıcılarının ana uçucu sıvısıdır ve TNT (Trinitrotoluen) sentezinin başlangıç hammaddesidir."
+        ],
+        "name_ru": "Toluene",
+        "description_ru": "Toluene is a clear, colorless, volatile liquid hydrocarbon derived from petroleum with a sharp thinner odor, used as a solvent in the paint and chemical industries.",
+        "usage_areas_ru": [
+            "Paint and Thinner",
+            "Adhesive Solvent",
+            "Printing Inks",
+            "Explosives (TNT) Production"
+        ],
+        "synonyms_ru": "TOLUENE=Methylbenzene=Phenylmethane",
+        "definition_ru": [
+            "Toluene is an aromatic hydrocarbon where a methyl group is attached to a benzene ring; it is insoluble in water, highly flammable, and relatively less toxic than benzene."
+        ],
+        "uses_benefits_ru": [
+            "Perfectly dissolves resins, oils, and rubbers, allowing paints to reach an applicable consistency for brush or spray."
         ]
     },
     {
@@ -2205,6 +2820,21 @@
         ],
         "applications_tr": [
             "Sentetik emaye boyalarda solvent olarak ve tıpta (histoloji) doku örneklerini parafine hazırlamadan önce temizleyici ajan olarak kullanılır."
+        ],
+        "name_ru": "Xylene",
+        "description_ru": "Xylene is a colorless, flammable, aromatic-smelling liquid frequently used alongside toluene as a solvent in the paint, varnish, leather, and rubber industries.",
+        "usage_areas_ru": [
+            "Paint and Varnish Solvent",
+            "Leather Processing",
+            "Rubber Industry",
+            "Medical Labs (Tissue)"
+        ],
+        "synonyms_ru": "XYLENE=Dimethylbenzene=Xylol",
+        "definition_ru": [
+            "Xylene is a mixture of three aromatic hydrocarbon isomers (ortho, meta, para) consisting of a benzene ring with two methyl groups attached."
+        ],
+        "uses_benefits_ru": [
+            "Evaporates slower than toluene, thus allowing industrial bake paints and automotive varnishes to spread more smoothly on the surface."
         ]
     },
     {
@@ -2263,6 +2893,21 @@
         ],
         "applications_tr": [
             "Kozmetikte asıl olarak oje temizleyici olarak, endüstride ise fiberglas yapımında kullanılan polyester reçinelerini temizlemekte kullanılır."
+        ],
+        "name_ru": "Acetone",
+        "description_ru": "Acetone is a tremendously volatile solvent miscible with both water and oils, used in households as nail polish remover and in the industry for cosmetics and plastic production.",
+        "usage_areas_ru": [
+            "Nail Polish Remover",
+            "Paint/Varnish Thinner",
+            "Plastic and Acrylic Solvent",
+            "Lab Cleaning"
+        ],
+        "synonyms_ru": "ACETONE=Propanone=Dimethyl ketone",
+        "definition_ru": [
+            "Acetone (Propanone) is the simplest and smallest ketone, a colorless, extremely flammable liquid organic compound with a distinctive sweetish-pungent odor."
+        ],
+        "uses_benefits_ru": [
+            "Dissolves almost all organic substances (nail polish, glue, resin, oil) in seconds and evaporates very quickly, leaving no residue on the surface."
         ]
     },
     {
@@ -2321,6 +2966,21 @@
         ],
         "applications_tr": [
             "Esans endüstrisinde parfümlerin ciltte hızla buharlaşmasını sağlayan ana taşıyıcı sıvıdır; matbaacılıkta ambalaj baskılarının (cips paketleri vb.) anında kurumasını sağlar."
+        ],
+        "name_ru": "Ethyl Acetate",
+        "description_ru": "Ethyl acetate is a fast-evaporating ester known for its fruity, pear-like sweet odor, used in perfumes, foods, and printing inks due to its very low toxicity.",
+        "usage_areas_ru": [
+            "Perfume and Cosmetics",
+            "Printing Inks (Flexo)",
+            "Synthetic Leather",
+            "Food (Decaffeination)"
+        ],
+        "synonyms_ru": "ETHYL ACETATE=Ethyl ethanoate",
+        "definition_ru": [
+            "Ethyl acetate is a colorless organic solvent synthesized through the esterification reaction of ethanol and acetic acid."
+        ],
+        "uses_benefits_ru": [
+            "It is highly eco-friendly compared to toxic chemicals; therefore, it is used as an extraction solvent in the food industry to remove caffeine from coffee and tea."
         ]
     },
     {
@@ -2379,6 +3039,21 @@
         ],
         "applications_tr": [
             "Çelik endüstrisinde, galvanizleme veya haddeleme öncesinde metallerin üzerindeki pası (demir oksidi) temizlemek için (dekapaj banyosu) tonlarca kullanılır."
+        ],
+        "name_ru": "Hydrochloric Acid",
+        "description_ru": "Commonly known as spirits of salt, hydrochloric acid is a strong, corrosive inorganic acid widely used in the chemical industry as a pH adjuster, in metallurgy as a rust remover, and in food additive production.",
+        "usage_areas_ru": [
+            "Metal Pickling",
+            "pH Adjustment",
+            "PVC Production",
+            "Household Cleaning"
+        ],
+        "synonyms_ru": "HYDROCHLORIC ACID=Muriatic acid=Spirits of salt",
+        "definition_ru": [
+            "Hydrochloric acid is a colorless (or slightly yellowish), highly irritating, and fuming mineral acid formed by dissolving hydrogen chloride (HCl) gas in water."
+        ],
+        "uses_benefits_ru": [
+            "Due to its acidic nature, it rapidly breaks down carbonate compounds (like scale), making it effective in removing the toughest limescale and rust stains."
         ]
     },
     {
@@ -2437,6 +3112,21 @@
         ],
         "applications_tr": [
             "Dünyadaki kullanımının %80'i deterjan sanayisindedir. Gıda endüstrisinde (E451) deniz ürünlerinde ve işlenmiş etlerde nemi hapsetmek için kullanılır."
+        ],
+        "name_ru": "Sodium Tripolyphosphate (STPP)",
+        "description_ru": "Sodium tripolyphosphate is an inorganic polymeric phosphate used as a water softener in the detergent industry and to bind calcium/magnesium ions in textiles.",
+        "usage_areas_ru": [
+            "Powder Detergent Production",
+            "Water Softening",
+            "Ceramic Slurry",
+            "Food (Meat Preservative)"
+        ],
+        "synonyms_ru": "SODIUM TRIPOLYPHOSPHATE=STPP=Pentasodium triphosphate",
+        "definition_ru": [
+            "STPP is the sodium salt of triphosphoric acid. It is an inorganic solid in the form of a white, odorless powder or granule that dissolves very well in water."
+        ],
+        "uses_benefits_ru": [
+            "Binds ions in hard water through chelation (trapping), preventing their precipitation and increasing the cleaning power of surfactants in detergents."
         ]
     },
     {
@@ -2495,6 +3185,21 @@
         ],
         "applications_tr": [
             "Sanayi tipi kazan sularının şartlandırılmasında antiskalant olarak ve kil/pigment süspansiyonlarında (boyalarda) dağıtıcı (dispersant) olarak görev alır."
+        ],
+        "name_ru": "Sodium Hexametaphosphate (SHMP)",
+        "description_ru": "SHMP is a polymeric phosphate with exceptional water softening (chelating) properties, used in water treatment systems (Reverse Osmosis) to prevent membrane fouling.",
+        "usage_areas_ru": [
+            "Reverse Osmosis (RO) Antiscalant",
+            "Paint Industry (Dispersant)",
+            "Food Additive (E452i)",
+            "Ceramic Glazes"
+        ],
+        "synonyms_ru": "SODIUM HEXAMETAPHOSPHATE=SHMP=Calgon",
+        "definition_ru": [
+            "SHMP is an inorganic polyphosphate ring. When dissolved in water, it forms complex chelating chains."
+        ],
+        "uses_benefits_ru": [
+            "It keeps minerals like calcium and magnesium in solution (chelating) even in very hard water, preventing scale formation in pipes and membranes."
         ]
     },
     {
@@ -2553,6 +3258,21 @@
         ],
         "applications_tr": [
             "Çinko-karbon tipi kuru pillerin içinde elektrolit macunu olarak ve tekstilde boyama havuzlarında pH düşürücü (asitleştirici) olarak kullanılır."
+        ],
+        "name_ru": "Ammonium Chloride",
+        "description_ru": "Known colloquially as 'sal ammoniac', ammonium chloride is a white, acidic salt used as a flux in soldering, and as a nitrogen source in textiles and agriculture.",
+        "usage_areas_ru": [
+            "Soldering and Tinning",
+            "Agriculture (Nitrogenous Fertilizer)",
+            "Galvanizing",
+            "Dry Cell Batteries"
+        ],
+        "synonyms_ru": "AMMONIUM CHLORIDE=Sal ammoniac=Salmiac",
+        "definition_ru": [
+            "Ammonium chloride is an inorganic crystalline solid obtained by the reaction of ammonia with hydrochloric acid, easily soluble in water."
+        ],
+        "uses_benefits_ru": [
+            "When heated, it sublimes directly into gas while dissolving oxide layers on metal surfaces, allowing solder to adhere to the metal."
         ]
     },
     {
@@ -2611,6 +3331,21 @@
         ],
         "applications_tr": [
             "Tekstil sanayisinde kasar (ağartma) işleminden sonra kumaşta kalan klor kalıntılarını yok etmek için (antiklor ajanı) sıklıkla tercih edilir."
+        ],
+        "name_ru": "Sodium Sulfite",
+        "description_ru": "Sodium sulfite is a white, water-soluble inorganic salt used in photography, paper production, and water treatment as an oxygen scavenger and antichlor.",
+        "usage_areas_ru": [
+            "Boiler Water Treatment",
+            "Wood Pulp (Sulfite Process)",
+            "Textile Antichlor",
+            "Food Preservative"
+        ],
+        "synonyms_ru": "SODIUM SULFITE=Disodium sulfite",
+        "definition_ru": [
+            "Sodium sulfite (Na2SO3) is a soluble sodium salt of sulfurous acid with strong reducing properties."
+        ],
+        "uses_benefits_ru": [
+            "It consumes dissolved oxygen in water by oxidizing to sulfate, thereby completely preventing corrosion (oxidation) in steam boilers."
         ]
     },
     {
@@ -2669,6 +3404,21 @@
         ],
         "applications_tr": [
             "İç ve dış cephe inşaat boyalarında beyazlığı veren tek ana faktördür. Kozmetikte UV ışınlarını bloke ettiği için fiziksel güneş koruyucuların etken maddesidir."
+        ],
+        "name_ru": "Titanium Dioxide",
+        "description_ru": "Titanium dioxide is an extraordinary inorganic white pigment used in the paint, plastic, cosmetics, and paper industries as it is the most opaque and whitest substance known in the world.",
+        "usage_areas_ru": [
+            "Paint Industry",
+            "Plastics and Rubber",
+            "Sunscreens",
+            "Food Coloring (E171)"
+        ],
+        "synonyms_ru": "TITANIUM DIOXIDE=Titania=Pigment White 6 (PW6)",
+        "definition_ru": [
+            "Titanium dioxide (TiO2) is a compound found in nature as rutile, anatase, and brookite minerals, with a refractive index higher than that of a diamond."
+        ],
+        "uses_benefits_ru": [
+            "It completely scatters incoming light, covering the color (darkness) beneath it 100%. It provides excellent hiding power (opacity) to paints."
         ]
     },
     {
@@ -2727,6 +3477,21 @@
         ],
         "applications_tr": [
             "Kuru kayısı, incir gibi kuru meyvelerin kararmasını engellemek için (E220) tütsüleme işleminde ve şaraplarda fermantasyonu durdurmak için kullanılır."
+        ],
+        "name_ru": "Sulfur Dioxide",
+        "description_ru": "Sulfur dioxide is a toxic gas with a pungent odor, used as an intermediate in sulfuric acid production and as a preservative and antioxidant in the food industry.",
+        "usage_areas_ru": [
+            "Sulfuric Acid Synthesis",
+            "Food Preservative (Winemaking)",
+            "Paper Bleaching",
+            "Disinfection"
+        ],
+        "synonyms_ru": "SULFUR DIOXIDE=Sulphur dioxide",
+        "definition_ru": [
+            "Sulfur dioxide (SO2) is a colorless, suffocating gas released by the combustion of sulfur or sulfur-containing fuels."
+        ],
+        "uses_benefits_ru": [
+            "It is a very strong antimicrobial that prevents the growth of bacteria and fungi, and a reducing agent that prevents oxidation."
         ]
     },
     {
@@ -2785,6 +3550,21 @@
         ],
         "applications_tr": [
             "Sondaj kuyularında petrolün veya gazın yukarı fışkırmasını engellemek için hidrostatik basıncı artırmak amacıyla sondaj çamurlarına devasa tonajlarda eklenir."
+        ],
+        "name_ru": "Barium Sulfate",
+        "description_ru": "Barium sulfate is a heavy mineral used as a mud weighting agent in oil drilling and an X-ray contrast agent in medicine due to its high density and insolubility in water/acid.",
+        "usage_areas_ru": [
+            "Oil and Gas Drilling",
+            "Radiology (Medicine)",
+            "Paint and Plastic Filler",
+            "Brake Pads"
+        ],
+        "synonyms_ru": "BARIUM SULFATE=Barite=Blanc fixe",
+        "definition_ru": [
+            "Barium sulfate (BaSO4) is an incredibly heavy, inert white crystalline inorganic sulfate salt found in nature as the mineral barite."
+        ],
+        "uses_benefits_ru": [
+            "Absolutely insoluble in water and acid. Although non-toxic, it is opaque to X-rays (radiopaque)."
         ]
     },
     {
@@ -2843,6 +3623,21 @@
         ],
         "applications_tr": [
             "Dünyadaki kullanımının yarısından fazlası, otomobil lastiği üretiminde sülfürün kauçuğu sertleştirmesi (vulkanizasyon) işlemini aktive etmek için tüketilir."
+        ],
+        "name_ru": "Zinc Oxide",
+        "description_ru": "Zinc oxide is an inorganic white powder used as a vulcanization activator in the rubber industry, and as a diaper rash cream and physical UV filter in cosmetics.",
+        "usage_areas_ru": [
+            "Rubber Vulcanization",
+            "Cosmetics (Sun/Rash Creams)",
+            "Ceramics and Glass",
+            "Medical Tapes"
+        ],
+        "synonyms_ru": "ZINC OXIDE=Zinc white",
+        "definition_ru": [
+            "Zinc oxide (ZnO) is an insoluble, light, fine white inorganic compound found in nature as zincite but produced synthetically for commerce."
+        ],
+        "uses_benefits_ru": [
+            "Thanks to its anti-bacterial and anti-inflammatory properties, it heals skin irritations. It reflects the sun's harmful UVA and UVB rays like a mirror."
         ]
     },
     {
@@ -2901,6 +3696,21 @@
         ],
         "applications_tr": [
             "Tekstil yıkama fabrikalarında kot pantolonlarda 'kullanılmış/yıpranmış' görünümünü elde etmek için (Rodeo efekti) kumaş yüzeyine lokal olarak uygulanır."
+        ],
+        "name_ru": "Potassium Permanganate",
+        "description_ru": "Potassium permanganate is a dark purple crystalline salt used in textiles to give a bleaching effect to denim fabrics, and in water treatment as a very strong oxidant and disinfectant.",
+        "usage_areas_ru": [
+            "Denim Washing",
+            "Drinking Water Disinfection",
+            "Medical Disinfectant",
+            "Odor Removal"
+        ],
+        "synonyms_ru": "POTASSIUM PERMANGANATE=Permanganic acid potassium salt",
+        "definition_ru": [
+            "Potassium permanganate (KMnO4) is an inorganic compound with extremely strong oxidizing properties that imparts an intense purple-pink color to water when dissolved."
+        ],
+        "uses_benefits_ru": [
+            "It instantly oxidizes pollutants like iron, manganese, and hydrogen sulfide, causing them to precipitate (solidify) in water and be filtered out."
         ]
     },
     {
@@ -2959,6 +3769,21 @@
         ],
         "applications_tr": [
             "Belediye arıtma tesislerinde suların kokuşmasını engellemek (H2S gazını bağlamak) ve PCB üreten elektronik fabrikalarında gereksiz bakır yollarını eriterek devreyi ortaya çıkarmak için kullanılır."
+        ],
+        "name_ru": "Ferric Chloride",
+        "description_ru": "Ferric chloride is an acidic coagulant used to precipitate heavy metals and phosphate in industrial wastewater and sewage treatment, and is known as a copper etchant in electronics.",
+        "usage_areas_ru": [
+            "Wastewater Treatment (Coagulant)",
+            "Printed Circuit Board (PCB) Etching",
+            "Paint Industry",
+            "Sludge Dewatering"
+        ],
+        "synonyms_ru": "FERRIC CHLORIDE=Iron(III) chloride",
+        "definition_ru": [
+            "Ferric chloride (FeCl3) is a highly acidic and corrosive inorganic salt, usually found commercially as a 40% aqueous solution (dark brown/black liquid)."
+        ],
+        "uses_benefits_ru": [
+            "It surrounds (coagulates) organic particles and phosphorus in wastewater, causing them to form a heavy, sludge-like precipitate and separate from the water."
         ]
     },
     {
@@ -3017,6 +3842,21 @@
         ],
         "applications_tr": [
             "Kireç ile karıştırılarak (Bordo Bulamacı adıyla) zeytin, bağ ve meyve ağaçlarında kışlık mantar koruyucusu olarak tonlarca kullanılır."
+        ],
+        "name_ru": "Copper(II) Sulfate",
+        "description_ru": "Known colloquially as bluestone, copper sulfate is a vivid blue salt used as a fungicide in agriculture and an algaecide in pools.",
+        "usage_areas_ru": [
+            "Agriculture (Bordeaux Mixture)",
+            "Pool Algaecide",
+            "Feed Additive",
+            "Metal Plating"
+        ],
+        "synonyms_ru": "COPPER(II) SULFATE=Cupric sulfate=Bluestone=Blue vitriol",
+        "definition_ru": [
+            "Copper sulfate (CuSO4) is a soluble, toxic inorganic compound that forms massive and extremely bright blue crystals due to its pentahydrate form."
+        ],
+        "uses_benefits_ru": [
+            "Instantly kills fungi, algae, and root pests by disrupting their cell membranes. It also replenishes copper deficiency in animal feeds."
         ]
     },
     {
@@ -3075,6 +3915,21 @@
         ],
         "applications_tr": [
             "Petrol rafinerilerinde asidik gazların (hidrojen sülfür) doğal gazdan ayrıştırılmasında sıvı absorban (gaz yıkayıcı) olarak kullanılır."
+        ],
+        "name_ru": "Diethanolamine (DEA)",
+        "description_ru": "Diethanolamine is an amino alcohol with an ammonia odor used as a foam booster in cosmetic detergents and shampoos, and in the production of softeners in textiles.",
+        "usage_areas_ru": [
+            "Shampoo and Detergents (Foaming Agent)",
+            "Textile Softeners",
+            "Cosmetics (Emulsifier)",
+            "Gas Sweetening"
+        ],
+        "synonyms_ru": "DIETHANOLAMINE=DEA=Bis(2-hydroxyethyl)amine",
+        "definition_ru": [
+            "Diethanolamine (DEA) is a secondary amine produced by the reaction of ethylene oxide and ammonia, possessing both amine and alcohol (hydroxyl) properties simultaneously."
+        ],
+        "uses_benefits_ru": [
+            "Thickens (increases viscosity) the formulation in cleaning products like shampoos and ensures the foam is creamy and rich."
         ]
     },
     {
@@ -3133,6 +3988,21 @@
         ],
         "applications_tr": [
             "Karbomer bazlı el dezenfektanlarında ve jellerde jeli katılaştırıp (nötralize edip) şeffaflık vermek için 1-2 damla eklenmesi yeterlidir."
+        ],
+        "name_ru": "Triethanolamine (TEA)",
+        "description_ru": "Triethanolamine is a viscous chemical used to neutralize acidic formulations (adjust pH) in skin creams, liquid soaps, and as a grinding aid in the cement industry.",
+        "usage_areas_ru": [
+            "Skin Creams (pH Adjuster)",
+            "Liquid Detergent and Soap",
+            "Cement Grinding Aid",
+            "Metalworking Fluids"
+        ],
+        "synonyms_ru": "TRIETHANOLAMINE=TEA=Trolamine",
+        "definition_ru": [
+            "Triethanolamine (TEA) is a tertiary amine-alcohol compound that gives a greasy feel, ranging in color from colorless to pale yellow, with a mild ammonia odor."
+        ],
+        "uses_benefits_ru": [
+            "Keeps oil and water phases together in mixtures (emulsions). Being a very mild base, it balances acidity in cosmetics without irritating the skin."
         ]
     },
     {
@@ -3191,6 +4061,21 @@
         ],
         "applications_tr": [
             "El dezenfektanlarında (kolonya türevleri) ana antimikrobiyal ajan olarak, ayrıca baskı makinelerinde suyu nemlendirme (flekso/ofset) solüsyonlarında hızla buharlaşan solvent olarak kullanılır."
+        ],
+        "name_ru": "Isopropyl Alcohol (IPA)",
+        "description_ru": "Isopropyl alcohol is a colorless, pungent, volatile secondary alcohol used as a general solvent and disinfectant in industry and medicine.",
+        "usage_areas_ru": [
+            "Disinfectant and Antiseptic",
+            "Electronics Cleaning (PCB)",
+            "Ink Solvent",
+            "Cosmetics"
+        ],
+        "synonyms_ru": "ISOPROPYL ALCOHOL=IPA=Isopropanol=2-Propanol=Rubbing alcohol",
+        "definition_ru": [
+            "Isopropyl alcohol (Isopropanol) is the simplest secondary alcohol, consisting of three carbon atoms with the hydroxyl (-OH) group attached to the middle carbon."
+        ],
+        "uses_benefits_ru": [
+            "Kills bacteria, fungi, and viruses in seconds by disrupting their cell membranes (most effective at 70% concentration). Unlike acetone, it does not melt plastics, making it a very safe solvent for electronic parts."
         ]
     },
     {
@@ -3249,6 +4134,21 @@
         ],
         "applications_tr": [
             "Dünya metanol tüketiminin büyük çoğunluğu, sunta/MDF yapıştırıcıları için gereken formaldehitin sentezlenmesinde harcanır."
+        ],
+        "name_ru": "Methanol",
+        "description_ru": "Methanol (wood alcohol) is the simplest alcohol, highly toxic, used as a starting material in the synthesis of formaldehyde and acetic acid, and also as a strong antifreeze and solvent.",
+        "usage_areas_ru": [
+            "Formaldehyde Production",
+            "Biodiesel Production",
+            "Antifreeze and Windshield Washer",
+            "Industrial Solvent"
+        ],
+        "synonyms_ru": "METHANOL=Methyl alcohol=Wood alcohol",
+        "definition_ru": [
+            "Methanol is a colorless, volatile, flammable organic solvent with an odor very similar to ethanol. When ingested, it converts to formaldehyde in the body, causing blindness and death."
+        ],
+        "uses_benefits_ru": [
+            "Due to its low freezing point, it prevents icing in winter windshield washer fluids. It is an excellent intermediate solvent in plastic, paint, and explosive production processes."
         ]
     },
     {
@@ -3307,6 +4207,21 @@
         ],
         "applications_tr": [
             "Geleneksel Türk kolonyalarında, medikal el antiseptiklerinde ve yakıt katkısı (biyoetanol) olarak benzin oktan artırıcı formülasyonlarda kullanılır."
+        ],
+        "name_ru": "Ethanol",
+        "description_ru": "Ethanol is a renewable, volatile, and flammable organic alcohol obtained by the fermentation of sugary plants; used in medicine, cosmetics, and the beverage industry.",
+        "usage_areas_ru": [
+            "Disinfectant and Cologne",
+            "Medicine and Medical Extraction",
+            "Cosmetics (Perfume Solvent)",
+            "Biofuel"
+        ],
+        "synonyms_ru": "ETHANOL=Ethyl alcohol=Grain alcohol",
+        "definition_ru": [
+            "Ethanol (C2H5OH) is the only type of alcohol fit for human consumption (beverage alcohol), and is a polar solvent that can also be produced synthetically from petroleum-derived ethylene."
+        ],
+        "uses_benefits_ru": [
+            "It is highly successful in dissolving (extracting) botanical essences (oils) and water-insoluble organic compounds. In perfumes, its volatility allows the scent to spread quickly."
         ]
     },
     {
@@ -3365,6 +4280,21 @@
         ],
         "applications_tr": [
             "Eski mobilya ve araçların restorasyonunda (boya sökücü jel), yatak ve koltuk süngerlerinin (esnek PU köpük) şişirilmesi (blowing agent) işlemlerinde devasa hacimlerde tüketilir."
+        ],
+        "name_ru": "Methylene Chloride",
+        "description_ru": "Methylene chloride is a volatile and sweet-smelling halogenated solvent with an exceptionally high dissolving power. It is used especially as a paint stripper and in polyurethane sponge production.",
+        "usage_areas_ru": [
+            "Paint and Varnish Stripper",
+            "Polyurethane Foam (Sponge)",
+            "Pharmaceutical Industry",
+            "Metal Cleaning"
+        ],
+        "synonyms_ru": "METHYLENE CHLORIDE=Dichloromethane=DCM",
+        "definition_ru": [
+            "Dichloromethane (CH2Cl2) is a chlorinated aliphatic hydrocarbon that is slightly soluble in water but miscible with other organic solvents in all proportions, non-flammable but suspected of being carcinogenic."
+        ],
+        "uses_benefits_ru": [
+            "It rapidly penetrates hardened epoxy, polyurethane, and cellulosic paint layers, causing them to blister in seconds and easily detach from the surface."
         ]
     },
     {
@@ -3423,6 +4353,21 @@
         ],
         "applications_tr": [
             "Otomotiv kaporta boyama sistemlerinde, mobilya cilalama verniklerinde ve suni deri kaplama (apre) makinalarında akışkanlığı sağlamak için seyreltici olarak kullanılır."
+        ],
+        "name_ru": "Butyl Acetate",
+        "description_ru": "Butyl acetate is the main solvent characterized by a fruity, banana/apple-like odor, drying at a medium rate in nitrocellulose-based paints and leather varnishes.",
+        "usage_areas_ru": [
+            "Auto Refinish Paints",
+            "Wood and Furniture Varnishes",
+            "Nail Polish Formulations",
+            "Leather Finishing"
+        ],
+        "synonyms_ru": "BUTYL ACETATE=n-Butyl acetate=Butyl ethanoate",
+        "definition_ru": [
+            "n-Butyl acetate is an organic, flammable liquid ester obtained by the esterification of butanol and acetic acid, virtually insoluble in water."
+        ],
+        "uses_benefits_ru": [
+            "Because it evaporates slower (at an optimal rate) compared to acetone or ethyl acetate, it allows the paint or varnish to spread smoothly on the surface without leaving brush marks (film formation)."
         ]
     },
     {
@@ -3481,6 +4426,21 @@
         ],
         "applications_tr": [
             "Küresel gıda sanayisinde bitkisel sıvı yağ üretim proseslerinin kalbidir. Ayrıca endüstriyel kontak yapıştırıcıların akışkanlık (vizkosite) sağlayıcısıdır."
+        ],
+        "name_ru": "Hexane",
+        "description_ru": "Hexane is a volatile solvent derived from petroleum. Due to its apolar, water-insoluble structure, it dissolves oils very quickly, heavily used in sunflower/soybean oil extraction and shoe adhesives.",
+        "usage_areas_ru": [
+            "Edible Oil Extraction",
+            "Leather and Shoe Glue",
+            "Textile and Fabric Cleaning",
+            "Tape Adhesives"
+        ],
+        "synonyms_ru": "HEXANE=n-Hexane",
+        "definition_ru": [
+            "n-Hexane is a straight-chain alkane (aliphatic hydrocarbon) with six carbon atoms, colorless, highly flammable, with a slight gasoline odor."
+        ],
+        "uses_benefits_ru": [
+            "It completely dissolves and absorbs (extracts) the oil in the seeds of agricultural products, then boils and evaporates at a low temperature of 69°C, leaving the pure oil behind."
         ]
     },
     {
@@ -3539,6 +4499,21 @@
         ],
         "applications_tr": [
             "Evlerimizde duvar veya kapı boyamada kullandığımız 'yağlı boyaların' inceltilmesinde ve boya sonrası ruloların/fırçaların temizlenmesinde kullanılan ana sıvıdır."
+        ],
+        "name_ru": "White Spirit",
+        "description_ru": "Also known as mineral spirits or synthetic thinner, White Spirit is a petroleum-derived low-odor solvent used in oil paint cleaning, auto repair parts washing, and wood varnishes.",
+        "usage_areas_ru": [
+            "Synthetic Paint Thinner",
+            "Brush and Equipment Cleaning",
+            "Automotive Parts Washing",
+            "Dry Cleaning"
+        ],
+        "synonyms_ru": "WHITE SPIRIT=Mineral spirits=Synthetic thinner=Stoddard solvent",
+        "definition_ru": [
+            "White Spirit is a clear, kerosene-like petroleum distillate consisting of a mixture of aliphatic and alicyclic hydrocarbons between C7 and C12."
+        ],
+        "uses_benefits_ru": [
+            "Unlike very aggressive solvents like acetone or toluene, it dissolves paint slower, its odor is more tolerable (especially de-aromatized types), and it does not damage wooden surfaces."
         ]
     },
     {
@@ -3597,6 +4572,21 @@
         ],
         "applications_tr": [
             "Plastik boruların (PVC) birbirine kaynaştırılmasını sağlayan (plastik boru tutkalı) solüsyonlarda plastiği hafifçe eriterek kaynak görevini üstlenir."
+        ],
+        "name_ru": "Methyl Ethyl Ketone (MEK)",
+        "description_ru": "MEK is a strong solvent with a sharp, acetone-like odor that excellently dissolves PVC, polyurethane, and acrylic resins, heavily used in printing (flexo/gravure) and plastics.",
+        "usage_areas_ru": [
+            "Flexible Packaging Printing",
+            "PVC Pipe Glue",
+            "Magnetic Tape Production",
+            "Leather Surface Coating"
+        ],
+        "synonyms_ru": "MEK=Butanone=Methyl ethyl ketone=2-Butanone",
+        "definition_ru": [
+            "2-Butanone (MEK) is an asymmetric, water-soluble aliphatic ketone with one higher carbon arrangement than acetone (propanone), featuring a very high evaporation rate."
+        ],
+        "uses_benefits_ru": [
+            "Its slower evaporation rate and higher boiling point compared to acetone allow for much better control of the drying speed of paints and inks on the surface (yielding a glossier finish)."
         ]
     },
     {
@@ -3655,6 +4645,21 @@
         ],
         "applications_tr": [
             "Dünya siklohekzanon üretiminin yaklaşık %95'i tekstil lifi olarak bildiğimiz naylonların (adipik asit ve kaprolaktam formlarında) üretimine harcanır."
+        ],
+        "name_ru": "Cyclohexanone",
+        "description_ru": "The most vital intermediate link in the nylon production chain, cyclohexanone is also an excellent oil/polymer solvent in PVC coatings, screen printing inks, and pesticides.",
+        "usage_areas_ru": [
+            "Nylon-6 and Nylon-6,6 Synthesis",
+            "Screen Printing Inks",
+            "PVC Synthetic Leather",
+            "Pesticide Solvent"
+        ],
+        "synonyms_ru": "CYCLOHEXANONE=CYC=Pimelic ketone",
+        "definition_ru": [
+            "Cyclohexanone is a cyclic aliphatic ketone with a very characteristic odor ranging between peppermint and acetone. Slightly soluble in water, highly miscible in solvents."
+        ],
+        "uses_benefits_ru": [
+            "It dissolves rigid vinyl (PVC) copolymers and nitrocellulose very homogeneously. It also has an extremely high 'leveling' capability on surfaces."
         ]
     },
     {
@@ -3713,6 +4718,21 @@
         ],
         "applications_tr": [
             "Elektronik sigara cihazlarında, rezistans ısındığında buharlaştırıcı baz (duman oluşturucu) olarak Gliserin (VG) ile karıştırılarak yoğun olarak tüketilir."
+        ],
+        "name_ru": "Propylene Glycol",
+        "description_ru": "Due to its extremely low toxicity (safe for human consumption), it is a glycol used as a moisture retainer (humectant) and flavor carrier in food essences, e-cigarette liquids, and baby shampoos.",
+        "usage_areas_ru": [
+            "Food Flavor and Coloring",
+            "E-Cigarette (Vape Liquid)",
+            "Cosmetic Moisturizer",
+            "Food-Grade Antifreeze"
+        ],
+        "synonyms_ru": "PROPYLENE GLYCOL=Monopropylene glycol=MPG=1,2-Propanediol",
+        "definition_ru": [
+            "Propylene glycol (1,2-propanediol) is a colorless, slightly sweet, odorless, and viscous organic diol produced by the hydration of propylene oxide with water."
+        ],
+        "uses_benefits_ru": [
+            "Dissolves oil-based food flavors and volatile essential oils, ensuring their homogeneous distribution (dispersing agent) in water."
         ]
     },
     {
@@ -3771,6 +4791,21 @@
         ],
         "applications_tr": [
             "Dünya tüketiminin büyük çoğunluğu HCFC-22 (R22) soğutucu gazının ve yanmaz yapışmaz Teflon (Politetrafloroetilen) tavaların polimer zincirlerinin sentezinde tüketilir."
+        ],
+        "name_ru": "Chloroform",
+        "description_ru": "Historically famous as an anesthetic gas, chloroform is currently used in the production of fluorocarbon (Teflon) gases (CFC/HCFC) and as a strong organic solvent in heavy chemical labs.",
+        "usage_areas_ru": [
+            "Teflon (PTFE) Precursor",
+            "Refrigerant Gas Production",
+            "Alkaloid Extraction",
+            "Industrial Adhesive (Plexiglass)"
+        ],
+        "synonyms_ru": "CHLOROFORM=Trichloromethane",
+        "definition_ru": [
+            "Chloroform (Trichloromethane) is a dense and highly volatile chlorinated haloalkane with a very characteristic sweet, heavy, ether-like odor."
+        ],
+        "uses_benefits_ru": [
+            "Due to its toxicity, its medical use has been completely banned, but it has the ability to perfectly weld plexiglass (acrylic) plastic parts together in seconds (plastic welding)."
         ]
     },
     {
@@ -3842,6 +4877,28 @@
         "applications_en": [
             "As an absorbent solvent in natural gas sweetening units and carbon dioxide capture plants.",
             "In the production of cocamide MEA, used as an emulsifier and pH adjuster in personal care products."
+        ],
+        "name_ru": "Monoethanolamine (MEA)",
+        "description_ru": "MEA is an organic amine widely used in gas treating processes to capture carbon dioxide and hydrogen sulfide, as well as in detergent, soap, and agrochemical formulations.",
+        "usage_areas_ru": [
+            "Gas Treating (CO2/H2S Scavenging)",
+            "Detergents and Cosmetics",
+            "Agrochemicals",
+            "Metalworking Fluids"
+        ],
+        "synonyms_ru": "MONOETHANOLAMINE=MEA=2-Aminoethanol=Ethanolamine",
+        "definition_ru": [
+            "Monoethanolamine (MEA) is a bifunctional organic compound that is both a primary amine and a primary alcohol.",
+            "It is a colorless, viscous liquid with a mild, ammonia-like odor.",
+            "It has the ability to undergo reversible reactions with acidic gases (CO2, H2S) to hold them in solution."
+        ],
+        "uses_benefits_ru": [
+            "Efficiently scrubs acidic contaminants from gas streams in refineries and natural gas plants.",
+            "Acts as an intermediate in surfactant manufacturing, enhancing soap foam stability."
+        ],
+        "applications_ru": [
+            "As an absorbent solvent in natural gas sweetening units and carbon dioxide capture plants.",
+            "In the production of cocamide MEA, used as an emulsifier and pH adjuster in personal care products."
         ]
     },
     {
@@ -3909,6 +4966,27 @@
             "Tablet ilaçlarda ve öksürük şuruplarında mikrobiyolojik stabiliteyi sağlamak amacıyla."
         ],
         "applications_en": [
+            "As a preservative additive in carbonated drinks, fruit juices, pickles, and sauces.",
+            "To ensure microbiological stability in tablet formulations and cough syrups."
+        ],
+        "name_ru": "Sodium Benzoate",
+        "description_ru": "Sodium benzoate is an organic preservative widely used to inhibit bacterial and mold growth in acidic foods. It is also used in cosmetics and industrial corrosion inhibitors.",
+        "usage_areas_ru": [
+            "Food Preservative (E211)",
+            "Pharmaceuticals",
+            "Corrosion Inhibitor",
+            "Cosmetic Preservative"
+        ],
+        "synonyms_ru": "SODIUM BENZOATE=Benzoic acid sodium salt=E211",
+        "definition_ru": [
+            "Sodium benzoate (C7H5NaO2) is an aromatic organic salt produced by neutralizing benzoic acid with sodium hydroxide.",
+            "It is a white crystalline powder, highly soluble in water, converting into active benzoic acid in acidic environments to provide preservation."
+        ],
+        "uses_benefits_ru": [
+            "Extends shelf life by preventing mold and yeast formation in acidic beverages and foods (pH < 4.5).",
+            "Safely used in automotive antifreezes to protect metals from corrosion."
+        ],
+        "applications_ru": [
             "As a preservative additive in carbonated drinks, fruit juices, pickles, and sauces.",
             "To ensure microbiological stability in tablet formulations and cough syrups."
         ]
@@ -3980,6 +5058,27 @@
         "applications_en": [
             "In the production of heat-resistant kitchen glass (Pyrex) and fiberglass insulation materials.",
             "In impregnation solutions protecting wood materials against fungal decay and insect attacks."
+        ],
+        "name_ru": "Boric Acid",
+        "description_ru": "Boric acid is a weak acid used as a boron source in the production of specialty glass, ceramic glazes, and flame retardants. It also features mild antiseptic and insecticide properties.",
+        "usage_areas_ru": [
+            "Glass and Ceramics",
+            "Agriculture and Fertilizers",
+            "Flame Retardants",
+            "Wood Preservation"
+        ],
+        "synonyms_ru": "BORIC ACID=Orthoboric acid=Boracic acid",
+        "definition_ru": [
+            "Boric acid (H3BO3) is an inorganic boron compound occurring naturally as the mineral sassolite, consisting of white, odorless, flaky crystals.",
+            "It is used in water treatment, as a neutron absorber in nuclear reactors, and as a fluxing agent in metallurgy."
+        ],
+        "uses_benefits_ru": [
+            "Lowers the melting temperature of glass fibers and borosilicate glass while increasing thermal and chemical resistance.",
+            "Meets the boron requirements of plants to support flower and fruit development."
+        ],
+        "applications_ru": [
+            "In the production of heat-resistant kitchen glass (Pyrex) and fiberglass insulation materials.",
+            "In impregnation solutions protecting wood materials against fungal decay and insect attacks."
         ]
     },
     {
@@ -4047,6 +5146,27 @@
             "Tekstil liflerinde yumuşaklık ve antistatik özellik sağlamak amacıyla terbiye işlemlerinde."
         ],
         "applications_en": [
+            "As a humectant and thickening agent in skin care creams, toothpastes, and shampoos.",
+            "In textile finishing processes to provide softness and antistatic properties to fibers."
+        ],
+        "name_ru": "Polyethylene Glycol (PEG)",
+        "description_ru": "PEG is a versatile polymer used as a moisturizer in cosmetics, a binder in pharmaceuticals, and a lubricant in industrial processes, valued for its low toxicity and high solubility.",
+        "usage_areas_ru": [
+            "Cosmetics and Moisturizers",
+            "Pharmaceuticals and Coatings",
+            "Industrial Lubricants",
+            "Textiles and Paper"
+        ],
+        "synonyms_ru": "POLYETHYLENE GLYCOL=PEG=Macrogol=Polyoxyethylene",
+        "definition_ru": [
+            "Polyethylene glycol (PEG) is a hydrophilic polyether polymer obtained by the polymerization of ethylene oxide.",
+            "Depending on its molecular weight, it is available in forms ranging from a clear liquid (PEG-400) to a hard waxy solid (PEG-6000)."
+        ],
+        "uses_benefits_ru": [
+            "Regulates the viscosity of creams and lotions, preventing dryness with its humectant structure.",
+            "Creates smooth outer coating films making pharmaceutical tablets easier to swallow."
+        ],
+        "applications_ru": [
             "As a humectant and thickening agent in skin care creams, toothpastes, and shampoos.",
             "In textile finishing processes to provide softness and antistatic properties to fibers."
         ]
@@ -4118,6 +5238,27 @@
         "applications_en": [
             "As a preservative and color fixative (E250) in cured meat products like sausages, salami, and bacon.",
             "In synthesizing diazo compounds used in obtaining azo dyes."
+        ],
+        "name_ru": "Sodium Nitrite",
+        "description_ru": "Sodium nitrite is an inorganic salt used in the food industry for preserving and coloring cured meats, as well as in metalworking, corrosion inhibition, and dye synthesis.",
+        "usage_areas_ru": [
+            "Food Preservative (Cured Meats)",
+            "Metal Heat Treatment",
+            "Dye Synthesis",
+            "Corrosion Inhibitor"
+        ],
+        "synonyms_ru": "SODIUM NITRITE=E250=Nitrous acid sodium salt",
+        "definition_ru": [
+            "Sodium nitrite (NaNO2) is a strong oxidizing inorganic compound in the form of white or slightly yellowish crystals that can absorb moisture from the air.",
+            "Industrially, it is obtained by passing nitrogen oxide gases through sodium carbonate or sodium hydroxide solutions."
+        ],
+        "uses_benefits_ru": [
+            "Strongly blocks the growth of lethal botulism bacteria (Clostridium botulinum) in meat products.",
+            "Delays metal corrosion by creating a protective passive layer on iron and steel surfaces."
+        ],
+        "applications_ru": [
+            "As a preservative and color fixative (E250) in cured meat products like sausages, salami, and bacon.",
+            "In synthesizing diazo compounds used in obtaining azo dyes."
         ]
     },
     {
@@ -4185,6 +5326,27 @@
             "Tekstil boyama havuzlarında elyafın şişmesini sağlayarak boya absorbsiyonunu artırmada."
         ],
         "applications_en": [
+            "In fertilizer formulations for crops demanding high magnesium, such as tomatoes, peppers, and potatoes.",
+            "In textile dye baths to swell fibers and improve dye absorption."
+        ],
+        "name_ru": "Magnesium Sulfate",
+        "description_ru": "Also known as Epsom salt, magnesium sulfate is an inorganic salt used to correct magnesium deficiency in agriculture, formulate bath salts in cosmetics, and fix dyes in textiles.",
+        "usage_areas_ru": [
+            "Agriculture and Fertilizers",
+            "Cosmetics and Bath Salts",
+            "Textile Finishing",
+            "Medicine and Pharma"
+        ],
+        "synonyms_ru": "MAGNESIUM SULFATE=Epsom salt=Bitter salt",
+        "definition_ru": [
+            "Magnesium sulfate (MgSO4) is a chemical compound commonly found in the heptahydrate form (MgSO4·7H2O) as needle-like crystals.",
+            "It has high water solubility and is an excellent source of magnesium and sulfur elements."
+        ],
+        "uses_benefits_ru": [
+            "Increases photosynthesis capacity in plants by providing magnesium, a core component of chlorophyll.",
+            "Easily absorbed by the skin; soothes muscle soreness and helps reduce stress."
+        ],
+        "applications_ru": [
             "In fertilizer formulations for crops demanding high magnesium, such as tomatoes, peppers, and potatoes.",
             "In textile dye baths to swell fibers and improve dye absorption."
         ]
@@ -4256,6 +5418,27 @@
         "applications_en": [
             "In chlorination units for disinfecting municipal water supplies at treatment plants.",
             "For shock chlorination in swimming pools to prevent algae growth."
+        ],
+        "name_ru": "Calcium Hypochlorite",
+        "description_ru": "Calcium hypochlorite is a strong, solid chlorinating agent heavily used in the disinfection of drinking and pool water, as well as in textile and wood pulp bleaching.",
+        "usage_areas_ru": [
+            "Drinking Water Disinfection",
+            "Pool Chlorination",
+            "Textile and Paper Bleaching",
+            "Industrial Sanitation"
+        ],
+        "synonyms_ru": "CALCIUM HYPOCHLORITE=Bleaching powder=Calcium oxychloride",
+        "definition_ru": [
+            "Calcium hypochlorite (Ca(ClO)2) is an inorganic solid popularly known as bleaching powder, which is more stable than sodium hypochlorite and contains higher active chlorine (65-70%).",
+            "It is produced by reacting calcium hydroxide (slaked lime) with chlorine gas."
+        ],
+        "uses_benefits_ru": [
+            "Thanks to its solid form, it is much easier and safer to transport, store, and dose compared to liquid chlorine.",
+            "Inactivates pathogenic bacteria, algae, and viruses in water within seconds."
+        ],
+        "applications_ru": [
+            "In chlorination units for disinfecting municipal water supplies at treatment plants.",
+            "For shock chlorination in swimming pools to prevent algae growth."
         ]
     },
     {
@@ -4323,6 +5506,27 @@
             "Viskon rayon ipeği üretim süreçlerinde pıhtılaştırma banyolarının bir bileşeni olarak."
         ],
         "applications_en": [
+            "In foliar or soil-applied micro-nutrient fertilizers for citrus and corn agriculture.",
+            "As a component of coagulation baths in the production process of viscose rayon fiber."
+        ],
+        "name_ru": "Zinc Sulfate",
+        "description_ru": "Zinc sulfate is a white crystalline salt used to correct soil zinc deficiency in agriculture, fortify animal feeds, and act as a mordant in textile dyeing.",
+        "usage_areas_ru": [
+            "Agriculture (Zinc Deficiency)",
+            "Animal Feed Additive",
+            "Textiles and Dyeing",
+            "Water Treatment"
+        ],
+        "synonyms_ru": "ZINC SULFATE=White vitriol=Zinc vitriol",
+        "definition_ru": [
+            "Zinc sulfate (ZnSO4) is an inorganic compound occurring naturally as the mineral goslarite, which is highly soluble in water.",
+            "Industrially, it is obtained by reacting zinc-containing materials with sulfuric acid followed by crystallization."
+        ],
+        "uses_benefits_ru": [
+            "Prevents leaf drop in fruit trees, directly improving fruit set and bud development.",
+            "Acts as an antiseptic and preservative in leather processing, hardening the leather fibers."
+        ],
+        "applications_ru": [
             "In foliar or soil-applied micro-nutrient fertilizers for citrus and corn agriculture.",
             "As a component of coagulation baths in the production process of viscose rayon fiber."
         ]
@@ -4394,6 +5598,27 @@
         "applications_en": [
             "In liquid spraying or salting operations against icing on highways during winter.",
             "In wear-resistant industrial flooring concrete known as Sorel cement."
+        ],
+        "name_ru": "Magnesium Chloride",
+        "description_ru": "Magnesium chloride is a hygroscopic salt used for road de-icing, dust suppression on construction sites, industrial cement flooring, and food coagulation.",
+        "usage_areas_ru": [
+            "Road De-icing",
+            "Dust Suppression",
+            "Cement and Building Materials",
+            "Food (Tofu Coagulant)"
+        ],
+        "synonyms_ru": "MAGNESIUM CHLORIDE=Bischofite=Magnesium dichloride",
+        "definition_ru": [
+            "Magnesium chloride (MgCl2) is a highly hygroscopic inorganic salt obtained by crystallization from seawater or underground brines.",
+            "It is typically marketed as transparent flakes or crystals in its hexahydrate form (MgCl2·6H2O)."
+        ],
+        "uses_benefits_ru": [
+            "Melts ice at much lower temperatures (down to -15°C) and adheres better to roads compared to sodium chloride (rock salt).",
+            "Attracts moisture from the air to keep unpaved roads damp, preventing dust emissions."
+        ],
+        "applications_ru": [
+            "In liquid spraying or salting operations against icing on highways during winter.",
+            "In wear-resistant industrial flooring concrete known as Sorel cement."
         ]
     },
     {
@@ -4461,6 +5686,27 @@
             "Televizyon ve mobil cihaz ekranlarında kullanılan dayanıklı kimyasal camların temperlenmesinde."
         ],
         "applications_en": [
+            "In producing fully water-soluble NPK fertilizers used in drip irrigation systems.",
+            "In tempering durable chemical glasses used for television and mobile device screens."
+        ],
+        "name_ru": "Potassium Nitrate",
+        "description_ru": "Potassium nitrate is a nitrogenous fertilizer providing nitrogen and potassium to plants, also used in glass manufacturing, pyrotechnics, and molten salt solar power systems.",
+        "usage_areas_ru": [
+            "Agriculture and Fertilizers (NPK)",
+            "Food Preservative",
+            "Glass Industry",
+            "Thermal Storage (Molten Salt)"
+        ],
+        "synonyms_ru": "POTASSIUM NITRATE=Saltpeter=Niter",
+        "definition_ru": [
+            "Potassium nitrate (KNO3) is a crystalline inorganic nitrate salt that occurs naturally as saltpeter in rock cavities, dissolving easily in water.",
+            "It is a strong oxidizing agent, releasing oxygen gas when heated to accelerate combustion reactions."
+        ],
+        "uses_benefits_ru": [
+            "Chlorine-free; making it the ideal potassium fertilizer for chlorine-sensitive high-value crops like tobacco, potatoes, and citrus.",
+            "Stores heat in solar power plants due to its stable molten state and high heat capacity."
+        ],
+        "applications_ru": [
             "In producing fully water-soluble NPK fertilizers used in drip irrigation systems.",
             "In tempering durable chemical glasses used for television and mobile device screens."
         ]
@@ -4532,6 +5778,27 @@
         "applications_en": [
             "In ready-mix concrete formulations to prevent early drying of concrete during hot weather.",
             "In textile dyeing processes to bind heavy metals in water, ensuring even distribution of dyes on the fabric."
+        ],
+        "name_ru": "Sodium Gluconate",
+        "description_ru": "Sodium gluconate is an outstanding concrete set retarder and water reducer in building chemicals, and acts as a chelator in industrial rust, scale, and paint stripping formulations.",
+        "usage_areas_ru": [
+            "Concrete Admixture (Set Retarder)",
+            "Metal Cleaning",
+            "Bottle and Equipment Washing",
+            "Textile Auxiliary"
+        ],
+        "synonyms_ru": "SODIUM GLUCONATE=Gluconic acid sodium salt",
+        "definition_ru": [
+            "Sodium gluconate (C6H11NaO7) is the sodium salt of gluconic acid, produced by the fermentation of glucose, appearing as a white to brownish granular powder.",
+            "It has excellent chelating (metal-binding) power, effectively binding calcium, magnesium, and iron ions, especially in alkaline solutions."
+        ],
+        "uses_benefits_ru": [
+            "Retards the setting time of concrete, keeping it workable during long-distance transportation.",
+            "Prevents calcium scale from adhering to machine nozzles in glass bottle washing plants."
+        ],
+        "applications_ru": [
+            "In ready-mix concrete formulations to prevent early drying of concrete during hot weather.",
+            "In textile dyeing processes to bind heavy metals in water, ensuring even distribution of dyes on the fabric."
         ]
     },
     {
@@ -4599,6 +5866,27 @@
             "Tarım sektöründe yabani ot öldürücüler ve mantar ilaçları (pestisit) üretiminde."
         ],
         "applications_en": [
+            "In resin matrices for boat hulls, wind turbine blades, and automotive composite parts.",
+            "In the agricultural sector for manufacturing weed killers and fungicides (pesticides)."
+        ],
+        "name_ru": "Maleic Anhydride",
+        "description_ru": "Maleic anhydride is an inorganic cyclic anhydride used as a core reactant in synthesizing unsaturated polyester resins (fiberglass), alkyd paints, agrochemicals, and plasticizers.",
+        "usage_areas_ru": [
+            "Unsaturated Polyester Resins (UPR)",
+            "Coatings and Paints",
+            "Agricultural Chemicals",
+            "Copolymer Production"
+        ],
+        "synonyms_ru": "MALEIC ANHYDRIDE=2,5-Furandione=Maleic acid anhydride",
+        "definition_ru": [
+            "Maleic anhydride (C4H2O3) is an organic compound that appears at room temperature as white, sharp-smelling, needle-like crystals or briquettes.",
+            "Industrially, it is produced by the catalytic vapor-phase oxidation of n-butane or benzene."
+        ],
+        "uses_benefits_ru": [
+            "Provides strength and flexibility in obtaining fiberglass-reinforced unsaturated polyester resins, the backbone of the composite industry.",
+            "Forms copolymers in lubricating oil additives to reduce engine wear."
+        ],
+        "applications_ru": [
             "In resin matrices for boat hulls, wind turbine blades, and automotive composite parts.",
             "In the agricultural sector for manufacturing weed killers and fungicides (pesticides)."
         ]
@@ -4670,6 +5958,27 @@
         "applications_en": [
             "In PVC formulations for cable sheathing, synthetic leather, floor coverings (linoleum), and medical tubing.",
             "In synthesizing unsaturated polyester resins and various paint pigments (e.g., phthalocyanine blue)."
+        ],
+        "name_ru": "Phthalic Anhydride",
+        "description_ru": "Phthalic anhydride is a large-tonnage chemical used in manufacturing phthalate ester plasticizers (DOP/DINP) that give flexibility to PVC, alkyd paint resins, and organic dyes.",
+        "usage_areas_ru": [
+            "Plasticizers (DOP/DINP)",
+            "Alkyd Resins",
+            "Polyester Resins",
+            "Dyes and Pigments"
+        ],
+        "synonyms_ru": "PHTHALIC ANHYDRIDE=1,3-Isobenzofurandione=Phthalic anhydride",
+        "definition_ru": [
+            "Phthalic anhydride (C8H4O3) is an aromatic organic compound in the form of white, needle-like crystals at room temperature.",
+            "Industrially, it is produced by the catalytic vapor-phase oxidation of ortho-xylene or naphthalene with air using a vanadium pentoxide catalyst."
+        ],
+        "uses_benefits_ru": [
+            "The main input for plasticizers that convert rigid PVC plastics into flexible, bendable cables and synthetic leather coatings.",
+            "Imparts fast drying and high gloss to alkyd resins used in architectural paints."
+        ],
+        "applications_ru": [
+            "In PVC formulations for cable sheathing, synthetic leather, floor coverings (linoleum), and medical tubing.",
+            "In synthesizing unsaturated polyester resins and various paint pigments (e.g., phthalocyanine blue)."
         ]
     },
     {
@@ -4737,6 +6046,27 @@
             "Serigrafi ve flekso baskı mürekkeplerinde kuruma hızını kontrol altında tutmak amacıyla."
         ],
         "applications_en": [
+            "As a solvent additive in industrial degreasing spray formulations and automotive wash shampoos.",
+            "In screen and flexographic printing inks to keep the drying speed under control."
+        ],
+        "name_ru": "Butyl Glycol",
+        "description_ru": "Butyl glycol is a high-boiling, slow-evaporating strong solvent used in paints, varnishes, and industrial surface cleaners, featuring an amphiphilic structure miscible with both water and organic solvents.",
+        "usage_areas_ru": [
+            "Paint and Varnish Solvent",
+            "Industrial Surface Cleaners",
+            "Printing Inks",
+            "Textile and Leather Auxiliaries"
+        ],
+        "synonyms_ru": "BUTYL GLYCOL=2-Butoxyethanol=Ethylene glycol monobutyl ether=BG",
+        "definition_ru": [
+            "Butyl glycol (2-butoxyethanol) is a liquid organic compound from the glycol ether family, colorless with a pleasant, mild sweet odor.",
+            "It combines ether and alcohol functional groups in the same molecule, allowing it to interact with both aqueous and oil phases."
+        ],
+        "uses_benefits_ru": [
+            "Facilitates the coalescence of latex films in water-based industrial coatings, creating a smooth paint layer.",
+            "Possesses powerful cleaning performance to easily strip and emulsify heavy oils and machinery greases from surfaces."
+        ],
+        "applications_ru": [
             "As a solvent additive in industrial degreasing spray formulations and automotive wash shampoos.",
             "In screen and flexographic printing inks to keep the drying speed under control."
         ]
@@ -4820,6 +6150,24 @@
         ],
         "applications_ar": [
             "مثخن في المستحضرات. عامل تشحيم في إنتاج PVC."
+        ],
+        "name_ru": "Stearic Acid",
+        "description_ru": "Stearic acid is a saturated fatty acid widely used in the candle, soap, and cosmetic industries. In the plastics industry, it functions as a softener and mold release agent.",
+        "usage_areas_ru": [
+            "Candle Production",
+            "Cosmetics",
+            "Plastics and Rubber",
+            "Soap Production"
+        ],
+        "synonyms_ru": "STEARIC ACID=Octadecanoic acid",
+        "definition_ru": [
+            "It is a long-chain saturated fatty acid found naturally in animal and vegetable fats, in the form of a white, waxy solid."
+        ],
+        "uses_benefits_ru": [
+            "Imparts water repellency and improves emulsion stability."
+        ],
+        "applications_ru": [
+            "Thickener in lotions and creams. Stabilizer and lubricant in PVC production."
         ]
     },
     {
@@ -4901,6 +6249,24 @@
         ],
         "applications_ar": [
             "مصدر للنيتروجين والكبريت في الزراعة."
+        ],
+        "name_ru": "Ammonium Sulfate",
+        "description_ru": "Ammonium sulfate is an inorganic salt directly applied to soil in agriculture as a source of sulfur and nitrogen. It is also used in food and water treatment processes.",
+        "usage_areas_ru": [
+            "Agriculture (Fertilizer)",
+            "Water Treatment",
+            "Food Additive",
+            "Leather Processing"
+        ],
+        "synonyms_ru": "AMMONIUM SULFATE=Diammonium sulfate",
+        "definition_ru": [
+            "An easily water-soluble, colorless or white crystalline salt."
+        ],
+        "uses_benefits_ru": [
+            "Lowers the pH of alkaline (calcareous) soils, facilitating nutrient uptake by plants."
+        ],
+        "applications_ru": [
+            "Source of nitrogen and sulfur in agriculture. Supports chloramination in drinking water treatment."
         ]
     },
     {
@@ -4982,6 +6348,24 @@
         ],
         "applications_ar": [
             "مكون أساسي للبوتاسيوم في أسمدة NPK."
+        ],
+        "name_ru": "Potassium Chloride",
+        "description_ru": "Potassium chloride is the most widely used potassium fertilizer (MOP) in the world. It is also used in medicine to treat hypokalemia and in food as a sodium salt substitute.",
+        "usage_areas_ru": [
+            "Agriculture (Fertilizer)",
+            "Food Industry",
+            "Medicine and Pharma",
+            "Oil Drilling"
+        ],
+        "synonyms_ru": "POTASSIUM CHLORIDE=Muriate of potash",
+        "definition_ru": [
+            "It is a white or colorless crystalline, odorless inorganic metal salt that dissolves well in water."
+        ],
+        "uses_benefits_ru": [
+            "Increases disease resistance in plants and improves fruit quality."
+        ],
+        "applications_ru": [
+            "Basic K (potassium) component in agricultural blended NPK fertilizers. Clay swelling inhibitor in drilling muds."
         ]
     },
     {
@@ -5063,6 +6447,24 @@
         ],
         "applications_ar": [
             "المدخل الرئيسي لتخليق البوليمرات فائقة الامتصاص لحفاضات الأطفال."
+        ],
+        "name_ru": "Acrylic Acid",
+        "description_ru": "Acrylic acid is a versatile and reactive monomer used in the production of paints, plastics, adhesives, and superabsorbent polymers (SAP).",
+        "usage_areas_ru": [
+            "Superabsorbent Polymers (Diapers)",
+            "Paints and Coatings",
+            "Adhesives",
+            "Textile Finishing"
+        ],
+        "synonyms_ru": "ACRYLIC ACID=Propenoic acid",
+        "definition_ru": [
+            "It is a colorless liquid with a sharp, tart odor. It is the simplest unsaturated carboxylic acid."
+        ],
+        "uses_benefits_ru": [
+            "Its polymerization rate is very high, allowing the production of a wide variety of acrylate resins and esters."
+        ],
+        "applications_ru": [
+            "Main input in the synthesis of Polyacrylic acid (SAP) for diapers. Binder in water-based emulsion paints."
         ]
     },
     {
@@ -5144,6 +6546,24 @@
         ],
         "applications_ar": [
             "محلول غذائي في الزراعة المائية. معجل التصلب للخرسانة."
+        ],
+        "name_ru": "Calcium Nitrate",
+        "description_ru": "Calcium nitrate is an excellent fertilizer that dissolves completely and quickly in water, providing simultaneous calcium and nitrogen for plants. It also prevents freezing as a concrete admixture.",
+        "usage_areas_ru": [
+            "Agriculture (Drip Fertilizer)",
+            "Construction and Concrete",
+            "Wastewater Treatment",
+            "Coolants"
+        ],
+        "synonyms_ru": "CALCIUM NITRATE=Norwegian saltpeter",
+        "definition_ru": [
+            "It is a hygroscopic, white granular or crystalline inorganic calcium salt."
+        ],
+        "uses_benefits_ru": [
+            "Instantly treats blossom end rot (calcium deficiency) in vegetables like tomatoes and peppers."
+        ],
+        "applications_ru": [
+            "Nutrient solution in greenhouse hydroponics and drip irrigation. Setting accelerator and antifreeze in concrete casting."
         ]
     },
     {
@@ -5225,6 +6645,24 @@
         ],
         "applications_ar": [
             "مذيب التنظيف الجاف. إزالة الشحوم من المعادن."
+        ],
+        "name_ru": "Perchloroethylene (PCE)",
+        "description_ru": "Perchloroethylene is the number one solvent in the dry cleaning industry, removing dirt and grease from fabrics without damaging them. It is also used in industrial metal cleaning.",
+        "usage_areas_ru": [
+            "Dry Cleaning",
+            "Metal Degreasing",
+            "Automotive Brake Cleaning",
+            "Textiles"
+        ],
+        "synonyms_ru": "PERCHLOROETHYLENE=Tetrachloroethylene",
+        "definition_ru": [
+            "It is a colorless, non-flammable, heavy, and volatile liquid with a sharp, sweet odor."
+        ],
+        "uses_benefits_ru": [
+            "Being non-flammable allows it to be used safely in vapor degreasing machines and dry cleaning ovens."
+        ],
+        "applications_ru": [
+            "Dry cleaning solvent. Degreasing of metals prior to painting or coating."
         ]
     },
     {
@@ -5306,6 +6744,24 @@
         ],
         "applications_ar": [
             "محلول حفر النحاس في صناعة الإلكترونيات."
+        ],
+        "name_ru": "Sodium Persulfate",
+        "description_ru": "Sodium persulfate is a strong oxidizer used in etching printed circuit boards (PCBs) and as a polymerization initiator in plastics production.",
+        "usage_areas_ru": [
+            "PCB Etching",
+            "Polymer Synthesis",
+            "Cosmetics (Hair Bleach)",
+            "Water Treatment"
+        ],
+        "synonyms_ru": "SODIUM PERSULFATE=Sodium peroxodisulfate",
+        "definition_ru": [
+            "It is a highly water-soluble, white crystalline, strong and corrosive peroxide salt."
+        ],
+        "uses_benefits_ru": [
+            "Has the ability to etch copper surfaces smoothly and in a controlled manner."
+        ],
+        "applications_ru": [
+            "Copper etching solution in the electronics industry. Radical source in emulsion polymerization."
         ]
     },
     {
@@ -5387,6 +6843,24 @@
         ],
         "applications_ar": [
             "مصلد للباكليت والراتنجات الفينولية. مادة خام للمتفجرات العسكرية."
+        ],
+        "name_ru": "Hexamine (Hexamethylenetetramine)",
+        "description_ru": "Hexamine is a heterocyclic organic compound used in the curing of phenolic resins, production of solid fuel tablets, and as a vulcanization accelerator in the rubber industry.",
+        "usage_areas_ru": [
+            "Resin Production",
+            "Rubber and Tires",
+            "Solid Fuel Tablets",
+            "Explosives"
+        ],
+        "synonyms_ru": "HEXAMINE=Hexamethylenetetramine=Methenamine",
+        "definition_ru": [
+            "It is a white crystalline powder with a cage-like structure obtained by the reaction of formaldehyde and ammonia."
+        ],
+        "uses_benefits_ru": [
+            "Highly valuable in camping fuels because it burns smokeless with high energy yield when heated."
+        ],
+        "applications_ru": [
+            "Hardener for Bakelite and phenolic resins. Raw material for military explosives (RDX)."
         ]
     },
     {
@@ -5468,6 +6942,24 @@
         ],
         "applications_ar": [
             "إنتاج ألياف النايلون 6,6. محسن النكهة في الغذاء (E355)."
+        ],
+        "name_ru": "Adipic Acid",
+        "description_ru": "Adipic acid is an organic dicarboxylic acid that is a fundamental building block in the production of nylon 6,6 polymer, critical for the textile and automotive industries.",
+        "usage_areas_ru": [
+            "Nylon Production (Nylon 6,6)",
+            "Polyurethane Synthesis",
+            "Food (Tartness Agent)",
+            "Plasticizers"
+        ],
+        "synonyms_ru": "ADIPIC ACID=Hexanedioic acid",
+        "definition_ru": [
+            "It is a white, odorless, crystallized solid dicarboxylic acid that is slightly soluble in water."
+        ],
+        "uses_benefits_ru": [
+            "Provides flexibility, strength, and heat resistance to nylon yarns."
+        ],
+        "applications_ru": [
+            "Production of Nylon 6,6 fiber for car tires, parachutes, and carpets. Flavor enhancer in food (E355)."
         ]
     },
     {
@@ -5549,6 +7041,24 @@
         ],
         "applications_ar": [
             "استخراج الذهب بالسيانيد. تصلب أجزاء الصلب."
+        ],
+        "name_ru": "Sodium Cyanide",
+        "description_ru": "Sodium cyanide is a highly toxic inorganic salt used on an industrial scale in gold and silver mining to extract precious metals from ore (leaching process).",
+        "usage_areas_ru": [
+            "Gold Mining (Leaching)",
+            "Electroplating",
+            "Chemical Synthesis",
+            "Metal Case Hardening"
+        ],
+        "synonyms_ru": "SODIUM CYANIDE=Cyanide of sodium",
+        "definition_ru": [
+            "It is a highly dangerous and toxic chemical with an almond-like odor, in the form of white crystals or briquettes, completely soluble in water."
+        ],
+        "uses_benefits_ru": [
+            "One of the rare chemicals capable of forming water-soluble complex ions with unreactive noble metals like gold."
+        ],
+        "applications_ru": [
+            "Gold mining by cyanidation. Case hardening of steel parts in cementation furnaces."
         ]
     }
 ]
