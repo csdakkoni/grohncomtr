@@ -1623,5 +1623,282 @@ Grohn Kimya développe des antiscalants et des polymères de pointe pour optimis
 
 تقوم Grohn Kimya بتطوير مضادات الترسبات والبوليمرات المتقدمة لتحسين عملية إعادة التدوير الحيوية هذه لكوكبنا.`
     }
-];
+    ,
+    {
+        id: "17",
+        slug: "eco-friendly-dyeing-auxiliaries",
+        category: "sustainability",
+        author: "Grohn Kimya R&D",
+        date: "2026-08-01",
+        image_url: "/images/dyeing.png",
+        title_tr: "Sürdürülebilir Tekstil Üretimi İçin Ekolojik Boya Yardımcıları",
+        title_en: "Ecological Dyeing Auxiliaries for Sustainable Textile Production",
+        title_fr: "Auxiliaires de teinture écologiques pour une production textile durable",
+        title_ar: "مساعدات الصباغة البيئية لإنتاج المنسوجات المستدامة",
+        excerpt_tr: "Tekstil sektöründe çevresel etkiyi en aza indiren, su ve enerji tasarrufu sağlayan yeni nesil ekolojik boya yardımcılarının faydalarını keşfedin.",
+        excerpt_en: "Discover the benefits of next-generation ecological dyeing auxiliaries that minimize environmental impact and save water and energy in the textile industry.",
+        excerpt_fr: "Découvrez les avantages des auxiliaires de teinture écologiques qui minimisent l'impact environnemental.",
+        excerpt_ar: "اكتشف فوائد مساعدات الصباغة البيئية التي تقلل من التأثير البيئي.",
+        tags_en: ["sustainability", "ecological", "dyeing auxiliaries", "water saving"],
+        content_tr: `## Tekstilde Sürdürülebilirlik Neden Önemli?
 
+Tekstil endüstrisi, dünya genelinde en çok su tüketen ve atıksu üreten sektörlerin başında gelmektedir. Artan çevresel farkındalık ve sıkılaşan yasal düzenlemeler, üreticileri daha yeşil ve sürdürülebilir yöntemler bulmaya zorlamaktadır.
+
+### Ekolojik Boya Yardımcılarının Avantajları
+
+Geleneksel kimyasalların yerini alan ekolojik boya yardımcıları, üretim süreçlerinde devrim yaratıyor:
+- **Daha az su tüketimi:** Yenilikçi formüller sayesinde durulama döngüleri azalır.
+- **Düşük sıcaklıklarda etkinlik:** Enerji tüketimini ciddi oranda düşürür.
+- **Biyolojik olarak parçalanabilirlik:** Doğaya zarar vermez, atıksu arıtma maliyetlerini düşürür.
+- **Toksik madde içermez:** APEO, ağır metaller ve zararlı solventler barındırmaz.
+
+### Grohn Kimya'nın Çözümleri
+
+Grohn Kimya olarak, çevre dostu üretim vizyonuyla geliştirdiğimiz **Grocid** ve **Growet** serisi ürünlerimizle karbon ayak izinizi küçültürken boyama kalitenizi en üst seviyeye taşıyoruz. Hem doğayı koruyor hem de işletme maliyetlerinizi optimize ediyoruz.`,
+        content_en: `## Why Sustainability Matters in Textiles
+
+The textile industry is one of the highest water-consuming and wastewater-producing sectors globally. Increased environmental awareness and stricter regulations are forcing manufacturers to find greener methods.
+
+### Advantages of Ecological Dyeing Auxiliaries
+
+- **Less water consumption:** Innovative formulas reduce rinse cycles.
+- **Effectiveness at low temperatures:** Significantly lowers energy consumption.
+- **Biodegradability:** Harmless to nature, reducing wastewater treatment costs.
+- **Non-toxic:** Free of APEO, heavy metals, and harmful solvents.
+
+Grohn Kimya's eco-friendly **Grocid** and **Growet** series help you minimize your carbon footprint while maximizing dyeing quality.`,
+        content_fr: `## L'importance de la durabilité dans le textile
+
+L'industrie textile est l'un des secteurs consommant le plus d'eau. La sensibilisation à l'environnement oblige les fabricants à trouver des méthodes plus écologiques.
+
+### Avantages des auxiliaires écologiques
+
+- **Moins de consommation d'eau**
+- **Efficacité à basse température**
+- **Biodégradabilité**
+- **Non toxique**
+
+Les séries écologiques **Grocid** et **Growet** de Grohn Kimya vous aident à minimiser votre empreinte carbone.`,
+        content_ar: `## أهمية الاستدامة في المنسوجات
+
+تعد صناعة النسيج واحدة من أكثر القطاعات استهلاكًا للمياه. يجبر الوعي البيئي المتزايد الشركات المصنعة على إيجاد طرق أكثر خضرة.
+
+### مزايا مساعدات الصباغة البيئية
+
+- **استهلاك أقل للمياه**
+- **فعالية في درجات الحرارة المنخفضة**
+- **قابلية التحلل البيولوجي**
+- **غير سامة**
+
+تساعدك سلسلة **Grocid** و **Growet** الصديقة للبيئة من Grohn Kimya على تقليل البصمة الكربونية.`
+    },
+    {
+        id: "18",
+        slug: "next-gen-industrial-solvents",
+        category: "technical",
+        author: "Grohn Kimya R&D",
+        date: "2026-08-10",
+        image_url: "/images/chemicals.png",
+        title_tr: "Endüstriyel Temizlikte Yeni Nesil Çözücüler",
+        title_en: "Next Generation Solvents in Industrial Cleaning",
+        title_fr: "Solvants de nouvelle génération dans le nettoyage industriel",
+        title_ar: "مذيبات الجيل القادم في التنظيف الصناعي",
+        excerpt_tr: "Geleneksel tehlikeli solventlerin yerini alan, işçi sağlığını ve çevreyi koruyan yeni nesil endüstriyel çözücülerin endüstriye etkileri.",
+        excerpt_en: "The impact of next-generation industrial solvents that replace traditional hazardous solvents, protecting worker health and the environment.",
+        excerpt_fr: "L'impact des solvants industriels de nouvelle génération qui protègent la santé des travailleurs.",
+        excerpt_ar: "تأثير المذيبات الصناعية من الجيل الجديد التي تحمي صحة العمال والبيئة.",
+        tags_en: ["industrial cleaning", "solvents", "worker safety", "eco-friendly"],
+        content_tr: `## Endüstriyel Temizlikte Yeni Dönem
+
+Endüstriyel tesislerde makine, metal parça ve yüzey temizliğinde uzun yıllar boyunca toksik, uçucu ve yüksek derecede yanıcı solventler (klorlu çözücüler vb.) kullanıldı. Ancak bu kimyasallar hem işçi sağlığı hem de çevre için büyük riskler barındırmaktadır.
+
+### Yeni Nesil Çözücülerin Farkı Nedir?
+
+Kimya teknolojisindeki gelişmeler, geleneksel çözücülerin performansını aratmayan ancak riskleri ortadan kaldıran yeni nesil solventlerin geliştirilmesini sağladı:
+
+1. **Yüksek Parlama Noktası:** Yanma ve patlama riskini minimize ederek güvenli çalışma ortamı sunar.
+2. **Düşük VOC Değeri:** Uçucu organik bileşik salınımı çok düşüktür; solunum yolu hastalıkları riskini azaltır.
+3. **Mükemmel Yağ Alma Gücü:** İnatçı gres, makine yağı ve karbon kalıntılarını hızla çözer.
+4. **Çevre Dostu:** Ozon tabakasına zarar vermez ve biyolojik olarak daha kolay parçalanır.
+
+### Grohn Kimya'nın Güvenli Temizlik Çözümleri
+
+Geliştirdiğimiz yeni nesil solvent ve temizleyicilerle, endüstriyel temizlik süreçlerinizde maksimum performans sağlarken çalışanlarınızın sağlığını garanti altına alıyoruz. Temizlik maliyetlerinizi düşürmek ve tesis güvenliğinizi artırmak için yenilikçi çözümlerimizi deneyin.`,
+        content_en: `## A New Era in Industrial Cleaning
+
+For many years, toxic, volatile, and highly flammable solvents have been used for cleaning machinery and metal parts. However, these chemicals pose major risks to both worker health and the environment.
+
+### What Makes Next-Gen Solvents Different?
+
+Advances in chemical technology have led to next-generation solvents that match the performance of traditional ones without the risks:
+- **High Flash Point:** Minimizes fire risks, providing a safer working environment.
+- **Low VOC:** Reduces respiratory risks due to low volatile organic compound emissions.
+- **Excellent Degreasing Power:** Quickly dissolves stubborn grease and oil.
+- **Eco-Friendly:** Ozone-safe and more biodegradable.
+
+Grohn Kimya's safe cleaning solutions ensure maximum performance while safeguarding your employees' health.`,
+        content_fr: `## Une nouvelle ère dans le nettoyage industriel
+
+Pendant de nombreuses années, des solvants toxiques ont été utilisés pour le nettoyage. Ces produits chimiques présentent des risques majeurs.
+
+### Différence des solvants de nouvelle génération
+
+- **Point d'éclair élevé :** Minimise les risques d'incendie.
+- **Faible teneur en COV :** Réduit les risques respiratoires.
+- **Excellent pouvoir dégraissant**
+- **Écologique**
+
+Les solutions de nettoyage sûres de Grohn Kimya garantissent des performances maximales tout en protégeant vos employés.`,
+        content_ar: `## عصر جديد في التنظيف الصناعي
+
+لسنوات عديدة، تم استخدام المذيبات السامة في التنظيف. تشكل هذه المواد الكيميائية مخاطر كبيرة.
+
+### ما الذي يميز مذيبات الجيل القادم؟
+
+- **نقطة وميض عالية:** تقلل من مخاطر الحريق.
+- **مركبات عضوية متطايرة منخفضة:** تقلل من مخاطر الجهاز التنفسي.
+- **قوة ممتازة لإزالة الشحوم**
+- **صديقة للبيئة**
+
+تضمن حلول التنظيف الآمنة من Grohn Kimya أقصى قدر من الأداء مع حماية صحة موظفيك.`
+    }
+    ,
+    {
+        id: "19",
+        slug: "industrial-water-conditioning-corrosion",
+        category: "industry",
+        author: "Grohn Kimya R&D",
+        date: "2026-08-15",
+        image_url: "/images/water-treatment.png",
+        title_tr: "Endüstriyel Su Şartlandırma: Kazan ve Soğutma Sistemlerinde Korozyon Kontrolü",
+        title_en: "Industrial Water Conditioning: Corrosion Control in Boilers and Cooling Systems",
+        title_fr: "Traitement de l'eau industriel : Contrôle de la corrosion dans les chaudières et les systèmes de refroidissement",
+        title_ar: "تكييف المياه الصناعية: التحكم في التآكل في الغلايات وأنظمة التبريد",
+        excerpt_tr: "Buhar kazanları ve soğutma kulelerinde korozyon ve kireç oluşumunu önleyerek enerji verimliliğini artıran modern su şartlandırma kimyasalları.",
+        excerpt_en: "Modern water conditioning chemicals that increase energy efficiency by preventing corrosion and scale formation in steam boilers and cooling towers.",
+        excerpt_fr: "Produits chimiques modernes de traitement de l'eau qui augmentent l'efficacité énergétique.",
+        excerpt_ar: "كيماويات تكييف المياه الحديثة التي تزيد من كفاءة الطاقة عن طريق منع التآكل وتكوين القشور.",
+        tags_en: ["water conditioning", "corrosion control", "cooling towers", "boilers"],
+        content_tr: `## Su Şartlandırma Neden Kritik Bir Süreçtir?
+
+Endüstriyel tesislerin kalbi sayılan buhar kazanları ve soğutma kuleleri, sürekli su ile temas halindedir. Arıtılmamış veya yanlış şartlandırılmış su kullanımı, bu sistemlerde hızla iki büyük soruna yol açar: **Kireçlenme (taşlaşma)** ve **Korozyon**. 
+
+Sistem yüzeylerinde oluşan 1 milimetrelik kireç tabakası bile enerji tüketimini %10'a kadar artırabilir ve ısı transfer verimliliğini ciddi şekilde düşürür.
+
+### Gelişmiş Şartlandırma Çözümleri
+
+Modern endüstride geleneksel yumuşatma yöntemleri tek başına yeterli değildir. Kimyasal şartlandırma ile şu avantajlar sağlanır:
+
+1. **Antiskalantlar:** Kalsiyum ve magnezyum iyonlarının kristalleşip yüzeye tutunmasını mikro düzeyde engeller.
+2. **Oksijen Tutucular (Scavengers):** Su içerisindeki çözünmüş oksijeni bağlayarak kazan borularındaki korozyonu durdurur.
+3. **Biyositler:** Soğutma kulelerinde yosun ve bakteri üremesini (özellikle Lejyoner hastalığına yol açan bakterileri) yok eder.
+
+Grohn Kimya olarak, endüstriyel tesislerinize özel formüle ettiğimiz su şartlandırma ürünlerimizle sistemlerinizin ömrünü uzatıyor, plansız duruşları engelliyor ve enerji maliyetlerinizi en aza indiriyoruz.`,
+        content_en: `## Why Water Conditioning is a Critical Process
+
+Steam boilers and cooling towers, considered the heart of industrial facilities, are constantly in contact with water. Untreated or improperly conditioned water rapidly leads to two major problems: **Scaling** and **Corrosion**.
+
+Even a 1-millimeter layer of scale on system surfaces can increase energy consumption by up to 10% and severely reduce heat transfer efficiency.
+
+### Advanced Conditioning Solutions
+
+In modern industry, traditional softening methods alone are not enough. Chemical conditioning provides the following advantages:
+
+1. **Antiscalants:** Prevent calcium and magnesium ions from crystallizing and adhering to surfaces at the micro level.
+2. **Oxygen Scavengers:** Bind dissolved oxygen in the water to stop corrosion in boiler tubes.
+3. **Biocides:** Eliminate algae and bacterial growth (especially bacteria causing Legionnaires' disease) in cooling towers.
+
+With Grohn Kimya's specially formulated water conditioning products for your industrial facilities, we extend the life of your systems, prevent unplanned downtime, and minimize your energy costs.`,
+        content_fr: `## L'importance du traitement de l'eau
+
+Les chaudières et les tours de refroidissement sont constamment en contact avec l'eau. Une eau non traitée entraîne deux problèmes majeurs : **l'entartrage** et **la corrosion**.
+
+Une couche de tartre d'un millimètre peut augmenter la consommation d'énergie de 10%.
+
+### Solutions avancées
+
+- **Antitartres :** Empêchent la cristallisation des ions.
+- **Désoxygénants :** Stoppent la corrosion.
+- **Biocides :** Éliminent les algues et les bactéries.
+
+Avec les produits Grohn Kimya, prolongez la durée de vie de vos systèmes et minimisez vos coûts énergétiques.`,
+        content_ar: `## أهمية تكييف المياه
+
+تكون الغلايات وأنظمة التبريد على اتصال دائم بالمياه. تؤدي المياه غير المعالجة إلى مشكلتين رئيسيتين: **التقشر** و **التآكل**.
+
+يمكن لطبقة قشور بحجم 1 مليمتر أن تزيد من استهلاك الطاقة بنسبة تصل إلى 10٪.
+
+### حلول متقدمة
+
+- **مضادات الترسبات:** تمنع تبلور الأيونات.
+- **كاسحات الأكسجين:** توقف التآكل.
+- **مبيدات الجراثيم:** تقضي على الطحالب والبكتيريا.
+
+مع منتجات Grohn Kimya، يمكنك إطالة عمر أنظمتك وتقليل تكاليف الطاقة.`
+    },
+    {
+        id: "20",
+        slug: "specialty-chemicals-modern-agriculture",
+        category: "industry",
+        author: "Grohn Kimya R&D",
+        date: "2026-08-22",
+        image_url: "/images/agriculture.png",
+        title_tr: "Modern Tarımda Yüksek Verim İçin Özel Kimyasallar ve Gübreler",
+        title_en: "Specialty Chemicals and Fertilizers for High Yield in Modern Agriculture",
+        title_fr: "Produits chimiques et engrais spéciaux pour un rendement élevé dans l'agriculture moderne",
+        title_ar: "المواد الكيميائية والأسمدة الخاصة للحصول على إنتاجية عالية في الزراعة الحديثة",
+        excerpt_tr: "Toprak verimliliğini artıran ve bitki beslenmesini optimize eden Kalsiyum Nitrat ve Amonyum Sülfat gibi tarımsal kimyasalların stratejik kullanımı.",
+        excerpt_en: "Strategic use of agricultural chemicals like Calcium Nitrate and Ammonium Sulfate that increase soil fertility and optimize plant nutrition.",
+        excerpt_fr: "L'utilisation stratégique de produits chimiques agricoles pour optimiser la nutrition des plantes.",
+        excerpt_ar: "الاستخدام الاستراتيجي للمواد الكيميائية الزراعية لتحسين تغذية النبات.",
+        tags_en: ["agriculture", "fertilizers", "soil health", "plant nutrition"],
+        content_tr: `## Tarımda Kimyanın Dönüştürücü Gücü
+
+Hızla artan dünya nüfusu ve azalan tarım arazileri, birim alandan elde edilen verimin maksimize edilmesini zorunlu kılıyor. Geleneksel tarım yöntemleri artık bu ihtiyacı karşılayamıyor. İşte bu noktada yüksek çözünürlüğe sahip özel tarımsal kimyasallar ve gübreler devreye giriyor.
+
+### Toprak ve Bitki İçin Temel Besin Kaynakları
+
+1. **Amonyum Sülfat:** Alkalinite sorunu olan kireçli topraklarda pH dengesini sağlar. Bitkinin azot ve kükürt ihtiyacını aynı anda karşılayarak, özellikle çay ve tahıl üretiminde verimi katlar.
+2. **Kalsiyum Nitrat:** Suda tamamen çözünen bu gübre, bitkinin hücre duvarlarını güçlendirir. Sebzelerde sıkça görülen çiçek burnu çürüklüğü gibi kalsiyum eksikliği kaynaklı hastalıkları anında tedavi eder.
+3. **Potasyum Klorür (MOP):** Meyvelerin aroma, renk ve raf ömrü kalitesini artırır. Kuraklık ve hastalıklara karşı bitkinin doğal direncini maksimize eder.
+
+### Akıllı Tarım Uygulamaları
+
+Damla sulama (fertigasyon) ve topraksız tarım (hidroponik) sistemlerinde kullanılan kimyasalların suda sıfır tortu bırakarak çözünmesi şarttır. Grohn Kimya olarak sunduğumuz yüksek saflıktaki tarımsal kimyasallar, sulama sistemlerinde tıkanmayı önler ve bitkinin besinleri doğrudan ve kayıpsız olarak almasını sağlar.`,
+        content_en: `## The Transformative Power of Chemistry in Agriculture
+
+The rapidly growing world population and decreasing agricultural lands make it mandatory to maximize the yield obtained per unit area. Traditional farming methods can no longer meet this need. This is where highly soluble specialty agricultural chemicals and fertilizers come into play.
+
+### Essential Nutrients for Soil and Plants
+
+1. **Ammonium Sulfate:** Balances pH in calcareous soils with alkalinity issues. It multiplies the yield especially in tea and grain production by meeting the plant's nitrogen and sulfur needs simultaneously.
+2. **Calcium Nitrate:** This completely water-soluble fertilizer strengthens the plant's cell walls. It instantly treats calcium deficiency-related diseases such as blossom end rot in vegetables.
+3. **Potassium Chloride (MOP):** Improves the aroma, color, and shelf-life quality of fruits. It maximizes the plant's natural resistance to drought and diseases.
+
+### Smart Farming Applications
+
+Chemicals used in drip irrigation (fertigation) and soilless agriculture (hydroponics) systems must dissolve without leaving any residue. Grohn Kimya's high-purity agricultural chemicals prevent clogging in irrigation systems and ensure that the plant takes nutrients directly and without loss.`,
+        content_fr: `## Le pouvoir de la chimie dans l'agriculture
+
+La population croissante exige de maximiser les rendements. Les produits chimiques agricoles spéciaux sont essentiels pour répondre à ce besoin.
+
+### Nutriments essentiels
+
+- **Sulfate d'ammonium :** Équilibre le pH dans les sols calcaires.
+- **Nitrate de calcium :** Renforce les parois cellulaires des plantes.
+- **Chlorure de potassium (MOP) :** Améliore la qualité et la durée de conservation des fruits.
+
+Les produits chimiques agricoles de haute pureté de Grohn Kimya préviennent le colmatage des systèmes d'irrigation et optimisent la nutrition.`,
+        content_ar: `## قوة الكيمياء في الزراعة
+
+يتطلب تزايد عدد السكان تعظيم الغلة. المواد الكيميائية الزراعية الخاصة ضرورية لتلبية هذه الحاجة.
+
+### العناصر الغذائية الأساسية
+
+- **كبريتات الأمونيوم:** يوازن درجة الحموضة في التربة الجيرية.
+- **نترات الكالسيوم:** يقوي جدران خلايا النبات.
+- **كلوريد البوتاسيوم:** يحسن جودة الفواكه ومدة صلاحيتها.
+
+تمنع المواد الكيميائية الزراعية عالية النقاء من Grohn Kimya انسداد أنظمة الري وتحسن التغذية.`
+    }
+];

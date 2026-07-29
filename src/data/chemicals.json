@@ -4740,5 +4740,815 @@
             "As a solvent additive in industrial degreasing spray formulations and automotive wash shampoos.",
             "In screen and flexographic printing inks to keep the drying speed under control."
         ]
+    },
+    {
+        "id": "chem-76",
+        "slug": "stearik-asit",
+        "cas_number": "57-11-4",
+        "formula": "C18H36O2",
+        "category": "general",
+        "name_tr": "Stearik Asit",
+        "name_en": "Stearic Acid",
+        "name_fr": "Acide Stéarique",
+        "name_ar": "حمض دهني (ستياريك)",
+        "description_tr": "Stearik asit, mum, sabun ve kozmetik endüstrisinde yaygın olarak kullanılan doymuş bir yağ asididir. Plastik sektöründe ise yumuşatıcı ve kalıp ayırıcı olarak işlev görür.",
+        "description_en": "Stearic acid is a saturated fatty acid widely used in the candle, soap, and cosmetic industries. In the plastics industry, it functions as a softener and mold release agent.",
+        "description_fr": "L'acide stéarique est un acide gras saturé largement utilisé dans les industries des bougies, du savon et des cosmétiques.",
+        "description_ar": "حمض الستياريك هو حمض دهني مشبع يستخدم على نطاق واسع في صناعة الشموع والصابون ومستحضرات التجميل.",
+        "usage_areas_tr": [
+            "Mum Üretimi",
+            "Kozmetik",
+            "Plastik ve Kauçuk",
+            "Sabun Üretimi"
+        ],
+        "usage_areas_en": [
+            "Candle Production",
+            "Cosmetics",
+            "Plastics and Rubber",
+            "Soap Production"
+        ],
+        "usage_areas_fr": [
+            "Production de bougies",
+            "Cosmétiques",
+            "Plastiques et caoutchouc",
+            "Production de savon"
+        ],
+        "usage_areas_ar": [
+            "إنتاج الشموع",
+            "مستحضرات التجميل",
+            "البلاستيك والمطاط",
+            "إنتاج الصابون"
+        ],
+        "ec_number": "200-313-4",
+        "molecular_weight": "284.48",
+        "synonyms_tr": "STEARİK ASİT=Oktadekanoik asit",
+        "synonyms_en": "STEARIC ACID=Octadecanoic acid",
+        "synonyms_fr": "ACIDE STÉARIQUE=Acide octadécanoïque",
+        "synonyms_ar": "حمض دهني=حمض الأوكتاديكانويك",
+        "definition_tr": [
+            "Hayvansal ve bitkisel yağlarda doğal olarak bulunan, beyaz, mumsu katı formda uzun zincirli bir doymuş yağ asididir."
+        ],
+        "definition_en": [
+            "It is a long-chain saturated fatty acid found naturally in animal and vegetable fats, in the form of a white, waxy solid."
+        ],
+        "definition_fr": [
+            "Acide gras saturé à longue chaîne trouvé dans les graisses animales et végétales."
+        ],
+        "definition_ar": [
+            "حمض دهني مشبع طويل السلسلة يوجد بشكل طبيعي في الدهون الحيوانية والنباتية."
+        ],
+        "uses_benefits_tr": [
+            "Su itici özelliği kazandırır ve emülsiyon stabilitesini artırır."
+        ],
+        "uses_benefits_en": [
+            "Imparts water repellency and improves emulsion stability."
+        ],
+        "uses_benefits_fr": [
+            "Confère une propriété hydrofuge."
+        ],
+        "uses_benefits_ar": [
+            "يضفي خاصية طرد الماء."
+        ],
+        "applications_tr": [
+            "Losyonlarda ve kremlerde koyulaştırıcı. PVC üretiminde stabilizatör ve kaydırıcı."
+        ],
+        "applications_en": [
+            "Thickener in lotions and creams. Stabilizer and lubricant in PVC production."
+        ],
+        "applications_fr": [
+            "Épaississant dans les lotions. Lubrifiant dans la production de PVC."
+        ],
+        "applications_ar": [
+            "مثخن في المستحضرات. عامل تشحيم في إنتاج PVC."
+        ]
+    },
+    {
+        "id": "chem-77",
+        "slug": "amonyum-sulfat",
+        "cas_number": "7783-20-2",
+        "formula": "(NH4)2SO4",
+        "category": "general",
+        "name_tr": "Amonyum Sülfat",
+        "name_en": "Ammonium Sulfate",
+        "name_fr": "Sulfate d'Ammonium",
+        "name_ar": "كبريتات الأمونيوم",
+        "description_tr": "Amonyum sülfat, tarımda kükürt ve azot kaynağı olarak toprağa doğrudan verilen inorganik bir tuzdur. Aynı zamanda gıda ve su arıtma süreçlerinde kullanılır.",
+        "description_en": "Ammonium sulfate is an inorganic salt directly applied to soil in agriculture as a source of sulfur and nitrogen. It is also used in food and water treatment processes.",
+        "description_fr": "Le sulfate d'ammonium est un sel inorganique appliqué au sol comme source de soufre et d'azote.",
+        "description_ar": "كبريتات الأمونيوم ملح غير عضوي يضاف إلى التربة كمصدر للكبريت والنيتروجين.",
+        "usage_areas_tr": [
+            "Tarım (Gübre)",
+            "Su Arıtma",
+            "Gıda Katkı Maddesi",
+            "Deri İşleme"
+        ],
+        "usage_areas_en": [
+            "Agriculture (Fertilizer)",
+            "Water Treatment",
+            "Food Additive",
+            "Leather Processing"
+        ],
+        "usage_areas_fr": [
+            "Agriculture (Engrais)",
+            "Traitement de l'eau",
+            "Additif alimentaire",
+            "Traitement du cuir"
+        ],
+        "usage_areas_ar": [
+            "الزراعة (الأسمدة)",
+            "معالجة المياه",
+            "المضافات الغذائية",
+            "معالجة الجلود"
+        ],
+        "ec_number": "231-984-1",
+        "molecular_weight": "132.14",
+        "synonyms_tr": "AMONYUM SÜLFAT=Diamonyum sülfat=Şeker gübre",
+        "synonyms_en": "AMMONIUM SULFATE=Diammonium sulfate",
+        "synonyms_fr": "SULFATE D'AMMONIUM=Sulfate diammonique",
+        "synonyms_ar": "كبريتات الأمونيوم=كبريتات ثنائي الأمونيوم",
+        "definition_tr": [
+            "Suda kolayca çözünen, renksiz veya beyaz kristal yapılı bir tuzdur."
+        ],
+        "definition_en": [
+            "An easily water-soluble, colorless or white crystalline salt."
+        ],
+        "definition_fr": [
+            "Sel cristallin blanc soluble dans l'eau."
+        ],
+        "definition_ar": [
+            "ملح بلوري أبيض قابل للذوبان في الماء."
+        ],
+        "uses_benefits_tr": [
+            "Alkali (kireçli) toprakların pH'ını düşürerek bitkilerin besin alımını kolaylaştırır."
+        ],
+        "uses_benefits_en": [
+            "Lowers the pH of alkaline (calcareous) soils, facilitating nutrient uptake by plants."
+        ],
+        "uses_benefits_fr": [
+            "Abaisse le pH des sols alcalins."
+        ],
+        "uses_benefits_ar": [
+            "يقلل من درجة حموضة التربة القلوية."
+        ],
+        "applications_tr": [
+            "Çay, çeltik ve tahıl tarımında azot ve kükürt kaynağı olarak (Halk arasında şeker gübre). İçme suyu arıtımında kloraminasyonu desteklemek için."
+        ],
+        "applications_en": [
+            "Source of nitrogen and sulfur in agriculture. Supports chloramination in drinking water treatment."
+        ],
+        "applications_fr": [
+            "Source d'azote et de soufre en agriculture."
+        ],
+        "applications_ar": [
+            "مصدر للنيتروجين والكبريت في الزراعة."
+        ]
+    },
+    {
+        "id": "chem-78",
+        "slug": "potasyum-klorur",
+        "cas_number": "7447-40-7",
+        "formula": "KCl",
+        "category": "general",
+        "name_tr": "Potasyum Klorür",
+        "name_en": "Potassium Chloride",
+        "name_fr": "Chlorure de Potassium",
+        "name_ar": "كلوريد البوتاسيوم",
+        "description_tr": "Potasyum klorür, dünyada en çok kullanılan potasyumlu gübre (MOP) çeşididir. Tıpta hipokalemi tedavisinde ve gıdada sodyum tuzu ikamesi olarak da kullanılır.",
+        "description_en": "Potassium chloride is the most widely used potassium fertilizer (MOP) in the world. It is also used in medicine to treat hypokalemia and in food as a sodium salt substitute.",
+        "description_fr": "Le chlorure de potassium est l'engrais potassique le plus utilisé au monde. Utilisé aussi comme substitut de sel.",
+        "description_ar": "كلوريد البوتاسيوم هو سماد البوتاسيوم الأكثر استخدامًا في العالم. يستخدم أيضًا كبديل لملح الصوديوم.",
+        "usage_areas_tr": [
+            "Tarım (Gübre)",
+            "Gıda Sanayisi",
+            "İlaç ve Tıp",
+            "Petrol Sondajı"
+        ],
+        "usage_areas_en": [
+            "Agriculture (Fertilizer)",
+            "Food Industry",
+            "Medicine and Pharma",
+            "Oil Drilling"
+        ],
+        "usage_areas_fr": [
+            "Agriculture (Engrais)",
+            "Industrie alimentaire",
+            "Médecine",
+            "Forage pétrolier"
+        ],
+        "usage_areas_ar": [
+            "الزراعة (الأسمدة)",
+            "صناعة الأغذية",
+            "الطب",
+            "التنقيب عن النفط"
+        ],
+        "ec_number": "231-211-8",
+        "molecular_weight": "74.55",
+        "synonyms_tr": "POTASYUM KLORÜR=Muriat of potash=MOP",
+        "synonyms_en": "POTASSIUM CHLORIDE=Muriate of potash",
+        "synonyms_fr": "CHLORURE DE POTASSIUM=Muriate de potasse",
+        "synonyms_ar": "كلوريد البوتاسيوم=موريات البوتاس",
+        "definition_tr": [
+            "Beyaz veya renksiz kristal formda, kokusuz, suda iyi çözünen inorganik bir metal tuzudur."
+        ],
+        "definition_en": [
+            "It is a white or colorless crystalline, odorless inorganic metal salt that dissolves well in water."
+        ],
+        "definition_fr": [
+            "Sel métallique inorganique cristallin blanc, inodore."
+        ],
+        "definition_ar": [
+            "ملح معدني غير عضوي بلوري أبيض، عديم الرائحة."
+        ],
+        "uses_benefits_tr": [
+            "Bitkilerde hastalıklara karşı direnci artırır, meyve kalitesini yükseltir."
+        ],
+        "uses_benefits_en": [
+            "Increases disease resistance in plants and improves fruit quality."
+        ],
+        "uses_benefits_fr": [
+            "Augmente la résistance des plantes aux maladies."
+        ],
+        "uses_benefits_ar": [
+            "يزيد من مقاومة النبات للأمراض."
+        ],
+        "applications_tr": [
+            "Tarımsal harmanlanmış NPK gübrelerinde temel K (potasyum) bileşeni. Sondaj çamurlarında kil şişmesini önleyici."
+        ],
+        "applications_en": [
+            "Basic K (potassium) component in agricultural blended NPK fertilizers. Clay swelling inhibitor in drilling muds."
+        ],
+        "applications_fr": [
+            "Composant potassique de base dans les engrais NPK."
+        ],
+        "applications_ar": [
+            "مكون أساسي للبوتاسيوم في أسمدة NPK."
+        ]
+    },
+    {
+        "id": "chem-79",
+        "slug": "akrilik-asit",
+        "cas_number": "79-10-7",
+        "formula": "C3H4O2",
+        "category": "general",
+        "name_tr": "Akrilik Asit",
+        "name_en": "Acrylic Acid",
+        "name_fr": "Acide Acrylique",
+        "name_ar": "حمض الأكريليك",
+        "description_tr": "Akrilik asit, boya, plastik, yapıştırıcı ve süper emici polimer (SAP) üretiminde kullanılan çok yönlü ve reaktif bir monomerdir.",
+        "description_en": "Acrylic acid is a versatile and reactive monomer used in the production of paints, plastics, adhesives, and superabsorbent polymers (SAP).",
+        "description_fr": "L'acide acrylique est un monomère réactif utilisé dans la production de peintures, de plastiques et d'adhésifs.",
+        "description_ar": "حمض الأكريليك هو مونومر تفاعلي يستخدم في إنتاج الدهانات والبلاستيك والمواد اللاصقة.",
+        "usage_areas_tr": [
+            "Süper Emici Polimerler (Bebek Bezi)",
+            "Boya ve Kaplamalar",
+            "Yapıştırıcılar",
+            "Tekstil Terbiyesi"
+        ],
+        "usage_areas_en": [
+            "Superabsorbent Polymers (Diapers)",
+            "Paints and Coatings",
+            "Adhesives",
+            "Textile Finishing"
+        ],
+        "usage_areas_fr": [
+            "Polymères superabsorbants",
+            "Peintures et revêtements",
+            "Adhésifs",
+            "Finition textile"
+        ],
+        "usage_areas_ar": [
+            "البوليمرات فائقة الامتصاص",
+            "الدهانات والطلاء",
+            "المواد اللاصقة",
+            "تشطيب المنسوجات"
+        ],
+        "ec_number": "201-177-9",
+        "molecular_weight": "72.06",
+        "synonyms_tr": "AKRİLİK ASİT=Propenoik asit",
+        "synonyms_en": "ACRYLIC ACID=Propenoic acid",
+        "synonyms_fr": "ACIDE ACRYLIQUE=Acide propénoïque",
+        "synonyms_ar": "حمض الأكريليك=حمض البروبينويك",
+        "definition_tr": [
+            "Keskin, ekşi bir kokuya sahip renksiz bir sıvıdır. En basit doymamış karboksilik asittir."
+        ],
+        "definition_en": [
+            "It is a colorless liquid with a sharp, tart odor. It is the simplest unsaturated carboxylic acid."
+        ],
+        "definition_fr": [
+            "Liquide incolore à l'odeur âcre. Le plus simple des acides carboxyliques insaturés."
+        ],
+        "definition_ar": [
+            "سائل عديم اللون ذو رائحة حادة. أبسط حمض كربوكسيلي غير مشبع."
+        ],
+        "uses_benefits_tr": [
+            "Polimerleşme hızı çok yüksektir, bu sayede çok çeşitli akrilat reçineleri ve esterleri üretilebilir."
+        ],
+        "uses_benefits_en": [
+            "Its polymerization rate is very high, allowing the production of a wide variety of acrylate resins and esters."
+        ],
+        "uses_benefits_fr": [
+            "Vitesse de polymérisation très élevée."
+        ],
+        "uses_benefits_ar": [
+            "معدل البلمرة مرتفع للغاية."
+        ],
+        "applications_tr": [
+            "Çocuk bezleri için Poliakrilik asit (SAP) sentezinde ana girdi. Su bazlı emülsiyon boyalarda bağlayıcı."
+        ],
+        "applications_en": [
+            "Main input in the synthesis of Polyacrylic acid (SAP) for diapers. Binder in water-based emulsion paints."
+        ],
+        "applications_fr": [
+            "Entrée principale pour la synthèse de polymères superabsorbants."
+        ],
+        "applications_ar": [
+            "المدخل الرئيسي لتخليق البوليمرات فائقة الامتصاص لحفاضات الأطفال."
+        ]
+    },
+    {
+        "id": "chem-80",
+        "slug": "kalsiyum-nitrat",
+        "cas_number": "10124-37-5",
+        "formula": "Ca(NO3)2",
+        "category": "general",
+        "name_tr": "Kalsiyum Nitrat",
+        "name_en": "Calcium Nitrate",
+        "name_fr": "Nitrate de Calcium",
+        "name_ar": "نترات الكالسيوم",
+        "description_tr": "Kalsiyum nitrat, suda tamamen ve hızlı çözünen, tarımda bitkiler için eş zamanlı kalsiyum ve azot sağlayan mükemmel bir gübredir. Ayrıca beton katkı maddesi olarak donmayı önler.",
+        "description_en": "Calcium nitrate is an excellent fertilizer that dissolves completely and quickly in water, providing simultaneous calcium and nitrogen for plants. It also prevents freezing as a concrete admixture.",
+        "description_fr": "Le nitrate de calcium est un excellent engrais soluble dans l'eau. Empêche également le gel dans le béton.",
+        "description_ar": "نترات الكالسيوم سماد ممتاز يذوب تمامًا في الماء. كما يمنع التجمد في الخرسانة.",
+        "usage_areas_tr": [
+            "Tarım (Damlama Gübresi)",
+            "İnşaat ve Beton",
+            "Atıksu Arıtma",
+            "Soğutucu Sıvılar"
+        ],
+        "usage_areas_en": [
+            "Agriculture (Drip Fertilizer)",
+            "Construction and Concrete",
+            "Wastewater Treatment",
+            "Coolants"
+        ],
+        "usage_areas_fr": [
+            "Agriculture",
+            "Construction et béton",
+            "Traitement des eaux usées",
+            "Liquides de refroidissement"
+        ],
+        "usage_areas_ar": [
+            "الزراعة",
+            "البناء والخرسانة",
+            "معالجة مياه الصرف الصحي",
+            "المبردات"
+        ],
+        "ec_number": "233-332-1",
+        "molecular_weight": "164.08",
+        "synonyms_tr": "KALSİYUM NİTRAT=Norveç güherçilesi",
+        "synonyms_en": "CALCIUM NITRATE=Norwegian saltpeter",
+        "synonyms_fr": "NITRATE DE CALCIUM=Salpêtre de Norvège",
+        "synonyms_ar": "نترات الكالسيوم=ملح البارود النرويجي",
+        "definition_tr": [
+            "Doğada higroskopik olan, beyaz granül veya kristal yapılı, inorganik kalsiyum tuzudur."
+        ],
+        "definition_en": [
+            "It is a hygroscopic, white granular or crystalline inorganic calcium salt."
+        ],
+        "definition_fr": [
+            "Sel de calcium inorganique blanc, hygroscopique."
+        ],
+        "definition_ar": [
+            "ملح كالسيوم غير عضوي أبيض استرطابي."
+        ],
+        "uses_benefits_tr": [
+            "Domates ve biber gibi sebzelerde çiçek burnu çürüklüğünü (kalsiyum eksikliği) anında tedavi eder."
+        ],
+        "uses_benefits_en": [
+            "Instantly treats blossom end rot (calcium deficiency) in vegetables like tomatoes and peppers."
+        ],
+        "uses_benefits_fr": [
+            "Traite la carence en calcium des plantes."
+        ],
+        "uses_benefits_ar": [
+            "يعالج نقص الكالسيوم في النباتات."
+        ],
+        "applications_tr": [
+            "Seralarda topraksız tarım ve damla sulamada besin eriğiği. Beton dökümünde priz hızlandırıcı ve antifriz."
+        ],
+        "applications_en": [
+            "Nutrient solution in greenhouse hydroponics and drip irrigation. Setting accelerator and antifreeze in concrete casting."
+        ],
+        "applications_fr": [
+            "Solution nutritive en culture hydroponique. Accélérateur de prise pour le béton."
+        ],
+        "applications_ar": [
+            "محلول غذائي في الزراعة المائية. معجل التصلب للخرسانة."
+        ]
+    },
+    {
+        "id": "chem-81",
+        "slug": "perkloroetilen",
+        "cas_number": "127-18-4",
+        "formula": "C2Cl4",
+        "category": "general",
+        "name_tr": "Perkloroetilen (PCE)",
+        "name_en": "Perchloroethylene (PCE)",
+        "name_fr": "Perchloroéthylène (PCE)",
+        "name_ar": "بيركلورو إيثيلين",
+        "description_tr": "Perkloroetilen, kuru temizleme endüstrisinde kumaşlardaki kiri ve yağı kumaşa zarar vermeden çıkaran bir numaralı çözücüdür. Endüstriyel metal temizliğinde de kullanılır.",
+        "description_en": "Perchloroethylene is the number one solvent in the dry cleaning industry, removing dirt and grease from fabrics without damaging them. It is also used in industrial metal cleaning.",
+        "description_fr": "Le perchloroéthylène est le solvant numéro un dans l'industrie du nettoyage à sec. Utilisé aussi pour le nettoyage des métaux.",
+        "description_ar": "بيركلورو إيثيلين هو المذيب الأول في صناعة التنظيف الجاف. يستخدم أيضًا في تنظيف المعادن.",
+        "usage_areas_tr": [
+            "Kuru Temizleme",
+            "Metal Yağ Alma",
+            "Otomotiv Fren Temizliği",
+            "Tekstil"
+        ],
+        "usage_areas_en": [
+            "Dry Cleaning",
+            "Metal Degreasing",
+            "Automotive Brake Cleaning",
+            "Textiles"
+        ],
+        "usage_areas_fr": [
+            "Nettoyage à sec",
+            "Dégraissage des métaux",
+            "Nettoyage de freins",
+            "Textiles"
+        ],
+        "usage_areas_ar": [
+            "التنظيف الجاف",
+            "إزالة شحوم المعادن",
+            "تنظيف الفرامل",
+            "المنسوجات"
+        ],
+        "ec_number": "204-825-9",
+        "molecular_weight": "165.83",
+        "synonyms_tr": "PERKLOROETİLEN=Tetrakloroetilen",
+        "synonyms_en": "PERCHLOROETHYLENE=Tetrachloroethylene",
+        "synonyms_fr": "PERCHLOROÉTHYLÈNE=Tétrachloroéthylène",
+        "synonyms_ar": "بيركلورو إيثيلين=رباعي كلورو إيثيلين",
+        "definition_tr": [
+            "Keskin, tatlı bir kokuya sahip, yanıcı olmayan, ağır ve buharlaşabilen renksiz bir sıvıdır."
+        ],
+        "definition_en": [
+            "It is a colorless, non-flammable, heavy, and volatile liquid with a sharp, sweet odor."
+        ],
+        "definition_fr": [
+            "Liquide incolore, ininflammable, lourd et volatil à l'odeur douce."
+        ],
+        "definition_ar": [
+            "سائل عديم اللون وغير قابل للاشتعال وثقيل ومتطاير ذو رائحة حلوة."
+        ],
+        "uses_benefits_tr": [
+            "Yanıcı olmaması, buhar temizleme makinelerinde ve kuru temizleme fırınlarında güvenle kullanılmasını sağlar."
+        ],
+        "uses_benefits_en": [
+            "Being non-flammable allows it to be used safely in vapor degreasing machines and dry cleaning ovens."
+        ],
+        "uses_benefits_fr": [
+            "Non inflammable, utilisation sûre dans le nettoyage à sec."
+        ],
+        "uses_benefits_ar": [
+            "غير قابل للاشتعال، مما يسمح باستخدامه بأمان في التنظيف الجاف."
+        ],
+        "applications_tr": [
+            "Kuru temizleme solventi. Metallerin boyanması veya kaplanması öncesinde yağdan arındırılması."
+        ],
+        "applications_en": [
+            "Dry cleaning solvent. Degreasing of metals prior to painting or coating."
+        ],
+        "applications_fr": [
+            "Solvant de nettoyage à sec. Dégraissage des métaux."
+        ],
+        "applications_ar": [
+            "مذيب التنظيف الجاف. إزالة الشحوم من المعادن."
+        ]
+    },
+    {
+        "id": "chem-82",
+        "slug": "sodyum-persulfat",
+        "cas_number": "7775-27-1",
+        "formula": "Na2S2O8",
+        "category": "general",
+        "name_tr": "Sodyum Persülfat",
+        "name_en": "Sodium Persulfate",
+        "name_fr": "Persulfate de Sodium",
+        "name_ar": "بيرسلفات الصوديوم",
+        "description_tr": "Sodyum persülfat, baskılı devre kartlarının (PCB) aşındırılmasında ve plastik üretiminde polimerizasyon başlatıcı (initiator) olarak kullanılan güçlü bir oksitleyicidir.",
+        "description_en": "Sodium persulfate is a strong oxidizer used in etching printed circuit boards (PCBs) and as a polymerization initiator in plastics production.",
+        "description_fr": "Le persulfate de sodium est un oxydant fort utilisé dans la gravure de circuits imprimés.",
+        "description_ar": "بيرسلفات الصوديوم مؤكسد قوي يستخدم في نقش لوحات الدوائر المطبوعة وكمبادئ للبلمرة.",
+        "usage_areas_tr": [
+            "PCB Aşındırma",
+            "Polimer Sentezi",
+            "Kozmetik (Saç Açıcı)",
+            "Su Arıtma"
+        ],
+        "usage_areas_en": [
+            "PCB Etching",
+            "Polymer Synthesis",
+            "Cosmetics (Hair Bleach)",
+            "Water Treatment"
+        ],
+        "usage_areas_fr": [
+            "Gravure de PCB",
+            "Synthèse de polymères",
+            "Cosmétiques",
+            "Traitement de l'eau"
+        ],
+        "usage_areas_ar": [
+            "نقش ثنائي الفينيل متعدد الكلور",
+            "تخليق البوليمر",
+            "مستحضرات التجميل",
+            "معالجة المياه"
+        ],
+        "ec_number": "231-892-1",
+        "molecular_weight": "238.10",
+        "synonyms_tr": "SODYUM PERSÜLFAT=Sodyum peroksodisülfat",
+        "synonyms_en": "SODIUM PERSULFATE=Sodium peroxodisulfate",
+        "synonyms_fr": "PERSULFATE DE SODIUM=Peroxodisulfate de sodium",
+        "synonyms_ar": "بيرسلفات الصوديوم=بيروكسوديسلفات الصوديوم",
+        "definition_tr": [
+            "Suda oldukça iyi çözünen, beyaz kristal formda, güçlü ve korozif bir peroksit tuzudur."
+        ],
+        "definition_en": [
+            "It is a highly water-soluble, white crystalline, strong and corrosive peroxide salt."
+        ],
+        "definition_fr": [
+            "Sel de peroxyde cristallin blanc, fort et corrosif, très soluble."
+        ],
+        "definition_ar": [
+            "ملح بيروكسيد بلوري أبيض شديد الذوبان في الماء، قوي ومسبب للتآكل."
+        ],
+        "uses_benefits_tr": [
+            "Bakır yüzeyleri düzgün ve kontrollü bir şekilde aşındırabilme yeteneğine sahiptir."
+        ],
+        "uses_benefits_en": [
+            "Has the ability to etch copper surfaces smoothly and in a controlled manner."
+        ],
+        "uses_benefits_fr": [
+            "Grave les surfaces en cuivre de manière contrôlée."
+        ],
+        "uses_benefits_ar": [
+            "ينقش الأسطح النحاسية بطريقة محكومة."
+        ],
+        "applications_tr": [
+            "Elektronik sanayisinde bakır aşındırma solüsyonu. Emülsiyon polimerizasyonunda radikal kaynağı."
+        ],
+        "applications_en": [
+            "Copper etching solution in the electronics industry. Radical source in emulsion polymerization."
+        ],
+        "applications_fr": [
+            "Solution de gravure sur cuivre en électronique."
+        ],
+        "applications_ar": [
+            "محلول حفر النحاس في صناعة الإلكترونيات."
+        ]
+    },
+    {
+        "id": "chem-83",
+        "slug": "hekzametilentetramin",
+        "cas_number": "100-97-0",
+        "formula": "C6H12N4",
+        "category": "general",
+        "name_tr": "Hekzamin (Hekzametilentetramin)",
+        "name_en": "Hexamine (Hexamethylenetetramine)",
+        "name_fr": "Hexamine (Hexaméthylènetétramine)",
+        "name_ar": "هيكسامين",
+        "description_tr": "Hekzamin, fenolik reçinelerin kürlenmesinde, katı yakıt tabletlerinin üretiminde ve kauçuk sanayisinde vulkanizasyon hızlandırıcı olarak kullanılan heterosiklik bir organik bileşiktir.",
+        "description_en": "Hexamine is a heterocyclic organic compound used in the curing of phenolic resins, production of solid fuel tablets, and as a vulcanization accelerator in the rubber industry.",
+        "description_fr": "L'hexamine est un composé organique utilisé dans le durcissement des résines phénoliques et le caoutchouc.",
+        "description_ar": "الهيكسامين مركب عضوي يستخدم في معالجة الراتنجات الفينولية وصناعة المطاط.",
+        "usage_areas_tr": [
+            "Reçine Üretimi",
+            "Kauçuk ve Lastik",
+            "Katı Yakıt Tabletleri",
+            "Patlayıcılar"
+        ],
+        "usage_areas_en": [
+            "Resin Production",
+            "Rubber and Tires",
+            "Solid Fuel Tablets",
+            "Explosives"
+        ],
+        "usage_areas_fr": [
+            "Production de résines",
+            "Caoutchouc et pneus",
+            "Comprimés de combustible",
+            "Explosifs"
+        ],
+        "usage_areas_ar": [
+            "إنتاج الراتنج",
+            "المطاط والإطارات",
+            "أقراص الوقود الصلب",
+            "المتفجرات"
+        ],
+        "ec_number": "202-905-8",
+        "molecular_weight": "140.19",
+        "synonyms_tr": "HEKZAMİN=Hekzametilentetramin=Metenamin",
+        "synonyms_en": "HEXAMINE=Hexamethylenetetramine=Methenamine",
+        "synonyms_fr": "HEXAMINE=Hexaméthylènetétramine",
+        "synonyms_ar": "هيكسامين=سداسي ميثيلين تترامين",
+        "definition_tr": [
+            "Formaldehit ve amonyağın reaksiyonu ile elde edilen, kafes benzeri yapıya sahip beyaz kristal bir tozdur."
+        ],
+        "definition_en": [
+            "It is a white crystalline powder with a cage-like structure obtained by the reaction of formaldehyde and ammonia."
+        ],
+        "definition_fr": [
+            "Poudre cristalline blanche à structure en cage."
+        ],
+        "definition_ar": [
+            "مسحوق بلوري أبيض ذو بنية تشبه القفص."
+        ],
+        "uses_benefits_tr": [
+            "Isıtıldığında dumansız ve yüksek enerji vererek yandığı için kampçılık yakıtlarında çok değerlidir."
+        ],
+        "uses_benefits_en": [
+            "Highly valuable in camping fuels because it burns smokeless with high energy yield when heated."
+        ],
+        "uses_benefits_fr": [
+            "Brûle sans fumée avec un rendement énergétique élevé."
+        ],
+        "uses_benefits_ar": [
+            "يحترق بدون دخان مع إنتاج طاقة عالي."
+        ],
+        "applications_tr": [
+            "Bakalit ve fenolik reçinelerin sertleştiricisi. Askeri patlayıcıların (RDX) hammaddesi."
+        ],
+        "applications_en": [
+            "Hardener for Bakelite and phenolic resins. Raw material for military explosives (RDX)."
+        ],
+        "applications_fr": [
+            "Durcisseur pour la bakélite. Matière première pour explosifs."
+        ],
+        "applications_ar": [
+            "مصلد للباكليت والراتنجات الفينولية. مادة خام للمتفجرات العسكرية."
+        ]
+    },
+    {
+        "id": "chem-84",
+        "slug": "adipik-asit",
+        "cas_number": "124-04-9",
+        "formula": "C6H10O4",
+        "category": "general",
+        "name_tr": "Adipik Asit",
+        "name_en": "Adipic Acid",
+        "name_fr": "Acide Adipique",
+        "name_ar": "حمض الأديبيك",
+        "description_tr": "Adipik asit, naylon 6,6 polimerinin üretiminde temel bir yapı taşı olan, tekstil ve otomotiv endüstrisi için kritik öneme sahip organik bir dikarboksilik asittir.",
+        "description_en": "Adipic acid is an organic dicarboxylic acid that is a fundamental building block in the production of nylon 6,6 polymer, critical for the textile and automotive industries.",
+        "description_fr": "L'acide adipique est un composant fondamental dans la production du nylon 6,6.",
+        "description_ar": "حمض الأديبيك هو لبنة أساسية في إنتاج نايلون 6,6.",
+        "usage_areas_tr": [
+            "Naylon Üretimi (Nylon 6,6)",
+            "Poliüretan Sentezi",
+            "Gıda (Ekşilik Verici)",
+            "Plastifiyanlar"
+        ],
+        "usage_areas_en": [
+            "Nylon Production (Nylon 6,6)",
+            "Polyurethane Synthesis",
+            "Food (Tartness Agent)",
+            "Plasticizers"
+        ],
+        "usage_areas_fr": [
+            "Production de nylon",
+            "Synthèse de polyuréthane",
+            "Alimentation",
+            "Plastifiants"
+        ],
+        "usage_areas_ar": [
+            "إنتاج النايلون",
+            "تخليق البولي يوريثين",
+            "الغذاء",
+            "الملدنات"
+        ],
+        "ec_number": "204-673-3",
+        "molecular_weight": "146.14",
+        "synonyms_tr": "ADİPİK ASİT=Hekzandioik asit",
+        "synonyms_en": "ADIPIC ACID=Hexanedioic acid",
+        "synonyms_fr": "ACIDE ADIPIQUE=Acide hexanedioïque",
+        "synonyms_ar": "حمض الأديبيك=حمض الهكسانيديويك",
+        "definition_tr": [
+            "Beyaz, kokusuz, kristalize ve suda az çözünen katı bir dikarboksilik asittir."
+        ],
+        "definition_en": [
+            "It is a white, odorless, crystallized solid dicarboxylic acid that is slightly soluble in water."
+        ],
+        "definition_fr": [
+            "Acide dicarboxylique solide cristallisé blanc et inodore."
+        ],
+        "definition_ar": [
+            "حمض ثنائي الكربوكسيل صلب متبلور أبيض وعديم الرائحة."
+        ],
+        "uses_benefits_tr": [
+            "Naylon ipliklere esneklik, mukavemet ve ısıya dayanıklılık özelliklerini kazandırır."
+        ],
+        "uses_benefits_en": [
+            "Provides flexibility, strength, and heat resistance to nylon yarns."
+        ],
+        "uses_benefits_fr": [
+            "Fournit flexibilité et résistance aux fils de nylon."
+        ],
+        "uses_benefits_ar": [
+            "يوفر المرونة والقوة والمقاومة للحرارة لخيوط النايلون."
+        ],
+        "applications_tr": [
+            "Otomobil lastikleri, paraşütler ve halılar için Naylon 6,6 fiber üretimi. Gıdada E355 koduyla lezzet artırıcı."
+        ],
+        "applications_en": [
+            "Production of Nylon 6,6 fiber for car tires, parachutes, and carpets. Flavor enhancer in food (E355)."
+        ],
+        "applications_fr": [
+            "Production de fibres Nylon 6,6. Exhausteur de goût (E355)."
+        ],
+        "applications_ar": [
+            "إنتاج ألياف النايلون 6,6. محسن النكهة في الغذاء (E355)."
+        ]
+    },
+    {
+        "id": "chem-85",
+        "slug": "sodyum-siyanur",
+        "cas_number": "143-33-9",
+        "formula": "NaCN",
+        "category": "general",
+        "name_tr": "Sodyum Siyanür",
+        "name_en": "Sodium Cyanide",
+        "name_fr": "Cyanure de Sodium",
+        "name_ar": "سيانيد الصوديوم",
+        "description_tr": "Sodyum siyanür, altın ve gümüş madenciliğinde cevherden değerli metallerin ayrıştırılması (liç işlemi) için endüstriyel çapta kullanılan çok zehirli bir inorganik tuzdur.",
+        "description_en": "Sodium cyanide is a highly toxic inorganic salt used on an industrial scale in gold and silver mining to extract precious metals from ore (leaching process).",
+        "description_fr": "Le cyanure de sodium est un sel inorganique hautement toxique utilisé dans l'extraction de l'or et de l'argent.",
+        "description_ar": "سيانيد الصوديوم ملح غير عضوي شديد السمية يستخدم في استخراج الذهب والفضة.",
+        "usage_areas_tr": [
+            "Altın Madenciliği (Liç)",
+            "Galvano (Kaplama)",
+            "Kimyasal Sentez",
+            "Metal Yüzey Sertleştirme"
+        ],
+        "usage_areas_en": [
+            "Gold Mining (Leaching)",
+            "Electroplating",
+            "Chemical Synthesis",
+            "Metal Case Hardening"
+        ],
+        "usage_areas_fr": [
+            "Extraction de l'or",
+            "Galvanoplastie",
+            "Synthèse chimique",
+            "Durcissement des métaux"
+        ],
+        "usage_areas_ar": [
+            "استخراج الذهب",
+            "الطلاء الكهربائي",
+            "التخليق الكيميائي",
+            "تصلب المعادن"
+        ],
+        "ec_number": "205-599-4",
+        "molecular_weight": "49.01",
+        "synonyms_tr": "SODYUM SİYANÜR=Siyanür tuzu",
+        "synonyms_en": "SODIUM CYANIDE=Cyanide of sodium",
+        "synonyms_fr": "CYANURE DE SODIUM=Sel de cyanure",
+        "synonyms_ar": "سيانيد الصوديوم=ملح السيانيد",
+        "definition_tr": [
+            "Badem kokusunu andıran, beyaz kristal veya briket formunda, suda tamamen çözünen ve son derece tehlikeli, zehirli bir kimyasaldır."
+        ],
+        "definition_en": [
+            "It is a highly dangerous and toxic chemical with an almond-like odor, in the form of white crystals or briquettes, completely soluble in water."
+        ],
+        "definition_fr": [
+            "Produit chimique très toxique à odeur d'amande, sous forme de cristaux blancs."
+        ],
+        "definition_ar": [
+            "مادة كيميائية شديدة السمية والخطورة برائحة تشبه اللوز."
+        ],
+        "uses_benefits_tr": [
+            "Altın gibi tepkimeye girmeyen soy metallerle suda çözünebilir kompleks iyonlar oluşturma yeteneğine sahip nadir kimyasallardandır."
+        ],
+        "uses_benefits_en": [
+            "One of the rare chemicals capable of forming water-soluble complex ions with unreactive noble metals like gold."
+        ],
+        "uses_benefits_fr": [
+            "Capable de former des ions complexes hydrosolubles avec l'or."
+        ],
+        "uses_benefits_ar": [
+            "قادر على تكوين أيونات معقدة قابلة للذوبان في الماء مع الذهب."
+        ],
+        "applications_tr": [
+            "Siyanürasyon yöntemiyle altın madenciliği. Çelik parçaların sementasyon fırınlarında yüzey sertleştirilmesi."
+        ],
+        "applications_en": [
+            "Gold mining by cyanidation. Case hardening of steel parts in cementation furnaces."
+        ],
+        "applications_fr": [
+            "Extraction de l'or par cyanuration. Durcissement de l'acier."
+        ],
+        "applications_ar": [
+            "استخراج الذهب بالسيانيد. تصلب أجزاء الصلب."
+        ]
     }
 ]
