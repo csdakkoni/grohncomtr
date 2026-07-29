@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect, Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { Link } from '@/i18n/routing';
 import { ChevronDown, ArrowRight, Beaker } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -29,6 +30,32 @@ export default function ProductCatalog({ categories, subgroups, products, locale
         new Set(categories.map(c => c.id)) // All open by default
     );
     const [openSubgroups, setOpenSubgroups] = useState<Set<string>>(new Set());
+    const searchParams = useSearchParams();
+    const categoryParam = searchParams.get('category');
+    const subgroupParam = searchParams.get('subgroup');
+
+    useEffect(() => {
+        if (categoryParam) {
+            setOpenCategories(prev => new Set(prev).add(categoryParam));
+        }
+        if (subgroupParam) {
+            setOpenSubgroups(prev => new Set(prev).add(subgroupParam));
+            setTimeout(() => {
+                const el = document.getElementById(`subgroup-${subgroupParam}`);
+                if (el) {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }, 300);
+        } else if (categoryParam) {
+            setTimeout(() => {
+                const el = document.getElementById(`category-${categoryParam}`);
+                if (el) {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 300);
+        }
+    }, [categoryParam, subgroupParam]);
+
 
     const toggleCategory = (id: string) => {
         setOpenCategories(prev => {
@@ -56,7 +83,7 @@ export default function ProductCatalog({ categories, subgroups, products, locale
                 if (categoryProducts.length === 0) return null;
 
                 return (
-                    <div key={category.id} className="glass rounded-2xl overflow-hidden">
+                    <div key={category.id} id={`category-${category.id}`} className="glass rounded-2xl overflow-hidden scroll-mt-24">
                         {/* Category Header — Collapsible */}
                         <button
                             onClick={() => toggleCategory(category.id)}
@@ -106,7 +133,7 @@ export default function ProductCatalog({ categories, subgroups, products, locale
                                             if (subProducts.length === 0) return null;
 
                                             return (
-                                                <div key={subgroup.id} className="rounded-xl border border-white/5 bg-white/[0.02]">
+                                                <div key={subgroup.id} id={`subgroup-${subgroup.id}`} className="rounded-xl border border-white/5 bg-white/[0.02] scroll-mt-24">
                                                     {/* Subgroup Header */}
                                                     <button
                                                         onClick={() => toggleSubgroup(subgroup.id)}

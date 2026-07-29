@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { getTranslations } from 'next-intl/server';
 import { getCategories, getProducts, getSubgroups } from '@/lib/api';
 import { FlaskConical } from 'lucide-react';
@@ -45,12 +46,14 @@ export default async function ProductsPage({
             {/* Catalog */}
             <section className="py-16 md:py-24 bg-primary">
                 <div className="container mx-auto px-4 md:px-8">
-                    <ProductCatalog
-                        categories={categories}
-                        subgroups={subgroups}
-                        products={products}
-                        locale={locale}
-                    />
+                    <Suspense fallback={<div className="text-center py-10 text-white/50">Loading catalog...</div>}>
+                        <ProductCatalog
+                            categories={categories}
+                            subgroups={subgroups}
+                            products={products}
+                            locale={locale}
+                        />
+                    </Suspense>
                 </div>
             </section>
         </div>
