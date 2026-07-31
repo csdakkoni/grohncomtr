@@ -7,7 +7,8 @@
         "faq": "FAQ",
         "contact": "Contact",
         "industrialRawMaterials": "Industrial Raw Materials",
-        "textileChemicals": "Textile Chemicals"
+        "textileChemicals": "Textile Chemicals",
+        "waterTreatmentChemicals": "Water Treatment Chemicals"
     },
     "Blog": {
         "title": "Technical Insights",
