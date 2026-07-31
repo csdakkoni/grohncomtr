@@ -32,7 +32,7 @@ export interface Product {
     subgroup_id: string;
     slug: string;
     name: string;
-    ionic_type?: string; // "nonionic" | "anionic" | "cationic" | "amphoteric" | null
+    ionic_type?: string | null; // "nonionic" | "anionic" | "cationic" | "amphoteric" | null
     title_tr: string;
     title_en: string;
     title_fr: string;
@@ -294,7 +294,7 @@ export const MOCK_PRODUCTS: Product[] = [
     // — Industrial Products —
     {
         id: "ind-1", category_id: "asitler-bazlar", subgroup_id: "endustriyel-asitler", slug: "sulfurik-asit-98",
-        name: "Sulfuric Acid 98%", ionic_type: null,
+        name: "Sulfuric Acid 98%", ionic_type: undefined,
         title_tr: "Sülfürik Asit %98 (H2SO4)", title_en: "Sulfuric Acid 98% (H2SO4)",
         title_fr: "Acide Sulfurique 98%", title_ar: "حمض الكبريتيك 98%",
         description_tr: "Yüksek saflıkta, ağır sanayi, gübre, metal ve kimyasal sentez süreçlerinde yaygın olarak kullanılan konsantre teknik mineral asit.",
@@ -305,7 +305,7 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     {
         id: "ind-2", category_id: "asitler-bazlar", subgroup_id: "endustriyel-asitler", slug: "formik-asit-85",
-        name: "Formic Acid 85%", ionic_type: null,
+        name: "Formic Acid 85%", ionic_type: undefined,
         title_tr: "Formik Asit %85 (HCOOH)", title_en: "Formic Acid 85% (HCOOH)",
         title_fr: "Acide Formique 85%", title_ar: "حمض الفورميك 85%",
         description_tr: "Tekstil terbiye, deri işleme, kauçuk pıhtılaştırma ve kimyasal hammadde olarak kullanılan güçlü organik asit.",
@@ -316,7 +316,7 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     {
         id: "ind-3", category_id: "asitler-bazlar", subgroup_id: "endustriyel-asitler", slug: "asetik-asit-buzlu",
-        name: "Glacial Acetic Acid 99.8%", ionic_type: null,
+        name: "Glacial Acetic Acid 99.8%", ionic_type: undefined,
         title_tr: "Buzlu Asetik Asit %99.8", title_en: "Glacial Acetic Acid 99.8%",
         title_fr: "Acide Acétique Glacial 99.8%", title_ar: "حمض الخليك الجليدي 99.8%",
         description_tr: "Yüksek saflıkta, pH ayarlayıcı, boyama tamponlayıcı ve kimyasal sentez hammaddesi olarak kullanılan asetik asit.",
@@ -327,7 +327,7 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     {
         id: "ind-4", category_id: "asitler-bazlar", subgroup_id: "endustriyel-bazlar", slug: "kostik-soda-boncuk",
-        name: "Caustic Soda Pearls 99%", ionic_type: null,
+        name: "Caustic Soda Pearls 99%", ionic_type: undefined,
         title_tr: "Kostik Soda Boncuk / Sodyum Hidroksit %99", title_en: "Caustic Soda Pearls 99% (NaOH)",
         title_fr: "Soude Caustique en Perles 99%", title_ar: "الصودا الكاوية الحبيبات 99%",
         description_tr: "Sabun, deterjan, su arıtma, kağıt ve tekstil merserize süreçlerinde temel bazik hammadde olarak kullanılan saf sodyum hidroksit.",
@@ -338,7 +338,7 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     {
         id: "ind-5", category_id: "asitler-bazlar", subgroup_id: "endustriyel-asitler", slug: "hidroklorik-asit-33",
-        name: "Hydrochloric Acid 33%", ionic_type: null,
+        name: "Hydrochloric Acid 33%", ionic_type: undefined,
         title_tr: "Hidroklorik Asit %33 (Tuz Ruhu / HCl)", title_en: "Hydrochloric Acid 33% (HCl)",
         title_fr: "Acide Chlorhydrique 33%", title_ar: "حمض الهيدروكلوريك 33%",
         description_tr: "Metal yüzey temizleme, pH düşürme ve su arıtma süreçlerinde kullanılan güçlü inorganik mineral asit.",
@@ -349,7 +349,7 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     {
         id: "ind-6", category_id: "solventler", subgroup_id: "organik-solventler", slug: "aseton-pure",
-        name: "Acetone Pure Grade", ionic_type: null,
+        name: "Acetone Pure Grade", ionic_type: undefined,
         title_tr: "Aseton (Saf / Teknik Grade)", title_en: "Acetone (Pure / Technical Grade)",
         title_fr: "Acétone Pur", title_ar: "الأسيتون النقي",
         description_tr: "Boya, reçine, yapıştırıcı ve kimyasal ekstraksiyon süreçlerinde hızlı buharlaşan güçlü organik solvent.",
@@ -360,7 +360,7 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     {
         id: "ind-7", category_id: "solventler", subgroup_id: "glikoller-alkoller", slug: "izopropil-alkol-ipa",
-        name: "Isopropanol (IPA) 99.9%", ionic_type: null,
+        name: "Isopropanol (IPA) 99.9%", ionic_type: undefined,
         title_tr: "İzopropil Alkol (IPA) %99.9", title_en: "Isopropanol (IPA) 99.9%",
         title_fr: "Alcool Isopropylique (IPA) 99.9%", title_ar: "كحول الأيزوبروبيل 99.9%",
         description_tr: "Dezenfektan, kozmetik, elektronik ve yüzey temizleyicilerde kullanılan yüksek saflıkta susuz alkol.",
@@ -371,7 +371,7 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     {
         id: "ind-8", category_id: "solventler", subgroup_id: "glikoller-alkoller", slug: "mono-etilen-glikol-meg",
-        name: "Monoethylene Glycol (MEG)", ionic_type: null,
+        name: "Monoethylene Glycol (MEG)", ionic_type: undefined,
         title_tr: "Mono Etilen Glikol (MEG)", title_en: "Monoethylene Glycol (MEG)",
         title_fr: "Mono Éthylène Glycol (MEG)", title_ar: "أحادية إيثيلين جلايكول",
         description_tr: "Antifriz, polyester elyaf, reçine ve nem tutucu formülasyonlarda yaygın kullanılan şeffaf glikol.",
@@ -382,7 +382,7 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     {
         id: "ind-9", category_id: "tuzlar", subgroup_id: "sodyum-bilesikleri", slug: "sodyum-sulfat-anhidrus",
-        name: "Sodium Sulfate Anhydrous 99%", ionic_type: null,
+        name: "Sodium Sulfate Anhydrous 99%", ionic_type: undefined,
         title_tr: "Sodyum Sülfat Anhidrus %99", title_en: "Sodium Sulfate Anhydrous 99%",
         title_fr: "Sulfate de Sodium Anhydre 99%", title_ar: "كبريتات الصوديوم اللامائية 99%",
         description_tr: "Deterjan, cam, tekstil boyama ve kağıt sanayiinde dolgu ve nötralleştirici olarak kullanılan inorganik tuz.",
@@ -393,7 +393,7 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     {
         id: "ind-10", category_id: "tuzlar", subgroup_id: "sodyum-bilesikleri", slug: "sodyum-karbonat-soda-kulu",
-        name: "Sodium Carbonate (Soda Ash)", ionic_type: null,
+        name: "Sodium Carbonate (Soda Ash)", ionic_type: undefined,
         title_tr: "Sodyum Karbonat (Soda Külü Hafif / Yoğun)", title_en: "Sodium Carbonate (Soda Ash Light / Dense)",
         title_fr: "Carbonate de Sodium (Cendre de Soude)", title_ar: "كربونات الصوديوم (رماد الصودا)",
         description_tr: "Cam üretimi, su yumuşatma, deterjan ve tekstil banyolarında alkali sağlayıcı olarak kullanılan soda külü.",
@@ -404,7 +404,7 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     {
         id: "ind-11", category_id: "tarim", subgroup_id: "gida-tarim-hammadde", slug: "sitrik-asit-anhidrus",
-        name: "Citric Acid Anhydrous / Mono", ionic_type: null,
+        name: "Citric Acid Anhydrous / Mono", ionic_type: undefined,
         title_tr: "Sitrik Asit Monohidrat / Anhidrus", title_en: "Citric Acid Monohydrate / Anhydrous",
         title_fr: "Acide Citrique Monohydraté / Anhydre", title_ar: "حمض الستريك أحادي الهيدرات",
         description_tr: "Gıda koruyucusu, içecek asitliği ayarlayıcı, temizlik ve tarım sektöründe şelat maddesi olarak kullanılan organik asit.",
@@ -415,7 +415,7 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     {
         id: "ind-12", category_id: "tarim", subgroup_id: "gida-tarim-hammadde", slug: "ure-teknik-grade",
-        name: "Urea Technical Grade 46% N", ionic_type: null,
+        name: "Urea Technical Grade 46% N", ionic_type: undefined,
         title_tr: "Üre %46 N (Teknik & Tarımsal Grade)", title_en: "Urea 46% N (Technical & Agricultural Grade)",
         title_fr: "Urée 46% N (Grade Technique & Agricole)", title_ar: "اليوريا 46% نتروجين",
         description_tr: "Reçine, AdBlue üretimi, tekstil baskı ve gübre sektöründe kullanılan yüksek azotlu inorganik bileşik.",
