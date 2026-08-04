@@ -188,7 +188,7 @@ export default function Header() {
                                         })}
                                     </div>
                                 ) : (
-                                    <div className="grid grid-cols-2 gap-4">
+                                    <div className="grid grid-cols-3 gap-3 max-h-[55vh] overflow-y-auto pr-1">
                                         {textileCats.map((cat) => {
                                             const catCount = MOCK_PRODUCTS.filter(p => p.category_id === cat.id).length;
                                             const catSubgroups = MOCK_SUBGROUPS.filter(s => s.category_id === cat.id);
