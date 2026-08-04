@@ -8,7 +8,13 @@
         "contact": "اتصل بنا",
         "industrialRawMaterials": "المواد الخام الصناعية",
         "textileChemicals": "كيماويات النسيج",
-        "waterTreatmentChemicals": "كيماويات معالجة المياه"
+        "waterTreatmentChemicals": "كيماويات معالجة المياه والصرف",
+        "detergentRawMaterials": "مواد خام المنظفات والتنظيف",
+        "paperChemicals": "كيماويات الورق والسيليلوز",
+        "agroFoodChemicals": "المواد الخام الزراعية والغذائية",
+        "paintSolvents": "المذيبات والدهانات والطلاء",
+        "metalSurfaceChemicals": "كيماويات معالجة المعالجة والسطوح",
+        "textileAuxiliaries": "مساعدات النسيج والتشطيب"
     },
     "Blog": {
         "title": "رؤى تقنية",

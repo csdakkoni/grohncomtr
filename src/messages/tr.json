@@ -8,7 +8,13 @@
         "contact": "İletişim",
         "industrialRawMaterials": "Endüstriyel Hammaddeler",
         "textileChemicals": "Tekstil Kimyasalları",
-        "waterTreatmentChemicals": "Su Arıtma Kimyasalları"
+        "waterTreatmentChemicals": "Su & Atıksu Arıtma Kimyasalları",
+        "detergentRawMaterials": "Deterjan & Temizlik Kimyasalları",
+        "paperChemicals": "Kağıt & Selüloz Kimyasalları",
+        "agroFoodChemicals": "Tarım, Gıda & Yem Kimyasalları",
+        "paintSolvents": "Boya, Kaplama & Solventler",
+        "metalSurfaceChemicals": "Metal & Yüzey İşlem Kimyasalları",
+        "textileAuxiliaries": "Tekstil Kimyasalları & Yardımcıları"
     },
     "Blog": {
         "title": "Teknik İçerikler",

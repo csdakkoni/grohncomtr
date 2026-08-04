@@ -8,7 +8,13 @@
         "contact": "Контакты",
         "industrialRawMaterials": "Промышленное Сырье",
         "textileChemicals": "Текстильные Химикаты",
-        "waterTreatmentChemicals": "Химикаты для Водоочистки"
+        "waterTreatmentChemicals": "Химикаты для Водоочистки",
+        "detergentRawMaterials": "Сырье для Моющих Средств",
+        "paperChemicals": "Химикаты для Бумажной Промышленности",
+        "agroFoodChemicals": "Агрохимия и Пищевые Добавки",
+        "paintSolvents": "Растворители и Лакокрасочные Материалы",
+        "metalSurfaceChemicals": "Химикаты для Обработки Металлов",
+        "textileAuxiliaries": "Текстильные Вспомогательные Вещества"
     },
     "Blog": {
         "title": "Техническая информация",

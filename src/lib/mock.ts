@@ -1,13 +1,12 @@
-
 // ═══════════════════════════════════════════════════
-// GROHN KİMYA — Hierarchical Product Catalog
-// Category → Subgroup → Product (with ionic type tags)
+// GROHN KİMYA — Hierarchical Sectoral Product Catalog
+// Category → Subgroup → Product
 // ═══════════════════════════════════════════════════
 
 export interface Category {
     id: string;
     slug: string;
-    domain: 'textile' | 'industrial' | 'water-treatment';
+    domain: 'industrial' | 'textile';
     name_tr: string;
     name_en: string;
     name_fr: string;
@@ -23,7 +22,7 @@ export interface Subgroup {
     name_en: string;
     name_fr: string;
     name_ar: string;
-    prefix: string; // e.g. "Growet", "Groseq"
+    prefix: string; // e.g. "GRO", "Growat", "Growet"
 }
 
 export interface Product {
@@ -32,7 +31,8 @@ export interface Product {
     subgroup_id: string;
     slug: string;
     name: string;
-    ionic_type?: string | null; // "nonionic" | "anionic" | "cationic" | "amphoteric" | null
+    cas_number?: string;
+    ionic_type?: string | null;
     title_tr: string;
     title_en: string;
     title_fr: string;
@@ -45,1175 +45,363 @@ export interface Product {
     is_featured: boolean;
 }
 
-
 // ═══════════════════════════════════════════════════
-// CATEGORIES (Ana Kategoriler)
+// CATEGORIES (Sektörel Ana Kategoriler)
 // ═══════════════════════════════════════════════════
 
 export const MOCK_CATEGORIES: Category[] = [
-    // TEXTILE CHEMICALS
+    // INDUSTRIAL SECTORS
     {
-        id: "on-islem", slug: "on-islem", domain: "textile",
-        name_tr: "Ön İşlem Kimyasalları", name_en: "Pre-Treatment Auxiliaries",
-        name_fr: "Auxiliaires de Prétraitement", name_ar: "مساعدات المعالجة المسبقة",
-        image_url: "/images/pretreatment.png"
-    },
-    {
-        id: "boyama", slug: "boyama", domain: "textile",
-        name_tr: "Boyama Yardımcıları", name_en: "Dyeing Auxiliaries",
-        name_fr: "Auxiliaires de Teinture", name_ar: "مساعدات الصباغة",
-        image_url: "/images/dyeing.png"
-    },
-    {
-        id: "yikama", slug: "yikama", domain: "textile",
-        name_tr: "Yıkama ve Sabunlama", name_en: "Washing & Soaping",
-        name_fr: "Lavage et Savonnage", name_ar: "الغسيل والتصبين",
+        id: "deterjan", slug: "deterjan-ve-temizlik-kimyasallari", domain: "industrial",
+        name_tr: "Deterjan & Temizlik Kimyasalları", name_en: "Detergent & Cleaning Raw Materials",
+        name_fr: "Produits Chimiques pour Détergents", name_ar: "مواد خام المنظفات والتنظيف",
         image_url: "/images/washing.png"
     },
     {
-        id: "yumusaticilar", slug: "yumusaticilar", domain: "textile",
-        name_tr: "Yumuşatıcılar", name_en: "Softeners",
-        name_fr: "Adoucissants", name_ar: "المنعمات",
-        image_url: "/images/softeners.png"
-    },
-    {
-        id: "enzimler", slug: "enzimler", domain: "textile",
-        name_tr: "Enzimler", name_en: "Enzymes",
-        name_fr: "Enzymes", name_ar: "الإنزيمات",
-        image_url: "/images/enzymes.png"
-    },
-    {
-        id: "apre", slug: "apre", domain: "textile",
-        name_tr: "Apre ve Terbiye", name_en: "Finishing Auxiliaries",
-        name_fr: "Auxiliaires de Finition", name_ar: "مساعدات التشطيب",
+        id: "kagit", slug: "kagit-ve-seluloz-kimyasallari", domain: "industrial",
+        name_tr: "Kağıt & Selüloz Kimyasalları", name_en: "Pulp & Paper Processing Chemicals",
+        name_fr: "Produits Chimiques pour Papier", name_ar: "كيماويات الورق والسيليلوز",
         image_url: "/images/finishing.png"
     },
     {
-        id: "baski", slug: "baski", domain: "textile",
-        name_tr: "Baskı Kimyasalları", name_en: "Printing Chemicals",
-        name_fr: "Produits d'Impression", name_ar: "كيماويات الطباعة",
-        image_url: "/images/dyeing.png"
-    },
-    {
-        id: "kopuk-kesici", slug: "kopuk-kesici", domain: "textile",
-        name_tr: "Köpük Kesiciler", name_en: "Antifoams & Defoamers",
-        name_fr: "Anti-mousse", name_ar: "مضادات الرغوة",
-        image_url: "/images/pretreatment.png"
-    },
-    {
-        id: "fiksatorler", slug: "fiksatorler", domain: "textile",
-        name_tr: "Fiksatörler", name_en: "Fixing Agents",
-        name_fr: "Agents de Fixation", name_ar: "عوامل التثبيت",
-        image_url: "/images/dyeing.png"
-    },
-    
-    // INDUSTRIAL CHEMICALS
-    {
-        id: "asitler-bazlar", slug: "asitler-bazlar", domain: "industrial",
-        name_tr: "Asitler ve Bazlar", name_en: "Acids & Bases",
-        name_fr: "Acides & Bases", name_ar: "الأحماض والقواعد",
-        image_url: "/images/pretreatment.png"
-    },
-    {
-        id: "solventler", slug: "solventler", domain: "industrial",
-        name_tr: "Solventler ve Çözücüler", name_en: "Solvents",
-        name_fr: "Solvants", name_ar: "المذيبات",
-        image_url: "/images/washing.png"
-    },
-    {
-        id: "tuzlar", slug: "tuzlar", domain: "industrial",
-        name_tr: "Tuzlar ve İnorganik Kimyasallar", name_en: "Salts & Inorganics",
-        name_fr: "Sels et Inorganiques", name_ar: "الأملاح والمواد غير العضوية",
-        image_url: "/images/softeners.png"
-    },
-    {
-        id: "aritma", slug: "aritma", domain: "water-treatment",
-        name_tr: "Arıtma Kimyasalları", name_en: "Water Treatment Chemicals",
-        name_fr: "Produits de Traitement de l'Eau", name_ar: "كيماويات معالجة المياه",
+        id: "aritma", slug: "su-ve-atisu-aritma-kimyasallari", domain: "industrial",
+        name_tr: "Su & Atıksu Arıtma Kimyasalları", name_en: "Water & Wastewater Treatment Chemicals",
+        name_fr: "Produits de Traitement de l'Eau", name_ar: "كيماويات معالجة المياه والصرف",
         image_url: "/images/water-treatment.png"
     },
     {
-        id: "tarim", slug: "tarim", domain: "industrial",
-        name_tr: "Tarım ve Gıda Kimyasalları", name_en: "Agro & Food Chemicals",
-        name_fr: "Produits Chimiques Agro & Alimentaires", name_ar: "الكيماويات الزراعية والغذائية",
-        image_url: "/images/finishing.png"
+        id: "tarim-gida", slug: "tarim-gida-ve-yem-kimyasallari", domain: "industrial",
+        name_tr: "Tarım, Gıda & Yem Kimyasalları", name_en: "Agro, Food & Feed Raw Materials",
+        name_fr: "Produits Chimiques Agro & Alimentaires", name_ar: "المواد الخام الزراعية والغذائية",
+        image_url: "/images/enzymes.png"
     },
+    {
+        id: "boya-solvent", slug: "boya-kaplama-ve-solventler", domain: "industrial",
+        name_tr: "Boya, Kaplama & Solventler", name_en: "Paints, Coatings & Solvents",
+        name_fr: "Peintures, Revêtements & Solvants", name_ar: "المذيبات والدهانات والطلاء",
+        image_url: "/images/dyeing.png"
+    },
+    {
+        id: "metal-yuzey", slug: "metal-ve-yuzey-islem-kimyasallari", domain: "industrial",
+        name_tr: "Metal & Yüzey İşlem Kimyasalları", name_en: "Metal & Surface Treatment Chemicals",
+        name_fr: "Traitement des Métaux et Surfaces", name_ar: "كيماويات معالجة المعالجة والسطوح",
+        image_url: "/images/pretreatment.png"
+    },
+
+    // TEXTILE SECTOR
+    {
+        id: "tekstil", slug: "tekstil-kimyasallari", domain: "textile",
+        name_tr: "Tekstil Kimyasalları & Yardımcıları", name_en: "Textile Auxiliaries & Finishing",
+        name_fr: "Auxiliaires Textiles & Finition", name_ar: "مساعدات النسيج والتشطيب",
+        image_url: "/images/softeners.png"
+    }
 ];
 
-
 // ═══════════════════════════════════════════════════
-// SUBGROUPS (Alt Gruplar)
+// SUBGROUPS (Sektörel Alt Gruplar)
 // ═══════════════════════════════════════════════════
 
 export const MOCK_SUBGROUPS: Subgroup[] = [
-    // — Industrial Raw Materials Subgroups —
+    // — Deterjan & Temizlik —
     {
-        id: "endustriyel-asitler", category_id: "asitler-bazlar", slug: "endustriyel-asitler", prefix: "GRO",
-        name_tr: "Endüstriyel Asitler", name_en: "Industrial Acids", name_fr: "Acides Industriels", name_ar: "الأحماض الصناعية"
+        id: "anyonik-surfaktanlar", category_id: "deterjan", slug: "anyonik-surfaktanlar", prefix: "GRO",
+        name_tr: "Anyonik Sürfaktanlar (LABSA, SLES)", name_en: "Anionic Surfactants (LABSA, SLES)", name_fr: "Tensioactifs Anioniques", name_ar: "المنشطات السطحية الأنيونية"
     },
     {
-        id: "endustriyel-bazlar", category_id: "asitler-bazlar", slug: "endustriyel-bazlar", prefix: "GRO",
-        name_tr: "Endüstriyel Bazlar & Alkaliler", name_en: "Industrial Bases & Alkalis", name_fr: "Bases Industrielles", name_ar: "القواعد الصناعية"
+        id: "dolgu-ve-sertlik-onleyiciler", category_id: "deterjan", slug: "dolgu-ve-sertlik-onleyiciler", prefix: "GRO",
+        name_tr: "Dolgu Maddeleri & Su Sertlik Önleyiciler", name_en: "Fillers & Water Softeners (Soda, STPP)", name_fr: "Agents de Charge et Adoucissants", name_ar: "مواد الحشو ومنعمات المياه"
     },
     {
-        id: "organik-solventler", category_id: "solventler", slug: "organik-solventler", prefix: "GRO",
-        name_tr: "Organik Çözücüler & Solventler", name_en: "Organic Solvents", name_fr: "Solvants Organiques", name_ar: "المذيبات العضوية"
-    },
-    {
-        id: "glikoller-alkoller", category_id: "solventler", slug: "glikoller-alkoller", prefix: "GRO",
-        name_tr: "Alkoller ve Glikoller", name_en: "Alcohols & Glycols", name_fr: "Alcools et Glycols", name_ar: "الكحول والجليكول"
-    },
-    {
-        id: "sodyum-bilesikleri", category_id: "tuzlar", slug: "sodyum-bilesikleri", prefix: "GRO",
-        name_tr: "Sodyum Bileşikleri & Tuzlar", name_en: "Sodium Compounds & Salts", name_fr: "Composés de Sodium", name_ar: "مركبات الصوديوم"
-    },
-    {
-        id: "gida-tarim-hammadde", category_id: "tarim", slug: "gida-tarim-hammadde", prefix: "GRO",
-        name_tr: "Gıda & Tarım Hammaddeleri", name_en: "Food & Agri Raw Materials", name_fr: "Matières Premières Agro-Alimentaires", name_ar: "مواد الأغذية والزراعة"
-    },
-    {
-        id: "antiscalant-kirec", category_id: "aritma", slug: "antiscalant-kirec", prefix: "Growat",
-        name_tr: "Kireç & Korozyon Önleyiciler (Antiscalant)", name_en: "Antiscalants & Corrosion Inhibitors", name_fr: "Anti-tartre et Inhibiteurs de Corrosion", name_ar: "مانعات الترسيب والتآكل"
+        id: "nonyonik-ve-yardimcilar", category_id: "deterjan", slug: "nonyonik-ve-yardimcilar", prefix: "GRO",
+        name_tr: "Nonyonik Sürfaktanlar & Köpük Düzenleyiciler", name_en: "Nonionic Surfactants & Foam Regulators", name_fr: "Tensioactifs Non-Ioniques", name_ar: "المنشطات السطحية غير الأنيونية"
     },
 
-    // — Ön İşlem —
+    // — Kağıt & Selüloz —
     {
-        id: "islaticilar", category_id: "on-islem", slug: "islaticilar", prefix: "Growet",
-        name_tr: "Islatıcılar", name_en: "Wetting Agents", name_fr: "Agents Mouillants", name_ar: "عوامل الترطيب"
+        id: "mukavemet-ve-baglayicilar", category_id: "kagit", slug: "mukavemet-ve-baglayicilar", prefix: "GRO",
+        name_tr: "Mukavemet Ajanları & Nişasta Derivatları", name_en: "Strength Agents & Starch Derivatives", name_fr: "Agents de Résistance et Amidon", name_ar: "عوامل القوة ومشتشقات النشاط"
     },
     {
-        id: "iyon-tutucular", category_id: "on-islem", slug: "iyon-tutucular", prefix: "Groseq",
-        name_tr: "İyon Tutucu & Şelatlama Ajanları", name_en: "Sequestering & Chelating Agents", name_fr: "Agents Séquestrants et Chélatants", name_ar: "عوامل العزل والمخلبة"
-    },
-    {
-        id: "stabilizatorler", category_id: "on-islem", slug: "stabilizatorler", prefix: "Grostab",
-        name_tr: "Peroksit Stabilizatörleri", name_en: "Peroxide Stabilizers", name_fr: "Stabilisateurs de Peroxyde", name_ar: "مثبتات البيروكسيد"
-    },
-    {
-        id: "yag-sokuculer", category_id: "on-islem", slug: "yag-sokuculer", prefix: "Grosol",
-        name_tr: "Yağ ve Leke Sökücüler", name_en: "Oil & Stain Removers", name_fr: "Détachants et Dégraissants", name_ar: "مزيلات الزيت والبقع"
-    },
-    {
-        id: "tampon-asitler", category_id: "on-islem", slug: "tampon-asitler", prefix: "Grocid",
-        name_tr: "Tampon Asitler", name_en: "Buffering Acids", name_fr: "Acides Tampons", name_ar: "أحماض عازلة"
+        id: "surec-yardimcilari", category_id: "kagit", slug: "surec-yardimcilari", prefix: "GRO",
+        name_tr: "Kağıt Süreç Yardımcıları & Alüm", name_en: "Paper Process Auxiliaries & Alum", name_fr: "Auxiliaires de Procédé Papier", name_ar: "مساعدات عمليات الورق"
     },
 
-    // — Boyama —
+    // — Su & Atıksu Arıtma —
     {
-        id: "dispergatorler", category_id: "boyama", slug: "dispergatorler", prefix: "Grogal",
-        name_tr: "Dispergatör & Egalizatörler", name_en: "Dispersing & Levelling Agents", name_fr: "Agents Dispersants et Égalisants", name_ar: "عوامل التشتت والمساواة"
+        id: "koagulan-ve-flokkulanlar", category_id: "aritma", slug: "koagulan-ve-flokkulanlar", prefix: "Growat",
+        name_tr: "Koagülanlar & Polimer Flokülanlar (PAC)", name_en: "Coagulants & Flocculants (PAC, Polymers)", name_fr: "Coagulants et Floculants", name_ar: "المخثرات والملمعات"
     },
     {
-        id: "dispers-yardimcilari", category_id: "boyama", slug: "dispers-yardimcilari", prefix: "Gropers",
-        name_tr: "Dispers Boya Yardımcıları", name_en: "Disperse Dyeing Auxiliaries", name_fr: "Auxiliaires de Teinture Dispersée", name_ar: "مساعدات الصباغة المشتتة"
-    },
-    {
-        id: "carrier", category_id: "boyama", slug: "carrier", prefix: "Grocarrier",
-        name_tr: "Carrier'lar", name_en: "Carriers", name_fr: "Carriers", name_ar: "الناقلات"
+        id: "renk-ve-kirec-giderme", category_id: "aritma", slug: "renk-ve-kirec-giderme", prefix: "Growat",
+        name_tr: "Renk Gidericiler & RO Antiscalantlar", name_en: "Color Removers & RO Antiscalants", name_fr: "Décolorants & Anti-Tartre RO", name_ar: "مزيلات اللون وموانع الترسيب"
     },
 
-    // — Yıkama —
+    // — Tarım, Gıda & Yem —
     {
-        id: "yikama-ajanlari", category_id: "yikama", slug: "yikama-ajanlari", prefix: "Growash",
-        name_tr: "Yıkama ve Sabunlama Ajanları", name_en: "Washing & Soaping Agents", name_fr: "Agents de Lavage et Savonnage", name_ar: "عوامل الغسيل والتصبين"
+        id: "gida-asitligi-ve-koruyucular", category_id: "tarim-gida", slug: "gida-asitligi-ve-koruyucular", prefix: "GRO",
+        name_tr: "Asitlik Düzenleyiciler & Koruyucular (Sitrik Asit)", name_en: "Acidulants & Preservatives (Citric Acid)", name_fr: "Acidifiants et Conservateurs", name_ar: "منظمات حموضة الأغذية والمواد الحافظة"
+    },
+    {
+        id: "gubre-ve-yem-kimyasallari", category_id: "tarim-gida", slug: "gubre-ve-yem-kimyasallari", prefix: "GRO",
+        name_tr: "Gübre & Yem Hammaddeleri (Üre, Fosforik Asit)", name_en: "Fertilizer & Feed Raw Materials (Urea, Phosphoric Acid)", name_fr: "Matières Premières pour Engrais", name_ar: "المواد الخام للأسمدة والأعلاف"
     },
 
-    // — Yumuşatıcılar —
+    // — Boya, Kaplama & Solventler —
     {
-        id: "silikon-yumusaticilar", category_id: "yumusaticilar", slug: "silikon-yumusaticilar", prefix: "Grosil",
-        name_tr: "Silikon Yumuşatıcılar", name_en: "Silicone Softeners", name_fr: "Adoucissants Siliconés", name_ar: "منعمات السيليكون"
+        id: "organik-solventler", category_id: "boya-solvent", slug: "organik-solventler", prefix: "GRO",
+        name_tr: "Organik Çözücüler (Aseton, Toluon, Ksilen)", name_en: "Organic Solvents (Acetone, Toluene, Xylene)", name_fr: "Solvants Organiques", name_ar: "المذيبات العضوية"
     },
     {
-        id: "silikonsuz-yumusaticilar", category_id: "yumusaticilar", slug: "silikonsuz-yumusaticilar", prefix: "Grosoft",
-        name_tr: "Silikonsuz Yumuşatıcılar", name_en: "Non-Silicone Softeners", name_fr: "Adoucissants Non-Siliconés", name_ar: "منعمات بدون سيليكون"
-    },
-
-    // — Enzimler —
-    {
-        id: "enzim-cesitleri", category_id: "enzimler", slug: "enzim-cesitleri", prefix: "Grozyme",
-        name_tr: "Tekstil Enzimleri", name_en: "Textile Enzymes", name_fr: "Enzymes Textiles", name_ar: "إنزيمات النسيج"
+        id: "alkoller-ve-glikoller", category_id: "boya-solvent", slug: "alkoller-ve-glikoller", prefix: "GRO",
+        name_tr: "Alkoller & Glikoller (IPA, MEG, DEG)", name_en: "Alcohols & Glycols (IPA, MEG, DEG)", name_fr: "Alcools et Glycols", name_ar: "الكحول والجليكول"
     },
 
-    // — Apre —
+    // — Metal & Yüzey İşlem —
     {
-        id: "kenar-kolalar", category_id: "apre", slug: "kenar-kolalar", prefix: "Grofab",
-        name_tr: "Kenar Kolalar", name_en: "Edge Hardeners", name_fr: "Durcisseurs de Bords", name_ar: "مقويات الحواف"
+        id: "endustriyel-asitler", category_id: "metal-yuzey", slug: "endustriyel-asitler", prefix: "GRO",
+        name_tr: "Endüstriyel Mineral Asitler (HCL, H2SO4, HNO3)", name_en: "Industrial Mineral Acids (HCl, H2SO4, HNO3)", name_fr: "Acides Minéraux Industriels", name_ar: "الأحماض المعدنية الصناعية"
     },
     {
-        id: "fonksiyonel-apreler", category_id: "apre", slug: "fonksiyonel-apreler", prefix: "Grofix",
-        name_tr: "Fonksiyonel Apreler", name_en: "Functional Finishes", name_fr: "Finitions Fonctionnelles", name_ar: "التشطيبات الوظيفية"
-    },
-    {
-        id: "antistatik", category_id: "apre", slug: "antistatik", prefix: "Grostat",
-        name_tr: "Antistatik Ajanlar", name_en: "Antistatic Agents", name_fr: "Agents Antistatiques", name_ar: "عوامل مضادة للكهرباء الساكنة"
+        id: "yag-ve-pas-sokuculer", category_id: "metal-yuzey", slug: "yag-ve-pas-sokuculer", prefix: "GRO",
+        name_tr: "Yağ Sökücüler & Yüzey Hazırlama", name_en: "Degreasers & Surface Cleaners", name_fr: "Dégraissants & Nettoyants de Surface", name_ar: "مزيلات الدهون وتنظيف السطوح"
     },
 
-    // — Arıtma —
+    // — Tekstil —
     {
-        id: "flokkulan-koagulan", category_id: "aritma", slug: "flokkulan-koagulan", prefix: "Growat",
-        name_tr: "Flokülasyon & Koagülasyon", name_en: "Flocculation & Coagulation", name_fr: "Floculation et Coagulation", name_ar: "التلبد والتخثر"
+        id: "on-islem-ve-boyama", category_id: "tekstil", slug: "on-islem-ve-boyama", prefix: "Growet",
+        name_tr: "Ön İşlem & Boyama Yardımcıları", name_en: "Pre-Treatment & Dyeing Auxiliaries", name_fr: "Prétraitement & Teinture", name_ar: "المعالجة المسبقة والصباغة"
     },
     {
-        id: "renk-giderme", category_id: "aritma", slug: "renk-giderme", prefix: "Growat",
-        name_tr: "Renk Giderme & Dekolorizasyon", name_en: "Color Removal & Decolorization", name_fr: "Élimination de la Couleur", name_ar: "إزالة اللون"
-    },
-
-    // — Baskı —
-    {
-        id: "pigment-baski", category_id: "baski", slug: "pigment-baski", prefix: "Groprint",
-        name_tr: "Pigment Baskı Yardımcıları", name_en: "Pigment Printing Auxiliaries", name_fr: "Auxiliaires d'Impression Pigmentaire", name_ar: "مساعدات الطباعة الصبغية"
-    },
-    {
-        id: "reaktif-baski", category_id: "baski", slug: "reaktif-baski", prefix: "Groprint",
-        name_tr: "Reaktif Baskı Yardımcıları", name_en: "Reactive Printing Auxiliaries", name_fr: "Auxiliaires d'Impression Réactive", name_ar: "مساعدات الطباعة التفاعلية"
-    },
-
-    // — Köpük Kesici —
-    {
-        id: "silikon-kopuk-kesici", category_id: "kopuk-kesici", slug: "silikon-kopuk-kesici", prefix: "Grofoam",
-        name_tr: "Silikon Bazlı Köpük Kesiciler", name_en: "Silicone-Based Antifoams", name_fr: "Anti-mousse à Base de Silicone", name_ar: "مضادات رغوة سيليكونية"
-    },
-    {
-        id: "mineral-kopuk-kesici", category_id: "kopuk-kesici", slug: "mineral-kopuk-kesici", prefix: "Grofoam",
-        name_tr: "Mineral Bazlı Köpük Kesiciler", name_en: "Mineral-Based Antifoams", name_fr: "Anti-mousse à Base Minérale", name_ar: "مضادات رغوة معدنية"
-    },
-
-    // — Fiksatörler —
-    {
-        id: "renk-fiksatorleri", category_id: "fiksatorler", slug: "renk-fiksatorleri", prefix: "Grofiks",
-        name_tr: "Renk Fiksatörleri", name_en: "Color Fixing Agents", name_fr: "Agents de Fixation de Couleur", name_ar: "عوامل تثبيت اللون"
-    },
+        id: "yumusatici-ve-apre", category_id: "tekstil", slug: "yumusatici-ve-apre", prefix: "Grosoft",
+        name_tr: "Yumuşatıcılar & Apre Kimyasalları", name_en: "Softeners & Finishing Agents", name_fr: "Adoucissants & Finitions", name_ar: "المنعمات ومواد التشطيب"
+    }
 ];
 
-
 // ═══════════════════════════════════════════════════
-// PRODUCTS (Ürünler)
+// PRODUCTS (Sektörel Ürün Portföyü)
 // ═══════════════════════════════════════════════════
 
 export const MOCK_PRODUCTS: Product[] = [
-    // — Industrial Products —
+    // --- DETERJAN & TEMİZLİK ---
     {
-        id: "ind-1", category_id: "asitler-bazlar", subgroup_id: "endustriyel-asitler", slug: "sulfurik-asit-98",
-        name: "Sulfuric Acid 98%", ionic_type: undefined,
-        title_tr: "Sülfürik Asit %98 (H2SO4)", title_en: "Sulfuric Acid 98% (H2SO4)",
-        title_fr: "Acide Sulfurique 98%", title_ar: "حمض الكبريتيك 98%",
-        description_tr: "Yüksek saflıkta, ağır sanayi, gübre, metal ve kimyasal sentez süreçlerinde yaygın olarak kullanılan konsantre teknik mineral asit.",
-        description_en: "High-purity concentrated mineral acid widely used in heavy industry, fertilizer manufacturing, metal processing, and chemical synthesis.",
-        description_fr: "Acide minéral concentré de haute pureté largement utilisé dans l'industrie lourde, les engrais et le traitement des métaux.",
-        description_ar: "حمض معدني مركز عالي النقاء يستخدم على نطاق واسع في الصناعات الثقيلة وتصنيع الأسمدة لمعالجة المعادن.",
-        image_url: "/images/pretreatment.png", is_featured: true
-    },
-    {
-        id: "ind-2", category_id: "asitler-bazlar", subgroup_id: "endustriyel-asitler", slug: "formik-asit-85",
-        name: "Formic Acid 85%", ionic_type: undefined,
-        title_tr: "Formik Asit %85 (HCOOH)", title_en: "Formic Acid 85% (HCOOH)",
-        title_fr: "Acide Formique 85%", title_ar: "حمض الفورميك 85%",
-        description_tr: "Tekstil terbiye, deri işleme, kauçuk pıhtılaştırma ve kimyasal hammadde olarak kullanılan güçlü organik asit.",
-        description_en: "Strong organic acid utilized in textile finishing, leather tanning, rubber coagulation, and intermediate chemical synthesis.",
-        description_fr: "Acide organique fort utilisé dans la finition textile, le tannage du cuir et la coagulation du caoutchouc.",
-        description_ar: "حمض عضوي قوي يستخدم في تشطيب النسيج ودباغة الجلود وتخثير المطاط.",
-        image_url: "/images/pretreatment.png", is_featured: false
-    },
-    {
-        id: "ind-3", category_id: "asitler-bazlar", subgroup_id: "endustriyel-asitler", slug: "asetik-asit-buzlu",
-        name: "Glacial Acetic Acid 99.8%", ionic_type: undefined,
-        title_tr: "Buzlu Asetik Asit %99.8", title_en: "Glacial Acetic Acid 99.8%",
-        title_fr: "Acide Acétique Glacial 99.8%", title_ar: "حمض الخليك الجليدي 99.8%",
-        description_tr: "Yüksek saflıkta, pH ayarlayıcı, boyama tamponlayıcı ve kimyasal sentez hammaddesi olarak kullanılan asetik asit.",
-        description_en: "High-purity technical grade acetic acid used as a pH regulator, dyeing buffer, and chemical precursor.",
-        description_fr: "Acide acétique de haute pureté utilisé comme régulateur de pH et tampon de teinture.",
-        description_ar: "حمض الخليك الدرجة الفنية عالي النقاء المستخدم كمنظم للرقم الهيدروجيني.",
-        image_url: "/images/pretreatment.png", is_featured: true
-    },
-    {
-        id: "ind-4", category_id: "asitler-bazlar", subgroup_id: "endustriyel-bazlar", slug: "kostik-soda-boncuk",
-        name: "Caustic Soda Pearls 99%", ionic_type: undefined,
-        title_tr: "Kostik Soda Boncuk / Sodyum Hidroksit %99", title_en: "Caustic Soda Pearls 99% (NaOH)",
-        title_fr: "Soude Caustique en Perles 99%", title_ar: "الصودا الكاوية الحبيبات 99%",
-        description_tr: "Sabun, deterjan, su arıtma, kağıt ve tekstil merserize süreçlerinde temel bazik hammadde olarak kullanılan saf sodyum hidroksit.",
-        description_en: "Pure sodium hydroxide pearls used as an essential basic raw material in soaps, detergents, water treatment, and paper manufacturing.",
-        description_fr: "Perles de soude caustique pure utilisées dans la fabrication de savons, détergents et le traitement de l'eau.",
-        description_ar: "حبيبات هيدروكسيد الصوديوم النقية المستخدمة كعادة أساسية في الصابون والمنظفات ومعالجة المياه.",
-        image_url: "/images/pretreatment.png", is_featured: true
-    },
-    {
-        id: "ind-5", category_id: "asitler-bazlar", subgroup_id: "endustriyel-asitler", slug: "hidroklorik-asit-33",
-        name: "Hydrochloric Acid 33%", ionic_type: undefined,
-        title_tr: "Hidroklorik Asit %33 (Tuz Ruhu / HCl)", title_en: "Hydrochloric Acid 33% (HCl)",
-        title_fr: "Acide Chlorhydrique 33%", title_ar: "حمض الهيدروكلوريك 33%",
-        description_tr: "Metal yüzey temizleme, pH düşürme ve su arıtma süreçlerinde kullanılan güçlü inorganik mineral asit.",
-        description_en: "Strong inorganic mineral acid used for metal pickling, pH adjustment, and industrial water treatment.",
-        description_fr: "Acide minéral inorganique fort utilisé pour le décapage des métaux et l'ajustement du pH.",
-        description_ar: "حمض معدني غير عضوي قوي يستخدم لتنظيف المعادن وضبط الرقم الهيدروجيني.",
-        image_url: "/images/pretreatment.png", is_featured: false
-    },
-    {
-        id: "ind-6", category_id: "solventler", subgroup_id: "organik-solventler", slug: "aseton-pure",
-        name: "Acetone Pure Grade", ionic_type: undefined,
-        title_tr: "Aseton (Saf / Teknik Grade)", title_en: "Acetone (Pure / Technical Grade)",
-        title_fr: "Acétone Pur", title_ar: "الأسيتون النقي",
-        description_tr: "Boya, reçine, yapıştırıcı ve kimyasal ekstraksiyon süreçlerinde hızlı buharlaşan güçlü organik solvent.",
-        description_en: "Fast-evaporating powerful organic solvent used in paints, resins, adhesives, and chemical extraction.",
-        description_fr: "Solvant organique puissant à évaporation rapide utilisé dans les peintures, résines et adhésifs.",
-        description_ar: "مذيب عضوي قوي سريع التبخر يستخدم في الطلاء والراتنجات والمواد اللاصقة.",
+        id: "det-1", category_id: "deterjan", subgroup_id: "anyonik-surfaktanlar", slug: "labsa-linear-alkil-benzen-sulfonik-asit",
+        name: "LABSA 96% (Linear Alkylbenzene Sulfonic Acid)", cas_number: "27176-87-0", ionic_type: "anionic",
+        title_tr: "LABSA %96 (Lineer Alkil Benzen Sülfonik Asit)", title_en: "LABSA 96% (Linear Alkylbenzene Sulfonic Acid)",
+        title_fr: "LABSA 96% (Acide Alkylbenzène Sulfonique)", title_ar: "حمض ألبا 96% (حمض سلفونيك بنزين ألكيل خطي)",
+        description_tr: "Toz ve sıvı deterjanlar, bulaşık deterjanları ve endüstriyel temizleyicilerin ana köpük ve ana aktif maddesi.",
+        description_en: "Primary active foaming and cleaning agent used in powder/liquid detergents and industrial cleaning formulations.",
+        description_fr: "Matière active principale utilisée dans la fabrication de détergents en poudre et liquides.",
+        description_ar: "المادة الفعالة الرئيسية الرغوية والمنظفة في مساحيق ومنظفات الغسيل والمنظفات الصناعية.",
         image_url: "/images/washing.png", is_featured: true
     },
     {
-        id: "ind-7", category_id: "solventler", subgroup_id: "glikoller-alkoller", slug: "izopropil-alkol-ipa",
-        name: "Isopropanol (IPA) 99.9%", ionic_type: undefined,
-        title_tr: "İzopropil Alkol (IPA) %99.9", title_en: "Isopropanol (IPA) 99.9%",
-        title_fr: "Alcool Isopropylique (IPA) 99.9%", title_ar: "كحول الأيزوبروبيل 99.9%",
-        description_tr: "Dezenfektan, kozmetik, elektronik ve yüzey temizleyicilerde kullanılan yüksek saflıkta susuz alkol.",
-        description_en: "High-purity anhydrous alcohol widely used in disinfectants, cosmetics, electronics cleaning, and pharmaceuticals.",
-        description_fr: "Alcool anhydre de haute pureté utilisé dans les désinfectants, cosmétiques et l'électronique.",
-        description_ar: "كحول لا مائي عالي النقاء يستخدم في المطهرات والمستحضرات التجميلية وتنظيف الإلكترونيات.",
+        id: "det-2", category_id: "deterjan", subgroup_id: "anyonik-surfaktanlar", slug: "sles-sodyum-lauril-eter-sulfat-70",
+        name: "SLES 70% (Sodium Lauryl Ether Sulfate)", cas_number: "68891-38-3", ionic_type: "anionic",
+        title_tr: "SLES %70 (Sodyum Lauril Eter Sülfat)", title_en: "SLES 70% (Sodium Lauryl Ether Sulfate)",
+        title_fr: "SLES 70% (Lauryl Éther Sulfate de Sodium)", title_ar: "SLES 70% (كبريتات إيثر لوريل الصوديوم)",
+        description_tr: "Şampuan, duş jeli, bulaşık deterjanı ve evsel temizlik ürünlerinde yüksek köpürme ve temizleme sağlayan sürfaktan.",
+        description_en: "High-foaming primary surfactant widely used in shampoos, body washes, dishwashing liquids, and household cleaners.",
+        description_fr: "Tensioactif primaire à fort pouvoir moussant utilisé dans les shampooings et détergents vaisselle.",
+        description_ar: "مادة خافضة للتوتر السطحي عالي الرغوة تستخدم في الشامبو وسوائل غسيل الأواني.",
         image_url: "/images/washing.png", is_featured: true
     },
     {
-        id: "ind-8", category_id: "solventler", subgroup_id: "glikoller-alkoller", slug: "mono-etilen-glikol-meg",
-        name: "Monoethylene Glycol (MEG)", ionic_type: undefined,
-        title_tr: "Mono Etilen Glikol (MEG)", title_en: "Monoethylene Glycol (MEG)",
-        title_fr: "Mono Éthylène Glycol (MEG)", title_ar: "أحادية إيثيلين جلايكول",
-        description_tr: "Antifriz, polyester elyaf, reçine ve nem tutucu formülasyonlarda yaygın kullanılan şeffaf glikol.",
-        description_en: "Clear glycol raw material used extensively in antifreeze formulations, polyester fibers, resins, and humectants.",
-        description_fr: "Matière première glycol utilisée dans les antigels, les fibres polyester et les résines.",
-        description_ar: "مادة خام جلايكول تستخدم على نطاق واسع في سائل منع التجمد وألياف البوليستر والراتنجات.",
+        id: "det-3", category_id: "deterjan", subgroup_id: "dolgu-ve-sertlik-onleyiciler", slug: "stpp-sodyum-tripolifosfat",
+        name: "STPP (Sodium Tripolyphosphate Tech Grade)", cas_number: "7758-29-4", ionic_type: undefined,
+        title_tr: "STPP (Sodyum Tripolifosfat Teknik)", title_en: "STPP (Sodium Tripolyphosphate Tech Grade)",
+        title_fr: "STPP (Tripolyphosphate de Sodium)", title_ar: "ثلاثي بوليفوسفات الصوديوم (STPP)",
+        description_tr: "Deterjan formülasyonlarında su sertliğini bağlayan, kirin tekrar çökmesini önleyen builders (yapılandırıcı) hammadde.",
+        description_en: "Essential detergent builder salt that sequesters hard water ions and prevents soil anti-redeposition.",
+        description_fr: "Sel builder essentiel qui séquestre les ions de l'eau dure dans les détergents.",
+        description_ar: "ملح بناء منظف أساسي ينقي أيونات الماء الصلب ويمنع إعاجة ترسيب الأوساخ.",
         image_url: "/images/washing.png", is_featured: false
     },
     {
-        id: "ind-9", category_id: "tuzlar", subgroup_id: "sodyum-bilesikleri", slug: "sodyum-sulfat-anhidrus",
-        name: "Sodium Sulfate Anhydrous 99%", ionic_type: undefined,
-        title_tr: "Sodyum Sülfat Anhidrus %99", title_en: "Sodium Sulfate Anhydrous 99%",
-        title_fr: "Sulfate de Sodium Anhydre 99%", title_ar: "كبريتات الصوديوم اللامائية 99%",
-        description_tr: "Deterjan, cam, tekstil boyama ve kağıt sanayiinde dolgu ve nötralleştirici olarak kullanılan inorganik tuz.",
-        description_en: "Inorganic salt used as a filler and dyeing leveling agent in detergents, glass, textiles, and paper industries.",
-        description_fr: "Sel inorganique utilisé comme agent de remplissage dans les détergents, le verre et la teinture textile.",
-        description_ar: "ملح غير عضوي يستخدم كمادة حشو وعامل مساواة الصباغة في المنظفات والزجاج والنسيج.",
+        id: "det-4", category_id: "deterjan", subgroup_id: "dolgu-ve-sertlik-onleyiciler", slug: "soda-kulu-hafif-sodyum-karbonat",
+        name: "Soda Ash Light (Sodium Carbonate)", cas_number: "497-19-8", ionic_type: undefined,
+        title_tr: "Soda Külü Hafif (Sodyum Karbonat)", title_en: "Soda Ash Light (Sodium Carbonate)",
+        title_fr: "Cendre de Soude Légère", title_ar: "رماد الصودا الخفيف (كربونات الصوديوم)",
+        description_tr: "Deterjan tozu üretiminde alkali sağlayıcı, su yumuşatıcı ve pH aralığı düzenleyici temel mineral tuz.",
+        description_en: "Core mineral salt acting as an alkalinity builder, water softener, and pH regulator in detergent manufacturing.",
+        description_fr: "Sel minéral de base agissant comme régulateur d'alcalinité et adoucissant d'eau dans les détergents.",
+        description_ar: "ملح معدني أساسي يعمل كبناء قلوي ومنعم للمياه ومنظم للرقم الهيدروجيني.",
         image_url: "/images/softeners.png", is_featured: true
     },
+
+    // --- KAĞIT & SELÜLOZ ---
     {
-        id: "ind-10", category_id: "tuzlar", subgroup_id: "sodyum-bilesikleri", slug: "sodyum-karbonat-soda-kulu",
-        name: "Sodium Carbonate (Soda Ash)", ionic_type: undefined,
-        title_tr: "Sodyum Karbonat (Soda Külü Hafif / Yoğun)", title_en: "Sodium Carbonate (Soda Ash Light / Dense)",
-        title_fr: "Carbonate de Sodium (Cendre de Soude)", title_ar: "كربونات الصوديوم (رماد الصودا)",
-        description_tr: "Cam üretimi, su yumuşatma, deterjan ve tekstil banyolarında alkali sağlayıcı olarak kullanılan soda külü.",
-        description_en: "Soda ash utilized in glass manufacturing, water softening, detergents, and alkaline textile dye baths.",
-        description_fr: "Cendre de soude utilisée dans la fabrication du verre, l'adoucissement de l'eau et les détergents.",
-        description_ar: "رماد الصودا المستخدم في تصنيع الزجاج وتنعيم المياه والمنظفات وحمامات صباغة النسيج.",
-        image_url: "/images/softeners.png", is_featured: false
-    },
-    {
-        id: "ind-11", category_id: "tarim", subgroup_id: "gida-tarim-hammadde", slug: "sitrik-asit-anhidrus",
-        name: "Citric Acid Anhydrous / Mono", ionic_type: undefined,
-        title_tr: "Sitrik Asit Monohidrat / Anhidrus", title_en: "Citric Acid Monohydrate / Anhydrous",
-        title_fr: "Acide Citrique Monohydraté / Anhydre", title_ar: "حمض الستريك أحادي الهيدرات",
-        description_tr: "Gıda koruyucusu, içecek asitliği ayarlayıcı, temizlik ve tarım sektöründe şelat maddesi olarak kullanılan organik asit.",
-        description_en: "Organic acid used as a food preservative, beverage acidulant, cleaning agent, and agricultural chelating agent.",
-        description_fr: "Acide organique utilisé comme conservateur alimentaire, acidifiant de boisson et agent de nettoyage.",
-        description_ar: "حمض عضوي يستخدم كمادة حافظة غذائية ومحمض للمشروبات وعامل تنظيف.",
+        id: "pap-1", category_id: "kagit", subgroup_id: "mukavemet-ve-baglayicilar", slug: "katyonik-nisasta-kagit-grade",
+        name: "Cationic Starch (Paper Grade)", cas_number: "9063-38-1", ionic_type: "cationic",
+        title_tr: "Katyonik Nişasta (Kağıt Mukavemet Grade)", title_en: "Cationic Starch (Paper Strength Grade)",
+        title_fr: "Amidon Cationique (Grade Papier)", title_ar: "النشا الكاتيوني (درجة قوة الورق)",
+        description_tr: "Kağıt hamuru üretiminde Kuru Mukavemet artırıcı, dolgu maddesi tutucu ve yüzey kalitesi geliştirici nişasta derivatı.",
+        description_en: "Cationic starch derivative boosting dry strength, filler retention, and surface printability in paper mills.",
+        description_fr: "Dérivé d'amidon cationique améliorant la résistance à sec et la rétention de charge dans la pâte à papier.",
+        description_ar: "مشتق النشا الكاتيوني الذي يعزز القوة الجافة واحتفاظ المواد الحاشية في مصانع الورق.",
         image_url: "/images/finishing.png", is_featured: true
     },
     {
-        id: "ind-12", category_id: "tarim", subgroup_id: "gida-tarim-hammadde", slug: "ure-teknik-grade",
-        name: "Urea Technical Grade 46% N", ionic_type: undefined,
-        title_tr: "Üre %46 N (Teknik & Tarımsal Grade)", title_en: "Urea 46% N (Technical & Agricultural Grade)",
-        title_fr: "Urée 46% N (Grade Technique & Agricole)", title_ar: "اليوريا 46% نتروجين",
-        description_tr: "Reçine, AdBlue üretimi, tekstil baskı ve gübre sektöründe kullanılan yüksek azotlu inorganik bileşik.",
-        description_en: "High-nitrogen compound used in resins, AdBlue production, textile printing pastes, and agricultural fertilizers.",
-        description_fr: "Composé hautement azoté utilisé dans les résines, la production d'AdBlue et les engrais.",
-        description_ar: "مركب عالي النيتروجين يستخدم في الراتنجات وإنتاج AdBlue والطباعة النسيجية والأسمدة.",
+        id: "pap-2", category_id: "kagit", subgroup_id: "surec-yardimcilari", slug: "aluminyum-sulfat-ulum-kagit",
+        name: "Aluminium Sulfate 17% (Paper Alum)", cas_number: "10043-01-3", ionic_type: undefined,
+        title_tr: "Alüminyum Sülfat %17 (Kağıtçı Alümü)", title_en: "Aluminium Sulfate 17% (Paper Maker's Alum)",
+        title_fr: "Sulfate d'Aluminium 17% (Alun)", title_ar: "كبريتات الألومنيوم 17% (الشبة)",
+        description_tr: "Kağıt üretiminde reçine tutkallaması (sizing), pH kontrolü ve дренаж (su süzme) kolaylaştırıcı inorganik tuz.",
+        description_en: "Essential inorganic coagulant used for rosin sizing, pH control, and drainage improvement in paper machines.",
+        description_fr: "Coagulant inorganique essentiel utilisé pour le collage à la colophane et le contrôle du pH.",
+        description_ar: "مخثر غير عضوي أساسي يستخدم للتحجيم بالراتنج والتحكم في الرقم الهيدروجيني في صناعة الورق.",
         image_url: "/images/finishing.png", is_featured: false
     },
+
+    // --- SU & ATIKSU ARITMA ---
     {
-        id: "ind-13", category_id: "aritma", subgroup_id: "antiscalant-kirec", slug: "growat-asc-100",
-        name: "Growat ASC-100", ionic_type: "anionic",
-        title_tr: "RO Antiscalant & Kireç Önleyici Konsantre", title_en: "Reverse Osmosis Antiscalant Concentrate",
-        title_fr: "Antitartre pour Osmose Inverse", title_ar: "مانع الترسيب لأجهزة التناضح العكسي",
-        description_tr: "Ters osmoz (RO) membranlarında kalsiyum sülfat ve silis birikimini engelleyen yüksek performanslı antiscalant.",
-        description_en: "High-performance reverse osmosis (RO) membrane antiscalant preventing calcium carbonate, sulfate, and silica scaling.",
-        description_fr: "Antitartre haute performance pour membranes d'osmose inverse évitant l'entartrage par le carbonate de calcium.",
-        description_ar: "مانع ترسيب عالي الأداء لأغشية التناضح العكسي يمنع كربونات الكالسيوم والسليكا.",
+        id: "wat-1", category_id: "aritma", subgroup_id: "koagulan-ve-flokkulanlar", slug: "poli-aluminyum-klorur-pac-30",
+        name: "Polyaluminium Chloride (PAC 30%)", cas_number: "1327-41-9", ionic_type: "cationic",
+        title_tr: "Polialüminyum Klorür (PAC %30 İçme & Atıksu)", title_en: "Polyaluminium Chloride (PAC 30% Powder)",
+        title_fr: "Chlorure de Polyaluminium (PAC 30%)", title_ar: "كلوريد البولي ألومنيوم (PAC 30%)",
+        description_tr: "İçme suyu ve endüstriyel atıksu arıtımında yüksek hızlı çökeltme ve berraklaştırma sağlayan inorganik koagülan.",
+        description_en: "High-efficiency inorganic coagulant providing rapid flocs formation and clarification in drinking and industrial wastewater.",
+        description_fr: "Coagulant inorganique haute performance assurant une floculation rapide et la clarification de l'eau.",
+        description_ar: "مخثر غير عضوي عالي الكفاءة يضمن التكتل السريع وتصفية المياه في مياه الشرب والصرف.",
         image_url: "/images/water-treatment.png", is_featured: true
     },
-
-
-    // ──────────────────────────────────────────────
-    // ÖN İŞLEM → Islatıcılar (Growet)
-    // ──────────────────────────────────────────────
     {
-        id: "1", category_id: "on-islem", subgroup_id: "islaticilar", slug: "growet-elf",
-        name: "Growet ELF", ionic_type: "nonionic",
-        title_tr: "Growet ELF", title_en: "Growet ELF", title_fr: "Growet ELF", title_ar: "Growet ELF",
-        description_tr: "Noniyonik ıslatıcı. Kasar, ağartma ve yıkama proseslerinde yüksek verimlilik.",
-        description_en: "Nonionic wetting agent. High efficiency in scouring, bleaching and washing processes.",
-        description_fr: "Agent mouillant non ionique. Haute efficacité dans les procédés de débouillissage et blanchiment.",
-        description_ar: "عامل ترطيب غير أيوني. كفاءة عالية في عمليات الغلي والتبييض والغسيل.",
-        image_url: "/images/pretreatment.png", is_featured: true
+        id: "wat-2", category_id: "aritma", subgroup_id: "koagulan-ve-flokkulanlar", slug: "anyonik-polielektrolit-flokkulan",
+        name: "Anionic Polyelectrolyte Flocculant", cas_number: "9003-05-8", ionic_type: "anionic",
+        title_tr: "Anyonik Polielektrolit (Toz Flokülan)", title_en: "Anionic Polyelectrolyte (Powder Flocculant)",
+        title_fr: "Polyélectrolyte Anionique en Poudre", title_ar: "بوليمر أنيوني (ملمع كيميائي)",
+        description_tr: "Maden, tekstil ve mermer atıksularında çamur susuzlaştırma ve hızlı katı-sıvı ayrıştırması sağlayan yüksek moleküler ağırlıklı polimer.",
+        description_en: "High molecular weight acrylamide polymer for sludge dewatering and rapid solid-liquid separation in mining and industrial effluents.",
+        description_fr: "Polymère de haut poids moléculaire pour la déshydratation des boues et la séparation solide-liquide.",
+        description_ar: "بوليمر عالي الوزن الجزيئي لتجفيف الحمأة والفصل السريع بين الصلب والسائل في الفضلات الصناعية.",
+        image_url: "/images/water-treatment.png", is_featured: true
     },
     {
-        id: "2", category_id: "on-islem", subgroup_id: "islaticilar", slug: "growet-cmb",
-        name: "Growet CMB", ionic_type: "nonionic",
-        title_tr: "Growet CMB", title_en: "Growet CMB", title_fr: "Growet CMB", title_ar: "Growet CMB",
-        description_tr: "Noniyonik kombin kasar ıslatıcısı. Tek banyoda ıslatma ve yağ sökme.",
-        description_en: "Nonionic combined scouring wetting agent. Single-bath wetting and degreasing.",
-        description_fr: "Agent mouillant combiné non ionique pour débouillissage.",
-        description_ar: "عامل ترطيب مشترك غير أيوني للغلي.",
-        image_url: "/images/pretreatment.png", is_featured: false
-    },
-    {
-        id: "3", category_id: "on-islem", subgroup_id: "islaticilar", slug: "growet-lfn",
-        name: "Growet LFN", ionic_type: "nonionic",
-        title_tr: "Growet LFN", title_en: "Growet LFN", title_fr: "Growet LFN", title_ar: "Growet LFN",
-        description_tr: "Düşük köpüklü noniyonik ıslatıcı. Jet boyama makineleri için ideal.",
-        description_en: "Low-foaming nonionic wetting agent. Ideal for jet dyeing machines.",
-        description_fr: "Agent mouillant non ionique à faible mousse. Idéal pour machines jet.",
-        description_ar: "عامل ترطيب غير أيوني منخفض الرغوة. مثالي لآلات الصباغة النفاثة.",
-        image_url: "/images/pretreatment.png", is_featured: false
-    },
-    {
-        id: "4", category_id: "on-islem", subgroup_id: "islaticilar", slug: "growet-anx",
-        name: "Growet ANX", ionic_type: "anionic",
-        title_tr: "Growet ANX", title_en: "Growet ANX", title_fr: "Growet ANX", title_ar: "Growet ANX",
-        description_tr: "Anyonik ıslatıcı. Alkali ortamlarda yüksek ıslatma performansı.",
-        description_en: "Anionic wetting agent. Excellent wetting performance in alkaline conditions.",
-        description_fr: "Agent mouillant anionique. Excellentes performances en milieu alcalin.",
-        description_ar: "عامل ترطيب أنيوني. أداء ترطيب ممتاز في الظروف القلوية.",
-        image_url: "/images/pretreatment.png", is_featured: false
-    },
-    {
-        id: "5", category_id: "on-islem", subgroup_id: "islaticilar", slug: "growet-hts",
-        name: "Growet HTS", ionic_type: "anionic",
-        title_tr: "Growet HTS", title_en: "Growet HTS", title_fr: "Growet HTS", title_ar: "Growet HTS",
-        description_tr: "Anyonik ıslatıcı. Yüksek sıcaklık stabilitesi, HT proseslere uygun.",
-        description_en: "Anionic wetting agent. High temperature stability, suitable for HT processes.",
-        description_fr: "Agent mouillant anionique. Stabilité haute température, pour procédés HT.",
-        description_ar: "عامل ترطيب أنيوني. ثبات درجات الحرارة العالية.",
-        image_url: "/images/pretreatment.png", is_featured: false
+        id: "wat-3", category_id: "aritma", subgroup_id: "renk-ve-kirec-giderme", slug: "growat-asc-100-antiscalant",
+        name: "Growat ASC-100 (RO Membrane Antiscalant)", cas_number: "37971-36-1", ionic_type: "anionic",
+        title_tr: "Growat ASC-100 (Ters Osmoz Antiscalant)", title_en: "Growat ASC-100 (Reverse Osmosis Antiscalant)",
+        title_fr: "Growat ASC-100 (Anti-Tartre RO)", title_ar: "Growat ASC-100 (مانع ترسيب الأغشية)",
+        description_tr: "Ters osmoz (RO) membranlarında kalsiyum sülfat, karbonat ve silis kireçlenmesini %100 önleyen sıvı antiscalant.",
+        description_en: "Liquid antiscalant formulation preventing calcium carbonate, sulfate, and silica scaling on Reverse Osmosis (RO) membranes.",
+        description_fr: "Formulation anti-tartre liquide empêchant l'entartrage par le carbonate de calcium sur les membranes d'osmose inverse.",
+        description_ar: "تركيبة مائعة مانعة للترسيب تمنع تكتل كربونات الكالسيوم والسليكا على أغشية التناضح العكسي.",
+        image_url: "/images/water-treatment.png", is_featured: false
     },
 
-    // ──────────────────────────────────────────────
-    // ÖN İŞLEM → İyon Tutucular (Groseq)
-    // ──────────────────────────────────────────────
+    // --- TARIM, GIDA & YEM ---
     {
-        id: "6", category_id: "on-islem", subgroup_id: "iyon-tutucular", slug: "groseq-pff",
-        name: "Groseq PFF", ionic_type: "anionic",
-        title_tr: "Groseq PFF", title_en: "Groseq PFF", title_fr: "Groseq PFF", title_ar: "Groseq PFF",
-        description_tr: "Konsantre iyon tutucu ve şelatlama ajanı. Ca²⁺, Mg²⁺ ve Fe³⁺ iyonlarını bağlar.",
-        description_en: "Concentrated sequestering and chelating agent. Binds Ca²⁺, Mg²⁺ and Fe³⁺ ions.",
-        description_fr: "Agent séquestrant et chélatant concentré. Lie les ions Ca²⁺, Mg²⁺ et Fe³⁺.",
-        description_ar: "عامل عزل ومخلب مركز. يربط أيونات الكالسيوم والمغنيسيوم والحديد.",
-        image_url: "/images/pretreatment.png", is_featured: false
-    },
-    {
-        id: "7", category_id: "on-islem", subgroup_id: "iyon-tutucular", slug: "groseq-acr",
-        name: "Groseq ACR", ionic_type: "anionic",
-        title_tr: "Groseq ACR", title_en: "Groseq ACR", title_fr: "Groseq ACR", title_ar: "Groseq ACR",
-        description_tr: "Reaktif boya banyosu için özel iyon tutucu. Sert su etkisini nötralize eder.",
-        description_en: "Sequestering agent for reactive dye baths. Neutralizes hard water effects.",
-        description_fr: "Agent séquestrant pour bains de teinture réactifs.",
-        description_ar: "عامل عزل لحمامات الصباغة التفاعلية.",
-        image_url: "/images/pretreatment.png", is_featured: false
-    },
-    {
-        id: "8", category_id: "on-islem", subgroup_id: "iyon-tutucular", slug: "groseq-dtpa",
-        name: "Groseq DTPA", ionic_type: "anionic",
-        title_tr: "Groseq DTPA", title_en: "Groseq DTPA", title_fr: "Groseq DTPA", title_ar: "Groseq DTPA",
-        description_tr: "DTPA bazlı güçlü şelatlama ajanı. Demir iyonlarının kontrolünde üstün performans.",
-        description_en: "DTPA-based strong chelating agent. Superior performance in iron ion control.",
-        description_fr: "Agent chélatant puissant à base de DTPA.",
-        description_ar: "عامل مخلب قوي أساسه DTPA.",
-        image_url: "/images/pretreatment.png", is_featured: false
-    },
-
-    // ──────────────────────────────────────────────
-    // ÖN İŞLEM → Stabilizatörler (Grostab)
-    // ──────────────────────────────────────────────
-    {
-        id: "9", category_id: "on-islem", subgroup_id: "stabilizatorler", slug: "grostab-pl",
-        name: "Grostab PL", ionic_type: "anionic",
-        title_tr: "Grostab PL", title_en: "Grostab PL", title_fr: "Grostab PL", title_ar: "Grostab PL",
-        description_tr: "Konsantre peroksit stabilizatörü. Ağartma banyosunda H₂O₂ kontrolü.",
-        description_en: "Concentrated peroxide stabilizer. H₂O₂ control in bleaching baths.",
-        description_fr: "Stabilisateur de peroxyde concentré. Contrôle du H₂O₂.",
-        description_ar: "مثبت بيروكسيد مركز. التحكم في بيروكسيد الهيدروجين.",
-        image_url: "/images/pretreatment.png", is_featured: false
-    },
-    {
-        id: "10", category_id: "on-islem", subgroup_id: "stabilizatorler", slug: "grostab-slk",
-        name: "Grostab SLK", ionic_type: "anionic",
-        title_tr: "Grostab SLK", title_en: "Grostab SLK", title_fr: "Grostab SLK", title_ar: "Grostab SLK",
-        description_tr: "Silikat bazlı peroksit stabilizatörü. Alkali ağartma prosesleri için.",
-        description_en: "Silicate-based peroxide stabilizer. For alkaline bleaching processes.",
-        description_fr: "Stabilisateur de peroxyde à base de silicate.",
-        description_ar: "مثبت بيروكسيد أساسه السيليكات.",
-        image_url: "/images/pretreatment.png", is_featured: false
-    },
-
-    // ──────────────────────────────────────────────
-    // ÖN İŞLEM → Yağ Sökücüler (Grosol)
-    // ──────────────────────────────────────────────
-    {
-        id: "11", category_id: "on-islem", subgroup_id: "yag-sokuculer", slug: "grosol-bnk",
-        name: "Grosol BNK", ionic_type: "nonionic",
-        title_tr: "Grosol BNK", title_en: "Grosol BNK", title_fr: "Grosol BNK", title_ar: "Grosol BNK",
-        description_tr: "Noniyonik yağ ve leke sökücü. Mineral ve doğal yağların uzaklaştırılması.",
-        description_en: "Nonionic oil and stain removing agent. Removes mineral and natural oils.",
-        description_fr: "Agent d'élimination d'huile et de taches non ionique.",
-        description_ar: "عامل إزالة الزيت والبقع غير الأيوني.",
-        image_url: "/images/pretreatment.png", is_featured: false
-    },
-    {
-        id: "12", category_id: "on-islem", subgroup_id: "yag-sokuculer", slug: "grosol-khl",
-        name: "Grosol KHL", ionic_type: "nonionic",
-        title_tr: "Grosol KHL", title_en: "Grosol KHL", title_fr: "Grosol KHL", title_ar: "Grosol KHL",
-        description_tr: "Solventli yağ sökücü. Ağır mineral yağ lekeleri için yüksek performans.",
-        description_en: "Solvent-based oil remover. High performance for heavy mineral oil stains.",
-        description_fr: "Détachant haute performance à base de solvant.",
-        description_ar: "مزيل زيت بالمذيبات عالي الأداء.",
-        image_url: "/images/pretreatment.png", is_featured: false
-    },
-    {
-        id: "13", category_id: "on-islem", subgroup_id: "yag-sokuculer", slug: "grosol-emr",
-        name: "Grosol EMR", ionic_type: "nonionic",
-        title_tr: "Grosol EMR", title_en: "Grosol EMR", title_fr: "Grosol EMR", title_ar: "Grosol EMR",
-        description_tr: "Emülsifiye edici yağ sökücü. Geniş pH ve sıcaklık aralığında etkili.",
-        description_en: "Emulsifying oil remover. Effective across wide pH and temperature ranges.",
-        description_fr: "Dégraissant émulsifiant. Efficace sur une large plage de pH.",
-        description_ar: "مزيل زيت مستحلب. فعال في نطاقات واسعة.",
-        image_url: "/images/pretreatment.png", is_featured: false
-    },
-
-    // ──────────────────────────────────────────────
-    // ÖN İŞLEM → Tampon Asitler (Grocid)
-    // ──────────────────────────────────────────────
-    {
-        id: "14", category_id: "on-islem", subgroup_id: "tampon-asitler", slug: "grocid-gfy",
-        name: "Grocid GFY", ionic_type: "anionic",
-        title_tr: "Grocid GFY", title_en: "Grocid GFY", title_fr: "Grocid GFY", title_ar: "Grocid GFY",
-        description_tr: "Konsantre tampon asit. Boyama ve ağartma proseslerinde pH sabitlemesi.",
-        description_en: "Concentrated buffering acid. pH stabilization in dyeing and bleaching.",
-        description_fr: "Acide tampon concentré. Stabilisation du pH.",
-        description_ar: "حمض عازل مركز. استقرار الأس الهيدروجيني.",
-        image_url: "/images/pretreatment.png", is_featured: false
-    },
-    {
-        id: "15", category_id: "on-islem", subgroup_id: "tampon-asitler", slug: "grocid-ntr",
-        name: "Grocid NTR", ionic_type: "anionic",
-        title_tr: "Grocid NTR", title_en: "Grocid NTR", title_fr: "Grocid NTR", title_ar: "Grocid NTR",
-        description_tr: "Nötralizasyon asidi. Ağartma sonrası alkali nötralizasyonu.",
-        description_en: "Neutralization acid. Post-bleaching alkali neutralization.",
-        description_fr: "Acide de neutralisation. Neutralisation alcaline post-blanchiment.",
-        description_ar: "حمض المعادلة. معادلة القلوية بعد التبييض.",
-        image_url: "/images/pretreatment.png", is_featured: false
-    },
-    {
-        id: "16", category_id: "on-islem", subgroup_id: "tampon-asitler", slug: "grocid-bff",
-        name: "Grocid BFF", ionic_type: "anionic",
-        title_tr: "Grocid BFF", title_en: "Grocid BFF", title_fr: "Grocid BFF", title_ar: "Grocid BFF",
-        description_tr: "Yüksek tamponlama kapasiteli organik asit. Reaktif boyama pH kontrolü.",
-        description_en: "High buffering capacity organic acid. Reactive dyeing pH control.",
-        description_fr: "Acide organique à haute capacité tampon.",
-        description_ar: "حمض عضوي عالي القدرة التخزينية.",
-        image_url: "/images/pretreatment.png", is_featured: false
-    },
-
-    // ══════════════════════════════════════════════
-    // BOYAMA → Dispergatörler (Grogal)
-    // ══════════════════════════════════════════════
-    {
-        id: "17", category_id: "boyama", subgroup_id: "dispergatorler", slug: "grogal-ls",
-        name: "Grogal LS", ionic_type: "anionic",
-        title_tr: "Grogal LS", title_en: "Grogal LS", title_fr: "Grogal LS", title_ar: "Grogal LS",
-        description_tr: "Anyonik dispergatör ve egalizatör. Reaktif boyamada düzgün renk dağılımı.",
-        description_en: "Anionic dispersing and levelling agent. Uniform color in reactive dyeing.",
-        description_fr: "Agent dispersant et égalisant anionique pour teinture réactive.",
-        description_ar: "عامل تشتت ومساواة أنيوني للصباغة التفاعلية.",
-        image_url: "/images/dyeing.png", is_featured: true
-    },
-    {
-        id: "18", category_id: "boyama", subgroup_id: "dispergatorler", slug: "grogal-rbn",
-        name: "Grogal RBN", ionic_type: "anionic",
-        title_tr: "Grogal RBN", title_en: "Grogal RBN", title_fr: "Grogal RBN", title_ar: "Grogal RBN",
-        description_tr: "Yüksek performanslı egalizatör. Koyu renklerde oligomer dispersiyonu.",
-        description_en: "High-performance levelling agent. Oligomer dispersion in dark shades.",
-        description_fr: "Agent égalisant haute performance. Dispersion des oligomères.",
-        description_ar: "عامل مساواة عالي الأداء. تشتت الأوليغومر في الألوان الداكنة.",
-        image_url: "/images/dyeing.png", is_featured: false
-    },
-    {
-        id: "19", category_id: "boyama", subgroup_id: "dispergatorler", slug: "grogal-ns",
-        name: "Grogal NS", ionic_type: "nonionic",
-        title_tr: "Grogal NS", title_en: "Grogal NS", title_fr: "Grogal NS", title_ar: "Grogal NS",
-        description_tr: "Noniyonik toz dispergatör. Su sertliğine dayanıklı, geniş kullanım alanı.",
-        description_en: "Nonionic powder dispersant. Resistant to water hardness, versatile use.",
-        description_fr: "Dispersant en poudre non ionique. Résistant à la dureté de l'eau.",
-        description_ar: "مشتت مسحوق غير أيوني. مقاوم لعسر الماء.",
-        image_url: "/images/dyeing.png", is_featured: false
-    },
-
-    // BOYAMA → Dispers Yardımcıları (Gropers)
-    {
-        id: "20", category_id: "boyama", subgroup_id: "dispers-yardimcilari", slug: "gropers-erd",
-        name: "Gropers ERD", ionic_type: "anionic",
-        title_tr: "Gropers ERD", title_en: "Gropers ERD", title_fr: "Gropers ERD", title_ar: "Gropers ERD",
-        description_tr: "Dispers boyama için anyonik dispergatör ve egalizatör.",
-        description_en: "Anionic dispersing and levelling agent for disperse dyeing.",
-        description_fr: "Agent dispersant anionique pour teinture dispersée.",
-        description_ar: "عامل تشتت أنيوني للصباغة المشتتة.",
-        image_url: "/images/dyeing.png", is_featured: false
-    },
-    {
-        id: "21", category_id: "boyama", subgroup_id: "dispers-yardimcilari", slug: "gropers-hpd",
-        name: "Gropers HPD", ionic_type: "nonionic",
-        title_tr: "Gropers HPD", title_en: "Gropers HPD", title_fr: "Gropers HPD", title_ar: "Gropers HPD",
-        description_tr: "HT boyama için noniyonik dispers yardımcı. 130°C'ye kadar stabil.",
-        description_en: "Nonionic disperse auxiliary for HT dyeing. Stable up to 130°C.",
-        description_fr: "Auxiliaire disperse non ionique pour teinture HT. Stable jusqu'à 130°C.",
-        description_ar: "مساعد تشتت غير أيوني. مستقر حتى 130 درجة مئوية.",
-        image_url: "/images/dyeing.png", is_featured: false
-    },
-
-    // BOYAMA → Carrier (Grocarrier)
-    {
-        id: "22", category_id: "boyama", subgroup_id: "carrier", slug: "grocarrier-taf",
-        name: "Grocarrier TAF", ionic_type: "nonionic",
-        title_tr: "Grocarrier TAF", title_en: "Grocarrier TAF", title_fr: "Grocarrier TAF", title_ar: "Grocarrier TAF",
-        description_tr: "Ekolojik carrier. Poliester boyamada 100°C'de renk verimini artırır.",
-        description_en: "Ecological carrier. Increases color yield at 100°C for polyester dyeing.",
-        description_fr: "Carrier écologique pour teinture polyester.",
-        description_ar: "ناقل بيئي. يزيد كفاءة اللون عند 100 درجة مئوية.",
-        image_url: "/images/dyeing.png", is_featured: false
-    },
-    {
-        id: "23", category_id: "boyama", subgroup_id: "carrier", slug: "grocarrier-ngs",
-        name: "Grocarrier NGS", ionic_type: "nonionic",
-        title_tr: "Grocarrier NGS", title_en: "Grocarrier NGS", title_fr: "Grocarrier NGS", title_ar: "Grocarrier NGS",
-        description_tr: "Yeni nesil APEO-free carrier. Düşük VOC, çevre dostu formülasyon.",
-        description_en: "Next-gen APEO-free carrier. Low VOC, eco-friendly formulation.",
-        description_fr: "Carrier nouvelle génération sans APEO. Faible COV.",
-        description_ar: "ناقل خالٍ من APEO من الجيل الجديد.",
-        image_url: "/images/dyeing.png", is_featured: false
-    },
-
-    // ══════════════════════════════════════════════
-    // YIKAMA → Growash
-    // ══════════════════════════════════════════════
-    {
-        id: "24", category_id: "yikama", subgroup_id: "yikama-ajanlari", slug: "growash-rct",
-        name: "Growash RCT", ionic_type: "anionic",
-        title_tr: "Growash RCT", title_en: "Growash RCT", title_fr: "Growash RCT", title_ar: "Growash RCT",
-        description_tr: "Reaktif boyama sonrası yıkama ajanı. Hidrolize boyanın hızlı uzaklaştırılması.",
-        description_en: "Post-reactive dyeing washing agent. Rapid hydrolyzed dye removal.",
-        description_fr: "Agent de lavage post-teinture réactive.",
-        description_ar: "عامل غسيل بعد الصباغة التفاعلية.",
-        image_url: "/images/washing.png", is_featured: true
-    },
-    {
-        id: "25", category_id: "yikama", subgroup_id: "yikama-ajanlari", slug: "growash-spr",
-        name: "Growash SPR", ionic_type: "nonionic",
-        title_tr: "Growash SPR", title_en: "Growash SPR", title_fr: "Growash SPR", title_ar: "Growash SPR",
-        description_tr: "Sabunlama ajanı. Yüzeydeki fazla boyanın temizlenmesi, renk haslığı artışı.",
-        description_en: "Soaping agent. Surface dye removal, improved color fastness.",
-        description_fr: "Agent de savonnage. Nettoyage de surface.",
-        description_ar: "عامل تصبين. إزالة الصبغة السطحية.",
-        image_url: "/images/washing.png", is_featured: false
-    },
-    {
-        id: "26", category_id: "yikama", subgroup_id: "yikama-ajanlari", slug: "growash-enz",
-        name: "Growash ENZ", ionic_type: "nonionic",
-        title_tr: "Growash ENZ", title_en: "Growash ENZ", title_fr: "Growash ENZ", title_ar: "Growash ENZ",
-        description_tr: "Enzimatik yıkama ajanı. 40-60°C'de etkili, enerji tasarrufu.",
-        description_en: "Enzymatic washing agent. Effective at 40-60°C, energy saving.",
-        description_fr: "Agent de lavage enzymatique. Efficace à 40-60°C.",
-        description_ar: "عامل غسيل إنزيمي. فعال في 40-60 درجة مئوية.",
-        image_url: "/images/washing.png", is_featured: false
-    },
-    {
-        id: "27", category_id: "yikama", subgroup_id: "yikama-ajanlari", slug: "growash-red",
-        name: "Growash RED", ionic_type: "anionic",
-        title_tr: "Growash RED", title_en: "Growash RED", title_fr: "Growash RED", title_ar: "Growash RED",
-        description_tr: "Redüktif yıkama ajanı. Dispers boyama sonrası yüzey temizliği.",
-        description_en: "Reductive washing agent. Post-disperse dyeing surface cleaning.",
-        description_fr: "Agent de lavage réductif.",
-        description_ar: "عامل غسيل اختزالي.",
-        image_url: "/images/washing.png", is_featured: false
-    },
-
-    // ══════════════════════════════════════════════
-    // YUMUŞATICILAR → Silikon (Grosil)
-    // ══════════════════════════════════════════════
-    {
-        id: "28", category_id: "yumusaticilar", subgroup_id: "silikon-yumusaticilar", slug: "grosil-mkr",
-        name: "Grosil MKR", ionic_type: "nonionic",
-        title_tr: "Grosil MKR", title_en: "Grosil MKR", title_fr: "Grosil MKR", title_ar: "Grosil MKR",
-        description_tr: "Mikro emülsiyon silikon yumuşatıcı. Parlak, kaygan ve elastik tuşe.",
-        description_en: "Micro emulsion silicone softener. Bright, slippery and elastic hand feel.",
-        description_fr: "Adoucissant silicone micro-émulsion. Toucher brillant et glissant.",
-        description_ar: "منعم سيليكون مستحلب دقيق. ملمس لامع وزلق ومرن.",
-        image_url: "/images/softeners.png", is_featured: true
-    },
-    {
-        id: "29", category_id: "yumusaticilar", subgroup_id: "silikon-yumusaticilar", slug: "grosil-amn",
-        name: "Grosil AMN", ionic_type: "cationic",
-        title_tr: "Grosil AMN", title_en: "Grosil AMN", title_fr: "Grosil AMN", title_ar: "Grosil AMN",
-        description_tr: "Amino fonksiyonlu silikon makro emülsiyon. Dolgun, kalıcı yumuşak tuşe.",
-        description_en: "Amino-functional silicone macro emulsion. Full, lasting soft hand feel.",
-        description_fr: "Macro-émulsion silicone amino-fonctionnelle.",
-        description_ar: "مستحلب سيليكون كبير بوظيفة أمينية.",
-        image_url: "/images/softeners.png", is_featured: false
-    },
-    {
-        id: "30", category_id: "yumusaticilar", subgroup_id: "silikon-yumusaticilar", slug: "grosil-hyd",
-        name: "Grosil HYD", ionic_type: "nonionic",
-        title_tr: "Grosil HYD", title_en: "Grosil HYD", title_fr: "Grosil HYD", title_ar: "Grosil HYD",
-        description_tr: "Hidrofilik silikon yumuşatıcı. Yumuşaklık + su emicilik dengesi.",
-        description_en: "Hydrophilic silicone softener. Softness + water absorption balance.",
-        description_fr: "Adoucissant silicone hydrophile.",
-        description_ar: "منعم سيليكون محب للماء.",
-        image_url: "/images/softeners.png", is_featured: false
-    },
-    {
-        id: "31", category_id: "yumusaticilar", subgroup_id: "silikon-yumusaticilar", slug: "grosil-pes",
-        name: "Grosil PES", ionic_type: "nonionic",
-        title_tr: "Grosil PES", title_en: "Grosil PES", title_fr: "Grosil PES", title_ar: "Grosil PES",
-        description_tr: "Polyester için özel silikon. Süblimasyon haslığını etkilemez.",
-        description_en: "Special silicone for polyester. Does not affect sublimation fastness.",
-        description_fr: "Silicone spécial pour polyester.",
-        description_ar: "سيليكون خاص للبوليستر.",
-        image_url: "/images/softeners.png", is_featured: false
-    },
-
-    // YUMUŞATICILAR → Silikonsuz (Grosoft)
-    {
-        id: "32", category_id: "yumusaticilar", subgroup_id: "silikonsuz-yumusaticilar", slug: "grosoft-pe",
-        name: "Grosoft PE", ionic_type: "nonionic",
-        title_tr: "Grosoft PE", title_en: "Grosoft PE", title_fr: "Grosoft PE", title_ar: "Grosoft PE",
-        description_tr: "Polietilen emülsiyon yumuşatıcı. Ekonomik, düz ve kaygan tuşe.",
-        description_en: "Polyethylene emulsion softener. Economical, smooth and slippery feel.",
-        description_fr: "Adoucissant émulsion polyéthylène. Économique.",
-        description_ar: "منعم مستحلب البولي إيثيلين.",
-        image_url: "/images/softeners.png", is_featured: false
-    },
-    {
-        id: "33", category_id: "yumusaticilar", subgroup_id: "silikonsuz-yumusaticilar", slug: "grosoft-ctn",
-        name: "Grosoft CTN", ionic_type: "cationic",
-        title_tr: "Grosoft CTN", title_en: "Grosoft CTN", title_fr: "Grosoft CTN", title_ar: "Grosoft CTN",
-        description_tr: "Katyonik yumuşatıcı. Pamuk ve karışımlarında doğal tuşe.",
-        description_en: "Cationic softener. Natural hand feel on cotton and blends.",
-        description_fr: "Adoucissant cationique. Toucher naturel sur coton.",
-        description_ar: "منعم كاتيوني. ملمس طبيعي على القطن.",
-        image_url: "/images/softeners.png", is_featured: false
-    },
-    {
-        id: "34", category_id: "yumusaticilar", subgroup_id: "silikonsuz-yumusaticilar", slug: "grosoft-trk",
-        name: "Grosoft TRK", ionic_type: "cationic",
-        title_tr: "Grosoft TRK", title_en: "Grosoft TRK", title_fr: "Grosoft TRK", title_ar: "Grosoft TRK",
-        description_tr: "Trikotaj kumaşlar için özel yumuşatıcı. Sürtünme haslığını artırır.",
-        description_en: "Softener for knitted fabrics. Improves rubbing fastness.",
-        description_fr: "Adoucissant pour tricots. Améliore la solidité.",
-        description_ar: "منعم للأقمشة المحبوكة.",
-        image_url: "/images/softeners.png", is_featured: false
-    },
-
-    // ══════════════════════════════════════════════
-    // ENZİMLER → Grozyme
-    // ══════════════════════════════════════════════
-    {
-        id: "35", category_id: "enzimler", subgroup_id: "enzim-cesitleri", slug: "grozyme-aml",
-        name: "Grozyme AML", ionic_type: undefined,
-        title_tr: "Grozyme AML", title_en: "Grozyme AML", title_fr: "Grozyme AML", title_ar: "Grozyme AML",
-        description_tr: "Amilaz enzimi. Haşıl sökme proseslerinde nişasta parçalama.",
-        description_en: "Amylase enzyme. Starch breakdown in desizing processes.",
-        description_fr: "Enzyme amylase. Dégradation de l'amidon.",
-        description_ar: "إنزيم الأميليز. تحلل النشا.",
+        id: "agr-1", category_id: "tarim-gida", subgroup_id: "gida-asitligi-ve-koruyucular", slug: "sitrik-asit-anhidrus-gida-grade",
+        name: "Citric Acid Anhydrous (Food Grade)", cas_number: "77-92-9", ionic_type: undefined,
+        title_tr: "Sitrik Asit Anhidrus (Gıda & İçecek Grade)", title_en: "Citric Acid Anhydrous (Food & Beverage Grade)",
+        title_fr: "Acide Citrique Anhydre (Grade Alimentaire)", title_ar: "حمض الستريك اللامائي (درجة غذائية)",
+        description_tr: "Gıda, içecek, reçel ve temizlik ürünlerinde organik asitlik düzenleyici, lezzet artırıcı ve şelat maddesi.",
+        description_en: "Organic acidulant, flavor enhancer, and natural chelating agent widely used in food, beverage, and cleaning industries.",
+        description_fr: "Acidifiant biologique et réhausseur de goût largement utilisé dans l'industrie agroalimentaire.",
+        description_ar: "محمض عضوي ومعزز للنكهة وعامل تخلب طبيعي يستخدم على نطاق واسع في الأغذية والمشروبات.",
         image_url: "/images/enzymes.png", is_featured: true
     },
     {
-        id: "36", category_id: "enzimler", subgroup_id: "enzim-cesitleri", slug: "grozyme-cel",
-        name: "Grozyme CEL", ionic_type: undefined,
-        title_tr: "Grozyme CEL", title_en: "Grozyme CEL", title_fr: "Grozyme CEL", title_ar: "Grozyme CEL",
-        description_tr: "Selülaz enzimi. Biopolishing ve denim yıkama efektleri.",
-        description_en: "Cellulase enzyme. Biopolishing and denim wash effects.",
-        description_fr: "Enzyme cellulase. Bio-polissage et effets denim.",
-        description_ar: "إنزيم السيلولاز. التلميع الحيوي وتأثيرات الدنيم.",
-        image_url: "/images/enzymes.png", is_featured: false
-    },
-    {
-        id: "37", category_id: "enzimler", subgroup_id: "enzim-cesitleri", slug: "grozyme-lac",
-        name: "Grozyme LAC", ionic_type: undefined,
-        title_tr: "Grozyme LAC", title_en: "Grozyme LAC", title_fr: "Grozyme LAC", title_ar: "Grozyme LAC",
-        description_tr: "Lakkaz enzimi. Denim indigo dekolorizasyonu. Çevre dostu ağartma.",
-        description_en: "Laccase enzyme. Denim indigo decolorization. Eco-friendly bleaching.",
-        description_fr: "Enzyme laccase. Décoloration de l'indigo.",
-        description_ar: "إنزيم اللاكاز. إزالة لون الإنديغو.",
-        image_url: "/images/enzymes.png", is_featured: false
-    },
-    {
-        id: "38", category_id: "enzimler", subgroup_id: "enzim-cesitleri", slug: "grozyme-pec",
-        name: "Grozyme PEC", ionic_type: undefined,
-        title_tr: "Grozyme PEC", title_en: "Grozyme PEC", title_fr: "Grozyme PEC", title_ar: "Grozyme PEC",
-        description_tr: "Pektinaz enzimi. Pamuk ön işleminde doğal pektin uzaklaştırma.",
-        description_en: "Pectinase enzyme. Natural pectin removal in cotton pretreatment.",
-        description_fr: "Enzyme pectinase. Élimination de la pectine.",
-        description_ar: "إنزيم البكتيناز. إزالة البكتين.",
-        image_url: "/images/enzymes.png", is_featured: false
+        id: "agr-2", category_id: "tarim-gida", subgroup_id: "gubre-ve-yem-kimyasallari", slug: "ure-46-n-teknik-ve-tarimsal",
+        name: "Urea 46% N (Technical & Agri Grade)", cas_number: "57-13-6", ionic_type: undefined,
+        title_tr: "Üre %46 Azot (Teknik & Tarımsal Grade)", title_en: "Urea 46% Nitrogen (Tech & Agricultural Grade)",
+        title_fr: "Urée 46% Azote (Grade Technique & Agricole)", title_ar: "اليوريا 46% نيتروجين (درجة تقنية وزراعية)",
+        description_tr: "Sıvı gübreler, AdBlue/DEF üretimi ve tekstil baskı patlarında çözündürücü olarak kullanılan yüksek azotlu prill bileşik.",
+        description_en: "High-nitrogen organic compound used in solid/liquid fertilizers, AdBlue/DEF manufacturing, and textile printing pastes.",
+        description_fr: "Composé organique hautement azoté utilisé dans les engrais et la production d'AdBlue.",
+        description_ar: "مركب عضوي عالي النيتروجين يستخدم في الأسمدة الصلبة والسائلة وإنتاج AdBlue.",
+        image_url: "/images/enzymes.png", is_featured: true
     },
 
-    // ══════════════════════════════════════════════
-    // APRE → Kenar Kolalar (Grofab)
-    // ══════════════════════════════════════════════
+    // --- BOYA, KAPLAMA & SOLVENTLER ---
     {
-        id: "39", category_id: "apre", subgroup_id: "kenar-kolalar", slug: "grofab-pv",
-        name: "Grofab PV", ionic_type: "nonionic",
-        title_tr: "Grofab PV", title_en: "Grofab PV", title_fr: "Grofab PV", title_ar: "Grofab PV",
-        description_tr: "Toz kenar kola. PVA bazlı, hızlı kuruyan.",
-        description_en: "Powder edge hardener. PVA-based, fast-drying.",
-        description_fr: "Durcisseur de bords en poudre.",
-        description_ar: "مقوي حواف مسحوق.",
-        image_url: "/images/finishing.png", is_featured: false
-    },
-    {
-        id: "40", category_id: "apre", subgroup_id: "kenar-kolalar", slug: "grofab-liq",
-        name: "Grofab LIQ", ionic_type: "nonionic",
-        title_tr: "Grofab LIQ", title_en: "Grofab LIQ", title_fr: "Grofab LIQ", title_ar: "Grofab LIQ",
-        description_tr: "Sıvı kenar kola. Kolay uygulama, şeffaf kuruma.",
-        description_en: "Liquid edge hardener. Easy application, transparent drying.",
-        description_fr: "Durcisseur de bords liquide.",
-        description_ar: "مقوي حواف سائل.",
-        image_url: "/images/finishing.png", is_featured: false
-    },
-
-    // APRE → Fonksiyonel Apreler (Grofix)
-    {
-        id: "41", category_id: "apre", subgroup_id: "fonksiyonel-apreler", slug: "grofix-wrp",
-        name: "Grofix WRP", ionic_type: "nonionic",
-        title_tr: "Grofix WRP", title_en: "Grofix WRP", title_fr: "Grofix WRP", title_ar: "Grofix WRP",
-        description_tr: "Su itici (water repellent) apre. C6 fluorokarbon bazlı.",
-        description_en: "Water repellent finishing agent. C6 fluorocarbon-based.",
-        description_fr: "Agent hydrofuge. Base fluorocarbone C6.",
-        description_ar: "عامل طارد للماء. أساس فلوروكربون C6.",
-        image_url: "/images/finishing.png", is_featured: true
-    },
-    {
-        id: "42", category_id: "apre", subgroup_id: "fonksiyonel-apreler", slug: "grofix-flm",
-        name: "Grofix FLM", ionic_type: "nonionic",
-        title_tr: "Grofix FLM", title_en: "Grofix FLM", title_fr: "Grofix FLM", title_ar: "Grofix FLM",
-        description_tr: "Alev geciktirici apre. Halojensiz, REACH uyumlu.",
-        description_en: "Flame retardant finish. Halogen-free, REACH compliant.",
-        description_fr: "Finition ignifuge. Sans halogène.",
-        description_ar: "تشطيب مثبط للهب. خالٍ من الهالوجين.",
-        image_url: "/images/finishing.png", is_featured: false
-    },
-    {
-        id: "43", category_id: "apre", subgroup_id: "fonksiyonel-apreler", slug: "grofix-anb",
-        name: "Grofix ANB", ionic_type: "nonionic",
-        title_tr: "Grofix ANB", title_en: "Grofix ANB", title_fr: "Grofix ANB", title_ar: "Grofix ANB",
-        description_tr: "Antibakteriyel apre. Gümüş iyon bazlı, kalıcı etki.",
-        description_en: "Antibacterial finish. Silver ion-based, lasting effect.",
-        description_fr: "Finition antibactérienne. Base ions d'argent.",
-        description_ar: "تشطيب مضاد للبكتيريا. أساس أيونات الفضة.",
-        image_url: "/images/finishing.png", is_featured: false
-    },
-
-    // APRE → Antistatik (Grostat)
-    {
-        id: "44", category_id: "apre", subgroup_id: "antistatik", slug: "grostat-plf",
-        name: "Grostat PLF", ionic_type: "cationic",
-        title_tr: "Grostat PLF", title_en: "Grostat PLF", title_fr: "Grostat PLF", title_ar: "Grostat PLF",
-        description_tr: "Katyonik antistatik apre. Sentetik kumaşlarda statik elektrik önleme.",
-        description_en: "Cationic antistatic finishing agent. Static prevention for synthetics.",
-        description_fr: "Agent antistatique cationique.",
-        description_ar: "عامل مضاد للكهرباء الساكنة الكاتيوني.",
-        image_url: "/images/finishing.png", is_featured: false
-    },
-
-    // ══════════════════════════════════════════════
-    // ARITMA → Flokülasyon & Koagülasyon (Growat)
-    // ══════════════════════════════════════════════
-    {
-        id: "45", category_id: "aritma", subgroup_id: "flokkulan-koagulan", slug: "growat-flk",
-        name: "Growat FLK", ionic_type: "anionic",
-        title_tr: "Growat FLK", title_en: "Growat FLK", title_fr: "Growat FLK", title_ar: "Growat FLK",
-        description_tr: "Anyonik polielektrolit flokülant. Tekstil atıksuyunda askıdaki katı maddelerin çöktürülmesi.",
-        description_en: "Anionic polyelectrolyte flocculant. Settling suspended solids in textile wastewater.",
-        description_fr: "Floculant polyélectrolyte anionique pour eaux usées textiles.",
-        description_ar: "ملبد بولي إلكتروليت أنيوني لمياه الصرف النسيجية.",
-        image_url: "/images/water-treatment.png", is_featured: true
-    },
-    {
-        id: "46", category_id: "aritma", subgroup_id: "flokkulan-koagulan", slug: "growat-cog",
-        name: "Growat COG", ionic_type: "cationic",
-        title_tr: "Growat COG", title_en: "Growat COG", title_fr: "Growat COG", title_ar: "Growat COG",
-        description_tr: "Katyonik koagülant. Boyahane atıksuyunda hızlı flok oluşumu ve çöktürme.",
-        description_en: "Cationic coagulant. Rapid floc formation and settling in dyehouse wastewater.",
-        description_fr: "Coagulant cationique. Formation rapide de flocs.",
-        description_ar: "مخثر كاتيوني. تكوين سريع للندف في مياه صرف المصبغة.",
-        image_url: "/images/water-treatment.png", is_featured: false
-    },
-    {
-        id: "47", category_id: "aritma", subgroup_id: "flokkulan-koagulan", slug: "growat-pac",
-        name: "Growat PAC", ionic_type: "cationic",
-        title_tr: "Growat PAC", title_en: "Growat PAC", title_fr: "Growat PAC", title_ar: "Growat PAC",
-        description_tr: "Polialüminyum klorür bazlı koagülant. Geniş pH aralığında etkili, düşük çamur hacmi.",
-        description_en: "Polyaluminum chloride coagulant. Effective across wide pH range, low sludge volume.",
-        description_fr: "Coagulant à base de polychlorure d'aluminium.",
-        description_ar: "مخثر كلوريد بولي ألومنيوم. فعال في نطاق واسع.",
-        image_url: "/images/water-treatment.png", is_featured: false
-    },
-    {
-        id: "48", category_id: "aritma", subgroup_id: "flokkulan-koagulan", slug: "growat-flk-cons",
-        name: "Growat FLK Cons", ionic_type: "anionic",
-        title_tr: "Growat FLK Cons", title_en: "Growat FLK Cons", title_fr: "Growat FLK Cons", title_ar: "Growat FLK Cons",
-        description_tr: "Konsantre flokülant. Yüksek molekül ağırlıklı, düşük dozla maksimum performans.",
-        description_en: "Concentrated flocculant. High molecular weight, maximum performance at low dosage.",
-        description_fr: "Floculant concentré. Haut poids moléculaire.",
-        description_ar: "ملبد مركز. وزن جزيئي عالي، أداء أقصى بجرعة منخفضة.",
-        image_url: "/images/water-treatment.png", is_featured: false
-    },
-
-    // ARITMA → Renk Giderme & Dekolorizasyon (Growat)
-    {
-        id: "49", category_id: "aritma", subgroup_id: "renk-giderme", slug: "growat-dcl",
-        name: "Growat DCL", ionic_type: "cationic",
-        title_tr: "Growat DCL", title_en: "Growat DCL", title_fr: "Growat DCL", title_ar: "Growat DCL",
-        description_tr: "Katyonik renk giderici. Reaktif ve direkt boya atıksularında yüksek renk giderme oranı.",
-        description_en: "Cationic decolorizer. High color removal rate for reactive and direct dye wastewater.",
-        description_fr: "Décolorant cationique. Élimination efficace des colorants réactifs.",
-        description_ar: "مزيل لون كاتيوني. معدل عالٍ لإزالة لون مياه الصرف.",
-        image_url: "/images/water-treatment.png", is_featured: true
-    },
-    {
-        id: "50", category_id: "aritma", subgroup_id: "renk-giderme", slug: "growat-dcl-cons",
-        name: "Growat DCL Cons", ionic_type: "cationic",
-        title_tr: "Growat DCL Cons", title_en: "Growat DCL Cons", title_fr: "Growat DCL Cons", title_ar: "Growat DCL Cons",
-        description_tr: "Konsantre renk giderici. %50 aktif madde, düşük dozda etkili dekolorizasyon.",
-        description_en: "Concentrated decolorizer. 50% active content, effective decolorization at low dosage.",
-        description_fr: "Décolorant concentré. 50% de matière active.",
-        description_ar: "مزيل لون مركز. 50% مادة فعالة.",
-        image_url: "/images/water-treatment.png", is_featured: false
-    },
-    {
-        id: "51", category_id: "aritma", subgroup_id: "renk-giderme", slug: "growat-oxi",
-        name: "Growat OXI", ionic_type: undefined,
-        title_tr: "Growat OXI", title_en: "Growat OXI", title_fr: "Growat OXI", title_ar: "Growat OXI",
-        description_tr: "Oksidatif renk giderici. İleri oksidasyon ile dirençli boyaların parçalanması.",
-        description_en: "Oxidative decolorizer. Advanced oxidation for breaking down resistant dyes.",
-        description_fr: "Décolorant oxydatif. Oxydation avancée des colorants résistants.",
-        description_ar: "مزيل لون تأكسدي. أكسدة متقدمة لتحلل الأصباغ المقاومة.",
-        image_url: "/images/water-treatment.png", is_featured: false
-    },
-    {
-        id: "52", category_id: "aritma", subgroup_id: "renk-giderme", slug: "growat-phc",
-        name: "Growat PHC", ionic_type: undefined,
-        title_tr: "Growat PHC", title_en: "Growat PHC", title_fr: "Growat PHC", title_ar: "Growat PHC",
-        description_tr: "pH düzenleyici. Arıtma prosesinde optimum pH dengesi, nötralizasyon.",
-        description_en: "pH adjuster. Optimal pH balance and neutralization in treatment processes.",
-        description_fr: "Régulateur de pH. Équilibre optimal du pH.",
-        description_ar: "منظم الأس الهيدروجيني. توازن مثالي في عمليات المعالجة.",
-        image_url: "/images/water-treatment.png", is_featured: false
-    },
-
-    // ══════════════════════════════════════════════
-    // BASKI → Pigment Baskı (Groprint)
-    // ══════════════════════════════════════════════
-    {
-        id: "53", category_id: "baski", subgroup_id: "pigment-baski", slug: "groprint-bnd",
-        name: "Groprint BND", ionic_type: "anionic",
-        title_tr: "Groprint BND", title_en: "Groprint BND", title_fr: "Groprint BND", title_ar: "Groprint BND",
-        description_tr: "Pigment baskı binder'ı. Yüksek haslık, yumuşak tuşe, düşük formaldehit.",
-        description_en: "Pigment printing binder. High fastness, soft hand feel, low formaldehyde.",
-        description_fr: "Liant d'impression pigmentaire. Haute solidité, toucher doux.",
-        description_ar: "رابط الطباعة الصبغية. ثبات عالي، ملمس ناعم.",
+        id: "sol-1", category_id: "boya-solvent", subgroup_id: "organik-solventler", slug: "aseton-saf-teknik-solvent",
+        name: "Acetone Pure Solvent Grade", cas_number: "67-64-1", ionic_type: undefined,
+        title_tr: "Aseton (Saf Teknik Solvent)", title_en: "Acetone (Pure Technical Solvent Grade)",
+        title_fr: "Acétone (Solvant Technique Pur)", title_ar: "الأسيتون (مذيب نقي درجة تقنية)",
+        description_tr: "Boya, lak, reçine, epoksi ve inceltici üretiminde kullanılan uçucu ve güçlü organik solvent.",
+        description_en: "Highly volatile and powerful organic solvent used in paints, lacquers, resins, epoxies, and thinners.",
+        description_fr: "Solvant organique puissant et très volatil utilisé dans les peintures, laques et résines époxy.",
+        description_ar: "مذيب عضوي شديد التطاير والقوة يستخدم في الدهانات والورنيش والراتنجات والراتنجات الإيبوكسية.",
         image_url: "/images/dyeing.png", is_featured: true
     },
     {
-        id: "54", category_id: "baski", subgroup_id: "pigment-baski", slug: "groprint-thk",
-        name: "Groprint THK", ionic_type: "anionic",
-        title_tr: "Groprint THK", title_en: "Groprint THK", title_fr: "Groprint THK", title_ar: "Groprint THK",
-        description_tr: "Sentetik kıvamlaştırıcı. Pigment baskıda keskin desen hatları, kolay yıkanabilir.",
-        description_en: "Synthetic thickener. Sharp pattern definition in pigment printing, easy wash-off.",
-        description_fr: "Épaississant synthétique pour impression pigmentaire.",
-        description_ar: "مكثف صناعي. خطوط تصميم حادة في الطباعة الصبغية.",
-        image_url: "/images/dyeing.png", is_featured: false
-    },
-    {
-        id: "55", category_id: "baski", subgroup_id: "pigment-baski", slug: "groprint-sfr",
-        name: "Groprint SFR", ionic_type: "nonionic",
-        title_tr: "Groprint SFR", title_en: "Groprint SFR", title_fr: "Groprint SFR", title_ar: "Groprint SFR",
-        description_tr: "Pigment baskı yumuşatıcısı. Baskı sonrası kumaş sertliğini giderir.",
-        description_en: "Pigment print softener. Eliminates fabric stiffness after printing.",
-        description_fr: "Adoucissant d'impression. Élimine la raideur du tissu.",
-        description_ar: "منعم الطباعة الصبغية. يزيل تصلب القماش بعد الطباعة.",
-        image_url: "/images/dyeing.png", is_featured: false
-    },
-
-    // BASKI → Reaktif Baskı (Groprint)
-    {
-        id: "56", category_id: "baski", subgroup_id: "reaktif-baski", slug: "groprint-alg",
-        name: "Groprint ALG", ionic_type: "anionic",
-        title_tr: "Groprint ALG", title_en: "Groprint ALG", title_fr: "Groprint ALG", title_ar: "Groprint ALG",
-        description_tr: "Reaktif baskı kıvamlaştırıcısı. Yüksek renk verimi, mükemmel desen netliği.",
-        description_en: "Reactive printing thickener. High color yield, excellent pattern clarity.",
-        description_fr: "Épaississant pour impression réactive. Haut rendement de couleur.",
-        description_ar: "مكثف الطباعة التفاعلية. إنتاج لون عالي، وضوح تصميم ممتاز.",
+        id: "sol-2", category_id: "boya-solvent", subgroup_id: "alkoller-ve-glikoller", slug: "izopropil-alkol-ipa-99",
+        name: "Isopropanol (IPA 99.9%)", cas_number: "67-63-0", ionic_type: undefined,
+        title_tr: "İzopropil Alkol (IPA %99.9 Susuz)", title_en: "Isopropanol (IPA 99.9% Anhydrous)",
+        title_fr: "Alcool Isopropylique (IPA 99.9%)", title_ar: "كحول الأيزوبروبيل (IPA 99.9% لا مائي)",
+        description_tr: "Boya, mürekkep, dezenfektan, kozmetik ve yüzey temizleyicilerde kullanılan yüksek saflıkta susuz alkol.",
+        description_en: "High-purity anhydrous alcohol widely used as a solvent in inks, paints, disinfectants, and electronics cleaners.",
+        description_fr: "Alcool anhydre de haute pureté utilisé comme solvant dans les encres, peintures et désinfectants.",
+        description_ar: "كحول لا مائي عالي النقاء يستخدم كمذيب في الأحبار والدهانات والمطهرات ومُنظفات الإلكترونيات.",
         image_url: "/images/dyeing.png", is_featured: true
     },
     {
-        id: "57", category_id: "baski", subgroup_id: "reaktif-baski", slug: "groprint-ure",
-        name: "Groprint URE", ionic_type: "nonionic",
-        title_tr: "Groprint URE", title_en: "Groprint URE", title_fr: "Groprint URE", title_ar: "Groprint URE",
-        description_tr: "Reaktif baskıda nem tutucu. Fiksaj oranını artırır, renk canlılığını yükseltir.",
-        description_en: "Moisture retainer for reactive printing. Improves fixation rate and color vibrancy.",
-        description_fr: "Rétenteur d'humidité pour impression réactive.",
-        description_ar: "مثبت رطوبة للطباعة التفاعلية. يحسن معدل التثبيت.",
-        image_url: "/images/dyeing.png", is_featured: false
-    },
-    {
-        id: "58", category_id: "baski", subgroup_id: "reaktif-baski", slug: "groprint-oxd",
-        name: "Groprint OXD", ionic_type: "nonionic",
-        title_tr: "Groprint OXD", title_en: "Groprint OXD", title_fr: "Groprint OXD", title_ar: "Groprint OXD",
-        description_tr: "Baskı sonrası oksidatif yıkama ajanı. Fiksaj olmayan boyayı uzaklaştırır.",
-        description_en: "Post-printing oxidative wash agent. Removes unfixed dye.",
-        description_fr: "Agent de lavage oxydatif post-impression.",
-        description_ar: "عامل غسيل مؤكسد بعد الطباعة. يزيل الصبغة غير المثبتة.",
+        id: "sol-3", category_id: "boya-solvent", subgroup_id: "organik-solventler", slug: "ksilen-karisik-izomerler",
+        name: "Xylene (Mixed Isomers Tech)", cas_number: "1330-20-7", ionic_type: undefined,
+        title_tr: "Ksilen (Karma İzomerler Solvent)", title_en: "Xylene (Mixed Isomers Solvent)",
+        title_fr: "Xylène (Mélange d'Isomères)", title_ar: "الزيلين (مزيج الأيزومرات)",
+        description_tr: "Sanayi boyaları, otomotiv astarları, deri cilaları ve reçine çözeltilerinde kullanılan aromatik solvent.",
+        description_en: "Aromatic hydrocarbon solvent utilized in industrial paints, automotive primers, leather coatings, and resins.",
+        description_fr: "Solvant d'hydrocarbure aromatique utilisé dans les peintures industrielles et apprêts automobiles.",
+        description_ar: "مذيب هيدروكربوني عطري يستخدم في الدهانات الصناعية والمواد الأولية للسيارات وراتنجات الطلاء.",
         image_url: "/images/dyeing.png", is_featured: false
     },
 
-    // ══════════════════════════════════════════════
-    // KÖPÜK KESİCİ → Silikon Bazlı (Grofoam)
-    // ══════════════════════════════════════════════
+    // --- METAL & YÜZEY İŞLEM ---
     {
-        id: "59", category_id: "kopuk-kesici", subgroup_id: "silikon-kopuk-kesici", slug: "grofoam-sl",
-        name: "Grofoam SL", ionic_type: "nonionic",
-        title_tr: "Grofoam SL", title_en: "Grofoam SL", title_fr: "Grofoam SL", title_ar: "Grofoam SL",
-        description_tr: "Silikon emülsiyon köpük kesici. Tüm yaş proseslere uygun, uzun süreli etki.",
-        description_en: "Silicone emulsion antifoam. Suitable for all wet processes, long-lasting effect.",
-        description_fr: "Anti-mousse émulsion silicone. Pour tous les procédés humides.",
-        description_ar: "مضاد رغوة مستحلب سيليكوني. مناسب لجميع العمليات الرطبة.",
+        id: "met-1", category_id: "metal-yuzey", subgroup_id: "endustriyel-asitler", slug: "sulfurik-asit-98-teknik",
+        name: "Sulfuric Acid 98% (Technical Grade)", cas_number: "7664-93-9", ionic_type: undefined,
+        title_tr: "Sülfürik Asit %98 (Teknik Mineral Asit)", title_en: "Sulfuric Acid 98% (Technical Grade H2SO4)",
+        title_fr: "Acide Sulfurique 98% (Grade Technique)", title_ar: "حمض الكبريتيك 98% (درجة تقنية)",
+        description_tr: "Metal dekapajı, anotleme, akü sanayii ve ağır kimya süreçlerinde kullanılan konsantre güçlü mineral asit.",
+        description_en: "Concentrated strong mineral acid used in metal pickling, anodizing, battery manufacturing, and heavy chemical processing.",
+        description_fr: "Acide minéral fort concentré utilisé dans le décapage des métaux, l'anodisation et les batteries.",
+        description_ar: "حمض معدني قوي مركز يستخدم في تنظيف المعادن والتنقيط وتصنيع البطاريات والعمليات الكيميائية الثقيلة.",
         image_url: "/images/pretreatment.png", is_featured: true
     },
     {
-        id: "60", category_id: "kopuk-kesici", subgroup_id: "silikon-kopuk-kesici", slug: "grofoam-sl-cons",
-        name: "Grofoam SL Cons", ionic_type: "nonionic",
-        title_tr: "Grofoam SL Cons", title_en: "Grofoam SL Cons", title_fr: "Grofoam SL Cons", title_ar: "Grofoam SL Cons",
-        description_tr: "Konsantre silikon köpük kesici. Düşük dozajda yüksek verim, jet makinelerine uygun.",
-        description_en: "Concentrated silicone antifoam. High efficiency at low dosage, suitable for jet machines.",
-        description_fr: "Anti-mousse silicone concentré. Haute efficacité à faible dose.",
-        description_ar: "مضاد رغوة سيليكوني مركز. كفاءة عالية بجرعة منخفضة.",
+        id: "met-2", category_id: "metal-yuzey", subgroup_id: "endustriyel-asitler", slug: "hidroklorik-asit-33-hcl",
+        name: "Hydrochloric Acid 33% (HCl Pickling)", cas_number: "7647-01-0", ionic_type: undefined,
+        title_tr: "Hidroklorik Asit %33 (Tuz Ruhu / Dekapaj Asidi)", title_en: "Hydrochloric Acid 33% (Metal Pickling Acid)",
+        title_fr: "Acide Chlorhydrique 33% (Décapage)", title_ar: "حمض الهيدروكلوريك 33% (حمض تنظيف المعادن)",
+        description_tr: "Demir-çelik pas ve tufal temizliği (dekapaj), pH düşürme ve rejenere süreçlerinde kullanılan mineral asit.",
+        description_en: "Primary mineral acid used for steel rust/scale pickling, pH adjustment, and ion exchange regeneration.",
+        description_fr: "Acide minéral primaire utilisé pour le décapage de la rouille de l'acier et l'ajustement du pH.",
+        description_ar: "حمض معدني رئيسي يستخدم لتنظيف صدأ الفولاذ وتعديل الرقم الهيدروجيني واستعادة التبادل الأيوني.",
+        image_url: "/images/pretreatment.png", is_featured: true
+    },
+    {
+        id: "met-3", category_id: "metal-yuzey", subgroup_id: "endustriyel-asitler", slug: "kostik-soda-sıvı-50-naoh",
+        name: "Caustic Soda Liquid 50% (NaOH)", cas_number: "1310-73-2", ionic_type: undefined,
+        title_tr: "Kostik Soda Sıvı %50 (Sodyum Hidroksit Çözeltisi)", title_en: "Caustic Soda Liquid 50% (NaOH Solution)",
+        title_fr: "Soude Caustique Liquide 50%", title_ar: "الصودا الكاوية السائلة 50% (محلول هيدروكسيد الصوديوم)",
+        description_tr: "Metal yağ alma banyoları, pH yükseltme, nötralizasyon ve CIP temizlikte kullanılan sıvı güçlü alkali.",
+        description_en: "Strong liquid alkaline solution used for metal degreasing baths, pH elevation, neutralization, and CIP cleaning.",
+        description_fr: "Solution alcaline liquide forte utilisée pour les bains de dégraissage des métaux et la neutralisation.",
+        description_ar: "محلول قلوي سائل قوي يستخدم لحمامات إزالة الدهون من المعادن ورفع الرقم الهيدروجيني والتعادل.",
         image_url: "/images/pretreatment.png", is_featured: false
     },
 
-    // KÖPÜK KESİCİ → Mineral Bazlı (Grofoam)
+    // --- TEKSTİL (YARDIMCI KATEGORİ) ---
     {
-        id: "61", category_id: "kopuk-kesici", subgroup_id: "mineral-kopuk-kesici", slug: "grofoam-mn",
-        name: "Grofoam MN", ionic_type: "nonionic",
-        title_tr: "Grofoam MN", title_en: "Grofoam MN", title_fr: "Grofoam MN", title_ar: "Grofoam MN",
-        description_tr: "Mineral bazlı köpük kesici. Ağartma ve kasar proseslerinde leke bırakmaz.",
-        description_en: "Mineral-based antifoam. No staining in bleaching and scouring processes.",
-        description_fr: "Anti-mousse minéral. Sans taches dans les procédés de blanchiment.",
-        description_ar: "مضاد رغوة معدني. بدون بقع في عمليات التبييض.",
-        image_url: "/images/pretreatment.png", is_featured: false
+        id: "tex-1", category_id: "tekstil", subgroup_id: "on-islem-ve-boyama", slug: "growet-elf-on-islem-islatici",
+        name: "Growet ELF (Pre-Treatment Wetting Agent)", cas_number: undefined, ionic_type: "nonionic",
+        title_tr: "Growet ELF (Düşük Köpüklü Ön İşlem Islatıcısı)", title_en: "Growet ELF (Low-Foaming Pre-Treatment Wetting Agent)",
+        title_fr: "Growet ELF (Agent Mouillant de Prétraitement)", title_ar: "Growet ELF (عامل ترطيب منخفض الرغوة للمعالجة المسبقة)",
+        description_tr: "Pamuk ve karışımlarının kasar ve ön işlem banyolarında hızlı ıslatma ve hidrofillik sağlayan noniyonik madde.",
+        description_en: "Nonionic wetting agent providing rapid penetration and high hydrophilicity in cotton bleaching baths.",
+        description_fr: "Agent mouillant non-ionique offrant une pénétration rapide et une forte hydrophilie dans le blanchiment du coton.",
+        description_ar: "عامل ترطيب غير أيوني يوفر اختراقًا سريعًا ومائية عالية في حمامات تبييض القطن.",
+        image_url: "/images/pretreatment.png", is_featured: true
     },
     {
-        id: "62", category_id: "kopuk-kesici", subgroup_id: "mineral-kopuk-kesici", slug: "grofoam-ht",
-        name: "Grofoam HT", ionic_type: "nonionic",
-        title_tr: "Grofoam HT", title_en: "Grofoam HT", title_fr: "Grofoam HT", title_ar: "Grofoam HT",
-        description_tr: "Yüksek sıcaklık köpük kesici. 130°C'ye kadar stabil, HT boyama ve buhar proseslerine özel.",
-        description_en: "High temperature antifoam. Stable up to 130°C, for HT dyeing and steaming processes.",
-        description_fr: "Anti-mousse haute température. Stable jusqu'à 130°C.",
-        description_ar: "مضاد رغوة للحرارة العالية. مستقر حتى 130 درجة مئوية.",
-        image_url: "/images/pretreatment.png", is_featured: false
-    },
-
-    // ══════════════════════════════════════════════
-    // FİKSATÖRLER → Renk Fiksatörleri (Grofiks)
-    // ══════════════════════════════════════════════
-    {
-        id: "63", category_id: "fiksatorler", subgroup_id: "renk-fiksatorleri", slug: "grofiks-rct",
-        name: "Grofiks RCT", ionic_type: "cationic",
-        title_tr: "Grofiks RCT", title_en: "Grofiks RCT", title_fr: "Grofiks RCT", title_ar: "Grofiks RCT",
-        description_tr: "Reaktif boya fiksatörü. Yıkama haslığını 1-2 puan artırır, renk tonunu değiştirmez.",
-        description_en: "Reactive dye fixer. Improves wash fastness by 1-2 points without shade change.",
-        description_fr: "Fixateur pour colorants réactifs. Améliore la solidité au lavage.",
-        description_ar: "مثبت الصبغة التفاعلية. يحسن ثبات الغسيل 1-2 درجة.",
-        image_url: "/images/dyeing.png", is_featured: true
-    },
-    {
-        id: "64", category_id: "fiksatorler", subgroup_id: "renk-fiksatorleri", slug: "grofiks-drt",
-        name: "Grofiks DRT", ionic_type: "cationic",
-        title_tr: "Grofiks DRT", title_en: "Grofiks DRT", title_fr: "Grofiks DRT", title_ar: "Grofiks DRT",
-        description_tr: "Direkt boya fiksatörü. Formaldehitsiz, ışık haslığını etkilemez.",
-        description_en: "Direct dye fixer. Formaldehyde-free, does not affect light fastness.",
-        description_fr: "Fixateur pour colorants directs. Sans formaldéhyde.",
-        description_ar: "مثبت الصبغة المباشرة. خالي من الفورمالديهايد.",
-        image_url: "/images/dyeing.png", is_featured: false
-    },
-    {
-        id: "65", category_id: "fiksatorler", subgroup_id: "renk-fiksatorleri", slug: "grofiks-unv",
-        name: "Grofiks UNV", ionic_type: "cationic",
-        title_tr: "Grofiks UNV", title_en: "Grofiks UNV", title_fr: "Grofiks UNV", title_ar: "Grofiks UNV",
-        description_tr: "Universal fiksatör. Reaktif, direkt ve küp boyalar için çok amaçlı kullanım.",
-        description_en: "Universal fixer. Multi-purpose for reactive, direct and vat dyes.",
-        description_fr: "Fixateur universel. Multi-usage pour colorants réactifs, directs et de cuve.",
-        description_ar: "مثبت عالمي. متعدد الاستخدامات للأصباغ التفاعلية والمباشرة.",
-        image_url: "/images/dyeing.png", is_featured: false
-    },
-    {
-        id: "66", category_id: "fiksatorler", subgroup_id: "renk-fiksatorleri", slug: "grofiks-lf",
-        name: "Grofiks LF", ionic_type: "cationic",
-        title_tr: "Grofiks LF", title_en: "Grofiks LF", title_fr: "Grofiks LF", title_ar: "Grofiks LF",
-        description_tr: "Düşük formaldehit fiksatör. Oeko-Tex standartlarına uygun, bebek tekstili için ideal.",
-        description_en: "Low formaldehyde fixer. Oeko-Tex compliant, ideal for baby textiles.",
-        description_fr: "Fixateur faible en formaldéhyde. Conforme Oeko-Tex, idéal pour bébé.",
-        description_ar: "مثبت منخفض الفورمالديهايد. متوافق مع Oeko-Tex، مثالي لملابس الأطفال.",
-        image_url: "/images/dyeing.png", is_featured: false
-    },
-
-    // ══════════════════════════════════════════════
-    // BOYAMA → Ek Ürünler (Anti-kırık, Alkali Donör)
-    // ══════════════════════════════════════════════
-    {
-        id: "67", category_id: "boyama", subgroup_id: "dispergatorler", slug: "grogal-acr",
-        name: "Grogal ACR", ionic_type: "nonionic",
-        title_tr: "Grogal ACR", title_en: "Grogal ACR", title_fr: "Grogal ACR", title_ar: "Grogal ACR",
-        description_tr: "Anti-kırık ajanı. Jet ve overflow makinelerinde kumaş kırık izlerini önler.",
-        description_en: "Anti-crease agent. Prevents fabric crease marks in jet and overflow machines.",
-        description_fr: "Agent anti-pli. Prévient les marques de plis dans les machines jet.",
-        description_ar: "عامل مضاد للتجعد. يمنع علامات التجعد في ماكينات الجيت.",
-        image_url: "/images/dyeing.png", is_featured: false
-    },
-    {
-        id: "68", category_id: "boyama", subgroup_id: "dispergatorler", slug: "grogal-alk",
-        name: "Grogal ALK", ionic_type: "nonionic",
-        title_tr: "Grogal ALK", title_en: "Grogal ALK", title_fr: "Grogal ALK", title_ar: "Grogal ALK",
-        description_tr: "Alkali donör. Reaktif boyamada kontrollü pH yükselmesi, düzgün fiksaj.",
-        description_en: "Alkali donor. Controlled pH rise in reactive dyeing for uniform fixation.",
-        description_fr: "Donneur d'alcali. Montée contrôlée du pH en teinture réactive.",
-        description_ar: "مانح قلوي. ارتفاع متحكم في الأس الهيدروجيني للتثبيت المنتظم.",
-        image_url: "/images/dyeing.png", is_featured: false
-    },
-
-    // ══════════════════════════════════════════════
-    // APRE → Ek Fonksiyonel Ürünler
-    // ══════════════════════════════════════════════
-    {
-        id: "69", category_id: "apre", subgroup_id: "fonksiyonel-apreler", slug: "grofix-nir",
-        name: "Grofix NIR", ionic_type: "nonionic",
-        title_tr: "Grofix NIR", title_en: "Grofix NIR", title_fr: "Grofix NIR", title_ar: "Grofix NIR",
-        description_tr: "Buruşmazlık apresi (non-iron). Pamuk ve karışımlarda kalıcı ütüsüz etki.",
-        description_en: "Non-iron finish. Permanent wrinkle-free effect on cotton and blends.",
-        description_fr: "Finition sans repassage. Effet anti-pli permanent sur coton.",
-        description_ar: "تشطيب بدون كي. تأثير دائم مضاد للتجعد على القطن.",
-        image_url: "/images/finishing.png", is_featured: false
-    },
-    {
-        id: "70", category_id: "apre", subgroup_id: "fonksiyonel-apreler", slug: "grofix-uvp",
-        name: "Grofix UVP", ionic_type: "nonionic",
-        title_tr: "Grofix UVP", title_en: "Grofix UVP", title_fr: "Grofix UVP", title_ar: "Grofix UVP",
-        description_tr: "UV koruma apresi. UPF 50+ koruma, outdoor kumaşlar için gerekli.",
-        description_en: "UV protection finish. UPF 50+ protection, essential for outdoor fabrics.",
-        description_fr: "Finition protection UV. Protection UPF 50+ pour tissus d'extérieur.",
-        description_ar: "تشطيب حماية من الأشعة فوق البنفسجية. حماية UPF 50+.",
-        image_url: "/images/finishing.png", is_featured: false
-    },
+        id: "tex-2", category_id: "tekstil", subgroup_id: "yumusatici-ve-apre", slug: "grosil-amn-silikon-yumusatici",
+        name: "Grosil AMN (Micro Emulsion Silicone)", cas_number: undefined, ionic_type: "cationic",
+        title_tr: "Grosil AMN (Mikro Emülsiyon Silikon Yumuşatıcı)", title_en: "Grosil AMN (Micro Emulsion Silicone Softener)",
+        title_fr: "Grosil AMN (Adoucissant Silicone Micro Emulsion)", title_ar: "Grosil AMN (منعم سيليكون مايكرو)",
+        description_tr: "Örme ve dokuma kumaşlara ipeksi, iç yumuşaklık ve kaygan tutum kazandıran katyonik silikon emülsiyonu.",
+        description_en: "Cationic amino-functional silicone emulsion imparting a silky, inner soft handle to knitted and woven fabrics.",
+        description_fr: "Émulsion de silicone cationique apportant un toucher doux et soyeux aux tricots et tissus.",
+        description_ar: "مستحلب سيليكون كاتيوني يمنح ملمسًا حريريًا وناعمًا للأقمشة المحبوكة والمنسوجة.",
+        image_url: "/images/softeners.png", is_featured: true
+    }
 ];

@@ -3,13 +3,23 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/routing";
-import { Menu, X, ChevronDown, Beaker, Factory, Droplets, Sparkles } from "lucide-react";
+import { Menu, X, ChevronDown, Beaker, Factory, Sparkles, Droplets, Layers, ShieldCheck, Flame } from "lucide-react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { MOCK_CATEGORIES, MOCK_SUBGROUPS, MOCK_PRODUCTS } from "@/lib/mock";
 
 function getLocalized(obj: any, field: string, locale: string) {
     return obj[`${field}_${locale}`] || obj[`${field}_en`] || obj[`${field}_tr`];
 }
+
+const CATEGORY_ICONS: Record<string, React.ReactNode> = {
+    "deterjan": <Layers className="w-4 h-4 text-sky-400" />,
+    "kagit": <Layers className="w-4 h-4 text-amber-400" />,
+    "aritma": <Droplets className="w-4 h-4 text-blue-400" />,
+    "tarim-gida": <Sparkles className="w-4 h-4 text-emerald-400" />,
+    "boya-solvent": <Flame className="w-4 h-4 text-rose-400" />,
+    "metal-yuzey": <ShieldCheck className="w-4 h-4 text-purple-400" />,
+    "tekstil": <Sparkles className="w-4 h-4 text-accent" />
+};
 
 export default function Header() {
     const t = useTranslations("Navigation");
@@ -18,7 +28,7 @@ export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isProductsOpen, setIsProductsOpen] = useState(false);
     const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
-    const [activeTab, setActiveTab] = useState<'industrial' | 'water-treatment' | 'textile'>('industrial');
+    const [activeTab, setActiveTab] = useState<'industrial' | 'textile'>('industrial');
     
     const dropdownRef = useRef<HTMLDivElement>(null);
     const timeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -55,7 +65,6 @@ export default function Header() {
     ];
 
     const industrialCats = MOCK_CATEGORIES.filter(c => c.domain === 'industrial');
-    const waterCats = MOCK_CATEGORIES.filter(c => c.domain === 'water-treatment');
     const textileCats = MOCK_CATEGORIES.filter(c => c.domain === 'textile');
 
     return (
@@ -113,138 +122,49 @@ export default function Header() {
                                 : 'opacity-0 -translate-y-2 pointer-events-none'
                                 }`}
                         >
-                            <div className="rounded-2xl p-6 w-[920px] shadow-2xl shadow-black/70 bg-[#0b172a] border border-white/10 backdrop-blur-2xl">
-                                {/* 3-Pillar Tabs Header */}
+                            <div className="rounded-2xl p-6 w-[940px] shadow-2xl shadow-black/80 bg-[#0b172a] border border-white/10 backdrop-blur-2xl">
+                                {/* Pillar Tabs Header */}
                                 <div className="flex items-center gap-2 p-1.5 bg-white/5 rounded-xl border border-white/5 mb-6">
                                     <button
                                         type="button"
                                         onClick={() => setActiveTab('industrial')}
                                         onMouseEnter={() => setActiveTab('industrial')}
-                                        className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs md:text-sm font-bold transition-all duration-300 ${activeTab === 'industrial' ? 'bg-accent text-white shadow-lg shadow-accent/25' : 'text-text-secondary hover:text-white hover:bg-white/5'}`}
+                                        className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-lg text-sm font-bold transition-all duration-300 ${activeTab === 'industrial' ? 'bg-accent text-white shadow-lg shadow-accent/25' : 'text-text-secondary hover:text-white hover:bg-white/5'}`}
                                     >
                                         <Factory className="w-4 h-4" />
-                                        {t('industrialRawMaterials')}
-                                    </button>
-                                    <button
-                                        type="button"
-                                        onClick={() => setActiveTab('water-treatment')}
-                                        onMouseEnter={() => setActiveTab('water-treatment')}
-                                        className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs md:text-sm font-bold transition-all duration-300 ${activeTab === 'water-treatment' ? 'bg-sky-500 text-white shadow-lg shadow-sky-500/25' : 'text-text-secondary hover:text-white hover:bg-white/5'}`}
-                                    >
-                                        <Droplets className="w-4 h-4" />
-                                        {t('waterTreatmentChemicals')}
+                                        {locale === 'tr' ? 'Endüstriyel Hammadde Sektörleri' : 'Industrial Chemical Sectors'}
                                     </button>
                                     <button
                                         type="button"
                                         onClick={() => setActiveTab('textile')}
                                         onMouseEnter={() => setActiveTab('textile')}
-                                        className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs md:text-sm font-bold transition-all duration-300 ${activeTab === 'textile' ? 'bg-accent text-white shadow-lg shadow-accent/25' : 'text-text-secondary hover:text-white hover:bg-white/5'}`}
+                                        className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-lg text-sm font-bold transition-all duration-300 ${activeTab === 'textile' ? 'bg-white/10 text-white shadow-lg' : 'text-text-secondary hover:text-white hover:bg-white/5'}`}
                                     >
                                         <Sparkles className="w-4 h-4" />
-                                        {t('textileChemicals')}
+                                        {t('textileAuxiliaries')}
                                     </button>
                                 </div>
 
                                 {/* Active Tab Content */}
-                                {activeTab === 'industrial' && (
-                                    <div className="grid grid-cols-2 gap-4">
+                                {activeTab === 'industrial' ? (
+                                    <div className="grid grid-cols-3 gap-4">
                                         {industrialCats.map((cat) => {
                                             const catCount = MOCK_PRODUCTS.filter(p => p.category_id === cat.id).length;
                                             const catSubgroups = MOCK_SUBGROUPS.filter(s => s.category_id === cat.id);
                                             return (
-                                                <div key={cat.id} className="glass rounded-xl p-4 hover:bg-white/[0.06] transition-all border border-white/5 group">
-                                                    <Link
-                                                        href={`/products?category=${cat.id}`}
-                                                        onClick={() => setIsProductsOpen(false)}
-                                                        className="block mb-2"
-                                                    >
-                                                        <div className="flex items-center justify-between">
-                                                            <span className="font-bold text-white group-hover:text-accent transition-colors text-base">
-                                                                {getLocalized(cat, 'name', locale)}
-                                                            </span>
-                                                            <span className="text-xs text-text-muted font-mono">({catCount})</span>
-                                                        </div>
-                                                    </Link>
-                                                    {catSubgroups.length > 0 && (
-                                                        <div className="space-y-1 mt-2 border-t border-white/5 pt-2">
-                                                            {catSubgroups.map((sub) => (
-                                                                <Link
-                                                                    key={sub.id}
-                                                                    href={`/products?category=${cat.id}&subgroup=${sub.id}`}
-                                                                    onClick={() => setIsProductsOpen(false)}
-                                                                    className="flex items-center gap-2 text-xs text-text-muted hover:text-white py-1 transition-colors"
-                                                                >
-                                                                    <Beaker className="w-3 h-3 text-accent/50 shrink-0" />
-                                                                    <span>{getLocalized(sub, 'name', locale)}</span>
-                                                                </Link>
-                                                            ))}
-                                                        </div>
-                                                    )}
-                                                </div>
-                                            );
-                                        })}
-                                    </div>
-                                )}
-
-                                {activeTab === 'water-treatment' && (
-                                    <div className="space-y-4">
-                                        {waterCats.map((cat) => {
-                                            const catCount = MOCK_PRODUCTS.filter(p => p.category_id === cat.id).length;
-                                            const catSubgroups = MOCK_SUBGROUPS.filter(s => s.category_id === cat.id);
-                                            return (
-                                                <div key={cat.id} className="glass rounded-xl p-5 hover:bg-white/[0.06] transition-all border border-sky-500/20 group">
-                                                    <Link
-                                                        href={`/products?category=${cat.id}`}
-                                                        onClick={() => setIsProductsOpen(false)}
-                                                        className="flex items-center justify-between mb-3"
-                                                    >
-                                                        <div className="flex items-center gap-3">
-                                                            <Droplets className="w-6 h-6 text-sky-400" />
-                                                            <span className="font-bold text-white text-lg group-hover:text-sky-300 transition-colors">
-                                                                {getLocalized(cat, 'name', locale)}
-                                                            </span>
-                                                        </div>
-                                                        <span className="text-xs text-sky-300/80 font-mono bg-sky-500/10 px-2.5 py-1 rounded-full border border-sky-500/20">
-                                                            {catCount} {locale === 'tr' ? 'Ürün' : 'Products'}
-                                                        </span>
-                                                    </Link>
-                                                    {catSubgroups.length > 0 && (
-                                                        <div className="grid grid-cols-3 gap-3 border-t border-white/5 pt-3">
-                                                            {catSubgroups.map((sub) => (
-                                                                <Link
-                                                                    key={sub.id}
-                                                                    href={`/products?category=${cat.id}&subgroup=${sub.id}`}
-                                                                    onClick={() => setIsProductsOpen(false)}
-                                                                    className="flex items-center gap-2 text-xs text-text-muted hover:text-white p-2.5 rounded-lg bg-white/5 hover:bg-white/10 transition-colors"
-                                                                >
-                                                                    <Beaker className="w-3.5 h-3.5 text-sky-400 shrink-0" />
-                                                                    <span className="font-medium">{getLocalized(sub, 'name', locale)}</span>
-                                                                </Link>
-                                                            ))}
-                                                        </div>
-                                                    )}
-                                                </div>
-                                            );
-                                        })}
-                                    </div>
-                                )}
-
-                                {activeTab === 'textile' && (
-                                    <div className="grid grid-cols-3 gap-4">
-                                        {textileCats.map((cat) => {
-                                            const catCount = MOCK_PRODUCTS.filter(p => p.category_id === cat.id).length;
-                                            const catSubgroups = MOCK_SUBGROUPS.filter(s => s.category_id === cat.id);
-                                            return (
-                                                <div key={cat.id} className="glass rounded-xl p-3.5 hover:bg-white/[0.06] transition-all border border-white/5 group flex flex-col justify-between">
+                                                <div key={cat.id} className="glass rounded-xl p-4 hover:bg-white/[0.06] transition-all border border-white/5 group flex flex-col justify-between">
                                                     <div>
                                                         <Link
                                                             href={`/products?category=${cat.id}`}
                                                             onClick={() => setIsProductsOpen(false)}
                                                             className="flex items-center justify-between mb-2"
                                                         >
-                                                            <span className="font-bold text-white group-hover:text-accent transition-colors text-sm">
-                                                                {getLocalized(cat, 'name', locale)}
-                                                            </span>
+                                                            <div className="flex items-center gap-2">
+                                                                {CATEGORY_ICONS[cat.id] || <Factory className="w-4 h-4 text-accent" />}
+                                                                <span className="font-bold text-white group-hover:text-accent transition-colors text-sm">
+                                                                    {getLocalized(cat, 'name', locale)}
+                                                                </span>
+                                                            </div>
                                                             <span className="text-[10px] text-text-muted font-mono">({catCount})</span>
                                                         </Link>
                                                         {catSubgroups.length > 0 && (
@@ -267,19 +187,58 @@ export default function Header() {
                                             );
                                         })}
                                     </div>
+                                ) : (
+                                    <div className="grid grid-cols-2 gap-4">
+                                        {textileCats.map((cat) => {
+                                            const catCount = MOCK_PRODUCTS.filter(p => p.category_id === cat.id).length;
+                                            const catSubgroups = MOCK_SUBGROUPS.filter(s => s.category_id === cat.id);
+                                            return (
+                                                <div key={cat.id} className="glass rounded-xl p-4 hover:bg-white/[0.06] transition-all border border-white/5 group">
+                                                    <Link
+                                                        href={`/products?category=${cat.id}`}
+                                                        onClick={() => setIsProductsOpen(false)}
+                                                        className="flex items-center justify-between mb-2"
+                                                    >
+                                                        <div className="flex items-center gap-2">
+                                                            <Sparkles className="w-4 h-4 text-accent" />
+                                                            <span className="font-bold text-white group-hover:text-accent transition-colors text-base">
+                                                                {getLocalized(cat, 'name', locale)}
+                                                            </span>
+                                                        </div>
+                                                        <span className="text-xs text-text-muted font-mono">({catCount})</span>
+                                                    </Link>
+                                                    {catSubgroups.length > 0 && (
+                                                        <div className="space-y-1.5 border-t border-white/5 pt-2">
+                                                            {catSubgroups.map((sub) => (
+                                                                <Link
+                                                                    key={sub.id}
+                                                                    href={`/products?category=${cat.id}&subgroup=${sub.id}`}
+                                                                    onClick={() => setIsProductsOpen(false)}
+                                                                    className="flex items-center gap-2 text-xs text-text-muted hover:text-white py-1 transition-colors"
+                                                                >
+                                                                    <Beaker className="w-3 h-3 text-accent/50 shrink-0" />
+                                                                    <span>{getLocalized(sub, 'name', locale)}</span>
+                                                                </Link>
+                                                            ))}
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
                                 )}
 
                                 {/* Footer CTA */}
                                 <div className="mt-5 pt-4 border-t border-white/10 flex items-center justify-between">
                                     <span className="text-xs text-text-muted">
-                                        {locale === 'tr' ? 'Endüstriyel, Su Arıtma & Tekstil Kimyasalları Tedarikçisi' : 'Industrial, Water Treatment & Textile Chemical Supplier'}
+                                        {locale === 'tr' ? 'Endüstriyel Hammadde & Sektörel Kimyasal İhracatçısı' : 'Industrial Chemical Raw Material Exporter'}
                                     </span>
                                     <Link
                                         href="/products"
                                         onClick={() => setIsProductsOpen(false)}
                                         className="text-xs font-bold text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1"
                                     >
-                                        {locale === 'tr' ? 'Tüm Kataloğu Görüntüle →' : 'View Full Catalog →'}
+                                        {locale === 'tr' ? 'Tüm Ürün Kataloğunu İncele →' : 'View Full Catalog →'}
                                     </Link>
                                 </div>
                             </div>
@@ -363,10 +322,10 @@ export default function Header() {
 
                     {mobileProductsOpen && (
                         <div className="ms-4 space-y-4 mb-2 py-2">
-                            {/* Industrial */}
+                            {/* Industrial Sectors */}
                             <div>
                                 <div className="text-[10px] font-black text-white/40 uppercase tracking-widest px-3 py-1.5 bg-white/5 rounded-md mb-3">
-                                    {t('industrialRawMaterials')}
+                                    {locale === 'tr' ? 'Endüstriyel Hammadde Sektörleri' : 'Industrial Chemical Sectors'}
                                 </div>
                                 {industrialCats.map((cat) => {
                                     const subs = MOCK_SUBGROUPS.filter(s => s.category_id === cat.id);
@@ -395,42 +354,10 @@ export default function Header() {
                                 })}
                             </div>
 
-                            {/* Water Treatment */}
-                            <div>
-                                <div className="text-[10px] font-black text-sky-400 uppercase tracking-widest px-3 py-1.5 bg-sky-500/10 rounded-md mb-3 mt-4">
-                                    {t('waterTreatmentChemicals')}
-                                </div>
-                                {waterCats.map((cat) => {
-                                    const subs = MOCK_SUBGROUPS.filter(s => s.category_id === cat.id);
-                                    return (
-                                        <div key={cat.id} className="mb-3">
-                                            <Link
-                                                href={`/products?category=${cat.id}`}
-                                                className="text-xs font-bold text-white/90 px-4 py-1 block hover:text-sky-300"
-                                                onClick={() => { setIsMenuOpen(false); setMobileProductsOpen(false); }}
-                                            >
-                                                {getLocalized(cat, 'name', locale)}
-                                            </Link>
-                                            {subs.map((sub) => (
-                                                <Link
-                                                    key={sub.id}
-                                                    href={`/products?category=${cat.id}&subgroup=${sub.id}`}
-                                                    className="flex items-center gap-2 text-sm text-text-muted hover:text-white py-1.5 px-4 ms-2 rounded-lg hover:bg-white/5 transition-all"
-                                                    onClick={() => { setIsMenuOpen(false); setMobileProductsOpen(false); }}
-                                                >
-                                                    <Beaker className="w-3 h-3 text-sky-400" />
-                                                    {getLocalized(sub, 'name', locale)}
-                                                </Link>
-                                            ))}
-                                        </div>
-                                    );
-                                })}
-                            </div>
-                            
                             {/* Textile */}
                             <div>
                                 <div className="text-[10px] font-black text-accent/60 uppercase tracking-widest px-3 py-1.5 bg-accent/10 rounded-md mb-3 mt-4">
-                                    {t('textileChemicals')}
+                                    {t('textileAuxiliaries')}
                                 </div>
                                 {textileCats.map((cat) => {
                                     const subs = MOCK_SUBGROUPS.filter(s => s.category_id === cat.id);

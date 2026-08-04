@@ -8,7 +8,13 @@
         "contact": "Contact",
         "industrialRawMaterials": "Matières Premières Industrielles",
         "textileChemicals": "Produits Chimiques Textiles",
-        "waterTreatmentChemicals": "Traitement de l'Eau"
+        "waterTreatmentChemicals": "Traitement de l'Eau & Effluents",
+        "detergentRawMaterials": "Produits Chimiques pour Détergents",
+        "paperChemicals": "Produits Chimiques pour Papier",
+        "agroFoodChemicals": "Matières Premières Agro & Alimentaires",
+        "paintSolvents": "Peintures, Revêtements & Solvants",
+        "metalSurfaceChemicals": "Traitement des Métaux et Surfaces",
+        "textileAuxiliaries": "Auxiliaires Textiles & Finition"
     },
     "Blog": {
         "title": "Perspectives Techniques",

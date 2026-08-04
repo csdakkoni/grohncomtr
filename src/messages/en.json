@@ -8,7 +8,13 @@
         "contact": "Contact",
         "industrialRawMaterials": "Industrial Raw Materials",
         "textileChemicals": "Textile Chemicals",
-        "waterTreatmentChemicals": "Water Treatment Chemicals"
+        "waterTreatmentChemicals": "Water & Wastewater Treatment",
+        "detergentRawMaterials": "Detergent & Cleaning Raw Materials",
+        "paperChemicals": "Pulp & Paper Processing Chemicals",
+        "agroFoodChemicals": "Agro, Food & Feed Chemicals",
+        "paintSolvents": "Paints, Coatings & Solvents",
+        "metalSurfaceChemicals": "Metal & Surface Treatment",
+        "textileAuxiliaries": "Textile Chemicals & Auxiliaries"
     },
     "Blog": {
         "title": "Technical Insights",

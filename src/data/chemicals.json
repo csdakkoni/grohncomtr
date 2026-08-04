@@ -7060,5 +7060,239 @@
         "applications_ru": [
             "Gold mining by cyanidation. Case hardening of steel parts in cementation furnaces."
         ]
+    },
+    {
+        "id": "chem-labsa",
+        "slug": "labsa-linear-alkil-benzen-sulfonik-asit",
+        "cas_number": "27176-87-0",
+        "ec_number": "248-289-4",
+        "formula": "C18H30O3S",
+        "category": "industrial",
+        "name_tr": "LABSA (Lineer Alkil Benzen Sülfonik Asit)",
+        "name_en": "LABSA (Linear Alkylbenzene Sulfonic Acid 96%)",
+        "name_fr": "LABSA (Acide Alkylbenzène Sulfonique 96%)",
+        "name_ar": "LABSA (حمض ألبا سلفونيك بنزين ألكيل خطي 96%)",
+        "name_ru": "ЛАБСА (Линейная Алкилбензолсульфокислота 96%)",
+        "synonyms_tr": "Sülfonik Asit, LAB Asidi, Dodesilbenzensülfonik asit",
+        "synonyms_en": "Dodecylbenzene Sulfonic Acid, LABSA 96%, Sulfonic Acid",
+        "synonyms_fr": "Acide Dodécylbenzènesulfonique, Acide Sulfonique",
+        "synonyms_ar": "حمض دوديسيل بنزين سلفونيك, حمض السلفونيك",
+        "synonyms_ru": "Додецилбензолсульфокислота, Сульфонол, ЛАБСА",
+        "description_tr": "LABSA %96 (Lineer Alkil Benzen Sülfonik Asit), sıvı ve toz deterjan, bulaşık deterjanı ve endüstriyel temizlik kimyasallarında kullanılan en yaygın anyonik aktif maddedir.",
+        "description_en": "LABSA 96% (Linear Alkylbenzene Sulfonic Acid) is the world's most widely used anionic surfactant in powder/liquid laundry detergents and industrial degreasers.",
+        "description_fr": "Le LABSA 96% est le tensioactif anionique le plus utilisé dans la fabrication de détergents liquides et en poudre.",
+        "description_ar": "حمض ألبا 96% هو المادة الفعالة الأنيونية الأكثر استخدامًا في تصنيع المنظفات السائلة والبودرة.",
+        "description_ru": "ЛАБСА 96% — наиболее популярное анионное поверхностно-активное вещество для производства моющих средств и дегазаторов.",
+        "usage_areas_tr": [
+            "Toz Deterjan Üretimi",
+            "Sıvı Bulaşık Deterjanları",
+            "Endüstriyel Yağ Sökücüler",
+            "Otomotiv Şampuanları"
+        ],
+        "usage_areas_en": [
+            "Powder Laundry Detergents",
+            "Liquid Dishwashing Formulations",
+            "Industrial Degreasers",
+            "Automotive Shampoos"
+        ],
+        "usage_areas_fr": [
+            "Détergents en Poudre",
+            "Détergents Vaisselle Liquides",
+            "Dégraissants Industriels"
+        ],
+        "usage_areas_ar": [
+            "منظفات الغسيل البودرة",
+            "سوائل غسيل الأواني",
+            "مزيلات الدهون الصناعية"
+        ],
+        "usage_areas_ru": [
+            "Стиральные Порошки",
+            "Жидкие Моющие Средства",
+            "Промышленные Обезжириватели"
+        ],
+        "definition_tr": [
+            "LABSA (Lineer Alkil Benzen Sülfonik Asit), kahverengi, yüksek vizkoziteli, suda çözünebilen güçlü bir anyonik sürfaktandır. Lineer alkilbenzenin sülfonasyonu ile elde edilir.",
+            "Nötralize edildiğinde (sodyum hidroksit ile) mükemmel köpük oluşturma, deterjan pigmentlerini bağlama ve yağ çözme kabiliyetine sahip Sodyum Alkilbenzen Sülfonat tuzu oluşturur."
+        ],
+        "definition_en": [
+            "LABSA 96% is a brown, viscous organic acid surfactant produced by the sulfonation of linear alkylbenzene. It dissolves readily in water and alcohols.",
+            "When neutralized with caustic soda (NaOH), it yields sodium alkylbenzene sulfonate, providing exceptional detergency, high foaming stability, and wetting power."
+        ],
+        "definition_fr": [
+            "Le LABSA est un tensioactif acide brun hautement visqueux obtenu par sulfonation de l'alkylbenzène linéaire. Il se dissout facilement dans l'eau.",
+            "Neutralisé avec de la soude caustique, il forme des sels offrant un excellent pouvoir moussant et dégraissant."
+        ],
+        "definition_ar": [
+            "حمض ألبا هو مادة خافضة للتوتر السطحي حمضية بنية لزجة تنتج عن طريق سلفنة البنزين الألكيلي الخطي.",
+            "عند تعادله مع الصودا الكاوية فإنه يشكل أملاح صوديوم ألكيل بنزين سلفونات ذات قدرة رغوية وتنظيفية عالية."
+        ],
+        "definition_ru": [
+            "ЛАБСА 96% представляет собой вязкую жидкость коричневого цвета, полученную сульфированием линейного алкилбензола.",
+            "При нейтрализации едким натром образует алкилбензолсульфонат натрия с отличным пенообразованием и моющей способностью."
+        ],
+        "uses_benefits_tr": [
+            "Deterjanlarda yüksek aktif madde ve leke çıkarma performansı sağlar.",
+            "Tüm sertlikteki sularda ve farklı sıcaklıklarda köpürme gücünü korur.",
+            "Biyolojik olarak çevrede %90'ın üzerinde kolayca parçalanabilir (Biodegradable)."
+        ],
+        "uses_benefits_en": [
+            "Provides high detergency and stain removal performance in commercial formulations.",
+            "Maintains high foaming power in various water hardness levels and temperatures.",
+            "High biodegradability (over 90%), environmentally accepted worldwide."
+        ],
+        "uses_benefits_fr": [
+            "Offre une forte puissance de nettoyage et d'élimination des taches.",
+            "Conserve son pouvoir moussant quelle que soit la dureté de l'eau.",
+            "Biodégradabilité élevée supérieure à 90%."
+        ],
+        "uses_benefits_ar": [
+            "يوفر قوة تنظيف عالية وإزالة للبقع في التركيبات التجارية.",
+            "يحافظ على قوة الرغوة العالية في مختلف مستويات عسر الماء.",
+            "قابلية عالية للتحلل البيولوجي تزيد عن 90%."
+        ],
+        "uses_benefits_ru": [
+            "Обеспечивает высокую моющую способность и удаление пятен.",
+            "Сохраняет пенообразующую способность при любой жесткости воды.",
+            "Биоразлагаемость более 90%."
+        ],
+        "applications_tr": [
+            "Evsel Deterjan Sektörü",
+            "Endüstriyel Temizlik Kimyasalları",
+            "Tekstil Islatıcı ve Yıkama Ajanları"
+        ],
+        "applications_en": [
+            "Household Detergents",
+            "Industrial & Institutional Cleaners",
+            "Textile Scouring Agents"
+        ],
+        "applications_fr": [
+            "Détergents Ménagers",
+            "Nettoyants Industriels",
+            "Agents de Lavage Textile"
+        ],
+        "applications_ar": [
+            "المنظفات المنزلية",
+            "المنظفات الصناعية",
+            "عوامل غسيل النسيج"
+        ],
+        "applications_ru": [
+            "Бытовая Химия",
+            "Промышленные Моющие Средства",
+            "Текстильные Моющие Агенты"
+        ]
+    },
+    {
+        "id": "chem-pac",
+        "slug": "poli-aluminyum-klorur-pac-30",
+        "cas_number": "1327-41-9",
+        "ec_number": "215-477-2",
+        "formula": "[Al2(OH)nCl6-n]m",
+        "category": "water-treatment",
+        "name_tr": "Polialüminyum Klorür (PAC %30)",
+        "name_en": "Polyaluminium Chloride (PAC 30% Powder)",
+        "name_fr": "Chlorure de Polyaluminium (PAC 30%)",
+        "name_ar": "كلوريد البولي ألومنيوم (PAC 30%)",
+        "name_ru": "Полиоксихлорид Алюминия (ПАК 30%)",
+        "synonyms_tr": "PAC, Polialüminyum Klorohidrat, Su Arıtma Koagülanı",
+        "synonyms_en": "PAC 30%, Polyaluminium Chlorohydrate, Water Coagulant",
+        "synonyms_fr": "Chlorhydrate de Polyaluminium, Coagulant PAC",
+        "synonyms_ar": "كلوروهيدرات الألومنيوم, مخثر PAC",
+        "synonyms_ru": "Гидроксихлорид алюминия, Коагулянт ПАК 30%",
+        "description_tr": "Polialüminyum Klorür (PAC %30), içme suyu ve endüstriyel atıksu arıtma tesislerinde hızlı yumaklaştırma (koagülasyon) sağlayan sarı toz inorganik polimerdir.",
+        "description_en": "Polyaluminium Chloride (PAC 30%) is a yellow inorganic polymer powder delivering rapid coagulation and heavy suspended solids removal in water plants.",
+        "description_fr": "Le PAC 30% est un polymère inorganique en poudre jaune assurant une coagulation rapide et l'élimination des matières en suspension.",
+        "description_ar": "كلوريد البولي ألومنيوم هو بوليمر غير عضوي أصفر بودرة يضمن التخثر السريع وإزالة المواد المعلقة.",
+        "description_ru": "ПАК 30% — неорганический полимерный коагулянт в виде желтого порошка для опреснения и очистки питьевой и сточной воды.",
+        "usage_areas_tr": [
+            "İçme Suyu Arıtma Tesisleri",
+            "Tekstil ve Boyahane Atıksuları",
+            "Maden ve Kağıt Atıksuları",
+            "Şehir Kanalizasyon Arıtma"
+        ],
+        "usage_areas_en": [
+            "Municipal Drinking Water Plants",
+            "Textile & Dyeing Effluent Treatment",
+            "Mining & Paper Wastewater",
+            "Sewage Treatment"
+        ],
+        "usage_areas_fr": [
+            "Traitement d'Eau Potable",
+            "Effluents Textiles",
+            "Industrie Papetière et Minière"
+        ],
+        "usage_areas_ar": [
+            "محطات مياه الشرب",
+            "معالجة مياه الصباغة والنسيج",
+            "مياه الصرف الصحي والورق"
+        ],
+        "usage_areas_ru": [
+            "Водоканалы и Питьевая Вода",
+            "Сточные Воды Текстильных Фабрик",
+            "Целлюлозно-Бумажная Промышленность"
+        ],
+        "definition_tr": [
+            "Polialüminyum Klorür (PAC), alüminyum tuzlarının kısmi hidrolizi ile üretilen inorganik makromoleküler bir koagülandır. Geleneksel alüminyum sülfata göre 2-3 kat daha hızlı yumaklaşma sağlar.",
+            "Suyun pH değerini aşırı düşürmez ve düşük sıcaklıktaki sularda dahi yüksek berraklaştırma performansı sunar."
+        ],
+        "definition_en": [
+            "Polyaluminium Chloride (PAC) is a polynuclear inorganic complex produced by the hydrolysis of aluminium salts. It forms large, dense flocs much faster than conventional alum.",
+            "It operates effectively across a wide pH range (5.0–9.0) and requires lower dosage compared to traditional metal coagulants."
+        ],
+        "definition_fr": [
+            "Le PAC est un complexe inorganique polynucléaire. Il forme de gros flocs denses beaucoup plus rapidement que le sulfate d'aluminium traditionnel.",
+            "Il fonctionne efficacement sur une large plage de pH tout en nécessitant un dosage réduit."
+        ],
+        "definition_ar": [
+            "كلوريد البولي ألومنيوم هو مركب غير عضوي يتكون عن طريق التحلل المائي لأملاح الألومنيوم.",
+            "يعمل بفاعلية عبر نطاق واسع من الرقم الهيدروجيني ويتطلب جرعات أقل مقارنة بالمخثرات التقليدية."
+        ],
+        "definition_ru": [
+            "ПАК 30% представляет собой неорганический полимер высокой плотности. Формирует плотный хлопьевидный осадок намного быстрее традиционного сульфата алюминия.",
+            "Работает в широком диапазоне pH и эффективен даже в холодной воде."
+        ],
+        "uses_benefits_tr": [
+            "Bulanıklık, renk ve ağır metalleri hızla çöktürür.",
+            "Alüminyum kalıntısını minimumda tutar, suyun pH dengesini bozmaz.",
+            "Daha az çamur hacmi oluşturur, bertaraf maliyetini düşürür."
+        ],
+        "uses_benefits_en": [
+            "Rapidly precipitates turbidity, color, organic matter, and heavy metals.",
+            "Leaves minimal residual aluminium and reduces chemical sludge volume.",
+            "Cost-effective with lower operational chemical consumption."
+        ],
+        "uses_benefits_fr": [
+            "Précipite rapidement la turbidité, la couleur et les métaux lourds.",
+            "Génère un volume de boue réduit."
+        ],
+        "uses_benefits_ar": [
+            "يرسب بسرعة العكارة واللون والمعادن الثقيلة.",
+            "ينتج حجمًا أقل من الحمأة مما يقلل تكاليف التخلص منها."
+        ],
+        "uses_benefits_ru": [
+            "Быстро осаждает мутность, цветность и тяжелые металлы.",
+            "Образует меньший объем шлама и оставляет минимум остаточного алюминия."
+        ],
+        "applications_tr": [
+            "Endüstriyel Su Arıtma",
+            "Belediye Arıtma Tesisleri",
+            "Gıda ve Kimya Atıksu Arıtımı"
+        ],
+        "applications_en": [
+            "Industrial Water Treatment",
+            "Municipal Water Treatment",
+            "Food & Chemical Effluent Clarification"
+        ],
+        "applications_fr": [
+            "Traitement d'Eau Industriel",
+            "Traitement Municipal"
+        ],
+        "applications_ar": [
+            "معالجة المياه الصناعية",
+            "محطات المعالجة البلدية"
+        ],
+        "applications_ru": [
+            "Промышленная Водоочистка",
+            "Муниципальные Очистные Сооружения"
+        ]
     }
 ]

@@ -68,7 +68,7 @@ export default function HomePage() {
                             <motion.div variants={fadeInUp}>
                                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-accent text-sm font-medium mb-6">
                                     <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-                                    Global Industrial & Textile Solutions
+                                    Global Industrial Chemical & Raw Material Exporter
                                 </span>
                             </motion.div>
 
@@ -98,10 +98,10 @@ export default function HomePage() {
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 rtl:rotate-180 transition-transform" />
                                 </Link>
                                 <Link
-                                    href="/products"
+                                    href="/kimyasallar"
                                     className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold rounded-full transition-all group"
                                 >
-                                    {t('exploreTextile')}
+                                    Kimya Sözlüğü (CAS Database)
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 rtl:rotate-180 transition-transform" />
                                 </Link>
                             </motion.div>
