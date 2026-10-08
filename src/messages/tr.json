@@ -18,17 +18,17 @@
     },
     "Blog": {
         "title": "Teknik İçerikler",
-        "subtitle": "Tekstil kimyası, proses optimizasyonu ve sektör trendleri hakkında uzman makaleler.",
+        "subtitle": "Endüstriyel kimya, hammadde piyasaları, proses optimizasyonu ve sektör trendleri hakkında uzman makaleler.",
         "readMore": "Devamını oku",
         "backToBlog": "Yazılara dön",
         "ctaTitle": "Teknik Desteğe İhtiyacınız mı Var?",
-        "ctaDescription": "AR-GE ekibimiz, doğru kimyasal çözümlerle tekstil proseslerinizi optimize etmenize yardımcı olmaya hazır.",
+        "ctaDescription": "Uzman teknik ekibimiz, doğru kimyasal hammadde ve proses çözümleriyle üretiminizi optimize etmeye hazır.",
         "ctaButton": "İletişime Geçin",
         "ctaProducts": "Ürünleri İncele"
     },
     "HomePage": {
-        "heroTitle": "Tekstil Kimyasallarında\nGlobal Çözüm Ortağınız",
-        "heroSubtitle": "Grohn Kimya olarak, yenilikçi tekstil kimyasalları ile dünya genelinde üreticilere güvenilir çözümler sunuyoruz.",
+        "heroTitle": "Endüstriyel Kimyasal Hammaddelerde\nGlobal Çözüm Ortağınız",
+        "heroSubtitle": "Grohn Kimya olarak, deterjan, kağıt, su arıtma, boya ve metal sanayisine yüksek saflıkta kimyasal hammaddeler ve güvenilir küresel tedarik çözümleri sunuyoruz.",
         "ctaProducts": "Ürünlerimizi Keşfedin",
         "ctaContact": "İletişime Geçin",
         "stats": {
@@ -37,7 +37,7 @@
             "products": "Ürün Çeşidi"
         },
         "featuresTitle": "Neden Grohn Kimya?",
-        "featuresSubtitle": "Kalite, güvenilirlik ve yenilikçilik ile tekstil kimya sektörünün öncü markası.",
+        "featuresSubtitle": "Kalite, güvenilirlik ve küresel tedarik gücü ile endüstriyel kimya sektörünün güvenilir çözüm ortağı.",
         "features": {
             "quality": {
                 "title": "Üstün Kalite",
@@ -66,11 +66,11 @@
     },
     "AboutPage": {
         "title": "Hakkımızda",
-        "description": "Grohn Kimya, tekstil kimyasalları alanında uzun yıllara dayanan tecrübesiyle, global pazarlara yenilikçi ve güvenilir çözümler sunan öncü bir firmadır.",
+        "description": "Grohn Kimya, endüstriyel kimyasal hammaddeler ve sektörel kimya alanında uzmanlığıyla, global pazarlara yenilikçi ve güvenilir hammadde tedarik çözümleri sunan öncü bir firmadır.",
         "missionTitle": "Misyonumuz",
-        "missionDesc": "Çevreye duyarlı, insan sağlığını önceleyen ve teknolojiyi yakından takip eden üretim anlayışımızla, tekstil sektörüne en kaliteli kimyasal çözümleri sunmak.",
+        "missionDesc": "Çevreye duyarlı, insan sağlığını önceleyen ve uluslararası standartlara uygun tedarik anlayışımızla, sanayi ve üretim sektörlerine en kaliteli kimyasal hammaddeleri sunmak.",
         "visionTitle": "Vizyonumuz",
-        "visionDesc": "Global tekstil kimyasalları pazarında güvenilirliği, kalitesi ve inovasyon gücüyle tanınan lider bir marka olmak.",
+        "visionDesc": "Global kimyasal hammadde ve endüstriyel çözümler pazarında güvenilirliği, ürün kalitesi ve güçlü lojistik ağıyla tanınan lider bir marka olmak.",
         "valuesTitle": "Değerlerimiz",
         "values": {
             "reliability": {
@@ -107,7 +107,7 @@
         }
     },
     "Footer": {
-        "tagline": "Tekstil endüstrisi için yenilikçi kimyasal çözümler.",
+        "tagline": "Endüstriyel sanayi ve üretim için yenilikçi kimyasal hammadde çözümleri.",
         "quickLinks": "Hızlı Bağlantılar",
         "contactTitle": "İletişim",
         "rights": "Tüm hakları saklıdır.",
@@ -115,7 +115,7 @@
     },
     "Products": {
         "title": "Ürün Kataloğu",
-        "subtitle": "Tekstil endüstrisinin tüm ihtiyaçlarına yönelik kapsamlı kimyasal çözümlerimizi keşfedin.",
+        "subtitle": "Deterjan, kağıt, arıtma, boya, metal ve endüstriyel üretim ihtiyaçlarına yönelik kapsamlı kimyasal hammadde portföyümüzü keşfedin.",
         "viewDetails": "Detayları İncele",
         "backToProducts": "Ürünlere Dön",
         "technicalSpecs": "Teknik Özellikler",

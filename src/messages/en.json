@@ -18,17 +18,17 @@
     },
     "Blog": {
         "title": "Technical Insights",
-        "subtitle": "Expert articles on textile chemistry, process optimization, and industry trends.",
+        "subtitle": "Expert articles on industrial chemistry, raw material markets, process optimization, and industry trends.",
         "readMore": "Read more",
         "backToBlog": "Back to articles",
         "ctaTitle": "Need Expert Technical Support?",
-        "ctaDescription": "Our R&D team is ready to help you optimize your textile processes with the right chemical solutions.",
+        "ctaDescription": "Our technical team is ready to help you optimize your industrial processes with the right chemical solutions.",
         "ctaButton": "Contact Us",
         "ctaProducts": "View Products"
     },
     "HomePage": {
-        "heroTitle": "Your Global Partner in\nTextile Chemicals",
-        "heroSubtitle": "At Grohn Kimya, we deliver innovative textile chemical solutions to manufacturers worldwide with reliability and excellence.",
+        "heroTitle": "Your Global Partner in\nIndustrial Chemicals & Raw Materials",
+        "heroSubtitle": "At Grohn Kimya, we deliver high-purity chemical raw materials and reliable international supply solutions for detergent, paper, water treatment, coatings, and manufacturing industries.",
         "ctaProducts": "Explore Products",
         "ctaContact": "Get in Touch",
         "stats": {
@@ -37,7 +37,7 @@
             "products": "Product Range"
         },
         "featuresTitle": "Why Grohn Kimya?",
-        "featuresSubtitle": "A leading brand in textile chemistry through quality, reliability, and innovation.",
+        "featuresSubtitle": "Your trusted solution partner in industrial chemicals through quality, reliability, and global supply power.",
         "features": {
             "quality": {
                 "title": "Superior Quality",
@@ -66,11 +66,11 @@
     },
     "AboutPage": {
         "title": "About Us",
-        "description": "Grohn Kimya is a pioneering company providing innovative and reliable solutions to global markets with years of experience in textile chemicals.",
+        "description": "Grohn Kimya is a pioneering company providing innovative and reliable raw material supply solutions to global markets with deep expertise in industrial chemicals.",
         "missionTitle": "Our Mission",
-        "missionDesc": "To provide the highest quality chemical solutions to the textile industry with our production approach that prioritizes the environment, human health, and closely follows technology.",
+        "missionDesc": "To provide the highest quality chemical raw materials to industrial manufacturing sectors with an approach prioritizing the environment, human health, and international standards.",
         "visionTitle": "Our Vision",
-        "visionDesc": "To be a leading brand recognized for its reliability, quality, and innovation power in the global textile chemicals market.",
+        "visionDesc": "To be a leading brand recognized for its reliability, product quality, and robust supply chain in the global chemical raw materials market.",
         "valuesTitle": "Our Values",
         "values": {
             "reliability": {
@@ -107,7 +107,7 @@
         }
     },
     "Footer": {
-        "tagline": "Innovative chemical solutions for the textile industry.",
+        "tagline": "Innovative chemical raw material solutions for industrial manufacturing.",
         "quickLinks": "Quick Links",
         "contactTitle": "Contact",
         "rights": "All rights reserved.",
@@ -115,7 +115,7 @@
     },
     "Products": {
         "title": "Product Catalog",
-        "subtitle": "Discover our comprehensive range of chemical solutions for all textile industry needs.",
+        "subtitle": "Discover our comprehensive chemical raw materials portfolio tailored for detergent, paper, water treatment, coatings, and industrial needs.",
         "viewDetails": "View Details",
         "backToProducts": "Back to Products",
         "technicalSpecs": "Technical Specifications",
