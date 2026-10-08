@@ -14,7 +14,11 @@
         "agroFoodChemicals": "المواد الخام الزراعية والغذائية",
         "paintSolvents": "المذيبات والدهانات والطلاء",
         "metalSurfaceChemicals": "كيماويات معالجة المعالجة والسطوح",
-        "textileAuxiliaries": "مساعدات النسيج والتشطيب"
+        "textileAuxiliaries": "مساعدات النسيج والتشطيب",
+        "sectorsTitle": "قطاعات الكيماويات الصناعية",
+        "exporterTagline": "مصدر المواد الخام الكيميائية الصناعية",
+        "viewFullCatalog": "عرض الكتالوج الكامل ←",
+        "chemDictionary": "قاموس الكيماويات"
     },
     "Blog": {
         "title": "رؤى تقنية",
@@ -122,7 +126,8 @@
         "chemicalFormula": "الصيغة الكيميائية",
         "purity": "النقاء",
         "requestQuote": "طلب عرض سعر",
-        "categories": "الفئات"
+        "categories": "الفئات",
+        "productCount": "منتج"
     },
     "FAQPage": {
         "title": "الأسئلة الشائعة",

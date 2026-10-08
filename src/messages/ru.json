@@ -14,7 +14,11 @@
         "agroFoodChemicals": "Агрохимия и Пищевые Добавки",
         "paintSolvents": "Растворители и Лакокрасочные Материалы",
         "metalSurfaceChemicals": "Химикаты для Обработки Металлов",
-        "textileAuxiliaries": "Текстильные Вспомогательные Вещества"
+        "textileAuxiliaries": "Текстильные Вспомогательные Вещества",
+        "sectorsTitle": "Отрасли промышленной химии",
+        "exporterTagline": "Экспортёр промышленного химического сырья",
+        "viewFullCatalog": "Весь каталог →",
+        "chemDictionary": "Химический справочник"
     },
     "Blog": {
         "title": "Техническая информация",
@@ -122,7 +126,8 @@
         "chemicalFormula": "Химическая формула",
         "purity": "Чистота",
         "requestQuote": "Запросить предложение",
-        "categories": "Категории"
+        "categories": "Категории",
+        "productCount": "продуктов"
     },
     "FAQPage": {
         "title": "Часто задаваемые вопросы",

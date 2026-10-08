@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
+import { routing } from '@/i18n/routing';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://grohn.com.tr';
-const LOCALES = ['tr', 'en', 'fr', 'ar', 'ru'];
+const LOCALES = routing.locales;
 
 export function getPageMetadata(
     locale: string,

@@ -14,7 +14,11 @@
         "agroFoodChemicals": "Matières Premières Agro & Alimentaires",
         "paintSolvents": "Peintures, Revêtements & Solvants",
         "metalSurfaceChemicals": "Traitement des Métaux et Surfaces",
-        "textileAuxiliaries": "Auxiliaires Textiles & Finition"
+        "textileAuxiliaries": "Auxiliaires Textiles & Finition",
+        "sectorsTitle": "Secteurs de la chimie industrielle",
+        "exporterTagline": "Exportateur de matières premières chimiques industrielles",
+        "viewFullCatalog": "Voir le catalogue complet →",
+        "chemDictionary": "Dictionnaire"
     },
     "Blog": {
         "title": "Perspectives Techniques",
@@ -122,7 +126,8 @@
         "chemicalFormula": "Formule Chimique",
         "purity": "Pureté",
         "requestQuote": "Demander un Devis",
-        "categories": "Catégories"
+        "categories": "Catégories",
+        "productCount": "produits"
     },
     "FAQPage": {
         "title": "Questions Fréquemment Posées",

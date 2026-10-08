@@ -6,6 +6,7 @@ import { BLOG_POSTS } from '@/lib/blog';
 import ReactMarkdown from 'react-markdown';
 import { ArticleJsonLd, BreadcrumbJsonLd } from '@/components/SEOSchemas';
 import { getPageMetadata } from '@/lib/metadata';
+import { intlLocale } from '@/i18n/locales';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }) {
     // eslint-disable-next-line @typescript-eslint/await-thenable
@@ -79,7 +80,7 @@ export default async function BlogPostPage({
                         </span>
                         <span className="flex items-center gap-1.5">
                             <Calendar className="w-4 h-4" />
-                            {new Date(post.date).toLocaleDateString(locale === 'tr' ? 'tr-TR' : locale === 'fr' ? 'fr-FR' : locale === 'ar' ? 'ar-SA' : 'en-US', {
+                            {new Date(post.date).toLocaleDateString(intlLocale(locale), {
                                 year: 'numeric', month: 'long', day: 'numeric'
                             })}
                         </span>

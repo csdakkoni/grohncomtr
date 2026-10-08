@@ -14,7 +14,11 @@
         "agroFoodChemicals": "Tarım, Gıda & Yem Kimyasalları",
         "paintSolvents": "Boya, Kaplama & Solventler",
         "metalSurfaceChemicals": "Metal & Yüzey İşlem Kimyasalları",
-        "textileAuxiliaries": "Tekstil Kimyasalları & Yardımcıları"
+        "textileAuxiliaries": "Tekstil Kimyasalları & Yardımcıları",
+        "sectorsTitle": "Endüstriyel Hammadde Sektörleri",
+        "exporterTagline": "Endüstriyel Hammadde & Sektörel Kimyasal İhracatçısı",
+        "viewFullCatalog": "Tüm Ürün Kataloğunu İncele →",
+        "chemDictionary": "Kimya Sözlüğü"
     },
     "Blog": {
         "title": "Teknik İçerikler",
@@ -122,7 +126,8 @@
         "chemicalFormula": "Kimyasal Formül",
         "purity": "Saflık",
         "requestQuote": "Teklif İste",
-        "categories": "Kategoriler"
+        "categories": "Kategoriler",
+        "productCount": "ürün"
     },
     "FAQPage": {
         "title": "Sıkça Sorulan Sorular",

@@ -3,6 +3,7 @@
 import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 import { ChevronDown, ArrowRight, Beaker } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
@@ -21,6 +22,8 @@ const IONIC_LABELS: Record<string, Record<string, { label: string; color: string
         fr: { label: 'Non-ionique', color: 'bg-sky-500/15 text-sky-300 border-sky-500/20' },
         ar: { label: 'غير أيوني', color: 'bg-sky-500/15 text-sky-300 border-sky-500/20' },
         ru: { label: 'Нонионный', color: 'bg-sky-500/15 text-sky-300 border-sky-500/20' },
+        es: { label: 'No iónico', color: 'bg-sky-500/15 text-sky-300 border-sky-500/20' },
+        pt: { label: 'Não iônico', color: 'bg-sky-500/15 text-sky-300 border-sky-500/20' },
     },
     anionic: {
         tr: { label: 'Anyonik', color: 'bg-rose-500/15 text-rose-300 border-rose-500/20' },
@@ -28,6 +31,8 @@ const IONIC_LABELS: Record<string, Record<string, { label: string; color: string
         fr: { label: 'Anionique', color: 'bg-rose-500/15 text-rose-300 border-rose-500/20' },
         ar: { label: 'أنيوني', color: 'bg-rose-500/15 text-rose-300 border-rose-500/20' },
         ru: { label: 'Анионный', color: 'bg-rose-500/15 text-rose-300 border-rose-500/20' },
+        es: { label: 'Aniónico', color: 'bg-rose-500/15 text-rose-300 border-rose-500/20' },
+        pt: { label: 'Aniônico', color: 'bg-rose-500/15 text-rose-300 border-rose-500/20' },
     },
     cationic: {
         tr: { label: 'Katyonik', color: 'bg-violet-500/15 text-violet-300 border-violet-500/20' },
@@ -35,6 +40,8 @@ const IONIC_LABELS: Record<string, Record<string, { label: string; color: string
         fr: { label: 'Cationique', color: 'bg-violet-500/15 text-violet-300 border-violet-500/20' },
         ar: { label: 'كاتيوني', color: 'bg-violet-500/15 text-violet-300 border-violet-500/20' },
         ru: { label: 'Катионный', color: 'bg-violet-500/15 text-violet-300 border-violet-500/20' },
+        es: { label: 'Catiónico', color: 'bg-violet-500/15 text-violet-300 border-violet-500/20' },
+        pt: { label: 'Catiônico', color: 'bg-violet-500/15 text-violet-300 border-violet-500/20' },
     },
     amphoteric: {
         tr: { label: 'Amfoterik', color: 'bg-amber-500/15 text-amber-300 border-amber-500/20' },
@@ -42,6 +49,8 @@ const IONIC_LABELS: Record<string, Record<string, { label: string; color: string
         fr: { label: 'Amphotère', color: 'bg-amber-500/15 text-amber-300 border-amber-500/20' },
         ar: { label: 'أمفوتيري', color: 'bg-amber-500/15 text-amber-300 border-amber-500/20' },
         ru: { label: 'Амфотерный', color: 'bg-amber-500/15 text-amber-300 border-amber-500/20' },
+        es: { label: 'Anfótero', color: 'bg-amber-500/15 text-amber-300 border-amber-500/20' },
+        pt: { label: 'Anfótero', color: 'bg-amber-500/15 text-amber-300 border-amber-500/20' },
     },
 };
 
@@ -56,6 +65,7 @@ function getLocalized(obj: any, field: string, locale: string) {
 }
 
 export default function ProductCatalog({ categories, subgroups, products, locale }: ProductCatalogProps) {
+    const t = useTranslations('Products');
     const [openCategories, setOpenCategories] = useState<Set<string>>(
         new Set(categories.map(c => c.id)) // All open by default
     );
@@ -136,7 +146,7 @@ export default function ProductCatalog({ categories, subgroups, products, locale
                                     {getLocalized(category, 'name', locale)}
                                 </h2>
                                 <span className="text-xs text-text-muted">
-                                    {categoryProducts.length} {locale === 'tr' ? 'ürün' : locale === 'fr' ? 'produits' : locale === 'ar' ? 'منتج' : 'products'}
+                                    {categoryProducts.length} {t('productCount')}
                                 </span>
                             </div>
 

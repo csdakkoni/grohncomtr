@@ -132,7 +132,7 @@ export default function Header() {
                                         className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-lg text-sm font-bold transition-all duration-300 ${activeTab === 'industrial' ? 'bg-accent text-white shadow-lg shadow-accent/25' : 'text-text-secondary hover:text-white hover:bg-white/5'}`}
                                     >
                                         <Factory className="w-4 h-4" />
-                                        {locale === 'tr' ? 'Endüstriyel Hammadde Sektörleri' : 'Industrial Chemical Sectors'}
+                                        {t('sectorsTitle')}
                                     </button>
                                     <button
                                         type="button"
@@ -231,14 +231,14 @@ export default function Header() {
                                 {/* Footer CTA */}
                                 <div className="mt-5 pt-4 border-t border-white/10 flex items-center justify-between">
                                     <span className="text-xs text-text-muted">
-                                        {locale === 'tr' ? 'Endüstriyel Hammadde & Sektörel Kimyasal İhracatçısı' : 'Industrial Chemical Raw Material Exporter'}
+                                        {t('exporterTagline')}
                                     </span>
                                     <Link
                                         href="/products"
                                         onClick={() => setIsProductsOpen(false)}
                                         className="text-xs font-bold text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1"
                                     >
-                                        {locale === 'tr' ? 'Tüm Ürün Kataloğunu İncele →' : 'View Full Catalog →'}
+                                        {t('viewFullCatalog')}
                                     </Link>
                                 </div>
                             </div>
@@ -268,7 +268,7 @@ export default function Header() {
                         href="/kimyasallar"
                         className="relative px-4 py-2 text-sm font-medium text-accent hover:text-accent-light transition-colors duration-300 rounded-lg hover:bg-white/5 group"
                     >
-                        {locale === 'tr' ? 'Kimya Sözlüğü' : 'Chem Dictionary'}
+                        {t('chemDictionary')}
                         <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] gradient-accent rounded-full group-hover:w-6 transition-all duration-300" />
                     </Link>
 
@@ -325,7 +325,7 @@ export default function Header() {
                             {/* Industrial Sectors */}
                             <div>
                                 <div className="text-[10px] font-black text-white/40 uppercase tracking-widest px-3 py-1.5 bg-white/5 rounded-md mb-3">
-                                    {locale === 'tr' ? 'Endüstriyel Hammadde Sektörleri' : 'Industrial Chemical Sectors'}
+                                    {t('sectorsTitle')}
                                 </div>
                                 {industrialCats.map((cat) => {
                                     const subs = MOCK_SUBGROUPS.filter(s => s.category_id === cat.id);
@@ -395,7 +395,7 @@ export default function Header() {
                         {t("faq")}
                     </Link>
                     <Link href="/kimyasallar" className="text-base font-medium text-accent hover:text-accent-light py-3 px-4 rounded-lg hover:bg-white/5 transition-all" onClick={() => setIsMenuOpen(false)}>
-                        {locale === 'tr' ? 'Kimya Sözlüğü' : 'Chem Dictionary'}
+                        {t('chemDictionary')}
                     </Link>
                     <Link href="/contact" className="text-base font-medium text-text-secondary hover:text-white py-3 px-4 rounded-lg hover:bg-white/5 transition-all" onClick={() => setIsMenuOpen(false)}>
                         {t("contact")}

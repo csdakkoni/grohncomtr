@@ -4,6 +4,7 @@ import { BookOpen, ArrowRight, Calendar } from 'lucide-react';
 import { BLOG_POSTS } from '@/lib/blog';
 import { getPageMetadata } from '@/lib/metadata';
 import Image from 'next/image';
+import { intlLocale } from '@/i18n/locales';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     // eslint-disable-next-line @typescript-eslint/await-thenable
@@ -85,7 +86,7 @@ export default async function BlogPage({
                                 <div className="p-5 flex flex-col flex-1">
                                     <div className="flex items-center gap-2 text-xs text-text-muted mb-3">
                                         <Calendar className="w-3 h-3" />
-                                        {new Date(post.date).toLocaleDateString(locale === 'tr' ? 'tr-TR' : locale === 'fr' ? 'fr-FR' : locale === 'ar' ? 'ar-SA' : 'en-US', {
+                                        {new Date(post.date).toLocaleDateString(intlLocale(locale), {
                                             year: 'numeric', month: 'long', day: 'numeric'
                                         })}
                                     </div>

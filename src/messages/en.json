@@ -14,7 +14,11 @@
         "agroFoodChemicals": "Agro, Food & Feed Chemicals",
         "paintSolvents": "Paints, Coatings & Solvents",
         "metalSurfaceChemicals": "Metal & Surface Treatment",
-        "textileAuxiliaries": "Textile Chemicals & Auxiliaries"
+        "textileAuxiliaries": "Textile Chemicals & Auxiliaries",
+        "sectorsTitle": "Industrial Chemical Sectors",
+        "exporterTagline": "Industrial Chemical Raw Material Exporter",
+        "viewFullCatalog": "View Full Catalog →",
+        "chemDictionary": "Chem Dictionary"
     },
     "Blog": {
         "title": "Technical Insights",
@@ -122,7 +126,8 @@
         "chemicalFormula": "Chemical Formula",
         "purity": "Purity",
         "requestQuote": "Request Quote",
-        "categories": "Categories"
+        "categories": "Categories",
+        "productCount": "products"
     },
     "FAQPage": {
         "title": "Frequently Asked Questions",

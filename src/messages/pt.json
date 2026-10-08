@@ -1,0 +1,199 @@
+{
+    "Navigation": {
+        "home": "Início",
+        "about": "Sobre nós",
+        "products": "Produtos",
+        "blog": "Blog",
+        "faq": "Perguntas frequentes",
+        "contact": "Contato",
+        "industrialRawMaterials": "Matérias-primas industriais",
+        "textileChemicals": "Químicos têxteis",
+        "waterTreatmentChemicals": "Tratamento de água e efluentes",
+        "detergentRawMaterials": "Matérias-primas para detergentes e limpeza",
+        "paperChemicals": "Químicos para celulose e papel",
+        "agroFoodChemicals": "Químicos agrícolas, alimentícios e para ração",
+        "paintSolvents": "Tintas, revestimentos e solventes",
+        "metalSurfaceChemicals": "Tratamento de metais e superfícies",
+        "textileAuxiliaries": "Químicos e auxiliares têxteis",
+        "sectorsTitle": "Setores de química industrial",
+        "exporterTagline": "Exportador de matérias-primas químicas industriais",
+        "viewFullCatalog": "Ver catálogo completo →",
+        "chemDictionary": "Dicionário químico"
+    },
+    "Blog": {
+        "title": "Artigos técnicos",
+        "subtitle": "Artigos especializados sobre química industrial, mercados de matérias-primas, otimização de processos e tendências do setor.",
+        "readMore": "Leia mais",
+        "backToBlog": "Voltar aos artigos",
+        "ctaTitle": "Precisa de suporte técnico especializado?",
+        "ctaDescription": "Nossa equipe técnica está pronta para ajudar a otimizar seus processos industriais com as soluções químicas certas.",
+        "ctaButton": "Fale conosco",
+        "ctaProducts": "Ver produtos"
+    },
+    "HomePage": {
+        "heroTitle": "Seu parceiro global em\nquímicos industriais e matérias-primas",
+        "heroSubtitle": "Na Grohn Kimya, fornecemos matérias-primas químicas de alta pureza e soluções confiáveis de abastecimento internacional para as indústrias de detergentes, papel, tratamento de água, revestimentos e manufatura.",
+        "ctaProducts": "Ver produtos",
+        "ctaContact": "Fale conosco",
+        "stats": {
+            "years": "Anos de experiência",
+            "countries": "Países de exportação",
+            "products": "Linha de produtos"
+        },
+        "featuresTitle": "Por que a Grohn Kimya?",
+        "featuresSubtitle": "Seu parceiro de confiança em químicos industriais pela qualidade, confiabilidade e capacidade de fornecimento global.",
+        "features": {
+            "quality": {
+                "title": "Qualidade superior",
+                "desc": "Processos de produção certificados conforme a ISO e normas internacionais, garantindo qualidade consistente."
+            },
+            "global": {
+                "title": "Alcance global",
+                "desc": "Rede de exportação confiável atendendo mercados na Europa, Oriente Médio, África e Ásia."
+            },
+            "innovation": {
+                "title": "Foco em P&D",
+                "desc": "Soluções sob medida com suporte de laboratório, adaptadas às necessidades de cada cliente, com inovação contínua."
+            },
+            "support": {
+                "title": "Suporte técnico",
+                "desc": "Equipe especializada que oferece assistência em aplicação, otimização e solução de problemas."
+            }
+        },
+        "ctaBanner": {
+            "title": "Encontre a solução química certa para o seu projeto",
+            "subtitle": "Nossa equipe de especialistas está pronta para oferecer soluções sob medida.",
+            "button": "Solicitar cotação"
+        },
+        "exploreIndustrial": "Ver matérias-primas industriais",
+        "exploreTextile": "Conhecer soluções têxteis"
+    },
+    "AboutPage": {
+        "title": "Sobre nós",
+        "description": "A Grohn Kimya é uma empresa pioneira que oferece soluções inovadoras e confiáveis de fornecimento de matérias-primas para os mercados globais, com ampla experiência em químicos industriais.",
+        "missionTitle": "Nossa missão",
+        "missionDesc": "Fornecer matérias-primas químicas da mais alta qualidade aos setores de manufatura industrial, com uma abordagem que prioriza o meio ambiente, a saúde humana e as normas internacionais.",
+        "visionTitle": "Nossa visão",
+        "visionDesc": "Ser uma marca líder reconhecida pela confiabilidade, qualidade dos produtos e uma cadeia de suprimentos sólida no mercado global de matérias-primas químicas.",
+        "valuesTitle": "Nossos valores",
+        "values": {
+            "reliability": {
+                "title": "Confiabilidade",
+                "desc": "Sempre cumprimos o que prometemos."
+            },
+            "sustainability": {
+                "title": "Sustentabilidade",
+                "desc": "Processos de produção ambientalmente responsáveis."
+            },
+            "excellence": {
+                "title": "Excelência",
+                "desc": "Os mais altos padrões em cada produto."
+            }
+        }
+    },
+    "ContactPage": {
+        "title": "Fale conosco",
+        "subtitle": "Entre em contato para dúvidas, suporte técnico e solicitações de cotação.",
+        "form": {
+            "name": "Nome completo",
+            "email": "E-mail",
+            "company": "Empresa",
+            "subject": "Assunto",
+            "message": "Sua mensagem",
+            "send": "Enviar mensagem",
+            "success": "Mensagem enviada com sucesso! Retornaremos em breve.",
+            "error": "Ocorreu um erro, tente novamente."
+        },
+        "info": {
+            "address": "Endereço",
+            "phone": "Telefone",
+            "email": "E-mail"
+        }
+    },
+    "Footer": {
+        "tagline": "Soluções inovadoras em matérias-primas químicas para a manufatura industrial.",
+        "quickLinks": "Links rápidos",
+        "contactTitle": "Contato",
+        "rights": "Todos os direitos reservados.",
+        "madeIn": "Fabricado na Turquia"
+    },
+    "Products": {
+        "title": "Catálogo de produtos",
+        "subtitle": "Conheça nosso amplo portfólio de matérias-primas químicas para detergentes, papel, tratamento de água, revestimentos e outras necessidades industriais.",
+        "viewDetails": "Ver detalhes",
+        "backToProducts": "Voltar aos produtos",
+        "technicalSpecs": "Especificações técnicas",
+        "chemicalFormula": "Fórmula química",
+        "purity": "Pureza",
+        "requestQuote": "Solicitar cotação",
+        "categories": "Categorias",
+        "productCount": "produtos"
+    },
+    "FAQPage": {
+        "title": "Perguntas frequentes",
+        "subtitle": "Encontre respostas para as dúvidas mais comuns sobre nossos produtos, serviços e capacidade de exportação.",
+        "ctaText": "Não encontrou o que procura?",
+        "ctaButton": "Fale conosco",
+        "items": {
+            "whatProducts": {
+                "q": "Que tipos de químicos têxteis a Grohn Kimya produz?",
+                "a": "Fabricamos uma linha completa que inclui químicos de pré-tratamento (umectantes, enzimas de desengomagem, sequestrantes), auxiliares de tingimento (igualizantes, tampões de pH, dispersantes), químicos de acabamento (amaciantes de silicone, engomantes) e especialidades químicas para processos têxteis específicos."
+            },
+            "exportCountries": {
+                "q": "Para quais países vocês exportam?",
+                "a": "Exportamos para mais de 30 países da Europa, Oriente Médio, Norte da África, Ásia Central e Sul da Ásia. Entre nossos principais mercados estão Alemanha, Itália, França, Egito, Marrocos, Tunísia, Bangladesh, Paquistão e Uzbequistão."
+            },
+            "minOrder": {
+                "q": "Qual é a quantidade mínima de pedido?",
+                "a": "A quantidade mínima varia conforme o produto. Para a maioria dos químicos líquidos, o MOQ é 1 IBC (1000 kg). Em tambores, o mínimo costuma ser 200 kg. Podemos combinar quantidades menores de teste para novos clientes."
+            },
+            "sampleAvailable": {
+                "q": "Posso receber amostras grátis antes de fazer o pedido?",
+                "a": "Sim! Fornecemos amostras de laboratório gratuitas (1-5 kg) para testes. Nossa equipe técnica também oferece orientações de aplicação e suporte durante os ensaios."
+            },
+            "deliveryTime": {
+                "q": "Qual é o prazo de entrega habitual?",
+                "a": "A produção e entrega padrão leva de 2 a 3 semanas para itens em estoque. Formulações sob medida podem levar de 3 a 4 semanas. Enviamos em contêiner pelos portos de Tekirdağ/Istambul, com termos FOB, CIF e DDP."
+            },
+            "customFormulation": {
+                "q": "Vocês oferecem formulações sob medida?",
+                "a": "Com certeza. Nosso laboratório de P&D pode desenvolver formulações adaptadas aos seus tipos de tecido, maquinário e requisitos de processo. Também oferecemos suporte técnico no local para otimização."
+            },
+            "certifications": {
+                "q": "Quais certificações seus produtos possuem?",
+                "a": "Nossos produtos atendem à norma de gestão da qualidade ISO 9001. Alguns produtos são compatíveis com OEKO-TEX e aprovados pelo GOTS. Fornecemos FDS (Fichas de Dados de Segurança) e fichas técnicas (TDS) completas para todos os produtos."
+            },
+            "technicalSupport": {
+                "q": "Vocês oferecem suporte técnico?",
+                "a": "Sim, oferecemos suporte técnico completo, incluindo formulação de receitas, otimização de processos, solução de problemas e visitas no local. Nossa equipe de P&D tem mais de 15 anos de experiência em química têxtil."
+            }
+        }
+    },
+    "Chemicals": {
+        "badge": "Enciclopédia de matérias-primas de A a Z",
+        "title": "Dicionário de química",
+        "subtitle": "Conheça as propriedades, fórmulas e aplicações dos principais químicos usados na manufatura industrial.",
+        "metaTitle": "Dicionário de químicos industriais e catálogo de matérias-primas | Grohn Kimya",
+        "metaDescription": "Dicionário completo de matérias-primas químicas industriais com números CAS, fórmulas e aplicações. Solicite cotações de exportação à Grohn Kimya, Turquia.",
+        "view": "Ver",
+        "homeButton": "Dicionário de química (base CAS)",
+        "detailTitleSuffix": "Fornecedor na Turquia | Grohn Kimya",
+        "formulaLabel": "Fórmula",
+        "detailDescCta": "Fale com a Grohn Kimya para fornecimento e cotações de exportação.",
+        "back": "Voltar ao dicionário",
+        "generalInfo": "Informações gerais",
+        "usageAreas": "Áreas de uso",
+        "usesBenefits": "Usos e benefícios",
+        "applications": "Aplicações",
+        "techId": "Identificação técnica",
+        "tradeName": "Nome IUPAC / comercial",
+        "formula": "Fórmula química",
+        "cas": "Número CAS",
+        "ec": "Número CE",
+        "molecularWeight": "Peso molecular",
+        "category": "Categoria setorial",
+        "disclaimer": "* Esta página oferece informações gerais sobre químicos industriais. Fale conosco para adquirir esta matéria-prima ou conhecer seus equivalentes.",
+        "cta": "Solicitar preço e disponibilidade",
+        "home": "Início"
+    }
+}

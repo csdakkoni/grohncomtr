@@ -11,6 +11,9 @@ export interface Category {
     name_en: string;
     name_fr: string;
     name_ar: string;
+    name_ru?: string;
+    name_es?: string;
+    name_pt?: string;
     image_url: string;
 }
 
@@ -22,6 +25,9 @@ export interface Subgroup {
     name_en: string;
     name_fr: string;
     name_ar: string;
+    name_ru?: string;
+    name_es?: string;
+    name_pt?: string;
     prefix: string;
 }
 
@@ -37,10 +43,16 @@ export interface Product {
     title_en: string;
     title_fr: string;
     title_ar: string;
+    title_ru?: string;
+    title_es?: string;
+    title_pt?: string;
     description_tr: string;
     description_en: string;
     description_fr: string;
     description_ar: string;
+    description_ru?: string;
+    description_es?: string;
+    description_pt?: string;
     image_url: string;
     is_featured: boolean;
 }
@@ -54,6 +66,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Detergent & Cleaning Raw Materials",
         "name_fr": "Produits Chimiques pour Détergents",
         "name_ar": "مواد خام المنظفات والتنظيف",
+        "name_ru": "Сырьё для моющих и чистящих средств",
+        "name_es": "Materias primas para detergentes y limpieza",
+        "name_pt": "Matérias-primas para detergentes e limpeza",
         "image_url": "/images/washing.png"
     },
     {
@@ -64,6 +79,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Pulp & Paper Processing Chemicals",
         "name_fr": "Produits Chimiques pour Papier",
         "name_ar": "كيماويات الورق والسيليلوز",
+        "name_ru": "Химия для целлюлозно-бумажного производства",
+        "name_es": "Químicos para procesamiento de pulpa y papel",
+        "name_pt": "Químicos para processamento de celulose e papel",
         "image_url": "/images/finishing.png"
     },
     {
@@ -74,6 +92,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Water & Wastewater Treatment Chemicals",
         "name_fr": "Produits de Traitement de l'Eau",
         "name_ar": "كيماويات معالجة المياه والصرف",
+        "name_ru": "Химия для водоподготовки и очистки сточных вод",
+        "name_es": "Químicos para tratamiento de agua y aguas residuales",
+        "name_pt": "Químicos para tratamento de água e efluentes",
         "image_url": "/images/water-treatment.png"
     },
     {
@@ -84,6 +105,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Agro, Food & Feed Raw Materials",
         "name_fr": "Produits Chimiques Agro & Alimentaires",
         "name_ar": "المواد الخام الزراعية والغذائية",
+        "name_ru": "Сырьё для сельского хозяйства, пищевой промышленности и кормов",
+        "name_es": "Materias primas agrícolas, alimentarias y para piensos",
+        "name_pt": "Matérias-primas agrícolas, alimentícias e para ração",
         "image_url": "/images/enzymes.png"
     },
     {
@@ -94,6 +118,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Paints, Coatings & Solvents",
         "name_fr": "Peintures, Revêtements & Solvants",
         "name_ar": "المذيبات والدهانات والطلاء",
+        "name_ru": "Краски, покрытия и растворители",
+        "name_es": "Pinturas, recubrimientos y solventes",
+        "name_pt": "Tintas, revestimentos e solventes",
         "image_url": "/images/dyeing.png"
     },
     {
@@ -104,6 +131,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Metal & Surface Treatment Chemicals",
         "name_fr": "Traitement des Métaux et Surfaces",
         "name_ar": "كيماويات معالجة المعالجة والسطوح",
+        "name_ru": "Химия для обработки металлов и поверхностей",
+        "name_es": "Químicos para tratamiento de metales y superficies",
+        "name_pt": "Químicos para tratamento de metais e superfícies",
         "image_url": "/images/pretreatment.png"
     },
     {
@@ -114,6 +144,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Pre-Treatment Auxiliaries",
         "name_fr": "Auxiliaires de Prétraitement",
         "name_ar": "مساعدات المعالجة المسبقة",
+        "name_ru": "Вспомогательные вещества для предподготовки",
+        "name_es": "Auxiliares de pretratamiento",
+        "name_pt": "Auxiliares de pré-tratamento",
         "image_url": "/images/pretreatment.png"
     },
     {
@@ -124,6 +157,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Dyeing Auxiliaries",
         "name_fr": "Auxiliaires de Teinture",
         "name_ar": "مساعدات الصباغة",
+        "name_ru": "Красильные вспомогательные вещества",
+        "name_es": "Auxiliares de teñido",
+        "name_pt": "Auxiliares de tingimento",
         "image_url": "/images/dyeing.png"
     },
     {
@@ -134,6 +170,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Washing & Soaping",
         "name_fr": "Lavage et Savonnage",
         "name_ar": "الغسيل والتصبين",
+        "name_ru": "Промывка и мыловка",
+        "name_es": "Lavado y jabonado",
+        "name_pt": "Lavagem e ensaboamento",
         "image_url": "/images/washing.png"
     },
     {
@@ -144,6 +183,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Softeners",
         "name_fr": "Adoucissants",
         "name_ar": "المنعمات",
+        "name_ru": "Мягчители",
+        "name_es": "Suavizantes",
+        "name_pt": "Amaciantes",
         "image_url": "/images/softeners.png"
     },
     {
@@ -154,6 +196,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Enzymes",
         "name_fr": "Enzymes",
         "name_ar": "الإنزيمات",
+        "name_ru": "Ферменты",
+        "name_es": "Enzimas",
+        "name_pt": "Enzimas",
         "image_url": "/images/enzymes.png"
     },
     {
@@ -164,6 +209,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Finishing Auxiliaries",
         "name_fr": "Auxiliaires de Finition",
         "name_ar": "مساعدات التشطيب",
+        "name_ru": "Вспомогательные вещества для заключительной отделки",
+        "name_es": "Auxiliares de acabado",
+        "name_pt": "Auxiliares de acabamento",
         "image_url": "/images/finishing.png"
     },
     {
@@ -174,6 +222,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Printing Chemicals",
         "name_fr": "Produits d'Impression",
         "name_ar": "كيماويات الطباعة",
+        "name_ru": "Химия для печати",
+        "name_es": "Químicos para estampación",
+        "name_pt": "Químicos para estamparia",
         "image_url": "/images/dyeing.png"
     },
     {
@@ -184,6 +235,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Antifoams & Defoamers",
         "name_fr": "Anti-mousse",
         "name_ar": "مضادات الرغوة",
+        "name_ru": "Пеногасители",
+        "name_es": "Antiespumantes",
+        "name_pt": "Antiespumantes",
         "image_url": "/images/pretreatment.png"
     },
     {
@@ -194,6 +248,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Fixing Agents",
         "name_fr": "Agents de Fixation",
         "name_ar": "عوامل التثبيت",
+        "name_ru": "Закрепители",
+        "name_es": "Fijadores",
+        "name_pt": "Fixadores",
         "image_url": "/images/dyeing.png"
     },
     {
@@ -204,6 +261,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Acids & Bases",
         "name_fr": "Acides & Bases",
         "name_ar": "الأحماض والقواعد",
+        "name_ru": "Кислоты и щёлочи",
+        "name_es": "Ácidos y bases",
+        "name_pt": "Ácidos e bases",
         "image_url": "/images/pretreatment.png"
     },
     {
@@ -214,6 +274,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Solvents",
         "name_fr": "Solvants",
         "name_ar": "المذيبات",
+        "name_ru": "Растворители",
+        "name_es": "Solventes",
+        "name_pt": "Solventes",
         "image_url": "/images/washing.png"
     },
     {
@@ -224,6 +287,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Salts & Inorganics",
         "name_fr": "Sels et Inorganiques",
         "name_ar": "الأملاح والمواد غير العضوية",
+        "name_ru": "Соли и неорганические вещества",
+        "name_es": "Sales e inorgánicos",
+        "name_pt": "Sais e inorgânicos",
         "image_url": "/images/softeners.png"
     },
     {
@@ -234,6 +300,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Water Treatment Chemicals",
         "name_fr": "Produits de Traitement de l'Eau",
         "name_ar": "كيماويات معالجة المياه",
+        "name_ru": "Химия для водоподготовки",
+        "name_es": "Químicos para tratamiento de agua",
+        "name_pt": "Químicos para tratamento de água",
         "image_url": "/images/water-treatment.png"
     },
     {
@@ -244,6 +313,9 @@ export const MOCK_CATEGORIES: Category[] = [
         "name_en": "Agro & Food Chemicals",
         "name_fr": "Produits Chimiques Agro & Alimentaires",
         "name_ar": "الكيماويات الزراعية والغذائية",
+        "name_ru": "Сельскохозяйственная и пищевая химия",
+        "name_es": "Químicos agrícolas y alimentarios",
+        "name_pt": "Químicos agrícolas e alimentícios",
         "image_url": "/images/finishing.png"
     }
 ];
@@ -257,7 +329,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Anyonik Sürfaktanlar (LABSA, SLES)",
         "name_en": "Anionic Surfactants (LABSA, SLES)",
         "name_fr": "Tensioactifs Anioniques",
-        "name_ar": "المنشطات السطحية الأنيونية"
+        "name_ar": "المنشطات السطحية الأنيونية",
+        "name_ru": "Анионные ПАВ (LABSA, SLES)",
+        "name_es": "Tensioactivos aniónicos (LABSA, SLES)",
+        "name_pt": "Tensoativos aniônicos (LABSA, SLES)"
     },
     {
         "id": "dolgu-ve-sertlik-onleyiciler",
@@ -267,7 +342,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Dolgu Maddeleri & Su Sertlik Önleyiciler",
         "name_en": "Fillers & Water Softeners (Soda, STPP)",
         "name_fr": "Agents de Charge et Adoucissants",
-        "name_ar": "مواد الحشو ومنعمات المياه"
+        "name_ar": "مواد الحشو ومنعمات المياه",
+        "name_ru": "Наполнители и умягчители воды (сода, STPP)",
+        "name_es": "Cargas y ablandadores de agua (Soda, STPP)",
+        "name_pt": "Cargas e abrandadores de água (Barrilha, STPP)"
     },
     {
         "id": "mukavemet-ve-baglayicilar",
@@ -277,7 +355,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Mukavemet Ajanları & Nişasta Derivatları",
         "name_en": "Strength Agents & Starch Derivatives",
         "name_fr": "Agents de Résistance et Amidon",
-        "name_ar": "عوامل القوة ومشتشقات النشاط"
+        "name_ar": "عوامل القوة ومشتشقات النشاط",
+        "name_ru": "Упрочнители и производные крахмала",
+        "name_es": "Agentes de resistencia y derivados de almidón",
+        "name_pt": "Agentes de resistência e derivados de amido"
     },
     {
         "id": "surec-yardimcilari",
@@ -287,7 +368,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Kağıt Süreç Yardımcıları & Alüm",
         "name_en": "Paper Process Auxiliaries & Alum",
         "name_fr": "Auxiliaires de Procédé Papier",
-        "name_ar": "مساعدات عمليات الورق"
+        "name_ar": "مساعدات عمليات الورق",
+        "name_ru": "Вспомогательные вещества для бумажного производства и квасцы",
+        "name_es": "Auxiliares de proceso papelero y alumbre",
+        "name_pt": "Auxiliares de processo papeleiro e alúmen"
     },
     {
         "id": "koagulan-ve-flokkulanlar",
@@ -297,7 +381,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Koagülanlar & Polimer Flokülanlar (PAC)",
         "name_en": "Coagulants & Flocculants (PAC, Polymers)",
         "name_fr": "Coagulants et Floculants",
-        "name_ar": "المخثرات والملمعات"
+        "name_ar": "المخثرات والملمعات",
+        "name_ru": "Коагулянты и флокулянты (PAC, полимеры)",
+        "name_es": "Coagulantes y floculantes (PAC, polímeros)",
+        "name_pt": "Coagulantes e floculantes (PAC, polímeros)"
     },
     {
         "id": "renk-ve-kirec-giderme",
@@ -307,7 +394,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Renk Gidericiler & RO Antiscalantlar",
         "name_en": "Color Removers & RO Antiscalants",
         "name_fr": "Décolorants & Anti-Tartre RO",
-        "name_ar": "مزيلات اللون وموانع الترسيب"
+        "name_ar": "مزيلات اللون وموانع الترسيب",
+        "name_ru": "Обесцвечиватели и антискаланты для обратного осмоса",
+        "name_es": "Decolorantes y antiincrustantes para ósmosis inversa",
+        "name_pt": "Removedores de cor e anti-incrustantes para osmose reversa"
     },
     {
         "id": "gida-asitligi-ve-koruyucular",
@@ -317,7 +407,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Asitlik Düzenleyiciler & Koruyucular (Sitrik Asit)",
         "name_en": "Acidulants & Preservatives (Citric Acid)",
         "name_fr": "Acidifiants et Conservateurs",
-        "name_ar": "منظمات حموضة الأغذية والمواد الحافظة"
+        "name_ar": "منظمات حموضة الأغذية والمواد الحافظة",
+        "name_ru": "Подкислители и консерванты (лимонная кислота)",
+        "name_es": "Acidulantes y conservantes (ácido cítrico)",
+        "name_pt": "Acidulantes e conservantes (ácido cítrico)"
     },
     {
         "id": "gubre-ve-yem-kimyasallari",
@@ -327,7 +420,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Gübre & Yem Hammaddeleri (Üre, Fosforik Asit)",
         "name_en": "Fertilizer & Feed Raw Materials (Urea, Phosphoric Acid)",
         "name_fr": "Matières Premières pour Engrais",
-        "name_ar": "المواد الخام للأسمدة والأعلاف"
+        "name_ar": "المواد الخام للأسمدة والأعلاف",
+        "name_ru": "Сырьё для удобрений и кормов (карбамид, фосфорная кислота)",
+        "name_es": "Materias primas para fertilizantes y piensos (urea, ácido fosfórico)",
+        "name_pt": "Matérias-primas para fertilizantes e ração (ureia, ácido fosfórico)"
     },
     {
         "id": "organik-solventler",
@@ -337,7 +433,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Organik Çözücüler (Aseton, Toluon, Ksilen)",
         "name_en": "Organic Solvents (Acetone, Toluene, Xylene)",
         "name_fr": "Solvants Organiques",
-        "name_ar": "المذيبات العضوية"
+        "name_ar": "المذيبات العضوية",
+        "name_ru": "Органические растворители (ацетон, толуол, ксилол)",
+        "name_es": "Solventes orgánicos (acetona, tolueno, xileno)",
+        "name_pt": "Solventes orgânicos (acetona, tolueno, xileno)"
     },
     {
         "id": "alkoller-ve-glikoller",
@@ -347,7 +446,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Alkoller & Glikoller (IPA, MEG, DEG)",
         "name_en": "Alcohols & Glycols (IPA, MEG, DEG)",
         "name_fr": "Alcools et Glycols",
-        "name_ar": "الكحول والجليكول"
+        "name_ar": "الكحول والجليكول",
+        "name_ru": "Спирты и гликоли (IPA, MEG, DEG)",
+        "name_es": "Alcoholes y glicoles (IPA, MEG, DEG)",
+        "name_pt": "Álcoois e glicóis (IPA, MEG, DEG)"
     },
     {
         "id": "endustriyel-asitler",
@@ -357,7 +459,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Endüstriyel Mineral Asitler (HCL, H2SO4, HNO3)",
         "name_en": "Industrial Mineral Acids (HCl, H2SO4, HNO3)",
         "name_fr": "Acides Minéraux Industriels",
-        "name_ar": "الأحماض المعدنية الصناعية"
+        "name_ar": "الأحماض المعدنية الصناعية",
+        "name_ru": "Промышленные минеральные кислоты (HCl, H2SO4, HNO3)",
+        "name_es": "Ácidos minerales industriales (HCl, H2SO4, HNO3)",
+        "name_pt": "Ácidos minerais industriais (HCl, H2SO4, HNO3)"
     },
     {
         "id": "yag-ve-pas-sokuculer",
@@ -367,7 +472,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Yağ Sökücüler & Yüzey Hazırlama",
         "name_en": "Degreasers & Surface Cleaners",
         "name_fr": "Dégraissants & Nettoyants de Surface",
-        "name_ar": "مزيلات الدهون وتنظيف السطوح"
+        "name_ar": "مزيلات الدهون وتنظيف السطوح",
+        "name_ru": "Обезжириватели и очистители поверхностей",
+        "name_es": "Desengrasantes y limpiadores de superficies",
+        "name_pt": "Desengraxantes e limpadores de superfícies"
     },
     {
         "id": "endustriyel-asitler",
@@ -377,7 +485,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Endüstriyel Asitler",
         "name_en": "Industrial Acids",
         "name_fr": "Acides Industriels",
-        "name_ar": "الأحماض الصناعية"
+        "name_ar": "الأحماض الصناعية",
+        "name_ru": "Промышленные кислоты",
+        "name_es": "Ácidos industriales",
+        "name_pt": "Ácidos industriais"
     },
     {
         "id": "endustriyel-bazlar",
@@ -387,7 +498,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Endüstriyel Bazlar & Alkaliler",
         "name_en": "Industrial Bases & Alkalis",
         "name_fr": "Bases Industrielles",
-        "name_ar": "القواعد الصناعية"
+        "name_ar": "القواعد الصناعية",
+        "name_ru": "Промышленные основания и щёлочи",
+        "name_es": "Bases y álcalis industriales",
+        "name_pt": "Bases e álcalis industriais"
     },
     {
         "id": "organik-solventler",
@@ -397,7 +511,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Organik Çözücüler & Solventler",
         "name_en": "Organic Solvents",
         "name_fr": "Solvants Organiques",
-        "name_ar": "المذيبات العضوية"
+        "name_ar": "المذيبات العضوية",
+        "name_ru": "Органические растворители",
+        "name_es": "Solventes orgánicos",
+        "name_pt": "Solventes orgânicos"
     },
     {
         "id": "glikoller-alkoller",
@@ -407,7 +524,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Alkoller ve Glikoller",
         "name_en": "Alcohols & Glycols",
         "name_fr": "Alcools et Glycols",
-        "name_ar": "الكحول والجليكول"
+        "name_ar": "الكحول والجليكول",
+        "name_ru": "Спирты и гликоли",
+        "name_es": "Alcoholes y glicoles",
+        "name_pt": "Álcoois e glicóis"
     },
     {
         "id": "sodyum-bilesikleri",
@@ -417,7 +537,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Sodyum Bileşikleri & Tuzlar",
         "name_en": "Sodium Compounds & Salts",
         "name_fr": "Composés de Sodium",
-        "name_ar": "مركبات الصوديوم"
+        "name_ar": "مركبات الصوديوم",
+        "name_ru": "Соединения и соли натрия",
+        "name_es": "Compuestos y sales de sodio",
+        "name_pt": "Compostos e sais de sódio"
     },
     {
         "id": "gida-tarim-hammadde",
@@ -427,7 +550,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Gıda & Tarım Hammaddeleri",
         "name_en": "Food & Agri Raw Materials",
         "name_fr": "Matières Premières Agro-Alimentaires",
-        "name_ar": "مواد الأغذية والزراعة"
+        "name_ar": "مواد الأغذية والزراعة",
+        "name_ru": "Пищевое и сельскохозяйственное сырьё",
+        "name_es": "Materias primas alimentarias y agrícolas",
+        "name_pt": "Matérias-primas alimentícias e agrícolas"
     },
     {
         "id": "antiscalant-kirec",
@@ -437,7 +563,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Kireç & Korozyon Önleyiciler (Antiscalant)",
         "name_en": "Antiscalants & Corrosion Inhibitors",
         "name_fr": "Anti-tartre et Inhibiteurs de Corrosion",
-        "name_ar": "مانعات الترسيب والتآكل"
+        "name_ar": "مانعات الترسيب والتآكل",
+        "name_ru": "Антискаланты и ингибиторы коррозии",
+        "name_es": "Antiincrustantes e inhibidores de corrosión",
+        "name_pt": "Anti-incrustantes e inibidores de corrosão"
     },
     {
         "id": "islaticilar",
@@ -447,7 +576,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Islatıcılar",
         "name_en": "Wetting Agents",
         "name_fr": "Agents Mouillants",
-        "name_ar": "عوامل الترطيب"
+        "name_ar": "عوامل الترطيب",
+        "name_ru": "Смачиватели",
+        "name_es": "Humectantes",
+        "name_pt": "Umectantes"
     },
     {
         "id": "iyon-tutucular",
@@ -457,7 +589,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "İyon Tutucu & Şelatlama Ajanları",
         "name_en": "Sequestering & Chelating Agents",
         "name_fr": "Agents Séquestrants et Chélatants",
-        "name_ar": "عوامل العزل والمخلبة"
+        "name_ar": "عوامل العزل والمخلبة",
+        "name_ru": "Секвестранты и хелатирующие агенты",
+        "name_es": "Secuestrantes y quelantes",
+        "name_pt": "Sequestrantes e quelantes"
     },
     {
         "id": "stabilizatorler",
@@ -467,7 +602,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Peroksit Stabilizatörleri",
         "name_en": "Peroxide Stabilizers",
         "name_fr": "Stabilisateurs de Peroxyde",
-        "name_ar": "مثبتات البيروكسيد"
+        "name_ar": "مثبتات البيروكسيد",
+        "name_ru": "Стабилизаторы пероксида",
+        "name_es": "Estabilizadores de peróxido",
+        "name_pt": "Estabilizadores de peróxido"
     },
     {
         "id": "yag-sokuculer",
@@ -477,7 +615,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Yağ ve Leke Sökücüler",
         "name_en": "Oil & Stain Removers",
         "name_fr": "Détachants et Dégraissants",
-        "name_ar": "مزيلات الزيت والبقع"
+        "name_ar": "مزيلات الزيت والبقع",
+        "name_ru": "Средства для удаления масел и пятен",
+        "name_es": "Removedores de aceite y manchas",
+        "name_pt": "Removedores de óleo e manchas"
     },
     {
         "id": "tampon-asitler",
@@ -487,7 +628,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Tampon Asitler",
         "name_en": "Buffering Acids",
         "name_fr": "Acides Tampons",
-        "name_ar": "أحماض عازلة"
+        "name_ar": "أحماض عازلة",
+        "name_ru": "Буферные кислоты",
+        "name_es": "Ácidos reguladores (buffer)",
+        "name_pt": "Ácidos tamponantes"
     },
     {
         "id": "dispergatorler",
@@ -497,7 +641,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Dispergatör & Egalizatörler",
         "name_en": "Dispersing & Levelling Agents",
         "name_fr": "Agents Dispersants et Égalisants",
-        "name_ar": "عوامل التشتت والمساواة"
+        "name_ar": "عوامل التشتت والمساواة",
+        "name_ru": "Диспергаторы и выравниватели",
+        "name_es": "Dispersantes e igualadores",
+        "name_pt": "Dispersantes e igualizantes"
     },
     {
         "id": "dispers-yardimcilari",
@@ -507,7 +654,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Dispers Boya Yardımcıları",
         "name_en": "Disperse Dyeing Auxiliaries",
         "name_fr": "Auxiliaires de Teinture Dispersée",
-        "name_ar": "مساعدات الصباغة المشتتة"
+        "name_ar": "مساعدات الصباغة المشتتة",
+        "name_ru": "Вспомогательные вещества для крашения дисперсными красителями",
+        "name_es": "Auxiliares para teñido con colorantes dispersos",
+        "name_pt": "Auxiliares para tingimento com corantes dispersos"
     },
     {
         "id": "carrier",
@@ -517,7 +667,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Carrier'lar",
         "name_en": "Carriers",
         "name_fr": "Carriers",
-        "name_ar": "الناقلات"
+        "name_ar": "الناقلات",
+        "name_ru": "Переносчики (карриеры)",
+        "name_es": "Carriers",
+        "name_pt": "Carriers"
     },
     {
         "id": "yikama-ajanlari",
@@ -527,7 +680,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Yıkama ve Sabunlama Ajanları",
         "name_en": "Washing & Soaping Agents",
         "name_fr": "Agents de Lavage et Savonnage",
-        "name_ar": "عوامل الغسيل والتصبين"
+        "name_ar": "عوامل الغسيل والتصبين",
+        "name_ru": "Средства для промывки и мыловки",
+        "name_es": "Agentes de lavado y jabonado",
+        "name_pt": "Agentes de lavagem e ensaboamento"
     },
     {
         "id": "silikon-yumusaticilar",
@@ -537,7 +693,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Silikon Yumuşatıcılar",
         "name_en": "Silicone Softeners",
         "name_fr": "Adoucissants Siliconés",
-        "name_ar": "منعمات السيليكون"
+        "name_ar": "منعمات السيليكون",
+        "name_ru": "Силиконовые мягчители",
+        "name_es": "Suavizantes de silicona",
+        "name_pt": "Amaciantes de silicone"
     },
     {
         "id": "silikonsuz-yumusaticilar",
@@ -547,7 +706,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Silikonsuz Yumuşatıcılar",
         "name_en": "Non-Silicone Softeners",
         "name_fr": "Adoucissants Non-Siliconés",
-        "name_ar": "منعمات بدون سيليكون"
+        "name_ar": "منعمات بدون سيليكون",
+        "name_ru": "Бессиликоновые мягчители",
+        "name_es": "Suavizantes sin silicona",
+        "name_pt": "Amaciantes sem silicone"
     },
     {
         "id": "enzim-cesitleri",
@@ -557,7 +719,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Tekstil Enzimleri",
         "name_en": "Textile Enzymes",
         "name_fr": "Enzymes Textiles",
-        "name_ar": "إنزيمات النسيج"
+        "name_ar": "إنزيمات النسيج",
+        "name_ru": "Текстильные ферменты",
+        "name_es": "Enzimas textiles",
+        "name_pt": "Enzimas têxteis"
     },
     {
         "id": "kenar-kolalar",
@@ -567,7 +732,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Kenar Kolalar",
         "name_en": "Edge Hardeners",
         "name_fr": "Durcisseurs de Bords",
-        "name_ar": "مقويات الحواف"
+        "name_ar": "مقويات الحواف",
+        "name_ru": "Средства для упрочнения кромки",
+        "name_es": "Endurecedores de orillo",
+        "name_pt": "Endurecedores de ourela"
     },
     {
         "id": "fonksiyonel-apreler",
@@ -577,7 +745,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Fonksiyonel Apreler",
         "name_en": "Functional Finishes",
         "name_fr": "Finitions Fonctionnelles",
-        "name_ar": "التشطيبات الوظيفية"
+        "name_ar": "التشطيبات الوظيفية",
+        "name_ru": "Функциональные отделки",
+        "name_es": "Acabados funcionales",
+        "name_pt": "Acabamentos funcionais"
     },
     {
         "id": "antistatik",
@@ -587,7 +758,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Antistatik Ajanlar",
         "name_en": "Antistatic Agents",
         "name_fr": "Agents Antistatiques",
-        "name_ar": "عوامل مضادة للكهرباء الساكنة"
+        "name_ar": "عوامل مضادة للكهرباء الساكنة",
+        "name_ru": "Антистатики",
+        "name_es": "Antiestáticos",
+        "name_pt": "Antiestáticos"
     },
     {
         "id": "flokkulan-koagulan",
@@ -597,7 +771,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Flokülasyon & Koagülasyon",
         "name_en": "Flocculation & Coagulation",
         "name_fr": "Floculation et Coagulation",
-        "name_ar": "التلبد والتخثر"
+        "name_ar": "التلبد والتخثر",
+        "name_ru": "Флокуляция и коагуляция",
+        "name_es": "Floculación y coagulación",
+        "name_pt": "Floculação e coagulação"
     },
     {
         "id": "renk-giderme",
@@ -607,7 +784,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Renk Giderme & Dekolorizasyon",
         "name_en": "Color Removal & Decolorization",
         "name_fr": "Élimination de la Couleur",
-        "name_ar": "إزالة اللون"
+        "name_ar": "إزالة اللون",
+        "name_ru": "Удаление цвета и обесцвечивание",
+        "name_es": "Eliminación de color y decoloración",
+        "name_pt": "Remoção de cor e descoloração"
     },
     {
         "id": "pigment-baski",
@@ -617,7 +797,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Pigment Baskı Yardımcıları",
         "name_en": "Pigment Printing Auxiliaries",
         "name_fr": "Auxiliaires d'Impression Pigmentaire",
-        "name_ar": "مساعدات الطباعة الصبغية"
+        "name_ar": "مساعدات الطباعة الصبغية",
+        "name_ru": "Вспомогательные вещества для пигментной печати",
+        "name_es": "Auxiliares para estampación con pigmentos",
+        "name_pt": "Auxiliares para estamparia com pigmentos"
     },
     {
         "id": "reaktif-baski",
@@ -627,7 +810,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Reaktif Baskı Yardımcıları",
         "name_en": "Reactive Printing Auxiliaries",
         "name_fr": "Auxiliaires d'Impression Réactive",
-        "name_ar": "مساعدات الطباعة التفاعلية"
+        "name_ar": "مساعدات الطباعة التفاعلية",
+        "name_ru": "Вспомогательные вещества для печати активными красителями",
+        "name_es": "Auxiliares para estampación reactiva",
+        "name_pt": "Auxiliares para estamparia reativa"
     },
     {
         "id": "silikon-kopuk-kesici",
@@ -637,7 +823,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Silikon Bazlı Köpük Kesiciler",
         "name_en": "Silicone-Based Antifoams",
         "name_fr": "Anti-mousse à Base de Silicone",
-        "name_ar": "مضادات رغوة سيليكونية"
+        "name_ar": "مضادات رغوة سيليكونية",
+        "name_ru": "Пеногасители на основе силикона",
+        "name_es": "Antiespumantes a base de silicona",
+        "name_pt": "Antiespumantes à base de silicone"
     },
     {
         "id": "mineral-kopuk-kesici",
@@ -647,7 +836,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Mineral Bazlı Köpük Kesiciler",
         "name_en": "Mineral-Based Antifoams",
         "name_fr": "Anti-mousse à Base Minérale",
-        "name_ar": "مضادات رغوة معدنية"
+        "name_ar": "مضادات رغوة معدنية",
+        "name_ru": "Пеногасители на минеральной основе",
+        "name_es": "Antiespumantes a base mineral",
+        "name_pt": "Antiespumantes à base mineral"
     },
     {
         "id": "renk-fiksatorleri",
@@ -657,7 +849,10 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_tr": "Renk Fiksatörleri",
         "name_en": "Color Fixing Agents",
         "name_fr": "Agents de Fixation de Couleur",
-        "name_ar": "عوامل تثبيت اللون"
+        "name_ar": "عوامل تثبيت اللون",
+        "name_ru": "Закрепители окраски",
+        "name_es": "Fijadores de color",
+        "name_pt": "Fixadores de cor"
     }
 ];
 
@@ -674,10 +869,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "LABSA 96% (Linear Alkylbenzene Sulfonic Acid)",
         "title_fr": "LABSA 96% (Acide Alkylbenzène Sulfonique)",
         "title_ar": "حمض ألبا 96% (حمض سلفونيك بنزين ألكيل خطي)",
+        "title_ru": "LABSA 96% (линейная алкилбензолсульфокислота)",
+        "title_es": "LABSA 96% (Ácido Lineal Alquilbenceno Sulfónico)",
+        "title_pt": "LABSA 96% (Ácido Linear Alquilbenzeno Sulfônico)",
         "description_tr": "Toz ve sıvı deterjanlar, bulaşık deterjanları ve endüstriyel temizleyicilerin ana köpük ve ana aktif maddesi.",
         "description_en": "Primary active foaming and cleaning agent used in powder/liquid detergents and industrial cleaning formulations.",
         "description_fr": "Matière active principale utilisée dans la fabrication de détergents liquides et en poudre.",
         "description_ar": "المادة الفعالة الرئيسية الرغوية والمنظفة في مساحيق ومنظفات الغسيل والمنظفات الصناعية.",
+        "description_ru": "Основное пенообразующее и моющее активное вещество в порошковых и жидких моющих средствах и промышленных чистящих составах.",
+        "description_es": "Principal agente activo espumante y limpiador en detergentes en polvo y líquidos y en formulaciones de limpieza industrial.",
+        "description_pt": "Principal agente ativo espumante e de limpeza em detergentes em pó e líquidos e em formulações de limpeza industrial.",
         "image_url": "/images/washing.png",
         "is_featured": true
     },
@@ -693,10 +894,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "SLES 70% (Sodium Lauryl Ether Sulfate)",
         "title_fr": "SLES 70% (Lauryl Éther Sulfate de Sodium)",
         "title_ar": "SLES 70% (كبريتات إيثر لوريل الصوديوم)",
+        "title_ru": "SLES 70% (лауретсульфат натрия)",
+        "title_es": "SLES 70% (Lauril Éter Sulfato de Sodio)",
+        "title_pt": "SLES 70% (Lauril Éter Sulfato de Sódio)",
         "description_tr": "Şampuan, duş jeli, bulaşık deterjanı ve evsel temizlik ürünlerinde yüksek köpürme ve temizleme sağlayan sürfaktan.",
         "description_en": "High-foaming primary surfactant widely used in shampoos, body washes, dishwashing liquids, and household cleaners.",
         "description_fr": "Tensioactif primaire à fort pouvoir moussant utilisé dans les shampooings et détergents vaisselle.",
         "description_ar": "مادة خافضة للتوتر السطحي عالي الرغوة تستخدم في الشامبو وسوائل غسيل الأواني.",
+        "description_ru": "Основное высокопенное ПАВ, широко применяемое в шампунях, гелях для душа, средствах для мытья посуды и бытовой химии.",
+        "description_es": "Tensioactivo principal de alta espuma, muy utilizado en champús, geles de baño, lavavajillas líquidos y limpiadores domésticos.",
+        "description_pt": "Tensoativo principal de alta espuma, muito usado em xampus, sabonetes líquidos, detergentes para louça e limpadores domésticos.",
         "image_url": "/images/washing.png",
         "is_featured": true
     },
@@ -711,10 +918,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "STPP (Sodium Tripolyphosphate Tech Grade)",
         "title_fr": "STPP (Tripolyphosphate de Sodium)",
         "title_ar": "ثلاثي بوليفوسفات الصوديوم (STPP)",
+        "title_ru": "STPP (триполифосфат натрия, технический)",
+        "title_es": "STPP (Tripolifosfato de Sodio, grado técnico)",
+        "title_pt": "STPP (Tripolifosfato de Sódio, grau técnico)",
         "description_tr": "Deterjan formülasyonlarında su sertliğini bağlayan, kirin tekrar çökmesini önleyen builders hammadde.",
         "description_en": "Essential detergent builder salt that sequesters hard water ions and prevents soil anti-redeposition.",
         "description_fr": "Sel builder essentiel qui séquestre les ions de l'eau dure dans les détergents.",
         "description_ar": "ملح بناء منظف أساسي ينقي أيونات الماء الصلب ويمنع إعاجة ترسيب الأوساخ.",
+        "description_ru": "Ключевая соль-строитель для моющих средств: связывает ионы жёсткости воды и предотвращает повторное осаждение загрязнений.",
+        "description_es": "Sal builder esencial para detergentes que secuestra los iones de la dureza del agua y evita la redeposición de la suciedad.",
+        "description_pt": "Sal builder essencial para detergentes que sequestra os íons da dureza da água e evita a redeposição da sujeira.",
         "image_url": "/images/washing.png",
         "is_featured": false
     },
@@ -729,10 +942,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Soda Ash Light (Sodium Carbonate)",
         "title_fr": "Cendre de Soude Légère",
         "title_ar": "رماد الصودا الخفيف (كربونات الصوديوم)",
+        "title_ru": "Сода кальцинированная лёгкая (карбонат натрия)",
+        "title_es": "Carbonato de Sodio Liviano (Soda Ash Light)",
+        "title_pt": "Barrilha Leve (Carbonato de Sódio)",
         "description_tr": "Deterjan tozu üretiminde alkali sağlayıcı, su yumuşatıcı ve pH aralığı düzenleyici temel mineral tuz.",
         "description_en": "Core mineral salt acting as an alkalinity builder, water softener, and pH regulator in detergent manufacturing.",
         "description_fr": "Sel minéral de base agissant comme régulateur d'alcalinité et adoucissant d'eau dans les détergents.",
         "description_ar": "ملح معدني أساسي يعمل كبناء قلوي ومنعم للمياه ومنظم للرقم الهيدروجيني.",
+        "description_ru": "Базовая минеральная соль: щелочной строитель, умягчитель воды и регулятор pH в производстве моющих средств.",
+        "description_es": "Sal mineral básica que actúa como builder alcalino, ablandador de agua y regulador de pH en la fabricación de detergentes.",
+        "description_pt": "Sal mineral básico que atua como builder alcalino, abrandador de água e regulador de pH na fabricação de detergentes.",
         "image_url": "/images/softeners.png",
         "is_featured": true
     },
@@ -748,10 +967,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Cationic Starch (Paper Strength Grade)",
         "title_fr": "Amidon Cationique (Grade Papier)",
         "title_ar": "النشا الكاتيوني (درجة قوة الورق)",
+        "title_ru": "Катионный крахмал (для прочности бумаги)",
+        "title_es": "Almidón Catiónico (grado resistencia para papel)",
+        "title_pt": "Amido Catiônico (grau resistência para papel)",
         "description_tr": "Kağıt hamuru üretiminde Kuru Mukavemet artırıcı, dolgu maddesi tutucu ve yüzey kalitesi geliştirici nişasta derivatı.",
         "description_en": "Cationic starch derivative boosting dry strength, filler retention, and surface printability in paper mills.",
         "description_fr": "Dérivé d'amidon cationique améliorant la résistance à sec et la rétention de charge dans la pâte à papier.",
         "description_ar": "مشتق النشا الكاتيوني الذي يعزز القوة الجافة واحتفاظ المواد الحاشية في مصانع الورق.",
+        "description_ru": "Производное катионного крахмала, повышающее сухую прочность, удержание наполнителя и печатные свойства поверхности бумаги.",
+        "description_es": "Derivado de almidón catiónico que aumenta la resistencia en seco, la retención de cargas y la imprimibilidad superficial en fábricas de papel.",
+        "description_pt": "Derivado de amido catiônico que aumenta a resistência a seco, a retenção de cargas e a imprimibilidade superficial em fábricas de papel.",
         "image_url": "/images/finishing.png",
         "is_featured": true
     },
@@ -766,10 +991,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Aluminium Sulfate 17% (Paper Maker's Alum)",
         "title_fr": "Sulfate d'Aluminium 17% (Alun)",
         "title_ar": "كبريتات الألومنيوم 17% (الشبة)",
+        "title_ru": "Сульфат алюминия 17% (квасцы для бумаги)",
+        "title_es": "Sulfato de Aluminio 17% (alumbre para papel)",
+        "title_pt": "Sulfato de Alumínio 17% (alúmen para papel)",
         "description_tr": "Kağıt üretiminde reçine tutkallaması, pH kontrolü ve su süzme kolaylaştırıcı inorganik tuz.",
         "description_en": "Essential inorganic coagulant used for rosin sizing, pH control, and drainage improvement in paper machines.",
         "description_fr": "Coagulant inorganique essentiel utilisé pour le collage à la colophane et le contrôle du pH.",
         "description_ar": "مخثر غير عضوي أساسي يستخدم للتحجيم بالراتنج والتحكم في الرقم الهيدروجيني في صناعة الورق.",
+        "description_ru": "Важнейший неорганический коагулянт для канифольной проклейки, контроля pH и улучшения обезвоживания на бумагоделательных машинах.",
+        "description_es": "Coagulante inorgánico esencial para el encolado con colofonia, el control de pH y la mejora del drenaje en máquinas de papel.",
+        "description_pt": "Coagulante inorgânico essencial para colagem com breu, controle de pH e melhoria da drenagem em máquinas de papel.",
         "image_url": "/images/finishing.png",
         "is_featured": false
     },
@@ -785,10 +1016,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Polyaluminium Chloride (PAC 30% Powder)",
         "title_fr": "Chlorure de Polyaluminium (PAC 30%)",
         "title_ar": "كلوريد البولي ألومنيوم (PAC 30%)",
+        "title_ru": "Полиоксихлорид алюминия (PAC 30%, порошок)",
+        "title_es": "Policloruro de Aluminio (PAC 30% en polvo)",
+        "title_pt": "Policloreto de Alumínio (PAC 30% em pó)",
         "description_tr": "İçme suyu ve endüstriyel atıksu arıtımında yüksek hızlı çökeltme ve berraklaştırma sağlayan inorganik koagülan.",
         "description_en": "High-efficiency inorganic coagulant providing rapid flocs formation and clarification in drinking and industrial wastewater.",
         "description_fr": "Coagulant inorganique haute performance assurant une floculation rapide et la clarification de l'eau.",
         "description_ar": "مخثر غير عضوي عالي الكفاءة يضمن التكتل السريع وتصفية المياه في مياه الشرب والصرف.",
+        "description_ru": "Высокоэффективный неорганический коагулянт для быстрого хлопьеобразования и осветления питьевой воды и промышленных стоков.",
+        "description_es": "Coagulante inorgánico de alta eficiencia que forma flóculos rápidamente y clarifica agua potable y aguas residuales industriales.",
+        "description_pt": "Coagulante inorgânico de alta eficiência que forma flocos rapidamente e clarifica água potável e efluentes industriais.",
         "image_url": "/images/water-treatment.png",
         "is_featured": true
     },
@@ -804,10 +1041,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Anionic Polyelectrolyte (Powder Flocculant)",
         "title_fr": "Polyélectrolyte Anionique en Poudre",
         "title_ar": "بوليمر أنيوني (ملمع كيميائي)",
+        "title_ru": "Анионный полиэлектролит (порошковый флокулянт)",
+        "title_es": "Polielectrolito Aniónico (floculante en polvo)",
+        "title_pt": "Polieletrólito Aniônico (floculante em pó)",
         "description_tr": "Maden, tekstil ve mermer atıksularında çamur susuzlaştırma ve hızlı katı-sıvı ayrıştırması sağlayan polimer.",
         "description_en": "High molecular weight acrylamide polymer for sludge dewatering and rapid solid-liquid separation in mining and industrial effluents.",
         "description_fr": "Polymère de haut poids moléculaire pour la déshydratation des boues et la séparation solide-liquide.",
         "description_ar": "بوليمر عالي الوزن الجزيئي لتجفيف الحمأة والفصل السريع بين الصلب والسائل في الفضلات الصناعية.",
+        "description_ru": "Высокомолекулярный акриламидный полимер для обезвоживания осадка и быстрого разделения твёрдой и жидкой фаз в горнодобывающих и промышленных стоках.",
+        "description_es": "Polímero de acrilamida de alto peso molecular para deshidratación de lodos y separación sólido-líquido rápida en efluentes mineros e industriales.",
+        "description_pt": "Polímero de acrilamida de alto peso molecular para desaguamento de lodo e separação sólido-líquido rápida em efluentes de mineração e industriais.",
         "image_url": "/images/water-treatment.png",
         "is_featured": true
     },
@@ -822,10 +1065,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Citric Acid Anhydrous (Food & Beverage Grade)",
         "title_fr": "Acide Citrique Anhydre (Grade Alimentaire)",
         "title_ar": "حمض الستريك اللامائي (درجة غذائية)",
+        "title_ru": "Лимонная кислота безводная (пищевая)",
+        "title_es": "Ácido Cítrico Anhidro (grado alimentario)",
+        "title_pt": "Ácido Cítrico Anidro (grau alimentício)",
         "description_tr": "Gıda, içecek, reçel ve temizlik ürünlerinde organik asitlik düzenleyici, lezzet artırıcı ve şelat maddesi.",
         "description_en": "Organic acidulant, flavor enhancer, and natural chelating agent widely used in food, beverage, and cleaning industries.",
         "description_fr": "Acidifiant biologique et réhausseur de goût largement utilisé dans l'industrie agroalimentaire.",
         "description_ar": "محمض عضوي ومعزز للنكهة وعامل تخلب طبيعي يستخدم على نطاق واسع في الأغذية والمشروبات.",
+        "description_ru": "Органический подкислитель, усилитель вкуса и природный хелатирующий агент для пищевой, напиточной и моющей промышленности.",
+        "description_es": "Acidulante orgánico, potenciador de sabor y quelante natural muy utilizado en las industrias de alimentos, bebidas y limpieza.",
+        "description_pt": "Acidulante orgânico, realçador de sabor e quelante natural muito usado nas indústrias de alimentos, bebidas e limpeza.",
         "image_url": "/images/enzymes.png",
         "is_featured": true
     },
@@ -840,10 +1089,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Urea 46% Nitrogen (Tech & Agricultural Grade)",
         "title_fr": "Urée 46% Azote (Grade Technique & Agricole)",
         "title_ar": "اليوريا 46% نيتروجين (درجة تقنية وزراعية)",
+        "title_ru": "Карбамид 46% азота (технический и сельскохозяйственный)",
+        "title_es": "Urea 46% Nitrógeno (grado técnico y agrícola)",
+        "title_pt": "Ureia 46% Nitrogênio (grau técnico e agrícola)",
         "description_tr": "Sıvı gübreler, AdBlue/DEF üretimi ve tekstil baskı patlarında çözündürücü olarak kullanılan yüksek azotlu prill bileşik.",
         "description_en": "High-nitrogen organic compound used in solid/liquid fertilizers, AdBlue/DEF manufacturing, and textile printing pastes.",
         "description_fr": "Composé organique hautement azoté utilisé dans les engrais et la production d'AdBlue.",
         "description_ar": "مركب عضوي عالي النيتروجين يستخدم في الأسمدة الصلبة والسائلة وإنتاج AdBlue.",
+        "description_ru": "Органическое соединение с высоким содержанием азота для твёрдых и жидких удобрений, производства AdBlue/DEF и текстильных печатных паст.",
+        "description_es": "Compuesto orgánico de alto nitrógeno utilizado en fertilizantes sólidos y líquidos, fabricación de AdBlue/DEF y pastas de estampación textil.",
+        "description_pt": "Composto orgânico de alto nitrogênio usado em fertilizantes sólidos e líquidos, fabricação de ARLA 32/AdBlue e pastas de estamparia têxtil.",
         "image_url": "/images/enzymes.png",
         "is_featured": true
     },
@@ -858,10 +1113,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Acetone (Pure Technical Solvent Grade)",
         "title_fr": "Acétone (Solvant Technique Pur)",
         "title_ar": "الأسيتون (مذيب نقي درجة تقنية)",
+        "title_ru": "Ацетон (чистый технический растворитель)",
+        "title_es": "Acetona (solvente técnico puro)",
+        "title_pt": "Acetona (solvente técnico puro)",
         "description_tr": "Boya, lak, reçine, epoksi ve inceltici üretiminde kullanılan uçucu ve güçlü organik solvent.",
         "description_en": "Highly volatile and powerful organic solvent used in paints, lacquers, resins, epoxies, and thinners.",
         "description_fr": "Solvant organique puissant et très volatil utilisé dans les peintures, laques et résines époxy.",
         "description_ar": "مذيب عضوي شديد التطاير والقوة يستخدم في الدهانات والورنيش والراتنجات والراتنجات الإيبوكسية.",
+        "description_ru": "Сильный летучий органический растворитель для красок, лаков, смол, эпоксидных составов и разбавителей.",
+        "description_es": "Solvente orgánico potente y muy volátil utilizado en pinturas, lacas, resinas, epoxis y diluyentes.",
+        "description_pt": "Solvente orgânico potente e altamente volátil usado em tintas, lacas, resinas, epóxis e thinners.",
         "image_url": "/images/dyeing.png",
         "is_featured": true
     },
@@ -876,10 +1137,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Isopropanol (IPA 99.9% Anhydrous)",
         "title_fr": "Alcool Isopropylique (IPA 99.9%)",
         "title_ar": "كحول الأيزوبروبيل (IPA 99.9% لا مائي)",
+        "title_ru": "Изопропанол (IPA 99,9%, безводный)",
+        "title_es": "Isopropanol (IPA 99,9% anhidro)",
+        "title_pt": "Isopropanol (IPA 99,9% anidro)",
         "description_tr": "Boya, mürekkep, dezenfektan, kozmetik ve yüzey temizleyicilerde kullanılan yüksek saflıkta susuz alkol.",
         "description_en": "High-purity anhydrous alcohol widely used as a solvent in inks, paints, disinfectants, and electronics cleaners.",
         "description_fr": "Alcool anhydre de haute pureté utilisé comme solvant dans les encres, peintures et désinfectants.",
         "description_ar": "كحول لا مائي عالي النقاء يستخدم كمذيب في الأحبار والدهانات والمطهرات ومُنظفات الإلكترونيات.",
+        "description_ru": "Безводный спирт высокой чистоты, широко применяемый как растворитель в чернилах, красках, дезинфектантах и очистителях электроники.",
+        "description_es": "Alcohol anhidro de alta pureza muy utilizado como solvente en tintas, pinturas, desinfectantes y limpiadores electrónicos.",
+        "description_pt": "Álcool anidro de alta pureza muito usado como solvente em tintas de impressão, tintas, desinfetantes e limpadores eletrônicos.",
         "image_url": "/images/dyeing.png",
         "is_featured": true
     },
@@ -894,10 +1161,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Sulfuric Acid 98% (Technical Grade H2SO4)",
         "title_fr": "Acide Sulfurique 98% (Grade Technique)",
         "title_ar": "حمض الكبريتيك 98% (درجة تقنية)",
+        "title_ru": "Серная кислота 98% (техническая H2SO4)",
+        "title_es": "Ácido Sulfúrico 98% (H2SO4 grado técnico)",
+        "title_pt": "Ácido Sulfúrico 98% (H2SO4 grau técnico)",
         "description_tr": "Metal dekapajı, anotleme, akü sanayii ve ağır kimya süreçlerinde kullanılan konsantre güçlü mineral asit.",
         "description_en": "Concentrated strong mineral acid used in metal pickling, anodizing, battery manufacturing, and heavy chemical processing.",
         "description_fr": "Acide minéral fort concentré utilisé dans le décapage des métaux, l'anodisation et les batteries.",
         "description_ar": "حمض معدني قوي مركز يستخدم في تنظيف المعادن والتنقيط وتصنيع البطاريات والعمليات الكيميائية الثقيلة.",
+        "description_ru": "Концентрированная сильная минеральная кислота для травления металлов, анодирования, производства аккумуляторов и тяжёлой химии.",
+        "description_es": "Ácido mineral fuerte concentrado utilizado en decapado de metales, anodizado, fabricación de baterías y procesamiento químico pesado.",
+        "description_pt": "Ácido mineral forte concentrado usado em decapagem de metais, anodização, fabricação de baterias e processamento químico pesado.",
         "image_url": "/images/pretreatment.png",
         "is_featured": true
     },
@@ -912,10 +1185,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Hydrochloric Acid 33% (Metal Pickling Acid)",
         "title_fr": "Acide Chlorhydrique 33% (Décapage)",
         "title_ar": "حمض الهيدروكلوريك 33% (حمض تنظيف المعادن)",
+        "title_ru": "Соляная кислота 33% (для травления металлов)",
+        "title_es": "Ácido Clorhídrico 33% (decapado de metales)",
+        "title_pt": "Ácido Clorídrico 33% (decapagem de metais)",
         "description_tr": "Demir-çelik pas ve tufal temizliği (dekapaj), pH düşürme ve rejenere süreçlerinde kullanılan mineral asit.",
         "description_en": "Primary mineral acid used for steel rust/scale pickling, pH adjustment, and ion exchange regeneration.",
         "description_fr": "Acide minéral primaire utilisé pour le décapage de la rouille de l'acier et l'ajustement du pH.",
         "description_ar": "حمض معدني رئيسي يستخدم لتنظيف صدأ الفولاذ وتعديل الرقم الهيدروجيني واستعادة التبادل الأيوني.",
+        "description_ru": "Основная минеральная кислота для травления ржавчины и окалины со стали, регулирования pH и регенерации ионообменных смол.",
+        "description_es": "Ácido mineral principal para el decapado de óxido y cascarilla del acero, ajuste de pH y regeneración de resinas de intercambio iónico.",
+        "description_pt": "Principal ácido mineral para decapagem de ferrugem e carepa do aço, ajuste de pH e regeneração de resinas de troca iônica.",
         "image_url": "/images/pretreatment.png",
         "is_featured": true
     },
@@ -929,10 +1208,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Sulfuric Acid 98% (H2SO4)",
         "title_fr": "Acide Sulfurique 98%",
         "title_ar": "حمض الكبريتيك 98%",
+        "title_ru": "Серная кислота 98% (H2SO4)",
+        "title_es": "Ácido Sulfúrico 98% (H2SO4)",
+        "title_pt": "Ácido Sulfúrico 98% (H2SO4)",
         "description_tr": "Yüksek saflıkta, ağır sanayi, gübre, metal ve kimyasal sentez süreçlerinde yaygın olarak kullanılan konsantre teknik mineral asit.",
         "description_en": "High-purity concentrated mineral acid widely used in heavy industry, fertilizer manufacturing, metal processing, and chemical synthesis.",
         "description_fr": "Acide minéral concentré de haute pureté largement utilisé dans l'industrie lourde, les engrais et le traitement des métaux.",
         "description_ar": "حمض معدني مركز عالي النقاء يستخدم على نطاق واسع في الصناعات الثقيلة وتصنيع الأسمدة لمعالجة المعادن.",
+        "description_ru": "Концентрированная минеральная кислота высокой чистоты для тяжёлой промышленности, производства удобрений, металлообработки и химического синтеза.",
+        "description_es": "Ácido mineral concentrado de alta pureza muy utilizado en la industria pesada, fabricación de fertilizantes, procesamiento de metales y síntesis química.",
+        "description_pt": "Ácido mineral concentrado de alta pureza muito usado na indústria pesada, fabricação de fertilizantes, processamento de metais e síntese química.",
         "image_url": "/images/pretreatment.png",
         "is_featured": true
     },
@@ -946,10 +1231,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Formic Acid 85% (HCOOH)",
         "title_fr": "Acide Formique 85%",
         "title_ar": "حمض الفورميك 85%",
+        "title_ru": "Муравьиная кислота 85% (HCOOH)",
+        "title_es": "Ácido Fórmico 85% (HCOOH)",
+        "title_pt": "Ácido Fórmico 85% (HCOOH)",
         "description_tr": "Tekstil terbiye, deri işleme, kauçuk pıhtılaştırma ve kimyasal hammadde olarak kullanılan güçlü organik asit.",
         "description_en": "Strong organic acid utilized in textile finishing, leather tanning, rubber coagulation, and intermediate chemical synthesis.",
         "description_fr": "Acide organique fort utilisé dans la finition textile, le tannage du cuir et la coagulation du caoutchouc.",
         "description_ar": "حمض عضوي قوي يستخدم في تشطيب النسيج ودباغة الجلود وتخثير المطاط.",
+        "description_ru": "Сильная органическая кислота для текстильной отделки, дубления кож, коагуляции каучука и синтеза химических полупродуктов.",
+        "description_es": "Ácido orgánico fuerte utilizado en acabado textil, curtido de cueros, coagulación de caucho y síntesis de intermedios químicos.",
+        "description_pt": "Ácido orgânico forte usado em acabamento têxtil, curtimento de couro, coagulação de borracha e síntese de intermediários químicos.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -963,10 +1254,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Glacial Acetic Acid 99.8%",
         "title_fr": "Acide Acétique Glacial 99.8%",
         "title_ar": "حمض الخليك الجليدي 99.8%",
+        "title_ru": "Ледяная уксусная кислота 99,8%",
+        "title_es": "Ácido Acético Glacial 99,8%",
+        "title_pt": "Ácido Acético Glacial 99,8%",
         "description_tr": "Yüksek saflıkta, pH ayarlayıcı, boyama tamponlayıcı ve kimyasal sentez hammaddesi olarak kullanılan asetik asit.",
         "description_en": "High-purity technical grade acetic acid used as a pH regulator, dyeing buffer, and chemical precursor.",
         "description_fr": "Acide acétique de haute pureté utilisé comme régulateur de pH et tampon de teinture.",
         "description_ar": "حمض الخليك الدرجة الفنية عالي النقاء المستخدم كمنظم للرقم الهيدروجيني.",
+        "description_ru": "Техническая уксусная кислота высокой чистоты: регулятор pH, буфер при крашении и химический прекурсор.",
+        "description_es": "Ácido acético de grado técnico y alta pureza utilizado como regulador de pH, buffer de teñido y precursor químico.",
+        "description_pt": "Ácido acético de grau técnico e alta pureza usado como regulador de pH, tampão de tingimento e precursor químico.",
         "image_url": "/images/pretreatment.png",
         "is_featured": true
     },
@@ -980,10 +1277,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Caustic Soda Pearls 99% (NaOH)",
         "title_fr": "Soude Caustique en Perles 99%",
         "title_ar": "الصودا الكاوية الحبيبات 99%",
+        "title_ru": "Каустическая сода в гранулах 99% (NaOH)",
+        "title_es": "Soda Cáustica en Perlas 99% (NaOH)",
+        "title_pt": "Soda Cáustica em Pérolas 99% (NaOH)",
         "description_tr": "Sabun, deterjan, su arıtma, kağıt ve tekstil merserize süreçlerinde temel bazik hammadde olarak kullanılan saf sodyum hidroksit.",
         "description_en": "Pure sodium hydroxide pearls used as an essential basic raw material in soaps, detergents, water treatment, and paper manufacturing.",
         "description_fr": "Perles de soude caustique pure utilisées dans la fabrication de savons, détergents et le traitement de l'eau.",
         "description_ar": "حبيبات هيدروكسيد الصوديوم النقية المستخدمة كعادة أساسية في الصابون والمنظفات ومعالجة المياه.",
+        "description_ru": "Гранулы чистого гидроксида натрия — базовое сырьё для мыла, моющих средств, водоподготовки и производства бумаги.",
+        "description_es": "Perlas de hidróxido de sodio puro, materia prima básica esencial en jabones, detergentes, tratamiento de agua y fabricación de papel.",
+        "description_pt": "Pérolas de hidróxido de sódio puro, matéria-prima básica essencial em sabões, detergentes, tratamento de água e fabricação de papel.",
         "image_url": "/images/pretreatment.png",
         "is_featured": true
     },
@@ -997,10 +1300,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Hydrochloric Acid 33% (HCl)",
         "title_fr": "Acide Chlorhydrique 33%",
         "title_ar": "حمض الهيدروكلوريك 33%",
+        "title_ru": "Соляная кислота 33% (HCl)",
+        "title_es": "Ácido Clorhídrico 33% (HCl)",
+        "title_pt": "Ácido Clorídrico 33% (HCl)",
         "description_tr": "Metal yüzey temizleme, pH düşürme ve su arıtma süreçlerinde kullanılan güçlü inorganik mineral asit.",
         "description_en": "Strong inorganic mineral acid used for metal pickling, pH adjustment, and industrial water treatment.",
         "description_fr": "Acide minéral inorganique fort utilisé pour le décapage des métaux et l'ajustement du pH.",
         "description_ar": "حمض معدني غير عضوي قوي يستخدم لتنظيف المعادن وضبط الرقم الهيدروجيني.",
+        "description_ru": "Сильная неорганическая кислота для травления металлов, регулирования pH и промышленной водоподготовки.",
+        "description_es": "Ácido mineral inorgánico fuerte utilizado para decapado de metales, ajuste de pH y tratamiento de aguas industriales.",
+        "description_pt": "Ácido mineral inorgânico forte usado em decapagem de metais, ajuste de pH e tratamento de água industrial.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -1014,10 +1323,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Acetone (Pure / Technical Grade)",
         "title_fr": "Acétone Pur",
         "title_ar": "الأسيتون النقي",
+        "title_ru": "Ацетон (чистый / технический)",
+        "title_es": "Acetona (pura / grado técnico)",
+        "title_pt": "Acetona (pura / grau técnico)",
         "description_tr": "Boya, reçine, yapıştırıcı ve kimyasal ekstraksiyon süreçlerinde hızlı buharlaşan güçlü organik solvent.",
         "description_en": "Fast-evaporating powerful organic solvent used in paints, resins, adhesives, and chemical extraction.",
         "description_fr": "Solvant organique puissant à évaporation rapide utilisé dans les peintures, résines et adhésifs.",
         "description_ar": "مذيب عضوي قوي سريع التبخر يستخدم في الطلاء والراتنجات والمواد اللاصقة.",
+        "description_ru": "Быстроиспаряющийся сильный органический растворитель для красок, смол, клеев и химической экстракции.",
+        "description_es": "Solvente orgánico potente de evaporación rápida utilizado en pinturas, resinas, adhesivos y extracción química.",
+        "description_pt": "Solvente orgânico potente de evaporação rápida usado em tintas, resinas, adesivos e extração química.",
         "image_url": "/images/washing.png",
         "is_featured": true
     },
@@ -1031,10 +1346,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Isopropanol (IPA) 99.9%",
         "title_fr": "Alcool Isopropylique (IPA) 99.9%",
         "title_ar": "كحول الأيزوبروبيل 99.9%",
+        "title_ru": "Изопропанол (IPA) 99,9%",
+        "title_es": "Isopropanol (IPA) 99,9%",
+        "title_pt": "Isopropanol (IPA) 99,9%",
         "description_tr": "Dezenfektan, kozmetik, elektronik ve yüzey temizleyicilerde kullanılan yüksek saflıkta susuz alkol.",
         "description_en": "High-purity anhydrous alcohol widely used in disinfectants, cosmetics, electronics cleaning, and pharmaceuticals.",
         "description_fr": "Alcool anhydre de haute pureté utilisé dans les désinfectants, cosmétiques et l'électronique.",
         "description_ar": "كحول لا مائي عالي النقاء يستخدم في المطهرات والمستحضرات التجميلية وتنظيف الإلكترونيات.",
+        "description_ru": "Безводный спирт высокой чистоты для дезинфектантов, косметики, очистки электроники и фармацевтики.",
+        "description_es": "Alcohol anhidro de alta pureza muy utilizado en desinfectantes, cosméticos, limpieza de electrónicos y productos farmacéuticos.",
+        "description_pt": "Álcool anidro de alta pureza muito usado em desinfetantes, cosméticos, limpeza de eletrônicos e produtos farmacêuticos.",
         "image_url": "/images/washing.png",
         "is_featured": true
     },
@@ -1048,10 +1369,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Monoethylene Glycol (MEG)",
         "title_fr": "Mono Éthylène Glycol (MEG)",
         "title_ar": "أحادية إيثيلين جلايكول",
+        "title_ru": "Моноэтиленгликоль (MEG)",
+        "title_es": "Monoetilenglicol (MEG)",
+        "title_pt": "Monoetilenoglicol (MEG)",
         "description_tr": "Antifriz, polyester elyaf, reçine ve nem tutucu formülasyonlarda yaygın kullanılan şeffaf glikol.",
         "description_en": "Clear glycol raw material used extensively in antifreeze formulations, polyester fibers, resins, and humectants.",
         "description_fr": "Matière première glycol utilisée dans les antigels, les fibres polyester et les résines.",
         "description_ar": "مادة خام جلايكول تستخدم على نطاق واسع في سائل منع التجمد وألياف البوليستر والراتنجات.",
+        "description_ru": "Прозрачный гликоль для антифризов, полиэфирных волокон, смол и увлажнителей.",
+        "description_es": "Glicol transparente utilizado ampliamente en anticongelantes, fibras de poliéster, resinas y humectantes.",
+        "description_pt": "Glicol transparente amplamente usado em anticongelantes, fibras de poliéster, resinas e umectantes.",
         "image_url": "/images/washing.png",
         "is_featured": false
     },
@@ -1065,10 +1392,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Sodium Sulfate Anhydrous 99%",
         "title_fr": "Sulfate de Sodium Anhydre 99%",
         "title_ar": "كبريتات الصوديوم اللامائية 99%",
+        "title_ru": "Сульфат натрия безводный 99%",
+        "title_es": "Sulfato de Sodio Anhidro 99%",
+        "title_pt": "Sulfato de Sódio Anidro 99%",
         "description_tr": "Deterjan, cam, tekstil boyama ve kağıt sanayiinde dolgu ve nötralleştirici olarak kullanılan inorganik tuz.",
         "description_en": "Inorganic salt used as a filler and dyeing leveling agent in detergents, glass, textiles, and paper industries.",
         "description_fr": "Sel inorganique utilisé comme agent de remplissage dans les détergents, le verre et la teinture textile.",
         "description_ar": "ملح غير عضوي يستخدم كمادة حشو وعامل مساواة الصباغة في المنظفات والزجاج والنسيج.",
+        "description_ru": "Неорганическая соль — наполнитель и выравнивающий агент при крашении в производстве моющих средств, стекла, текстиля и бумаги.",
+        "description_es": "Sal inorgánica utilizada como carga y agente igualador de teñido en las industrias de detergentes, vidrio, textil y papel.",
+        "description_pt": "Sal inorgânico usado como carga e agente igualizante de tingimento nas indústrias de detergentes, vidro, têxtil e papel.",
         "image_url": "/images/softeners.png",
         "is_featured": true
     },
@@ -1082,10 +1415,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Sodium Carbonate (Soda Ash Light / Dense)",
         "title_fr": "Carbonate de Sodium (Cendre de Soude)",
         "title_ar": "كربونات الصوديوم (رماد الصودا)",
+        "title_ru": "Карбонат натрия (сода лёгкая / тяжёлая)",
+        "title_es": "Carbonato de Sodio (Soda Ash liviana / densa)",
+        "title_pt": "Carbonato de Sódio (Barrilha leve / densa)",
         "description_tr": "Cam üretimi, su yumuşatma, deterjan ve tekstil banyolarında alkali sağlayıcı olarak kullanılan soda külü.",
         "description_en": "Soda ash utilized in glass manufacturing, water softening, detergents, and alkaline textile dye baths.",
         "description_fr": "Cendre de soude utilisée dans la fabrication du verre, l'adoucissement de l'eau et les détergents.",
         "description_ar": "رماد الصودا المستخدم في تصنيع الزجاج وتنعيم المياه والمنظفات وحمامات صباغة النسيج.",
+        "description_ru": "Кальцинированная сода для производства стекла, умягчения воды, моющих средств и щелочных красильных ванн.",
+        "description_es": "Carbonato de sodio utilizado en la fabricación de vidrio, ablandamiento de agua, detergentes y baños alcalinos de teñido textil.",
+        "description_pt": "Barrilha usada na fabricação de vidro, abrandamento de água, detergentes e banhos alcalinos de tingimento têxtil.",
         "image_url": "/images/softeners.png",
         "is_featured": false
     },
@@ -1099,10 +1438,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Citric Acid Monohydrate / Anhydrous",
         "title_fr": "Acide Citrique Monohydraté / Anhydre",
         "title_ar": "حمض الستريك أحادي الهيدرات",
+        "title_ru": "Лимонная кислота моногидрат / безводная",
+        "title_es": "Ácido Cítrico Monohidrato / Anhidro",
+        "title_pt": "Ácido Cítrico Monohidratado / Anidro",
         "description_tr": "Gıda koruyucusu, içecek asitliği ayarlayıcı, temizlik ve tarım sektöründe şelat maddesi olarak kullanılan organik asit.",
         "description_en": "Organic acid used as a food preservative, beverage acidulant, cleaning agent, and agricultural chelating agent.",
         "description_fr": "Acide organique utilisé comme conservateur alimentaire, acidifiant de boisson et agent de nettoyage.",
         "description_ar": "حمض عضوي يستخدم كمادة حافظة غذائية ومحمض للمشروبات وعامل تنظيف.",
+        "description_ru": "Органическая кислота: пищевой консервант, подкислитель напитков, моющий компонент и хелатирующий агент для сельского хозяйства.",
+        "description_es": "Ácido orgánico utilizado como conservante alimentario, acidulante de bebidas, agente de limpieza y quelante agrícola.",
+        "description_pt": "Ácido orgânico usado como conservante alimentício, acidulante de bebidas, agente de limpeza e quelante agrícola.",
         "image_url": "/images/finishing.png",
         "is_featured": true
     },
@@ -1116,10 +1461,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Urea 46% N (Technical & Agricultural Grade)",
         "title_fr": "Urée 46% N (Grade Technique & Agricole)",
         "title_ar": "اليوريا 46% نتروجين",
+        "title_ru": "Карбамид 46% N (технический и сельскохозяйственный)",
+        "title_es": "Urea 46% N (grado técnico y agrícola)",
+        "title_pt": "Ureia 46% N (grau técnico e agrícola)",
         "description_tr": "Reçine, AdBlue üretimi, tekstil baskı ve gübre sektöründe kullanılan yüksek azotlu inorganik bileşik.",
         "description_en": "High-nitrogen compound used in resins, AdBlue production, textile printing pastes, and agricultural fertilizers.",
         "description_fr": "Composé hautement azoté utilisé dans les résines, la production d'AdBlue et les engrais.",
         "description_ar": "مركب عالي النيتروجين يستخدم في الراتنجات وإنتاج AdBlue والطباعة النسيجية والأسمدة.",
+        "description_ru": "Соединение с высоким содержанием азота для смол, производства AdBlue, текстильных печатных паст и удобрений.",
+        "description_es": "Compuesto de alto nitrógeno utilizado en resinas, producción de AdBlue, pastas de estampación textil y fertilizantes agrícolas.",
+        "description_pt": "Composto de alto nitrogênio usado em resinas, produção de ARLA 32/AdBlue, pastas de estamparia têxtil e fertilizantes agrícolas.",
         "image_url": "/images/finishing.png",
         "is_featured": false
     },
@@ -1134,10 +1485,16 @@ export const MOCK_PRODUCTS: Product[] = [
         "title_en": "Reverse Osmosis Antiscalant Concentrate",
         "title_fr": "Antitartre pour Osmose Inverse",
         "title_ar": "مانع الترسيب لأجهزة التناضح العكسي",
+        "title_ru": "Концентрат антискаланта для обратного осмоса",
+        "title_es": "Antiincrustante concentrado para ósmosis inversa",
+        "title_pt": "Anti-incrustante concentrado para osmose reversa",
         "description_tr": "Ters osmoz (RO) membranlarında kalsiyum sülfat ve silis birikimini engelleyen yüksek performanslı antiscalant.",
         "description_en": "High-performance reverse osmosis (RO) membrane antiscalant preventing calcium carbonate, sulfate, and silica scaling.",
         "description_fr": "Antitartre haute performance pour membranes d'osmose inverse évitant l'entartrage par le carbonate de calcium.",
         "description_ar": "مانع ترسيب عالي الأداء لأغشية التناضح العكسي يمنع كربونات الكالسيوم والسليكا.",
+        "description_ru": "Высокоэффективный антискалант для мембран обратного осмоса, предотвращающий отложения карбоната кальция, сульфатов и кремнезёма.",
+        "description_es": "Antiincrustante de alto rendimiento para membranas de ósmosis inversa (OI) que previene incrustaciones de carbonato de calcio, sulfatos y sílice.",
+        "description_pt": "Anti-incrustante de alto desempenho para membranas de osmose reversa (OR) que previne incrustações de carbonato de cálcio, sulfatos e sílica.",
         "image_url": "/images/water-treatment.png",
         "is_featured": true
     },
@@ -1156,6 +1513,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Nonionic wetting agent. High efficiency in scouring, bleaching and washing processes.",
         "description_fr": "Agent mouillant non ionique. Haute efficacité dans les procédés de débouillissage et blanchiment.",
         "description_ar": "عامل ترطيب غير أيوني. كفاءة عالية في عمليات الغلي والتبييض والغسيل.",
+        "description_ru": "Неионогенный смачиватель. Высокая эффективность при отварке, отбелке и промывке.",
+        "description_es": "Humectante no iónico. Alta eficiencia en procesos de descrude, blanqueo y lavado.",
+        "description_pt": "Umectante não iônico. Alta eficiência em processos de purga, alvejamento e lavagem.",
         "image_url": "/images/pretreatment.png",
         "is_featured": true
     },
@@ -1174,6 +1534,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Nonionic combined scouring wetting agent. Single-bath wetting and degreasing.",
         "description_fr": "Agent mouillant combiné non ionique pour débouillissage.",
         "description_ar": "عامل ترطيب مشترك غير أيوني للغلي.",
+        "description_ru": "Неионогенный комбинированный смачиватель для отварки. Смачивание и обезжиривание в одной ванне.",
+        "description_es": "Humectante no iónico combinado para descrude. Humectación y desengrase en un solo baño.",
+        "description_pt": "Umectante não iônico combinado para purga. Umectação e desengorduramento em um único banho.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -1192,6 +1555,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Low-foaming nonionic wetting agent. Ideal for jet dyeing machines.",
         "description_fr": "Agent mouillant non ionique à faible mousse. Idéal pour machines jet.",
         "description_ar": "عامل ترطيب غير أيوني منخفض الرغوة. مثالي لآلات الصباغة النفاثة.",
+        "description_ru": "Низкопенный неионогенный смачиватель. Идеален для джет-машин.",
+        "description_es": "Humectante no iónico de baja espuma. Ideal para máquinas de teñido jet.",
+        "description_pt": "Umectante não iônico de baixa espuma. Ideal para máquinas de tingimento jet.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -1210,6 +1576,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Anionic wetting agent. Excellent wetting performance in alkaline conditions.",
         "description_fr": "Agent mouillant anionique. Excellentes performances en milieu alcalin.",
         "description_ar": "عامل ترطيب أنيوني. أداء ترطيب ممتاز في الظروف القلوية.",
+        "description_ru": "Анионный смачиватель. Отличное смачивание в щелочной среде.",
+        "description_es": "Humectante aniónico. Excelente humectación en condiciones alcalinas.",
+        "description_pt": "Umectante aniônico. Excelente umectação em condições alcalinas.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -1228,6 +1597,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Anionic wetting agent. High temperature stability, suitable for HT processes.",
         "description_fr": "Agent mouillant anionique. Stabilité haute température, pour procédés HT.",
         "description_ar": "عامل ترطيب أنيوني. ثبات درجات الحرارة العالية.",
+        "description_ru": "Анионный смачиватель. Высокая термостабильность, подходит для HT-процессов.",
+        "description_es": "Humectante aniónico. Alta estabilidad a temperatura, apto para procesos HT.",
+        "description_pt": "Umectante aniônico. Alta estabilidade térmica, adequado para processos HT.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -1246,6 +1618,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Concentrated sequestering and chelating agent. Binds Ca²⁺, Mg²⁺ and Fe³⁺ ions.",
         "description_fr": "Agent séquestrant et chélatant concentré. Lie les ions Ca²⁺, Mg²⁺ et Fe³⁺.",
         "description_ar": "عامل عزل ومخلب مركز. يربط أيونات الكالسيوم والمغنيسيوم والحديد.",
+        "description_ru": "Концентрированный секвестрант и хелатирующий агент. Связывает ионы Ca²⁺, Mg²⁺ и Fe³⁺.",
+        "description_es": "Secuestrante y quelante concentrado. Captura iones Ca²⁺, Mg²⁺ y Fe³⁺.",
+        "description_pt": "Sequestrante e quelante concentrado. Captura íons Ca²⁺, Mg²⁺ e Fe³⁺.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -1264,6 +1639,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Sequestering agent for reactive dye baths. Neutralizes hard water effects.",
         "description_fr": "Agent séquestrant pour bains de teinture réactifs.",
         "description_ar": "عامل عزل لحمامات الصباغة التفاعلية.",
+        "description_ru": "Секвестрант для ванн с активными красителями. Нейтрализует влияние жёсткой воды.",
+        "description_es": "Secuestrante para baños de colorantes reactivos. Neutraliza los efectos del agua dura.",
+        "description_pt": "Sequestrante para banhos de corantes reativos. Neutraliza os efeitos da água dura.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -1282,6 +1660,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "DTPA-based strong chelating agent. Superior performance in iron ion control.",
         "description_fr": "Agent chélatant puissant à base de DTPA.",
         "description_ar": "عامل مخلب قوي أساسه DTPA.",
+        "description_ru": "Сильный хелатирующий агент на основе DTPA. Превосходный контроль ионов железа.",
+        "description_es": "Quelante fuerte a base de DTPA. Rendimiento superior en el control de iones de hierro.",
+        "description_pt": "Quelante forte à base de DTPA. Desempenho superior no controle de íons de ferro.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -1300,6 +1681,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Concentrated peroxide stabilizer. H₂O₂ control in bleaching baths.",
         "description_fr": "Stabilisateur de peroxyde concentré. Contrôle du H₂O₂.",
         "description_ar": "مثبت بيروكسيد مركز. التحكم في بيروكسيد الهيدروجين.",
+        "description_ru": "Концентрированный стабилизатор пероксида. Контроль H₂O₂ в отбельных ваннах.",
+        "description_es": "Estabilizador de peróxido concentrado. Control de H₂O₂ en baños de blanqueo.",
+        "description_pt": "Estabilizador de peróxido concentrado. Controle de H₂O₂ em banhos de alvejamento.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -1318,6 +1702,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Silicate-based peroxide stabilizer. For alkaline bleaching processes.",
         "description_fr": "Stabilisateur de peroxyde à base de silicate.",
         "description_ar": "مثبت بيروكسيد أساسه السيليكات.",
+        "description_ru": "Стабилизатор пероксида на силикатной основе. Для щелочной отбелки.",
+        "description_es": "Estabilizador de peróxido a base de silicato. Para procesos de blanqueo alcalino.",
+        "description_pt": "Estabilizador de peróxido à base de silicato. Para processos de alvejamento alcalino.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -1336,6 +1723,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Nonionic oil and stain removing agent. Removes mineral and natural oils.",
         "description_fr": "Agent d'élimination d'huile et de taches non ionique.",
         "description_ar": "عامل إزالة الزيت والبقع غير الأيوني.",
+        "description_ru": "Неионогенное средство для удаления масел и пятен. Удаляет минеральные и натуральные масла.",
+        "description_es": "Removedor no iónico de aceites y manchas. Elimina aceites minerales y naturales.",
+        "description_pt": "Removedor não iônico de óleos e manchas. Remove óleos minerais e naturais.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -1354,6 +1744,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Solvent-based oil remover. High performance for heavy mineral oil stains.",
         "description_fr": "Détachant haute performance à base de solvant.",
         "description_ar": "مزيل زيت بالمذيبات عالي الأداء.",
+        "description_ru": "Средство для удаления масел на основе растворителей. Эффективно против тяжёлых минеральных масел.",
+        "description_es": "Removedor de aceite a base de solventes. Alto rendimiento en manchas de aceite mineral pesado.",
+        "description_pt": "Removedor de óleo à base de solventes. Alto desempenho em manchas de óleo mineral pesado.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -1372,6 +1765,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Emulsifying oil remover. Effective across wide pH and temperature ranges.",
         "description_fr": "Dégraissant émulsifiant. Efficace sur une large plage de pH.",
         "description_ar": "مزيل زيت مستحلب. فعال في نطاقات واسعة.",
+        "description_ru": "Эмульгирующее средство для удаления масел. Эффективно в широком диапазоне pH и температур.",
+        "description_es": "Removedor de aceite emulsionante. Eficaz en un amplio rango de pH y temperatura.",
+        "description_pt": "Removedor de óleo emulsionante. Eficaz em ampla faixa de pH e temperatura.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -1390,6 +1786,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Concentrated buffering acid. pH stabilization in dyeing and bleaching.",
         "description_fr": "Acide tampon concentré. Stabilisation du pH.",
         "description_ar": "حمض عازل مركز. استقرار الأس الهيدروجيني.",
+        "description_ru": "Концентрированная буферная кислота. Стабилизация pH при крашении и отбелке.",
+        "description_es": "Ácido regulador concentrado. Estabilización del pH en teñido y blanqueo.",
+        "description_pt": "Ácido tamponante concentrado. Estabilização do pH em tingimento e alvejamento.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -1408,6 +1807,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Neutralization acid. Post-bleaching alkali neutralization.",
         "description_fr": "Acide de neutralisation. Neutralisation alcaline post-blanchiment.",
         "description_ar": "حمض المعادلة. معادلة القلوية بعد التبييض.",
+        "description_ru": "Нейтрализующая кислота. Нейтрализация щёлочи после отбелки.",
+        "description_es": "Ácido de neutralización. Neutralización del álcali después del blanqueo.",
+        "description_pt": "Ácido de neutralização. Neutralização do álcali após o alvejamento.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -1426,6 +1828,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "High buffering capacity organic acid. Reactive dyeing pH control.",
         "description_fr": "Acide organique à haute capacité tampon.",
         "description_ar": "حمض عضوي عالي القدرة التخزينية.",
+        "description_ru": "Органическая кислота с высокой буферной ёмкостью. Контроль pH при крашении активными красителями.",
+        "description_es": "Ácido orgánico de alta capacidad reguladora. Control de pH en teñido reactivo.",
+        "description_pt": "Ácido orgânico de alta capacidade tamponante. Controle de pH no tingimento reativo.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -1444,6 +1849,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Anionic dispersing and levelling agent. Uniform color in reactive dyeing.",
         "description_fr": "Agent dispersant et égalisant anionique pour teinture réactive.",
         "description_ar": "عامل تشتت ومساواة أنيوني للصباغة التفاعلية.",
+        "description_ru": "Анионный диспергатор и выравниватель. Равномерный цвет при крашении активными красителями.",
+        "description_es": "Dispersante e igualador aniónico. Color uniforme en teñido reactivo.",
+        "description_pt": "Dispersante e igualizante aniônico. Cor uniforme no tingimento reativo.",
         "image_url": "/images/dyeing.png",
         "is_featured": true
     },
@@ -1462,6 +1870,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "High-performance levelling agent. Oligomer dispersion in dark shades.",
         "description_fr": "Agent égalisant haute performance. Dispersion des oligomères.",
         "description_ar": "عامل مساواة عالي الأداء. تشتت الأوليغومر في الألوان الداكنة.",
+        "description_ru": "Высокоэффективный выравниватель. Диспергирование олигомеров в тёмных тонах.",
+        "description_es": "Igualador de alto rendimiento. Dispersión de oligómeros en tonos oscuros.",
+        "description_pt": "Igualizante de alto desempenho. Dispersão de oligômeros em tons escuros.",
         "image_url": "/images/dyeing.png",
         "is_featured": false
     },
@@ -1480,6 +1891,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Nonionic powder dispersant. Resistant to water hardness, versatile use.",
         "description_fr": "Dispersant en poudre non ionique. Résistant à la dureté de l'eau.",
         "description_ar": "مشتت مسحوق غير أيوني. مقاوم لعسر الماء.",
+        "description_ru": "Неионогенный порошковый диспергатор. Устойчив к жёсткости воды, универсален.",
+        "description_es": "Dispersante no iónico en polvo. Resistente a la dureza del agua, uso versátil.",
+        "description_pt": "Dispersante não iônico em pó. Resistente à dureza da água, uso versátil.",
         "image_url": "/images/dyeing.png",
         "is_featured": false
     },
@@ -1498,6 +1912,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Anionic dispersing and levelling agent for disperse dyeing.",
         "description_fr": "Agent dispersant anionique pour teinture dispersée.",
         "description_ar": "عامل تشتت أنيوني للصباغة المشتتة.",
+        "description_ru": "Анионный диспергатор и выравниватель для крашения дисперсными красителями.",
+        "description_es": "Dispersante e igualador aniónico para teñido con colorantes dispersos.",
+        "description_pt": "Dispersante e igualizante aniônico para tingimento com corantes dispersos.",
         "image_url": "/images/dyeing.png",
         "is_featured": false
     },
@@ -1516,6 +1933,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Nonionic disperse auxiliary for HT dyeing. Stable up to 130°C.",
         "description_fr": "Auxiliaire disperse non ionique pour teinture HT. Stable jusqu'à 130°C.",
         "description_ar": "مساعد تشتت غير أيوني. مستقر حتى 130 درجة مئوية.",
+        "description_ru": "Неионогенное вспомогательное вещество для HT-крашения дисперсными красителями. Стабильно до 130°C.",
+        "description_es": "Auxiliar no iónico para teñido disperso HT. Estable hasta 130°C.",
+        "description_pt": "Auxiliar não iônico para tingimento disperso HT. Estável até 130°C.",
         "image_url": "/images/dyeing.png",
         "is_featured": false
     },
@@ -1534,6 +1954,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Ecological carrier. Increases color yield at 100°C for polyester dyeing.",
         "description_fr": "Carrier écologique pour teinture polyester.",
         "description_ar": "ناقل بيئي. يزيد كفاءة اللون عند 100 درجة مئوية.",
+        "description_ru": "Экологичный переносчик. Повышает выход цвета при 100°C при крашении полиэфира.",
+        "description_es": "Carrier ecológico. Aumenta el rendimiento de color a 100°C en el teñido de poliéster.",
+        "description_pt": "Carrier ecológico. Aumenta o rendimento de cor a 100°C no tingimento de poliéster.",
         "image_url": "/images/dyeing.png",
         "is_featured": false
     },
@@ -1552,6 +1975,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Next-gen APEO-free carrier. Low VOC, eco-friendly formulation.",
         "description_fr": "Carrier nouvelle génération sans APEO. Faible COV.",
         "description_ar": "ناقل خالٍ من APEO من الجيل الجديد.",
+        "description_ru": "Переносчик нового поколения без APEO. Низкое содержание ЛОС, экологичная формула.",
+        "description_es": "Carrier de nueva generación libre de APEO. Bajo COV, formulación ecológica.",
+        "description_pt": "Carrier de nova geração livre de APEO. Baixo COV, formulação ecológica.",
         "image_url": "/images/dyeing.png",
         "is_featured": false
     },
@@ -1570,6 +1996,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Post-reactive dyeing washing agent. Rapid hydrolyzed dye removal.",
         "description_fr": "Agent de lavage post-teinture réactive.",
         "description_ar": "عامل غسيل بعد الصباغة التفاعلية.",
+        "description_ru": "Средство для промывки после крашения активными красителями. Быстрое удаление гидролизованного красителя.",
+        "description_es": "Agente de lavado posterior al teñido reactivo. Eliminación rápida del colorante hidrolizado.",
+        "description_pt": "Agente de lavagem pós-tingimento reativo. Remoção rápida do corante hidrolisado.",
         "image_url": "/images/washing.png",
         "is_featured": true
     },
@@ -1588,6 +2017,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Soaping agent. Surface dye removal, improved color fastness.",
         "description_fr": "Agent de savonnage. Nettoyage de surface.",
         "description_ar": "عامل تصبين. إزالة الصبغة السطحية.",
+        "description_ru": "Средство для мыловки. Удаляет поверхностный краситель, повышает устойчивость окраски.",
+        "description_es": "Agente de jabonado. Elimina el colorante superficial y mejora la solidez del color.",
+        "description_pt": "Agente de ensaboamento. Remove o corante superficial e melhora a solidez da cor.",
         "image_url": "/images/washing.png",
         "is_featured": false
     },
@@ -1606,6 +2038,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Enzymatic washing agent. Effective at 40-60°C, energy saving.",
         "description_fr": "Agent de lavage enzymatique. Efficace à 40-60°C.",
         "description_ar": "عامل غسيل إنزيمي. فعال في 40-60 درجة مئوية.",
+        "description_ru": "Ферментное моющее средство. Эффективно при 40–60°C, экономит энергию.",
+        "description_es": "Agente de lavado enzimático. Eficaz a 40-60°C, ahorra energía.",
+        "description_pt": "Agente de lavagem enzimático. Eficaz a 40-60°C, economiza energia.",
         "image_url": "/images/washing.png",
         "is_featured": false
     },
@@ -1624,6 +2059,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Reductive washing agent. Post-disperse dyeing surface cleaning.",
         "description_fr": "Agent de lavage réductif.",
         "description_ar": "عامل غسيل اختزالي.",
+        "description_ru": "Восстановительное моющее средство. Очистка поверхности после крашения дисперсными красителями.",
+        "description_es": "Agente de lavado reductor. Limpieza superficial después del teñido disperso.",
+        "description_pt": "Agente de lavagem redutor. Limpeza superficial após tingimento disperso.",
         "image_url": "/images/washing.png",
         "is_featured": false
     },
@@ -1642,6 +2080,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Micro emulsion silicone softener. Bright, slippery and elastic hand feel.",
         "description_fr": "Adoucissant silicone micro-émulsion. Toucher brillant et glissant.",
         "description_ar": "منعم سيليكون مستحلب دقيق. ملمس لامع وزلق ومرن.",
+        "description_ru": "Силиконовый мягчитель в микроэмульсии. Блестящий, скользящий и эластичный гриф.",
+        "description_es": "Suavizante de silicona en microemulsión. Tacto brillante, deslizante y elástico.",
+        "description_pt": "Amaciante de silicone em microemulsão. Toque brilhante, deslizante e elástico.",
         "image_url": "/images/softeners.png",
         "is_featured": true
     },
@@ -1660,6 +2101,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Amino-functional silicone macro emulsion. Full, lasting soft hand feel.",
         "description_fr": "Macro-émulsion silicone amino-fonctionnelle.",
         "description_ar": "مستحلب سيليكون كبير بوظيفة أمينية.",
+        "description_ru": "Аминофункциональная силиконовая макроэмульсия. Полный, стойкий мягкий гриф.",
+        "description_es": "Macroemulsión de silicona aminofuncional. Tacto suave, lleno y duradero.",
+        "description_pt": "Macroemulsão de silicone aminofuncional. Toque macio, encorpado e duradouro.",
         "image_url": "/images/softeners.png",
         "is_featured": false
     },
@@ -1678,6 +2122,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Hydrophilic silicone softener. Softness + water absorption balance.",
         "description_fr": "Adoucissant silicone hydrophile.",
         "description_ar": "منعم سيليكون محب للماء.",
+        "description_ru": "Гидрофильный силиконовый мягчитель. Баланс мягкости и водопоглощения.",
+        "description_es": "Suavizante de silicona hidrofílico. Equilibrio entre suavidad y absorción de agua.",
+        "description_pt": "Amaciante de silicone hidrofílico. Equilíbrio entre maciez e absorção de água.",
         "image_url": "/images/softeners.png",
         "is_featured": false
     },
@@ -1696,6 +2143,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Special silicone for polyester. Does not affect sublimation fastness.",
         "description_fr": "Silicone spécial pour polyester.",
         "description_ar": "سيليكون خاص للبوليستر.",
+        "description_ru": "Специальный силикон для полиэфира. Не влияет на устойчивость к сублимации.",
+        "description_es": "Silicona especial para poliéster. No afecta la solidez a la sublimación.",
+        "description_pt": "Silicone especial para poliéster. Não afeta a solidez à sublimação.",
         "image_url": "/images/softeners.png",
         "is_featured": false
     },
@@ -1714,6 +2164,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Polyethylene emulsion softener. Economical, smooth and slippery feel.",
         "description_fr": "Adoucissant émulsion polyéthylène. Économique.",
         "description_ar": "منعم مستحلب البولي إيثيلين.",
+        "description_ru": "Мягчитель на основе полиэтиленовой эмульсии. Экономичный, гладкий и скользящий гриф.",
+        "description_es": "Suavizante en emulsión de polietileno. Económico, tacto liso y deslizante.",
+        "description_pt": "Amaciante em emulsão de polietileno. Econômico, toque liso e deslizante.",
         "image_url": "/images/softeners.png",
         "is_featured": false
     },
@@ -1732,6 +2185,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Cationic softener. Natural hand feel on cotton and blends.",
         "description_fr": "Adoucissant cationique. Toucher naturel sur coton.",
         "description_ar": "منعم كاتيوني. ملمس طبيعي على القطن.",
+        "description_ru": "Катионный мягчитель. Натуральный гриф на хлопке и смесях.",
+        "description_es": "Suavizante catiónico. Tacto natural en algodón y mezclas.",
+        "description_pt": "Amaciante catiônico. Toque natural em algodão e misturas.",
         "image_url": "/images/softeners.png",
         "is_featured": false
     },
@@ -1750,6 +2206,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Softener for knitted fabrics. Improves rubbing fastness.",
         "description_fr": "Adoucissant pour tricots. Améliore la solidité.",
         "description_ar": "منعم للأقمشة المحبوكة.",
+        "description_ru": "Мягчитель для трикотажа. Повышает устойчивость к трению.",
+        "description_es": "Suavizante para tejidos de punto. Mejora la solidez al frote.",
+        "description_pt": "Amaciante para malhas. Melhora a solidez à fricção.",
         "image_url": "/images/softeners.png",
         "is_featured": false
     },
@@ -1767,6 +2226,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Amylase enzyme. Starch breakdown in desizing processes.",
         "description_fr": "Enzyme amylase. Dégradation de l'amidon.",
         "description_ar": "إنزيم الأميليز. تحلل النشا.",
+        "description_ru": "Фермент амилаза. Расщепление крахмала при расшлихтовке.",
+        "description_es": "Enzima amilasa. Degradación del almidón en procesos de desengomado.",
+        "description_pt": "Enzima amilase. Degradação do amido em processos de desengomagem.",
         "image_url": "/images/enzymes.png",
         "is_featured": true
     },
@@ -1784,6 +2246,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Cellulase enzyme. Biopolishing and denim wash effects.",
         "description_fr": "Enzyme cellulase. Bio-polissage et effets denim.",
         "description_ar": "إنزيم السيلولاز. التلميع الحيوي وتأثيرات الدنيم.",
+        "description_ru": "Фермент целлюлаза. Биополировка и эффекты стирки денима.",
+        "description_es": "Enzima celulasa. Biopulido y efectos de lavado en denim.",
+        "description_pt": "Enzima celulase. Biopolimento e efeitos de lavagem em denim.",
         "image_url": "/images/enzymes.png",
         "is_featured": false
     },
@@ -1801,6 +2266,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Laccase enzyme. Denim indigo decolorization. Eco-friendly bleaching.",
         "description_fr": "Enzyme laccase. Décoloration de l'indigo.",
         "description_ar": "إنزيم اللاكاز. إزالة لون الإنديغو.",
+        "description_ru": "Фермент лакказа. Обесцвечивание индиго на дениме. Экологичная отбелка.",
+        "description_es": "Enzima lacasa. Decoloración del índigo en denim. Blanqueo ecológico.",
+        "description_pt": "Enzima lacase. Descoloração do índigo em denim. Alvejamento ecológico.",
         "image_url": "/images/enzymes.png",
         "is_featured": false
     },
@@ -1818,6 +2286,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Pectinase enzyme. Natural pectin removal in cotton pretreatment.",
         "description_fr": "Enzyme pectinase. Élimination de la pectine.",
         "description_ar": "إنزيم البكتيناز. إزالة البكتين.",
+        "description_ru": "Фермент пектиназа. Натуральное удаление пектина при предподготовке хлопка.",
+        "description_es": "Enzima pectinasa. Eliminación natural de pectina en el pretratamiento del algodón.",
+        "description_pt": "Enzima pectinase. Remoção natural de pectina no pré-tratamento do algodão.",
         "image_url": "/images/enzymes.png",
         "is_featured": false
     },
@@ -1836,6 +2307,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Powder edge hardener. PVA-based, fast-drying.",
         "description_fr": "Durcisseur de bords en poudre.",
         "description_ar": "مقوي حواف مسحوق.",
+        "description_ru": "Порошковое средство для упрочнения кромки. На основе ПВС, быстро сохнет.",
+        "description_es": "Endurecedor de orillo en polvo. A base de PVA, secado rápido.",
+        "description_pt": "Endurecedor de ourela em pó. À base de PVA, secagem rápida.",
         "image_url": "/images/finishing.png",
         "is_featured": false
     },
@@ -1854,6 +2328,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Liquid edge hardener. Easy application, transparent drying.",
         "description_fr": "Durcisseur de bords liquide.",
         "description_ar": "مقوي حواف سائل.",
+        "description_ru": "Жидкое средство для упрочнения кромки. Простое нанесение, прозрачное высыхание.",
+        "description_es": "Endurecedor de orillo líquido. Fácil aplicación, secado transparente.",
+        "description_pt": "Endurecedor de ourela líquido. Fácil aplicação, secagem transparente.",
         "image_url": "/images/finishing.png",
         "is_featured": false
     },
@@ -1872,6 +2349,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Water repellent finishing agent. C6 fluorocarbon-based.",
         "description_fr": "Agent hydrofuge. Base fluorocarbone C6.",
         "description_ar": "عامل طارد للماء. أساس فلوروكربون C6.",
+        "description_ru": "Водоотталкивающая отделка. На основе фторуглерода C6.",
+        "description_es": "Acabado repelente al agua. A base de fluorocarbono C6.",
+        "description_pt": "Acabamento repelente à água. À base de fluorcarbono C6.",
         "image_url": "/images/finishing.png",
         "is_featured": true
     },
@@ -1890,6 +2370,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Flame retardant finish. Halogen-free, REACH compliant.",
         "description_fr": "Finition ignifuge. Sans halogène.",
         "description_ar": "تشطيب مثبط للهب. خالٍ من الهالوجين.",
+        "description_ru": "Огнезащитная отделка. Без галогенов, соответствует REACH.",
+        "description_es": "Acabado retardante de llama. Libre de halógenos, conforme a REACH.",
+        "description_pt": "Acabamento retardante de chama. Livre de halogênios, conforme o REACH.",
         "image_url": "/images/finishing.png",
         "is_featured": false
     },
@@ -1908,6 +2391,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Antibacterial finish. Silver ion-based, lasting effect.",
         "description_fr": "Finition antibactérienne. Base ions d'argent.",
         "description_ar": "تشطيب مضاد للبكتيريا. أساس أيونات الفضة.",
+        "description_ru": "Антибактериальная отделка. На основе ионов серебра, стойкий эффект.",
+        "description_es": "Acabado antibacteriano. A base de iones de plata, efecto duradero.",
+        "description_pt": "Acabamento antibacteriano. À base de íons de prata, efeito duradouro.",
         "image_url": "/images/finishing.png",
         "is_featured": false
     },
@@ -1926,6 +2412,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Cationic antistatic finishing agent. Static prevention for synthetics.",
         "description_fr": "Agent antistatique cationique.",
         "description_ar": "عامل مضاد للكهرباء الساكنة الكاتيوني.",
+        "description_ru": "Катионная антистатическая отделка. Предотвращает статическое электричество на синтетике.",
+        "description_es": "Acabado antiestático catiónico. Previene la electricidad estática en sintéticos.",
+        "description_pt": "Acabamento antiestático catiônico. Evita eletricidade estática em sintéticos.",
         "image_url": "/images/finishing.png",
         "is_featured": false
     },
@@ -1944,6 +2433,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Anionic polyelectrolyte flocculant. Settling suspended solids in textile wastewater.",
         "description_fr": "Floculant polyélectrolyte anionique pour eaux usées textiles.",
         "description_ar": "ملبد بولي إلكتروليت أنيوني لمياه الصرف النسيجية.",
+        "description_ru": "Анионный полиэлектролит-флокулянт. Осаждение взвешенных веществ в текстильных сточных водах.",
+        "description_es": "Floculante polielectrolito aniónico. Sedimentación de sólidos suspendidos en aguas residuales textiles.",
+        "description_pt": "Floculante polieletrólito aniônico. Sedimentação de sólidos suspensos em efluentes têxteis.",
         "image_url": "/images/water-treatment.png",
         "is_featured": true
     },
@@ -1962,6 +2454,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Cationic coagulant. Rapid floc formation and settling in dyehouse wastewater.",
         "description_fr": "Coagulant cationique. Formation rapide de flocs.",
         "description_ar": "مخثر كاتيوني. تكوين سريع للندف في مياه صرف المصبغة.",
+        "description_ru": "Катионный коагулянт. Быстрое хлопьеобразование и осаждение в стоках красильных производств.",
+        "description_es": "Coagulante catiónico. Formación rápida de flóculos y sedimentación en aguas residuales de tintorería.",
+        "description_pt": "Coagulante catiônico. Formação rápida de flocos e sedimentação em efluentes de tinturaria.",
         "image_url": "/images/water-treatment.png",
         "is_featured": false
     },
@@ -1980,6 +2475,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Polyaluminum chloride coagulant. Effective across wide pH range, low sludge volume.",
         "description_fr": "Coagulant à base de polychlorure d'aluminium.",
         "description_ar": "مخثر كلوريد بولي ألومنيوم. فعال في نطاق واسع.",
+        "description_ru": "Коагулянт на основе полиоксихлорида алюминия. Эффективен в широком диапазоне pH, малый объём осадка.",
+        "description_es": "Coagulante de policloruro de aluminio. Eficaz en un amplio rango de pH, bajo volumen de lodos.",
+        "description_pt": "Coagulante de policloreto de alumínio. Eficaz em ampla faixa de pH, baixo volume de lodo.",
         "image_url": "/images/water-treatment.png",
         "is_featured": false
     },
@@ -1998,6 +2496,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Concentrated flocculant. High molecular weight, maximum performance at low dosage.",
         "description_fr": "Floculant concentré. Haut poids moléculaire.",
         "description_ar": "ملبد مركز. وزن جزيئي عالي، أداء أقصى بجرعة منخفضة.",
+        "description_ru": "Концентрированный флокулянт. Высокая молекулярная масса, максимальная эффективность при низкой дозировке.",
+        "description_es": "Floculante concentrado. Alto peso molecular, máximo rendimiento a baja dosis.",
+        "description_pt": "Floculante concentrado. Alto peso molecular, máximo desempenho em baixa dosagem.",
         "image_url": "/images/water-treatment.png",
         "is_featured": false
     },
@@ -2016,6 +2517,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Cationic decolorizer. High color removal rate for reactive and direct dye wastewater.",
         "description_fr": "Décolorant cationique. Élimination efficace des colorants réactifs.",
         "description_ar": "مزيل لون كاتيوني. معدل عالٍ لإزالة لون مياه الصرف.",
+        "description_ru": "Катионный обесцвечиватель. Высокая степень удаления цвета в стоках с активными и прямыми красителями.",
+        "description_es": "Decolorante catiónico. Alta tasa de eliminación de color en aguas residuales con colorantes reactivos y directos.",
+        "description_pt": "Descolorante catiônico. Alta taxa de remoção de cor em efluentes com corantes reativos e diretos.",
         "image_url": "/images/water-treatment.png",
         "is_featured": true
     },
@@ -2034,6 +2538,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Concentrated decolorizer. 50% active content, effective decolorization at low dosage.",
         "description_fr": "Décolorant concentré. 50% de matière active.",
         "description_ar": "مزيل لون مركز. 50% مادة فعالة.",
+        "description_ru": "Концентрированный обесцвечиватель. 50% активного вещества, эффективное обесцвечивание при низкой дозировке.",
+        "description_es": "Decolorante concentrado. 50% de materia activa, decoloración eficaz a baja dosis.",
+        "description_pt": "Descolorante concentrado. 50% de matéria ativa, descoloração eficaz em baixa dosagem.",
         "image_url": "/images/water-treatment.png",
         "is_featured": false
     },
@@ -2051,6 +2558,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Oxidative decolorizer. Advanced oxidation for breaking down resistant dyes.",
         "description_fr": "Décolorant oxydatif. Oxydation avancée des colorants résistants.",
         "description_ar": "مزيل لون تأكسدي. أكسدة متقدمة لتحلل الأصباغ المقاومة.",
+        "description_ru": "Окислительный обесцвечиватель. Глубокое окисление для разрушения стойких красителей.",
+        "description_es": "Decolorante oxidativo. Oxidación avanzada para degradar colorantes resistentes.",
+        "description_pt": "Descolorante oxidativo. Oxidação avançada para degradar corantes resistentes.",
         "image_url": "/images/water-treatment.png",
         "is_featured": false
     },
@@ -2068,6 +2578,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "pH adjuster. Optimal pH balance and neutralization in treatment processes.",
         "description_fr": "Régulateur de pH. Équilibre optimal du pH.",
         "description_ar": "منظم الأس الهيدروجيني. توازن مثالي في عمليات المعالجة.",
+        "description_ru": "Регулятор pH. Оптимальный баланс pH и нейтрализация в процессах очистки.",
+        "description_es": "Regulador de pH. Equilibrio de pH óptimo y neutralización en procesos de tratamiento.",
+        "description_pt": "Regulador de pH. Equilíbrio de pH ideal e neutralização em processos de tratamento.",
         "image_url": "/images/water-treatment.png",
         "is_featured": false
     },
@@ -2086,6 +2599,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Pigment printing binder. High fastness, soft hand feel, low formaldehyde.",
         "description_fr": "Liant d'impression pigmentaire. Haute solidité, toucher doux.",
         "description_ar": "رابط الطباعة الصبغية. ثبات عالي، ملمس ناعم.",
+        "description_ru": "Связующее для пигментной печати. Высокая устойчивость, мягкий гриф, низкое содержание формальдегида.",
+        "description_es": "Ligante para estampación con pigmentos. Alta solidez, tacto suave, bajo formaldehído.",
+        "description_pt": "Ligante para estamparia com pigmentos. Alta solidez, toque macio, baixo formaldeído.",
         "image_url": "/images/dyeing.png",
         "is_featured": true
     },
@@ -2104,6 +2620,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Synthetic thickener. Sharp pattern definition in pigment printing, easy wash-off.",
         "description_fr": "Épaississant synthétique pour impression pigmentaire.",
         "description_ar": "مكثف صناعي. خطوط تصميم حادة في الطباعة الصبغية.",
+        "description_ru": "Синтетический загуститель. Чёткий рисунок при пигментной печати, легко смывается.",
+        "description_es": "Espesante sintético. Definición nítida del diseño en estampación con pigmentos, fácil lavado.",
+        "description_pt": "Espessante sintético. Definição nítida do desenho na estamparia com pigmentos, fácil lavagem.",
         "image_url": "/images/dyeing.png",
         "is_featured": false
     },
@@ -2122,6 +2641,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Pigment print softener. Eliminates fabric stiffness after printing.",
         "description_fr": "Adoucissant d'impression. Élimine la raideur du tissu.",
         "description_ar": "منعم الطباعة الصبغية. يزيل تصلب القماش بعد الطباعة.",
+        "description_ru": "Мягчитель для пигментной печати. Устраняет жёсткость ткани после печати.",
+        "description_es": "Suavizante para estampación con pigmentos. Elimina la rigidez del tejido después de estampar.",
+        "description_pt": "Amaciante para estamparia com pigmentos. Elimina a rigidez do tecido após a estampagem.",
         "image_url": "/images/dyeing.png",
         "is_featured": false
     },
@@ -2140,6 +2662,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Reactive printing thickener. High color yield, excellent pattern clarity.",
         "description_fr": "Épaississant pour impression réactive. Haut rendement de couleur.",
         "description_ar": "مكثف الطباعة التفاعلية. إنتاج لون عالي، وضوح تصميم ممتاز.",
+        "description_ru": "Загуститель для печати активными красителями. Высокий выход цвета, отличная чёткость рисунка.",
+        "description_es": "Espesante para estampación reactiva. Alto rendimiento de color, excelente nitidez del diseño.",
+        "description_pt": "Espessante para estamparia reativa. Alto rendimento de cor, excelente nitidez do desenho.",
         "image_url": "/images/dyeing.png",
         "is_featured": true
     },
@@ -2158,6 +2683,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Moisture retainer for reactive printing. Improves fixation rate and color vibrancy.",
         "description_fr": "Rétenteur d'humidité pour impression réactive.",
         "description_ar": "مثبت رطوبة للطباعة التفاعلية. يحسن معدل التثبيت.",
+        "description_ru": "Влагоудерживающее средство для печати активными красителями. Повышает фиксацию и яркость цвета.",
+        "description_es": "Retenedor de humedad para estampación reactiva. Mejora la fijación y la viveza del color.",
+        "description_pt": "Retentor de umidade para estamparia reativa. Melhora a fixação e a vivacidade da cor.",
         "image_url": "/images/dyeing.png",
         "is_featured": false
     },
@@ -2176,6 +2704,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Post-printing oxidative wash agent. Removes unfixed dye.",
         "description_fr": "Agent de lavage oxydatif post-impression.",
         "description_ar": "عامل غسيل مؤكسد بعد الطباعة. يزيل الصبغة غير المثبتة.",
+        "description_ru": "Окислительное моющее средство после печати. Удаляет незафиксированный краситель.",
+        "description_es": "Agente de lavado oxidativo posestampado. Elimina el colorante no fijado.",
+        "description_pt": "Agente de lavagem oxidativo pós-estampagem. Remove o corante não fixado.",
         "image_url": "/images/dyeing.png",
         "is_featured": false
     },
@@ -2194,6 +2725,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Silicone emulsion antifoam. Suitable for all wet processes, long-lasting effect.",
         "description_fr": "Anti-mousse émulsion silicone. Pour tous les procédés humides.",
         "description_ar": "مضاد رغوة مستحلب سيليكوني. مناسب لجميع العمليات الرطبة.",
+        "description_ru": "Пеногаситель в виде силиконовой эмульсии. Подходит для всех мокрых процессов, длительный эффект.",
+        "description_es": "Antiespumante en emulsión de silicona. Apto para todos los procesos húmedos, efecto duradero.",
+        "description_pt": "Antiespumante em emulsão de silicone. Adequado para todos os processos úmidos, efeito duradouro.",
         "image_url": "/images/pretreatment.png",
         "is_featured": true
     },
@@ -2212,6 +2746,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Concentrated silicone antifoam. High efficiency at low dosage, suitable for jet machines.",
         "description_fr": "Anti-mousse silicone concentré. Haute efficacité à faible dose.",
         "description_ar": "مضاد رغوة سيليكوني مركز. كفاءة عالية بجرعة منخفضة.",
+        "description_ru": "Концентрированный силиконовый пеногаситель. Высокая эффективность при низкой дозировке, подходит для джет-машин.",
+        "description_es": "Antiespumante de silicona concentrado. Alta eficiencia a baja dosis, apto para máquinas jet.",
+        "description_pt": "Antiespumante de silicone concentrado. Alta eficiência em baixa dosagem, adequado para máquinas jet.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -2230,6 +2767,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Mineral-based antifoam. No staining in bleaching and scouring processes.",
         "description_fr": "Anti-mousse minéral. Sans taches dans les procédés de blanchiment.",
         "description_ar": "مضاد رغوة معدني. بدون بقع في عمليات التبييض.",
+        "description_ru": "Пеногаситель на минеральной основе. Не оставляет пятен при отбелке и отварке.",
+        "description_es": "Antiespumante a base mineral. No mancha en procesos de blanqueo y descrude.",
+        "description_pt": "Antiespumante à base mineral. Não mancha em processos de alvejamento e purga.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -2248,6 +2788,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "High temperature antifoam. Stable up to 130°C, for HT dyeing and steaming processes.",
         "description_fr": "Anti-mousse haute température. Stable jusqu'à 130°C.",
         "description_ar": "مضاد رغوة للحرارة العالية. مستقر حتى 130 درجة مئوية.",
+        "description_ru": "Высокотемпературный пеногаситель. Стабилен до 130°C, для HT-крашения и запаривания.",
+        "description_es": "Antiespumante para alta temperatura. Estable hasta 130°C, para teñido HT y vaporizado.",
+        "description_pt": "Antiespumante para alta temperatura. Estável até 130°C, para tingimento HT e vaporização.",
         "image_url": "/images/pretreatment.png",
         "is_featured": false
     },
@@ -2266,6 +2809,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Reactive dye fixer. Improves wash fastness by 1-2 points without shade change.",
         "description_fr": "Fixateur pour colorants réactifs. Améliore la solidité au lavage.",
         "description_ar": "مثبت الصبغة التفاعلية. يحسن ثبات الغسيل 1-2 درجة.",
+        "description_ru": "Закрепитель для активных красителей. Повышает устойчивость к стирке на 1–2 балла без изменения оттенка.",
+        "description_es": "Fijador de colorantes reactivos. Mejora la solidez al lavado en 1-2 puntos sin cambio de tono.",
+        "description_pt": "Fixador de corantes reativos. Melhora a solidez à lavagem em 1-2 pontos sem alterar o tom.",
         "image_url": "/images/dyeing.png",
         "is_featured": true
     },
@@ -2284,6 +2830,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Direct dye fixer. Formaldehyde-free, does not affect light fastness.",
         "description_fr": "Fixateur pour colorants directs. Sans formaldéhyde.",
         "description_ar": "مثبت الصبغة المباشرة. خالي من الفورمالديهايد.",
+        "description_ru": "Закрепитель для прямых красителей. Без формальдегида, не влияет на светостойкость.",
+        "description_es": "Fijador de colorantes directos. Libre de formaldehído, no afecta la solidez a la luz.",
+        "description_pt": "Fixador de corantes diretos. Livre de formaldeído, não afeta a solidez à luz.",
         "image_url": "/images/dyeing.png",
         "is_featured": false
     },
@@ -2302,6 +2851,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Universal fixer. Multi-purpose for reactive, direct and vat dyes.",
         "description_fr": "Fixateur universel. Multi-usage pour colorants réactifs, directs et de cuve.",
         "description_ar": "مثبت عالمي. متعدد الاستخدامات للأصباغ التفاعلية والمباشرة.",
+        "description_ru": "Универсальный закрепитель. Для активных, прямых и кубовых красителей.",
+        "description_es": "Fijador universal. Multiuso para colorantes reactivos, directos y a la tina.",
+        "description_pt": "Fixador universal. Multiuso para corantes reativos, diretos e à tina.",
         "image_url": "/images/dyeing.png",
         "is_featured": false
     },
@@ -2320,6 +2872,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Low formaldehyde fixer. Oeko-Tex compliant, ideal for baby textiles.",
         "description_fr": "Fixateur faible en formaldéhyde. Conforme Oeko-Tex, idéal pour bébé.",
         "description_ar": "مثبت منخفض الفورمالديهايد. متوافق مع Oeko-Tex، مثالي لملابس الأطفال.",
+        "description_ru": "Закрепитель с низким содержанием формальдегида. Соответствует Oeko-Tex, идеален для детского текстиля.",
+        "description_es": "Fijador de bajo formaldehído. Conforme a Oeko-Tex, ideal para textiles de bebé.",
+        "description_pt": "Fixador de baixo formaldeído. Conforme Oeko-Tex, ideal para têxteis infantis.",
         "image_url": "/images/dyeing.png",
         "is_featured": false
     },
@@ -2338,6 +2893,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Anti-crease agent. Prevents fabric crease marks in jet and overflow machines.",
         "description_fr": "Agent anti-pli. Prévient les marques de plis dans les machines jet.",
         "description_ar": "عامل مضاد للتجعد. يمنع علامات التجعد في ماكينات الجيت.",
+        "description_ru": "Средство против заломов. Предотвращает заломы ткани в джет- и overflow-машинах.",
+        "description_es": "Agente antiarrugas. Evita marcas de quiebre en máquinas jet y overflow.",
+        "description_pt": "Agente antivincos. Evita marcas de vinco em máquinas jet e overflow.",
         "image_url": "/images/dyeing.png",
         "is_featured": false
     },
@@ -2356,6 +2914,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Alkali donor. Controlled pH rise in reactive dyeing for uniform fixation.",
         "description_fr": "Donneur d'alcali. Montée contrôlée du pH en teinture réactive.",
         "description_ar": "مانح قلوي. ارتفاع متحكم في الأس الهيدروجيني للتثبيت المنتظم.",
+        "description_ru": "Донор щёлочи. Контролируемое повышение pH при крашении активными красителями для равномерной фиксации.",
+        "description_es": "Donador de álcali. Aumento controlado del pH en teñido reactivo para una fijación uniforme.",
+        "description_pt": "Doador de álcali. Aumento controlado do pH no tingimento reativo para fixação uniforme.",
         "image_url": "/images/dyeing.png",
         "is_featured": false
     },
@@ -2374,6 +2935,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "Non-iron finish. Permanent wrinkle-free effect on cotton and blends.",
         "description_fr": "Finition sans repassage. Effet anti-pli permanent sur coton.",
         "description_ar": "تشطيب بدون كي. تأثير دائم مضاد للتجعد على القطن.",
+        "description_ru": "Несминаемая отделка. Постоянный эффект «не требует глажки» на хлопке и смесях.",
+        "description_es": "Acabado sin planchado. Efecto antiarrugas permanente en algodón y mezclas.",
+        "description_pt": "Acabamento não passa (easy care). Efeito antirrugas permanente em algodão e misturas.",
         "image_url": "/images/finishing.png",
         "is_featured": false
     },
@@ -2392,6 +2956,9 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_en": "UV protection finish. UPF 50+ protection, essential for outdoor fabrics.",
         "description_fr": "Finition protection UV. Protection UPF 50+ pour tissus d'extérieur.",
         "description_ar": "تشطيب حماية من الأشعة فوق البنفسجية. حماية UPF 50+.",
+        "description_ru": "Отделка для защиты от УФ. Защита UPF 50+, необходима для тканей для улицы.",
+        "description_es": "Acabado de protección UV. Protección UPF 50+, esencial para tejidos de exterior.",
+        "description_pt": "Acabamento de proteção UV. Proteção UPF 50+, essencial para tecidos de uso externo.",
         "image_url": "/images/finishing.png",
         "is_featured": false
     }

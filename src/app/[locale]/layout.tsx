@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
+import { intlLocale } from '@/i18n/locales';
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
@@ -9,7 +10,6 @@ import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import "../globals.css";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://grohn.com.tr';
-const LOCALES = ['tr', 'en', 'fr', 'ar'];
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     // eslint-disable-next-line @typescript-eslint/await-thenable
@@ -20,24 +20,33 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     }
 
     const titles: Record<string, string> = {
-        tr: 'Grohn Kimya — Tekstil Kimyasalları Üreticisi',
-        en: 'Grohn Kimya — Textile Chemical Manufacturer',
-        fr: 'Grohn Kimya — Fabricant de Produits Chimiques Textiles',
-        ar: 'Grohn Kimya — الشركة المصنعة للمواد الكيميائية النسيجية',
+        tr: 'Grohn Kimya — Endüstriyel Kimyasallar ve Hammadde Tedarikçisi',
+        en: 'Grohn Kimya — Industrial Chemicals & Raw Materials Supplier from Turkey',
+        fr: 'Grohn Kimya — Fournisseur de produits chimiques industriels et matières premières, Turquie',
+        ar: 'Grohn Kimya — مورد الكيماويات الصناعية والمواد الخام من تركيا',
+        ru: 'Grohn Kimya — поставщик промышленной химии и сырья из Турции',
+        es: 'Grohn Kimya — Proveedor de químicos industriales y materias primas de Turquía',
+        pt: 'Grohn Kimya — Fornecedor de produtos químicos industriais e matérias-primas da Turquia',
     };
 
     const descriptions: Record<string, string> = {
-        tr: 'Grohn Kimya — Tekstil kimyasalları üretimi ve ihracatı. Ön işlem, boyama yardımcıları, yumuşatıcılar, enzimler ve apre kimyasalları. Velimeşe OSB, Tekirdağ.',
-        en: 'Grohn Kimya — Textile chemical manufacturer and exporter from Turkey. Pre-treatment, dyeing auxiliaries, softeners, enzymes and finishing chemicals.',
-        fr: 'Grohn Kimya — Fabricant et exportateur de produits chimiques textiles de Turquie. Prétraitement, auxiliaires de teinture, adoucissants, enzymes.',
-        ar: 'Grohn Kimya — شركة تصنيع وتصدير المواد الكيميائية النسيجية من تركيا. المعالجة المسبقة، مساعدات الصباغة، المنعمات، الإنزيمات.',
+        tr: 'Grohn Kimya — Deterjan, kağıt, su arıtma, boya-kaplama ve tekstil sektörleri için endüstriyel kimyasal hammadde tedariki ve ihracatı. Velimeşe OSB, Tekirdağ.',
+        en: 'Grohn Kimya — Industrial chemical raw materials supplier and exporter from Turkey for detergent, paper, water treatment, coatings and textile industries.',
+        fr: 'Grohn Kimya — Fournisseur et exportateur turc de matières premières chimiques pour les détergents, le papier, le traitement de l\'eau, les revêtements et le textile.',
+        ar: 'Grohn Kimya — مورد ومصدر للمواد الخام الكيميائية الصناعية من تركيا لصناعات المنظفات والورق ومعالجة المياه والطلاءات والنسيج.',
+        ru: 'Grohn Kimya — поставщик и экспортёр промышленного химического сырья из Турции для производства моющих средств, бумаги, водоподготовки, ЛКМ и текстиля.',
+        es: 'Grohn Kimya — Proveedor y exportador turco de materias primas químicas industriales para detergentes, papel, tratamiento de agua, recubrimientos y textiles.',
+        pt: 'Grohn Kimya — Fornecedor e exportador turco de matérias-primas químicas industriais para detergentes, papel, tratamento de água, revestimentos e têxteis.',
     };
 
     const keywords: Record<string, string> = {
-        tr: 'tekstil kimyasalları, boyama yardımcıları, silikon yumuşatıcı, enzim haşıl sökme, reaktif boyama, grohn kimya',
-        en: 'textile chemicals, dyeing auxiliaries, silicone softener, enzyme desizing, reactive dyeing, grohn kimya, turkey textile chemicals',
-        fr: 'produits chimiques textiles, auxiliaires de teinture, adoucissant silicone, enzymes textiles, grohn kimya turquie',
-        ar: 'مواد كيميائية نسيجية, مساعدات صباغة, منعمات سيليكون, إنزيمات نسيجية, تركيا',
+        tr: 'endüstriyel kimyasallar, kimyasal hammadde, deterjan hammaddeleri, su arıtma kimyasalları, tekstil kimyasalları, grohn kimya',
+        en: 'industrial chemicals supplier, chemical raw materials, detergent raw materials, water treatment chemicals, textile chemicals, chemical exporter turkey, grohn kimya',
+        fr: 'fournisseur produits chimiques industriels, matières premières chimiques, produits chimiques traitement de l\'eau, exportateur turquie',
+        ar: 'مورد كيماويات صناعية, مواد خام كيميائية, كيماويات معالجة المياه, مواد خام المنظفات, تركيا',
+        ru: 'промышленная химия, химическое сырьё, сырьё для моющих средств, химия для водоподготовки, поставщик из Турции',
+        es: 'proveedor de químicos industriales, materias primas químicas, químicos para tratamiento de agua, materias primas para detergentes, exportador turquía',
+        pt: 'fornecedor de produtos químicos industriais, matérias-primas químicas, químicos para tratamento de água, matérias-primas para detergentes, exportador turquia',
     };
 
     return {
@@ -50,13 +59,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             description: descriptions[locale] || descriptions.en,
             url: `${BASE_URL}/${locale}`,
             siteName: 'Grohn Kimya',
-            locale: locale === 'ar' ? 'ar_SA' : locale === 'fr' ? 'fr_FR' : locale === 'tr' ? 'tr_TR' : 'en_US',
+            locale: intlLocale(locale).replace('-', '_'),
             type: 'website',
             images: [{
                 url: `${BASE_URL}/images/logo.png`,
                 width: 1200,
                 height: 630,
-                alt: 'Grohn Kimya - Textile Chemical Manufacturer',
+                alt: 'Grohn Kimya - Industrial Chemicals Supplier',
             }],
         },
         twitter: {
@@ -103,7 +112,7 @@ function OrganizationJsonLd() {
         name: 'Grohn Kimya',
         url: BASE_URL,
         logo: `${BASE_URL}/images/logo.png`,
-        description: 'Textile chemical manufacturer and exporter from Turkey',
+        description: 'Industrial chemicals and raw materials supplier and exporter from Turkey',
         address: {
             '@type': 'PostalAddress',
             streetAddress: 'Velimeşe OSB, Kervancı Tic. Mer. B12',
@@ -116,7 +125,7 @@ function OrganizationJsonLd() {
             telephone: '+90-539-880-2346',
             email: 'grohn@grohn.com.tr',
             contactType: 'sales',
-            availableLanguage: ['Turkish', 'English', 'French', 'Arabic'],
+            availableLanguage: ['Turkish', 'English', 'French', 'Arabic', 'Russian', 'Spanish', 'Portuguese'],
         },
         sameAs: [],
     };
