@@ -163,5 +163,32 @@
                 "a": "Yes, we offer comprehensive technical support including recipe formulation, process optimization, troubleshooting, and on-site visits. Our R&D team has 15+ years of experience in textile chemistry."
             }
         }
+    },
+    "Chemicals": {
+        "badge": "A-Z Raw Material Encyclopedia",
+        "title": "Chemical Dictionary",
+        "subtitle": "Explore the properties, formulas and applications of key chemicals used in industrial manufacturing.",
+        "metaTitle": "Industrial Chemical Dictionary & Raw Material Catalog | Grohn Kimya",
+        "metaDescription": "Comprehensive dictionary of industrial chemical raw materials with CAS numbers, formulas and applications. Request export quotes from Grohn Kimya, Turkey.",
+        "view": "View",
+        "homeButton": "Chemical Dictionary (CAS Database)",
+        "detailTitleSuffix": "Supplier from Turkey | Grohn Kimya",
+        "formulaLabel": "Formula",
+        "detailDescCta": "Contact Grohn Kimya for supply and export quotes.",
+        "back": "Back to Chemical Dictionary",
+        "generalInfo": "General Information",
+        "usageAreas": "Applications",
+        "usesBenefits": "Uses and Benefits",
+        "applications": "Applications",
+        "techId": "Technical Identity",
+        "tradeName": "IUPAC / Trade Name",
+        "formula": "Chemical Formula",
+        "cas": "CAS Number",
+        "ec": "EC Number",
+        "molecularWeight": "Molecular Weight",
+        "category": "Industry Category",
+        "disclaimer": "* This page provides general information about industrial chemicals. Contact us to source this raw material or learn about equivalents.",
+        "cta": "Request Price & Supply Info",
+        "home": "Home"
     }
 }

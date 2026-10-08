@@ -163,5 +163,32 @@
                 "a": "Oui, nous offrons un support technique complet incluant la formulation de recettes, l'optimisation des procédés et les visites sur site."
             }
         }
+    },
+    "Chemicals": {
+        "badge": "Encyclopédie des matières premières de A à Z",
+        "title": "Dictionnaire de chimie",
+        "subtitle": "Découvrez les propriétés, formules et applications des principaux produits chimiques utilisés dans l'industrie.",
+        "metaTitle": "Dictionnaire des produits chimiques industriels et catalogue de matières premières | Grohn Kimya",
+        "metaDescription": "Dictionnaire complet des matières premières chimiques industrielles avec numéros CAS, formules et applications. Demandez un devis export à Grohn Kimya, Turquie.",
+        "view": "Voir",
+        "homeButton": "Dictionnaire de chimie (base CAS)",
+        "detailTitleSuffix": "Fournisseur en Turquie | Grohn Kimya",
+        "formulaLabel": "Formule",
+        "detailDescCta": "Contactez Grohn Kimya pour l'approvisionnement et les devis export.",
+        "back": "Retour au dictionnaire",
+        "generalInfo": "Informations générales",
+        "usageAreas": "Domaines d'utilisation",
+        "usesBenefits": "Utilisations et avantages",
+        "applications": "Applications",
+        "techId": "Identité technique",
+        "tradeName": "Nom IUPAC / commercial",
+        "formula": "Formule chimique",
+        "cas": "Numéro CAS",
+        "ec": "Numéro CE",
+        "molecularWeight": "Masse moléculaire",
+        "category": "Catégorie sectorielle",
+        "disclaimer": "* Cette page fournit des informations générales sur les produits chimiques industriels. Contactez-nous pour vous approvisionner en cette matière première ou connaître ses équivalents.",
+        "cta": "Demander prix et disponibilité",
+        "home": "Accueil"
     }
 }

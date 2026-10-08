@@ -42,9 +42,10 @@ interface ProductSchemaProps {
     category?: string;
     slug: string;
     locale: string;
+    path?: string;
 }
 
-export function ProductJsonLd({ name, description, image, brand, category, slug, locale }: ProductSchemaProps) {
+export function ProductJsonLd({ name, description, image, brand, category, slug, locale, path }: ProductSchemaProps) {
     const baseUrl = 'https://grohn.com.tr';
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -56,30 +57,13 @@ export function ProductJsonLd({ name, description, image, brand, category, slug,
             '@type': 'Brand',
             name: brand || 'Grohn Kimya',
         },
-        category: category || 'Textile Chemicals',
+        category: category || 'Industrial Chemicals',
         manufacturer: {
             '@type': 'Organization',
             name: 'Grohn Kimya',
             url: baseUrl,
         },
-        url: `${baseUrl}/${locale}/products/${slug}`,
-        aggregateRating: {
-            '@type': 'AggregateRating',
-            ratingValue: '4.8',
-            reviewCount: '87'
-        },
-        review: {
-            '@type': 'Review',
-            reviewRating: {
-                '@type': 'Rating',
-                ratingValue: '5',
-                bestRating: '5'
-            },
-            author: {
-                '@type': 'Person',
-                name: 'Verified Customer'
-            }
-        },
+        url: `${baseUrl}/${locale}${path ?? `/products/${slug}`}`,
     };
 
     return (

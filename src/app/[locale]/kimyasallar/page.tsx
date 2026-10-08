@@ -6,9 +6,10 @@ import { CHEMICAL_DICTIONARY } from '@/lib/chemicals-db';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'Chemicals' });
     return getPageMetadata(locale, '/kimyasallar', {
-        title: 'Endüstriyel Kimya Sözlüğü ve Hammadde Kataloğu | Grohn Kimya',
-        description: 'Yüzlerce endüstriyel kimyasal hammadde, CAS numaraları, formülleri ve kullanım alanları hakkında detaylı bilgi alabileceğiniz geniş kapsamlı Kimya Sözlüğü.'
+        title: t('metaTitle'),
+        description: t('metaDescription')
     });
 }
 
@@ -18,6 +19,7 @@ export default async function ChemicalsIndexPage({
     params: Promise<{ locale: string }>;
 }) {
     const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'Chemicals' });
 
     const getLocalized = (obj: any, field: string) => {
         return obj[`${field}_${locale}`] || obj[`${field}_en`] || obj[`${field}_tr`];
@@ -31,13 +33,13 @@ export default async function ChemicalsIndexPage({
                 <div className="container mx-auto px-4 md:px-8 relative z-10 text-center">
                     <span className="badge-glass inline-flex items-center gap-2 mb-6">
                         <BookOpen className="w-4 h-4 text-accent" />
-                        A'dan Z'ye Hammadde Ansiklopedisi
+                        {t('badge')}
                     </span>
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
-                        Kimya Sözlüğü
+                        {t('title')}
                     </h1>
                     <p className="text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed">
-                        Endüstriyel üretimde kullanılan temel kimyasalların özelliklerini, formüllerini ve kullanım alanlarını keşfedin.
+                        {t('subtitle')}
                     </p>
                 </div>
             </div>
@@ -62,7 +64,7 @@ export default async function ChemicalsIndexPage({
                                 {getLocalized(chemical, 'description')}
                             </p>
                             <div className="flex items-center text-accent text-sm font-medium mt-auto group-hover:translate-x-1 transition-transform">
-                                İncele <ArrowRight className="w-4 h-4 ml-2" />
+                                {t('view')} <ArrowRight className="w-4 h-4 ml-2 rtl:rotate-180" />
                             </div>
                         </Link>
                     ))}

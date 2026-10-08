@@ -163,5 +163,32 @@
                 "a": "Evet, reçete formülasyonu, proses optimizasyonu, sorun giderme ve yerinde ziyaretler dahil kapsamlı teknik destek sunuyoruz. AR-GE ekibimiz tekstil kimyasında 15+ yıl deneyime sahiptir."
             }
         }
+    },
+    "Chemicals": {
+        "badge": "A'dan Z'ye Hammadde Ansiklopedisi",
+        "title": "Kimya Sözlüğü",
+        "subtitle": "Endüstriyel üretimde kullanılan temel kimyasalların özelliklerini, formüllerini ve kullanım alanlarını keşfedin.",
+        "metaTitle": "Endüstriyel Kimya Sözlüğü ve Hammadde Kataloğu | Grohn Kimya",
+        "metaDescription": "Yüzlerce endüstriyel kimyasal hammadde, CAS numaraları, formülleri ve kullanım alanları hakkında detaylı bilgi alabileceğiniz geniş kapsamlı Kimya Sözlüğü.",
+        "view": "İncele",
+        "homeButton": "Kimya Sözlüğü (CAS Veritabanı)",
+        "detailTitleSuffix": "Grohn Kimya Sözlüğü",
+        "formulaLabel": "Formül",
+        "detailDescCta": "Tedarik ve fiyat teklifi için Grohn Kimya ile iletişime geçin.",
+        "back": "Kimya Sözlüğüne Dön",
+        "generalInfo": "Genel Bilgi",
+        "usageAreas": "Kullanım Alanları",
+        "usesBenefits": "Kullanımları ve Faydaları",
+        "applications": "Uygulamaları",
+        "techId": "Teknik Kimlik",
+        "tradeName": "IUPAC / Ticari Adı",
+        "formula": "Kimyasal Formül",
+        "cas": "CAS Numarası",
+        "ec": "AT Numarası (EC)",
+        "molecularWeight": "Molekül Ağırlığı",
+        "category": "Sektörel Kategori",
+        "disclaimer": "* Bu sayfa endüstriyel kimyasallar hakkında bilgi vermek amacıyla hazırlanmıştır. Bu hammaddeyi tedarik etmek veya muadillerini öğrenmek için bizimle iletişime geçebilirsiniz.",
+        "cta": "Fiyat ve Tedarik Bilgisi Al",
+        "home": "Ana Sayfa"
     }
 }

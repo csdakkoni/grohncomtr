@@ -46,6 +46,7 @@ const featureKeys = ['quality', 'global', 'innovation', 'support'] as const;
 
 export default function HomePage() {
     const t = useTranslations('HomePage');
+    const tc = useTranslations('Chemicals');
 
     return (
         <div className="flex flex-col">
@@ -101,7 +102,7 @@ export default function HomePage() {
                                     href="/kimyasallar"
                                     className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold rounded-full transition-all group"
                                 >
-                                    Kimya Sözlüğü (CAS Database)
+                                    {tc('homeButton')}
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 rtl:rotate-180 transition-transform" />
                                 </Link>
                             </motion.div>

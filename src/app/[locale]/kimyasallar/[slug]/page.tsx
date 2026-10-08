@@ -11,6 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const chemical = CHEMICAL_DICTIONARY.find(c => c.slug === slug);
     if (!chemical) return {};
     
+    const tc = await getTranslations({ locale, namespace: 'Chemicals' });
     const getLocalizedField = (obj: any, field: string) => obj[`${field}_${locale}`] || obj[`${field}_en`] || obj[`${field}_tr`];
     
     // Programmatic SEO title: specific, keyword-rich
@@ -21,8 +22,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const ec = chemical.ec_number ? `(EC: ${chemical.ec_number})` : '';
     
     return getPageMetadata(locale, `/kimyasallar/${slug}`, { 
-        title: `${name} ${ec} (CAS: ${cas}) | Grohn Kimya Sözlüğü`,
-        description: `${name} ${synonyms}. CAS: ${cas}, Formül: ${chemical.formula}. ${getLocalizedField(chemical, 'description')} Satın al, tedarik et.`
+        title: `${name} ${ec} (CAS: ${cas}) | ${tc('detailTitleSuffix')}`,
+        description: `${name} ${synonyms}. CAS: ${cas}, ${tc('formulaLabel')}: ${chemical.formula}. ${getLocalizedField(chemical, 'description')} ${tc('detailDescCta')}`
     });
 }
 
@@ -38,7 +39,7 @@ export default async function ChemicalDetailPage({
         notFound();
     }
 
-    const t = await getTranslations('Products'); // Reuse some translations
+    const t = await getTranslations({ locale, namespace: 'Chemicals' });
 
     const getLocalized = (obj: any, field: string) => {
         return obj[`${field}_${locale}`] || obj[`${field}_en`] || obj[`${field}_tr`];
@@ -59,15 +60,15 @@ export default async function ChemicalDetailPage({
             <ProductJsonLd
                 name={name}
                 description={description}
-                image="https://grohn.com.tr/images/chemical-placeholder.jpg" // Add a generic or specific image
                 category="Industrial Chemical"
-                slug={`kimyasallar/${slug}`}
+                slug={slug}
+                path={`/kimyasallar/${slug}`}
                 locale={locale}
             />
             <BreadcrumbJsonLd
                 items={[
-                    { name: 'Home', href: '/' },
-                    { name: 'Kimya Sözlüğü', href: '/kimyasallar' },
+                    { name: t('home'), href: '/' },
+                    { name: t('title'), href: '/kimyasallar' },
                     { name: name, href: `/kimyasallar/${slug}` },
                 ]}
                 locale={locale}
@@ -79,7 +80,7 @@ export default async function ChemicalDetailPage({
                     className="inline-flex items-center text-text-muted hover:text-accent mb-10 transition-colors gap-2 text-sm group"
                 >
                     <ArrowLeft className="w-4 h-4 rtl:rotate-180 group-hover:-translate-x-1 rtl:group-hover:translate-x-1 transition-transform" />
-                    Kimya Sözlüğüne Dön
+                    {t('back')}
                 </Link>
 
                 <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
@@ -88,7 +89,7 @@ export default async function ChemicalDetailPage({
                         <div className="flex items-center gap-3 mb-4">
                             <span className="badge-glass flex items-center gap-2">
                                 <BookOpen className="w-4 h-4 text-accent" />
-                                Kimya Sözlüğü
+                                {t('title')}
                             </span>
                             <span className="badge-glass text-accent font-mono">
                                 CAS: {chemical.cas_number}
@@ -121,7 +122,7 @@ export default async function ChemicalDetailPage({
                             </div>
                         ) : (
                             <div className="glass rounded-2xl p-6 md:p-8 mb-8">
-                                <h2 className="text-xl font-semibold text-white mb-4">Genel Bilgi</h2>
+                                <h2 className="text-xl font-semibold text-white mb-4">{t('generalInfo')}</h2>
                                 <p className="text-lg text-text-secondary leading-relaxed">
                                     {description}
                                 </p>
@@ -132,7 +133,7 @@ export default async function ChemicalDetailPage({
                             <div className="glass rounded-2xl p-6 md:p-8 mb-8">
                                 <h2 className="text-xl font-bold text-white mb-6 uppercase flex items-center gap-2">
                                     <BookOpen className="w-5 h-5 text-accent" />
-                                    {locale === 'tr' ? 'Kullanımları ve Faydaları' : locale === 'en' ? 'Uses and Benefits' : locale === 'fr' ? 'Utilisations et Avantages' : 'الاستخدامات والفوائد'}
+                                    {t('usesBenefits')}
                                 </h2>
                                 <div className="space-y-4">
                                     {usesBenefits.map((paragraph, idx) => (
@@ -145,7 +146,7 @@ export default async function ChemicalDetailPage({
                             </div>
                         ) : (
                             <div className="glass rounded-2xl p-6 md:p-8 mb-8">
-                                <h2 className="text-xl font-semibold text-white mb-4">Kullanım Alanları</h2>
+                                <h2 className="text-xl font-semibold text-white mb-4">{t('usageAreas')}</h2>
                                 <ul className="grid sm:grid-cols-2 gap-4">
                                     {usageAreas.map((area, idx) => (
                                         <li key={idx} className="flex items-center gap-3 text-text-secondary">
@@ -161,7 +162,7 @@ export default async function ChemicalDetailPage({
                             <div className="glass rounded-2xl p-6 md:p-8 mb-8">
                                 <h2 className="text-xl font-bold text-white mb-6 uppercase flex items-center gap-2">
                                     <Beaker className="w-5 h-5 text-accent" />
-                                    {locale === 'tr' ? 'Uygulamaları' : locale === 'en' ? 'Applications' : locale === 'fr' ? 'Applications' : 'التطبيقات'}
+                                    {t('applications')}
                                 </h2>
                                 <div className="space-y-4">
                                     {applications.map((paragraph, idx) => (
@@ -180,12 +181,12 @@ export default async function ChemicalDetailPage({
                         <div className="glass rounded-2xl p-6 md:p-8 sticky top-32">
                             <h3 className="font-semibold text-white mb-6 flex items-center gap-2">
                                 <Beaker className="w-5 h-5 text-accent" />
-                                Teknik Kimlik
+                                {t('techId')}
                             </h3>
                             <div className="space-y-5">
                                 <div>
                                     <span className="block text-text-muted text-xs uppercase tracking-wider mb-1">
-                                        IUPAC / Ticari Adı
+                                        {t('tradeName')}
                                     </span>
                                     <span className="font-medium text-white text-sm">
                                         {name}
@@ -193,7 +194,7 @@ export default async function ChemicalDetailPage({
                                 </div>
                                 <div>
                                     <span className="block text-text-muted text-xs uppercase tracking-wider mb-1">
-                                        Kimyasal Formül
+                                        {t('formula')}
                                     </span>
                                     <span className="font-medium text-accent font-mono text-lg">
                                         {chemical.formula}
@@ -201,7 +202,7 @@ export default async function ChemicalDetailPage({
                                 </div>
                                 <div>
                                     <span className="block text-text-muted text-xs uppercase tracking-wider mb-1">
-                                        CAS Numarası
+                                        {t('cas')}
                                     </span>
                                     <span className="font-medium text-white font-mono text-sm">
                                         {chemical.cas_number}
@@ -210,7 +211,7 @@ export default async function ChemicalDetailPage({
                                 {chemical.ec_number && (
                                     <div>
                                         <span className="block text-text-muted text-xs uppercase tracking-wider mb-1">
-                                            AT Numarası (EC)
+                                            {t('ec')}
                                         </span>
                                         <span className="font-medium text-white font-mono text-sm">
                                             {chemical.ec_number}
@@ -220,7 +221,7 @@ export default async function ChemicalDetailPage({
                                 {chemical.molecular_weight && (
                                     <div>
                                         <span className="block text-text-muted text-xs uppercase tracking-wider mb-1">
-                                            Molekül Ağırlığı
+                                            {t('molecularWeight')}
                                         </span>
                                         <span className="font-medium text-white font-mono text-sm">
                                             {chemical.molecular_weight}
@@ -229,7 +230,7 @@ export default async function ChemicalDetailPage({
                                 )}
                                 <div>
                                     <span className="block text-text-muted text-xs uppercase tracking-wider mb-1">
-                                        Sektörel Kategori
+                                        {t('category')}
                                     </span>
                                     <span className="font-medium text-white text-sm capitalize">
                                         {chemical.category.replace('-', ' ')}
@@ -240,14 +241,14 @@ export default async function ChemicalDetailPage({
                             <hr className="border-white/10 my-6" />
                             
                             <p className="text-xs text-text-muted mb-6 leading-relaxed">
-                                * Bu sayfa, endüstriyel kimyasallar hakkında bilgi vermek amacıyla Programatik SEO altyapısı ile oluşturulmuştur. Bu hammaddeyi tedarik etmek veya muadillerini öğrenmek için bizimle iletişime geçebilirsiniz.
+                                {t('disclaimer')}
                             </p>
 
                             <Link
                                 href="/contact"
                                 className="w-full py-4 gradient-accent text-white rounded-xl font-semibold hover:opacity-90 transition-all text-center shadow-lg shadow-accent/20 flex items-center justify-center gap-2"
                             >
-                                Fiyat ve Tedarik Bilgisi Al
+                                {t('cta')}
                             </Link>
                         </div>
                     </div>

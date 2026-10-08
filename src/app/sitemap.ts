@@ -2,9 +2,10 @@ import { MetadataRoute } from 'next';
 import { MOCK_PRODUCTS, MOCK_CATEGORIES } from '@/lib/mock';
 import { BLOG_POSTS } from '@/lib/blog';
 import { CHEMICAL_DICTIONARY } from '@/lib/chemicals-db';
+import { routing } from '@/i18n/routing';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://grohn.com.tr';
-const LOCALES = ['tr', 'en', 'fr', 'ar'];
+const LOCALES = routing.locales;
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const entries: MetadataRoute.Sitemap = [];
