@@ -7,7 +7,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'HomePage' });
     return getPageMetadata(locale, '', { 
-        title: t('heroTitle'), 
+        title: `${t('heroTitle').replace(/\s*\n\s*/g, ' ')} | Grohn Kimya`,
         description: t('heroSubtitle') 
     });
 }

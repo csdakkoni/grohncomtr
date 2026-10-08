@@ -10,14 +10,23 @@ export interface ChemicalEntry {
     name_en: string;
     name_fr: string;
     name_ar: string;
+    name_ru?: string;
+    name_es?: string;
+    name_pt?: string;
     description_tr: string;
     description_en: string;
     description_fr: string;
     description_ar: string;
+    description_ru?: string;
+    description_es?: string;
+    description_pt?: string;
     usage_areas_tr: string[];
     usage_areas_en: string[];
     usage_areas_fr: string[];
     usage_areas_ar: string[];
+    usage_areas_ru?: string[];
+    usage_areas_es?: string[];
+    usage_areas_pt?: string[];
     // Advanced SEO Fields
     ec_number?: string;
     molecular_weight?: string;

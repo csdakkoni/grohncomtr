@@ -4,7 +4,7 @@
         "about": "Sobre nós",
         "products": "Produtos",
         "blog": "Blog",
-        "faq": "Perguntas frequentes",
+        "faq": "FAQ",
         "contact": "Contato",
         "industrialRawMaterials": "Matérias-primas industriais",
         "textileChemicals": "Químicos têxteis",
@@ -18,7 +18,7 @@
         "sectorsTitle": "Setores de química industrial",
         "exporterTagline": "Exportador de matérias-primas químicas industriais",
         "viewFullCatalog": "Ver catálogo completo →",
-        "chemDictionary": "Dicionário químico"
+        "chemDictionary": "Dicionário"
     },
     "Blog": {
         "title": "Artigos técnicos",
@@ -66,7 +66,8 @@
             "button": "Solicitar cotação"
         },
         "exploreIndustrial": "Ver matérias-primas industriais",
-        "exploreTextile": "Conhecer soluções têxteis"
+        "exploreTextile": "Conhecer soluções têxteis",
+        "heroBadge": "Exportador global de químicos industriais e matérias-primas"
     },
     "AboutPage": {
         "title": "Sobre nós",
