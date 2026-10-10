@@ -52,8 +52,8 @@
                 "desc": "Basés à Tekirdağ, près des ports d'Istanbul, nous proposons des offres FOB ou CIF aux acheteurs de tous pays."
             },
             "innovation": {
-                "title": "Axé sur la R&D",
-                "desc": "Solutions sur mesure soutenues par des laboratoires, adaptées aux besoins des clients avec une innovation continue."
+                "title": "Production et distribution",
+                "desc": "Nous produisons et distribuons : vous trouvez auxiliaires textiles et matières premières industrielles chez un seul partenaire."
             },
             "support": {
                 "title": "Support Technique",
@@ -137,8 +137,8 @@
         "ctaButton": "Contactez-nous",
         "items": {
             "whatProducts": {
-                "q": "Quels types de produits chimiques textiles Grohn Kimya produit-il ?",
-                "a": "Nous fabriquons une gamme complète incluant les produits de prétraitement, les auxiliaires de teinture, les produits de finition et les produits chimiques spécialisés."
+                "q": "Quels produits Grohn Kimya propose-t-elle ?",
+                "a": "Nous produisons et distribuons. Notre gamme comprend des auxiliaires textiles, dont des produits de prétraitement (mouillants, enzymes de désencollage, séquestrants), des auxiliaires de teinture (égalisants, tampons pH, dispersants) et des produits d'apprêt (adoucissants silicone, raidisseurs), ainsi que des matières premières chimiques industrielles pour les détergents, le papier, le traitement de l'eau et les revêtements."
             },
             "exportCountries": {
                 "q": "Exportez-vous ?",
@@ -150,15 +150,7 @@
             },
             "sampleAvailable": {
                 "q": "Puis-je obtenir des échantillons gratuits ?",
-                "a": "Oui ! Nous fournissons des échantillons de laboratoire gratuits (1-5 kg) pour les tests. Notre équipe technique fournira des directives d'application."
-            },
-            "deliveryTime": {
-                "q": "Quel est le délai de livraison typique ?",
-                "a": "La production et la livraison standard prennent 2-3 semaines. Nous expédions depuis les ports de Tekirdağ/Istanbul avec des conditions FOB, CIF et DDP."
-            },
-            "customFormulation": {
-                "q": "Proposez-vous des formulations personnalisées ?",
-                "a": "Absolument. Notre laboratoire R&D peut développer des formulations adaptées à vos types de tissus et exigences de process spécifiques."
+                "a": "Oui, nous fournissons des échantillons gratuits pour que vous puissiez tester le produit avant de commander."
             },
             "certifications": {
                 "q": "Quelles certifications ont vos produits ?",
@@ -166,7 +158,7 @@
             },
             "technicalSupport": {
                 "q": "Fournissez-vous un support technique ?",
-                "a": "Oui, nous offrons un support technique complet incluant la formulation de recettes, l'optimisation des procédés et les visites sur site."
+                "a": "Oui, nous offrons un support technique comprenant des conseils d'application, l'optimisation des procédés et le dépannage."
             }
         }
     },

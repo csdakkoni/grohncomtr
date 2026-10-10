@@ -52,8 +52,8 @@
                 "desc": "De Tekirdağ, perto dos portos de Istambul, cotamos FOB ou CIF para compradores de qualquer país."
             },
             "innovation": {
-                "title": "Foco em P&D",
-                "desc": "Soluções sob medida com suporte de laboratório, adaptadas às necessidades de cada cliente, com inovação contínua."
+                "title": "Produção e fornecimento",
+                "desc": "Produzimos e fornecemos, então você encontra auxiliares têxteis e matérias-primas industriais em um único parceiro."
             },
             "support": {
                 "title": "Suporte técnico",
@@ -137,8 +137,8 @@
         "ctaButton": "Fale conosco",
         "items": {
             "whatProducts": {
-                "q": "Que tipos de químicos têxteis a Grohn Kimya produz?",
-                "a": "Fabricamos uma linha completa que inclui químicos de pré-tratamento (umectantes, enzimas de desengomagem, sequestrantes), auxiliares de tingimento (igualizantes, tampões de pH, dispersantes), químicos de acabamento (amaciantes de silicone, engomantes) e especialidades químicas para processos têxteis específicos."
+                "q": "Quais produtos a Grohn Kimya oferece?",
+                "a": "Produzimos e fornecemos. Nossa linha inclui auxiliares têxteis, como produtos de pré-tratamento (umectantes, enzimas de desengomagem, sequestrantes), auxiliares de tingimento (igualizantes, tampões de pH, dispersantes) e produtos de acabamento (amaciantes de silicone, endurecedores), além de matérias-primas químicas industriais para detergentes, papel, tratamento de água e revestimentos."
             },
             "exportCountries": {
                 "q": "Vocês exportam?",
@@ -150,15 +150,7 @@
             },
             "sampleAvailable": {
                 "q": "Posso receber amostras grátis antes de fazer o pedido?",
-                "a": "Sim! Fornecemos amostras de laboratório gratuitas (1-5 kg) para testes. Nossa equipe técnica também oferece orientações de aplicação e suporte durante os ensaios."
-            },
-            "deliveryTime": {
-                "q": "Qual é o prazo de entrega habitual?",
-                "a": "A produção e entrega padrão leva de 2 a 3 semanas para itens em estoque. Formulações sob medida podem levar de 3 a 4 semanas. Enviamos em contêiner pelos portos de Tekirdağ/Istambul, com termos FOB, CIF e DDP."
-            },
-            "customFormulation": {
-                "q": "Vocês oferecem formulações sob medida?",
-                "a": "Com certeza. Nosso laboratório de P&D pode desenvolver formulações adaptadas aos seus tipos de tecido, maquinário e requisitos de processo. Também oferecemos suporte técnico no local para otimização."
+                "a": "Sim, fornecemos amostras gratuitas para que você possa testar o produto antes de fazer o pedido."
             },
             "certifications": {
                 "q": "Quais certificações seus produtos possuem?",
@@ -166,7 +158,7 @@
             },
             "technicalSupport": {
                 "q": "Vocês oferecem suporte técnico?",
-                "a": "Sim, oferecemos suporte técnico, incluindo formulação de receitas, otimização de processos, solução de problemas e visitas no local."
+                "a": "Sim, oferecemos suporte técnico, incluindo orientação de aplicação, otimização de processos e solução de problemas."
             }
         }
     },

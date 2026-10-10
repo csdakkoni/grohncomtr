@@ -52,8 +52,8 @@
                 "desc": "İstanbul limanlarına yakın Tekirdağ'dan, her ülkedeki alıcıya FOB veya CIF teklif veriyoruz."
             },
             "innovation": {
-                "title": "Ar-Ge Odaklı",
-                "desc": "Müşteri ihtiyaçlarına özel, laboratuvar destekli çözümler ve sürekli inovasyon."
+                "title": "Üretim ve Tedarik",
+                "desc": "Hem üretim hem tedarik yapıyoruz; tekstil yardımcılarını ve endüstriyel hammaddeleri tek bir firmadan alabilirsiniz."
             },
             "support": {
                 "title": "Teknik Destek",
@@ -137,8 +137,8 @@
         "ctaButton": "Bize Ulaşın",
         "items": {
             "whatProducts": {
-                "q": "Grohn Kimya hangi tür tekstil kimyasalları üretiyor?",
-                "a": "Ön işlem kimyasalları (ıslatıcılar, haşıl sökme enzimleri, sekestran), boyama yardımcıları (egalite, pH tamponları, dispers edici), terbiye kimyasalları (silikon yumuşatıcılar, sertleştiriciler) ve özel proses kimyasalları üretiyoruz."
+                "q": "Grohn Kimya hangi ürünleri sunuyor?",
+                "a": "Hem üretim hem tedarik yapıyoruz. Ürün yelpazemizde ön işlem kimyasalları (ıslatıcılar, haşıl sökme enzimleri, sekestran), boyama yardımcıları (egalite, pH tamponları, dispers edici) ve terbiye kimyasalları (silikon yumuşatıcılar, sertleştiriciler) gibi tekstil yardımcıları ile deterjan, kağıt, su arıtma ve boya-kaplama sektörleri için endüstriyel kimyasal hammaddeler bulunur."
             },
             "exportCountries": {
                 "q": "İhracat yapıyor musunuz?",
@@ -150,15 +150,7 @@
             },
             "sampleAvailable": {
                 "q": "Sipariş vermeden önce ücretsiz numune alabilir miyim?",
-                "a": "Evet! Test amaçlı ücretsiz laboratuvar numuneleri (1-5 kg) sağlıyoruz. Teknik ekibimiz denemeleriniz için uygulama kılavuzu ve destek de sunacaktır."
-            },
-            "deliveryTime": {
-                "q": "Tipik teslimat süresi nedir?",
-                "a": "Stok ürünlerde standart üretim ve teslimat 2-3 haftadır. Özel formülasyonlar 3-4 hafta gerektirebilir. Tekirdağ/İstanbul limanlarından konteyner ile sevkiyat yapıyoruz. FOB, CIF ve DDP şartları mevcuttur."
-            },
-            "customFormulation": {
-                "q": "Özel formülasyon yapıyor musunuz?",
-                "a": "Kesinlikle. AR-GE laboratuvarımız, kumaş tiplerinize, makinelerinize ve proses gereksinimlerinize özel formülasyonlar geliştirebilir. Optimizasyon için yerinde teknik destek de sunuyoruz."
+                "a": "Evet, sipariş öncesinde ürünü deneyebilmeniz için ücretsiz numune gönderiyoruz."
             },
             "certifications": {
                 "q": "Ürünleriniz hangi sertifikalara sahip?",
@@ -166,7 +158,7 @@
             },
             "technicalSupport": {
                 "q": "Teknik destek sağlıyor musunuz?",
-                "a": "Evet, reçete formülasyonu, proses optimizasyonu, sorun giderme ve yerinde ziyaretler dahil teknik destek sunuyoruz."
+                "a": "Evet, uygulama rehberliği, proses optimizasyonu ve sorun giderme dahil teknik destek sunuyoruz."
             }
         }
     },

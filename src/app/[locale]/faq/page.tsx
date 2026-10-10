@@ -13,8 +13,6 @@ const FAQ_KEYS = [
     'exportCountries',
     'minOrder',
     'sampleAvailable',
-    'deliveryTime',
-    'customFormulation',
     'certifications',
     'technicalSupport',
 ] as const;

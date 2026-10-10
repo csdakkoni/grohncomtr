@@ -52,8 +52,8 @@
                 "desc": "Based in Tekirdağ near Istanbul's ports, we quote FOB or CIF to buyers in any country."
             },
             "innovation": {
-                "title": "R&D Focused",
-                "desc": "Lab-supported custom solutions tailored to customer needs with continuous innovation."
+                "title": "Production and Supply",
+                "desc": "We both produce and supply, so you can source textile auxiliaries and industrial raw materials from one partner."
             },
             "support": {
                 "title": "Technical Support",
@@ -137,8 +137,8 @@
         "ctaButton": "Contact Us",
         "items": {
             "whatProducts": {
-                "q": "What types of textile chemicals does Grohn Kimya produce?",
-                "a": "We manufacture a comprehensive range including pre-treatment chemicals (wetting agents, desizing enzymes, sequestering agents), dyeing auxiliaries (levelling agents, pH buffers, dispersing agents), finishing chemicals (silicone softeners, stiffeners), and specialty chemicals for specific textile processes."
+                "q": "What products does Grohn Kimya offer?",
+                "a": "We both produce and supply. Our range covers textile auxiliaries, including pre-treatment chemicals (wetting agents, desizing enzymes, sequestering agents), dyeing auxiliaries (levelling agents, pH buffers, dispersing agents) and finishing chemicals (silicone softeners, stiffeners), as well as industrial chemical raw materials for detergent, paper, water treatment and coatings."
             },
             "exportCountries": {
                 "q": "Do you export?",
@@ -150,15 +150,7 @@
             },
             "sampleAvailable": {
                 "q": "Can I get free samples before ordering?",
-                "a": "Yes! We provide free laboratory samples (1-5 kg) for testing purposes. Our technical team will also provide application guidelines and support during your trials."
-            },
-            "deliveryTime": {
-                "q": "What is the typical delivery time?",
-                "a": "Standard production and delivery takes 2-3 weeks for stock items. Custom formulations may require 3-4 weeks. We ship via container from Tekirdağ/Istanbul ports with FOB, CIF, and DDP terms available."
-            },
-            "customFormulation": {
-                "q": "Do you offer custom formulations?",
-                "a": "Absolutely. Our R&D laboratory can develop custom formulations tailored to your specific fabric types, machinery, and process requirements. We also offer on-site technical support for optimization."
+                "a": "Yes, we provide free samples so you can test the product before ordering."
             },
             "certifications": {
                 "q": "What certifications do your products have?",
@@ -166,7 +158,7 @@
             },
             "technicalSupport": {
                 "q": "Do you provide technical support?",
-                "a": "Yes, we offer technical support including recipe formulation, process optimization, troubleshooting, and on-site visits."
+                "a": "Yes, we offer technical support including application guidance, process optimization and troubleshooting."
             }
         }
     },
