@@ -1,14 +1,30 @@
 "use client";
 
 import { MessageCircle } from 'lucide-react';
+import { useLocale } from 'next-intl';
 
 const PHONE_NUMBER = '905398802346';
 
+// Prefilled message per locale; {page} is the page the visitor writes from
+const GREETINGS: Record<string, string> = {
+    tr: 'Merhaba, web sitenizden yazıyorum. Şu sayfayla ilgili bilgi almak istiyorum: {page}',
+    en: 'Hello, I am writing from your website. I would like more information about: {page}',
+    fr: 'Bonjour, je vous écris depuis votre site web. Je souhaite plus d\'informations sur : {page}',
+    ar: 'مرحباً، أكتب إليكم من موقعكم الإلكتروني. أود الحصول على مزيد من المعلومات حول: {page}',
+    ru: 'Здравствуйте, пишу с вашего сайта. Хотел бы получить информацию о: {page}',
+    es: 'Hola, les escribo desde su sitio web. Quisiera más información sobre: {page}',
+    pt: 'Olá, estou escrevendo pelo seu site. Gostaria de mais informações sobre: {page}',
+};
+
 export default function WhatsAppWidget() {
+    const locale = useLocale();
+
     const handleClick = () => {
-        const message = encodeURIComponent(
-            'Hello, I am interested in your textile chemical products. Can you provide more information?'
-        );
+        // Page title without the " | Grohn Kimya ..." suffix, plus the URL so the source page is visible
+        const pageTitle = document.title.split(' | ')[0].trim();
+        const page = `${pageTitle} (${window.location.href})`;
+        const template = GREETINGS[locale] || GREETINGS.en;
+        const message = encodeURIComponent(template.replace('{page}', page));
         window.open(`https://wa.me/${PHONE_NUMBER}?text=${message}`, '_blank');
     };
 
