@@ -6,6 +6,7 @@ import { ArrowLeft, FileText, Send } from 'lucide-react';
 import { ProductJsonLd, BreadcrumbJsonLd } from '@/components/SEOSchemas';
 import { getPageMetadata } from '@/lib/metadata';
 import Image from 'next/image';
+import QuoteRequestForm from '@/components/QuoteRequestForm';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }) {
     // eslint-disable-next-line @typescript-eslint/await-thenable
@@ -118,19 +119,23 @@ export default async function ProductDetailPage({
 
                         {/* Actions */}
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Link
-                                href="/contact"
+                            <a
+                                href="#quote"
                                 className="flex-1 py-4 gradient-accent text-white rounded-xl font-semibold hover:opacity-90 transition-all text-center shadow-lg shadow-accent/20 flex items-center justify-center gap-2"
                             >
                                 <Send className="w-4 h-4" />
                                 {t('requestQuote')}
-                            </Link>
+                            </a>
                             <button className="flex-1 py-4 glass text-white rounded-xl font-semibold hover:bg-white/[0.08] transition-all text-center flex items-center justify-center gap-2">
                                 <FileText className="w-4 h-4" />
                                 MSDS / TDS
                             </button>
                         </div>
                     </div>
+                </div>
+
+                <div className="mt-16 md:mt-24 max-w-3xl mx-auto">
+                    <QuoteRequestForm product={getLocalized(product, 'title')} productSlug={slug} />
                 </div>
             </div>
         </div>

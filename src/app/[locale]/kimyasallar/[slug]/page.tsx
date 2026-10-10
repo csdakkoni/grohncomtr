@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
+import QuoteRequestForm from '@/components/QuoteRequestForm';
 import { ArrowLeft, BookOpen, FileText, Beaker } from 'lucide-react';
 import { ProductJsonLd, BreadcrumbJsonLd } from '@/components/SEOSchemas';
 import { getPageMetadata } from '@/lib/metadata';
@@ -244,14 +245,18 @@ export default async function ChemicalDetailPage({
                                 {t('disclaimer')}
                             </p>
 
-                            <Link
-                                href="/contact"
+                            <a
+                                href="#quote"
                                 className="w-full py-4 gradient-accent text-white rounded-xl font-semibold hover:opacity-90 transition-all text-center shadow-lg shadow-accent/20 flex items-center justify-center gap-2"
                             >
                                 {t('cta')}
-                            </Link>
+                            </a>
                         </div>
                     </div>
+                </div>
+
+                <div className="mt-16 md:mt-24 max-w-3xl mx-auto">
+                    <QuoteRequestForm product={name} productSlug={slug} />
                 </div>
             </div>
         </div>

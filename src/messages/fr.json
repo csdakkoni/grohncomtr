@@ -196,5 +196,31 @@
         "disclaimer": "* Cette page fournit des informations générales sur les produits chimiques industriels. Contactez-nous pour vous approvisionner en cette matière première ou connaître ses équivalents.",
         "cta": "Demander prix et disponibilité",
         "home": "Accueil"
+    },
+    "QuoteForm": {
+        "title": "Demander un devis",
+        "subtitle": "Indiquez-nous votre besoin et nous vous répondrons par e-mail ou WhatsApp avec le prix et la disponibilité.",
+        "product": "Produit",
+        "quantity": "Quantité",
+        "incoterm": "Conditions de livraison (Incoterm)",
+        "incotermUnsure": "Je ne sais pas",
+        "country": "Pays",
+        "port": "Port ou ville de destination (facultatif)",
+        "targetPrice": "Prix cible (facultatif)",
+        "targetPricePlaceholder": "ex. 900 USD/tonne CIF",
+        "name": "Votre nom",
+        "company": "Société (facultatif)",
+        "email": "E-mail",
+        "phone": "Téléphone / WhatsApp (facultatif)",
+        "message": "Remarques (facultatif)",
+        "send": "Envoyer la demande",
+        "success": "Merci. Nous avons bien reçu votre demande et vous répondrons rapidement.",
+        "error": "Une erreur s'est produite. Veuillez réessayer ou nous écrire sur WhatsApp.",
+        "units": {
+            "ton": "tonne",
+            "kg": "kg",
+            "ibc": "IBC (1 000 kg)",
+            "container": "Conteneur 20'"
+        }
     }
 }

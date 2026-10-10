@@ -196,5 +196,31 @@
         "disclaimer": "* Bu sayfa endüstriyel kimyasallar hakkında bilgi vermek amacıyla hazırlanmıştır. Bu hammaddeyi tedarik etmek veya muadillerini öğrenmek için bizimle iletişime geçebilirsiniz.",
         "cta": "Fiyat ve Tedarik Bilgisi Al",
         "home": "Ana Sayfa"
+    },
+    "QuoteForm": {
+        "title": "Teklif isteyin",
+        "subtitle": "İhtiyacınızı yazın, fiyat ve stok bilgisiyle e-posta veya WhatsApp üzerinden dönelim.",
+        "product": "Ürün",
+        "quantity": "Miktar",
+        "incoterm": "Teslim şekli (Incoterm)",
+        "incotermUnsure": "Emin değilim",
+        "country": "Ülke",
+        "port": "Varış limanı veya şehir (isteğe bağlı)",
+        "targetPrice": "Hedef fiyat (isteğe bağlı)",
+        "targetPricePlaceholder": "ör. 900 USD/ton CIF",
+        "name": "Adınız",
+        "company": "Firma (isteğe bağlı)",
+        "email": "E-posta",
+        "phone": "Telefon / WhatsApp (isteğe bağlı)",
+        "message": "Notlar (isteğe bağlı)",
+        "send": "Talebi gönder",
+        "success": "Teşekkürler. Talebinizi aldık, en kısa sürede dönüş yapacağız.",
+        "error": "Bir hata oluştu. Lütfen tekrar deneyin veya bize WhatsApp'tan yazın.",
+        "units": {
+            "ton": "ton",
+            "kg": "kg",
+            "ibc": "IBC (1.000 kg)",
+            "container": "20' konteyner"
+        }
     }
 }
