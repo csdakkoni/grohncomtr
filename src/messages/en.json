@@ -16,7 +16,7 @@
         "metalSurfaceChemicals": "Metal & Surface Treatment",
         "textileAuxiliaries": "Textile Chemicals & Auxiliaries",
         "sectorsTitle": "Industrial Chemical Sectors",
-        "exporterTagline": "Industrial Chemical Raw Material Exporter",
+        "exporterTagline": "Industrial Chemical Raw Material Supplier",
         "viewFullCatalog": "View Full Catalog →",
         "chemDictionary": "Chem Dictionary"
     },
@@ -36,20 +36,20 @@
         "ctaProducts": "Explore Products",
         "ctaContact": "Get in Touch",
         "stats": {
-            "years": "Years of Experience",
-            "countries": "Export Countries",
-            "products": "Product Range"
+            "founded": "Founded",
+            "gots": "Approved",
+            "zdhc": "MRSL Conformance"
         },
         "featuresTitle": "Why Grohn Kimya?",
         "featuresSubtitle": "Your trusted solution partner in industrial chemicals through quality, reliability, and global supply power.",
         "features": {
             "quality": {
                 "title": "Superior Quality",
-                "desc": "Certified production processes complying with ISO and international standards, ensuring consistent quality."
+                "desc": "GOTS approved and ZDHC MRSL Level 3 conformant products, with SDS and TDS for every product."
             },
             "global": {
-                "title": "Global Reach",
-                "desc": "Reliable export network serving markets across Europe, Middle East, Africa and Asia."
+                "title": "Ready to Ship Worldwide",
+                "desc": "Based in Tekirdağ near Istanbul's ports, we quote FOB or CIF to buyers in any country."
             },
             "innovation": {
                 "title": "R&D Focused",
@@ -67,7 +67,7 @@
         },
         "exploreIndustrial": "Explore Industrial Raw Materials",
         "exploreTextile": "Discover Textile Solutions",
-        "heroBadge": "Global Industrial Chemical & Raw Material Exporter"
+        "heroBadge": "Industrial Chemicals & Raw Materials from Türkiye"
     },
     "AboutPage": {
         "title": "About Us",
@@ -141,8 +141,8 @@
                 "a": "We manufacture a comprehensive range including pre-treatment chemicals (wetting agents, desizing enzymes, sequestering agents), dyeing auxiliaries (levelling agents, pH buffers, dispersing agents), finishing chemicals (silicone softeners, stiffeners), and specialty chemicals for specific textile processes."
             },
             "exportCountries": {
-                "q": "Which countries do you export to?",
-                "a": "We export to 30+ countries across Europe, Middle East, North Africa, Central Asia, and South Asia. Our key markets include Germany, Italy, France, Egypt, Morocco, Tunisia, Bangladesh, Pakistan, and Uzbekistan."
+                "q": "Do you export?",
+                "a": "Yes. Grohn Kimya was founded in 2024 in Tekirdağ, Türkiye, and we supply buyers in any country. Send us the product, quantity and destination port and we will reply with an FOB or CIF quote."
             },
             "minOrder": {
                 "q": "What is the minimum order quantity?",
@@ -162,11 +162,11 @@
             },
             "certifications": {
                 "q": "What certifications do your products have?",
-                "a": "Our products comply with ISO 9001 quality management standards. Select products are OEKO-TEX compatible and GOTS approved. We provide complete SDS (Safety Data Sheets) and TDS (Technical Data Sheets) for all products."
+                "a": "Our products are GOTS approved and conform to ZDHC MRSL Level 3. We provide SDS (Safety Data Sheets) and TDS (Technical Data Sheets) for all products."
             },
             "technicalSupport": {
                 "q": "Do you provide technical support?",
-                "a": "Yes, we offer comprehensive technical support including recipe formulation, process optimization, troubleshooting, and on-site visits. Our R&D team has 15+ years of experience in textile chemistry."
+                "a": "Yes, we offer technical support including recipe formulation, process optimization, troubleshooting, and on-site visits."
             }
         }
     },

@@ -25,7 +25,7 @@ function StatItem({ value, label, delay }: { value: string; label: string; delay
             viewport={{ once: true }}
             transition={{ delay, duration: 0.5 }}
         >
-            <div className="text-4xl md:text-5xl font-black text-white mb-2 tracking-tight">
+            <div className="text-2xl sm:text-4xl md:text-5xl font-black text-white mb-2 tracking-tight whitespace-nowrap">
                 {value}
             </div>
             <div className="text-sm text-text-muted font-medium uppercase tracking-wider">
@@ -140,9 +140,9 @@ export default function HomePage() {
             <section className="relative py-20 bg-primary-light border-y border-white/5">
                 <div className="container mx-auto px-4 md:px-8">
                     <div className="grid grid-cols-3 gap-8 max-w-3xl mx-auto">
-                        <StatItem value="15+" label={t('stats.years')} delay={0} />
-                        <StatItem value="30+" label={t('stats.countries')} delay={0.1} />
-                        <StatItem value="100+" label={t('stats.products')} delay={0.2} />
+                        <StatItem value="2024" label={t('stats.founded')} delay={0} />
+                        <StatItem value="GOTS" label={t('stats.gots')} delay={0.1} />
+                        <StatItem value="ZDHC L3" label={t('stats.zdhc')} delay={0.2} />
                     </div>
                 </div>
             </section>

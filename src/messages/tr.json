@@ -16,7 +16,7 @@
         "metalSurfaceChemicals": "Metal & Yüzey İşlem Kimyasalları",
         "textileAuxiliaries": "Tekstil Kimyasalları & Yardımcıları",
         "sectorsTitle": "Endüstriyel Hammadde Sektörleri",
-        "exporterTagline": "Endüstriyel Hammadde & Sektörel Kimyasal İhracatçısı",
+        "exporterTagline": "Endüstriyel Hammadde & Sektörel Kimyasal Tedarikçisi",
         "viewFullCatalog": "Tüm Ürün Kataloğunu İncele →",
         "chemDictionary": "Kimya Sözlüğü"
     },
@@ -36,20 +36,20 @@
         "ctaProducts": "Ürünlerimizi Keşfedin",
         "ctaContact": "İletişime Geçin",
         "stats": {
-            "years": "Yıllık Tecrübe",
-            "countries": "İhracat Ülkesi",
-            "products": "Ürün Çeşidi"
+            "founded": "Kuruluş",
+            "gots": "Onaylı",
+            "zdhc": "MRSL Uyumu"
         },
         "featuresTitle": "Neden Grohn Kimya?",
         "featuresSubtitle": "Kalite, güvenilirlik ve küresel tedarik gücü ile endüstriyel kimya sektörünün güvenilir çözüm ortağı.",
         "features": {
             "quality": {
                 "title": "Üstün Kalite",
-                "desc": "ISO ve uluslararası standartlara uygun, sertifikalı üretim süreçleri ile tutarlı kalite."
+                "desc": "GOTS onaylı ve ZDHC MRSL Level 3 uyumlu ürünler; her ürün için SDS ve TDS."
             },
             "global": {
-                "title": "Global Erişim",
-                "desc": "Avrupa, Orta Doğu, Afrika ve Asya pazarlarına güvenilir ihracat ağı."
+                "title": "Dünyaya Sevkiyat",
+                "desc": "İstanbul limanlarına yakın Tekirdağ'dan, her ülkedeki alıcıya FOB veya CIF teklif veriyoruz."
             },
             "innovation": {
                 "title": "Ar-Ge Odaklı",
@@ -67,7 +67,7 @@
         },
         "exploreIndustrial": "Endüstriyel Hammaddeleri İncele",
         "exploreTextile": "Tekstil Çözümlerini Keşfet",
-        "heroBadge": "Küresel Endüstriyel Kimyasal ve Hammadde İhracatçısı"
+        "heroBadge": "Türkiye'den Endüstriyel Kimyasal ve Hammadde"
     },
     "AboutPage": {
         "title": "Hakkımızda",
@@ -141,8 +141,8 @@
                 "a": "Ön işlem kimyasalları (ıslatıcılar, haşıl sökme enzimleri, sekestran), boyama yardımcıları (egalite, pH tamponları, dispers edici), terbiye kimyasalları (silikon yumuşatıcılar, sertleştiriciler) ve özel proses kimyasalları üretiyoruz."
             },
             "exportCountries": {
-                "q": "Hangi ülkelere ihracat yapıyorsunuz?",
-                "a": "Avrupa, Orta Doğu, Kuzey Afrika, Orta Asya ve Güney Asya'daki 30'dan fazla ülkeye ihracat yapıyoruz. Başlıca pazarlarımız Almanya, İtalya, Fransa, Mısır, Fas, Tunus, Bangladeş, Pakistan ve Özbekistan'dır."
+                "q": "İhracat yapıyor musunuz?",
+                "a": "Evet. Grohn Kimya 2024'te Tekirdağ'da kuruldu ve her ülkeden alıcıya tedarik sağlıyoruz. Ürünü, miktarı ve varış limanını iletin, size FOB veya CIF teklif gönderelim."
             },
             "minOrder": {
                 "q": "Minimum sipariş miktarı nedir?",
@@ -162,11 +162,11 @@
             },
             "certifications": {
                 "q": "Ürünleriniz hangi sertifikalara sahip?",
-                "a": "Ürünlerimiz ISO 9001 kalite yönetim standartlarına uygundur. Seçili ürünler OEKO-TEX uyumlu ve GOTS onaylıdır. Tüm ürünler için SDS (Güvenlik Bilgi Formu) ve TDS (Teknik Veri Sayfası) sağlıyoruz."
+                "a": "Ürünlerimiz GOTS onaylıdır ve ZDHC MRSL Level 3 ile uyumludur. Tüm ürünler için SDS (Güvenlik Bilgi Formu) ve TDS (Teknik Bilgi Formu) sağlıyoruz."
             },
             "technicalSupport": {
                 "q": "Teknik destek sağlıyor musunuz?",
-                "a": "Evet, reçete formülasyonu, proses optimizasyonu, sorun giderme ve yerinde ziyaretler dahil kapsamlı teknik destek sunuyoruz. AR-GE ekibimiz tekstil kimyasında 15+ yıl deneyime sahiptir."
+                "a": "Evet, reçete formülasyonu, proses optimizasyonu, sorun giderme ve yerinde ziyaretler dahil teknik destek sunuyoruz."
             }
         }
     },

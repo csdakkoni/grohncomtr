@@ -16,7 +16,7 @@
         "metalSurfaceChemicals": "Traitement des Métaux et Surfaces",
         "textileAuxiliaries": "Auxiliaires Textiles & Finition",
         "sectorsTitle": "Secteurs de la chimie industrielle",
-        "exporterTagline": "Exportateur de matières premières chimiques industrielles",
+        "exporterTagline": "Fournisseur de matières premières chimiques industrielles",
         "viewFullCatalog": "Voir le catalogue complet →",
         "chemDictionary": "Dictionnaire"
     },
@@ -36,20 +36,20 @@
         "ctaProducts": "Explorer les Produits",
         "ctaContact": "Nous Contacter",
         "stats": {
-            "years": "Années d'Expérience",
-            "countries": "Pays d'Exportation",
-            "products": "Gamme de Produits"
+            "founded": "Fondée",
+            "gots": "Approuvé",
+            "zdhc": "Conformité MRSL"
         },
         "featuresTitle": "Pourquoi Grohn Kimya ?",
         "featuresSubtitle": "Votre partenaire de confiance en chimie industrielle grâce à la qualité, la fiabilité et une logistique mondiale.",
         "features": {
             "quality": {
                 "title": "Qualité Supérieure",
-                "desc": "Processus de production certifiés conformes aux normes ISO et internationales, assurant une qualité constante."
+                "desc": "Produits approuvés GOTS et conformes ZDHC MRSL Niveau 3, avec FDS et fiches techniques pour chaque produit."
             },
             "global": {
-                "title": "Portée Mondiale",
-                "desc": "Réseau d'exportation fiable desservant les marchés d'Europe, du Moyen-Orient, d'Afrique et d'Asie."
+                "title": "Expédition dans le monde entier",
+                "desc": "Basés à Tekirdağ, près des ports d'Istanbul, nous proposons des offres FOB ou CIF aux acheteurs de tous pays."
             },
             "innovation": {
                 "title": "Axé sur la R&D",
@@ -67,7 +67,7 @@
         },
         "exploreIndustrial": "Explorer les Matières Premières Industrielles",
         "exploreTextile": "Découvrir les Solutions Textiles",
-        "heroBadge": "Exportateur mondial de produits chimiques industriels et matières premières"
+        "heroBadge": "Produits chimiques industriels et matières premières de Turquie"
     },
     "AboutPage": {
         "title": "À propos de nous",
@@ -141,8 +141,8 @@
                 "a": "Nous fabriquons une gamme complète incluant les produits de prétraitement, les auxiliaires de teinture, les produits de finition et les produits chimiques spécialisés."
             },
             "exportCountries": {
-                "q": "Vers quels pays exportez-vous ?",
-                "a": "Nous exportons vers plus de 30 pays en Europe, au Moyen-Orient, en Afrique du Nord, en Asie centrale et du Sud."
+                "q": "Exportez-vous ?",
+                "a": "Oui. Grohn Kimya a été fondée en 2024 à Tekirdağ, en Turquie, et nous approvisionnons des acheteurs dans tous les pays. Indiquez-nous le produit, la quantité et le port de destination, et nous vous enverrons une offre FOB ou CIF."
             },
             "minOrder": {
                 "q": "Quelle est la quantité minimale de commande ?",
@@ -162,7 +162,7 @@
             },
             "certifications": {
                 "q": "Quelles certifications ont vos produits ?",
-                "a": "Nos produits sont conformes aux normes ISO 9001. Certains produits sont compatibles OEKO-TEX et approuvés GOTS. Nous fournissons des fiches SDS et TDS complètes."
+                "a": "Nos produits sont approuvés GOTS et conformes à la ZDHC MRSL Niveau 3. Nous fournissons des FDS et des fiches techniques (TDS) pour tous les produits."
             },
             "technicalSupport": {
                 "q": "Fournissez-vous un support technique ?",

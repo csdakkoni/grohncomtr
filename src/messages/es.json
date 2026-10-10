@@ -16,7 +16,7 @@
         "metalSurfaceChemicals": "Tratamiento de metales y superficies",
         "textileAuxiliaries": "Químicos y auxiliares textiles",
         "sectorsTitle": "Sectores de química industrial",
-        "exporterTagline": "Exportador de materias primas químicas industriales",
+        "exporterTagline": "Proveedor de materias primas químicas industriales",
         "viewFullCatalog": "Ver catálogo completo →",
         "chemDictionary": "Diccionario"
     },
@@ -36,20 +36,20 @@
         "ctaProducts": "Ver productos",
         "ctaContact": "Contáctenos",
         "stats": {
-            "years": "Años de experiencia",
-            "countries": "Países de exportación",
-            "products": "Gama de productos"
+            "founded": "Fundada",
+            "gots": "Aprobado",
+            "zdhc": "Conformidad MRSL"
         },
         "featuresTitle": "¿Por qué Grohn Kimya?",
         "featuresSubtitle": "Su socio de confianza en químicos industriales por calidad, confiabilidad y capacidad de suministro global.",
         "features": {
             "quality": {
                 "title": "Calidad superior",
-                "desc": "Procesos de producción certificados conforme a ISO y normas internacionales, que garantizan una calidad constante."
+                "desc": "Productos aprobados por GOTS y conformes con ZDHC MRSL Nivel 3, con SDS y TDS para cada producto."
             },
             "global": {
-                "title": "Alcance global",
-                "desc": "Red de exportación confiable que atiende mercados en Europa, Oriente Medio, África y Asia."
+                "title": "Envíos a todo el mundo",
+                "desc": "Desde Tekirdağ, cerca de los puertos de Estambul, cotizamos FOB o CIF a compradores de cualquier país."
             },
             "innovation": {
                 "title": "Enfoque en I+D",
@@ -67,7 +67,7 @@
         },
         "exploreIndustrial": "Ver materias primas industriales",
         "exploreTextile": "Descubrir soluciones textiles",
-        "heroBadge": "Exportador global de químicos industriales y materias primas"
+        "heroBadge": "Químicos industriales y materias primas de Turquía"
     },
     "AboutPage": {
         "title": "Nosotros",
@@ -141,8 +141,8 @@
                 "a": "Fabricamos una amplia gama que incluye químicos de pretratamiento (humectantes, enzimas de desengomado, secuestrantes), auxiliares de teñido (igualadores, reguladores de pH, dispersantes), químicos de acabado (suavizantes de silicona, aprestos) y especialidades químicas para procesos textiles específicos."
             },
             "exportCountries": {
-                "q": "¿A qué países exportan?",
-                "a": "Exportamos a más de 30 países de Europa, Oriente Medio, Norte de África, Asia Central y Asia del Sur. Entre nuestros mercados clave se encuentran Alemania, Italia, Francia, Egipto, Marruecos, Túnez, Bangladés, Pakistán y Uzbekistán."
+                "q": "¿Exportan?",
+                "a": "Sí. Grohn Kimya se fundó en 2024 en Tekirdağ, Turquía, y abastecemos a compradores de cualquier país. Envíenos el producto, la cantidad y el puerto de destino y le responderemos con una cotización FOB o CIF."
             },
             "minOrder": {
                 "q": "¿Cuál es la cantidad mínima de pedido?",
@@ -162,11 +162,11 @@
             },
             "certifications": {
                 "q": "¿Qué certificaciones tienen sus productos?",
-                "a": "Nuestros productos cumplen con la norma de gestión de calidad ISO 9001. Algunos productos son compatibles con OEKO-TEX y aprobados por GOTS. Proporcionamos SDS (Hojas de Datos de Seguridad) y TDS (Fichas Técnicas) completas para todos los productos."
+                "a": "Nuestros productos están aprobados por GOTS y cumplen con ZDHC MRSL Nivel 3. Proporcionamos SDS (Hojas de Datos de Seguridad) y TDS (Hojas Técnicas) para todos los productos."
             },
             "technicalSupport": {
                 "q": "¿Brindan soporte técnico?",
-                "a": "Sí, ofrecemos soporte técnico integral que incluye formulación de recetas, optimización de procesos, resolución de problemas y visitas en planta. Nuestro equipo de I+D cuenta con más de 15 años de experiencia en química textil."
+                "a": "Sí, ofrecemos soporte técnico que incluye formulación de recetas, optimización de procesos, resolución de problemas y visitas en planta."
             }
         }
     },

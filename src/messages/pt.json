@@ -16,7 +16,7 @@
         "metalSurfaceChemicals": "Tratamento de metais e superfícies",
         "textileAuxiliaries": "Químicos e auxiliares têxteis",
         "sectorsTitle": "Setores de química industrial",
-        "exporterTagline": "Exportador de matérias-primas químicas industriais",
+        "exporterTagline": "Fornecedor de matérias-primas químicas industriais",
         "viewFullCatalog": "Ver catálogo completo →",
         "chemDictionary": "Dicionário"
     },
@@ -36,20 +36,20 @@
         "ctaProducts": "Ver produtos",
         "ctaContact": "Fale conosco",
         "stats": {
-            "years": "Anos de experiência",
-            "countries": "Países de exportação",
-            "products": "Linha de produtos"
+            "founded": "Fundada",
+            "gots": "Aprovado",
+            "zdhc": "Conformidade MRSL"
         },
         "featuresTitle": "Por que a Grohn Kimya?",
         "featuresSubtitle": "Seu parceiro de confiança em químicos industriais pela qualidade, confiabilidade e capacidade de fornecimento global.",
         "features": {
             "quality": {
                 "title": "Qualidade superior",
-                "desc": "Processos de produção certificados conforme a ISO e normas internacionais, garantindo qualidade consistente."
+                "desc": "Produtos aprovados pelo GOTS e em conformidade com a ZDHC MRSL Nível 3, com FDS e TDS para cada produto."
             },
             "global": {
-                "title": "Alcance global",
-                "desc": "Rede de exportação confiável atendendo mercados na Europa, Oriente Médio, África e Ásia."
+                "title": "Envio para todo o mundo",
+                "desc": "De Tekirdağ, perto dos portos de Istambul, cotamos FOB ou CIF para compradores de qualquer país."
             },
             "innovation": {
                 "title": "Foco em P&D",
@@ -67,7 +67,7 @@
         },
         "exploreIndustrial": "Ver matérias-primas industriais",
         "exploreTextile": "Conhecer soluções têxteis",
-        "heroBadge": "Exportador global de químicos industriais e matérias-primas"
+        "heroBadge": "Químicos industriais e matérias-primas da Turquia"
     },
     "AboutPage": {
         "title": "Sobre nós",
@@ -141,8 +141,8 @@
                 "a": "Fabricamos uma linha completa que inclui químicos de pré-tratamento (umectantes, enzimas de desengomagem, sequestrantes), auxiliares de tingimento (igualizantes, tampões de pH, dispersantes), químicos de acabamento (amaciantes de silicone, engomantes) e especialidades químicas para processos têxteis específicos."
             },
             "exportCountries": {
-                "q": "Para quais países vocês exportam?",
-                "a": "Exportamos para mais de 30 países da Europa, Oriente Médio, Norte da África, Ásia Central e Sul da Ásia. Entre nossos principais mercados estão Alemanha, Itália, França, Egito, Marrocos, Tunísia, Bangladesh, Paquistão e Uzbequistão."
+                "q": "Vocês exportam?",
+                "a": "Sim. A Grohn Kimya foi fundada em 2024 em Tekirdağ, Turquia, e fornecemos para compradores de qualquer país. Envie o produto, a quantidade e o porto de destino e responderemos com uma cotação FOB ou CIF."
             },
             "minOrder": {
                 "q": "Qual é a quantidade mínima de pedido?",
@@ -162,11 +162,11 @@
             },
             "certifications": {
                 "q": "Quais certificações seus produtos possuem?",
-                "a": "Nossos produtos atendem à norma de gestão da qualidade ISO 9001. Alguns produtos são compatíveis com OEKO-TEX e aprovados pelo GOTS. Fornecemos FDS (Fichas de Dados de Segurança) e fichas técnicas (TDS) completas para todos os produtos."
+                "a": "Nossos produtos são aprovados pelo GOTS e estão em conformidade com a ZDHC MRSL Nível 3. Fornecemos FDS (Fichas de Dados de Segurança) e TDS (Fichas Técnicas) para todos os produtos."
             },
             "technicalSupport": {
                 "q": "Vocês oferecem suporte técnico?",
-                "a": "Sim, oferecemos suporte técnico completo, incluindo formulação de receitas, otimização de processos, solução de problemas e visitas no local. Nossa equipe de P&D tem mais de 15 anos de experiência em química têxtil."
+                "a": "Sim, oferecemos suporte técnico, incluindo formulação de receitas, otimização de processos, solução de problemas e visitas no local."
             }
         }
     },
