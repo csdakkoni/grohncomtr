@@ -7936,5 +7936,182 @@
             "Efluentes de mineração e papel",
             "Tratamento de esgoto"
         ]
+    },
+    {
+        "id": "chem-deta",
+        "slug": "dietilentriamin-deta",
+        "cas_number": "111-40-0",
+        "formula": "C4H13N3",
+        "category": "general",
+        "ec_number": "203-865-4",
+        "molecular_weight": "103.17",
+        "name_tr": "Dietilentriamin (DETA)",
+        "name_en": "Diethylenetriamine (DETA)",
+        "name_fr": "Diéthylènetriamine (DETA)",
+        "name_ar": "ثنائي إيثيلين ثلاثي الأمين (DETA)",
+        "name_ru": "Диэтилентриамин (ДЭТА)",
+        "name_es": "Dietilentriamina (DETA)",
+        "name_pt": "Dietilenotriamina (DETA)",
+        "description_tr": "Dietilentriamin (DETA), epoksi reçinelerin oda sıcaklığında kürlenmesinde sertleştirici olarak, ayrıca kağıt yaş mukavemet reçineleri, tekstil yumuşatıcı hammaddeleri ve korozyon önleyicilerin üretiminde kullanılan alifatik bir polietilen amindir.",
+        "description_en": "Diethylenetriamine (DETA) is an aliphatic polyethylene amine used as a room-temperature curing agent for epoxy resins and as a building block for paper wet-strength resins, textile softener actives and corrosion inhibitors.",
+        "description_fr": "La diéthylènetriamine (DETA) est une polyéthylène amine aliphatique utilisée comme durcisseur des résines époxy à température ambiante et comme intermédiaire pour les résines de résistance à l'état humide du papier, les adoucissants textiles et les inhibiteurs de corrosion.",
+        "description_ar": "ثنائي إيثيلين ثلاثي الأمين (DETA) هو أمين بولي إيثيلين أليفاتي يُستخدم كمصلّب لراتنجات الإيبوكسي في درجة حرارة الغرفة، وكمادة وسيطة في راتنجات القوة الرطبة للورق ومنعّمات النسيج ومثبطات التآكل.",
+        "description_ru": "Диэтилентриамин (ДЭТА) — алифатический полиэтиленамин, применяемый как отвердитель эпоксидных смол холодного отверждения и как сырьё для смол влагопрочности бумаги, текстильных мягчителей и ингибиторов коррозии.",
+        "description_es": "La dietilentriamina (DETA) es una polietilenamina alifática que se usa como endurecedor de resinas epoxi a temperatura ambiente y como materia prima de resinas de resistencia en húmedo para papel, suavizantes textiles e inhibidores de corrosión.",
+        "description_pt": "A dietilenotriamina (DETA) é uma polietilenoamina alifática usada como endurecedor de resinas epóxi à temperatura ambiente e como matéria-prima de resinas de resistência a úmido para papel, amaciantes têxteis e inibidores de corrosão.",
+        "usage_areas_tr": [
+            "Epoksi Sertleştirici",
+            "Kağıt Yaş Mukavemet Reçineleri",
+            "Tekstil Yumuşatıcı Hammaddesi",
+            "Korozyon Önleyiciler",
+            "Yakıt ve Yağlayıcı Katkıları"
+        ],
+        "usage_areas_en": [
+            "Epoxy Curing Agent",
+            "Paper Wet-Strength Resins",
+            "Textile Softener Intermediate",
+            "Corrosion Inhibitors",
+            "Fuel and Lubricant Additives"
+        ],
+        "usage_areas_fr": [
+            "Durcisseur époxy",
+            "Résines de résistance humide du papier",
+            "Intermédiaire d'adoucissants textiles",
+            "Inhibiteurs de corrosion",
+            "Additifs pour carburants et lubrifiants"
+        ],
+        "usage_areas_ar": [
+            "مصلّب الإيبوكسي",
+            "راتنجات القوة الرطبة للورق",
+            "وسيط منعّمات النسيج",
+            "مثبطات التآكل",
+            "إضافات الوقود ومواد التشحيم"
+        ],
+        "usage_areas_ru": [
+            "Отвердитель эпоксидных смол",
+            "Смолы влагопрочности бумаги",
+            "Сырьё для текстильных мягчителей",
+            "Ингибиторы коррозии",
+            "Присадки к топливам и маслам"
+        ],
+        "usage_areas_es": [
+            "Endurecedor epoxi",
+            "Resinas de resistencia en húmedo para papel",
+            "Intermedio de suavizantes textiles",
+            "Inhibidores de corrosión",
+            "Aditivos para combustibles y lubricantes"
+        ],
+        "usage_areas_pt": [
+            "Endurecedor epóxi",
+            "Resinas de resistência a úmido para papel",
+            "Intermediário de amaciantes têxteis",
+            "Inibidores de corrosão",
+            "Aditivos para combustíveis e lubrificantes"
+        ],
+        "synonyms_tr": "DİETİLENTRİAMİN=DETA=2,2'-İminodietilamin=Bis(2-aminoetil)amin",
+        "synonyms_en": "DIETHYLENETRIAMINE=DETA=2,2'-Iminodiethylamine=Bis(2-aminoethyl)amine",
+        "synonyms_fr": "DIÉTHYLÈNETRIAMINE=DETA=2,2'-Iminodiéthylamine=Bis(2-aminoéthyl)amine",
+        "synonyms_ar": "DIETHYLENETRIAMINE=DETA=2,2'-Iminodiethylamine=Bis(2-aminoethyl)amine",
+        "synonyms_ru": "ДИЭТИЛЕНТРИАМИН=ДЭТА=DETA=Бис(2-аминоэтил)амин",
+        "synonyms_es": "DIETILENTRIAMINA=DETA=2,2'-Iminodietilamina=Bis(2-aminoetil)amina",
+        "synonyms_pt": "DIETILENOTRIAMINA=DETA=2,2'-Iminodietilamina=Bis(2-aminoetil)amina",
+        "definition_tr": [
+            "Dietilentriamin (DETA), iki birincil ve bir ikincil amin grubu taşıyan, renksizden açık sarıya kadar değişen, amonyak kokulu, higroskopik bir sıvıdır. Suyla her oranda karışır ve kuvvetli bazik karakterdedir.",
+            "Kaynama noktası yaklaşık 207 °C, yoğunluğu yaklaşık 0,95 g/cm³'tür. Etilen aminler ailesinde etilendiamin (EDA) ile trietilentetramin (TETA) arasında yer alır."
+        ],
+        "definition_en": [
+            "Diethylenetriamine (DETA) is a colorless to pale yellow, hygroscopic liquid with an ammonia-like odor, carrying two primary and one secondary amine group. It is fully miscible with water and strongly alkaline.",
+            "It boils at about 207 °C and has a density of about 0.95 g/cm³. In the ethyleneamines family it sits between ethylenediamine (EDA) and triethylenetetramine (TETA)."
+        ],
+        "definition_fr": [
+            "La diéthylènetriamine (DETA) est un liquide hygroscopique incolore à jaune pâle, à odeur ammoniacale, portant deux groupes amine primaires et un secondaire. Elle est entièrement miscible à l'eau et fortement alcaline.",
+            "Son point d'ébullition est d'environ 207 °C et sa densité d'environ 0,95 g/cm³. Dans la famille des éthylèneamines, elle se situe entre l'éthylènediamine (EDA) et la triéthylènetétramine (TETA)."
+        ],
+        "definition_ar": [
+            "ثنائي إيثيلين ثلاثي الأمين (DETA) سائل ماص للرطوبة عديم اللون إلى أصفر باهت، ذو رائحة تشبه الأمونيا، ويحمل مجموعتي أمين أوليتين ومجموعة أمين ثانوية. يمتزج تمامًا بالماء وهو قاعدي بقوة.",
+            "تبلغ درجة غليانه نحو 207 °م وكثافته نحو 0.95 غ/سم³. يقع في عائلة الإيثيلين أمينات بين إيثيلين ثنائي الأمين (EDA) وثلاثي إيثيلين رباعي الأمين (TETA)."
+        ],
+        "definition_ru": [
+            "Диэтилентриамин (ДЭТА) — бесцветная или светло-жёлтая гигроскопичная жидкость с аммиачным запахом, содержащая две первичные и одну вторичную аминогруппу. Неограниченно смешивается с водой, обладает сильными основными свойствами.",
+            "Температура кипения около 207 °C, плотность около 0,95 г/см³. В ряду этиленаминов находится между этилендиамином (ЭДА) и триэтилентетрамином (ТЭТА)."
+        ],
+        "definition_es": [
+            "La dietilentriamina (DETA) es un líquido higroscópico de incoloro a amarillo pálido, con olor amoniacal, que contiene dos grupos amina primarios y uno secundario. Es totalmente miscible en agua y fuertemente alcalina.",
+            "Hierve a unos 207 °C y su densidad es de unos 0,95 g/cm³. En la familia de las etilenaminas se sitúa entre la etilendiamina (EDA) y la trietilentetramina (TETA)."
+        ],
+        "definition_pt": [
+            "A dietilenotriamina (DETA) é um líquido higroscópico incolor a amarelo-claro, com odor amoniacal, que contém dois grupos amina primários e um secundário. É totalmente miscível em água e fortemente alcalina.",
+            "Ferve a cerca de 207 °C e tem densidade de cerca de 0,95 g/cm³. Na família das etilenoaminas, situa-se entre a etilenodiamina (EDA) e a trietilenotetramina (TETA)."
+        ],
+        "uses_benefits_tr": [
+            "Beş aktif amin hidrojeni sayesinde epoksi reçinelerle oda sıcaklığında hızlı ve yüksek çapraz bağ yoğunluğuyla kürlenir; sert, kimyasala dayanıklı kaplama, döşeme ve yapıştırıcılar verir.",
+            "Yağ asitleriyle reaksiyona girerek amidoamin ve imidazolin yapıları oluşturur. Bunlar tekstil yumuşatıcılarının, asfalt emülgatörlerinin ve petrol sahası korozyon önleyicilerinin temelidir.",
+            "Epiklorohidrin ile poliamid-epiklorohidrin (PAE) reçinelerine dönüştürülür; peçete, havlu kağıt ve ambalaj kağıtlarına ıslakken mukavemet kazandırır."
+        ],
+        "uses_benefits_en": [
+            "With five active amine hydrogens it cures epoxy resins quickly at room temperature with high crosslink density, giving hard, chemical-resistant coatings, floors and adhesives.",
+            "Reacted with fatty acids it forms amidoamines and imidazolines, the basis of textile softeners, asphalt emulsifiers and oilfield corrosion inhibitors.",
+            "Converted with epichlorohydrin into polyamide-epichlorohydrin (PAE) resins, it gives tissue, towel and packaging papers their strength when wet."
+        ],
+        "uses_benefits_fr": [
+            "Avec cinq hydrogènes d'amine actifs, elle durcit rapidement les résines époxy à température ambiante avec une forte densité de réticulation, pour des revêtements, sols et adhésifs durs et résistants aux produits chimiques.",
+            "Avec les acides gras, elle forme des amidoamines et des imidazolines, base des adoucissants textiles, des émulsifiants pour bitume et des inhibiteurs de corrosion pétroliers.",
+            "Transformée avec l'épichlorhydrine en résines polyamide-épichlorhydrine (PAE), elle confère aux papiers ouate, essuie-tout et d'emballage leur résistance à l'état humide."
+        ],
+        "uses_benefits_ar": [
+            "بفضل خمس ذرات هيدروجين أمينية نشطة، يصلّب راتنجات الإيبوكسي بسرعة في درجة حرارة الغرفة بكثافة تشابك عالية، ليعطي طلاءات وأرضيات ومواد لاصقة صلبة ومقاومة للمواد الكيميائية.",
+            "يتفاعل مع الأحماض الدهنية مكوّنًا أميدوأمينات وإيميدازولينات، وهي أساس منعّمات النسيج ومستحلبات الأسفلت ومثبطات التآكل في حقول النفط.",
+            "يُحوَّل مع الإبيكلوروهيدرين إلى راتنجات بولي أميد-إبيكلوروهيدرين (PAE) التي تمنح المناديل والمناشف الورقية وورق التغليف قوتها وهي رطبة."
+        ],
+        "uses_benefits_ru": [
+            "Благодаря пяти активным атомам водорода аминогрупп быстро отверждает эпоксидные смолы при комнатной температуре с высокой плотностью сшивки, давая твёрдые химстойкие покрытия, полы и клеи.",
+            "С жирными кислотами образует амидоамины и имидазолины — основу текстильных мягчителей, эмульгаторов битума и ингибиторов коррозии для нефтедобычи.",
+            "В реакции с эпихлоргидрином превращается в полиамид-эпихлоргидриновые (PAE) смолы, придающие санитарно-гигиенической и упаковочной бумаге прочность во влажном состоянии."
+        ],
+        "uses_benefits_es": [
+            "Con cinco hidrógenos de amina activos, cura las resinas epoxi rápidamente a temperatura ambiente con alta densidad de reticulación, dando recubrimientos, pisos y adhesivos duros y resistentes a químicos.",
+            "Con ácidos grasos forma amidoaminas e imidazolinas, base de suavizantes textiles, emulsionantes asfálticos e inhibidores de corrosión petroleros.",
+            "Con epiclorhidrina se convierte en resinas poliamida-epiclorhidrina (PAE), que dan resistencia en húmedo a papel tisú, toallas de papel y papel de embalaje."
+        ],
+        "uses_benefits_pt": [
+            "Com cinco hidrogênios de amina ativos, cura resinas epóxi rapidamente à temperatura ambiente com alta densidade de reticulação, resultando em revestimentos, pisos e adesivos duros e resistentes a químicos.",
+            "Com ácidos graxos forma amidoaminas e imidazolinas, base de amaciantes têxteis, emulsificantes asfálticos e inibidores de corrosão para petróleo.",
+            "Com epicloridrina é convertida em resinas poliamida-epicloridrina (PAE), que dão resistência a úmido a papéis tissue, toalhas de papel e papéis de embalagem."
+        ],
+        "applications_tr": [
+            "Standart sıvı bisfenol-A epoksi reçinede (EEW ≈ 190) tipik kullanım, 100 kısım reçineye yaklaşık 11 kısım DETA'dır (amin hidrojen eşdeğer ağırlığı ≈ 20,6).",
+            "Kürlenme ekzotermiktir ve kap ömrü kısadır; büyük hacimli dökümlerde karışım küçük partiler halinde hazırlanmalıdır.",
+            "Aşındırıcıdır ve cilt hassasiyeti yapabilir; eldiven ve göz koruması ile çalışılmalı, kapalı kapta ve nemden uzak saklanmalıdır."
+        ],
+        "applications_en": [
+            "In a standard liquid bisphenol-A epoxy (EEW ≈ 190), typical use is about 11 parts of DETA per 100 parts of resin (amine hydrogen equivalent weight ≈ 20.6).",
+            "Curing is exothermic and pot life is short; for large castings, mix in small batches.",
+            "It is corrosive and can cause skin sensitization; handle with gloves and eye protection and store in closed containers away from moisture."
+        ],
+        "applications_fr": [
+            "Dans une résine époxy bisphénol-A liquide standard (EEW ≈ 190), l'usage typique est d'environ 11 parties de DETA pour 100 parties de résine (poids équivalent d'hydrogène aminé ≈ 20,6).",
+            "Le durcissement est exothermique et la durée de vie en pot est courte ; pour les grandes coulées, préparer le mélange par petits lots.",
+            "Corrosive et sensibilisante pour la peau : manipuler avec gants et protection oculaire, stocker en récipients fermés à l'abri de l'humidité."
+        ],
+        "applications_ar": [
+            "في راتنج إيبوكسي سائل قياسي من نوع بيسفينول-A (EEW ≈ 190)، يكون الاستخدام النموذجي نحو 11 جزءًا من DETA لكل 100 جزء من الراتنج (الوزن المكافئ لهيدروجين الأمين ≈ 20.6).",
+            "التصلّب طارد للحرارة وعمر الخليط قصير؛ في الصب بكميات كبيرة يُحضَّر الخليط على دفعات صغيرة.",
+            "مادة أكّالة وقد تسبب تحسس الجلد؛ يجب التعامل معها بقفازات وواقي للعينين وتخزينها في عبوات مغلقة بعيدًا عن الرطوبة."
+        ],
+        "applications_ru": [
+            "Для стандартной жидкой эпоксидной смолы на основе бисфенола А (EEW ≈ 190) типичная дозировка — около 11 частей ДЭТА на 100 частей смолы (эквивалентная масса аминного водорода ≈ 20,6).",
+            "Отверждение экзотермично, жизнеспособность смеси короткая; для крупных заливок готовьте смесь небольшими порциями.",
+            "Вещество коррозионно-активно и может вызывать сенсибилизацию кожи; работайте в перчатках и защитных очках, храните в закрытой таре вдали от влаги."
+        ],
+        "applications_es": [
+            "En una resina epoxi líquida estándar de bisfenol A (EEW ≈ 190), el uso típico es de unas 11 partes de DETA por 100 partes de resina (peso equivalente de hidrógeno amínico ≈ 20,6).",
+            "El curado es exotérmico y la vida útil de la mezcla es corta; para coladas grandes, prepare la mezcla en lotes pequeños.",
+            "Es corrosiva y puede causar sensibilización cutánea; manipúlela con guantes y protección ocular y almacénela en envases cerrados lejos de la humedad."
+        ],
+        "applications_pt": [
+            "Em uma resina epóxi líquida padrão de bisfenol A (EEW ≈ 190), o uso típico é de cerca de 11 partes de DETA para 100 partes de resina (peso equivalente de hidrogênio amínico ≈ 20,6).",
+            "A cura é exotérmica e o tempo de vida da mistura é curto; em grandes vazamentos, prepare a mistura em pequenos lotes.",
+            "É corrosiva e pode causar sensibilização da pele; manuseie com luvas e proteção ocular e armazene em embalagens fechadas, longe da umidade."
+        ]
     }
 ]

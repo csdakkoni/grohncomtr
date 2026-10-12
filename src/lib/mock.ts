@@ -452,6 +452,19 @@ export const MOCK_SUBGROUPS: Subgroup[] = [
         "name_pt": "Álcoois e glicóis (IPA, MEG, DEG)"
     },
     {
+        "id": "aminler-ve-sertlestiriciler",
+        "category_id": "boya-solvent",
+        "slug": "aminler-ve-sertlestiriciler",
+        "prefix": "GRO",
+        "name_tr": "Aminler & Epoksi Sertleştiriciler (DETA)",
+        "name_en": "Amines & Epoxy Curing Agents (DETA)",
+        "name_fr": "Amines et durcisseurs époxy (DETA)",
+        "name_ar": "الأمينات ومصلّبات الإيبوكسي (DETA)",
+        "name_ru": "Амины и отвердители эпоксидных смол (ДЭТА)",
+        "name_es": "Aminas y endurecedores epoxi (DETA)",
+        "name_pt": "Aminas e endurecedores epóxi (DETA)"
+    },
+    {
         "id": "endustriyel-asitler",
         "category_id": "metal-yuzey",
         "slug": "endustriyel-asitler",
@@ -1149,6 +1162,30 @@ export const MOCK_PRODUCTS: Product[] = [
         "description_pt": "Álcool anidro de alta pureza muito usado como solvente em tintas de impressão, tintas, desinfetantes e limpadores eletrônicos.",
         "image_url": "/images/dyeing.png",
         "is_featured": true
+    },
+    {
+        "id": "sol-3",
+        "category_id": "boya-solvent",
+        "subgroup_id": "aminler-ve-sertlestiriciler",
+        "slug": "dietilentriamin-deta",
+        "name": "Diethylenetriamine (DETA)",
+        "cas_number": "111-40-0",
+        "title_tr": "Dietilentriamin (DETA)",
+        "title_en": "Diethylenetriamine (DETA)",
+        "title_fr": "Diéthylènetriamine (DETA)",
+        "title_ar": "ثنائي إيثيلين ثلاثي الأمين (DETA)",
+        "title_ru": "Диэтилентриамин (ДЭТА)",
+        "title_es": "Dietilentriamina (DETA)",
+        "title_pt": "Dietilenotriamina (DETA)",
+        "description_tr": "Epoksi kaplama, döşeme ve yapıştırıcılarda oda sıcaklığında kürleyen sertleştirici; kağıt yaş mukavemet reçineleri, tekstil yumuşatıcıları ve korozyon önleyicilerin hammaddesi.",
+        "description_en": "Room-temperature curing agent for epoxy coatings, floors and adhesives; raw material for paper wet-strength resins, textile softeners and corrosion inhibitors.",
+        "description_fr": "Durcisseur à température ambiante pour revêtements, sols et adhésifs époxy ; matière première des résines de résistance humide du papier, adoucissants textiles et inhibiteurs de corrosion.",
+        "description_ar": "مصلّب في درجة حرارة الغرفة لطلاءات وأرضيات ومواد لاصقة الإيبوكسي؛ ومادة خام لراتنجات القوة الرطبة للورق ومنعّمات النسيج ومثبطات التآكل.",
+        "description_ru": "Отвердитель холодного отверждения для эпоксидных покрытий, полов и клеёв; сырьё для смол влагопрочности бумаги, текстильных мягчителей и ингибиторов коррозии.",
+        "description_es": "Endurecedor a temperatura ambiente para recubrimientos, pisos y adhesivos epoxi; materia prima de resinas de resistencia en húmedo para papel, suavizantes textiles e inhibidores de corrosión.",
+        "description_pt": "Endurecedor à temperatura ambiente para revestimentos, pisos e adesivos epóxi; matéria-prima de resinas de resistência a úmido para papel, amaciantes têxteis e inibidores de corrosão.",
+        "image_url": "/images/finishing.png",
+        "is_featured": false
     },
     {
         "id": "met-1",
