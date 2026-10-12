@@ -187,7 +187,13 @@
         "category": "Sektörel Kategori",
         "disclaimer": "* Bu sayfa endüstriyel kimyasallar hakkında bilgi vermek amacıyla hazırlanmıştır. Bu hammaddeyi tedarik etmek veya muadillerini öğrenmek için bizimle iletişime geçebilirsiniz.",
         "cta": "Fiyat ve Tedarik Bilgisi Al",
-        "home": "Ana Sayfa"
+        "home": "Ana Sayfa",
+        "categories": {
+            "general": "Genel Endüstriyel",
+            "water-treatment": "Su Arıtma",
+            "textile": "Tekstil",
+            "industrial": "Endüstriyel"
+        }
     },
     "QuoteForm": {
         "title": "Teklif isteyin",

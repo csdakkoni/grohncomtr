@@ -187,7 +187,13 @@
         "category": "Catégorie sectorielle",
         "disclaimer": "* Cette page fournit des informations générales sur les produits chimiques industriels. Contactez-nous pour vous approvisionner en cette matière première ou connaître ses équivalents.",
         "cta": "Demander prix et disponibilité",
-        "home": "Accueil"
+        "home": "Accueil",
+        "categories": {
+            "general": "Industrie générale",
+            "water-treatment": "Traitement de l'eau",
+            "textile": "Textile",
+            "industrial": "Industriel"
+        }
     },
     "QuoteForm": {
         "title": "Demander un devis",

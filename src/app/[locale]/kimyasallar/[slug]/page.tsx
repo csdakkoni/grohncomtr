@@ -233,8 +233,8 @@ export default async function ChemicalDetailPage({
                                     <span className="block text-text-muted text-xs uppercase tracking-wider mb-1">
                                         {t('category')}
                                     </span>
-                                    <span className="font-medium text-white text-sm capitalize">
-                                        {chemical.category.replace('-', ' ')}
+                                    <span className="font-medium text-white text-sm">
+                                        {t.has(`categories.${chemical.category}`) ? t(`categories.${chemical.category}`) : chemical.category}
                                     </span>
                                 </div>
                             </div>

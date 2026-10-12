@@ -187,7 +187,13 @@
         "category": "Industry Category",
         "disclaimer": "* This page provides general information about industrial chemicals. Contact us to source this raw material or learn about equivalents.",
         "cta": "Request Price & Supply Info",
-        "home": "Home"
+        "home": "Home",
+        "categories": {
+            "general": "General Industrial",
+            "water-treatment": "Water Treatment",
+            "textile": "Textile",
+            "industrial": "Industrial"
+        }
     },
     "QuoteForm": {
         "title": "Request a quote",

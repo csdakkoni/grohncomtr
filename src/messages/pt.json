@@ -187,7 +187,13 @@
         "category": "Categoria setorial",
         "disclaimer": "* Esta página oferece informações gerais sobre químicos industriais. Fale conosco para adquirir esta matéria-prima ou conhecer seus equivalentes.",
         "cta": "Solicitar preço e disponibilidade",
-        "home": "Início"
+        "home": "Início",
+        "categories": {
+            "general": "Industrial geral",
+            "water-treatment": "Tratamento de água",
+            "textile": "Têxtil",
+            "industrial": "Industrial"
+        }
     },
     "QuoteForm": {
         "title": "Solicitar cotação",

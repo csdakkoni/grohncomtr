@@ -55,7 +55,7 @@ export default async function ChemicalsIndexPage({
                         >
                             <div className="flex justify-between items-start mb-4">
                                 <span className="text-xs font-mono text-text-muted">CAS: {chemical.cas_number}</span>
-                                <span className="badge-glass text-accent text-[10px] uppercase">{chemical.category}</span>
+                                <span className="badge-glass text-accent text-[10px] uppercase">{t.has(`categories.${chemical.category}`) ? t(`categories.${chemical.category}`) : chemical.category}</span>
                             </div>
                             <h2 className="text-xl font-bold text-white mb-2 group-hover:text-accent transition-colors">
                                 {getLocalized(chemical, 'name')}
