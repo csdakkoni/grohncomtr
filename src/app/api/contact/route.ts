@@ -1,12 +1,19 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabase';
+import { scheduleLeadNotification } from '@/lib/lead-notifications';
+
+export const maxDuration = 30;
 
 export async function POST(request: NextRequest) {
     try {
         const body = await request.json();
+        if (!body || typeof body !== 'object' || Array.isArray(body)) {
+            return NextResponse.json({ error: 'Geçersiz istek.' }, { status: 400 });
+        }
         const { name, email, company, subject, message } = body;
 
-        if (!name || !email || !subject || !message) {
+        if (![name, email, subject, message].every(value => typeof value === 'string' && value.trim()) ||
+            (company != null && typeof company !== 'string')) {
             return NextResponse.json(
                 { error: 'Lütfen zorunlu alanları doldurun.' },
                 { status: 400 }
@@ -33,6 +40,7 @@ export async function POST(request: NextRequest) {
             );
         }
 
+        scheduleLeadNotification({ kind: 'contact', name, email, company, subject, message, savedTo: 'messages' });
         return NextResponse.json({ success: true });
     } catch (err) {
         console.error('Contact form error:', err);
