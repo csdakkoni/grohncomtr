@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabase';
+import { scheduleLeadNotification } from '@/lib/lead-notifications';
+
+export const maxDuration = 30;
 
 const INCOTERMS = ['EXW', 'FOB', 'CFR', 'CIF', 'DAP', 'DDP', 'unsure'];
 const UNITS = ['kg', 'ton', 'ibc', 'container'];
@@ -40,6 +43,7 @@ export async function POST(request: NextRequest) {
 
         const { error } = await supabase.from('quote_requests').insert(row);
         if (!error) {
+            scheduleLeadNotification({ ...row, kind: 'quote', savedTo: 'quotes' });
             return NextResponse.json({ success: true });
         }
 
@@ -68,6 +72,7 @@ export async function POST(request: NextRequest) {
             console.error('QUOTE_FORM_FALLBACK:', JSON.stringify(row));
             return NextResponse.json({ error: 'Could not save request' }, { status: 500 });
         }
+        scheduleLeadNotification({ ...row, kind: 'quote', savedTo: 'messages' });
         return NextResponse.json({ success: true });
     } catch (err) {
         console.error('Quote API error:', err);
